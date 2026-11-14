@@ -1,0 +1,20 @@
+# KiloRadar (kiloradar.com) — Cloudflare Pages + Workers + D1 + Cron Configuration
+# Developed and operated by KM TECH LABS
+
+name = "kiloradar"
+compatibility_date = "2026-11-01"
+pages_build_output_dir = "dist"
+
+# Automatic Nightly Cron Job (runs every night at 03:00 UTC)
+[triggers]
+crons = ["0 3 * * *"]
+
+# Cloudflare D1 SQLite Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "kiloradar-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+APP_URL = "https://kiloradar.com"
+# Optional: Add KASSAL_API_KEY via `wrangler secret put KASSAL_API_KEY` for live Norwegian store prices

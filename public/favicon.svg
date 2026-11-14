@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#070B12"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" stroke="#1E293B" stroke-width="2"/>
+  
+  <!-- Concentric Radar Rings -->
+  <circle cx="32" cy="34" r="22" stroke="#10B981" stroke-opacity="0.22" stroke-width="1.75" stroke-dasharray="4 3"/>
+  <circle cx="32" cy="34" r="15" stroke="#10B981" stroke-opacity="0.45" stroke-width="1.75"/>
+  
+  <!-- Geometric Kilo Weight Kettlebell / Trapezoid Silhouette -->
+  <path d="M26 20C26 16.6863 28.6863 14 32 14C35.3137 14 38 16.6863 38 20V23H26V20Z" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M21 23H43L47 47C47.3 48.8 45.9 50.5 44 50.5H20C18.1 50.5 16.7 48.8 17 47L21 23Z" fill="#0F172A" stroke="#10B981" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Radar Sweep Line & Alert Blip -->
+  <line x1="32" y1="36" x2="46" y2="22" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="32" cy="36" r="3" fill="#10B981"/>
+  <circle cx="46" cy="22" r="4" fill="#EF4444"/>
+  <circle cx="46" cy="22" r="7" stroke="#EF4444" stroke-opacity="0.45" stroke-width="1.5"/>
+</svg>
