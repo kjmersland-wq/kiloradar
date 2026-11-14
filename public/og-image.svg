@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#070B12"/>
+  <circle cx="280" cy="315" r="210" stroke="#10B981" stroke-opacity="0.2" stroke-width="4" stroke-dasharray="12 10"/>
+  <circle cx="280" cy="315" r="145" stroke="#10B981" stroke-opacity="0.4" stroke-width="4"/>
+  <path d="M235 205C235 180.147 255.147 160 280 160C304.853 160 325 180.147 325 205V235H235V205Z" stroke="#10B981" stroke-width="10" stroke-linecap="round"/>
+  <path d="M195 235H365L395 415C397.5 430 386 444 370 444H190C174 444 162.5 430 165 415L195 235Z" fill="#0F172A" stroke="#10B981" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="280" y1="335" x2="390" y2="225" stroke="#EF4444" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="280" cy="335" r="14" fill="#10B981"/>
+  <circle cx="390" cy="225" r="18" fill="#EF4444"/>
+  <text x="540" y="255" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="88">Kilo<tspan fill="#10B981">Radar</tspan></text>
+  <text x="540" y="330" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="34">True Unit Price &amp; Shrinkflation Calculator</text>
+  <text x="540" y="395" fill="#10B981" font-family="monospace" font-weight="700" font-size="28">www.kiloradar.com • NO • SE • DK • PL • EN</text>
+  <text x="540" y="470" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="22">Developed and operated by KM TECH LABS</text>
+</svg>

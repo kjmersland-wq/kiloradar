@@ -71,9 +71,13 @@ export interface SavingsCalculation {
  * til standard mengde (kg, l, stk, vask) og beregner standard enhetspris (kr per kg, liter eller stk).
  */
 export function parseMeasure(measureStr: string): ParsedMeasure {
-  const cleaned = measureStr.trim().toLowerCase().replace(',', '.');
-  // Støtter også multipack som "2 x 150 g" eller bare "200 g" / "200g"
-  const multiMatch = cleaned.match(/^(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*([a-zæøå]+)$/i);
+  const cleaned = measureStr
+    .trim()
+    .toLowerCase()
+    .replace(',', '.')
+    .replace(/fl\.?\s*oz/g, 'floz');
+  // Støtter også multipack som "2 x 150 g" eller bare "200 g" / "14.5 oz" / "12 fl oz"
+  const multiMatch = cleaned.match(/^(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*([a-zæøåäöüßłńśźż]+)$/i);
   let quantity: number;
   let unit: string;
 
@@ -81,7 +85,7 @@ export function parseMeasure(measureStr: string): ParsedMeasure {
     quantity = parseFloat(multiMatch[1]) * parseFloat(multiMatch[2]);
     unit = multiMatch[3];
   } else {
-    const match = cleaned.match(/^(\d+(?:\.\d+)?)\s*([a-zæøå]+)$/i);
+    const match = cleaned.match(/^(\d+(?:\.\d+)?)\s*([a-zæøåäöüßłńśźż]+)$/i);
     if (!match) {
       throw new Error(`Ugyldig måleenhet-format: "${measureStr}"`);
     }
@@ -95,15 +99,26 @@ export function parseMeasure(measureStr: string): ParsedMeasure {
 
   switch (unit) {
     case 'g':
+    case 'gr':
     case 'gram':
+    case 'grams':
       return {
         rawQuantity: quantity,
         rawUnit: 'g',
         normalizedAmount: quantity / 1000,
         baseUnit: 'kg',
       };
+    case 'dag':
+    case 'dkg':
+      return {
+        rawQuantity: quantity,
+        rawUnit: 'dag',
+        normalizedAmount: quantity / 100,
+        baseUnit: 'kg',
+      };
     case 'hg':
     case 'hektogram':
+    case 'hekto':
       return {
         rawQuantity: quantity,
         rawUnit: 'hg',
@@ -113,14 +128,35 @@ export function parseMeasure(measureStr: string): ParsedMeasure {
     case 'kg':
     case 'kilo':
     case 'kilogram':
+    case 'kilograms':
       return {
         rawQuantity: quantity,
         rawUnit: 'kg',
         normalizedAmount: quantity,
         baseUnit: 'kg',
       };
+    case 'oz':
+    case 'ounce':
+    case 'ounces':
+      return {
+        rawQuantity: quantity,
+        rawUnit: 'oz',
+        normalizedAmount: (quantity * 28.349523125) / 1000,
+        baseUnit: 'kg',
+      };
+    case 'lb':
+    case 'lbs':
+    case 'pound':
+    case 'pounds':
+      return {
+        rawQuantity: quantity,
+        rawUnit: 'lb',
+        normalizedAmount: quantity * 0.45359237,
+        baseUnit: 'kg',
+      };
     case 'ml':
     case 'milliliter':
+    case 'milliliters':
       return {
         rawQuantity: quantity,
         rawUnit: 'ml',
@@ -137,6 +173,7 @@ export function parseMeasure(measureStr: string): ParsedMeasure {
       };
     case 'dl':
     case 'desiliter':
+    case 'deciliter':
       return {
         rawQuantity: quantity,
         rawUnit: 'dl',
@@ -144,17 +181,43 @@ export function parseMeasure(measureStr: string): ParsedMeasure {
         baseUnit: 'l',
       };
     case 'l':
+    case 'lt':
     case 'liter':
+    case 'liters':
+    case 'litre':
+    case 'litres':
       return {
         rawQuantity: quantity,
         rawUnit: 'l',
         normalizedAmount: quantity,
         baseUnit: 'l',
       };
+    case 'floz':
+      return {
+        rawQuantity: quantity,
+        rawUnit: 'fl oz',
+        normalizedAmount: (quantity * 29.5735295625) / 1000,
+        baseUnit: 'l',
+      };
+    case 'gal':
+    case 'gallon':
+    case 'gallons':
+      return {
+        rawQuantity: quantity,
+        rawUnit: 'gal',
+        normalizedAmount: quantity * 3.785411784,
+        baseUnit: 'l',
+      };
     case 'stk':
+    case 'st':
+    case 'szt':
     case 'stykk':
     case 'pk':
+    case 'pack':
+    case 'pcs':
+    case 'ct':
     case 'poser':
+    case 'uds':
       return {
         rawQuantity: quantity,
         rawUnit: 'stk',
@@ -162,6 +225,13 @@ export function parseMeasure(measureStr: string): ParsedMeasure {
         baseUnit: 'stk',
       };
     case 'vask':
+    case 'tvätt':
+    case 'prania':
+    case 'loads':
+    case 'washes':
+    case 'wl':
+    case 'lavados':
+    case 'lavages':
       return {
         rawQuantity: quantity,
         rawUnit: 'vask',

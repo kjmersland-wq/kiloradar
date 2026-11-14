@@ -1,6 +1,16 @@
 import type { ProductItem } from '../utils/shrinkAlgorithm';
 
-export type CountryRouteCode = 'en' | 'no' | 'se' | 'dk' | 'pl';
+export type CountryRouteCode =
+  | 'en'
+  | 'us'
+  | 'uk'
+  | 'no'
+  | 'se'
+  | 'dk'
+  | 'pl'
+  | 'de'
+  | 'fr'
+  | 'es';
 
 export interface StoreChainConfig {
   store: string;
@@ -21,15 +31,39 @@ export interface MethodologyPillar {
 
 export interface CountryLocaleConfig {
   code: CountryRouteCode;
-  path: '/' | '/no' | '/se' | '/dk' | '/pl';
-  hreflang: 'en' | 'nb-NO' | 'sv-SE' | 'da-DK' | 'pl-PL';
+  path:
+    | '/'
+    | '/us/'
+    | '/uk/'
+    | '/no/'
+    | '/sv/'
+    | '/da/'
+    | '/pl/'
+    | '/de/'
+    | '/fr/'
+    | '/es/'
+    | '/no'
+    | '/se'
+    | '/dk'
+    | '/pl';
+  hreflang:
+    | 'en'
+    | 'en-US'
+    | 'en-GB'
+    | 'nb-NO'
+    | 'sv-SE'
+    | 'da-DK'
+    | 'pl-PL'
+    | 'de-DE'
+    | 'fr-FR'
+    | 'es-ES';
   htmlLang: string;
   flag: string;
   countryName: string;
   selectorLabel: string;
-  currencyCode: 'EUR' | 'NOK' | 'SEK' | 'DKK' | 'PLN';
+  currencyCode: 'EUR' | 'USD' | 'GBP' | 'NOK' | 'SEK' | 'DKK' | 'PLN';
   currencySymbol: string;
-  currencyPrefix: boolean; // true for €12.50, false for 12,50 kr / zł
+  currencyPrefix: boolean; // true for €12.50 / $12.50 / £12.50, false for 12,50 kr / zł
   numberLocale: string;
   seoTitle: string;
   seoDescription: string;

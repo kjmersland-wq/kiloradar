@@ -2,21 +2,21 @@ import type { CountryLocaleConfig } from './types';
 
 export const DK_LOCALE: CountryLocaleConfig = {
   code: 'dk',
-  path: '/dk',
+  path: '/da/',
   hreflang: 'da-DK',
-  htmlLang: 'da',
+  htmlLang: 'da-DK',
   flag: '🇩🇰',
   countryName: 'Danmark',
-  selectorLabel: '🇩🇰 Danmark (DK / DKK)',
+  selectorLabel: '🇩🇰 Danmark (DK / DKK kr)',
   currencyCode: 'DKK',
   currencySymbol: 'kr.',
   currencyPrefix: false,
   numberLocale: 'da-DK',
-  seoTitle: 'KiloRadar Danmark — Se hvad du reelt betaler pr. kilo & spar på madbudgettet (DKK)',
+  seoTitle: 'KiloRadar Danmark — Kilopris beregner, Enhedspris & Skrumpflation / Shrinkflation (DKK)',
   seoDescription:
-    'Føles det som om dine yndlingsvarer slipper lidt hurtigere op end før? KiloRadar viser dig på få sekunder, hvad du reelt betaler pr. kilo og hvilket supermarked der er billigst.',
+    'Føles det som om dine yndlingsvarer slipper hurtigere op? Brug vores kilopris beregner til at tjekke reel enhedspris, afsløre skrumpflation og finde det billigste supermarked.',
   smartBannerQuestion: 'Vil du gerne se danske dagligvarepriser og supermarkeder i kroner (DKK)?',
-  smartBannerCta: 'Skift til Danmark (kiloradar.com/dk)',
+  smartBannerCta: 'Skift til Danmark (kiloradar.com/da/)',
   ui: {
     allCategoriesLabel: 'Alle varer',
     badgeAlgorithmic: '100% Uafhængig & Reklamefri',

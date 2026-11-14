@@ -7,14 +7,14 @@ export const EN_LOCALE: CountryLocaleConfig = {
   htmlLang: 'en',
   flag: '🌍',
   countryName: 'Global / International',
-  selectorLabel: '🌍 Global (EN / EUR)',
+  selectorLabel: '🌍 Global (EN / EUR €)',
   currencyCode: 'EUR',
   currencySymbol: '€',
   currencyPrefix: true,
   numberLocale: 'en-IE',
-  seoTitle: 'KiloRadar — See What You Truly Pay Per Kilo & Save on Groceries (EUR)',
+  seoTitle: 'KiloRadar — Unit Price Calculator, Price per Kilo/Ounce & Shrinkflation Tracker (EUR)',
   seoDescription:
-    'Ever feel like your favorite groceries run out faster than they used to? KiloRadar uncovers true unit prices and helps you find the most affordable supermarket every week.',
+    'Ever feel like your favorite groceries run out faster? Use our free Unit Price Calculator and Shrinkflation Tracker to see the true price per kilo or ounce and find the cheapest supermarket.',
   smartBannerQuestion: 'Curious how these prices look in your local stores and currency?',
   smartBannerCta: 'Keep browsing Global (EUR)',
   ui: {

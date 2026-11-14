@@ -1,0 +1,18 @@
+# KiloRadar (https://www.kiloradar.com) — Robots.txt
+# Developed and operated by KM TECH LABS
+
+User-agent: *
+Allow: /
+Allow: /us/
+Allow: /uk/
+Allow: /no/
+Allow: /sv/
+Allow: /da/
+Allow: /pl/
+Allow: /de/
+Allow: /fr/
+Allow: /es/
+
+Disallow: /api/
+
+Sitemap: https://www.kiloradar.com/sitemap.xml

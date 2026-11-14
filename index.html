@@ -1,20 +1,127 @@
 <!doctype html>
-<html lang="nb" class="dark">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>KiloRadar — True Unit Price &amp; Shrinkflation Tracker</title>
+    <title>KiloRadar — Unit Price Calculator, Price per Kilo/Ounce &amp; Shrinkflation Tracker</title>
     <meta
       name="description"
-      content="KiloRadar (kiloradar.com) — True Unit Price & Shrinkflation Tracker. 100% algorithmic grocery unit-price and shrinkflation radar developed by KM TECH LABS."
+      content="Ever feel like your favorite groceries run out faster? Use our free Unit Price Calculator and Shrinkflation Tracker to see the true price per kilo or ounce and find the cheapest supermarket."
     />
-    <meta property="og:title" content="KiloRadar — True Unit Price &amp; Shrinkflation Tracker" />
+    <meta
+      name="keywords"
+      content="Unit Price Calculator, Price per Kilo, Price per Ounce, Shrinkflation Tracker, Kilopriskalkulator, Enhetspris, Krympflasjon, Jämförpris, Kilopris beregner, Cena jednostkowa, Kilopreis Rechner, Grundpreis berechnen, Mogelpackung, Calculateur prix au kilo, Réduflation, Calculadora precio por kilo, Reduflación"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <!-- Self-Referencing Canonical & All 10 Market Hreflang Alternates -->
+    <link rel="canonical" href="https://www.kiloradar.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.kiloradar.com/" />
+    <link rel="alternate" hreflang="en" href="https://www.kiloradar.com/" />
+    <link rel="alternate" hreflang="en-US" href="https://www.kiloradar.com/us/" />
+    <link rel="alternate" hreflang="en-GB" href="https://www.kiloradar.com/uk/" />
+    <link rel="alternate" hreflang="nb-NO" href="https://www.kiloradar.com/no/" />
+    <link rel="alternate" hreflang="sv-SE" href="https://www.kiloradar.com/sv/" />
+    <link rel="alternate" hreflang="da-DK" href="https://www.kiloradar.com/da/" />
+    <link rel="alternate" hreflang="pl-PL" href="https://www.kiloradar.com/pl/" />
+    <link rel="alternate" hreflang="de-DE" href="https://www.kiloradar.com/de/" />
+    <link rel="alternate" hreflang="fr-FR" href="https://www.kiloradar.com/fr/" />
+    <link rel="alternate" hreflang="es-ES" href="https://www.kiloradar.com/es/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Discord) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KiloRadar (kiloradar.com)" />
+    <meta property="og:url" content="https://www.kiloradar.com/" />
+    <meta
+      property="og:title"
+      content="KiloRadar — Unit Price Calculator, Price per Kilo/Ounce &amp; Shrinkflation Tracker"
+    />
     <meta
       property="og:description"
-      content="Track hidden shrinkflation, real unit prices, and cheapest supermarkets across countries. Developed and operated by KM TECH LABS."
+      content="Ever feel like your favorite groceries run out faster? Calculate true grocery unit prices per kilo or ounce, uncover hidden shrinkflation, and compare supermarkets across 10 countries."
     />
-    <meta property="og:site_name" content="KiloRadar (kiloradar.com)" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="nb_NO" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:locale:alternate" content="da_DK" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:image" content="https://www.kiloradar.com/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="KiloRadar — Unit Price Calculator &amp; Shrinkflation Tracker"
+    />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.kiloradar.com/" />
+    <meta
+      name="twitter:title"
+      content="KiloRadar — Unit Price Calculator, Price per Kilo/Ounce &amp; Shrinkflation Tracker"
+    />
+    <meta
+      name="twitter:description"
+      content="Uncover hidden shrinkflation and calculate real grocery unit prices per kilo, pound, or ounce in seconds."
+    />
+    <meta name="twitter:image" content="https://www.kiloradar.com/og-image.svg" />
+
+    <!-- Schema.org Structured Data (WebApplication + FAQPage) -->
+    <script id="kiloradar-jsonld" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://www.kiloradar.com/#webapp",
+            "name": "KiloRadar",
+            "headline": "KiloRadar — Unit Price Calculator, Price per Kilo/Ounce & Shrinkflation Tracker",
+            "description": "Calculate true grocery unit prices (/kg, /l, /oz, /lb), uncover hidden shrinkflation, and compare supermarket baskets across 10 markets.",
+            "url": "https://www.kiloradar.com/",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "All",
+            "isAccessibleForFree": true,
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "KM TECH LABS",
+              "url": "https://www.kiloradar.com/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.kiloradar.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does the Unit Price Calculator find the real price per kilo or ounce?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "KiloRadar automatically converts every package weight and volume (g, kg, ml, l, oz, lb, fl oz, and multipacks) into a standardized unit price so you can compare any two items fairly in seconds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is shrinkflation and how does the Shrinkflation Tracker work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shrinkflation happens when a manufacturer reduces package size while keeping the retail price the same or higher. KiloRadar computes the real unit-price surge with ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-[#070B12] text-slate-100 antialiased">
     <div id="root"></div>

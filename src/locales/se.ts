@@ -2,21 +2,21 @@ import type { CountryLocaleConfig } from './types';
 
 export const SE_LOCALE: CountryLocaleConfig = {
   code: 'se',
-  path: '/se',
+  path: '/sv/',
   hreflang: 'sv-SE',
-  htmlLang: 'sv',
+  htmlLang: 'sv-SE',
   flag: '🇸🇪',
   countryName: 'Sverige',
-  selectorLabel: '🇸🇪 Sverige (SE / SEK)',
+  selectorLabel: '🇸🇪 Sverige (SE / SEK kr)',
   currencyCode: 'SEK',
   currencySymbol: 'kr',
   currencyPrefix: false,
   numberLocale: 'sv-SE',
-  seoTitle: 'KiloRadar Sverige — Se vad du faktiskt betalar per kilo & spara på matkontot (SEK)',
+  seoTitle: 'KiloRadar Sverige — Jämförpris, Kilopris kalkylator & Krympflation i matbutiken (SEK)',
   seoDescription:
-    'Känns det som att favoritvarorna i skafferiet tar slut lite snabbare nuförtiden? KiloRadar visar på ett ögonblick vad du faktiskt betalar per kilo och vilken matbutik som är billigast.',
+    'Känns det som att favoritvarorna i skafferiet tar slut snabbare? Räkna ut verkligt jämförpris och kilopris, avslöja krympflation och hitta billigaste matbutiken med KiloRadar.',
   smartBannerQuestion: 'Vill du se svenska matpriser och butikskedjor i kronor (SEK)?',
-  smartBannerCta: 'Byt till Sverige (kiloradar.com/se)',
+  smartBannerCta: 'Byt till Sverige (kiloradar.com/sv/)',
   ui: {
     allCategoriesLabel: 'Alla varor',
     badgeAlgorithmic: '100% Oberoende & Reklamfri',

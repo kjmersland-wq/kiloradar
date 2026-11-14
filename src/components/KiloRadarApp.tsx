@@ -32,6 +32,10 @@ import {
   Flag,
   Clock,
   Send,
+  Share2,
+  Link2,
+  Check,
+  HelpCircle,
 } from 'lucide-react';
 import {
   ProductItem,
@@ -52,6 +56,12 @@ import {
   CountryRouteCode,
   detectSuggestedLocaleFromBrowser,
 } from '../locales';
+import {
+  SEO_METADATA_BY_LOCALE,
+  HREFLANG_LINKS,
+  SITE_BASE_URL,
+  buildJsonLdGraph,
+} from '../utils/seoData';
 
 interface LiveOffProduct {
   code: string;
@@ -136,6 +146,56 @@ const REALTIME_UI_BY_LOCALE: Record<CountryRouteCode, RealtimeUiStrings> = {
     liveCompareOldWeightLabel: 'Old weight:',
     loadIntoSimulatorBtn: 'Load in simulator',
   },
+  us: {
+    scanWithCameraBtn: 'Scan with camera',
+    stopCameraBtn: 'Close camera',
+    cameraFallbackNotice:
+      'Your browser does not support native camera barcode scanning (BarcodeDetector) — enter the UPC/EAN code below:',
+    cameraModalTitle: 'Point your camera at the product UPC / barcode',
+    cameraManualPlaceholder: 'Or type UPC/EAN barcode (e.g. 0028400516464)...',
+    nightlySyncStatus: (date) =>
+      `US package weights (oz, lb, fl oz) & prices monitored nightly (03:00 UTC) · Last synced: ${date}`,
+    reportShrunkBtn: 'Report shrunk item',
+    reportModalTitle: 'Spotted a package that quietly lost ounces?',
+    reportModalSubtitle:
+      'Share it in 10 seconds — your tip helps fellow US shoppers see the true unit price per ounce or pound.',
+    reportEanLabel: 'UPC / Barcode (optional)',
+    reportNameLabel: 'Product name & brand',
+    reportOldWeightLabel: 'Previous size (e.g. 16 oz, 52 fl oz)',
+    reportNewWeightLabel: 'New size today (e.g. 14.5 oz, 46 fl oz)',
+    reportSubmitBtn: 'Submit report',
+    reportEmailFallbackBtn: 'Send as pre-filled email',
+    reportSuccessMsg: 'Thank you! The item has been added to your radar and queued for review.',
+    liveSearchResultsTitle: 'Live Open Food Facts matches (with interactive unit-price calculator):',
+    liveInteractivePriceLabel: 'Store price ($):',
+    liveCompareOldWeightLabel: 'Old weight:',
+    loadIntoSimulatorBtn: 'Load in simulator',
+  },
+  uk: {
+    scanWithCameraBtn: 'Scan with camera',
+    stopCameraBtn: 'Close camera',
+    cameraFallbackNotice:
+      'Your browser does not support native camera barcode scanning (BarcodeDetector) — enter the EAN code below:',
+    cameraModalTitle: 'Point your camera at the product barcode',
+    cameraManualPlaceholder: 'Or type barcode (e.g. 7622210956163)...',
+    nightlySyncStatus: (date) =>
+      `UK pack weights & supermarket prices monitored automatically every night (03:00 UTC) · Last synced: ${date}`,
+    reportShrunkBtn: 'Report shrunk item',
+    reportModalTitle: 'Spotted a pack that quietly got smaller?',
+    reportModalSubtitle:
+      'Share it in 10 seconds — your tip helps British shoppers see the true price per kilo (£/kg).',
+    reportEanLabel: 'Barcode (EAN – optional)',
+    reportNameLabel: 'Product name & brand',
+    reportOldWeightLabel: 'Previous size (e.g. 200 g)',
+    reportNewWeightLabel: 'New size today (e.g. 180 g)',
+    reportSubmitBtn: 'Submit report',
+    reportEmailFallbackBtn: 'Send as pre-filled email',
+    reportSuccessMsg: 'Thank you! The item has been added to your radar and queued for review.',
+    liveSearchResultsTitle: 'Live Open Food Facts matches (with interactive £/kg calculator):',
+    liveInteractivePriceLabel: 'Shelf price (£):',
+    liveCompareOldWeightLabel: 'Old weight:',
+    loadIntoSimulatorBtn: 'Load in simulator',
+  },
   se: {
     scanWithCameraBtn: 'Skanna med kamera',
     stopCameraBtn: 'Stäng kamera',
@@ -211,12 +271,89 @@ const REALTIME_UI_BY_LOCALE: Record<CountryRouteCode, RealtimeUiStrings> = {
     liveCompareOldWeightLabel: 'Dawna waga:',
     loadIntoSimulatorBtn: 'Użyj w kalkulatorze',
   },
+  de: {
+    scanWithCameraBtn: 'Mit Kamera scannen',
+    stopCameraBtn: 'Kamera schließen',
+    cameraFallbackNotice:
+      'Ihr Browser unterstützt keinen direkten Kamera-Scan (BarcodeDetector) – geben Sie den EAN-Code unten ein:',
+    cameraModalTitle: 'Halten Sie den Barcode vor die Kamera',
+    cameraManualPlaceholder: 'Oder EAN-Code eingeben (z.B. 7622210100917)...',
+    nightlySyncStatus: (date) =>
+      `Grundpreise & Füllmengen werden jede Nacht automatisch geprüft (03:00 Uhr) · Stand: ${date}`,
+    reportShrunkBtn: 'Mogelpackung melden',
+    reportModalTitle: 'Haben Sie eine geschrumpfte Packung entdeckt?',
+    reportModalSubtitle:
+      'In 10 Sekunden melden – Ihr Hinweis hilft anderen Haushalten, den echten Kilopreis sofort zu erkennen.',
+    reportEanLabel: 'Barcode (EAN – optional)',
+    reportNameLabel: 'Produktname & Marke',
+    reportOldWeightLabel: 'Frühere Menge (z.B. 500 g)',
+    reportNewWeightLabel: 'Neue Menge heute (z.B. 400 g)',
+    reportSubmitBtn: 'Hinweis absenden',
+    reportEmailFallbackBtn: 'Als E-Mail senden',
+    reportSuccessMsg: 'Vielen Dank! Das Produkt wurde zum Radar hinzugefügt.',
+    liveSearchResultsTitle: 'Live-Treffer aus Open Food Facts (mit interaktivem Kilopreis Rechner):',
+    liveInteractivePriceLabel: 'Marktpreis (€):',
+    liveCompareOldWeightLabel: 'Vorher:',
+    loadIntoSimulatorBtn: 'Im Rechner öffnen',
+  },
+  fr: {
+    scanWithCameraBtn: 'Scanner avec la caméra',
+    stopCameraBtn: 'Fermer la caméra',
+    cameraFallbackNotice:
+      'Votre navigateur ne prend pas en charge le scan caméra direct (BarcodeDetector) — saisissez le code EAN ci-dessous :',
+    cameraModalTitle: 'Placez le code-barres devant la caméra',
+    cameraManualPlaceholder: 'Ou saisissez le code EAN (ex. 3228021170029)...',
+    nightlySyncStatus: (date) =>
+      `Prix au kilo & grammages vérifiés automatiquement chaque nuit (03h00) · Synchro : ${date}`,
+    reportShrunkBtn: 'Signaler une réduflation',
+    reportModalTitle: 'Vous avez repéré un emballage qui a rétréci ?',
+    reportModalSubtitle:
+      'Partagez-le en 10 secondes — votre signalement aide des milliers de consommateurs à voir le vrai prix au kilo.',
+    reportEanLabel: 'Code-barres (EAN – facultatif)',
+    reportNameLabel: 'Nom du produit & marque',
+    reportOldWeightLabel: 'Ancien poids (ex. 250 g)',
+    reportNewWeightLabel: 'Nouveau poids (ex. 200 g)',
+    reportSubmitBtn: 'Envoyer le signalement',
+    reportEmailFallbackBtn: 'Envoyer par e-mail pré-rempli',
+    reportSuccessMsg: 'Merci ! Le produit a été ajouté au radar et transmis pour vérification.',
+    liveSearchResultsTitle: 'Résultats en direct Open Food Facts (avec calculateur prix au kilo) :',
+    liveInteractivePriceLabel: 'Prix magasin (€) :',
+    liveCompareOldWeightLabel: 'Ancien poids :',
+    loadIntoSimulatorBtn: 'Charger dans le calculateur',
+  },
+  es: {
+    scanWithCameraBtn: 'Escanear con cámara',
+    stopCameraBtn: 'Cerrar cámara',
+    cameraFallbackNotice:
+      'Tu navegador no admite el escaneo directo por cámara (BarcodeDetector) — introduce el código EAN abajo:',
+    cameraModalTitle: 'Apunta la cámara al código de barras del producto',
+    cameraManualPlaceholder: 'O escribe el código EAN (ej. 8410100012001)...',
+    nightlySyncStatus: (date) =>
+      `Precios por kilo y pesos actualizados automáticamente cada noche (03:00) · Sincronizado: ${date}`,
+    reportShrunkBtn: 'Reportar reduflación',
+    reportModalTitle: '¿Has visto un envase que ahora trae menos cantidad?',
+    reportModalSubtitle:
+      'Avísanos en 10 segundos — tu aportación ayuda a miles de familias a ver el verdadero precio por kilo.',
+    reportEanLabel: 'Código de barras (EAN – opcional)',
+    reportNameLabel: 'Producto y marca',
+    reportOldWeightLabel: 'Cantidad anterior (ej. 250 g)',
+    reportNewWeightLabel: 'Cantidad actual (ej. 200 g)',
+    reportSubmitBtn: 'Enviar aviso',
+    reportEmailFallbackBtn: 'Enviar como correo pre-rellenado',
+    reportSuccessMsg: '¡Muchas gracias! El producto se ha añadido al radar.',
+    liveSearchResultsTitle: 'Resultados en vivo de Open Food Facts (con calculadora de precio por kg):',
+    liveInteractivePriceLabel: 'Precio tienda (€):',
+    liveCompareOldWeightLabel: 'Peso anterior:',
+    loadIntoSimulatorBtn: 'Usar en la calculadora',
+  },
 };
 
 function extractValidMeasureString(rawQuantity?: string): string {
   if (!rawQuantity) return '200 g';
   const cleaned = rawQuantity.replace(',', '.');
-  const match = cleaned.match(/(\d+(?:\.\d+)?\s*(?:g|kg|hg|ml|cl|dl|l|stk))/i);
+  const match = cleaned.match(
+    /(\d+(?:\.\d+)?\s*(?:fl\.?\s*oz|oz|lb|lbs|g|kg|hg|ml|cl|dl|l|stk))/i
+  );
   if (match) {
     try {
       parseMeasure(match[1]);
@@ -684,6 +821,121 @@ function ProductAvatar({ product }: { product: ProductItem }) {
   );
 }
 
+/**
+ * Responsive Social Share Row (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn)
+ */
+function ShareButtonsBar({
+  shareUrl,
+  shareTitle,
+  shareText,
+  copyLabel,
+  copiedLabel,
+  barLabel,
+}: {
+  shareUrl: string;
+  shareTitle: string;
+  shareText: string;
+  copyLabel: string;
+  copiedLabel: string;
+  barLabel: string;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    }
+  };
+
+  const encodedUrl = encodeURIComponent(shareUrl);
+  const encodedText = encodeURIComponent(`${shareText} ${shareUrl}`);
+  const encodedTitleOnly = encodeURIComponent(shareTitle);
+  const encodedTweet = encodeURIComponent(shareText);
+
+  return (
+    <div
+      data-testid="social-share-bar"
+      className="rounded-2xl bg-slate-900/90 border border-slate-800/90 px-4 py-3.5 shadow-xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
+    >
+      <div className="flex items-center gap-2 text-xs font-semibold text-slate-300">
+        <Share2 className="w-4 h-4 text-emerald-400 shrink-0" />
+        <span>{barLabel}</span>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          onClick={handleCopyLink}
+          data-testid="share-copy-link-btn"
+          className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 border transition cursor-pointer ${
+            copied
+              ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-lg shadow-emerald-500/20'
+              : 'bg-slate-950 hover:bg-slate-800 text-emerald-300 border-emerald-500/40'
+          }`}
+        >
+          {copied ? <Check className="w-3.5 h-3.5" /> : <Link2 className="w-3.5 h-3.5" />}
+          <span>{copied ? copiedLabel : copyLabel}</span>
+        </button>
+
+        <a
+          href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTweet}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on X (Twitter)"
+          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-slate-200 hover:text-white transition"
+        >
+          𝕏 / Twitter
+        </a>
+
+        <a
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on Facebook"
+          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-slate-200 hover:text-white transition"
+        >
+          Facebook
+        </a>
+
+        <a
+          href={`https://api.whatsapp.com/send?text=${encodedText}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on WhatsApp"
+          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-emerald-300 hover:text-emerald-200 transition"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href={`https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitleOnly}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on Reddit"
+          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-amber-300 hover:text-amber-200 transition"
+        >
+          Reddit
+        </a>
+
+        <a
+          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Share on LinkedIn"
+          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-sky-300 hover:text-sky-200 transition"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export interface KiloRadarAppProps {
   initialCountryCode?: CountryRouteCode;
   onNavigateCountry?: (code: CountryRouteCode, targetPath: string) => void;
@@ -702,15 +954,21 @@ export default function KiloRadarApp({
   const localeConfig = ALL_COUNTRY_LOCALES[countryCode] || ALL_COUNTRY_LOCALES.en;
   const dict = localeConfig.ui;
   const rtUi = REALTIME_UI_BY_LOCALE[countryCode] || REALTIME_UI_BY_LOCALE.en;
+  const seoMeta = SEO_METADATA_BY_LOCALE[countryCode] || SEO_METADATA_BY_LOCALE.en;
 
   // Products state initialized & updated per country (with automatic /api/products?lang=[country] sync)
   const [productsByCountry, setProductsByCountry] = useState<Record<CountryRouteCode, ProductItem[]>>(
     () => ({
       en: ALL_COUNTRY_LOCALES.en.products,
+      us: ALL_COUNTRY_LOCALES.us.products,
+      uk: ALL_COUNTRY_LOCALES.uk.products,
       no: ALL_COUNTRY_LOCALES.no.products,
       se: ALL_COUNTRY_LOCALES.se.products,
       dk: ALL_COUNTRY_LOCALES.dk.products,
       pl: ALL_COUNTRY_LOCALES.pl.products,
+      de: ALL_COUNTRY_LOCALES.de.products,
+      fr: ALL_COUNTRY_LOCALES.fr.products,
+      es: ALL_COUNTRY_LOCALES.es.products,
     })
   );
 
@@ -762,30 +1020,36 @@ export default function KiloRadarApp({
     }
   }, [countryCode]);
 
-  // Dynamic SEO <head> management: title, meta description, and hreflang links
+  // Dynamic SEO <head> management: title, meta description, keywords, canonical, hreflang, Open Graph, Twitter Cards & JSON-LD
   useEffect(() => {
     if (typeof document === 'undefined') return;
     document.documentElement.lang = localeConfig.htmlLang;
     document.title = localeConfig.seoTitle;
 
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
+    const upsertMeta = (attrName: 'name' | 'property', attrValue: string, content: string) => {
+      let el = document.querySelector(`meta[${attrName}="${attrValue}"]`) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attrName, attrValue);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', content);
+    };
+
+    upsertMeta('name', 'description', localeConfig.seoDescription);
+    upsertMeta('name', 'keywords', seoMeta.keywords);
+
+    // Self-referencing canonical link
+    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
     }
-    metaDesc.setAttribute('content', localeConfig.seoDescription);
+    canonicalLink.setAttribute('href', seoMeta.canonicalUrl);
 
-    const hreflangDefs = [
-      { hreflang: 'x-default', href: 'https://kiloradar.com/' },
-      { hreflang: 'en', href: 'https://kiloradar.com/' },
-      { hreflang: 'nb-NO', href: 'https://kiloradar.com/no' },
-      { hreflang: 'sv-SE', href: 'https://kiloradar.com/se' },
-      { hreflang: 'da-DK', href: 'https://kiloradar.com/dk' },
-      { hreflang: 'pl-PL', href: 'https://kiloradar.com/pl' },
-    ];
-
-    hreflangDefs.forEach(({ hreflang, href }) => {
+    // Complete hreflang links for all 10 routes + x-default
+    HREFLANG_LINKS.forEach(({ hreflang, href }) => {
       let link = document.querySelector(
         `link[rel="alternate"][hreflang="${hreflang}"]`
       ) as HTMLLinkElement | null;
@@ -797,7 +1061,36 @@ export default function KiloRadarApp({
       }
       link.setAttribute('href', href);
     });
-  }, [localeConfig]);
+
+    // Open Graph & Twitter Card tags
+    upsertMeta('property', 'og:title', localeConfig.seoTitle);
+    upsertMeta('property', 'og:description', localeConfig.seoDescription);
+    upsertMeta('property', 'og:url', seoMeta.canonicalUrl);
+    upsertMeta('property', 'og:locale', seoMeta.ogLocale);
+    upsertMeta('property', 'og:image', `${SITE_BASE_URL}/og-image.svg`);
+    upsertMeta('name', 'twitter:card', 'summary_large_image');
+    upsertMeta('name', 'twitter:title', localeConfig.seoTitle);
+    upsertMeta('name', 'twitter:description', localeConfig.seoDescription);
+    upsertMeta('name', 'twitter:url', seoMeta.canonicalUrl);
+    upsertMeta('name', 'twitter:image', `${SITE_BASE_URL}/og-image.svg`);
+
+    // Schema.org Structured Data (WebApplication + FAQPage JSON-LD)
+    const jsonLdData = buildJsonLdGraph(
+      countryCode,
+      localeConfig.seoTitle,
+      localeConfig.seoDescription,
+      localeConfig.currencyCode,
+      localeConfig.htmlLang
+    );
+    let scriptEl = document.getElementById('kiloradar-jsonld') as HTMLScriptElement | null;
+    if (!scriptEl) {
+      scriptEl = document.createElement('script');
+      scriptEl.id = 'kiloradar-jsonld';
+      scriptEl.type = 'application/ld+json';
+      document.head.appendChild(scriptEl);
+    }
+    scriptEl.textContent = JSON.stringify(jsonLdData);
+  }, [countryCode, localeConfig, seoMeta]);
 
   // Collapsible details per product card (compact view by default)
   const [expandedCards, setExpandedCards] = useState<Record<string, boolean>>({});
@@ -836,7 +1129,7 @@ export default function KiloRadarApp({
     setLiveStatusMsg(null);
     if (first) {
       setActivePresetId(first.id);
-      setSimName(first.name.replace(/\s+\d+(?:[.,]\d+)?\s*(g|kg|ml|l|stk)$/i, ''));
+      setSimName(first.name.replace(/\s+\d+(?:[.,]\d+)?\s*(g|kg|ml|l|stk|oz|lb|fl\s*oz)$/i, ''));
       setSimCategory(first.category);
       setSimOldMeasure(first.oldMeasure);
       setSimNewMeasure(first.newMeasure);
@@ -907,7 +1200,7 @@ export default function KiloRadarApp({
 
   const handleSelectPreset = (preset: ProductItem) => {
     setActivePresetId(preset.id);
-    setSimName(preset.name.replace(/\s+\d+(?:[.,]\d+)?\s*(g|kg|ml|l|stk)$/i, ''));
+    setSimName(preset.name.replace(/\s+\d+(?:[.,]\d+)?\s*(g|kg|ml|l|stk|oz|lb|fl\s*oz)$/i, ''));
     setSimCategory(preset.category);
     setSimOldMeasure(preset.oldMeasure);
     setSimNewMeasure(preset.newMeasure);
@@ -941,10 +1234,15 @@ export default function KiloRadarApp({
 
     const countryTagMap: Record<CountryRouteCode, string> = {
       en: 'world',
+      us: 'united-states',
+      uk: 'united-kingdom',
       no: 'norway',
       se: 'sweden',
       dk: 'denmark',
       pl: 'poland',
+      de: 'germany',
+      fr: 'france',
+      es: 'spain',
     };
 
     try {
@@ -1350,9 +1648,9 @@ export default function KiloRadarApp({
                 </div>
                 <div>
                   <div className="flex items-center gap-2.5">
-                    <h1 className="text-2xl font-extrabold tracking-tight text-white">
+                    <div className="text-2xl font-extrabold tracking-tight text-white">
                       Kilo<span className="text-[#10B981]">Radar</span>
-                    </h1>
+                    </div>
                     <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-slate-900 text-slate-400 border border-slate-800">
                       kiloradar.com{localeConfig.path === '/' ? '' : localeConfig.path}
                     </span>
@@ -1435,12 +1733,15 @@ export default function KiloRadarApp({
                   {dict.heroBadge}
                 </div>
 
-                <h2 className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+                <h1 className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+                  <span className="block text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1.5">
+                    {seoMeta.h1KeywordKicker}
+                  </span>
                   {dict.heroTitlePart1}{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-amber-400">
                     {dict.heroTitleHighlight}
                   </span>
-                </h2>
+                </h1>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                   {dict.heroDescription}
@@ -1541,7 +1842,7 @@ export default function KiloRadarApp({
                       <ScanBarcode className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-white">{dict.simulatorTitle}</h3>
+                      <h2 className="text-lg font-bold text-white">{dict.simulatorTitle}</h2>
                       <p className="text-xs text-slate-400">{dict.simulatorSubtitle}</p>
                     </div>
                   </div>
@@ -1910,6 +2211,16 @@ export default function KiloRadarApp({
               )}
             </div>
           </section>
+
+          {/* SOCIAL SHARE ROW (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn) */}
+          <ShareButtonsBar
+            shareUrl={seoMeta.canonicalUrl}
+            shareTitle={localeConfig.seoTitle}
+            shareText={seoMeta.share.shareText}
+            copyLabel={seoMeta.share.copyLink}
+            copiedLabel={seoMeta.share.copiedConfirm}
+            barLabel={seoMeta.share.label}
+          />
 
           {/* SECTION: CHEAPEST SUPERMARKET – AVERAGE CUSTOMER BASKET */}
           <section className="rounded-2xl bg-slate-900/90 border border-emerald-500/30 p-6 shadow-2xl space-y-5">
@@ -2444,6 +2755,41 @@ export default function KiloRadarApp({
                   </article>
                 );
               })}
+            </div>
+          </section>
+
+          {/* SEMANTIC FAQ SECTION (Matches Schema.org FAQPage JSON-LD) */}
+          <section
+            id="faq"
+            aria-labelledby="faq-heading"
+            className="rounded-2xl bg-slate-900/85 border border-slate-800/90 p-6 sm:p-8 shadow-2xl space-y-5"
+          >
+            <div className="space-y-1.5 border-b border-slate-800 pb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
+                <HelpCircle className="w-3.5 h-3.5 text-emerald-400" />
+                <span>FAQ • {localeConfig.countryName}</span>
+              </div>
+              <h2 id="faq-heading" className="text-xl sm:text-2xl font-extrabold text-white">
+                {seoMeta.faqHeading}
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-400 max-w-3xl">
+                {seoMeta.faqSubheading}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {seoMeta.faqs.map((faq) => (
+                <article
+                  key={faq.question}
+                  className="p-4 rounded-xl bg-slate-950/85 border border-slate-800/90 space-y-2"
+                >
+                  <h3 className="text-sm font-bold text-white flex items-start gap-2">
+                    <span className="text-emerald-400 font-extrabold shrink-0">Q.</span>
+                    <span>{faq.question}</span>
+                  </h3>
+                  <p className="text-xs text-slate-300 leading-relaxed pl-5">{faq.answer}</p>
+                </article>
+              ))}
             </div>
           </section>
 

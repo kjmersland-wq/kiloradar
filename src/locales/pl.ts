@@ -2,21 +2,21 @@ import type { CountryLocaleConfig } from './types';
 
 export const PL_LOCALE: CountryLocaleConfig = {
   code: 'pl',
-  path: '/pl',
+  path: '/pl/',
   hreflang: 'pl-PL',
-  htmlLang: 'pl',
+  htmlLang: 'pl-PL',
   flag: '🇵🇱',
   countryName: 'Polska',
-  selectorLabel: '🇵🇱 Polska (PL / PLN)',
+  selectorLabel: '🇵🇱 Polska (PL / PLN zł)',
   currencyCode: 'PLN',
   currencySymbol: 'zł',
   currencyPrefix: false,
   numberLocale: 'pl-PL',
-  seoTitle: 'KiloRadar Polska — Sprawdź prawdziwą cenę za kilogram i zadbaj o domowy budżet (PLN)',
+  seoTitle: 'KiloRadar Polska — Kalkulator ceny za kilogram, Cena jednostkowa & Shrinkflacja / Downsizing (PLN)',
   seoDescription:
-    'Masz czasem wrażenie, że Twoje ulubione produkty kończą się szybciej niż kiedyś? KiloRadar w kilka sekund pokazuje prawdziwą cenę za kilogram i najtańszy sklep.',
+    'Masz wrażenie, że Twoje ulubione produkty kończą się szybciej? Oblicz realną cenę za kilogram i cenę jednostkową, wykryj downsizing i sprawdź najtańszy sklep z KiloRadar.',
   smartBannerQuestion: 'Chcesz zobaczyć polskie ceny produktów i porównanie sklepów w złotówkach (PLN)?',
-  smartBannerCta: 'Przejdź do Polski (kiloradar.com/pl)',
+  smartBannerCta: 'Przejdź do Polski (kiloradar.com/pl/)',
   ui: {
     allCategoriesLabel: 'Wszystkie produkty',
     badgeAlgorithmic: '100% Niezależny & Bez Reklam',

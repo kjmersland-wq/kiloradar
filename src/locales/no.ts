@@ -3,21 +3,21 @@ import { MOCK_SHRINK_PRODUCTS } from '../utils/mockProducts';
 
 export const NO_LOCALE: CountryLocaleConfig = {
   code: 'no',
-  path: '/no',
+  path: '/no/',
   hreflang: 'nb-NO',
-  htmlLang: 'nb',
+  htmlLang: 'nb-NO',
   flag: '🇳🇴',
   countryName: 'Norge',
-  selectorLabel: '🇳🇴 Norge (NO / NOK)',
+  selectorLabel: '🇳🇴 Norge (NO / NOK kr)',
   currencyCode: 'NOK',
   currencySymbol: 'kr',
   currencyPrefix: false,
   numberLocale: 'nb-NO',
-  seoTitle: 'KiloRadar Norge — Se hva du faktisk betaler per kilo og spar på matbudsjettet (NOK)',
+  seoTitle: 'KiloRadar Norge — Kilopriskalkulator, Enhetspris & Krympflasjon i matbutikken (NOK)',
   seoDescription:
-    'Føles det som om favorittvarene dine varer litt kortere enn før? Med KiloRadar ser du på sekunder hva du faktisk betaler per kilo og hvilken matbutikk som er billigst.',
+    'Føles det som om favorittvarene dine varer litt kortere enn før? Beregn reell kilopris og enhetspris, avslør krympflasjon og finn billigste matbutikk i Norge med KiloRadar.',
   smartBannerQuestion: 'Har du lyst til å se norske dagligvarepriser og butikker i kroner (NOK)?',
-  smartBannerCta: 'Bytt til Norge (kiloradar.com/no)',
+  smartBannerCta: 'Bytt til Norge (kiloradar.com/no/)',
   ui: {
     allCategoriesLabel: 'Alle varer',
     badgeAlgorithmic: '100% Uavhengig & Reklamefri',
