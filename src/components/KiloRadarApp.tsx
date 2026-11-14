@@ -976,9 +976,47 @@ export default function KiloRadarApp({
     new Date().toISOString().slice(0, 10)
   );
 
-  // Fetch updated products from `/api/products?lang=[country]` and fall back gracefully to local configs
+  // Fetch updated products from static CDN JSON `/data/[country].json` (Python pipeline)
+  // with fallback to `/api/products` and `src/locales/` configs
   useEffect(() => {
     let active = true;
+    const staticRegion = countryCode === 'en' ? 'global' : countryCode;
+
+    const mergeSyncedProducts = (
+      baseProducts: ProductItem[],
+      incomingProducts: ProductItem[]
+    ): ProductItem[] => {
+      const byId = new Map<string, ProductItem>();
+      for (const item of baseProducts) {
+        byId.set(item.id, item);
+      }
+      for (const incoming of incomingProducts) {
+        if (!incoming || !incoming.id) continue;
+        const existing = byId.get(incoming.id);
+        byId.set(incoming.id, existing ? { ...existing, ...incoming } : incoming);
+      }
+      return Array.from(byId.values());
+    };
+
+    fetch(`/data/${staticRegion}.json`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!active || !data) return;
+        if (data.lastSynced) setLastSyncedDate(data.lastSynced);
+        if (Array.isArray(data.products) && data.products.length > 0) {
+          setProductsByCountry((prev) => ({
+            ...prev,
+            [countryCode]: mergeSyncedProducts(
+              ALL_COUNTRY_LOCALES[countryCode]?.products || prev[countryCode] || [],
+              data.products
+            ),
+          }));
+        }
+      })
+      .catch(() => {
+        // Fallback to Cloudflare Functions D1 endpoint or src/locales/ config
+      });
+
     fetch(`/api/products?lang=${countryCode}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
@@ -987,13 +1025,17 @@ export default function KiloRadarApp({
         if (Array.isArray(data.products) && data.products.length > 0 && data.source === 'cloudflare-d1') {
           setProductsByCountry((prev) => ({
             ...prev,
-            [countryCode]: data.products,
+            [countryCode]: mergeSyncedProducts(
+              prev[countryCode] || ALL_COUNTRY_LOCALES[countryCode]?.products || [],
+              data.products
+            ),
           }));
         }
       })
       .catch(() => {
         // Automatic fallback to local src/locales/ config
       });
+
     return () => {
       active = false;
     };

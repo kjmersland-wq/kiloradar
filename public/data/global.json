@@ -1,0 +1,198 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "global",
+  "currency": "EUR",
+  "lastSynced": "2026-11-14",
+  "count": 4,
+  "products": [
+    {
+      "id": "en-clean-ariel-gel",
+      "name": "Ariel Color Liquid Detergent 850 ml",
+      "previousName": "Ariel Color Liquid Detergent 1100 ml",
+      "brand": "Ariel",
+      "category": "Home & Laundry",
+      "store": "Carrefour / Amazon Fresh",
+      "barcode": "8001090981127",
+      "oldMeasure": "1100 ml",
+      "newMeasure": "850 ml",
+      "oldPrice": 6.49,
+      "newPrice": 6.99,
+      "detectedDate": "2026-10-18",
+      "isFeaturedPreset": true,
+      "presetLabel": "🧺 Laundry Liquid (-23% bottle)",
+      "avgWeeklyQuantity": 0.35,
+      "storePrices": [
+        {
+          "store": "Lidl",
+          "price": 6.49,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Aldi",
+          "price": 6.59,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Carrefour",
+          "price": 6.99,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Tesco",
+          "price": 7.29,
+          "lastScanned": "Week 46"
+        }
+      ],
+      "currency": "EUR",
+      "oldUnitPrice": 5.9,
+      "newUnitPrice": 8.22,
+      "baseUnit": "l",
+      "shrinkIndex": 39.38,
+      "amountChangePct": -22.73,
+      "priceChangePct": 7.7
+    },
+    {
+      "id": "en-coffee-lavazza",
+      "name": "Lavazza Qualità Rossa Ground Coffee 200 g",
+      "previousName": "Lavazza Qualità Rossa Ground Coffee 250 g",
+      "brand": "Lavazza",
+      "category": "Coffee & Treats",
+      "store": "Carrefour / Tesco",
+      "barcode": "8000070012004",
+      "oldMeasure": "250 g",
+      "newMeasure": "200 g",
+      "oldPrice": 3.99,
+      "newPrice": 4.29,
+      "detectedDate": "2026-10-14",
+      "isFeaturedPreset": true,
+      "presetLabel": "☕ Morning Coffee (-20% in pack)",
+      "avgWeeklyQuantity": 0.5,
+      "storePrices": [
+        {
+          "store": "Aldi",
+          "price": 3.89,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Lidl",
+          "price": 3.99,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Carrefour",
+          "price": 4.29,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Tesco",
+          "price": 4.49,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Amazon Fresh",
+          "price": 4.69,
+          "lastScanned": "Week 46"
+        }
+      ],
+      "currency": "EUR",
+      "oldUnitPrice": 15.96,
+      "newUnitPrice": 21.45,
+      "baseUnit": "kg",
+      "shrinkIndex": 34.4,
+      "amountChangePct": -20.0,
+      "priceChangePct": 7.52
+    },
+    {
+      "id": "en-dairy-lurpak",
+      "name": "Lurpak Spreadable Slightly Salted 400 g",
+      "previousName": "Lurpak Spreadable Slightly Salted 500 g",
+      "brand": "Lurpak",
+      "category": "Dairy & Everyday",
+      "store": "Tesco / Carrefour",
+      "barcode": "5740900404125",
+      "oldMeasure": "500 g",
+      "newMeasure": "400 g",
+      "oldPrice": 4.49,
+      "newPrice": 4.75,
+      "detectedDate": "2026-10-09",
+      "isFeaturedPreset": true,
+      "presetLabel": "🧀 Spreadable Butter (-20% tub)",
+      "avgWeeklyQuantity": 0.5,
+      "storePrices": [
+        {
+          "store": "Aldi",
+          "price": 4.39,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Lidl",
+          "price": 4.49,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Tesco",
+          "price": 4.75,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Carrefour",
+          "price": 4.89,
+          "lastScanned": "Week 46"
+        }
+      ],
+      "currency": "EUR",
+      "oldUnitPrice": 8.98,
+      "newUnitPrice": 11.88,
+      "baseUnit": "kg",
+      "shrinkIndex": 32.24,
+      "amountChangePct": -20.0,
+      "priceChangePct": 5.79
+    },
+    {
+      "id": "en-choc-milka-alpine",
+      "name": "Milka Alpine Milk Chocolate 90 g",
+      "previousName": "Milka Alpine Milk Chocolate 100 g",
+      "brand": "Milka",
+      "category": "Coffee & Treats",
+      "store": "Lidl / Carrefour",
+      "barcode": "7622210100917",
+      "oldMeasure": "100 g",
+      "newMeasure": "90 g",
+      "oldPrice": 1.29,
+      "newPrice": 1.49,
+      "detectedDate": "2026-10-22",
+      "isFeaturedPreset": true,
+      "presetLabel": "🍫 Milk Chocolate (-10% bar)",
+      "avgWeeklyQuantity": 1.0,
+      "storePrices": [
+        {
+          "store": "Aldi",
+          "price": 1.29,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Lidl",
+          "price": 1.35,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Carrefour",
+          "price": 1.49,
+          "lastScanned": "Week 46"
+        },
+        {
+          "store": "Tesco",
+          "price": 1.55,
+          "lastScanned": "Week 46"
+        }
+      ],
+      "currency": "EUR",
+      "oldUnitPrice": 12.9,
+      "newUnitPrice": 16.56,
+      "baseUnit": "kg",
+      "shrinkIndex": 28.34,
+      "amountChangePct": -10.0,
+      "priceChangePct": 15.5
+    }
+  ]
+}

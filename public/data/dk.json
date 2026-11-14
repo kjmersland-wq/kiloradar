@@ -1,0 +1,96 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "dk",
+  "currency": "DKK",
+  "lastSynced": "2026-11-14",
+  "count": 2,
+  "products": [
+    {
+      "id": "dk-coffee-merrild",
+      "name": "Merrild Mellemristet Nr. 103 400 g",
+      "previousName": "Merrild Mellemristet Nr. 103 500 g",
+      "brand": "Merrild",
+      "category": "Kaffe & Hygge",
+      "store": "Netto / Føtex / Bilka",
+      "barcode": "8000070038011",
+      "oldMeasure": "500 g",
+      "newMeasure": "400 g",
+      "oldPrice": 46.0,
+      "newPrice": 49.95,
+      "detectedDate": "2026-10-16",
+      "isFeaturedPreset": true,
+      "presetLabel": "☕ Merrild Kaffe (500 g → 400 g)",
+      "avgWeeklyQuantity": 0.5,
+      "storePrices": [
+        {
+          "store": "Rema 1000",
+          "price": 45.95,
+          "lastScanned": "Uge 46"
+        },
+        {
+          "store": "Netto",
+          "price": 46.95,
+          "lastScanned": "Uge 46"
+        },
+        {
+          "store": "Lidl",
+          "price": 46.95,
+          "lastScanned": "Uge 46"
+        },
+        {
+          "store": "Føtex",
+          "price": 49.95,
+          "lastScanned": "Uge 46"
+        }
+      ],
+      "currency": "DKK",
+      "oldUnitPrice": 92.0,
+      "newUnitPrice": 124.88,
+      "baseUnit": "kg",
+      "shrinkIndex": 35.73,
+      "amountChangePct": -20.0,
+      "priceChangePct": 8.59
+    },
+    {
+      "id": "dk-dairy-kaergaarden",
+      "name": "Arla Kærgården Original 160 g",
+      "previousName": "Arla Kærgården Original 200 g",
+      "brand": "Arla",
+      "category": "Mejeri & Pålæg",
+      "store": "Netto / Rema 1000",
+      "barcode": "5711953064227",
+      "oldMeasure": "200 g",
+      "newMeasure": "160 g",
+      "oldPrice": 24.95,
+      "newPrice": 26.95,
+      "detectedDate": "2026-10-21",
+      "isFeaturedPreset": true,
+      "presetLabel": "🧈 Kærgården (200 g → 160 g)",
+      "avgWeeklyQuantity": 0.7,
+      "storePrices": [
+        {
+          "store": "Rema 1000",
+          "price": 24.95,
+          "lastScanned": "Uge 46"
+        },
+        {
+          "store": "Netto",
+          "price": 25.5,
+          "lastScanned": "Uge 46"
+        },
+        {
+          "store": "Bilka",
+          "price": 26.5,
+          "lastScanned": "Uge 46"
+        }
+      ],
+      "currency": "DKK",
+      "oldUnitPrice": 124.75,
+      "newUnitPrice": 168.44,
+      "baseUnit": "kg",
+      "shrinkIndex": 35.02,
+      "amountChangePct": -20.0,
+      "priceChangePct": 8.02
+    }
+  ]
+}

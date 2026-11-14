@@ -1,0 +1,45 @@
+name: Nightly KiloRadar Data Sync (Open Food Facts)
+
+on:
+  schedule:
+    # Runs automatically every night at 03:00 UTC (0 kr in runtime cost)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-grocery-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'scripts/requirements.txt'
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run Algorithmic Pipeline Unit Tests (pytest)
+        run: pytest scripts/test_pipeline.py
+
+      - name: Execute Open Food Facts Sync & Shrinkflation Ranking
+        run: python scripts/sync_products.py
+
+      - name: Commit & Push updated static JSON feeds to main
+        run: |
+          git config user.name "KiloRadar Nightly Bot (KM TECH LABS)"
+          git config user.email "support@kiloradar.com"
+          git add public/data/*.json scripts/latest_sync.sql
+          if git diff --staged --quiet; then
+            echo "No package weight or price changes detected tonight."
+          else
+            git commit -m "chore(data): nightly Open Food Facts & shrinkflation sync ($(date -u +'%Y-%m-%d'))"
+            git push origin main
+          fi

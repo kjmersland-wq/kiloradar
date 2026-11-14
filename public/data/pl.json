@@ -1,0 +1,96 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "pl",
+  "currency": "PLN",
+  "lastSynced": "2026-11-14",
+  "count": 2,
+  "products": [
+    {
+      "id": "pl-dairy-mlekovita",
+      "name": "Mlekovita Masło Polskie Ekstra 170 g",
+      "previousName": "Mlekovita Masło Polskie Ekstra 200 g",
+      "brand": "Mlekovita",
+      "category": "Nabiał i Codzienne",
+      "store": "Biedronka / Dino",
+      "barcode": "5900512300115",
+      "oldMeasure": "200 g",
+      "newMeasure": "170 g",
+      "oldPrice": 6.49,
+      "newPrice": 6.99,
+      "detectedDate": "2026-10-22",
+      "isFeaturedPreset": true,
+      "presetLabel": "🧈 Masło Ekstra (200 g → 170 g)",
+      "avgWeeklyQuantity": 1.0,
+      "storePrices": [
+        {
+          "store": "Biedronka",
+          "price": 6.49,
+          "lastScanned": "Tydz. 46"
+        },
+        {
+          "store": "Lidl",
+          "price": 6.59,
+          "lastScanned": "Tydz. 46"
+        },
+        {
+          "store": "Dino",
+          "price": 6.79,
+          "lastScanned": "Tydz. 46"
+        }
+      ],
+      "currency": "PLN",
+      "oldUnitPrice": 32.45,
+      "newUnitPrice": 41.12,
+      "baseUnit": "kg",
+      "shrinkIndex": 26.71,
+      "amountChangePct": -15.0,
+      "priceChangePct": 7.7
+    },
+    {
+      "id": "pl-choc-wedel",
+      "name": "E.Wedel Ptasie Mleczko Waniliowe 340 g",
+      "previousName": "E.Wedel Ptasie Mleczko Waniliowe 380 g",
+      "brand": "E.Wedel",
+      "category": "Kawa i Słodycze",
+      "store": "Biedronka / Lidl / Auchan",
+      "barcode": "5900189000125",
+      "oldMeasure": "380 g",
+      "newMeasure": "340 g",
+      "oldPrice": 15.99,
+      "newPrice": 17.99,
+      "detectedDate": "2026-10-18",
+      "isFeaturedPreset": true,
+      "presetLabel": "🍬 Ptasie Mleczko (380 g → 340 g)",
+      "avgWeeklyQuantity": 0.5,
+      "storePrices": [
+        {
+          "store": "Biedronka",
+          "price": 16.49,
+          "lastScanned": "Tydz. 46"
+        },
+        {
+          "store": "Lidl",
+          "price": 16.99,
+          "lastScanned": "Tydz. 46"
+        },
+        {
+          "store": "Dino",
+          "price": 17.49,
+          "lastScanned": "Tydz. 46"
+        },
+        {
+          "store": "Auchan",
+          "price": 17.99,
+          "lastScanned": "Tydz. 46"
+        }
+      ],
+      "currency": "PLN",
+      "oldUnitPrice": 42.08,
+      "newUnitPrice": 52.91,
+      "baseUnit": "kg",
+      "shrinkIndex": 25.74,
+      "amountChangePct": -10.53,
+      "priceChangePct": 12.51
+    }
+  ]
+}
