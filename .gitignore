@@ -1,7 +1,8 @@
 node_modules
 dist
-.DS_Store
+.wrangler
 .env
 .env.*
-.wrangler
 *.local
+*.tsbuildinfo
+.DS_Store

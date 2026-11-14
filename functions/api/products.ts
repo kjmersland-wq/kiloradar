@@ -10,7 +10,7 @@ import type { CronEnv } from '../../src/worker/cronUpdater';
 
 interface PagesContext {
   request: Request;
-  env: CronEnv;
+  env?: Partial<CronEnv>;
 }
 
 interface DbProductJoinedRow {
@@ -34,33 +34,34 @@ export async function onRequestGet(context: PagesContext): Promise<Response> {
   const validLang: CountryRouteCode = ALL_COUNTRY_LOCALES[langParam] ? langParam : 'en';
   const fallbackConfig = ALL_COUNTRY_LOCALES[validLang];
 
-  // Try querying Cloudflare D1 if bound
-  if (context.env && context.env.DB) {
+  const db = context?.env?.DB;
+  if (db && typeof db.prepare === 'function') {
     try {
-      const { results } = await context.env.DB.prepare(
-        `SELECT
-           p.ean,
-           p.name,
-           p.brand,
-           p.category,
-           p.country_code,
-           p.image_url,
-           h1.weight_grams AS latest_weight,
-           h1.measure_unit AS latest_unit,
-           h1.price AS latest_price,
-           h1.recorded_at,
-           h2.weight_grams AS prev_weight,
-           h2.price AS prev_price
-         FROM products p
-         JOIN price_history h1 ON h1.id = (
-           SELECT id FROM price_history WHERE ean = p.ean ORDER BY recorded_at DESC LIMIT 1
-         )
-         LEFT JOIN price_history h2 ON h2.id = (
-           SELECT id FROM price_history WHERE ean = p.ean ORDER BY recorded_at DESC LIMIT 1 OFFSET 1
-         )
-         WHERE p.country_code = ?
-         LIMIT 50`
-      )
+      const { results } = await db
+        .prepare(
+          `SELECT
+             p.ean,
+             p.name,
+             p.brand,
+             p.category,
+             p.country_code,
+             p.image_url,
+             h1.weight_grams AS latest_weight,
+             h1.measure_unit AS latest_unit,
+             h1.price AS latest_price,
+             h1.recorded_at,
+             h2.weight_grams AS prev_weight,
+             h2.price AS prev_price
+           FROM products p
+           JOIN price_history h1 ON h1.id = (
+             SELECT id FROM price_history WHERE ean = p.ean ORDER BY recorded_at DESC LIMIT 1
+           )
+           LEFT JOIN price_history h2 ON h2.id = (
+             SELECT id FROM price_history WHERE ean = p.ean ORDER BY recorded_at DESC LIMIT 1 OFFSET 1
+           )
+           WHERE p.country_code = ?
+           LIMIT 50`
+        )
         .bind(validLang)
         .all<DbProductJoinedRow>();
 
@@ -79,7 +80,7 @@ export async function onRequestGet(context: PagesContext): Promise<Response> {
             newMeasure: `${row.latest_weight} ${row.latest_unit}`,
             oldPrice: oldP,
             newPrice: row.latest_price,
-            detectedDate: row.recorded_at.slice(0, 10),
+            detectedDate: (row.recorded_at || new Date().toISOString()).slice(0, 10),
             imageUrl: row.image_url || undefined,
           };
         });
@@ -94,14 +95,14 @@ export async function onRequestGet(context: PagesContext): Promise<Response> {
           {
             status: 200,
             headers: {
-              'Content-Type': 'application/json',
+              'Content-Type': 'application/json; charset=utf-8',
               'Cache-Control': 'public, max-age=300',
             },
           }
         );
       }
     } catch {
-      // Fall back to curated locale dataset if D1 tables aren't migrated yet
+      // Gracefully fall back to curated locale dataset if D1 is not bound or migrated yet
     }
   }
 
@@ -115,7 +116,8 @@ export async function onRequestGet(context: PagesContext): Promise<Response> {
     {
       status: 200,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; charset=utf-8',
+        'Cache-Control': 'public, max-age=60',
       },
     }
   );

@@ -1,20 +1,26 @@
-# KiloRadar (kiloradar.com) — Cloudflare Pages + Workers + D1 + Cron Configuration
+# KiloRadar (kiloradar.com) — Cloudflare Pages + Functions + D1 Configuration
 # Developed and operated by KM TECH LABS
 
 name = "kiloradar"
-compatibility_date = "2026-11-01"
+compatibility_date = "2024-11-01"
 pages_build_output_dir = "dist"
-
-# Automatic Nightly Cron Job (runs every night at 03:00 UTC)
-[triggers]
-crons = ["0 3 * * *"]
-
-# Cloudflare D1 SQLite Database Binding
-[[d1_databases]]
-binding = "DB"
-database_name = "kiloradar-db"
-database_id = "00000000-0000-0000-0000-000000000000"
 
 [vars]
 APP_URL = "https://kiloradar.com"
-# Optional: Add KASSAL_API_KEY via `wrangler secret put KASSAL_API_KEY` for live Norwegian store prices
+
+# -----------------------------------------------------------------------------
+# Optional Cloudflare D1 SQLite Database Binding
+# Note: You can bind D1 directly in Cloudflare Dashboard -> Pages -> Settings -> Bindings (Variable name: DB)
+# OR uncomment the block below after running `npx wrangler d1 create kiloradar-db` and replacing database_id:
+# -----------------------------------------------------------------------------
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "kiloradar-db"
+# database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# -----------------------------------------------------------------------------
+# Optional Standalone Worker Cron Trigger (src/worker/cronUpdater.ts)
+# When deploying the nightly cron worker separately via `wrangler deploy`:
+# -----------------------------------------------------------------------------
+# [triggers]
+# crons = ["0 3 * * *"]

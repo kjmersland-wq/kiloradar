@@ -1,13 +1,14 @@
 /**
  * Cloudflare Pages Function: /api/report
  * Receives community shrinkflation reports and stores them in Cloudflare D1 (`shrink_reports`).
+ * Gracefully handles missing D1 binding (`env.DB`) before the database is bound in Cloudflare Dashboard.
  */
 
 import type { CronEnv } from '../../src/worker/cronUpdater';
 
 interface PagesContext {
   request: Request;
-  env: CronEnv;
+  env?: Partial<CronEnv>;
 }
 
 interface ReportPayload {
@@ -32,17 +33,20 @@ export async function onRequestPost(context: PagesContext): Promise<Response> {
     if (!oldWeight || !newWeight) {
       return new Response(
         JSON.stringify({ ok: false, error: 'Missing oldWeight or newWeight' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
+        { status: 400, headers: { 'Content-Type': 'application/json; charset=utf-8' } }
       );
     }
 
-    if (context.env && context.env.DB) {
+    let savedToD1 = false;
+    const db = context?.env?.DB;
+    if (db && typeof db.prepare === 'function') {
       try {
-        await context.env.DB.prepare(
-          `INSERT INTO shrink_reports
-           (ean, product_name, country_code, old_weight, new_weight, old_price, new_price, store_name, notes)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
-        )
+        await db
+          .prepare(
+            `INSERT INTO shrink_reports
+             (ean, product_name, country_code, old_weight, new_weight, old_price, new_price, store_name, notes)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+          )
           .bind(
             ean,
             body.productName || null,
@@ -55,23 +59,25 @@ export async function onRequestPost(context: PagesContext): Promise<Response> {
             body.notes || null
           )
           .run();
+        savedToD1 = true;
       } catch {
-        // Gracefully succeed even if D1 binding is in local preview mode
+        // Gracefully succeed even if D1 binding is not yet initialized with schema.sql
       }
     }
 
     return new Response(
       JSON.stringify({
         ok: true,
+        storedInD1: savedToD1,
         message: 'Shrinkflation report received and queued for verification.',
         recordedAt: new Date().toISOString(),
       }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
+      { status: 200, headers: { 'Content-Type': 'application/json; charset=utf-8' } }
     );
   } catch {
     return new Response(
       JSON.stringify({ ok: false, error: 'Invalid JSON payload' }),
-      { status: 400, headers: { 'Content-Type': 'application/json' } }
+      { status: 400, headers: { 'Content-Type': 'application/json; charset=utf-8' } }
     );
   }
 }
