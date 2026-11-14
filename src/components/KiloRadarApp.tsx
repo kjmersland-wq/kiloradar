@@ -1062,17 +1062,24 @@ export default function KiloRadarApp({
       link.setAttribute('href', href);
     });
 
-    // Open Graph & Twitter Card tags
+    // Open Graph & Twitter Card tags (1200x630 PNG localized per market)
+    const ogImageUrl = `${SITE_BASE_URL}/og/og-${countryCode}.png`;
     upsertMeta('property', 'og:title', localeConfig.seoTitle);
     upsertMeta('property', 'og:description', localeConfig.seoDescription);
     upsertMeta('property', 'og:url', seoMeta.canonicalUrl);
     upsertMeta('property', 'og:locale', seoMeta.ogLocale);
-    upsertMeta('property', 'og:image', `${SITE_BASE_URL}/og-image.svg`);
+    upsertMeta('property', 'og:image', ogImageUrl);
+    upsertMeta('property', 'og:image:secure_url', ogImageUrl);
+    upsertMeta('property', 'og:image:type', 'image/png');
+    upsertMeta('property', 'og:image:width', '1200');
+    upsertMeta('property', 'og:image:height', '630');
+    upsertMeta('property', 'og:image:alt', localeConfig.seoTitle);
     upsertMeta('name', 'twitter:card', 'summary_large_image');
     upsertMeta('name', 'twitter:title', localeConfig.seoTitle);
     upsertMeta('name', 'twitter:description', localeConfig.seoDescription);
     upsertMeta('name', 'twitter:url', seoMeta.canonicalUrl);
-    upsertMeta('name', 'twitter:image', `${SITE_BASE_URL}/og-image.svg`);
+    upsertMeta('name', 'twitter:image', ogImageUrl);
+    upsertMeta('name', 'twitter:image:alt', localeConfig.seoTitle);
 
     // Schema.org Structured Data (WebApplication + FAQPage JSON-LD)
     const jsonLdData = buildJsonLdGraph(
