@@ -14,7 +14,7 @@ export const SE_LOCALE: CountryLocaleConfig = {
   numberLocale: 'sv-SE',
   seoTitle: 'KiloRadar Sverige — Jämförpris & Krympflation',
   seoDescription:
-    'Se verkligt jämförpris, avslöja krympflation och hitta billigaste matbutiken i Sverige. Gratis, oberoende och utan reklam.',
+    'Se verkligt jämförpris, avslöja krympflation och jämför butiker med uppmätta priser. Gratis, oberoende och utan reklam.',
   smartBannerQuestion: 'Vill du se svenska matpriser och butikskedjor i kronor (SEK)?',
   smartBannerCta: 'Byt till Sverige (kiloradar.com/sv/)',
   ui: {
@@ -141,17 +141,25 @@ export const SE_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. Hur tas veckohandlingen fram? (vägledande)',
+      title: '2. Hur jämför vi butikerna?',
       intro:
-        'Rangordningen av butiker är en uppskattning, inte en mätning från i dag:',
+        'Bara med priser som är uppmätta i butik:',
       bullets: [
         {
-          bold: 'En modell:',
-          text: 'Vi använder ett fast grundbelopp per kedja för en vanlig veckohandling, plus ett urval av kända varor. Beloppen är våra egna uppskattningar, och vi byter ut dem mot uppmätta priser allt eftersom.',
+          bold: 'Uppmätta priser:',
+          text: 'Vi använder priser som frivilliga har registrerat på Open Prices de senaste 150 dagarna. Kampanjpriser är uteslutna.',
         },
         {
-          bold: 'Hushållets storlek:',
-          text: 'De tre hushållsvalen använder faktorerna 0,72, 1,0 och 1,85. Det är våra egna uppskattningar, inte hämtade från en offentlig tabell.',
+          bold: 'Samma vara, flera kedjor:',
+          text: 'Vi jämför bara varor som har uppmätt pris i minst två kedjor. För varje vara ser vi hur långt varje kedja ligger från det vanliga priset, och tar genomsnittet över alla varor.',
+        },
+        {
+          bold: 'När det inte räcker:',
+          text: 'Har vi för få varor eller kedjor visar vi ingen rangordning. Vi fyller aldrig i siffror själva.',
+        },
+        {
+          bold: 'Din besparing:',
+          text: 'Beloppet du skriver in är ditt eget. Vi räknar ut vad prisskillnaden mellan billigaste och dyraste kedjan betyder för det beloppet.',
         },
       ],
     },

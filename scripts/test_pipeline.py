@@ -9,6 +9,7 @@ import json
 import pytest
 
 from sync_products import (
+    build_store_comparison,
     attach_open_prices,
     compute_unit_price,
     fetch_tjek_offers,
@@ -158,11 +159,12 @@ def test_full_pipeline_exports_static_json_and_d1_sql():
     results = run_full_pipeline(fetch_live=False)
     for region in ("global", "no", "se", "dk", "pl"):
         assert region in results
-        assert results[region]["count"] > 0
+        # sample products are no longer published: only measured data
+        assert results[region]["count"] == 0
+        assert results[region]["products"] == []
 
     sql = generate_d1_sql(results)
-    assert "INSERT OR REPLACE INTO products" in sql
-    assert "INSERT INTO price_history" in sql
+    assert "INSERT OR REPLACE INTO products" not in sql
 
 
 def test_provenance_marks_unchecked_products_as_unverified():
@@ -219,15 +221,12 @@ def test_shrink_events_only_for_smaller_packs():
     assert build_shrink_events(same) == []
 
 
-def test_pipeline_output_carries_provenance_and_sql_sources():
+def test_pipeline_output_publishes_no_sample_products():
     results = run_full_pipeline(fetch_live=False)
-    for prod in results["no"]["products"]:
-        assert prod["verification"] == "unverified"
-        assert "sizeHistory" in prod and "priceHistory" in prod
-        assert "shrinkEvents" in prod
-    sql = generate_d1_sql(results)
-    assert "last_checked" in sql
-    assert "DELETE FROM product_sources" in sql
+    for region, payload in results.items():
+        assert payload["products"] == []
+        assert payload["count"] == 0
+
 
 
 class _FakeResp:
@@ -482,3 +481,56 @@ def test_tjek_offer_is_normalized_to_unit_price():
     assert offer["store"] == "Europris"
     assert offer["checked"] == "2026-11-15"
     assert normalize_tjek_offer({"pricing": {"price": 0}}, "no", "2026-11-15") is None
+
+
+def _obs(code, chain, price, country="NO", currency="NOK", day="2026-11-01", discounted=False):
+    return {"product_code": code, "price": price, "currency": currency, "date": day,
+            "price_is_discounted": discounted,
+            "location": {"osm_brand": chain, "osm_address_country_code": country}}
+
+
+def test_store_comparison_ranks_chains_by_measured_price_level():
+    obs = []
+    for i in range(40):
+        code = f"p{i}"
+        base = 20 + i
+        obs += [_obs(code, "A", base), _obs(code, "B", base * 1.10), _obs(code, "C", base * 1.20)]
+    result = build_store_comparison(obs, "no", "2026-11-15")
+    assert result["status"] == "ok"
+    assert [c["store"] for c in result["chains"]] == ["A", "B", "C"]
+    assert result["chains"][0]["index"] == 1.0
+    assert result["chains"][0]["pctVsCheapest"] == 0.0
+    assert result["chains"][2]["pctVsCheapest"] > result["chains"][1]["pctVsCheapest"] > 0
+    assert result["products"] == 40
+    assert result["source"] == "Open Prices" and result["license"] == "ODbL"
+
+
+def test_store_comparison_is_insufficient_without_overlap():
+    obs = [_obs(f"p{i}", "A", 10) for i in range(50)] + [_obs(f"q{i}", "B", 12) for i in range(50)]
+    result = build_store_comparison(obs, "no", "2026-11-15")
+    assert result["status"] == "insufficient"
+    assert "chains" not in result
+
+
+def test_store_comparison_ignores_discounts_wrong_country_and_outliers():
+    obs = []
+    for i in range(40):
+        obs += [_obs(f"p{i}", "A", 10), _obs(f"p{i}", "B", 11), _obs(f"p{i}", "C", 12)]
+    obs += [_obs("p0", "A", 1, discounted=True)]               # campaign price: ignored
+    obs += [_obs("p1", "A", 5, country="SE")]                   # store in another country: ignored
+    obs += [_obs("x", "A", 1), _obs("x", "B", 100)]            # implausible spread: product dropped
+    result = build_store_comparison(obs, "no", "2026-11-15")
+    assert result["status"] == "ok"
+    assert result["products"] == 40
+    a = [c for c in result["chains"] if c["store"] == "A"][0]
+    assert a["index"] == 1.0
+
+
+def test_store_comparison_leaves_out_convenience_and_fuel_chains():
+    obs = []
+    for i in range(40):
+        obs += [_obs(f"p{i}", "A", 10), _obs(f"p{i}", "B", 11), _obs(f"p{i}", "C", 12),
+                _obs(f"p{i}", "7-Eleven", 30)]
+    result = build_store_comparison(obs, "no", "2026-11-15")
+    assert result["status"] == "ok"
+    assert "7-Eleven" not in [c["store"] for c in result["chains"]]

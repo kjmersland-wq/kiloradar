@@ -14,7 +14,7 @@ export const DE_LOCALE: CountryLocaleConfig = {
   numberLocale: 'de-DE',
   seoTitle: 'KiloRadar Deutschland — Kilopreis Rechner & Mogelpackung',
   seoDescription:
-    'Echten Kilopreis berechnen, Mogelpackungen erkennen und den günstigsten Supermarkt in Deutschland finden. Kostenlos und werbefrei.',
+    'Echten Kilopreis berechnen, Mogelpackungen erkennen und Läden anhand gemessener Preise vergleichen. Kostenlos und werbefrei.',
   smartBannerQuestion:
     'Möchten Sie deutsche Supermarktpreise, Mogelpackungen und Ketten (Aldi, Lidl, REWE, Edeka) in EUR sehen?',
   smartBannerCta: 'Zu Deutschland wechseln (/de/)',
@@ -142,17 +142,25 @@ export const DE_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. Wie entsteht der Wocheneinkauf? (unverbindlich)',
+      title: '2. Wie vergleichen wir die Läden?',
       intro:
-        'Die Rangliste der Märkte ist eine Schätzung, keine Messung von heute:',
+        'Nur mit Preisen, die im Laden gemessen wurden:',
       bullets: [
         {
-          bold: 'Ein Modell:',
-          text: 'Wir setzen pro Kette einen festen Grundbetrag für einen üblichen Wocheneinkauf an, dazu eine Auswahl bekannter Produkte. Die Beträge sind unsere eigenen Schätzungen. Wir ersetzen sie durch gemessene Preise, sobald wir welche haben.',
+          bold: 'Gemessene Preise:',
+          text: 'Wir nutzen Preise, die Freiwillige in den letzten 150 Tagen bei Open Prices erfasst haben. Aktionspreise lassen wir weg.',
         },
         {
-          bold: 'Haushaltsgröße:',
-          text: 'Die drei Haushaltsoptionen nutzen die Faktoren 0,72, 1,0 und 1,85. Das sind unsere eigenen Schätzungen und stammen nicht aus einer öffentlichen Tabelle.',
+          bold: 'Gleiches Produkt, mehrere Ketten:',
+          text: 'Wir vergleichen nur Produkte mit gemessenem Preis in mindestens zwei Ketten. Für jedes Produkt sehen wir, wie weit jede Kette vom üblichen Preis entfernt ist, und mitteln das über alle Produkte.',
+        },
+        {
+          bold: 'Wenn es nicht reicht:',
+          text: 'Haben wir zu wenige Produkte oder Ketten, zeigen wir keine Rangliste. Wir tragen nie selbst Zahlen ein.',
+        },
+        {
+          bold: 'Deine Ersparnis:',
+          text: 'Der Betrag, den du eingibst, ist dein eigener. Wir rechnen aus, was der Preisunterschied zwischen der günstigsten und der teuersten Kette für diesen Betrag bedeutet.',
         },
       ],
     },

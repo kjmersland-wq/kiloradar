@@ -20,7 +20,7 @@ brukes, hvilke som er planlagt, og hva som må avklares før de kan brukes.
 | Open Food Facts (`world.openfoodfacts.org`) | Mat og drikke: strekkode, navn, merke, pakkestørrelse | ✅ I bruk |
 | Open Beauty Facts (`world.openbeautyfacts.org`) | Personlig pleie (tannkrem, sjampo, dusjsåpe, deodorant) | ✅ I bruk |
 | Open Products Facts (`world.openproductsfacts.org`) | Husholdning (vaskemiddel, toalettpapir) | ✅ I bruk |
-| Open Prices (`prices.openfoodfacts.org`) | Crowdsourcede butikkpriser (ODbL, krever kreditering) | ✅ I bruk. Pris vises bare når det finnes en observasjon for samme strekkode, samme marked og samme valuta, ikke eldre enn 12 måneder. Vises med butikk og dato. |
+| Open Prices (`prices.openfoodfacts.org`) | Crowdsourcede butikkpriser (ODbL, krever kreditering) | ✅ I bruk. Pris vises bare når det finnes en observasjon for samme strekkode, samme marked og samme valuta, ikke eldre enn 12 måneder. Vises med butikk og dato. Brukes også til butikksammenligningen: bare varer med målt pris (uten kampanje) i minst to kjeder, siste 150 dager, uten kiosk- og bensinstasjonskjeder. Vises for et marked bare når det er nok overlapp mellom kjeder (nå: NO, SE, FR, US). |
 | Brukerrapporter (`/api/report`) | Rapporter om krympede varer | ✅ Mottas. Teller først når flere uavhengige bekrefter. |
 
 De tre åpne databasene gir pakkestørrelse, **ikke priser**. Priser kommer fra Open Prices der

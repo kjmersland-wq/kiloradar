@@ -14,7 +14,7 @@ export const DK_LOCALE: CountryLocaleConfig = {
   numberLocale: 'da-DK',
   seoTitle: 'KiloRadar Danmark — Kilopris & Skrumpflation',
   seoDescription:
-    'Se den reelle kilopris, afslør skrumpflation og find det billigste supermarked i Danmark. Gratis, uafhængig og uden reklamer.',
+    'Se den reelle kilopris, afslør skrumpflation og sammenlign butikker med målte priser. Gratis, uafhængig og uden reklamer.',
   smartBannerQuestion: 'Vil du gerne se danske dagligvarepriser og supermarkeder i kroner (DKK)?',
   smartBannerCta: 'Skift til Danmark (kiloradar.com/da/)',
   ui: {
@@ -141,17 +141,25 @@ export const DK_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. Hvordan laves ugens indkøb? (vejledende)',
+      title: '2. Hvordan sammenligner vi butikkerne?',
       intro:
-        'Rangeringen af butikker er et skøn, ikke en måling fra i dag:',
+        'Kun med priser, der er målt i butik:',
       bullets: [
         {
-          bold: 'En model:',
-          text: 'Vi bruger et fast grundbeløb pr. kæde til et almindeligt ugeindkøb plus et udvalg af kendte varer. Beløbene er vores egne skøn, og vi erstatter dem med målte priser, efterhånden som vi får dem.',
+          bold: 'Målte priser:',
+          text: 'Vi bruger priser, som frivillige har registreret på Open Prices de seneste 150 dage. Kampagnepriser er udeladt.',
         },
         {
-          bold: 'Husstandens størrelse:',
-          text: 'De tre husstandsvalg bruger faktorerne 0,72, 1,0 og 1,85. Det er vores egne skøn og ikke hentet fra en offentlig tabel.',
+          bold: 'Samme vare, flere kæder:',
+          text: 'Vi sammenligner kun varer, der har målt pris i mindst to kæder. For hver vare ser vi, hvor langt hver kæde ligger fra den almindelige pris, og tager gennemsnittet over alle varer.',
+        },
+        {
+          bold: 'Når det ikke er nok:',
+          text: 'Har vi for få varer eller kæder, viser vi ingen rangering. Vi udfylder aldrig tal selv.',
+        },
+        {
+          bold: 'Din besparelse:',
+          text: 'Beløbet, du skriver, er dit eget. Vi regner ud, hvad prisforskellen mellem den billigste og dyreste kæde betyder for det beløb.',
         },
       ],
     },

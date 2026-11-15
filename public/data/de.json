@@ -4138,5 +4138,18 @@
       "matchConfidence": 1.0
     }
   ],
+  "storeComparison": {
+    "source": "Open Prices",
+    "license": "ODbL",
+    "url": "https://prices.openfoodfacts.org/",
+    "currency": "EUR",
+    "asOf": "2026-11-15",
+    "since": "2026-06-18",
+    "observations": 630,
+    "status": "insufficient",
+    "products": 0,
+    "chainsSeen": 3,
+    "chainsRanked": 0
+  },
   "catalogCount": 143
 }

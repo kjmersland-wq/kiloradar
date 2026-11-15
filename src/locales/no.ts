@@ -15,7 +15,7 @@ export const NO_LOCALE: CountryLocaleConfig = {
   numberLocale: 'nb-NO',
   seoTitle: 'KiloRadar Norge — Kilopriskalkulator & Krympflasjon',
   seoDescription:
-    'Se den ekte kiloprisen, avslør krympflasjon og finn billigste matbutikk i Norge. Gratis, uavhengig og uten reklame.',
+    'Se den ekte kiloprisen, avslør krympflasjon og sammenlign butikker med målte priser. Gratis, uavhengig og uten reklame.',
   smartBannerQuestion: 'Har du lyst til å se norske dagligvarepriser og butikker i kroner (NOK)?',
   smartBannerCta: 'Bytt til Norge (kiloradar.com/no/)',
   ui: {
@@ -142,17 +142,25 @@ export const NO_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. Hvordan lages ukeshandelen? (veiledende)',
+      title: '2. Hvordan sammenligner vi butikkene?',
       intro:
-        'Rangeringen av butikker er et anslag, ikke en måling fra i dag:',
+        'Bare med priser som er målt i butikk:',
       bullets: [
         {
-          bold: 'En modell:',
-          text: 'Vi bruker et fast grunnbeløp per kjede for en vanlig ukeshandel, pluss et utvalg kjente varer. Beløpene er våre egne anslag, og vi bytter dem ut med målte priser etter hvert som vi får dem.',
+          bold: 'Målte priser:',
+          text: 'Vi bruker priser som frivillige har registrert på Open Prices de siste 150 dagene. Kampanjepriser er utelatt.',
         },
         {
-          bold: 'Husholdningsstørrelse:',
-          text: 'De tre husholdningsvalgene bruker faktorene 0,72, 1,0 og 1,85. Det er våre egne anslag, ikke hentet fra en offentlig tabell.',
+          bold: 'Samme vare, flere kjeder:',
+          text: 'Vi sammenligner bare varer som har målt pris i minst to kjeder. For hver vare ser vi hvor langt hver kjede ligger fra vanlig pris, og tar snittet over alle varene.',
+        },
+        {
+          bold: 'Når det ikke er nok:',
+          text: 'Har vi for få varer eller kjeder, viser vi ingen rangering. Vi fyller aldri inn tall selv.',
+        },
+        {
+          bold: 'Din besparelse:',
+          text: 'Beløpet du skriver inn er ditt eget. Vi regner ut hva prisforskjellen mellom billigste og dyreste kjede betyr for det beløpet.',
         },
       ],
     },

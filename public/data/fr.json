@@ -1240,5 +1240,132 @@
       "matchConfidence": 1.0
     }
   ],
+  "storeComparison": {
+    "source": "Open Prices",
+    "license": "ODbL",
+    "url": "https://prices.openfoodfacts.org/",
+    "currency": "EUR",
+    "asOf": "2026-11-15",
+    "since": "2026-06-18",
+    "observations": 8929,
+    "status": "ok",
+    "products": 363,
+    "chains": [
+      {
+        "store": "E. Leclerc",
+        "index": 1.0,
+        "pctVsCheapest": 0.0,
+        "products": 120
+      },
+      {
+        "store": "Intermarché Super",
+        "index": 1.0125,
+        "pctVsCheapest": 1.2,
+        "products": 38
+      },
+      {
+        "store": "Intermarché",
+        "index": 1.0296,
+        "pctVsCheapest": 3.0,
+        "products": 34
+      },
+      {
+        "store": "Carrefour Market",
+        "index": 1.0306,
+        "pctVsCheapest": 3.1,
+        "products": 37
+      },
+      {
+        "store": "E.Leclerc",
+        "index": 1.0343,
+        "pctVsCheapest": 3.4,
+        "products": 19
+      },
+      {
+        "store": "Colruyt",
+        "index": 1.0481,
+        "pctVsCheapest": 4.8,
+        "products": 23
+      },
+      {
+        "store": "E.Leclerc Drive",
+        "index": 1.0526,
+        "pctVsCheapest": 5.3,
+        "products": 12
+      },
+      {
+        "store": "Intermarché Express",
+        "index": 1.0561,
+        "pctVsCheapest": 5.6,
+        "products": 64
+      },
+      {
+        "store": "Biocoop",
+        "index": 1.0576,
+        "pctVsCheapest": 5.8,
+        "products": 11
+      },
+      {
+        "store": "Super U",
+        "index": 1.0756,
+        "pctVsCheapest": 7.6,
+        "products": 80
+      },
+      {
+        "store": "Match",
+        "index": 1.0764,
+        "pctVsCheapest": 7.6,
+        "products": 17
+      },
+      {
+        "store": "Auchan",
+        "index": 1.0833,
+        "pctVsCheapest": 8.3,
+        "products": 69
+      },
+      {
+        "store": "Naturalia",
+        "index": 1.087,
+        "pctVsCheapest": 8.7,
+        "products": 11
+      },
+      {
+        "store": "U Express",
+        "index": 1.0992,
+        "pctVsCheapest": 9.9,
+        "products": 64
+      },
+      {
+        "store": "Auchan Supermarché",
+        "index": 1.1136,
+        "pctVsCheapest": 11.4,
+        "products": 56
+      },
+      {
+        "store": "Monoprix",
+        "index": 1.1342,
+        "pctVsCheapest": 13.4,
+        "products": 41
+      },
+      {
+        "store": "Carrefour Express",
+        "index": 1.1502,
+        "pctVsCheapest": 15.0,
+        "products": 12
+      },
+      {
+        "store": "Carrefour City",
+        "index": 1.1515,
+        "pctVsCheapest": 15.2,
+        "products": 80
+      },
+      {
+        "store": "Monop'",
+        "index": 1.258,
+        "pctVsCheapest": 25.8,
+        "products": 15
+      }
+    ]
+  },
   "catalogCount": 44
 }

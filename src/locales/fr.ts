@@ -14,7 +14,7 @@ export const FR_LOCALE: CountryLocaleConfig = {
   numberLocale: 'fr-FR',
   seoTitle: 'KiloRadar France — Prix au kilo & Réduflation',
   seoDescription:
-    'Découvrez le vrai prix au kilo, repérez la réduflation et trouvez le supermarché le moins cher en France. Gratuit et sans publicité.',
+    'Découvrez le vrai prix au kilo, repérez la réduflation et comparez les magasins grâce aux prix relevés. Gratuit et sans publicité.',
   smartBannerQuestion:
     'Vous faites vos courses en France ? Consultez les prix au kilo et les supermarchés français en EUR (€) :',
   smartBannerCta: 'Passer à la version France (/fr/)',
@@ -142,17 +142,25 @@ export const FR_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. Comment est composé le panier de la semaine ? (indicatif)',
+      title: '2. Comment comparons-nous les enseignes ?',
       intro:
-        'Le classement des enseignes est une estimation, pas une mesure du jour :',
+        'Uniquement avec des prix relevés en magasin :',
       bullets: [
         {
-          bold: 'Un modèle :',
-          text: 'Nous utilisons un montant de base fixe par enseigne pour des courses de semaine ordinaires, plus une sélection de produits connus. Ces montants sont nos propres estimations, et nous les remplacerons par des prix mesurés au fur et à mesure.',
+          bold: 'Prix relevés :',
+          text: 'Nous utilisons les prix que des bénévoles ont enregistrés sur Open Prices ces 150 derniers jours. Les prix promotionnels sont exclus.',
         },
         {
-          bold: 'Taille du foyer :',
-          text: 'Les trois choix de foyer utilisent les facteurs 0,72, 1,0 et 1,85. Ce sont nos propres estimations, pas des chiffres issus d’un tableau public.',
+          bold: 'Même produit, plusieurs enseignes :',
+          text: 'Nous ne comparons que les produits dont le prix est relevé dans au moins deux enseignes. Pour chaque produit, nous voyons l’écart de chaque enseigne par rapport au prix habituel, puis nous faisons la moyenne sur tous les produits.',
+        },
+        {
+          bold: 'Quand il n’y en a pas assez :',
+          text: 'Si nous avons trop peu de produits ou d’enseignes, nous n’affichons aucun classement. Nous ne remplissons jamais les chiffres nous-mêmes.',
+        },
+        {
+          bold: 'Votre économie :',
+          text: 'Le montant que vous saisissez est le vôtre. Nous calculons ce que l’écart de prix entre l’enseigne la moins chère et la plus chère représente pour ce montant.',
         },
       ],
     },

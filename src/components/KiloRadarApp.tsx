@@ -2,24 +2,14 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import {
-  Search,
   ScanBarcode,
   CheckCircle2,
-  Scale,
-  ArrowRight,
-  Calculator,
-  Filter,
   Globe,
   Loader2,
-  ShoppingCart,
-  Trophy,
-    Store,
   BookOpen,
   Database,
   FileCheck2,
   Scale as ScaleIcon,
-  ChevronDown,
-  ChevronUp,
   Mail,
   X,
   Camera,
@@ -31,15 +21,14 @@ import {
   Check,
   HelpCircle,
 } from 'lucide-react';
-import CatalogSection, { CATALOG_UI, type CatalogItem } from './CatalogSection';
+import CatalogSection, { type CatalogItem } from './CatalogSection';
+import StoreComparison, { type StoreComparisonData } from './StoreComparison';
 import {
   ProductItem,
   analyzeProductShrinkflation,
   findFuzzyProductMatches,
   rankCategoryAlternatives,
   calculateAnnualSavings,
-  rankStorePricesForProduct,
-  calculateAverageCustomerBasketByStore,
   parseMeasure,
   normalizeUnitPrice,
 } from '../utils/shrinkAlgorithm';
@@ -521,32 +510,6 @@ function CategorySvgIcon({
   );
 }
 
-function ProductAvatar({ product }: { product: ProductItem }) {
-  const [imgError, setImgError] = useState(false);
-
-  if (product.imageUrl && !imgError) {
-    return (
-      <div className="w-11 h-11 rounded-xl bg-background border border-border overflow-hidden shrink-0 flex items-center justify-center p-1">
-        <img
-          src={product.imageUrl}
-          alt={product.name}
-          loading="lazy"
-          onError={() => setImgError(true)}
-          className="w-full h-full object-contain rounded-lg"
-        />
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className="w-11 h-11 rounded-xl bg-background/90 border border-border shrink-0 flex items-center justify-center shadow-inner"
-      title={product.category}
-    >
-      <CategorySvgIcon category={product.category} className="w-6 h-6" />
-    </div>
-  );
-}
 
 /**
  * Responsive Social Share Row (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn)
@@ -663,28 +626,6 @@ function ShareButtonsBar({
   );
 }
 
-type ProvenanceStrings = {
-  verified: string;
-  partial: string;
-  mismatch: string;
-  unverified: string;
-  checked: string;
-  source: string;
-};
-
-const PROVENANCE_UI: Record<CountryRouteCode, ProvenanceStrings> = {
-  en: { verified: 'Verified', partial: 'Barcode found', mismatch: 'Size differs at source', unverified: 'Not yet verified', checked: 'Last checked', source: 'Source' },
-  us: { verified: 'Verified', partial: 'Barcode found', mismatch: 'Size differs at source', unverified: 'Not yet verified', checked: 'Last checked', source: 'Source' },
-  uk: { verified: 'Verified', partial: 'Barcode found', mismatch: 'Size differs at source', unverified: 'Not yet verified', checked: 'Last checked', source: 'Source' },
-  no: { verified: 'Verifisert', partial: 'Strekkode funnet', mismatch: 'Størrelsen avviker i kilden', unverified: 'Ikke verifisert ennå', checked: 'Sist sjekket', source: 'Kilde' },
-  se: { verified: 'Verifierad', partial: 'Streckkod hittad', mismatch: 'Storleken avviker i källan', unverified: 'Inte verifierad ännu', checked: 'Senast kontrollerad', source: 'Källa' },
-  dk: { verified: 'Verificeret', partial: 'Stregkode fundet', mismatch: 'Størrelsen afviger i kilden', unverified: 'Endnu ikke verificeret', checked: 'Sidst tjekket', source: 'Kilde' },
-  pl: { verified: 'Zweryfikowano', partial: 'Znaleziono kod kreskowy', mismatch: 'Rozmiar różni się w źródle', unverified: 'Jeszcze niezweryfikowane', checked: 'Ostatnio sprawdzono', source: 'Źródło' },
-  de: { verified: 'Verifiziert', partial: 'Barcode gefunden', mismatch: 'Größe weicht in der Quelle ab', unverified: 'Noch nicht verifiziert', checked: 'Zuletzt geprüft', source: 'Quelle' },
-  fr: { verified: 'Vérifié', partial: 'Code-barres trouvé', mismatch: 'Taille différente dans la source', unverified: 'Pas encore vérifié', checked: 'Dernière vérification', source: 'Source' },
-  es: { verified: 'Verificado', partial: 'Código de barras encontrado', mismatch: 'El tamaño difiere en la fuente', unverified: 'Aún sin verificar', checked: 'Última comprobación', source: 'Fuente' },
-};
-
 const HERO_COPY: Record<CountryRouteCode, { title: [string, string]; sub: string; save: string }> = {
   en: { title: ['Same price.', 'Less inside.'], sub: 'Notice your packs getting smaller? See the real price per kilo, and where your shop costs least.', save: 'You can save up to' },
   us: { title: ['Same price.', 'Less inside.'], sub: 'Notice your packs getting smaller? See the real price per pound, and where your groceries cost least.', save: 'You can save up to' },
@@ -698,9 +639,6 @@ const HERO_COPY: Record<CountryRouteCode, { title: [string, string]; sub: string
   es: { title: ['Mismo precio.', 'Menos dentro.'], sub: '¿Te da la sensación de que los paquetes son cada vez más pequeños? Mira el precio real por kilo y dónde te sale más barata la compra.', save: 'Puedes ahorrar hasta' },
 };
 
-/** Open Food/Beauty/Products Facts data is ODbL: always mark it as such next to the source. */
-const licensed = (name: string): string =>
-  /^Open (Food|Beauty|Products) Facts$/.test(name) ? `${name} (ODbL)` : name;
 
 const COMING_SOON_LABEL: Record<CountryRouteCode, string> = {
   en: 'coming soon', us: 'coming soon', uk: 'coming soon',
@@ -725,35 +663,32 @@ const regionName = (region: string, locale: string): string => {
   }
 };
 
-const VS_WORD: Record<CountryRouteCode, string> = {
-  en: 'compared with', us: 'compared with', uk: 'compared with', no: 'mot', se: 'mot', dk: 'mod',
-  pl: 'w porównaniu z', de: 'gegenüber', fr: 'par rapport à', es: 'frente a',
+
+
+const HERO_STATS: Record<CountryRouteCode, [string, string, string]> = {
+  en: ['real products we keep an eye on', 'with a measured price', 'Last checked'],
+  us: ['real products we keep an eye on', 'with a measured price', 'Last checked'],
+  uk: ['real products we keep an eye on', 'with a measured price', 'Last checked'],
+  no: ['ekte varer vi følger med på', 'med målt pris', 'Sist sjekket'],
+  se: ['riktiga varor vi håller koll på', 'med uppmätt pris', 'Senast kontrollerad'],
+  dk: ['rigtige varer vi holder øje med', 'med målt pris', 'Sidst tjekket'],
+  pl: ['prawdziwych produktów, które obserwujemy', 'ze zmierzoną ceną', 'Ostatnio sprawdzono'],
+  de: ['echte Produkte im Blick', 'mit gemessenem Preis', 'Zuletzt geprüft'],
+  fr: ['vrais produits que nous suivons', 'avec un prix relevé', 'Dernière vérification'],
+  es: ['productos reales que seguimos', 'con precio medido', 'Última comprobación'],
 };
 
-const RANKING_NOTE: Record<CountryRouteCode, { badge: string; note: string; short: string }> = {
-  en: { badge: 'Indicative estimate', note: 'These figures are an estimate from a model, not today’s shelf prices. We will replace them with measured prices as we get them.', short: 'indicative' },
-  no: { badge: 'Veiledende anslag', note: 'Tallene er et anslag fra en modell, ikke dagens butikkpriser. Vi bytter dem ut med målte priser etter hvert.', short: 'veiledende' },
-  se: { badge: 'Vägledande uppskattning', note: 'Siffrorna är en uppskattning från en modell, inte dagens butikspriser. Vi byter ut dem mot uppmätta priser allt eftersom.', short: 'vägledande' },
-  dk: { badge: 'Vejledende skøn', note: 'Tallene er et skøn fra en model og ikke dagens butikspriser. Vi erstatter dem med målte priser, efterhånden som vi får dem.', short: 'vejledende' },
-  pl: { badge: 'Orientacyjny szacunek', note: 'Liczby to szacunek z modelu, a nie dzisiejsze ceny ze sklepów. Zastąpimy je zmierzonymi cenami, gdy tylko je zdobędziemy.', short: 'orientacyjne' },
-  de: { badge: 'Unverbindliche Schätzung', note: 'Die Zahlen sind eine Schätzung aus einem Modell, keine heutigen Ladenpreise. Wir ersetzen sie durch gemessene Preise, sobald wir welche haben.', short: 'Richtwert' },
-  fr: { badge: 'Estimation indicative', note: 'Les chiffres sont une estimation issue d’un modèle, pas les prix en magasin d’aujourd’hui. Nous les remplacerons par des prix mesurés au fur et à mesure.', short: 'indicatif' },
-  es: { badge: 'Estimación orientativa', note: 'Las cifras son una estimación de un modelo, no los precios de hoy en tienda. Las iremos sustituyendo por precios medidos.', short: 'orientativo' },
-  us: { badge: 'Indicative estimate', note: 'These figures are an estimate from a model, not today’s shelf prices. We will replace them with measured prices as we get them.', short: 'indicative' },
-  uk: { badge: 'Indicative estimate', note: 'These figures are an estimate from a model, not today’s shelf prices. We will replace them with measured prices as we get them.', short: 'indicative' },
-};
-
-const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
-  en: ['Cheapest stores', 'Calculator', 'Products'],
-  us: ['Cheapest stores', 'Calculator', 'Products'],
-  uk: ['Cheapest stores', 'Calculator', 'Products'],
-  no: ['Billigste butikk', 'Kalkulator', 'Varer'],
-  se: ['Billigaste butik', 'Kalkylator', 'Varor'],
-  dk: ['Billigste butik', 'Beregner', 'Varer'],
-  pl: ['Najtańszy sklep', 'Kalkulator', 'Produkty'],
-  de: ['Günstigster Laden', 'Rechner', 'Produkte'],
-  fr: ['Magasin le moins cher', 'Calculateur', 'Produits'],
-  es: ['Tienda más barata', 'Calculadora', 'Productos'],
+const NAV_LABELS: Record<CountryRouteCode, [string, string, string, string]> = {
+  en: ['Prices', 'Calculator', 'Products', 'Catalog'],
+  us: ['Prices', 'Calculator', 'Products', 'Catalog'],
+  uk: ['Prices', 'Calculator', 'Products', 'Catalog'],
+  no: ['Priser', 'Kalkulator', 'Varer', 'Katalog'],
+  se: ['Priser', 'Kalkylator', 'Varor', 'Katalog'],
+  dk: ['Priser', 'Beregner', 'Varer', 'Katalog'],
+  pl: ['Ceny', 'Kalkulator', 'Produkty', 'Katalog'],
+  de: ['Preise', 'Rechner', 'Produkte', 'Katalog'],
+  fr: ['Prix', 'Calculateur', 'Produits', 'Catalogue'],
+  es: ['Precios', 'Calculadora', 'Productos', 'Catálogo'],
 };
 
 export interface KiloRadarAppProps {
@@ -776,73 +711,34 @@ export default function KiloRadarApp({
   const rtUi = REALTIME_UI_BY_LOCALE[countryCode] || REALTIME_UI_BY_LOCALE.en;
   const seoMeta = SEO_METADATA_BY_LOCALE[countryCode] || SEO_METADATA_BY_LOCALE.en;
 
-  // Products state initialized & updated per country (with automatic /api/products?lang=[country] sync)
-  const [productsByCountry, setProductsByCountry] = useState<Record<CountryRouteCode, ProductItem[]>>(
-    () => ({
-      en: ALL_COUNTRY_LOCALES.en.products,
-      us: ALL_COUNTRY_LOCALES.us.products,
-      uk: ALL_COUNTRY_LOCALES.uk.products,
-      no: ALL_COUNTRY_LOCALES.no.products,
-      se: ALL_COUNTRY_LOCALES.se.products,
-      dk: ALL_COUNTRY_LOCALES.dk.products,
-      pl: ALL_COUNTRY_LOCALES.pl.products,
-      de: ALL_COUNTRY_LOCALES.de.products,
-      fr: ALL_COUNTRY_LOCALES.fr.products,
-      es: ALL_COUNTRY_LOCALES.es.products,
-    })
-  );
-
   const [catalogItems, setCatalogItems] = useState<CatalogItem[]>([]);
+  const [storeComparison, setStoreComparison] = useState<StoreComparisonData | null>(null);
   const [lastSyncedDate, setLastSyncedDate] = useState<string>(() =>
     new Date().toISOString().slice(0, 10)
   );
 
-  // Fetch updated products from static CDN JSON `/data/[country].json` (Python pipeline)
-  // with fallback to `/api/products` and `src/locales/` configs
+  // Real data only: catalog from Cloudflare D1 (falls back to /data/[country].json) and the store
+  // comparison computed by the Python pipeline from measured prices (Open Prices).
   useEffect(() => {
     let active = true;
     const staticRegion = countryCode === 'en' ? 'global' : countryCode;
     setCatalogItems([]);
+    setStoreComparison(null);
     let catalogFromD1 = false;
-
-    const mergeSyncedProducts = (
-      baseProducts: ProductItem[],
-      incomingProducts: ProductItem[]
-    ): ProductItem[] => {
-      const byId = new Map<string, ProductItem>();
-      for (const item of baseProducts) {
-        byId.set(item.id, item);
-      }
-      for (const incoming of incomingProducts) {
-        if (!incoming || !incoming.id) continue;
-        const existing = byId.get(incoming.id);
-        byId.set(incoming.id, existing ? { ...existing, ...incoming } : incoming);
-      }
-      return Array.from(byId.values());
-    };
 
     fetch(`/data/${staticRegion}.json`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (!active || !data) return;
         if (data.lastSynced) setLastSyncedDate(data.lastSynced);
+        if (data.storeComparison) setStoreComparison(data.storeComparison as StoreComparisonData);
         // Static JSON is the fallback: the D1-backed API below wins when it has data
         if (!catalogFromD1 && Array.isArray(data.catalog)) setCatalogItems(data.catalog as CatalogItem[]);
-        if (Array.isArray(data.products) && data.products.length > 0) {
-          setProductsByCountry((prev) => ({
-            ...prev,
-            [countryCode]: mergeSyncedProducts(
-              ALL_COUNTRY_LOCALES[countryCode]?.products || prev[countryCode] || [],
-              data.products
-            ),
-          }));
-        }
       })
       .catch(() => {
-        // Fallback to Cloudflare Functions D1 endpoint or src/locales/ config
+        // The page still renders; sections without data show an honest empty state
       });
 
-    // Catalog from Cloudflare D1 (real Open Food Facts products) via the Worker
     fetch(`/api/catalog?market=${staticRegion}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
@@ -856,37 +752,12 @@ export default function KiloRadarApp({
         // Falls back to the static /data/[country].json catalog
       });
 
-    fetch(`/api/products?lang=${countryCode}`)
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (!active || !data) return;
-        if (data.lastSynced) setLastSyncedDate(data.lastSynced);
-        if (Array.isArray(data.products) && data.products.length > 0 && data.source === 'cloudflare-d1') {
-          setProductsByCountry((prev) => ({
-            ...prev,
-            [countryCode]: mergeSyncedProducts(
-              prev[countryCode] || ALL_COUNTRY_LOCALES[countryCode]?.products || [],
-              data.products
-            ),
-          }));
-        }
-      })
-      .catch(() => {
-        // Automatic fallback to local src/locales/ config
-      });
-
     return () => {
       active = false;
     };
   }, [countryCode]);
 
-  const products = productsByCountry[countryCode] || localeConfig.products;
-
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
-  const [activePresetId, setActivePresetId] = useState<string>(
-    localeConfig.products[0]?.id || ''
-  );
+  const products: ProductItem[] = [];
 
   // Smart Language Suggestion Banner on '/'
   const [suggestedLocale, setSuggestedLocale] = useState<CountryLocaleConfig | null>(null);
@@ -981,48 +852,21 @@ export default function KiloRadarApp({
   }, [countryCode, localeConfig, seoMeta]);
 
   // Collapsible details per product card (compact view by default)
-  const [productsLimit, setProductsLimit] = useState(6);
-  const [expandedCards, setExpandedCards] = useState<Record<string, boolean>>({});
 
   // Basket scanner state
-  const [basketPeriod, setBasketPeriod] = useState<'week' | 'month' | 'year'>('month');
-  const [householdProfileId, setHouseholdProfileId] = useState<'single' | 'couple' | 'family'>(
-    'couple'
-  );
 
   // Simulator / Custom Test state
-  const [simName, setSimName] = useState(localeConfig.products[0]?.name || 'Coffee');
+  const [simName, setSimName] = useState('');
   const [simCategory, setSimCategory] = useState<string>(localeConfig.categories[0] || '');
-  const [simOldMeasure, setSimOldMeasure] = useState(
-    localeConfig.products[0]?.oldMeasure || '250 g'
-  );
-  const [simNewMeasure, setSimNewMeasure] = useState(
-    localeConfig.products[0]?.newMeasure || '200 g'
-  );
-  const [simOldPrice, setSimOldPrice] = useState(
-    (localeConfig.products[0]?.oldPrice || 4.0).toFixed(2)
-  );
-  const [simNewPrice, setSimNewPrice] = useState(
-    (localeConfig.products[0]?.newPrice || 4.5).toFixed(2)
-  );
+  const [simOldMeasure, setSimOldMeasure] = useState('');
+  const [simNewMeasure, setSimNewMeasure] = useState('');
+  const [simOldPrice, setSimOldPrice] = useState('');
+  const [simNewPrice, setSimNewPrice] = useState('');
   const [simImageUrl, setSimImageUrl] = useState<string | undefined>(undefined);
 
   useEffect(() => {
-    const first = localeConfig.products[0];
-    setSelectedCategory('ALL');
-    setSearchQuery('');
     setLiveResults([]);
     setLiveStatusMsg(null);
-    if (first) {
-      setActivePresetId(first.id);
-      setSimName(first.name.replace(/\s+\d+(?:[.,]\d+)?\s*(g|kg|ml|l|stk|oz|lb|fl\s*oz)$/i, ''));
-      setSimCategory(first.category);
-      setSimOldMeasure(first.oldMeasure);
-      setSimNewMeasure(first.newMeasure);
-      setSimOldPrice(first.oldPrice.toFixed(2));
-      setSimNewPrice(first.newPrice.toFixed(2));
-      setSimImageUrl(first.imageUrl);
-    }
   }, [countryCode, localeConfig]);
 
   // Live Open Food Facts lookup & interactive calculator state
@@ -1050,7 +894,6 @@ export default function KiloRadarApp({
   const [reportSuccess, setReportSuccess] = useState(false);
 
   // Per-card slider state (monthly purchases per product ID)
-  const [monthlySliders, setMonthlySliders] = useState<Record<string, number>>({});
 
   const formatMoney = (amount: number, decimals = 2): string => {
     const formatted = amount.toLocaleString(localeConfig.numberLocale, {
@@ -1070,29 +913,6 @@ export default function KiloRadarApp({
     } else if (typeof window !== 'undefined') {
       window.history.pushState({}, '', targetConfig.path);
     }
-  };
-
-  const toggleCardExpanded = (id: string) => {
-    setExpandedCards((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
-
-  const featuredPresets = useMemo(
-    () => products.filter((p) => p.isFeaturedPreset),
-    [products]
-  );
-
-  const handleSelectPreset = (preset: ProductItem) => {
-    setActivePresetId(preset.id);
-    setSimName(preset.name.replace(/\s+\d+(?:[.,]\d+)?\s*(g|kg|ml|l|stk|oz|lb|fl\s*oz)$/i, ''));
-    setSimCategory(preset.category);
-    setSimOldMeasure(preset.oldMeasure);
-    setSimNewMeasure(preset.newMeasure);
-    setSimOldPrice(preset.oldPrice.toFixed(2));
-    setSimNewPrice(preset.newPrice.toFixed(2));
-    setSimImageUrl(preset.imageUrl);
   };
 
   // Core Open Food Facts Query (used by both top search bar, barcode input, and camera scanner)
@@ -1296,28 +1116,6 @@ export default function KiloRadarApp({
         }),
       });
 
-      // Also add directly to the user's active radar list so they see their contribution immediately
-      const defaultPrice = localeConfig.products[0]?.newPrice || 39.9;
-      const newReportedProduct: ProductItem = {
-        id: `reported-${Date.now()}`,
-        name: `${reportName.trim() || 'Rapportert vare'} (${reportNewWeight.trim()})`,
-        previousName: `${reportName.trim() || 'Rapportert vare'} (${reportOldWeight.trim()})`,
-        brand: 'Brukerbidrag',
-        category: localeConfig.categories[0],
-        store: localeConfig.stores[0]?.store || 'Butikk',
-        barcode: reportEan.trim() || '7000000000000',
-        oldMeasure: reportOldWeight.trim(),
-        newMeasure: reportNewWeight.trim(),
-        oldPrice: defaultPrice,
-        newPrice: defaultPrice,
-        detectedDate: new Date().toISOString().slice(0, 10),
-      };
-
-      setProductsByCountry((prev) => ({
-        ...prev,
-        [countryCode]: [newReportedProduct, ...(prev[countryCode] || [])],
-      }));
-
       setReportSuccess(true);
       setTimeout(() => {
         setReportSuccess(false);
@@ -1332,6 +1130,9 @@ export default function KiloRadarApp({
 
   // Live simulator analysis
   const simulatorResult = useMemo(() => {
+    if (!simOldMeasure.trim() || !simNewMeasure.trim() || !simOldPrice.trim() || !simNewPrice.trim()) {
+      return { valid: false as const, error: '', empty: true as const };
+    }
     try {
       const tempProduct: ProductItem = {
         id: 'simulator-live',
@@ -1342,11 +1143,14 @@ export default function KiloRadarApp({
         barcode: liveBarcodeOrQuery.trim() || '7000000000000',
         oldMeasure: simOldMeasure,
         newMeasure: simNewMeasure,
-        oldPrice: parseFloat(simOldPrice.replace(',', '.')) || 1,
-        newPrice: parseFloat(simNewPrice.replace(',', '.')) || 1,
+        oldPrice: parseFloat(simOldPrice.replace(',', '.')),
+        newPrice: parseFloat(simNewPrice.replace(',', '.')),
         detectedDate: '2026-11-14',
         imageUrl: simImageUrl,
       };
+      if (!(tempProduct.oldPrice > 0) || !(tempProduct.newPrice > 0)) {
+        throw new Error('Price must be a number above 0');
+      }
       const analysis = analyzeProductShrinkflation(tempProduct);
       const fuzzyMatches = findFuzzyProductMatches(simName, products, 0.4);
       const alternatives = rankCategoryAlternatives(tempProduct, products);
@@ -1365,6 +1169,7 @@ export default function KiloRadarApp({
       return {
         valid: false as const,
         error: err instanceof Error ? err.message : 'Invalid format',
+        empty: false as const,
       };
     }
   }, [
@@ -1379,67 +1184,6 @@ export default function KiloRadarApp({
     products,
     localeConfig.stores,
   ]);
-
-  const handleAddSimulatedToList = () => {
-    if (!simulatorResult.valid) return;
-    const newId = `custom-${Date.now()}`;
-    const newProd: ProductItem = {
-      ...simulatorResult.tempProduct,
-      id: newId,
-      name: `${simName} (${simNewMeasure})`,
-      previousName: `${simName} (${simOldMeasure})`,
-      imageUrl: simImageUrl,
-    };
-    setProductsByCountry((prev) => ({
-      ...prev,
-      [countryCode]: [newProd, ...(prev[countryCode] || [])],
-    }));
-    setMonthlySliders((prev) => ({ ...prev, [newId]: 4 }));
-  };
-
-  // Filtered products using instant search + Levenshtein fuzzy-matching
-  const productsFiltered = searchQuery.trim() !== '' || selectedCategory !== 'ALL';
-  const filteredProducts = useMemo(() => {
-    const categoryFiltered =
-      selectedCategory === 'ALL'
-        ? products
-        : products.filter((p) => p.category === selectedCategory);
-
-    if (!searchQuery.trim()) {
-      return categoryFiltered.map((product) => ({ product, similarity: 1 }));
-    }
-
-    return findFuzzyProductMatches(searchQuery, categoryFiltered, 0.38);
-  }, [products, selectedCategory, searchQuery]);
-
-  // Household & Store Basket Ranking
-  const activeHousehold = useMemo(
-    () =>
-      localeConfig.householdProfiles.find((h) => h.id === householdProfileId) ||
-      localeConfig.householdProfiles[1],
-    [localeConfig.householdProfiles, householdProfileId]
-  );
-
-  const storeBasketRanking = useMemo(
-    () =>
-      calculateAverageCustomerBasketByStore(
-        products,
-        activeHousehold.multiplier,
-        localeConfig.stores
-      ),
-    [products, activeHousehold, localeConfig.stores]
-  );
-
-  const heroProduct = useMemo(() => {
-    let best: { product: ProductItem; analysis: ReturnType<typeof analyzeProductShrinkflation> } | null = null;
-    for (const p of products) {
-      const a = analyzeProductShrinkflation(p);
-      if (!best || a.shrinkIndex > best.analysis.shrinkIndex) best = { product: p, analysis: a };
-    }
-    return best;
-  }, [products]);
-
-  const mostExpensiveStore = storeBasketRanking[storeBasketRanking.length - 1];
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-savings/30 selection:text-savings flex flex-col justify-between">
@@ -1514,9 +1258,8 @@ export default function KiloRadarApp({
             <nav className="hidden gap-6 text-sm text-muted-foreground md:flex">
               <a href="#ranking" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][0]}</a>
               <a href="#calculator" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][1]}</a>
-              <a href="#products" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][2]}</a>
               {catalogItems.length > 0 && (
-                <a href="#catalog" className="transition-colors hover:text-foreground">{CATALOG_UI[countryCode].nav}</a>
+                <a href="#catalog" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][3]}</a>
               )}
             </nav>
             {/* Country Route & Currency Switcher */}
@@ -1552,158 +1295,8 @@ export default function KiloRadarApp({
         </header>
 
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-24 space-y-20">
-          {/* SECTION: CHEAPEST STORE NOW (the main section) */}
-          <section id="ranking" className="bg-hero -mx-4 sm:-mx-6 lg:-mx-8 scroll-mt-20 px-4 pb-20 pt-12 sm:px-6 md:pt-20 lg:px-8">
-            <div className="mx-auto w-full max-w-6xl space-y-12">
-            <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-              <div>
-                <p className="flex items-center gap-2 text-sm font-semibold text-savings">
-                  <ShoppingCart className="size-4" /> {dict.basketBadge}
-                </p>
-                <span className="mt-3 inline-block rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold text-warn">
-                  {RANKING_NOTE[countryCode].badge}
-                </span>
-                <h2 className="mt-3 text-5xl font-extrabold text-foreground sm:text-6xl">
-                  {dict.cheapestChainNow}
-                </h2>
-              </div>
-              <div className="flex flex-wrap items-center gap-3">
-                <div role="tablist" aria-label="Household" className="inline-flex rounded-full border border-border bg-card p-1">
-                  {localeConfig.householdProfiles.map((profile) => (
-                    <button
-                      key={profile.id}
-                      type="button"
-                      role="tab"
-                      aria-selected={householdProfileId === profile.id}
-                      onClick={() => setHouseholdProfileId(profile.id)}
-                      className={`cursor-pointer whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-all ${
-                        householdProfileId === profile.id
-                          ? 'bg-primary text-primary-foreground'
-                          : 'text-muted-foreground hover:text-foreground'
-                      }`}
-                    >
-                      {profile.label.split('(')[0].trim()}
-                    </button>
-                  ))}
-                </div>
-                <div role="tablist" aria-label="Period" className="inline-flex rounded-full border border-border bg-card p-1">
-                  {(['week', 'month', 'year'] as const).map((per) => (
-                    <button
-                      key={per}
-                      type="button"
-                      role="tab"
-                      aria-selected={basketPeriod === per}
-                      onClick={() => setBasketPeriod(per)}
-                      className={`cursor-pointer rounded-full px-4 py-2 text-sm font-medium transition-all ${
-                        basketPeriod === per
-                          ? 'bg-primary text-primary-foreground'
-                          : 'text-muted-foreground hover:text-foreground'
-                      }`}
-                    >
-                      {per === 'week' ? dict.per1Week : per === 'month' ? dict.per1Month : dict.per1Year}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {(() => {
-              const periodOf = (item: (typeof storeBasketRanking)[number]) =>
-                basketPeriod === 'week'
-                  ? item.weeklyCost
-                  : basketPeriod === 'month'
-                  ? item.monthlyCost
-                  : item.yearlyCost;
-              const periodLabel =
-                basketPeriod === 'week'
-                  ? dict.unitWeekShort
-                  : basketPeriod === 'month'
-                  ? dict.unitMonthShort
-                  : dict.unitYearShort;
-              const winner = storeBasketRanking[0];
-              const rest = storeBasketRanking.slice(1);
-              if (!winner || !mostExpensiveStore) return null;
-              const maxCost = Math.max(...storeBasketRanking.map(periodOf));
-              return (
-                <div className="grid gap-6 lg:grid-cols-5">
-                  <div className="card-kilo bg-winner animate-rise relative overflow-hidden p-8 shadow-glow sm:p-10 lg:col-span-3">
-                    <div className="inline-flex items-center gap-2 rounded-full bg-savings/15 px-4 py-1.5 text-sm font-bold text-savings">
-                      <Trophy className="size-4" /> #1 {dict.cheapestBadge}
-                    </div>
-                    <p className="mt-6 font-display text-5xl font-extrabold text-foreground sm:text-6xl">{winner.store}</p>
-                    <p className="mt-8 text-sm text-muted-foreground">{dict.avgCustomerLabel}</p>
-                    <p className="font-display text-6xl font-extrabold leading-none tabular text-foreground sm:text-8xl">
-                      {formatMoney(periodOf(winner), 0)}
-                      <span className="ml-2 text-xl font-normal text-muted-foreground">{periodLabel}</span>
-                    </p>
-                    <div className="mt-10 border-t border-border pt-8">
-                      <p className="text-sm font-semibold text-savings">{HERO_COPY[countryCode].save}</p>
-                      <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
-                        {[
-                          [dict.unitWeekShort, mostExpensiveStore.diffWeeklyFromCheapest],
-                          [dict.unitMonthShort, mostExpensiveStore.diffMonthlyFromCheapest],
-                          [dict.unitYearShort, mostExpensiveStore.diffYearlyFromCheapest],
-                        ].map(([label, value]) => (
-                          <div key={String(label)} className="rounded-2xl bg-savings/10 p-3 sm:p-4">
-                            <p className="whitespace-nowrap font-display text-base font-extrabold tabular text-savings min-[420px]:text-xl sm:text-3xl">
-                              {formatMoney(Number(value), 0)}
-                            </p>
-                            <p className="mt-1 text-xs text-muted-foreground">{label}</p>
-                          </div>
-                        ))}
-                      </div>
-                      <p className="mt-3 text-xs text-muted-foreground">
-                        {VS_WORD[countryCode]} {mostExpensiveStore.store}
-                      </p>
-                    </div>
-                  </div>
-                  <ol className="grid content-start gap-4 lg:col-span-2">
-                    {rest.map((item, i) => {
-                      const cost = periodOf(item);
-                      return (
-                        <li
-                          key={item.store}
-                          className="card-kilo animate-rise flex items-center gap-4 p-5 hover:-translate-y-0.5"
-                          style={{ animationDelay: `${(i + 1) * 0.06}s` }}
-                        >
-                          <span className="w-8 font-display text-3xl font-extrabold tabular text-muted-foreground">
-                            {item.rank}
-                          </span>
-                          <div className="min-w-0 flex-1">
-                            <div className="flex items-baseline justify-between gap-2">
-                              <p className="truncate font-semibold text-foreground">{item.store}</p>
-                              <p className="font-display text-xl font-bold tabular text-foreground">
-                                {formatMoney(cost, 0)}
-                              </p>
-                            </div>
-                            <div className="mt-3 flex items-center gap-3">
-                              <div className="h-2 flex-1 overflow-hidden rounded-full bg-secondary">
-                                <div
-                                  className={`h-full rounded-full ${item.percentageMoreExpensive > 8 ? 'bg-shrink' : 'bg-warn'}`}
-                                  style={{ width: `${Math.min(100, (cost / maxCost) * 100)}%` }}
-                                />
-                              </div>
-                              <span className="w-14 text-right text-xs font-semibold tabular text-muted-foreground">
-                                +{item.percentageMoreExpensive}%
-                              </span>
-                            </div>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ol>
-                </div>
-              );
-            })()}
-
-            <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-              <span data-testid="ranking-note">{RANKING_NOTE[countryCode].note}</span>
-              <a href="#metode-og-kilder" className="flex items-center gap-1.5 font-semibold underline underline-offset-4">
-                <BookOpen className="size-3.5" /> {dict.methodologyJumpLink}
-              </a>
-            </div>
-            </div>
-          </section>
+          {/* STORE COMPARISON: measured prices only (Open Prices) */}
+          <StoreComparison comparison={storeComparison} countryCode={countryCode} countryName={localeConfig.countryName} />
 
           {/* HERO: one message, one big number */}
           <section id="top" className="-mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 pt-4 pb-8 md:pb-12">
@@ -1719,48 +1312,29 @@ export default function KiloRadarApp({
                   <a href="#calculator" className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5">
                     {dict.simulatorTitle}
                   </a>
-                  <a href={catalogItems.length > 0 ? '#catalog' : '#products'} className="rounded-full border border-border bg-card px-8 py-4 text-lg font-semibold text-foreground transition-colors hover:bg-secondary">
-                    {catalogItems.length > 0 ? CATALOG_UI[countryCode].nav : NAV_LABELS[countryCode][2]}
+                  <a href={catalogItems.length > 0 ? '#catalog' : '#calculator'} className="rounded-full border border-border bg-card px-8 py-4 text-lg font-semibold text-foreground transition-colors hover:bg-secondary">
+                    {NAV_LABELS[countryCode][3]}
                   </a>
                 </div>
               </div>
-              {heroProduct && (
-                <div className="card-kilo animate-rise p-7 sm:p-10" style={{ animationDelay: '.1s' }}>
-                  <div className="flex items-center gap-3">
-                    <span className="grid size-14 place-items-center rounded-2xl bg-secondary">
-                      <CategorySvgIcon category={heroProduct.product.category} className="size-7" />
-                    </span>
-                    <div className="min-w-0">
-                      <p className="truncate text-lg font-semibold text-foreground">
-                        {heroProduct.product.name.toLowerCase().startsWith(heroProduct.product.brand.toLowerCase()) ? heroProduct.product.name : `${heroProduct.product.brand} ${heroProduct.product.name}`}
-                      </p>
-                      <p className="text-sm text-muted-foreground">{heroProduct.product.store}</p>
-                    </div>
-                  </div>
-                  <div className="mt-8 grid grid-cols-2 gap-4">
-                    <div className="rounded-3xl bg-secondary p-5">
-                      <p className="text-xs uppercase tracking-wider text-muted-foreground">{dict.oldPackageLabel}</p>
-                      <p className="mt-1 font-display text-3xl font-bold tabular text-foreground">{heroProduct.product.oldMeasure}</p>
-                      <p className="mt-1 text-sm tabular text-muted-foreground">
-                        {formatMoney(heroProduct.analysis.oldUnitPrice)}/{heroProduct.analysis.baseUnit}
-                      </p>
-                    </div>
-                    <div className="rounded-3xl border border-shrink/40 bg-shrink/10 p-5">
-                      <p className="text-xs uppercase tracking-wider text-shrink">{dict.newPackageLabel}</p>
-                      <p className="mt-1 font-display text-3xl font-bold tabular text-foreground">{heroProduct.product.newMeasure}</p>
-                      <p className="mt-1 text-sm tabular text-muted-foreground">
-                        {formatMoney(heroProduct.analysis.newUnitPrice)}/{heroProduct.analysis.baseUnit}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-8 flex items-end justify-between gap-4 border-t border-border pt-8">
-                    <p className="max-w-[9rem] text-sm text-muted-foreground">{dict.realUnitPriceChange}</p>
-                    <p className="font-display text-7xl font-extrabold leading-none tabular text-shrink sm:text-8xl">
-                      +{Math.round(heroProduct.analysis.shrinkIndex)}%
+              <div className="card-kilo animate-rise p-7 sm:p-10" style={{ animationDelay: '.1s' }} data-testid="hero-stats">
+                <p className="font-display text-8xl font-extrabold leading-none tabular text-savings sm:text-9xl">
+                  {catalogItems.length}
+                </p>
+                <p className="mt-4 text-xl text-foreground">{HERO_STATS[countryCode][0]}</p>
+                <div className="mt-8 grid grid-cols-2 gap-4 border-t border-border pt-8">
+                  <div className="rounded-3xl bg-secondary p-5">
+                    <p className="font-display text-3xl font-bold tabular text-foreground">
+                      {catalogItems.filter((c) => c.price).length}
                     </p>
+                    <p className="mt-1 text-sm text-muted-foreground">{HERO_STATS[countryCode][1]}</p>
+                  </div>
+                  <div className="rounded-3xl bg-secondary p-5">
+                    <p className="font-display text-3xl font-bold tabular text-foreground">{lastSyncedDate}</p>
+                    <p className="mt-1 text-sm text-muted-foreground">{HERO_STATS[countryCode][2]}</p>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
           </section>
 
@@ -1778,14 +1352,6 @@ export default function KiloRadarApp({
                       <p className="text-xs text-muted-foreground">{dict.simulatorSubtitle}</p>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    onClick={handleAddSimulatedToList}
-                    className="px-3.5 py-2 rounded-xl bg-savings/15 hover:bg-savings/25 border border-savings/40 text-savings text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer"
-                  >
-                    <span>{dict.addToRadarBtn}</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
                 </div>
 
                 {/* Gratis Open Food Facts Live Oppslag + "Skann med kamera"-knapp */}
@@ -1949,35 +1515,6 @@ export default function KiloRadarApp({
                   )}
                 </div>
 
-                {/* Preloaded Country Presets */}
-                <div className="mb-5">
-                  <div className="text-xs font-medium text-muted-foreground mb-2">
-                    {dict.presetsLabel}
-                  </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                    {featuredPresets.map((preset) => {
-                      const isSelected = activePresetId === preset.id;
-                      return (
-                        <button
-                          key={preset.id}
-                          type="button"
-                          onClick={() => handleSelectPreset(preset)}
-                          className={`px-3 py-2 rounded-xl text-left text-xs font-semibold border transition-all cursor-pointer ${
-                            isSelected
-                              ? 'bg-shrink/15 border-shrink/60 text-foreground shadow-md shadow-shrink/50'
-                              : 'bg-background/70 border-border text-muted-foreground hover:border-border'
-                          }`}
-                        >
-                          <div className="truncate">{preset.presetLabel || preset.name}</div>
-                          <div className="text-[11px] text-muted-foreground font-normal mt-0.5">
-                            {preset.oldMeasure} → {preset.newMeasure}
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-
                 {/* Simulator Input Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
                   <div className="sm:col-span-2">
@@ -2061,7 +1598,7 @@ export default function KiloRadarApp({
 
               {/* Simulator Live Diagnostic Output */}
               {simulatorResult.valid ? (
-                <div className="rounded-xl bg-background/90 border border-border p-4 grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                <div className="rounded-xl bg-background/90 border border-border p-4">
                   <div className="flex items-center gap-3">
                     {simImageUrl && (
                       <img
@@ -2094,422 +1631,14 @@ export default function KiloRadarApp({
                     </div>
                   </div>
 
-                  <div className="border-t sm:border-t-0 sm:border-l border-border pt-3 sm:pt-0 sm:pl-4">
-                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                      {dict.fuzzyMatchDb}
-                    </div>
-                    {simulatorResult.topFuzzyMatch ? (
-                      <>
-                        <div className="text-sm font-bold text-foreground truncate mt-0.5">
-                          {simulatorResult.topFuzzyMatch.product.name}
-                        </div>
-                        <div className="text-xs text-savings mt-0.5">
-                          {dict.nameSimilarity}:{' '}
-                          {Math.round(simulatorResult.topFuzzyMatch.similarity * 100)}% (Levenshtein)
-                        </div>
-                      </>
-                    ) : (
-                      <div className="text-xs text-muted-foreground mt-1">{dict.noCloseMatch}</div>
-                    )}
-                  </div>
-
-                  <div className="border-t sm:border-t-0 sm:border-l border-border pt-3 sm:pt-0 sm:pl-4">
-                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                      {dict.bestAltInCategory}
-                    </div>
-                    {simulatorResult.bestAlt ? (
-                      <>
-                        <div className="text-sm font-bold text-savings truncate mt-0.5">
-                          {simulatorResult.bestAlt.product.name}
-                        </div>
-                        <div className="text-xs text-muted-foreground mt-0.5">
-                          {formatMoney(simulatorResult.bestAlt.currentUnitPrice)}/
-                          {simulatorResult.bestAlt.baseUnit} ({dict.savePerYear}{' '}
-                          <span className="text-savings font-bold">
-                            {formatMoney(simulatorResult.savings.yearlySavingsWithAlternative)}
-                          </span>
-                          )
-                        </div>
-                      </>
-                    ) : (
-                      <div className="text-xs text-savings mt-1">{dict.alreadyLowestUnit}</div>
-                    )}
-                  </div>
                 </div>
-              ) : (
+              ) : simulatorResult.empty ? null : (
                 <div className="rounded-xl bg-shrink/10 border border-shrink/40 p-3 text-xs text-shrink">
                   {simulatorResult.error}
                 </div>
               )}
             </div>
           </section>
-
-          {/* COMPACT PRODUCT CARDS GRID WITH CATEGORY SVG ICONS */}
-          <section id="products" className="space-y-4 scroll-mt-20">
-            <div className="card-kilo p-5 sm:p-6 space-y-4">
-                {/* Search Input (Also triggers live Open Food Facts search on Enter) */}
-                <div className="relative">
-                  <Search className="w-5 h-5 text-savings absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
-                  <input
-                    id="krymp-search-input"
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter' && searchQuery.trim()) {
-                        setLiveBarcodeOrQuery(searchQuery.trim());
-                        executeOpenFoodFactsLookup(searchQuery.trim());
-                      }
-                    }}
-                    placeholder={dict.searchPlaceholder}
-                    className="w-full pl-12 pr-24 py-3 rounded-xl bg-secondary border border-input text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-savings focus:ring-2 focus:ring-savings/20 transition-all"
-                  />
-                  {searchQuery && (
-                    <button
-                      type="button"
-                      onClick={() => setSearchQuery('')}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-lg bg-secondary hover:bg-secondary text-xs text-muted-foreground transition"
-                    >
-                      {dict.resetBtn}
-                    </button>
-                  )}
-                </div>
-
-                {/* Category Filter Pills with SVG Category Icons */}
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-xs text-muted-foreground">
-                    <span className="flex items-center gap-1.5 font-medium">
-                      <Filter className="w-3.5 h-3.5 text-savings" />
-                      {dict.filterByCategory}
-                    </span>
-                    <span>{dict.showingCount(filteredProducts.length, products.length)}</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setSelectedCategory('ALL')}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                        selectedCategory === 'ALL'
-                          ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
-                          : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
-                      }`}
-                    >
-                      {dict.allCategoriesLabel}
-                    </button>
-                    {localeConfig.categories.map((category) => {
-                      const active = selectedCategory === category;
-                      return (
-                        <button
-                          key={category}
-                          type="button"
-                          onClick={() => setSelectedCategory(category)}
-                          className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
-                            active
-                              ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
-                              : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
-                          }`}
-                        >
-                          <CategorySvgIcon category={category} className="w-4 h-4" />
-                          <span>{category}</span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div>
-                <h2 className="text-xl font-bold text-foreground flex items-center gap-2">
-                  <Scale className="w-5 h-5 text-savings" />
-                  {dict.trackedGroceriesTitle} ({filteredProducts.length})
-                </h2>
-                <p className="text-xs text-muted-foreground">{dict.trackedGroceriesSubtitle}</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredProducts.slice(0, productsFiltered ? filteredProducts.length : productsLimit).map(({ product, similarity }) => {
-                const analysis = analyzeProductShrinkflation(product);
-                const alternatives = rankCategoryAlternatives(product, products);
-                const bestAlt = alternatives[0];
-                const monthlyCount = monthlySliders[product.id] ?? 4;
-                const savings = calculateAnnualSavings(product, monthlyCount, bestAlt);
-                const rankedStores = rankStorePricesForProduct(product);
-                const cheapestForProduct = rankedStores[0];
-                const isExpanded = !!expandedCards[product.id];
-
-                const isShrunk = analysis.shrinkIndex > 5;
-
-                return (
-                  <article
-                    key={product.id}
-                    data-testid={`product-card-${product.id}`}
-                    className="card-kilo hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-                  >
-                    <div>
-                      <div className="p-6 space-y-5">
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex min-w-0 items-start gap-3">
-                            <ProductAvatar product={product} />
-                            <div className="min-w-0">
-                              <p className="truncate text-xs text-muted-foreground">
-                                {product.category} · {product.store}
-                              </p>
-                              <h3 className="text-lg font-bold leading-snug text-foreground">{product.name}</h3>
-                              {searchQuery.trim() && (
-                                <span className="font-mono text-[10px] text-savings">{Math.round(similarity * 100)}%</span>
-                              )}
-                            </div>
-                          </div>
-                          <div className="shrink-0 text-right">
-                            <p
-                              className={`font-display text-4xl font-extrabold leading-none tabular ${
-                                isShrunk ? 'text-shrink' : 'text-savings'
-                              }`}
-                            >
-                              +{Math.round(analysis.shrinkIndex)}%
-                            </p>
-                            <p className="mt-1 text-[11px] text-muted-foreground">
-                              {isShrunk ? dict.shrinkflationBadge : dict.stablePackageBadge}
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-3">
-                          <div className="rounded-2xl bg-secondary p-4">
-                            <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                              {dict.oldPackageLabel}
-                            </p>
-                            <p className="mt-1 font-display text-xl font-bold tabular text-foreground">{product.oldMeasure}</p>
-                            <p className="text-xs tabular text-muted-foreground">
-                              {formatMoney(analysis.oldUnitPrice)}/{analysis.baseUnit}
-                            </p>
-                          </div>
-                          <div
-                            className={`rounded-2xl p-4 ${
-                              isShrunk ? 'border border-shrink/40 bg-shrink/10' : 'border border-savings/30 bg-savings/10'
-                            }`}
-                          >
-                            <p
-                              className={`text-[10px] font-semibold uppercase tracking-wider ${
-                                isShrunk ? 'text-shrink' : 'text-savings'
-                              }`}
-                            >
-                              {dict.newPackageLabel}
-                            </p>
-                            <p className="mt-1 font-display text-xl font-bold tabular text-foreground">{product.newMeasure}</p>
-                            <p className="text-xs font-semibold tabular text-foreground">
-                              {formatMoney(analysis.newUnitPrice)}/{analysis.baseUnit}
-                            </p>
-                          </div>
-                        </div>
-
-                        <button
-                          type="button"
-                          onClick={() => toggleCardExpanded(product.id)}
-                          className="flex w-full cursor-pointer items-center justify-between rounded-full border border-border px-4 py-2.5 text-sm font-semibold text-savings transition hover:bg-secondary"
-                        >
-                          <span>{isExpanded ? dict.collapseDetailsBtn : dict.expandDetailsBtn}</span>
-                          {isExpanded ? (
-                            <ChevronUp className="size-4 text-muted-foreground" />
-                          ) : (
-                            <ChevronDown className="size-4 text-muted-foreground" />
-                          )}
-                        </button>
-
-                        {isExpanded && (
-                          <div className="space-y-3 pt-1">
-                            {rankedStores.length > 0 && cheapestForProduct && (
-                              <div className="p-3 rounded-xl bg-background/90 border border-border space-y-2">
-                                <div className="flex items-center justify-between text-[11px]">
-                                  <span className="font-semibold text-muted-foreground flex items-center gap-1.5">
-                                    <Store className="w-3.5 h-3.5 text-savings" />
-                                    {dict.cheapestStoreLabel} ({RANKING_NOTE[countryCode].short}):
-                                  </span>
-                                  <span className="font-bold text-savings">
-                                    {cheapestForProduct.store} (
-                                    {formatMoney(cheapestForProduct.price)})
-                                  </span>
-                                </div>
-                                <div className="flex flex-wrap gap-1.5">
-                                  {rankedStores.slice(0, 5).map((sq) => (
-                                    <span
-                                      key={sq.store}
-                                      className={`px-2 py-0.5 rounded text-[10px] font-medium border ${
-                                        sq.rank === 1
-                                          ? 'bg-savings/15 border-savings/40 text-savings font-bold'
-                                          : 'bg-card border-border text-muted-foreground'
-                                      }`}
-                                    >
-                                      {sq.store}: {formatMoney(sq.price)}
-                                    </span>
-                                  ))}
-                                </div>
-                              </div>
-                            )}
-
-                            <div className="p-3.5 rounded-xl bg-background/95 border border-border space-y-2.5">
-                              <div className="flex items-center justify-between">
-                                <label
-                                  htmlFor={`slider-${product.id}`}
-                                  className="text-xs font-bold text-foreground flex items-center gap-1.5"
-                                >
-                                  <Calculator className="w-3.5 h-3.5 text-savings" />
-                                  {dict.savingsCalcTitle}
-                                </label>
-                                <span className="px-2 py-0.5 rounded-md bg-savings/15 border border-savings/30 text-savings text-xs font-extrabold">
-                                  {monthlyCount} {dict.purchasesPerMonth} ({savings.yearlyPurchases}
-                                  {dict.unitYearShort})
-                                </span>
-                              </div>
-
-                              <input
-                                id={`slider-${product.id}`}
-                                type="range"
-                                min={1}
-                                max={20}
-                                step={1}
-                                value={monthlyCount}
-                                onChange={(e) =>
-                                  setMonthlySliders((prev) => ({
-                                    ...prev,
-                                    [product.id]: parseInt(e.target.value, 10),
-                                  }))
-                                }
-                                aria-label={`Monthly purchases for ${product.name}`}
-                                className="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-savings"
-                              />
-
-                              <div className="grid grid-cols-2 gap-2 pt-1">
-                                <div className="p-2.5 rounded-lg bg-shrink/10 border border-shrink/30">
-                                  <div className="text-[10px] uppercase tracking-wider text-shrink">
-                                    {dict.annualHiddenCost}
-                                  </div>
-                                  <div className="text-sm font-extrabold text-shrink mt-0.5">
-                                    +{formatMoney(savings.hiddenYearlyShrinkCost)}
-                                  </div>
-                                  <div className="text-[10px] text-muted-foreground">
-                                    {savings.equivalentUnitsPerYear} {analysis.baseUnit}
-                                    {dict.unitYearShort}
-                                  </div>
-                                </div>
-
-                                <div className="p-2.5 rounded-lg bg-savings/10 border border-savings/30">
-                                  <div className="text-[10px] uppercase tracking-wider text-savings">
-                                    {dict.savingsBySwitching}
-                                  </div>
-                                  {bestAlt && bestAlt.isCheaper ? (
-                                    <>
-                                      <div className="text-sm font-extrabold text-savings mt-0.5">
-                                        {dict.savePerYear}{' '}
-                                        {formatMoney(savings.yearlySavingsWithAlternative)}
-                                      </div>
-                                      <div className="text-[10px] text-muted-foreground truncate">
-                                        {dict.switchToLabel} {bestAlt.product.brand} (
-                                        {formatMoney(bestAlt.currentUnitPrice)}/{bestAlt.baseUnit})
-                                      </div>
-                                    </>
-                                  ) : (
-                                    <>
-                                      <div className="text-sm font-extrabold text-savings mt-0.5">
-                                        {dict.bestBuyInCategory}
-                                      </div>
-                                      <div className="text-[10px] text-muted-foreground">
-                                        {dict.lowestPricePer} {analysis.baseUnit}
-                                      </div>
-                                    </>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    {isExpanded && (
-                    <div className="px-4 py-2.5 bg-background/80 border-t border-border/80 flex items-center justify-between text-xs">
-                      {bestAlt && bestAlt.isCheaper ? (
-                        <div className="flex items-center justify-between w-full gap-2">
-                          <span className="text-muted-foreground truncate">
-                            {dict.recommendedSwitch}{' '}
-                            <strong className="text-savings">{bestAlt.product.name}</strong>
-                          </span>
-                          <span className="shrink-0 font-mono text-savings font-bold">
-                            {bestAlt.percentageDifference}% {dict.unitPriceDiffLabel}
-                          </span>
-                        </div>
-                      ) : (
-                        <div className="flex items-center justify-between w-full text-savings font-semibold">
-                          <span>
-                            {dict.rankedNumberOne} {product.category}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                    )}
-                    {(() => {
-                      const prov = PROVENANCE_UI[countryCode];
-                      const status = product.verification ?? 'unverified';
-                      const tone =
-                        status === 'verified'
-                          ? 'text-savings'
-                          : status === 'mismatch'
-                          ? 'text-warn'
-                          : 'text-muted-foreground';
-                      const src = product.sources?.[0];
-                      return (
-                        <div
-                          data-testid={`provenance-${product.id}`}
-                          className="px-4 py-2 border-t border-border flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-[11px] text-muted-foreground"
-                        >
-                          <span className={`font-semibold ${tone}`}>{prov[status]}</span>
-                          <span className="flex flex-wrap items-center gap-x-2">
-                            {src &&
-                              (src.url ? (
-                                <a
-                                  href={src.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="underline underline-offset-2 hover:text-foreground"
-                                >
-                                  {prov.source}: {licensed(src.name)}
-                                </a>
-                              ) : (
-                                <span>
-                                  {prov.source}: {licensed(src.name)}
-                                </span>
-                              ))}
-                            {product.lastChecked && (
-                              <span className="tabular">
-                                {prov.checked}: {product.lastChecked}
-                              </span>
-                            )}
-                          </span>
-                        </div>
-                      );
-                    })()}
-                  </article>
-                );
-              })}
-            </div>
-          </section>
-
-          {!productsFiltered && filteredProducts.length > productsLimit && (
-            <div className="-mt-12 flex flex-col items-center gap-3">
-              <p className="text-sm text-muted-foreground">
-                {CATALOG_UI[countryCode].showing(productsLimit, filteredProducts.length)}
-              </p>
-              <button
-                type="button"
-                onClick={() => setProductsLimit((n) => n + 6)}
-                className="cursor-pointer rounded-full border border-border bg-card px-6 py-2.5 font-semibold text-foreground transition-colors hover:bg-secondary"
-              >
-                {CATALOG_UI[countryCode].showMore}
-              </button>
-            </div>
-          )}
 
           {/* VERIFIED CATALOG (real Open Food Facts products, prices coming) */}
           <CatalogSection items={catalogItems} countryCode={countryCode} />

@@ -63,7 +63,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'How do you compare weekly grocery baskets?',
         answer:
-          'It is an indicative estimate, not a measurement from today. We use a model with a fixed base amount per chain plus a selection of well-known products, and show 1 week, 1 month and 1 year for the big supermarkets.',
+          'We compare stores using prices that volunteers measured in shops (Open Prices), for products with a measured price in at least two chains. If we do not have enough measurements in your country, we say so instead of guessing.',
       },
       {
         question: 'Can I scan a barcode with my phone?',
@@ -102,7 +102,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Which US grocery store has the lowest weekly basket?',
         answer:
-          'It is an indicative estimate, not a measurement from today. We use a model with a fixed base amount per chain plus a selection of well-known products, and show 1 week, 1 month and 1 year for Aldi US, Walmart, Trader Joe’s, Kroger and Target.',
+          'We compare stores using prices that volunteers measured in shops (Open Prices), for products with a measured price in at least two chains. If we do not have enough measurements in your country, we say so instead of guessing.',
       },
       {
         question: 'Can I scan UPC barcodes in the store?',
@@ -141,7 +141,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Which UK supermarket is cheapest for a weekly shop?',
         answer:
-          'It is an indicative estimate, not a measurement from today. We use a model with a fixed base amount per chain plus a selection of well-known products, and show 1 week, 1 month and 1 year for Aldi UK, Lidl UK, Asda, Tesco and Sainsbury’s.',
+          'We compare stores using prices that volunteers measured in shops (Open Prices), for products with a measured price in at least two chains. If we do not have enough measurements in your country, we say so instead of guessing.',
       },
       {
         question: 'Can I scan barcodes on my mobile?',
@@ -180,7 +180,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Hvilken matbutikk er billigst på ukeshandelen i Norge?',
         answer:
-          'Rangeringen er et veiledende anslag, ikke en måling fra i dag. Den bygger på en modell med et fast grunnbeløp per kjede pluss et utvalg kjente varer, og viser 1 uke, 1 måned og 1 år hos REMA 1000, KIWI, Coop Extra, Oda og Meny.',
+          'Vi sammenligner butikker med priser som frivillige har målt i butikk (Open Prices), for varer med målt pris i minst to kjeder. Har vi ikke nok målinger i landet ditt, sier vi det i stedet for å gjette.',
       },
       {
         question: 'Kan jeg skanne strekkoder med mobilen i butikken?',
@@ -219,7 +219,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Vilken matbutik har billigast matkasse i Sverige?',
         answer:
-          'Rangordningen är en vägledande uppskattning, inte en mätning från i dag. Den bygger på en modell med ett fast grundbelopp per kedja plus ett urval av kända varor, och visar 1 vecka, 1 månad och 1 år hos Willys, ICA, Coop, Hemköp och City Gross.',
+          'Vi jämför butiker med priser som frivilliga har mätt i butik (Open Prices), för varor med uppmätt pris i minst två kedjor. Har vi inte tillräckligt med mätningar i ditt land säger vi det i stället för att gissa.',
       },
       {
         question: 'Kan jag skanna streckkoder med mobilen?',
@@ -258,7 +258,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Hvilket supermarked er billigst i Danmark?',
         answer:
-          'Rangeringen er et vejledende skøn, ikke en måling fra i dag. Den bygger på en model med et fast grundbeløb pr. kæde plus et udvalg af kendte varer, og viser 1 uge, 1 måned og 1 år hos Rema 1000, Netto, Lidl, Bilka og Føtex.',
+          'Vi sammenligner butikker med priser, som frivillige har målt i butik (Open Prices), for varer med målt pris i mindst to kæder. Har vi ikke nok målinger i dit land, siger vi det i stedet for at gætte.',
       },
       {
         question: 'Kan jeg scanne stregkoder med mobilen?',
@@ -297,7 +297,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Który sklep w Polsce ma najtańszy koszyk zakupowy?',
         answer:
-          'Ranking to orientacyjny szacunek, a nie dzisiejszy pomiar. Opiera się na modelu ze stałą kwotą bazową na sieć oraz zestawem znanych produktów i pokazuje 1 tydzień, 1 miesiąc i 1 rok w sieciach Biedronka, Lidl, Dino, Auchan i Carrefour.',
+          'Porównujemy sklepy na podstawie cen zmierzonych przez wolontariuszy w sklepach (Open Prices), dla produktów ze zmierzoną ceną w co najmniej dwóch sieciach. Jeśli w Twoim kraju jest za mało pomiarów, mówimy to wprost zamiast zgadywać.',
       },
       {
         question: 'Czy mogę zeskanować kod kreskowy telefonem?',
@@ -336,7 +336,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Welcher Supermarkt in Deutschland hat den günstigsten Warenkorb?',
         answer:
-          'Die Rangliste ist eine unverbindliche Schätzung, keine Messung von heute. Sie beruht auf einem Modell mit einem festen Grundbetrag pro Kette plus einer Auswahl bekannter Produkte und zeigt 1 Woche, 1 Monat und 1 Jahr für Aldi, Lidl, Kaufland, REWE und Edeka.',
+          'Wir vergleichen Läden anhand von Preisen, die Freiwillige im Laden gemessen haben (Open Prices), für Produkte mit gemessenem Preis in mindestens zwei Ketten. Haben wir in deinem Land nicht genug Messungen, sagen wir das, statt zu raten.',
       },
       {
         question: 'Kann ich Barcodes mit der Handykamera scannen?',
@@ -375,7 +375,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Quelle enseigne est la moins chère en France ?',
         answer:
-          'Le classement est une estimation indicative, pas une mesure du jour. Il repose sur un modèle avec un montant de base fixe par enseigne plus une sélection de produits connus, et montre 1 semaine, 1 mois et 1 an pour E.Leclerc, Lidl, Intermarché, Carrefour et Auchan.',
+          'Nous comparons les enseignes avec des prix relevés en magasin par des bénévoles (Open Prices), pour les produits dont le prix est relevé dans au moins deux enseignes. Si nous n’avons pas assez de relevés dans votre pays, nous le disons au lieu de deviner.',
       },
       {
         question: 'Puis-je scanner un code-barres avec mon téléphone en magasin ?',
@@ -414,7 +414,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: '¿Qué supermercado tiene la cesta más barata en España?',
         answer:
-          'El ranking es una estimación orientativa, no una medición de hoy. Se basa en un modelo con un importe base fijo por cadena más una selección de productos conocidos, y muestra 1 semana, 1 mes y 1 año para Lidl, Aldi, Mercadona, Dia y Carrefour.',
+          'Comparamos tiendas con precios que voluntarios han medido en tienda (Open Prices), para productos con precio medido en al menos dos cadenas. Si no tenemos suficientes mediciones en tu país, lo decimos en lugar de adivinar.',
       },
       {
         question: '¿Puedo escanear códigos de barras con el móvil?',

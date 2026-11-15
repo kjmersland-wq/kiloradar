@@ -3,148 +3,8 @@
   "country": "dk",
   "currency": "DKK",
   "lastSynced": "2026-11-15",
-  "count": 2,
-  "products": [
-    {
-      "id": "dk-coffee-merrild",
-      "name": "Merrild Mellemristet Nr. 103 400 g",
-      "previousName": "Merrild Mellemristet Nr. 103 500 g",
-      "brand": "Merrild",
-      "category": "Kaffe & Hygge",
-      "store": "Netto / Føtex / Bilka",
-      "barcode": "8000070038011",
-      "oldMeasure": "500 g",
-      "newMeasure": "400 g",
-      "oldPrice": 46.0,
-      "newPrice": 49.95,
-      "detectedDate": "2026-10-16",
-      "isFeaturedPreset": true,
-      "presetLabel": "☕ Merrild Kaffe (500 g → 400 g)",
-      "avgWeeklyQuantity": 0.5,
-      "storePrices": [
-        {
-          "store": "Rema 1000",
-          "price": 45.95,
-          "lastScanned": "Uge 46"
-        },
-        {
-          "store": "Netto",
-          "price": 46.95,
-          "lastScanned": "Uge 46"
-        },
-        {
-          "store": "Lidl",
-          "price": 46.95,
-          "lastScanned": "Uge 46"
-        },
-        {
-          "store": "Føtex",
-          "price": 49.95,
-          "lastScanned": "Uge 46"
-        }
-      ],
-      "currency": "DKK",
-      "oldUnitPrice": 92.0,
-      "newUnitPrice": 124.88,
-      "baseUnit": "kg",
-      "shrinkIndex": 35.73,
-      "amountChangePct": -20.0,
-      "priceChangePct": 8.59,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "400 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "Netto / Føtex / Bilka",
-          "price": 49.95,
-          "unitPrice": 124.88
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-16",
-          "from": "500 g",
-          "to": "400 g",
-          "shrinkIndex": 35.73
-        }
-      ]
-    },
-    {
-      "id": "dk-dairy-kaergaarden",
-      "name": "Arla Kærgården Original 160 g",
-      "previousName": "Arla Kærgården Original 200 g",
-      "brand": "Arla",
-      "category": "Mejeri & Pålæg",
-      "store": "Netto / Rema 1000",
-      "barcode": "5711953064227",
-      "oldMeasure": "200 g",
-      "newMeasure": "160 g",
-      "oldPrice": 24.95,
-      "newPrice": 26.95,
-      "detectedDate": "2026-10-21",
-      "isFeaturedPreset": true,
-      "presetLabel": "🧈 Kærgården (200 g → 160 g)",
-      "avgWeeklyQuantity": 0.7,
-      "storePrices": [
-        {
-          "store": "Rema 1000",
-          "price": 24.95,
-          "lastScanned": "Uge 46"
-        },
-        {
-          "store": "Netto",
-          "price": 25.5,
-          "lastScanned": "Uge 46"
-        },
-        {
-          "store": "Bilka",
-          "price": 26.5,
-          "lastScanned": "Uge 46"
-        }
-      ],
-      "currency": "DKK",
-      "oldUnitPrice": 124.75,
-      "newUnitPrice": 168.44,
-      "baseUnit": "kg",
-      "shrinkIndex": 35.02,
-      "amountChangePct": -20.0,
-      "priceChangePct": 8.02,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "160 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "Netto / Rema 1000",
-          "price": 26.95,
-          "unitPrice": 168.44
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-21",
-          "from": "200 g",
-          "to": "160 g",
-          "shrinkIndex": 35.02
-        }
-      ]
-    }
-  ],
+  "count": 0,
+  "products": [],
   "offerSources": [],
   "catalog": [
     {
@@ -1296,5 +1156,18 @@
       "matchConfidence": 1.0
     }
   ],
+  "storeComparison": {
+    "source": "Open Prices",
+    "license": "ODbL",
+    "url": "https://prices.openfoodfacts.org/",
+    "currency": "DKK",
+    "asOf": "2026-11-15",
+    "since": "2026-06-18",
+    "observations": 3,
+    "status": "insufficient",
+    "products": 0,
+    "chainsSeen": 0,
+    "chainsRanked": 0
+  },
   "catalogCount": 41
 }

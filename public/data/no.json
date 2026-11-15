@@ -3,435 +3,8 @@
   "country": "no",
   "currency": "NOK",
   "lastSynced": "2026-11-15",
-  "count": 6,
-  "products": [
-    {
-      "id": "no-meieri-tine-smor",
-      "name": "TINE Meierismør Bordpakke 200 g",
-      "previousName": "TINE Meierismør Bordpakke 250 g",
-      "brand": "TINE",
-      "category": "Meieri & Pålegg",
-      "store": "REMA 1000 / KIWI / Meny",
-      "barcode": "7038010001208",
-      "oldMeasure": "250 g",
-      "newMeasure": "200 g",
-      "oldPrice": 32.9,
-      "newPrice": 34.9,
-      "detectedDate": "2026-10-14",
-      "isFeaturedPreset": true,
-      "presetLabel": "🧈 Meierismør (-20 % i begeret)",
-      "avgWeeklyQuantity": 0.5,
-      "storePrices": [
-        {
-          "store": "REMA 1000",
-          "price": 33.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "KIWI",
-          "price": 33.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Coop Extra",
-          "price": 34.5,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Oda",
-          "price": 34.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Meny",
-          "price": 37.9,
-          "lastScanned": "Uke 46"
-        }
-      ],
-      "currency": "NOK",
-      "oldUnitPrice": 131.6,
-      "newUnitPrice": 174.5,
-      "baseUnit": "kg",
-      "shrinkIndex": 32.6,
-      "amountChangePct": -20.0,
-      "priceChangePct": 6.08,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "200 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "REMA 1000 / KIWI / Meny",
-          "price": 34.9,
-          "unitPrice": 174.5
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-14",
-          "from": "250 g",
-          "to": "200 g",
-          "shrinkIndex": 32.6
-        }
-      ]
-    },
-    {
-      "id": "no-kaffe-evergood",
-      "name": "Evergood Classic Filtermalt 200 g",
-      "previousName": "Evergood Classic Filtermalt 250 g",
-      "brand": "Joh. Johannson Kaffe",
-      "category": "Kaffe & Kos",
-      "store": "REMA 1000 / KIWI / Meny",
-      "barcode": "7040913336684",
-      "oldMeasure": "250 g",
-      "newMeasure": "200 g",
-      "oldPrice": 44.9,
-      "newPrice": 46.9,
-      "detectedDate": "2026-10-18",
-      "isFeaturedPreset": true,
-      "presetLabel": "☕ Filterkaffe (-20 % i posen)",
-      "avgWeeklyQuantity": 0.6,
-      "storePrices": [
-        {
-          "store": "REMA 1000",
-          "price": 44.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "KIWI",
-          "price": 45.5,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Coop Extra",
-          "price": 45.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Oda",
-          "price": 46.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Meny",
-          "price": 51.9,
-          "lastScanned": "Uke 46"
-        }
-      ],
-      "currency": "NOK",
-      "oldUnitPrice": 179.6,
-      "newUnitPrice": 234.5,
-      "baseUnit": "kg",
-      "shrinkIndex": 30.57,
-      "amountChangePct": -20.0,
-      "priceChangePct": 4.45,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "200 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "REMA 1000 / KIWI / Meny",
-          "price": 46.9,
-          "unitPrice": 234.5
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-18",
-          "from": "250 g",
-          "to": "200 g",
-          "shrinkIndex": 30.57
-        }
-      ]
-    },
-    {
-      "id": "no-vask-omo-color",
-      "name": "OMO Color Flytende Vaskemiddel 630 ml",
-      "previousName": "OMO Color Flytende Vaskemiddel 750 ml",
-      "brand": "Lilleborg",
-      "category": "Hus & Vask",
-      "store": "REMA 1000 / KIWI / Coop Extra",
-      "barcode": "7033061394118",
-      "oldMeasure": "750 ml",
-      "newMeasure": "630 ml",
-      "oldPrice": 54.9,
-      "newPrice": 57.9,
-      "detectedDate": "2026-10-22",
-      "isFeaturedPreset": true,
-      "presetLabel": "🧺 Flytende vaskemiddel (-16 % flaske)",
-      "avgWeeklyQuantity": 0.35,
-      "storePrices": [
-        {
-          "store": "REMA 1000",
-          "price": 55.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "KIWI",
-          "price": 56.5,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Coop Extra",
-          "price": 57.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Oda",
-          "price": 58.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Meny",
-          "price": 62.9,
-          "lastScanned": "Uke 46"
-        }
-      ],
-      "currency": "NOK",
-      "oldUnitPrice": 73.2,
-      "newUnitPrice": 91.9,
-      "baseUnit": "l",
-      "shrinkIndex": 25.55,
-      "amountChangePct": -16.0,
-      "priceChangePct": 5.46,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "630 ml"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "REMA 1000 / KIWI / Coop Extra",
-          "price": 57.9,
-          "unitPrice": 91.9
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-22",
-          "from": "750 ml",
-          "to": "630 ml",
-          "shrinkIndex": 25.55
-        }
-      ]
-    },
-    {
-      "id": "no-sjokolade-freia",
-      "name": "Freia Melkesjokolade Storplate 180 g",
-      "previousName": "Freia Melkesjokolade Storplate 200 g",
-      "brand": "Freia",
-      "category": "Kaffe & Kos",
-      "store": "KIWI / Coop Extra / REMA 1000",
-      "barcode": "7622210410337",
-      "oldMeasure": "200 g",
-      "newMeasure": "180 g",
-      "oldPrice": 39.9,
-      "newPrice": 44.9,
-      "detectedDate": "2026-10-25",
-      "isFeaturedPreset": true,
-      "presetLabel": "🍫 Melkesjokolade (200 g → 180 g)",
-      "avgWeeklyQuantity": 1.0,
-      "storePrices": [
-        {
-          "store": "Coop Extra",
-          "price": 41.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "REMA 1000",
-          "price": 42.5,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "KIWI",
-          "price": 42.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Oda",
-          "price": 44.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Meny",
-          "price": 48.9,
-          "lastScanned": "Uke 46"
-        }
-      ],
-      "currency": "NOK",
-      "oldUnitPrice": 199.5,
-      "newUnitPrice": 249.44,
-      "baseUnit": "kg",
-      "shrinkIndex": 25.03,
-      "amountChangePct": -10.0,
-      "priceChangePct": 12.53,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "180 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "KIWI / Coop Extra / REMA 1000",
-          "price": 44.9,
-          "unitPrice": 249.44
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-25",
-          "from": "200 g",
-          "to": "180 g",
-          "shrinkIndex": 25.03
-        }
-      ]
-    },
-    {
-      "id": "no-meieri-norvegia",
-      "name": "TINE Norvegia Skivet 130 g",
-      "previousName": "TINE Norvegia Skivet 150 g",
-      "brand": "TINE",
-      "category": "Meieri & Pålegg",
-      "store": "KIWI / Meny",
-      "barcode": "7038010014253",
-      "oldMeasure": "150 g",
-      "newMeasure": "130 g",
-      "oldPrice": 31.9,
-      "newPrice": 33.9,
-      "detectedDate": "2026-10-20",
-      "avgWeeklyQuantity": 0.8,
-      "storePrices": [
-        {
-          "store": "REMA 1000",
-          "price": 32.5,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "KIWI",
-          "price": 32.9,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Coop Extra",
-          "price": 33.5,
-          "lastScanned": "Uke 46"
-        },
-        {
-          "store": "Meny",
-          "price": 35.9,
-          "lastScanned": "Uke 46"
-        }
-      ],
-      "currency": "NOK",
-      "oldUnitPrice": 212.67,
-      "newUnitPrice": 260.77,
-      "baseUnit": "kg",
-      "shrinkIndex": 22.62,
-      "amountChangePct": -13.33,
-      "priceChangePct": 6.27,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "130 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "KIWI / Meny",
-          "price": 33.9,
-          "unitPrice": 260.77
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-20",
-          "from": "150 g",
-          "to": "130 g",
-          "shrinkIndex": 22.62
-        }
-      ]
-    },
-    {
-      "id": "no-kaffe-coop-bla",
-      "name": "Coop Blå Filterkaffe 250 g",
-      "previousName": "Coop Blå Filterkaffe 250 g",
-      "brand": "Coop",
-      "category": "Kaffe & Kos",
-      "store": "Coop Extra",
-      "barcode": "7025110082319",
-      "oldMeasure": "250 g",
-      "newMeasure": "250 g",
-      "oldPrice": 34.9,
-      "newPrice": 35.9,
-      "detectedDate": "2026-11-01",
-      "avgWeeklyQuantity": 0.5,
-      "storePrices": [
-        {
-          "store": "Coop Extra",
-          "price": 35.9,
-          "lastScanned": "Uke 46"
-        }
-      ],
-      "currency": "NOK",
-      "oldUnitPrice": 139.6,
-      "newUnitPrice": 143.6,
-      "baseUnit": "kg",
-      "shrinkIndex": 2.87,
-      "amountChangePct": 0.0,
-      "priceChangePct": 2.87,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "250 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "Coop Extra",
-          "price": 35.9,
-          "unitPrice": 143.6
-        }
-      ],
-      "shrinkEvents": []
-    }
-  ],
+  "count": 0,
+  "products": [],
   "offerSources": [
     {
       "name": "mattilbud.no",
@@ -4898,5 +4471,60 @@
       "matchConfidence": 1.0
     }
   ],
+  "storeComparison": {
+    "source": "Open Prices",
+    "license": "ODbL",
+    "url": "https://prices.openfoodfacts.org/",
+    "currency": "NOK",
+    "asOf": "2026-11-15",
+    "since": "2026-06-18",
+    "observations": 5921,
+    "status": "ok",
+    "products": 427,
+    "chains": [
+      {
+        "store": "Rema 1000",
+        "index": 1.0,
+        "pctVsCheapest": 0.0,
+        "products": 251
+      },
+      {
+        "store": "Kiwi",
+        "index": 1.0262,
+        "pctVsCheapest": 2.6,
+        "products": 269
+      },
+      {
+        "store": "Extra",
+        "index": 1.027,
+        "pctVsCheapest": 2.7,
+        "products": 233
+      },
+      {
+        "store": "Spar",
+        "index": 1.0829,
+        "pctVsCheapest": 8.3,
+        "products": 17
+      },
+      {
+        "store": "Bunnpris",
+        "index": 1.1069,
+        "pctVsCheapest": 10.7,
+        "products": 63
+      },
+      {
+        "store": "Meny",
+        "index": 1.1294,
+        "pctVsCheapest": 12.9,
+        "products": 17
+      },
+      {
+        "store": "Coop Prix",
+        "index": 1.1782,
+        "pctVsCheapest": 17.8,
+        "products": 140
+      }
+    ]
+  },
   "catalogCount": 118
 }

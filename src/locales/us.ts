@@ -14,7 +14,7 @@ export const US_LOCALE: CountryLocaleConfig = {
   numberLocale: 'en-US',
   seoTitle: 'KiloRadar US — Unit Price Calculator & Shrinkflation Tracker',
   seoDescription:
-    'Check the real price per ounce, pound or kilo, catch shrinkflation and find the cheapest US grocery store. Free and ad-free.',
+    'Check the real price per ounce, pound or kilo, catch shrinkflation and compare US grocery stores using measured prices. Free and ad-free.',
   smartBannerQuestion: 'Shopping in the United States? View US grocery prices in USD ($) with oz & lb support:',
   smartBannerCta: 'Switch to United States (/us/)',
   ui: {
@@ -140,17 +140,25 @@ export const US_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. How is the weekly shop worked out? (indicative)',
+      title: '2. How do we compare stores?',
       intro:
-        'The store ranking is an estimate, not a measurement from today:',
+        'Only with prices measured in stores:',
       bullets: [
         {
-          bold: 'A model:',
-          text: 'We use a fixed base amount per chain for a typical weekly shop, plus a selection of well-known products. The amounts are our own estimates, and we will replace them with measured prices as we get them.',
+          bold: 'Measured prices:',
+          text: 'We use prices that volunteers recorded on Open Prices over the last 150 days. Campaign prices are left out.',
         },
         {
-          bold: 'Household size:',
-          text: 'The three household options use the factors 0.72, 1.0 and 1.85. These are our own estimates, not taken from a public table.',
+          bold: 'Same product, several chains:',
+          text: 'We only compare products with a measured price in at least two chains. For each product we see how far each chain is from the typical price, and average that over all products.',
+        },
+        {
+          bold: 'When there is not enough:',
+          text: 'If we have too few products or chains, we show no ranking. We never fill in numbers ourselves.',
+        },
+        {
+          bold: 'Your savings:',
+          text: 'The amount you type in is your own. We work out what the price gap between the cheapest and the most expensive chain means for it.',
         },
       ],
     },

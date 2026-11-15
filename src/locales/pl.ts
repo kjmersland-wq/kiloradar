@@ -14,7 +14,7 @@ export const PL_LOCALE: CountryLocaleConfig = {
   numberLocale: 'pl-PL',
   seoTitle: 'KiloRadar Polska — Cena za kilogram & Shrinkflacja',
   seoDescription:
-    'Sprawdź realną cenę za kilogram, wykryj shrinkflację i znajdź najtańszy sklep w Polsce. Za darmo, niezależnie i bez reklam.',
+    'Sprawdź realną cenę za kilogram, wykryj shrinkflację i porównaj sklepy na podstawie zmierzonych cen. Za darmo i bez reklam.',
   smartBannerQuestion: 'Chcesz zobaczyć polskie ceny produktów i porównanie sklepów w złotówkach (PLN)?',
   smartBannerCta: 'Przejdź do Polski (kiloradar.com/pl/)',
   ui: {
@@ -142,17 +142,25 @@ export const PL_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. Jak powstają cotygodniowe zakupy? (orientacyjnie)',
+      title: '2. Jak porównujemy sklepy?',
       intro:
-        'Ranking sklepów to szacunek, a nie dzisiejszy pomiar:',
+        'Tylko na podstawie cen zmierzonych w sklepach:',
       bullets: [
         {
-          bold: 'Model:',
-          text: 'Dla każdej sieci przyjmujemy stałą kwotę bazową typowych cotygodniowych zakupów oraz zestaw znanych produktów. Kwoty to nasze własne szacunki. Zastąpimy je zmierzonymi cenami, gdy tylko je zdobędziemy.',
+          bold: 'Zmierzone ceny:',
+          text: 'Korzystamy z cen, które wolontariusze zapisali w Open Prices w ostatnich 150 dniach. Ceny promocyjne pomijamy.',
         },
         {
-          bold: 'Wielkość gospodarstwa:',
-          text: 'Trzy opcje gospodarstwa domowego używają współczynników 0,72, 1,0 i 1,85. To nasze własne szacunki, a nie dane z publicznej tabeli.',
+          bold: 'Ten sam produkt, kilka sieci:',
+          text: 'Porównujemy tylko produkty ze zmierzoną ceną w co najmniej dwóch sieciach. Dla każdego produktu sprawdzamy, jak daleko każda sieć jest od typowej ceny, i uśredniamy to dla wszystkich produktów.',
+        },
+        {
+          bold: 'Gdy danych jest za mało:',
+          text: 'Jeśli mamy zbyt mało produktów lub sieci, nie pokazujemy rankingu. Nigdy sami nie dopisujemy liczb.',
+        },
+        {
+          bold: 'Twoja oszczędność:',
+          text: 'Kwota, którą wpisujesz, jest Twoja. Wyliczamy, co różnica cen między najtańszą a najdroższą siecią oznacza dla tej kwoty.',
         },
       ],
     },

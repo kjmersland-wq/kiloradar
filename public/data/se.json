@@ -3,148 +3,8 @@
   "country": "se",
   "currency": "SEK",
   "lastSynced": "2026-11-15",
-  "count": 2,
-  "products": [
-    {
-      "id": "se-coffee-gevalia",
-      "name": "Gevalia Mellanrost Bryggkaffe 400 g",
-      "previousName": "Gevalia Mellanrost Bryggkaffe 450 g",
-      "brand": "Gevalia",
-      "category": "Kaffe & Fika",
-      "store": "ICA / Coop / Hemköp",
-      "barcode": "8711000530115",
-      "oldMeasure": "450 g",
-      "newMeasure": "400 g",
-      "oldPrice": 54.9,
-      "newPrice": 58.9,
-      "detectedDate": "2026-10-15",
-      "isFeaturedPreset": true,
-      "presetLabel": "☕ Bryggkaffe (450 g → 400 g)",
-      "avgWeeklyQuantity": 0.5,
-      "storePrices": [
-        {
-          "store": "Willys",
-          "price": 54.9,
-          "lastScanned": "Vecka 46"
-        },
-        {
-          "store": "ICA",
-          "price": 57.9,
-          "lastScanned": "Vecka 46"
-        },
-        {
-          "store": "Coop",
-          "price": 58.9,
-          "lastScanned": "Vecka 46"
-        },
-        {
-          "store": "Hemköp",
-          "price": 59.9,
-          "lastScanned": "Vecka 46"
-        }
-      ],
-      "currency": "SEK",
-      "oldUnitPrice": 122.0,
-      "newUnitPrice": 147.25,
-      "baseUnit": "kg",
-      "shrinkIndex": 20.7,
-      "amountChangePct": -11.11,
-      "priceChangePct": 7.29,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "400 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "ICA / Coop / Hemköp",
-          "price": 58.9,
-          "unitPrice": 147.25
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-15",
-          "from": "450 g",
-          "to": "400 g",
-          "shrinkIndex": 20.7
-        }
-      ]
-    },
-    {
-      "id": "se-dairy-bregott",
-      "name": "Arla Bregott Normalsaltat 500 g",
-      "previousName": "Arla Bregott Normalsaltat 600 g",
-      "brand": "Arla",
-      "category": "Mejeri & Pålägg",
-      "store": "ICA / Willys",
-      "barcode": "7310865005168",
-      "oldMeasure": "600 g",
-      "newMeasure": "500 g",
-      "oldPrice": 59.9,
-      "newPrice": 59.9,
-      "detectedDate": "2026-10-20",
-      "isFeaturedPreset": true,
-      "presetLabel": "🧈 Bregott (600 g → 500 g)",
-      "avgWeeklyQuantity": 0.4,
-      "storePrices": [
-        {
-          "store": "Willys",
-          "price": 56.9,
-          "lastScanned": "Vecka 46"
-        },
-        {
-          "store": "ICA",
-          "price": 58.9,
-          "lastScanned": "Vecka 46"
-        },
-        {
-          "store": "Coop",
-          "price": 59.9,
-          "lastScanned": "Vecka 46"
-        }
-      ],
-      "currency": "SEK",
-      "oldUnitPrice": 99.83,
-      "newUnitPrice": 119.8,
-      "baseUnit": "kg",
-      "shrinkIndex": 20.0,
-      "amountChangePct": -16.67,
-      "priceChangePct": 0.0,
-      "sources": [],
-      "lastChecked": null,
-      "matchConfidence": null,
-      "verification": "unverified",
-      "sizeHistory": [
-        {
-          "date": "2026-11-15",
-          "value": "500 g"
-        }
-      ],
-      "priceHistory": [
-        {
-          "date": "2026-11-15",
-          "store": "ICA / Willys",
-          "price": 59.9,
-          "unitPrice": 119.8
-        }
-      ],
-      "shrinkEvents": [
-        {
-          "date": "2026-10-20",
-          "from": "600 g",
-          "to": "500 g",
-          "shrinkIndex": 20.0
-        }
-      ]
-    }
-  ],
+  "count": 0,
+  "products": [],
   "offerSources": [],
   "catalog": [
     {
@@ -4000,5 +3860,42 @@
       "matchConfidence": 1.0
     }
   ],
+  "storeComparison": {
+    "source": "Open Prices",
+    "license": "ODbL",
+    "url": "https://prices.openfoodfacts.org/",
+    "currency": "SEK",
+    "asOf": "2026-11-15",
+    "since": "2026-06-18",
+    "observations": 1732,
+    "status": "ok",
+    "products": 86,
+    "chains": [
+      {
+        "store": "Willys",
+        "index": 1.0,
+        "pctVsCheapest": 0.0,
+        "products": 77
+      },
+      {
+        "store": "Maxi ICA Stormarknad",
+        "index": 1.0029,
+        "pctVsCheapest": 0.3,
+        "products": 59
+      },
+      {
+        "store": "City Gross",
+        "index": 1.0477,
+        "pctVsCheapest": 4.8,
+        "products": 28
+      },
+      {
+        "store": "Coop",
+        "index": 1.0966,
+        "pctVsCheapest": 9.7,
+        "products": 13
+      }
+    ]
+  },
   "catalogCount": 135
 }

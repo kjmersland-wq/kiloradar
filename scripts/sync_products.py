@@ -915,11 +915,13 @@ def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
     by shrinkflation index.
     """
     base_key = "en" if region_code == "global" else region_code
-    if region_code in REGION_CURRENCY and region_code not in REGIONAL_BASELINES:
-        # No hand-written baseline for these markets: only real discovered data (see catalog)
-        region_cfg: dict[str, Any] = {"currency": REGION_CURRENCY[region_code], "products": []}
-    else:
-        region_cfg = REGIONAL_BASELINES.get(base_key, REGIONAL_BASELINES["en"])
+    # Only real data is published: the hand-written sample products (REGIONAL_BASELINES) are no
+    # longer exported. Prices come from Open Prices (see attach_open_prices / build_store_comparison).
+    region_cfg: dict[str, Any] = {
+        "currency": REGIONAL_BASELINES.get(base_key, REGIONAL_BASELINES["en"])["currency"]
+        if region_code not in REGION_CURRENCY else REGION_CURRENCY[region_code],
+        "products": [],
+    }
     currency = region_cfg["currency"]
 
     today_iso = dt.date.today().isoformat()
@@ -1546,6 +1548,141 @@ def fetch_tjek_offers(market: str, queries: list[str], today_iso: str, limit: in
     return out
 
 
+# --- Real store comparison from measured prices (Open Prices) ---------------------------------
+# The ranking is computed only from prices that volunteers have actually recorded in stores.
+# For every product that has a (non-discounted) price in at least two chains we compare each
+# chain with the median price of that product. A chain's price level is the geometric mean of
+# those ratios. Nothing is assumed or filled in. When a market does not have enough overlap
+# between chains, the comparison is reported as "insufficient" and the site says so.
+
+COMPARISON_SINCE_DAYS = 150
+COMPARISON_MAX_PAGES = 120
+COMPARISON_MIN_CHAIN_PRODUCTS = 12   # products a chain shares with at least one other chain
+COMPARISON_MIN_CHAINS = 3
+COMPARISON_MIN_PRODUCTS = 30         # products priced in at least two ranked chains
+COMPARISON_EXCLUDED_CHAINS = {
+    # Convenience, kiosk and fuel-station chains: not comparable with grocery chains for a weekly shop
+    "7-Eleven", "Narvesen", "Circle K", "Shell", "Esso", "Uno-X", "YX", "Preem", "OKQ8",
+    "Pressbyrån", "Statoil", "BP",
+}
+COMPARISON_MAX_PRICE_SPREAD = 2.5    # max/min price of one barcode across chains; larger = likely error
+
+
+def fetch_open_prices_market(
+    market: str, today: dt.date, max_pages: int = COMPARISON_MAX_PAGES, pause: float = 0.35
+) -> list[dict[str, Any]]:
+    """Recent price observations for a market (country-filtered on our side as well)."""
+    country = MARKET_COUNTRY_CODE.get(market)
+    currency = MARKET_CURRENCY.get(market)
+    if not country or not currency:
+        return []
+    headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
+    since = (today - dt.timedelta(days=COMPARISON_SINCE_DAYS)).isoformat()
+    out: list[dict[str, Any]] = []
+    for page in range(1, max_pages + 1):
+        try:
+            resp = requests.get(
+                OPEN_PRICES_URL,
+                params={
+                    "location__osm_address_country_code": country,
+                    "currency": currency,
+                    "date__gte": since,
+                    "order_by": "-date",
+                    "size": 100,
+                    "page": page,
+                },
+                headers=headers,
+                timeout=40,
+            )
+            if resp.status_code != 200:
+                break
+            data = resp.json()
+        except (requests.RequestException, ValueError):
+            break
+        out.extend(data.get("items", []))
+        if page >= int(data.get("pages", 1) or 1):
+            break
+        time.sleep(pause)
+    return out
+
+
+def build_store_comparison(
+    observations: list[dict[str, Any]], market: str, today_iso: str
+) -> dict[str, Any]:
+    """Ranks chains by price level using only measured prices. See the block comment above."""
+    country = MARKET_COUNTRY_CODE.get(market)
+    currency = MARKET_CURRENCY.get(market)
+    latest: dict[str, dict[str, tuple[str, float]]] = {}
+    used = 0
+    for it in observations:
+        loc = it.get("location") or {}
+        chain = str(loc.get("osm_brand") or "").strip()
+        code = str(it.get("product_code") or "").strip()
+        try:
+            price = float(it.get("price"))
+        except (TypeError, ValueError):
+            continue
+        day = str(it.get("date") or "")
+        if (
+            not chain or chain in COMPARISON_EXCLUDED_CHAINS or not code or price <= 0
+            or it.get("price_is_discounted")
+            or it.get("currency") != currency
+            or str(loc.get("osm_address_country_code") or "").upper() != country
+        ):
+            continue
+        per_chain = latest.setdefault(code, {})
+        if chain not in per_chain or day > per_chain[chain][0]:
+            per_chain[chain] = (day, price)
+        used += 1
+
+    # Drop products whose price differs implausibly between chains (different pack, typo)
+    products = {
+        c: v for c, v in latest.items()
+        if len(v) >= 2 and max(p for _, p in v.values()) / min(p for _, p in v.values()) <= COMPARISON_MAX_PRICE_SPREAD
+    }
+    shared_counts: dict[str, int] = {}
+    for v in products.values():
+        for chain in v:
+            shared_counts[chain] = shared_counts.get(chain, 0) + 1
+    ranked_chains = {c for c, n in shared_counts.items() if n >= COMPARISON_MIN_CHAIN_PRODUCTS}
+
+    ratios: dict[str, list[float]] = {c: [] for c in ranked_chains}
+    basket = 0
+    for v in products.values():
+        in_ranked = {c: p for c, (_, p) in v.items() if c in ranked_chains}
+        if len(in_ranked) < 2:
+            continue
+        basket += 1
+        med = statistics.median(in_ranked.values())
+        for c, p in in_ranked.items():
+            ratios[c].append(p / med)
+
+    base: dict[str, Any] = {
+        "source": "Open Prices",
+        "license": "ODbL",
+        "url": "https://prices.openfoodfacts.org/",
+        "currency": currency,
+        "asOf": today_iso,
+        "since": (dt.date.fromisoformat(today_iso) - dt.timedelta(days=COMPARISON_SINCE_DAYS)).isoformat(),
+        "observations": used,
+    }
+    if len(ranked_chains) < COMPARISON_MIN_CHAINS or basket < COMPARISON_MIN_PRODUCTS:
+        return {**base, "status": "insufficient", "products": basket,
+                "chainsSeen": len(shared_counts), "chainsRanked": len(ranked_chains)}
+
+    levels = {c: math.exp(sum(math.log(r) for r in rs) / len(rs)) for c, rs in ratios.items() if rs}
+    cheapest = min(levels.values())
+    chains = sorted(
+        (
+            {"store": c, "index": round(lv / cheapest, 4), "pctVsCheapest": round((lv / cheapest - 1) * 100, 1),
+             "products": len(ratios[c])}
+            for c, lv in levels.items()
+        ),
+        key=lambda x: x["index"],
+    )
+    return {**base, "status": "ok", "products": basket, "chains": chains}
+
+
 def run_full_pipeline(
     fetch_live: bool = True, regions: list[str] | None = None, discover: bool | None = None
 ) -> dict[str, dict[str, Any]]:
@@ -1579,6 +1716,18 @@ def run_full_pipeline(
         payload["catalog"] = update_catalog(previous_catalog, discovered, reg, today_iso)
         if do_discover:
             attach_open_prices(payload["catalog"], reg, today_iso)
+            if reg in MARKET_CURRENCY:
+                payload["storeComparison"] = build_store_comparison(
+                    fetch_open_prices_market(reg, dt.date.fromisoformat(today_iso)), reg, today_iso
+                )
+        elif out_path.exists() and "storeComparison" not in payload:
+            # offline run: keep the last measured comparison instead of dropping it
+            try:
+                prev = json.loads(out_path.read_text(encoding="utf-8")).get("storeComparison")
+                if prev:
+                    payload["storeComparison"] = prev
+            except (ValueError, OSError):
+                pass
         payload["catalogCount"] = len(payload["catalog"])
 
         synced[reg] = payload

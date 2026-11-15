@@ -14,7 +14,7 @@ export const ES_LOCALE: CountryLocaleConfig = {
   numberLocale: 'es-ES',
   seoTitle: 'KiloRadar España — Precio por kilo & Reduflación',
   seoDescription:
-    'Descubre el precio real por kilo, detecta la reduflación y encuentra el supermercado más barato de España. Gratis y sin publicidad.',
+    'Descubre el precio real por kilo, detecta la reduflación y compara tiendas con precios medidos. Gratis y sin publicidad.',
   smartBannerQuestion:
     '¿Compras en España? Consulta los precios por kilo y supermercados españoles (Mercadona, Lidl, Carrefour) en EUR (€):',
   smartBannerCta: 'Cambiar a España (/es/)',
@@ -142,17 +142,25 @@ export const ES_LOCALE: CountryLocaleConfig = {
       ],
     },
     {
-      title: '2. ¿Cómo se arma la compra semanal? (orientativo)',
+      title: '2. ¿Cómo comparamos las tiendas?',
       intro:
-        'El ranking de supermercados es una estimación, no una medición de hoy:',
+        'Solo con precios medidos en tienda:',
       bullets: [
         {
-          bold: 'Un modelo:',
-          text: 'Usamos un importe base fijo por cadena para una compra semanal normal, más una selección de productos conocidos. Los importes son estimaciones nuestras, y los iremos sustituyendo por precios medidos.',
+          bold: 'Precios medidos:',
+          text: 'Usamos precios que voluntarios han registrado en Open Prices en los últimos 150 días. Los precios de oferta se dejan fuera.',
         },
         {
-          bold: 'Tamaño del hogar:',
-          text: 'Las tres opciones de hogar usan los factores 0,72, 1,0 y 1,85. Son estimaciones nuestras, no sacadas de una tabla pública.',
+          bold: 'Mismo producto, varias cadenas:',
+          text: 'Solo comparamos productos con precio medido en al menos dos cadenas. Para cada producto vemos cuánto se aleja cada cadena del precio habitual, y hacemos la media de todos los productos.',
+        },
+        {
+          bold: 'Cuando no hay suficiente:',
+          text: 'Si tenemos pocos productos o cadenas, no mostramos ranking. Nunca rellenamos cifras nosotros mismos.',
+        },
+        {
+          bold: 'Tu ahorro:',
+          text: 'El importe que escribes es tuyo. Calculamos qué supone para ese importe la diferencia de precio entre la cadena más barata y la más cara.',
         },
       ],
     },
