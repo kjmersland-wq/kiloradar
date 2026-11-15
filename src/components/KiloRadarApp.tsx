@@ -703,6 +703,29 @@ const HERO_COPY: Record<CountryRouteCode, { title: [string, string]; sub: string
 const licensed = (name: string): string =>
   /^Open (Food|Beauty|Products) Facts$/.test(name) ? `${name} (ODbL)` : name;
 
+const COMING_SOON_LABEL: Record<CountryRouteCode, string> = {
+  en: 'coming soon', us: 'coming soon', uk: 'coming soon',
+  no: 'kommer snart', se: 'kommer snart', dk: 'kommer snart',
+  pl: 'wkrótce', de: 'demnächst', fr: 'bientôt', es: 'próximamente',
+};
+const COMING_SOON_MARKETS: Array<{ region: string; flag: string }> = [
+  { region: 'IT', flag: '🇮🇹' },
+  { region: 'NL', flag: '🇳🇱' },
+  { region: 'BE', flag: '🇧🇪' },
+  { region: 'AT', flag: '🇦🇹' },
+  { region: 'CH', flag: '🇨🇭' },
+];
+const HTML_LANG_BY_MARKET: Record<CountryRouteCode, string> = {
+  en: 'en', us: 'en-US', uk: 'en-GB', no: 'nb', se: 'sv', dk: 'da', pl: 'pl', de: 'de', fr: 'fr', es: 'es',
+};
+const regionName = (region: string, locale: string): string => {
+  try {
+    return new Intl.DisplayNames([locale], { type: 'region' }).of(region) ?? region;
+  } catch {
+    return region;
+  }
+};
+
 const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
   en: ['Cheapest stores', 'Calculator', 'Products'],
   us: ['Cheapest stores', 'Calculator', 'Products'],
@@ -1511,6 +1534,18 @@ export default function KiloRadarApp({
                     {loc.selectorLabel}
                   </option>
                 ))}
+                <optgroup label={COMING_SOON_LABEL[countryCode]}>
+                  {COMING_SOON_MARKETS.map((m) => (
+                    <option
+                      key={m.region}
+                      value={`coming-soon-${m.region}`}
+                      disabled
+                      className="bg-background text-muted-foreground"
+                    >
+                      {m.flag} {regionName(m.region, HTML_LANG_BY_MARKET[countryCode])} ({COMING_SOON_LABEL[countryCode]})
+                    </option>
+                  ))}
+                </optgroup>
               </select>
             </div>
           </div>
