@@ -1040,6 +1040,7 @@ OFF_COUNTRY_TAG: dict[str, str] = {
     "es": "spain",
     "uk": "united-kingdom",
     "us": "united-states",
+    "global": "",  # Global/EUR: most-scanned products worldwide (no country filter)
 }
 
 # Food categories from the product strategy. Non-food categories (detergents, toilet paper,
@@ -1067,9 +1068,9 @@ def discover_openfoodfacts_catalog(
     pause: float = OFF_REQUEST_PAUSE_SECONDS,
 ) -> list[dict[str, Any]]:
     """Fetches the most-scanned real products per core category for one market."""
-    country_tag = OFF_COUNTRY_TAG.get(region_code)
-    if not country_tag:
+    if region_code not in OFF_COUNTRY_TAG:
         return []
+    country_tag = OFF_COUNTRY_TAG[region_code]
     headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
     found: dict[str, dict[str, Any]] = {}
     for cat_tag, cat_label in categories or OFF_CORE_CATEGORIES:
@@ -1077,7 +1078,7 @@ def discover_openfoodfacts_catalog(
             resp = requests.get(
                 OFF_SEARCH_URL,
                 params={
-                    "countries_tags_en": country_tag,
+                    **({"countries_tags_en": country_tag} if country_tag else {}),
                     "categories_tags_en": cat_tag,
                     "sort_by": "unique_scans_n",
                     "page_size": per_category * 3,

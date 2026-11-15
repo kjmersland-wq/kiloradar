@@ -145,6 +145,847 @@
       ]
     }
   ],
-  "catalog": [],
-  "catalogCount": 0
+  "catalog": [
+    {
+      "id": "pl-off-3560070614202",
+      "barcode": "3560070614202",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Copos de Avena Integral",
+      "brand": "CARREFOUR FRANCE",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/061/4202/front_en.112.200.jpg",
+      "scans": 200,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070614202",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3250391896554",
+      "barcode": "3250391896554",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocons d'avoine complète 500g",
+      "brand": "Chabrior",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/039/189/6554/front_fr.149.200.jpg",
+      "scans": 182,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3250391896554",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-4056489254157",
+      "barcode": "4056489254157",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Био овесени ядки",
+      "brand": "Crownfield",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/925/4157/front_en.87.200.jpg",
+      "scans": 150,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489254157",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5900617002983",
+      "barcode": "5900617002983",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Granola chocolate / pieces of chocolate",
+      "brand": "Nutrition sante",
+      "category": "Cereals & Porridge",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/061/700/2983/front_en.84.200.jpg",
+      "scans": 120,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900617002983",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560070800209",
+      "barcode": "3560070800209",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Céréales cœur fondant",
+      "brand": "CARREFOUR FRANCE",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/080/0209/front_fr.128.200.jpg",
+      "scans": 119,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070800209",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071013035",
+      "barcode": "3560071013035",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crunchy Chocolat noir intense",
+      "brand": "CARREFOUR FRANCE",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/101/3035/front_fr.94.200.jpg",
+      "scans": 92,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071013035",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-4056489216223",
+      "barcode": "4056489216223",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "High Protein Quark Dessert Raspberry",
+      "brand": "LIDL",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/921/6223/front_en.175.200.jpg",
+      "scans": 83,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489216223",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071267582",
+      "barcode": "3560071267582",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Corn flakes",
+      "brand": "Carrefour BIO",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/126/7582/front_fr.27.200.jpg",
+      "scans": 83,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071267582",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071016074",
+      "barcode": "3560071016074",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Corn flakes",
+      "brand": "Carrefour",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/101/6074/front_fr.48.200.jpg",
+      "scans": 71,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071016074",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-20761776",
+      "barcode": "20761776",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Krémes görögjoghurt",
+      "brand": "Pilos",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/076/1776/front_hu.94.200.jpg",
+      "scans": 65,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20761776",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5900512850290",
+      "barcode": "5900512850290",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Natural Kefir",
+      "brand": "Mlekovita",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/051/285/0290/front_en.29.200.jpg",
+      "scans": 57,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900512850290",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-20202859",
+      "barcode": "20202859",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Muesli Frutos E Sementes",
+      "brand": "Crownfield",
+      "category": "Cereals & Porridge",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/020/2859/front_en.180.200.jpg",
+      "scans": 50,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20202859",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071015725",
+      "barcode": "3560071015725",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fibra",
+      "brand": "CARREFOUR FRANCE",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/101/5725/front_fr.70.200.jpg",
+      "scans": 45,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071015725",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5901939103099",
+      "barcode": "5901939103099",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Piątnica Skyr drinking yogurt – blueberry",
+      "brand": "Piątnica",
+      "category": "Dairy",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/193/910/3099/front_en.60.200.jpg",
+      "scans": 40,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5901939103099",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5900531004537",
+      "barcode": "5900531004537",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skyr jogurt typu islandzkiego waniliowy",
+      "brand": "Piątnica",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/053/100/4537/front_pl.23.200.jpg",
+      "scans": 37,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900531004537",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-8000070020580",
+      "barcode": "8000070020580",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Qualita Oro",
+      "brand": "Lavazza",
+      "category": "Coffee & Tea",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/007/002/0580/front_en.17.200.jpg",
+      "scans": 25,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000070020580",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5901939103068",
+      "barcode": "5901939103068",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "355 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skyr jogurt pitny typu islandzkiego mango & marakuja",
+      "brand": "Piątnica",
+      "category": "Dairy",
+      "measure": "355 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/193/910/3068/front_pl.18.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5901939103068",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5901939103075",
+      "barcode": "5901939103075",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skyr pitny wanilia",
+      "brand": "Piątnica",
+      "category": "Dairy",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/193/910/3075/front_pl.17.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5901939103075",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-4008167103714",
+      "barcode": "4008167103714",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kaffee Prodomo gemahlen",
+      "brand": "Dallmayr",
+      "category": "Coffee & Tea",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/816/710/3714/front_de.90.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4008167103714",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5900512350080",
+      "barcode": "5900512350080",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jogurt Grecki naturalny",
+      "brand": "Mlekovita",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/051/235/0080/front_pl.47.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900512350080",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5900531004735",
+      "barcode": "5900531004735",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Icelandic type yoghurt natural",
+      "brand": "Piątnica",
+      "category": "Dairy",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/053/100/4735/front_en.10.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900531004735",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071479398",
+      "barcode": "3560071479398",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "140 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cappuccino ORIGINAL",
+      "brand": "Carrefour",
+      "category": "Coffee & Tea",
+      "measure": "140 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/147/9398/front_fr.3.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071479398",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071244057",
+      "barcode": "3560071244057",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "AMÉRIQUE LATINE GRAINS Pur Arabica",
+      "brand": "Carrefour BIO",
+      "category": "Coffee & Tea",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/124/4057/front_fr.27.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071244057",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071013721",
+      "barcode": "3560071013721",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12.5 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "CAPPUCCINO Decaffeinato",
+      "brand": "Carrefour",
+      "category": "Coffee & Tea",
+      "measure": "12.5 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/101/3721/front_fr.48.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071013721",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071275839",
+      "barcode": "3560071275839",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gold",
+      "brand": "Carrefour",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/127/5839/front_fr.19.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071275839",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-7613031918881",
+      "barcode": "7613031918881",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "NESCAFE",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/191/8881/front_ru.26.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613031918881",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-8711000513767",
+      "barcode": "8711000513767",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jacobs Cronat Gold Instant Coffee",
+      "brand": "Jacobs",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/100/051/3767/front_pl.16.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8711000513767",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-5900512901091",
+      "barcode": "5900512901091",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jogurt Grecki",
+      "brand": "Fruvita",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/051/290/1091/front_en.4.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900512901091",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-3560071432034",
+      "barcode": "3560071432034",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "52 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Espresso decaffeinato",
+      "brand": "Carrefour",
+      "category": "Coffee & Tea",
+      "measure": "52 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/143/2034/front_en.11.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071432034",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "pl-off-8000070059337",
+      "barcode": "8000070059337",
+      "market": "pl",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Espresso Classique n°7",
+      "brand": "Carte Noire",
+      "category": "Coffee & Tea",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/007/005/9337/front_fr.4.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000070059337",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 30
 }

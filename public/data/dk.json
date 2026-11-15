@@ -145,6 +145,1155 @@
       ]
     }
   ],
-  "catalog": [],
-  "catalogCount": 0
+  "catalog": [
+    {
+      "id": "dk-off-5053827199568",
+      "barcode": "5053827199568",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "410 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Müsli-Tresor-Choco Nut",
+      "brand": "Kellogg's",
+      "category": "Cereals & Porridge",
+      "measure": "410 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/382/719/9568/front_en.92.200.jpg",
+      "scans": 263,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5053827199568",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4000339697908",
+      "barcode": "4000339697908",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Philadelphia naturell",
+      "brand": "Philadelphia",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/033/969/7908/front_en.24.200.jpg",
+      "scans": 119,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4000339697908",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20664459",
+      "barcode": "20664459",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Feta",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/066/4459/front_en.9.200.jpg",
+      "scans": 76,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20664459",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3228024930050",
+      "barcode": "3228024930050",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.4 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "President emmental coeur de meule 400g",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "0.4 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/802/493/0050/front_fr.65.200.jpg",
+      "scans": 53,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228024930050",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3387390339499",
+      "barcode": "3387390339499",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "FITNESS Cerealien",
+      "brand": "Nestlé",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/338/739/033/9499/front_en.211.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3387390339499",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5740900403376",
+      "barcode": "5740900403376",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Smørbar",
+      "brand": "Lurpak",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/090/040/3376/front_en.54.200.jpg",
+      "scans": 38,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740900403376",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5201168515138",
+      "barcode": "5201168515138",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Authentic Greek yoghurt 8%",
+      "brand": "DODONI SINGLE MEMBER SA – AGRICULTURAL DAIRY INDUSTRY OF EPIRUS - DODONI SA",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/520/116/851/5138/front_en.15.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5201168515138",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5738001092490",
+      "barcode": "5738001092490",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cornflakes",
+      "brand": "Kellogg's",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/573/800/109/2490/front_en.48.200.jpg",
+      "scans": 29,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5738001092490",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5201704064243",
+      "barcode": "5201704064243",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Authentic Greek Yogurt",
+      "brand": "KOLIÓS",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/520/170/406/4243/front_en.24.200.jpg",
+      "scans": 26,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5201704064243",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3155250343302",
+      "barcode": "3155250343302",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.125 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "RONDELE AU BLEU 125g",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "0.125 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/525/034/3302/front_fr.45.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3155250343302",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700419083360",
+      "barcode": "5700419083360",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Philadelphia Light",
+      "brand": "Philadelphia",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/041/908/3360/front_fr.40.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700419083360",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7310130801709",
+      "barcode": "7310130801709",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Start! Naturell granola",
+      "brand": "Lantmännen",
+      "category": "Cereals & Porridge",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/013/080/1709/front_fi.71.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310130801709",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5011476102957",
+      "barcode": "5011476102957",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Multi Cheerios",
+      "brand": "Nestlé",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/147/610/2957/front_sv.28.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5011476102957",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-30087040",
+      "barcode": "30087040",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "20 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Camembert",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "20 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/003/008/7040/front_fr.33.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/30087040",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3228021950051",
+      "barcode": "3228021950051",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "President petit brie 500g",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "0.5 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/802/195/0051/front_fr.41.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228021950051",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5711953175152",
+      "barcode": "5711953175152",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso proteina lonchas",
+      "brand": "Arla Foods A.m.b.a",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/195/317/5152/front_en.33.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711953175152",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5000159532921",
+      "barcode": "5000159532921",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "BE-KIND caram-alm-sea salt",
+      "brand": "BE-KIND",
+      "category": "Cereals & Porridge",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/015/953/2921/front_nl.44.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000159532921",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7311171008386",
+      "barcode": "7311171008386",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Havrefras Original",
+      "brand": "Havre fras",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/117/100/8386/front_nb.36.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311171008386",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5059319023168",
+      "barcode": "5059319023168",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coco Pops",
+      "brand": "Kellogg's",
+      "category": "Cereals & Porridge",
+      "measure": "330 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/931/902/3168/front_nb.17.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5059319023168",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5760466904919",
+      "barcode": "5760466904919",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kærgården",
+      "brand": "Kærgården",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/576/046/690/4919/front_en.27.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5760466904919",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3161910238710",
+      "barcode": "3161910238710",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Camembert coeur de lion",
+      "brand": "Cœur de Lion",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/191/023/8710/front_en.85.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3161910238710",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5712872968672",
+      "barcode": "5712872968672",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skyr 0,2%",
+      "brand": "Egelykke",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/287/296/8672/front_da.15.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5712872968672",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5059319023502",
+      "barcode": "5059319023502",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "360 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kellogg'sRice Krispies riisimuro",
+      "brand": "Kellogg's",
+      "category": "Cereals & Porridge",
+      "measure": "360 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/931/902/3502/front_en.25.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5059319023502",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701029160823",
+      "barcode": "5701029160823",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "F-musli Guld",
+      "brand": "Axa",
+      "category": "Cereals & Porridge",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/102/916/0823/front_fr.4.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701029160823",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5711953168260",
+      "barcode": "5711953168260",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "175 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Harvati light",
+      "brand": "Arla Foods A.m.b.a",
+      "category": "Dairy",
+      "measure": "175 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/195/316/8260/front_en.5.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711953168260",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5740900403383",
+      "barcode": "5740900403383",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dansk Smor",
+      "brand": "Lurpak",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/090/040/3383/front_da.26.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740900403383",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5760466904940",
+      "barcode": "5760466904940",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kærgaard Let",
+      "brand": "KÆRGÅRDEN",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/576/046/690/4940/front_da.9.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5760466904940",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700426221045",
+      "barcode": "5700426221045",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Yoghurt",
+      "brand": "Yoggi Arla",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/042/622/1045/front_en.4.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700426221045",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830611840",
+      "barcode": "5705830611840",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Smør",
+      "brand": "REMA 1000",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/061/1840/front_da.8.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830611840",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700426220024",
+      "barcode": "5700426220024",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "yoghurt jordbær",
+      "brand": "yoggi",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/042/622/0024/front_en.7.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700426220024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489844426",
+      "barcode": "4056489844426",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sødergården 65% Butter, gesalzen",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/984/4426/front_de.24.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489844426",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5760466920292",
+      "barcode": "5760466920292",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Drikkeyoghurt Blåbær",
+      "brand": "Arla Cultura",
+      "category": "Dairy",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/576/046/692/0292/front_da.30.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5760466920292",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5410146413605",
+      "barcode": "5410146413605",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Danonino",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/014/641/3605/front_tr.14.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5410146413605",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5760466904742",
+      "barcode": "5760466904742",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kærgården Original",
+      "brand": "Kærgården",
+      "category": "Dairy",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/576/046/690/4742/front_en.23.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5760466904742",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7311041084212",
+      "barcode": "7311041084212",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hvidløgs Baguettes",
+      "brand": "First Price",
+      "category": "Dairy",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/104/108/4212/front_da.4.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311041084212",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701043001072",
+      "barcode": "5701043001072",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Smørbar",
+      "brand": "Bakke dal",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/104/300/1072/front_en.61.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701043001072",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5740900403949",
+      "barcode": "5740900403949",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Let smør",
+      "brand": "Lurpak",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/090/040/3949/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740900403949",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7310867941501",
+      "barcode": "7310867941501",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Creamy Skyr - Strawberry Lime",
+      "brand": "Stay Strong",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/086/794/1501/front_en.10.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310867941501",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489379232",
+      "barcode": "4056489379232",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "812 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Milbona Yogurt Drink",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "812 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/937/9232/front_en.11.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489379232",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5760466920278",
+      "barcode": "5760466920278",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Raspberry Yogurt Drink",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/576/046/692/0278/front_en.38.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5760466920278",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701012310495",
+      "barcode": "5701012310495",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kingsway Mixed juice light from concentrate",
+      "brand": "Kingsway",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/101/231/0495/front_en.10.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701012310495",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 41
 }

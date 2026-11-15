@@ -1,5 +1,5 @@
 -- KiloRadar (https://www.kiloradar.com) — Auto-generated Cloudflare D1 Sync SQL
--- Generated at: 2026-11-15T09:27:59.131963+00:00
+-- Generated at: 2026-11-15T09:44:14.858837+00:00
 BEGIN TRANSACTION;
 
 INSERT OR REPLACE INTO products (ean, name, brand, category, country_code, image_url, last_checked, match_confidence, verification, updated_at) VALUES ('8001090981127', 'Ariel Color Liquid Detergent 850 ml', 'Ariel', 'Home & Laundry', 'en', NULL, NULL, NULL, 'unverified', CURRENT_TIMESTAMP);

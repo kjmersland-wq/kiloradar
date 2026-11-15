@@ -299,6 +299,1687 @@
       ]
     }
   ],
-  "catalog": [],
-  "catalogCount": 0
+  "catalog": [
+    {
+      "id": "global-off-3046920029759",
+      "barcode": "3046920029759",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence Noir Prodigieux 90% Cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9759/front_en.544.200.jpg",
+      "scans": 858,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029759",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3046920022606",
+      "barcode": "3046920022606",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 85% cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/2606/front_en.102.200.jpg",
+      "scans": 830,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920022606",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3046920022651",
+      "barcode": "3046920022651",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Noir Intense",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/2651/front_en.159.200.jpg",
+      "scans": 772,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920022651",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111242100985",
+      "barcode": "6111242100985",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "80 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "بيرلي جبن طازج سادة",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "80 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0985/front_en.58.200.jpg",
+      "scans": 645,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100985",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-20995553",
+      "barcode": "20995553",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Шоколад 85% какаова маса",
+      "brand": "J.D: Gross",
+      "category": "Chocolate & Sweets",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/5553/front_en.380.200.jpg",
+      "scans": 599,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20995553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3046920029780",
+      "barcode": "3046920029780",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence Noir Subtil Doux 70% Cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9780/front_en.328.200.jpg",
+      "scans": 409,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029780",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3046920010047",
+      "barcode": "3046920010047",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cioccolato Fondente 78%",
+      "brand": "LINDT EXCELLENCE",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/001/0047/front_en.260.200.jpg",
+      "scans": 390,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920010047",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3046920028363",
+      "barcode": "3046920028363",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 85% Cacao Rich Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8363/front_en.500.200.jpg",
+      "scans": 360,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028363",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111242100206",
+      "barcode": "6111242100206",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le nature",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0206/front_en.38.200.jpg",
+      "scans": 330,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100206",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3451790988677",
+      "barcode": "3451790988677",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Beurre Tendre",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/345/179/098/8677/front_en.186.200.jpg",
+      "scans": 329,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3451790988677",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-7613035676497",
+      "barcode": "7613035676497",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "260 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chicorée & Café, RICORÉ® L'Original, Boîte de 260g",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "260 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/567/6497/front_en.258.200.jpg",
+      "scans": 328,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613035676497",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3046920028004",
+      "barcode": "3046920028004",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 70% Cocoa Intense Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8004/front_en.435.200.jpg",
+      "scans": 320,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028004",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111266963207",
+      "barcode": "6111266963207",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "كيفير",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/126/696/3207/front_en.42.200.jpg",
+      "scans": 311,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111266963207",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111242100305",
+      "barcode": "6111242100305",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "jaouda Cremy",
+      "brand": "jaouda",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0305/front_fr.98.200.jpg",
+      "scans": 281,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100305",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-7613035040823",
+      "barcode": "7613035040823",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "205 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nestlé dessert Noir",
+      "brand": "Nestlé",
+      "category": "Chocolate & Sweets",
+      "measure": "205 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/504/0823/front_en.357.200.jpg",
+      "scans": 267,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613035040823",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111259092525",
+      "barcode": "6111259092525",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Goldium Blanc Nature",
+      "brand": "Maître Fromager",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/125/909/2525/front_fr.3.200.jpg",
+      "scans": 260,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111259092525",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111032006619",
+      "barcode": "6111032006619",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jamila رايبي",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/6619/front_fr.69.200.jpg",
+      "scans": 246,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032006619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-7613032655495",
+      "barcode": "7613032655495",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "260 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chicorée & Café, RICORÉ® L'Original, Boîte de 260g",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "260 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/265/5495/front_fr.379.200.jpg",
+      "scans": 233,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613032655495",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111032001003",
+      "barcode": "6111032001003",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Assil vanille",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/1003/front_en.61.200.jpg",
+      "scans": 205,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032001003",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111242103702",
+      "barcode": "6111242103702",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Yaourt Grec Muesli",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/3702/front_fr.4.200.jpg",
+      "scans": 198,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242103702",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3155251205500",
+      "barcode": "3155251205500",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre doux gastronomique",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/525/120/5500/front_fr.227.200.jpg",
+      "scans": 191,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3155251205500",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3760341070472",
+      "barcode": "3760341070472",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Taureau Ailé - Le Basmati du Penjab",
+      "brand": "Taureau Ailé",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/376/034/107/0472/front_en.11.200.jpg",
+      "scans": 189,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3760341070472",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111018903161",
+      "barcode": "6111018903161",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé Classic",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "45 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/101/890/3161/front_fr.48.200.jpg",
+      "scans": 185,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111018903161",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3487400006745",
+      "barcode": "3487400006745",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz tomate à l’italienne",
+      "brand": "Ben's Original",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/740/000/6745/front_fr.39.200.jpg",
+      "scans": 185,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3487400006745",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-8425197712024",
+      "barcode": "8425197712024",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocolate con leche y almendras",
+      "brand": "CHOCOLATES MARUJA S.L.",
+      "category": "Chocolate & Sweets",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/842/519/771/2024/front_en.60.200.jpg",
+      "scans": 176,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8425197712024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3451790988813",
+      "barcode": "3451790988813",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "le beurre tendre",
+      "brand": "Elle et Vire",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/345/179/098/8813/front_en.122.200.jpg",
+      "scans": 176,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3451790988813",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3523230030793",
+      "barcode": "3523230030793",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "beurre demi-sel",
+      "brand": "Grand Fermage",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/352/323/003/0793/front_en.24.200.jpg",
+      "scans": 173,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3523230030793",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3155251205524",
+      "barcode": "3155251205524",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre tendre doux",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/525/120/5524/front_fr.152.200.jpg",
+      "scans": 169,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3155251205524",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111032001010",
+      "barcode": "6111032001010",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "DANONE ASSIL BANANE",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/1010/front_fr.54.200.jpg",
+      "scans": 166,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032001010",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111242105331",
+      "barcode": "6111242105331",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre Frais Pasteurisé",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/5331/front_fr.38.200.jpg",
+      "scans": 165,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242105331",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3033710077274",
+      "barcode": "3033710077274",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "NESCAFÉ NES, Café Soluble, Boite de 200g",
+      "brand": "Nes",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/371/007/7274/front_fr.188.200.jpg",
+      "scans": 160,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3033710077274",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3187570015447",
+      "barcode": "3187570015447",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Café moulu pur arabica des petits producteurs",
+      "brand": "Malongo",
+      "category": "Coffee & Tea",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/318/757/001/5447/front_fr.108.200.jpg",
+      "scans": 147,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3187570015447",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3033710074525",
+      "barcode": "3033710074525",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "special filtre",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/371/007/4525/front_en.196.200.jpg",
+      "scans": 144,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3033710074525",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-5740900404465",
+      "barcode": "5740900404465",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spreadable",
+      "brand": "Lurpak",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/090/040/4465/front_en.30.200.jpg",
+      "scans": 144,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740900404465",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3487400006721",
+      "barcode": "3487400006721",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Ben's Original",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/740/000/6721/front_fr.42.200.jpg",
+      "scans": 139,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3487400006721",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111242660373",
+      "barcode": "6111242660373",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre Badaouia",
+      "brand": "Badaouia",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/266/0373/front_en.35.200.jpg",
+      "scans": 123,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242660373",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3564700444207",
+      "barcode": "3564700444207",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz complet",
+      "brand": "Marque Repère",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/044/4207/front_fr.65.200.jpg",
+      "scans": 108,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564700444207",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3760341070540",
+      "barcode": "3760341070540",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Thaï du Plateau de l'i-san pure origine",
+      "brand": "Taureau Ailé",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/376/034/107/0540/front_fr.36.200.jpg",
+      "scans": 99,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3760341070540",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3250391418107",
+      "barcode": "3250391418107",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SAINT ELOI riz complet cuisson 10 mn étui 500gr",
+      "brand": "Saint Eloi",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/039/141/8107/front_fr.64.200.jpg",
+      "scans": 96,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3250391418107",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-4056489095736",
+      "barcode": "4056489095736",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "240 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Golden Sun",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "240 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/909/5736/front_en.30.200.jpg",
+      "scans": 92,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489095736",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-3560070510771",
+      "barcode": "3560070510771",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Complet",
+      "brand": "Carrefour",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/051/0771/front_fr.90.200.jpg",
+      "scans": 89,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070510771",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-8424893600352",
+      "barcode": "8424893600352",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "kéfir 500g",
+      "brand": "Reina",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/842/489/360/0352/front_fr.10.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8424893600352",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111101001361",
+      "barcode": "6111101001361",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Asta",
+      "brand": "Asta",
+      "category": "Coffee & Tea",
+      "measure": "45 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/110/100/1361/front_en.18.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111101001361",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-5018095004341",
+      "barcode": "5018095004341",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spanish Style Grains",
+      "brand": "Merchant Gourmet",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/809/500/4341/front_en.26.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5018095004341",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111018903185",
+      "barcode": "6111018903185",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafe classic",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/101/890/3185/front_ar.19.200.jpg",
+      "scans": 55,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111018903185",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-8410184040747",
+      "barcode": "8410184040747",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sabroz arroz integral",
+      "brand": "Sabroz",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/018/404/0747/front_es.6.200.jpg",
+      "scans": 37,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410184040747",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-5202178082337",
+      "barcode": "5202178082337",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Χυμός Μήλο Ρόδι Σταφύλι Πορτοκαλί",
+      "brand": "Chippita",
+      "category": "Juice & Drinks",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/520/217/808/2337/front_en.4.200.jpg",
+      "scans": 26,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5202178082337",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111250473453",
+      "barcode": "6111250473453",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "80 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "VIP crema gold café instantané",
+      "brand": "VIP",
+      "category": "Coffee & Tea",
+      "measure": "80 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/125/047/3453/front_en.13.200.jpg",
+      "scans": 25,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111250473453",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111250470209",
+      "barcode": "6111250470209",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "VIP Gold café instantané",
+      "brand": "VIP",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/125/047/0209/front_en.14.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111250470209",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111099003897",
+      "barcode": "6111099003897",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tartine & Cuisine",
+      "brand": "lilia",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/3897/front_en.42.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099003897",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-6111099005396",
+      "barcode": "6111099005396",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lilia Tartine & Cuisine",
+      "brand": "Lilia",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/5396/front_ar.17.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099005396",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-9310179006767",
+      "barcode": "9310179006767",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Golden Circle Golden Pash Fruit Drink",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/900/6767/front_en.37.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179006767",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-4088600552521",
+      "barcode": "4088600552521",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Turmeric Immune Support Juice Shot",
+      "brand": "The Juice Company",
+      "category": "Juice & Drinks",
+      "measure": "100 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/055/2521/front_en.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600552521",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-02505901",
+      "barcode": "02505901",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "6 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple Juice",
+      "brand": "Minute Maid",
+      "category": "Juice & Drinks",
+      "measure": "6 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/250/5901/front_en.14.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/02505901",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-4015533062322",
+      "barcode": "4015533062322",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Start Shot",
+      "brand": "Völkel",
+      "category": "Juice & Drinks",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/401/553/306/2322/front_de.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4015533062322",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-8906066202308",
+      "barcode": "8906066202308",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lemon Juice",
+      "brand": "Keya",
+      "category": "Juice & Drinks",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/890/606/620/2308/front_en.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8906066202308",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-8905529000871",
+      "barcode": "8905529000871",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Forest Secrets Cold Pressed Amla Juice",
+      "brand": "Forest Secrets",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/890/552/900/0871/front_en.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8905529000871",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-9310179188098",
+      "barcode": "9310179188098",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple Blackcurrant juice",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/918/8098/front_fr.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179188098",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-9310179008594",
+      "barcode": "9310179008594",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple Mango Juice",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/900/8594/front_fr.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179008594",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "global-off-8901220004804",
+      "barcode": "8901220004804",
+      "market": "global",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Baidyanath Siddhayu Noni+ Juice",
+      "brand": "Baidyanath Siddhayu",
+      "category": "Juice & Drinks",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/890/122/000/4804/front_en.14.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8901220004804",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 60
 }
