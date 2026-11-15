@@ -1,1 +1,116 @@
 @import "tailwindcss";
+
+/*
+ * KiloRadar design system (ported from the Lovable redesign).
+ * Colors use oklch tokens; Tailwind utilities (bg-card, text-savings, ...) are
+ * mapped in @theme inline below.
+ */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-savings: var(--savings);
+  --color-shrink: var(--shrink);
+  --color-warn: var(--warn);
+  --color-surface-raised: var(--surface-raised);
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --shadow-card: var(--shadow-card);
+  --shadow-glow: var(--shadow-glow);
+}
+
+:root {
+  --radius: 1.25rem;
+  --background: oklch(0.155 0.025 260);
+  --foreground: oklch(0.96 0.01 250);
+  --card: oklch(0.205 0.03 260);
+  --card-foreground: oklch(0.96 0.01 250);
+  --primary: oklch(0.8 0.17 155);
+  --primary-foreground: oklch(0.18 0.04 160);
+  --secondary: oklch(0.25 0.03 260);
+  --secondary-foreground: oklch(0.96 0.01 250);
+  --muted: oklch(0.24 0.03 260);
+  --muted-foreground: oklch(0.7 0.03 255);
+  --accent: oklch(0.82 0.15 75);
+  --border: oklch(1 0 0 / 9%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.8 0.17 155);
+  --savings: oklch(0.8 0.17 155);
+  --shrink: oklch(0.68 0.2 25);
+  --warn: oklch(0.82 0.15 75);
+  --surface-raised: oklch(0.235 0.032 260);
+  --gradient-hero:
+    radial-gradient(ellipse 80% 60% at 70% 0%, oklch(0.8 0.17 155 / 0.16), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 0% 30%, oklch(0.68 0.2 25 / 0.1), transparent 60%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.8 0.17 155 / 0.22), oklch(0.205 0.03 260) 60%);
+  --shadow-card: 0 1px 0 oklch(1 0 0 / 0.05) inset, 0 20px 40px -24px oklch(0 0 0 / 0.7);
+  --shadow-glow: 0 0 0 1px oklch(0.8 0.17 155 / 0.35), 0 24px 60px -20px oklch(0.8 0.17 155 / 0.35);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility bg-hero {
+  background-image: var(--gradient-hero);
+}
+@utility bg-winner {
+  background-image: var(--gradient-gold);
+}
+@utility card-kilo {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@utility animate-rise {
+  animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}

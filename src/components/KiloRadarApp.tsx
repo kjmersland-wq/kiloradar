@@ -9,7 +9,6 @@ import {
   CheckCircle2,
   Scale,
   ArrowRight,
-  Sparkles,
   ShieldAlert,
   PackageMinus,
   Calculator,
@@ -426,7 +425,7 @@ function ShrinkflationComparisonHeroSvg({
   const analysis = analyzeProductShrinkflation(sampleProduct);
 
   return (
-    <div className="rounded-xl bg-slate-950/90 border border-slate-800/90 p-3.5 overflow-hidden">
+    <div className="rounded-xl bg-background/90 border border-border/90 p-3.5 overflow-hidden">
       <svg
         viewBox="0 0 420 132"
         fill="none"
@@ -799,7 +798,7 @@ function ProductAvatar({ product }: { product: ProductItem }) {
 
   if (product.imageUrl && !imgError) {
     return (
-      <div className="w-11 h-11 rounded-xl bg-slate-950 border border-slate-800 overflow-hidden shrink-0 flex items-center justify-center p-1">
+      <div className="w-11 h-11 rounded-xl bg-background border border-border overflow-hidden shrink-0 flex items-center justify-center p-1">
         <img
           src={product.imageUrl}
           alt={product.name}
@@ -813,7 +812,7 @@ function ProductAvatar({ product }: { product: ProductItem }) {
 
   return (
     <div
-      className="w-11 h-11 rounded-xl bg-slate-950/90 border border-slate-800 shrink-0 flex items-center justify-center shadow-inner"
+      className="w-11 h-11 rounded-xl bg-background/90 border border-border shrink-0 flex items-center justify-center shadow-inner"
       title={product.category}
     >
       <CategorySvgIcon category={product.category} className="w-6 h-6" />
@@ -860,10 +859,10 @@ function ShareButtonsBar({
   return (
     <div
       data-testid="social-share-bar"
-      className="rounded-2xl bg-slate-900/90 border border-slate-800/90 px-4 py-3.5 shadow-xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
+      className="card-kilo px-4 py-3.5 shadow-xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
     >
-      <div className="flex items-center gap-2 text-xs font-semibold text-slate-300">
-        <Share2 className="w-4 h-4 text-emerald-400 shrink-0" />
+      <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground">
+        <Share2 className="w-4 h-4 text-savings shrink-0" />
         <span>{barLabel}</span>
       </div>
 
@@ -874,8 +873,8 @@ function ShareButtonsBar({
           data-testid="share-copy-link-btn"
           className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 border transition cursor-pointer ${
             copied
-              ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-lg shadow-emerald-500/20'
-              : 'bg-slate-950 hover:bg-slate-800 text-emerald-300 border-emerald-500/40'
+              ? 'bg-savings text-primary-foreground border-savings shadow-lg shadow-savings/20'
+              : 'bg-background hover:bg-secondary text-savings border-savings/40'
           }`}
         >
           {copied ? <Check className="w-3.5 h-3.5" /> : <Link2 className="w-3.5 h-3.5" />}
@@ -887,7 +886,7 @@ function ShareButtonsBar({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Share on X (Twitter)"
-          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-slate-200 hover:text-white transition"
+          className="px-3 py-1.5 rounded-xl bg-background hover:bg-secondary border border-border hover:border-border text-xs font-semibold text-foreground hover:text-foreground transition"
         >
           𝕏 / Twitter
         </a>
@@ -897,7 +896,7 @@ function ShareButtonsBar({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Share on Facebook"
-          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-slate-200 hover:text-white transition"
+          className="px-3 py-1.5 rounded-xl bg-background hover:bg-secondary border border-border hover:border-border text-xs font-semibold text-foreground hover:text-foreground transition"
         >
           Facebook
         </a>
@@ -907,7 +906,7 @@ function ShareButtonsBar({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Share on WhatsApp"
-          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-emerald-300 hover:text-emerald-200 transition"
+          className="px-3 py-1.5 rounded-xl bg-background hover:bg-secondary border border-border hover:border-border text-xs font-semibold text-savings hover:text-savings transition"
         >
           WhatsApp
         </a>
@@ -917,7 +916,7 @@ function ShareButtonsBar({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Share on Reddit"
-          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-amber-300 hover:text-amber-200 transition"
+          className="px-3 py-1.5 rounded-xl bg-background hover:bg-secondary border border-border hover:border-border text-xs font-semibold text-warn hover:text-warn transition"
         >
           Reddit
         </a>
@@ -927,7 +926,7 @@ function ShareButtonsBar({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Share on LinkedIn"
-          className="px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-xs font-semibold text-sky-300 hover:text-sky-200 transition"
+          className="px-3 py-1.5 rounded-xl bg-background hover:bg-secondary border border-border hover:border-border text-xs font-semibold text-warn hover:text-warn transition"
         >
           LinkedIn
         </a>
@@ -1626,13 +1625,13 @@ export default function KiloRadarApp({
   const mostExpensiveStore = storeBasketRanking[storeBasketRanking.length - 1];
 
   return (
-    <div className="min-h-screen bg-[#070B12] text-slate-100 font-sans selection:bg-emerald-500/30 selection:text-emerald-200 flex flex-col justify-between">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-savings/30 selection:text-savings flex flex-col justify-between">
       <div>
         {/* Smart Non-Intrusive Language Suggestion Banner on '/' */}
         {countryCode === 'en' && suggestedLocale && !bannerDismissed && (
-          <div className="relative z-40 bg-emerald-950/90 border-b border-emerald-500/40 px-4 py-2.5 text-xs">
+          <div className="relative z-40 bg-savings/90 border-b border-savings/40 px-4 py-2.5 text-xs">
             <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-2 text-emerald-100">
+              <div className="flex items-center gap-2 text-savings">
                 <span className="text-base">{suggestedLocale.flag}</span>
                 <span>{suggestedLocale.smartBannerQuestion}</span>
               </div>
@@ -1640,7 +1639,7 @@ export default function KiloRadarApp({
                 <button
                   type="button"
                   onClick={() => handleCountrySwitch(suggestedLocale.code)}
-                  className="px-3 py-1 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold transition cursor-pointer"
+                  className="px-3 py-1 rounded-lg bg-savings hover:bg-savings text-primary-foreground font-bold transition cursor-pointer"
                 >
                   {suggestedLocale.smartBannerCta} →
                 </button>
@@ -1648,7 +1647,7 @@ export default function KiloRadarApp({
                   type="button"
                   onClick={() => setBannerDismissed(true)}
                   aria-label="Dismiss language suggestion"
-                  className="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition cursor-pointer"
+                  className="p-1 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary/60 transition cursor-pointer"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -1658,20 +1657,20 @@ export default function KiloRadarApp({
         )}
 
         {/* Nightly Automatic Sync & Community Report Bar */}
-        <div className="relative z-30 bg-slate-950/90 border-b border-slate-800/80 px-4 py-2 text-[11px] text-slate-400">
+        <div className="relative z-30 bg-background/90 border-b border-border/80 px-4 py-2 text-[11px] text-muted-foreground">
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <Clock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <span className="inline-block w-2 h-2 rounded-full bg-savings animate-pulse" />
+              <Clock className="w-3.5 h-3.5 text-savings shrink-0" />
               <span>{rtUi.nightlySyncStatus(lastSyncedDate)}</span>
             </div>
             <button
               type="button"
               onClick={() => setReportModalOpen(true)}
               data-testid="open-report-modal-btn"
-              className="px-2.5 py-1 rounded-lg bg-rose-500/15 hover:bg-rose-500/25 border border-rose-500/35 text-rose-300 font-semibold flex items-center gap-1.5 transition cursor-pointer"
+              className="px-2.5 py-1 rounded-lg bg-shrink/15 hover:bg-shrink/25 border border-shrink/35 text-shrink font-semibold flex items-center gap-1.5 transition cursor-pointer"
             >
-              <Flag className="w-3 h-3 text-rose-400" />
+              <Flag className="w-3 h-3 text-shrink" />
               <span>{rtUi.reportShrunkBtn}</span>
             </button>
           </div>
@@ -1679,123 +1678,88 @@ export default function KiloRadarApp({
 
         {/* Subtle Ambient Radar Glow */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-          <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-emerald-500/10 rounded-full blur-[130px]" />
-          <div className="absolute top-60 right-1/4 w-[460px] h-[460px] bg-rose-500/10 rounded-full blur-[130px]" />
+          <div className="absolute -top-40 left-1/4 w-[520px] h-[520px] bg-savings/10 rounded-full blur-[130px]" />
+          <div className="absolute top-60 right-1/4 w-[460px] h-[460px] bg-shrink/10 rounded-full blur-[130px]" />
         </div>
 
         {/* Top Navigation & Brand Header */}
-        <header className="sticky top-0 z-30 border-b border-slate-800/80 bg-[#070B12]/90 backdrop-blur-xl">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-            <div className="flex items-center justify-between gap-3.5">
-              <div className="flex items-center gap-3.5">
-                <div className="relative shrink-0">
-                  <KiloRadarLogo className="w-12 h-12 drop-shadow-[0_0_12px_rgba(16,185,129,0.25)]" />
-                  <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-500"></span>
-                  </span>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2.5">
-                    <div className="text-2xl font-extrabold tracking-tight text-white">
-                      Kilo<span className="text-[#10B981]">Radar</span>
-                    </div>
-                    <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-slate-900 text-slate-400 border border-slate-800">
-                      kiloradar.com{localeConfig.path === '/' ? '' : localeConfig.path}
-                    </span>
-                    <span className="px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                      {dict.badgeAlgorithmic}
-                    </span>
-                  </div>
-                  <p className="text-xs text-slate-400">{dict.tagline}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Controls: Live Summary Pills + Country URL Route Switcher */}
-            <div className="flex flex-wrap items-center justify-between lg:justify-end gap-2.5">
-              <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center">
-                <div className="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2">
-                  <Trophy className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <div>
-                    <div className="text-[10px] uppercase tracking-wider text-slate-400">
-                      {dict.cheapestChainNow}
-                    </div>
-                    <div className="text-xs sm:text-sm font-bold text-emerald-400">
-                      {cheapestStore?.store}
-                    </div>
-                  </div>
-                </div>
-                <div className="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2">
-                  <ShieldAlert className="w-4 h-4 text-rose-400 shrink-0" />
-                  <div>
-                    <div className="text-[10px] uppercase tracking-wider text-slate-400">
-                      {dict.avgShrinkIndex}
-                    </div>
-                    <div className="text-xs sm:text-sm font-bold text-rose-400">
-                      +{globalStats.avgShrink}%
-                    </div>
-                  </div>
-                </div>
-                <div className="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-2">
-                  <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
-                  <div>
-                    <div className="text-[10px] uppercase tracking-wider text-slate-400">
-                      {dict.worstShrink}
-                    </div>
-                    <div className="text-xs sm:text-sm font-bold text-rose-500">
-                      +{globalStats.maxShrink}%
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Country Route & Currency Switcher (/, /no, /se, /dk, /pl) */}
-              <div className="flex items-center gap-1.5 bg-slate-900/95 border border-emerald-500/40 rounded-xl p-1 shadow-md">
-                <Globe className="w-3.5 h-3.5 text-emerald-400 ml-2 shrink-0" />
-                <select
-                  id="kiloradar-country-selector"
-                  aria-label="Select country route, language, and currency"
-                  value={countryCode}
-                  onChange={(e) => handleCountrySwitch(e.target.value as CountryRouteCode)}
-                  className="bg-transparent text-xs font-bold text-white px-2 py-1.5 rounded-lg focus:outline-none cursor-pointer"
-                >
-                  {COUNTRY_ROUTE_LIST.map((loc) => (
-                    <option key={loc.code} value={loc.code} className="bg-slate-950 text-white">
-                      {loc.selectorLabel}
-                    </option>
-                  ))}
-                </select>
-              </div>
+        <header className="sticky top-0 z-30 border-b border-border bg-background/80 backdrop-blur-xl">
+          <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+            <a href="#top" className="flex items-center gap-2.5 font-display text-lg font-bold text-foreground">
+              <KiloRadarLogo className="h-9 w-9" />
+              <span>
+                Kilo<span className="text-savings">Radar</span>
+              </span>
+              <span className="hidden rounded-full border border-border bg-card px-2 py-0.5 font-mono text-[10px] font-semibold text-muted-foreground sm:inline-block">
+                kiloradar.com{localeConfig.path === '/' ? '' : localeConfig.path}
+              </span>
+            </a>
+            {/* Country Route & Currency Switcher */}
+            <div className="flex items-center gap-1.5 rounded-full border border-border bg-card px-2 py-0.5">
+              <Globe className="ml-1.5 h-3.5 w-3.5 shrink-0 text-savings" />
+              <select
+                id="kiloradar-country-selector"
+                aria-label="Select country route, language, and currency"
+                value={countryCode}
+                onChange={(e) => handleCountrySwitch(e.target.value as CountryRouteCode)}
+                className="cursor-pointer rounded-full bg-transparent px-2 py-1.5 text-sm font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              >
+                {COUNTRY_ROUTE_LIST.map((loc) => (
+                  <option key={loc.code} value={loc.code} className="bg-background text-foreground">
+                    {loc.selectorLabel}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </header>
 
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 space-y-8">
+          {/* HERO */}
+          <section id="top" className="bg-hero -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+            <div className="animate-rise max-w-3xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
+                <span className="size-1.5 rounded-full bg-shrink" />
+                {dict.heroBadge}
+              </span>
+              <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] text-foreground sm:text-6xl">
+                <span className="mb-3 block text-xs font-bold uppercase tracking-wider text-savings">
+                  {seoMeta.h1KeywordKicker}
+                </span>
+                {dict.heroTitlePart1}{' '}
+                <span className="text-shrink">{dict.heroTitleHighlight}</span>
+              </h1>
+              <p className="mt-5 max-w-xl text-lg text-muted-foreground">{dict.heroDescription}</p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="#ranking" className="rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5">
+                  {dict.cheapestChainNow}
+                </a>
+                <a href="#calculator" className="rounded-full border border-border bg-card px-6 py-3 font-semibold text-foreground transition-colors hover:bg-secondary">
+                  {dict.simulatorTitle}
+                </a>
+              </div>
+            </div>
+            <div className="mt-10 grid gap-3 sm:grid-cols-3">
+              <div className="card-kilo animate-rise p-5">
+                <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><Trophy className="size-4 text-savings" />{dict.cheapestChainNow}</p>
+                <p className="mt-2 font-display text-3xl font-extrabold text-savings tabular">{cheapestStore?.store}</p>
+              </div>
+              <div className="card-kilo animate-rise p-5" style={{ animationDelay: '.06s' }}>
+                <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><ShieldAlert className="size-4 text-shrink" />{dict.avgShrinkIndex}</p>
+                <p className="mt-2 font-display text-3xl font-extrabold text-shrink tabular">+{globalStats.avgShrink}%</p>
+              </div>
+              <div className="card-kilo animate-rise p-5" style={{ animationDelay: '.12s' }}>
+                <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><AlertTriangle className="size-4 text-warn" />{dict.worstShrink}</p>
+                <p className="mt-2 font-display text-3xl font-extrabold text-warn tabular">+{globalStats.maxShrink}%</p>
+              </div>
+            </div>
+          </section>
+
           {/* TOP SECTION: Instant Search + Hero SVG Illustration + Scan / Test Product Simulator */}
-          <section className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <section id="calculator" className="grid grid-cols-1 lg:grid-cols-12 gap-6 scroll-mt-20">
             {/* Left Column: Search, Visual Hero SVG & Quick Filter Control */}
-            <div className="lg:col-span-5 flex flex-col justify-between rounded-2xl bg-slate-900/80 border border-slate-800/90 p-6 shadow-2xl space-y-4">
+            <div className="lg:col-span-5 flex flex-col justify-between card-kilo p-6 shadow-card space-y-4">
               <div className="space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs font-semibold">
-                  <Sparkles className="w-3.5 h-3.5 text-rose-400" />
-                  {dict.heroBadge}
-                </div>
-
-                <h1 className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
-                  <span className="block text-[11px] font-bold uppercase tracking-wider text-emerald-400 mb-1.5">
-                    {seoMeta.h1KeywordKicker}
-                  </span>
-                  {dict.heroTitlePart1}{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-500 to-amber-400">
-                    {dict.heroTitleHighlight}
-                  </span>
-                </h1>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  {dict.heroDescription}
-                </p>
-
                 {/* Lightweight Vector Hero Illustration comparing Old vs Shrunk Package */}
                 <ShrinkflationComparisonHeroSvg
                   locale={localeConfig}
@@ -1804,7 +1768,7 @@ export default function KiloRadarApp({
 
                 {/* Search Input (Also triggers live Open Food Facts search on Enter) */}
                 <div className="relative">
-                  <Search className="w-5 h-5 text-emerald-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <Search className="w-5 h-5 text-savings absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
                   <input
                     id="krymp-search-input"
                     type="text"
@@ -1817,13 +1781,13 @@ export default function KiloRadarApp({
                       }
                     }}
                     placeholder={dict.searchPlaceholder}
-                    className="w-full pl-12 pr-24 py-3 rounded-xl bg-slate-950/90 border border-slate-700/80 text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/20 transition-all"
+                    className="w-full pl-12 pr-24 py-3 rounded-xl bg-background/90 border border-border/80 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-savings focus:ring-2 focus:ring-savings/20 transition-all"
                   />
                   {searchQuery && (
                     <button
                       type="button"
                       onClick={() => setSearchQuery('')}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 transition"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-lg bg-secondary hover:bg-secondary text-xs text-muted-foreground transition"
                     >
                       {dict.resetBtn}
                     </button>
@@ -1832,9 +1796,9 @@ export default function KiloRadarApp({
 
                 {/* Category Filter Pills with SVG Category Icons */}
                 <div className="space-y-2">
-                  <div className="flex items-center justify-between text-xs text-slate-400">
+                  <div className="flex items-center justify-between text-xs text-muted-foreground">
                     <span className="flex items-center gap-1.5 font-medium">
-                      <Filter className="w-3.5 h-3.5 text-emerald-400" />
+                      <Filter className="w-3.5 h-3.5 text-savings" />
                       {dict.filterByCategory}
                     </span>
                     <span>{dict.showingCount(filteredProducts.length, products.length)}</span>
@@ -1845,8 +1809,8 @@ export default function KiloRadarApp({
                       onClick={() => setSelectedCategory('ALL')}
                       className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                         selectedCategory === 'ALL'
-                          ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/25'
-                          : 'bg-slate-950/80 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'
+                          ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
+                          : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
                       }`}
                     >
                       {dict.allCategoriesLabel}
@@ -1860,8 +1824,8 @@ export default function KiloRadarApp({
                           onClick={() => setSelectedCategory(category)}
                           className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
                             active
-                              ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/25'
-                              : 'bg-slate-950/80 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'
+                              ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
+                              : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
                           }`}
                         >
                           <CategorySvgIcon category={category} className="w-4 h-4" />
@@ -1874,31 +1838,31 @@ export default function KiloRadarApp({
               </div>
 
               {/* Algorithmic Formula Badge */}
-              <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+              <div className="pt-3 border-t border-border/80 flex items-center justify-between text-xs text-muted-foreground">
                 <span>{dict.formulaLabel}</span>
-                <code className="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-emerald-300 font-mono text-[11px]">
+                <code className="px-2.5 py-1 rounded-md bg-background border border-border text-savings font-mono text-[11px]">
                   ((newPrice/newQty) / (oldPrice/oldQty) - 1) × 100
                 </code>
               </div>
             </div>
 
             {/* Right Column: "Skann / Test produkt"-simulator */}
-            <div className="lg:col-span-7 rounded-2xl bg-slate-900/85 border border-slate-800/90 p-6 shadow-2xl flex flex-col justify-between">
+            <div className="lg:col-span-7 rounded-2xl bg-card/85 border border-border/90 p-6 shadow-card flex flex-col justify-between">
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                   <div className="flex items-center gap-2.5">
-                    <div className="p-2 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-400">
+                    <div className="p-2 rounded-lg bg-savings/15 border border-savings/30 text-savings">
                       <ScanBarcode className="w-5 h-5" />
                     </div>
                     <div>
-                      <h2 className="text-lg font-bold text-white">{dict.simulatorTitle}</h2>
-                      <p className="text-xs text-slate-400">{dict.simulatorSubtitle}</p>
+                      <h2 className="text-lg font-bold text-foreground">{dict.simulatorTitle}</h2>
+                      <p className="text-xs text-muted-foreground">{dict.simulatorSubtitle}</p>
                     </div>
                   </div>
                   <button
                     type="button"
                     onClick={handleAddSimulatedToList}
-                    className="px-3.5 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-300 text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer"
+                    className="px-3.5 py-2 rounded-xl bg-savings/15 hover:bg-savings/25 border border-savings/40 text-savings text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer"
                   >
                     <span>{dict.addToRadarBtn}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -1906,9 +1870,9 @@ export default function KiloRadarApp({
                 </div>
 
                 {/* Gratis Open Food Facts Live Oppslag + "Skann med kamera"-knapp */}
-                <div className="mb-4 p-3.5 rounded-xl bg-slate-950/90 border border-emerald-500/30 space-y-2.5">
+                <div className="mb-4 p-3.5 rounded-xl bg-background/90 border border-savings/30 space-y-2.5">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <span className="text-[11px] font-semibold text-emerald-400 flex items-center gap-1.5">
+                    <span className="text-[11px] font-semibold text-savings flex items-center gap-1.5">
                       <Globe className="w-3.5 h-3.5" />
                       {dict.liveOffTitle}
                     </span>
@@ -1916,9 +1880,9 @@ export default function KiloRadarApp({
                       type="button"
                       onClick={handleOpenCameraScanner}
                       data-testid="scan-camera-btn"
-                      className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 border border-emerald-500/40 text-emerald-300 text-[11px] font-semibold flex items-center gap-1.5 transition cursor-pointer"
+                      className="px-2.5 py-1 rounded-lg bg-card hover:bg-secondary border border-savings/40 text-savings text-[11px] font-semibold flex items-center gap-1.5 transition cursor-pointer"
                     >
-                      <Camera className="w-3.5 h-3.5 text-emerald-400" />
+                      <Camera className="w-3.5 h-3.5 text-savings" />
                       <span>{rtUi.scanWithCameraBtn}</span>
                     </button>
                   </div>
@@ -1931,14 +1895,14 @@ export default function KiloRadarApp({
                       onChange={(e) => setLiveBarcodeOrQuery(e.target.value)}
                       onKeyDown={(e) => e.key === 'Enter' && handleLiveOffLookup()}
                       placeholder={dict.liveOffPlaceholder}
-                      className="flex-1 px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-400"
+                      className="flex-1 px-3 py-2 rounded-lg bg-card border border-border text-xs text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-savings"
                     />
                     <button
                       id="live-off-search-btn"
                       type="button"
                       onClick={handleLiveOffLookup}
                       disabled={liveLoading}
-                      className="px-3.5 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-slate-950 font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shrink-0"
+                      className="px-3.5 py-2 rounded-lg bg-savings hover:bg-savings disabled:opacity-50 text-primary-foreground font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shrink-0"
                     >
                       {liveLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : null}
                       <span>{dict.liveOffBtn}</span>
@@ -1946,7 +1910,7 @@ export default function KiloRadarApp({
                   </div>
 
                   {liveStatusMsg && (
-                    <p className="text-[11px] text-emerald-300 font-medium">{liveStatusMsg}</p>
+                    <p className="text-[11px] text-savings font-medium">{liveStatusMsg}</p>
                   )}
 
                   {/* Interactive Live Search Results with Product Image + Automatic Unit Price & Shrink Calculator */}
@@ -1978,25 +1942,25 @@ export default function KiloRadarApp({
                           <div
                             key={item.code}
                             data-testid={`live-result-${item.code}`}
-                            className="p-2.5 rounded-xl bg-slate-900/95 border border-slate-800 flex flex-col justify-between gap-2"
+                            className="p-2.5 rounded-xl bg-card/95 border border-border flex flex-col justify-between gap-2"
                           >
                             <div className="flex items-center gap-2.5">
                               {item.image_small_url ? (
                                 <img
                                   src={item.image_small_url}
                                   alt={item.product_name}
-                                  className="w-10 h-10 rounded-lg object-contain bg-slate-950 border border-slate-800 p-0.5 shrink-0"
+                                  className="w-10 h-10 rounded-lg object-contain bg-background border border-border p-0.5 shrink-0"
                                 />
                               ) : (
-                                <div className="w-10 h-10 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center shrink-0">
+                                <div className="w-10 h-10 rounded-lg bg-background border border-border flex items-center justify-center shrink-0">
                                   <CategorySvgIcon category={simCategory} className="w-5 h-5" />
                                 </div>
                               )}
                               <div className="min-w-0 flex-1">
-                                <div className="text-xs font-bold text-white truncate">
+                                <div className="text-xs font-bold text-foreground truncate">
                                   {item.product_name}
                                 </div>
-                                <div className="text-[10px] text-slate-400 truncate">
+                                <div className="text-[10px] text-muted-foreground truncate">
                                   {item.brands} • <strong>{item.parsedMeasureStr}</strong> • EAN:{' '}
                                   {item.code}
                                 </div>
@@ -2006,7 +1970,7 @@ export default function KiloRadarApp({
                             {/* Interactive Price & Old Weight Inputs per Result */}
                             <div className="grid grid-cols-2 gap-1.5 text-[10px]">
                               <div>
-                                <span className="text-slate-400 block mb-0.5">
+                                <span className="text-muted-foreground block mb-0.5">
                                   {rtUi.liveInteractivePriceLabel}
                                 </span>
                                 <input
@@ -2019,11 +1983,11 @@ export default function KiloRadarApp({
                                       [item.code]: e.target.value,
                                     }))
                                   }
-                                  className="w-full px-2 py-1 rounded bg-slate-950 border border-slate-700 text-white font-mono text-[11px]"
+                                  className="w-full px-2 py-1 rounded bg-background border border-border text-foreground font-mono text-[11px]"
                                 />
                               </div>
                               <div>
-                                <span className="text-slate-400 block mb-0.5">
+                                <span className="text-muted-foreground block mb-0.5">
                                   {rtUi.liveCompareOldWeightLabel}
                                 </span>
                                 <input
@@ -2035,18 +1999,18 @@ export default function KiloRadarApp({
                                       [item.code]: e.target.value,
                                     }))
                                   }
-                                  className="w-full px-2 py-1 rounded bg-slate-950 border border-slate-700 text-white font-mono text-[11px]"
+                                  className="w-full px-2 py-1 rounded bg-background border border-border text-foreground font-mono text-[11px]"
                                 />
                               </div>
                             </div>
 
-                            <div className="flex items-center justify-between pt-1 border-t border-slate-800/80 text-[11px]">
+                            <div className="flex items-center justify-between pt-1 border-t border-border/80 text-[11px]">
                               <div>
-                                <span className="font-mono font-bold text-emerald-400">
+                                <span className="font-mono font-bold text-savings">
                                   {liveUnitText}
                                 </span>
                                 {liveShrinkPct !== null && liveShrinkPct > 0 && (
-                                  <span className="ml-1.5 px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 font-mono text-[10px] font-bold">
+                                  <span className="ml-1.5 px-1.5 py-0.5 rounded bg-shrink/20 text-shrink font-mono text-[10px] font-bold">
                                     +{liveShrinkPct}%
                                   </span>
                                 )}
@@ -2054,7 +2018,7 @@ export default function KiloRadarApp({
                               <button
                                 type="button"
                                 onClick={() => applyLiveProductToSimulator(item)}
-                                className="px-2 py-0.5 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 text-[10px] font-semibold transition cursor-pointer"
+                                className="px-2 py-0.5 rounded bg-savings/20 hover:bg-savings/30 text-savings text-[10px] font-semibold transition cursor-pointer"
                               >
                                 {rtUi.loadIntoSimulatorBtn}
                               </button>
@@ -2068,7 +2032,7 @@ export default function KiloRadarApp({
 
                 {/* Preloaded Country Presets */}
                 <div className="mb-5">
-                  <div className="text-xs font-medium text-slate-400 mb-2">
+                  <div className="text-xs font-medium text-muted-foreground mb-2">
                     {dict.presetsLabel}
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -2081,12 +2045,12 @@ export default function KiloRadarApp({
                           onClick={() => handleSelectPreset(preset)}
                           className={`px-3 py-2 rounded-xl text-left text-xs font-semibold border transition-all cursor-pointer ${
                             isSelected
-                              ? 'bg-rose-500/15 border-rose-500/60 text-white shadow-md shadow-rose-950/50'
-                              : 'bg-slate-950/70 border-slate-800 text-slate-300 hover:border-slate-700'
+                              ? 'bg-shrink/15 border-shrink/60 text-foreground shadow-md shadow-shrink/50'
+                              : 'bg-background/70 border-border text-muted-foreground hover:border-border'
                           }`}
                         >
                           <div className="truncate">{preset.presetLabel || preset.name}</div>
-                          <div className="text-[11px] text-slate-400 font-normal mt-0.5">
+                          <div className="text-[11px] text-muted-foreground font-normal mt-0.5">
                             {preset.oldMeasure} → {preset.newMeasure}
                           </div>
                         </button>
@@ -2098,24 +2062,24 @@ export default function KiloRadarApp({
                 {/* Simulator Input Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
                   <div className="sm:col-span-2">
-                    <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                    <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                       {dict.productNameLabel}
                     </label>
                     <input
                       type="text"
                       value={simName}
                       onChange={(e) => setSimName(e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-400"
+                      className="w-full px-3 py-2 rounded-lg bg-background border border-border text-sm text-foreground focus:outline-none focus:border-savings"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                    <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                       {dict.categoryLabel}
                     </label>
                     <select
                       value={simCategory}
                       onChange={(e) => setSimCategory(e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-400"
+                      className="w-full px-3 py-2 rounded-lg bg-background border border-border text-sm text-foreground focus:outline-none focus:border-savings"
                     >
                       {localeConfig.categories.map((cat) => (
                         <option key={cat} value={cat}>
@@ -2126,30 +2090,30 @@ export default function KiloRadarApp({
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                    <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                       {dict.oldAmountLabel}
                     </label>
                     <input
                       type="text"
                       value={simOldMeasure}
                       onChange={(e) => setSimOldMeasure(e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-400"
+                      className="w-full px-3 py-2 rounded-lg bg-background border border-border text-sm text-foreground focus:outline-none focus:border-savings"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                    <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                       {dict.newAmountLabel}
                     </label>
                     <input
                       type="text"
                       value={simNewMeasure}
                       onChange={(e) => setSimNewMeasure(e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-rose-500/40 text-sm text-rose-200 focus:outline-none focus:border-rose-400"
+                      className="w-full px-3 py-2 rounded-lg bg-background border border-shrink/40 text-sm text-shrink focus:outline-none focus:border-shrink"
                     />
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                     <div>
-                      <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                      <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                         {dict.oldPriceLabel} ({localeConfig.currencyCode})
                       </label>
                       <input
@@ -2157,11 +2121,11 @@ export default function KiloRadarApp({
                         step="0.1"
                         value={simOldPrice}
                         onChange={(e) => setSimOldPrice(e.target.value)}
-                        className="w-full px-2.5 py-2 rounded-lg bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-400"
+                        className="w-full px-2.5 py-2 rounded-lg bg-background border border-border text-sm text-foreground focus:outline-none focus:border-savings"
                       />
                     </div>
                     <div>
-                      <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                      <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                         {dict.newPriceLabel} ({localeConfig.currencyCode})
                       </label>
                       <input
@@ -2169,7 +2133,7 @@ export default function KiloRadarApp({
                         step="0.1"
                         value={simNewPrice}
                         onChange={(e) => setSimNewPrice(e.target.value)}
-                        className="w-full px-2.5 py-2 rounded-lg bg-slate-950 border border-rose-500/40 text-sm text-rose-200 focus:outline-none focus:border-rose-400"
+                        className="w-full px-2.5 py-2 rounded-lg bg-background border border-shrink/40 text-sm text-shrink focus:outline-none focus:border-shrink"
                       />
                     </div>
                   </div>
@@ -2178,32 +2142,32 @@ export default function KiloRadarApp({
 
               {/* Simulator Live Diagnostic Output */}
               {simulatorResult.valid ? (
-                <div className="rounded-xl bg-slate-950/90 border border-slate-800 p-4 grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                <div className="rounded-xl bg-background/90 border border-border p-4 grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
                   <div className="flex items-center gap-3">
                     {simImageUrl && (
                       <img
                         src={simImageUrl}
                         alt={simName}
-                        className="w-12 h-12 rounded-lg object-contain bg-slate-900 border border-slate-800 p-1 shrink-0"
+                        className="w-12 h-12 rounded-lg object-contain bg-card border border-border p-1 shrink-0"
                       />
                     )}
                     <div>
-                      <div className="text-[11px] uppercase tracking-wider text-slate-400">
+                      <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
                         {dict.realUnitPriceChange}
                       </div>
                       <div
                         className={`text-2xl font-black mt-0.5 ${
                           simulatorResult.analysis.shrinkIndex > 10
-                            ? 'text-rose-500'
-                            : 'text-emerald-400'
+                            ? 'text-shrink'
+                            : 'text-savings'
                         }`}
                       >
                         {simulatorResult.analysis.shrinkIndex > 0 ? '+' : ''}
                         {simulatorResult.analysis.shrinkIndex.toFixed(2)}%
                       </div>
-                      <div className="text-xs text-slate-400 mt-0.5">
+                      <div className="text-xs text-muted-foreground mt-0.5">
                         {formatMoney(simulatorResult.analysis.oldUnitPrice)} →{' '}
-                        <span className="text-white font-semibold">
+                        <span className="text-foreground font-semibold">
                           {formatMoney(simulatorResult.analysis.newUnitPrice)}/
                           {simulatorResult.analysis.baseUnit}
                         </span>
@@ -2211,50 +2175,50 @@ export default function KiloRadarApp({
                     </div>
                   </div>
 
-                  <div className="border-t sm:border-t-0 sm:border-l border-slate-800 pt-3 sm:pt-0 sm:pl-4">
-                    <div className="text-[11px] uppercase tracking-wider text-slate-400">
+                  <div className="border-t sm:border-t-0 sm:border-l border-border pt-3 sm:pt-0 sm:pl-4">
+                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
                       {dict.fuzzyMatchDb}
                     </div>
                     {simulatorResult.topFuzzyMatch ? (
                       <>
-                        <div className="text-sm font-bold text-white truncate mt-0.5">
+                        <div className="text-sm font-bold text-foreground truncate mt-0.5">
                           {simulatorResult.topFuzzyMatch.product.name}
                         </div>
-                        <div className="text-xs text-emerald-400 mt-0.5">
+                        <div className="text-xs text-savings mt-0.5">
                           {dict.nameSimilarity}:{' '}
                           {Math.round(simulatorResult.topFuzzyMatch.similarity * 100)}% (Levenshtein)
                         </div>
                       </>
                     ) : (
-                      <div className="text-xs text-slate-500 mt-1">{dict.noCloseMatch}</div>
+                      <div className="text-xs text-muted-foreground mt-1">{dict.noCloseMatch}</div>
                     )}
                   </div>
 
-                  <div className="border-t sm:border-t-0 sm:border-l border-slate-800 pt-3 sm:pt-0 sm:pl-4">
-                    <div className="text-[11px] uppercase tracking-wider text-slate-400">
+                  <div className="border-t sm:border-t-0 sm:border-l border-border pt-3 sm:pt-0 sm:pl-4">
+                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
                       {dict.bestAltInCategory}
                     </div>
                     {simulatorResult.bestAlt ? (
                       <>
-                        <div className="text-sm font-bold text-emerald-400 truncate mt-0.5">
+                        <div className="text-sm font-bold text-savings truncate mt-0.5">
                           {simulatorResult.bestAlt.product.name}
                         </div>
-                        <div className="text-xs text-slate-300 mt-0.5">
+                        <div className="text-xs text-muted-foreground mt-0.5">
                           {formatMoney(simulatorResult.bestAlt.currentUnitPrice)}/
                           {simulatorResult.bestAlt.baseUnit} ({dict.savePerYear}{' '}
-                          <span className="text-emerald-400 font-bold">
+                          <span className="text-savings font-bold">
                             {formatMoney(simulatorResult.savings.yearlySavingsWithAlternative)}
                           </span>
                           )
                         </div>
                       </>
                     ) : (
-                      <div className="text-xs text-emerald-400 mt-1">{dict.alreadyLowestUnit}</div>
+                      <div className="text-xs text-savings mt-1">{dict.alreadyLowestUnit}</div>
                     )}
                   </div>
                 </div>
               ) : (
-                <div className="rounded-xl bg-rose-950/30 border border-rose-500/40 p-3 text-xs text-rose-300">
+                <div className="rounded-xl bg-shrink/30 border border-shrink/40 p-3 text-xs text-shrink">
                   {simulatorResult.error}
                 </div>
               )}
@@ -2272,16 +2236,16 @@ export default function KiloRadarApp({
           />
 
           {/* SECTION: CHEAPEST SUPERMARKET – AVERAGE CUSTOMER BASKET */}
-          <section className="rounded-2xl bg-slate-900/90 border border-emerald-500/30 p-6 shadow-2xl space-y-5">
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+          <section id="ranking" className="card-kilo bg-winner scroll-mt-20 p-6 sm:p-8 space-y-5 shadow-glow">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-border pb-4">
               <div className="space-y-1">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold">
-                  <ShoppingCart className="w-3.5 h-3.5 text-emerald-400" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-savings/15 border border-savings/30 text-savings text-xs font-bold">
+                  <ShoppingCart className="w-3.5 h-3.5 text-savings" />
                   {dict.basketBadge}
                 </div>
-                <h2 className="text-xl sm:text-2xl font-extrabold text-white">
+                <h2 className="text-xl sm:text-2xl font-extrabold text-foreground">
                   {dict.basketTitlePrefix}{' '}
-                  <span className="text-emerald-400">
+                  <span className="text-savings">
                     {basketPeriod === 'week'
                       ? dict.basketPeriodWeek
                       : basketPeriod === 'month'
@@ -2289,9 +2253,9 @@ export default function KiloRadarApp({
                       : dict.basketPeriodYear}
                   </span>
                 </h2>
-                <p className="text-xs text-slate-400">
+                <p className="text-xs text-muted-foreground">
                   {dict.basketSubtitle} {dict.lastScannedLabel}{' '}
-                  <strong className="text-slate-300">
+                  <strong className="text-muted-foreground">
                     {customScanTimestamp || dict.lastScannedValue}
                   </strong>
                 </p>
@@ -2304,7 +2268,7 @@ export default function KiloRadarApp({
                     setHouseholdProfileId(e.target.value as 'single' | 'couple' | 'family')
                   }
                   aria-label="Select household size"
-                  className="px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-xs font-semibold text-white focus:outline-none focus:border-emerald-400"
+                  className="px-3 py-2 rounded-xl bg-background border border-border text-xs font-semibold text-foreground focus:outline-none focus:border-savings"
                 >
                   {localeConfig.householdProfiles.map((profile) => (
                     <option key={profile.id} value={profile.id}>
@@ -2313,14 +2277,14 @@ export default function KiloRadarApp({
                   ))}
                 </select>
 
-                <div className="inline-flex rounded-xl bg-slate-950 p-1 border border-slate-800">
+                <div className="inline-flex rounded-xl bg-background p-1 border border-border">
                   <button
                     type="button"
                     onClick={() => setBasketPeriod('week')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
                       basketPeriod === 'week'
-                        ? 'bg-emerald-500 text-slate-950'
-                        : 'text-slate-300 hover:text-white'
+                        ? 'bg-savings text-primary-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
                     }`}
                   >
                     {dict.per1Week}
@@ -2330,8 +2294,8 @@ export default function KiloRadarApp({
                     onClick={() => setBasketPeriod('month')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
                       basketPeriod === 'month'
-                        ? 'bg-emerald-500 text-slate-950'
-                        : 'text-slate-300 hover:text-white'
+                        ? 'bg-savings text-primary-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
                     }`}
                   >
                     {dict.per1Month}
@@ -2341,8 +2305,8 @@ export default function KiloRadarApp({
                     onClick={() => setBasketPeriod('year')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
                       basketPeriod === 'year'
-                        ? 'bg-emerald-500 text-slate-950'
-                        : 'text-slate-300 hover:text-white'
+                        ? 'bg-savings text-primary-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
                     }`}
                   >
                     {dict.per1Year}
@@ -2353,7 +2317,7 @@ export default function KiloRadarApp({
                   type="button"
                   onClick={handleTriggerWeeklyStoreScan}
                   disabled={isScanningStores}
-                  className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-emerald-300 flex items-center gap-1.5 transition cursor-pointer"
+                  className="px-3.5 py-2 rounded-xl bg-secondary hover:bg-secondary border border-border text-xs font-semibold text-savings flex items-center gap-1.5 transition cursor-pointer"
                 >
                   <RefreshCw className={`w-3.5 h-3.5 ${isScanningStores ? 'animate-spin' : ''}`} />
                   <span>{isScanningStores ? dict.scanningChainsBtn : dict.scanWeekPricesBtn}</span>
@@ -2389,8 +2353,8 @@ export default function KiloRadarApp({
                     key={item.store}
                     className={`rounded-xl p-4 border flex flex-col justify-between transition-all ${
                       isWinner
-                        ? 'bg-emerald-950/35 border-emerald-500/60 shadow-lg shadow-emerald-950/40'
-                        : 'bg-slate-950/85 border-slate-800'
+                        ? 'bg-savings/35 border-savings/60 shadow-lg shadow-savings/40'
+                        : 'bg-background/85 border-border'
                     }`}
                   >
                     <div>
@@ -2398,45 +2362,45 @@ export default function KiloRadarApp({
                         <span
                           className={`px-2 py-0.5 rounded-md text-[11px] font-extrabold ${
                             isWinner
-                              ? 'bg-emerald-500 text-slate-950'
-                              : 'bg-slate-800 text-slate-300'
+                              ? 'bg-savings text-primary-foreground'
+                              : 'bg-secondary text-muted-foreground'
                           }`}
                         >
                           #{item.rank} {isWinner ? dict.cheapestBadge : ''}
                         </span>
-                        <span className="text-[11px] font-mono text-slate-400">
+                        <span className="text-[11px] font-mono text-muted-foreground">
                           {isWinner ? dict.referenceLabel : `+${item.percentageMoreExpensive}%`}
                         </span>
                       </div>
 
-                      <div className="text-base font-extrabold text-white flex items-center gap-1.5">
-                        <Store className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <div className="text-base font-extrabold text-foreground flex items-center gap-1.5">
+                        <Store className="w-4 h-4 text-savings shrink-0" />
                         <span>{item.store}</span>
                       </div>
 
                       <div className="mt-3">
-                        <div className="text-[10px] uppercase tracking-wider text-slate-400">
+                        <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
                           {dict.avgCustomerLabel}
                         </div>
                         <div
                           className={`text-xl font-black mt-0.5 ${
-                            isWinner ? 'text-emerald-400' : 'text-white'
+                            isWinner ? 'text-savings' : 'text-foreground'
                           }`}
                         >
                           {formatMoney(displayedCost, 0)}
-                          <span className="text-xs font-normal text-slate-400">{periodLabel}</span>
+                          <span className="text-xs font-normal text-muted-foreground">{periodLabel}</span>
                         </div>
                       </div>
                     </div>
 
-                    <div className="mt-3 pt-2.5 border-t border-slate-800/80 text-xs">
+                    <div className="mt-3 pt-2.5 border-t border-border/80 text-xs">
                       {isWinner ? (
-                        <span className="text-emerald-400 font-bold flex items-center gap-1">
+                        <span className="text-savings font-bold flex items-center gap-1">
                           <CheckCircle2 className="w-3.5 h-3.5" />
                           {dict.lowestTotalBasket}
                         </span>
                       ) : (
-                        <span className="text-rose-400 font-semibold">
+                        <span className="text-shrink font-semibold">
                           +{formatMoney(displayedDiff, 0)} {dict.moreExpensivePer} {periodLabel}
                         </span>
                       )}
@@ -2447,8 +2411,8 @@ export default function KiloRadarApp({
             </div>
 
             {cheapestStore && mostExpensiveStore && (
-              <div className="rounded-xl bg-slate-950/90 border border-slate-800 px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-                <div className="text-slate-300">
+              <div className="rounded-xl bg-background/90 border border-border px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                <div className="text-muted-foreground">
                   💡{' '}
                   {dict.basketConclusion(
                     cheapestStore.store,
@@ -2460,7 +2424,7 @@ export default function KiloRadarApp({
                 </div>
                 <a
                   href="#metode-og-kilder"
-                  className="text-[11px] text-emerald-400 hover:text-emerald-300 underline underline-offset-4 font-semibold shrink-0 flex items-center gap-1"
+                  className="text-[11px] text-savings hover:text-savings underline underline-offset-4 font-semibold shrink-0 flex items-center gap-1"
                 >
                   <BookOpen className="w-3.5 h-3.5" />
                   {dict.methodologyJumpLink}
@@ -2470,14 +2434,14 @@ export default function KiloRadarApp({
           </section>
 
           {/* COMPACT PRODUCT CARDS GRID WITH CATEGORY SVG ICONS */}
-          <section className="space-y-4">
+          <section id="products" className="space-y-4 scroll-mt-20">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
-                <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                  <Scale className="w-5 h-5 text-emerald-400" />
+                <h2 className="text-xl font-bold text-foreground flex items-center gap-2">
+                  <Scale className="w-5 h-5 text-savings" />
                   {dict.trackedGroceriesTitle} ({filteredProducts.length})
                 </h2>
-                <p className="text-xs text-slate-400">{dict.trackedGroceriesSubtitle}</p>
+                <p className="text-xs text-muted-foreground">{dict.trackedGroceriesSubtitle}</p>
               </div>
             </div>
 
@@ -2502,21 +2466,21 @@ export default function KiloRadarApp({
                   <article
                     key={product.id}
                     data-testid={`product-card-${product.id}`}
-                    className={`rounded-2xl bg-slate-900/90 border transition-all duration-200 flex flex-col justify-between overflow-hidden shadow-xl ${
+                    className={`rounded-2xl bg-card/90 border transition-all duration-200 flex flex-col justify-between overflow-hidden shadow-xl ${
                       isShrunk
-                        ? 'border-rose-500/35 hover:border-rose-500/60'
-                        : 'border-emerald-500/35 hover:border-emerald-500/60'
+                        ? 'border-shrink/35 hover:border-shrink/60'
+                        : 'border-savings/35 hover:border-savings/60'
                     }`}
                   >
                     <div>
                       <div
                         className={`px-4 py-2.5 flex items-center justify-between border-b ${
                           isShrunk
-                            ? 'bg-rose-950/35 border-rose-500/25'
-                            : 'bg-emerald-950/30 border-emerald-500/25'
+                            ? 'bg-shrink/35 border-shrink/25'
+                            : 'bg-savings/30 border-savings/25'
                         }`}
                       >
-                        <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-300 truncate flex items-center gap-1.5">
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground truncate flex items-center gap-1.5">
                           <CategorySvgIcon category={product.category} className="w-3.5 h-3.5" />
                           <span>
                             {product.category} • {product.store}
@@ -2524,13 +2488,13 @@ export default function KiloRadarApp({
                         </span>
 
                         {isShrunk ? (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40 shrink-0">
-                            <TrendingUp className="w-3.5 h-3.5 text-rose-400" />
+                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-shrink/20 text-shrink border border-shrink/40 shrink-0">
+                            <TrendingUp className="w-3.5 h-3.5 text-shrink" />
                             {dict.shrinkflationBadge} +{analysis.shrinkIndex.toFixed(1)}%
                           </span>
                         ) : (
-                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shrink-0">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-savings/20 text-savings border border-savings/40 shrink-0">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-savings" />
                             {dict.stablePackageBadge} (+{analysis.shrinkIndex.toFixed(1)}%)
                           </span>
                         )}
@@ -2541,67 +2505,67 @@ export default function KiloRadarApp({
                           <ProductAvatar product={product} />
                           <div className="min-w-0 flex-1">
                             <div className="flex items-start justify-between gap-2">
-                              <h3 className="text-base font-bold text-white leading-snug">
+                              <h3 className="text-base font-bold text-foreground leading-snug">
                                 {product.name}
                               </h3>
                               {searchQuery.trim() && (
-                                <span className="shrink-0 px-2 py-0.5 rounded bg-slate-800 text-[10px] font-mono text-emerald-300">
+                                <span className="shrink-0 px-2 py-0.5 rounded bg-secondary text-[10px] font-mono text-savings">
                                   {Math.round(similarity * 100)}%
                                 </span>
                               )}
                             </div>
                             {product.previousName && product.previousName !== product.name && (
-                              <p className="text-[11px] text-slate-400 mt-0.5 flex items-center gap-1">
-                                <PackageMinus className="w-3 h-3 text-rose-400 shrink-0" />
+                              <p className="text-[11px] text-muted-foreground mt-0.5 flex items-center gap-1">
+                                <PackageMinus className="w-3 h-3 text-shrink shrink-0" />
                                 <span className="truncate">
                                   {dict.previouslyLabel}{' '}
                                   <span className="line-through">{product.previousName}</span>{' '}
-                                  <span className="text-slate-500">({nameMatchSim}%)</span>
+                                  <span className="text-muted-foreground">({nameMatchSim}%)</span>
                                 </span>
                               </p>
                             )}
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-950/90 border border-slate-800/90">
+                        <div className="grid grid-cols-2 gap-2 p-3 rounded-xl bg-background/90 border border-border/90">
                           <div className="space-y-0.5">
-                            <div className="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">
+                            <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">
                               {dict.oldPackageLabel}
                             </div>
                             <div className="flex items-baseline gap-1.5">
-                              <span className="text-sm font-bold text-slate-200">
+                              <span className="text-sm font-bold text-foreground">
                                 {product.oldMeasure}
                               </span>
-                              <span className="text-xs text-slate-400">
+                              <span className="text-xs text-muted-foreground">
                                 {formatMoney(product.oldPrice)}
                               </span>
                             </div>
-                            <div className="text-[11px] font-mono text-slate-400">
+                            <div className="text-[11px] font-mono text-muted-foreground">
                               {formatMoney(analysis.oldUnitPrice)}/{analysis.baseUnit}
                             </div>
                           </div>
 
-                          <div className="space-y-0.5 border-l border-slate-800 pl-2.5">
-                            <div className="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">
+                          <div className="space-y-0.5 border-l border-border pl-2.5">
+                            <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">
                               {dict.newPackageLabel}
                             </div>
                             <div className="flex items-baseline gap-1.5">
                               <span
                                 className={`text-sm font-extrabold ${
                                   analysis.sizeReductionPercent < 0
-                                    ? 'text-rose-400'
-                                    : 'text-emerald-400'
+                                    ? 'text-shrink'
+                                    : 'text-savings'
                                 }`}
                               >
                                 {product.newMeasure}
                               </span>
-                              <span className="text-xs text-white font-semibold">
+                              <span className="text-xs text-foreground font-semibold">
                                 {formatMoney(product.newPrice)}
                               </span>
                             </div>
                             <div
                               className={`text-[11px] font-mono font-bold ${
-                                isShrunk ? 'text-rose-400' : 'text-emerald-400'
+                                isShrunk ? 'text-shrink' : 'text-savings'
                               }`}
                             >
                               {formatMoney(analysis.newUnitPrice)}/{analysis.baseUnit}
@@ -2611,37 +2575,37 @@ export default function KiloRadarApp({
 
                         <div className="space-y-1">
                           <div className="flex items-center justify-between text-xs">
-                            <span className="font-semibold text-slate-300">
+                            <span className="font-semibold text-muted-foreground">
                               {dict.shrinkIndexLabel}
                             </span>
                             <span
                               className={`font-mono font-bold ${
-                                isShrunk ? 'text-rose-400' : 'text-emerald-400'
+                                isShrunk ? 'text-shrink' : 'text-savings'
                               }`}
                             >
                               +{analysis.shrinkIndex.toFixed(2)}%
                             </span>
                           </div>
-                          <div className="w-full h-2 rounded-full bg-slate-950 border border-slate-800 overflow-hidden">
+                          <div className="w-full h-2 rounded-full bg-background border border-border overflow-hidden">
                             <div
                               className={`h-full rounded-full transition-all duration-500 ${
                                 analysis.shrinkIndex >= 25
-                                  ? 'bg-gradient-to-r from-amber-500 to-rose-500'
+                                  ? 'bg-gradient-to-r from-warn to-shrink'
                                   : analysis.shrinkIndex > 5
-                                  ? 'bg-amber-500'
-                                  : 'bg-emerald-500'
+                                  ? 'bg-warn'
+                                  : 'bg-savings'
                               }`}
                               style={{ width: `${progressWidth}%` }}
                             />
                           </div>
-                          <div className="flex items-center justify-between text-[11px] text-slate-400">
+                          <div className="flex items-center justify-between text-[11px] text-muted-foreground">
                             <span>
                               {dict.amountChangeLabel}{' '}
                               <strong
                                 className={
                                   analysis.sizeReductionPercent < 0
-                                    ? 'text-rose-400'
-                                    : 'text-emerald-400'
+                                    ? 'text-shrink'
+                                    : 'text-savings'
                                 }
                               >
                                 {analysis.sizeReductionPercent}%
@@ -2657,7 +2621,7 @@ export default function KiloRadarApp({
                         <button
                           type="button"
                           onClick={() => toggleCardExpanded(product.id)}
-                          className="w-full py-2 px-3 rounded-xl bg-slate-950 hover:bg-slate-800/90 border border-slate-800 hover:border-emerald-500/40 text-xs font-semibold text-emerald-400 flex items-center justify-between transition cursor-pointer"
+                          className="w-full py-2 px-3 rounded-xl bg-background hover:bg-secondary/90 border border-border hover:border-savings/40 text-xs font-semibold text-savings flex items-center justify-between transition cursor-pointer"
                         >
                           <span className="flex items-center gap-1.5 text-left">
                             <Calculator className="w-3.5 h-3.5 shrink-0" />
@@ -2666,22 +2630,22 @@ export default function KiloRadarApp({
                             </span>
                           </span>
                           {isExpanded ? (
-                            <ChevronUp className="w-4 h-4 text-slate-400 shrink-0" />
+                            <ChevronUp className="w-4 h-4 text-muted-foreground shrink-0" />
                           ) : (
-                            <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                            <ChevronDown className="w-4 h-4 text-muted-foreground shrink-0" />
                           )}
                         </button>
 
                         {isExpanded && (
                           <div className="space-y-3 pt-1">
                             {rankedStores.length > 0 && cheapestForProduct && (
-                              <div className="p-3 rounded-xl bg-slate-950/90 border border-slate-800 space-y-2">
+                              <div className="p-3 rounded-xl bg-background/90 border border-border space-y-2">
                                 <div className="flex items-center justify-between text-[11px]">
-                                  <span className="font-semibold text-slate-300 flex items-center gap-1.5">
-                                    <Store className="w-3.5 h-3.5 text-emerald-400" />
+                                  <span className="font-semibold text-muted-foreground flex items-center gap-1.5">
+                                    <Store className="w-3.5 h-3.5 text-savings" />
                                     {dict.cheapestStoreLabel} ({cheapestForProduct.lastScanned}):
                                   </span>
-                                  <span className="font-bold text-emerald-400">
+                                  <span className="font-bold text-savings">
                                     {cheapestForProduct.store} (
                                     {formatMoney(cheapestForProduct.price)})
                                   </span>
@@ -2692,8 +2656,8 @@ export default function KiloRadarApp({
                                       key={sq.store}
                                       className={`px-2 py-0.5 rounded text-[10px] font-medium border ${
                                         sq.rank === 1
-                                          ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-300 font-bold'
-                                          : 'bg-slate-900 border-slate-800 text-slate-400'
+                                          ? 'bg-savings/15 border-savings/40 text-savings font-bold'
+                                          : 'bg-card border-border text-muted-foreground'
                                       }`}
                                     >
                                       {sq.store}: {formatMoney(sq.price)}
@@ -2703,16 +2667,16 @@ export default function KiloRadarApp({
                               </div>
                             )}
 
-                            <div className="p-3.5 rounded-xl bg-slate-950/95 border border-slate-800 space-y-2.5">
+                            <div className="p-3.5 rounded-xl bg-background/95 border border-border space-y-2.5">
                               <div className="flex items-center justify-between">
                                 <label
                                   htmlFor={`slider-${product.id}`}
-                                  className="text-xs font-bold text-white flex items-center gap-1.5"
+                                  className="text-xs font-bold text-foreground flex items-center gap-1.5"
                                 >
-                                  <Calculator className="w-3.5 h-3.5 text-emerald-400" />
+                                  <Calculator className="w-3.5 h-3.5 text-savings" />
                                   {dict.savingsCalcTitle}
                                 </label>
-                                <span className="px-2 py-0.5 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-extrabold">
+                                <span className="px-2 py-0.5 rounded-md bg-savings/15 border border-savings/30 text-savings text-xs font-extrabold">
                                   {monthlyCount} {dict.purchasesPerMonth} ({savings.yearlyPurchases}
                                   {dict.unitYearShort})
                                 </span>
@@ -2732,44 +2696,44 @@ export default function KiloRadarApp({
                                   }))
                                 }
                                 aria-label={`Monthly purchases for ${product.name}`}
-                                className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-400"
+                                className="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-savings"
                               />
 
                               <div className="grid grid-cols-2 gap-2 pt-1">
-                                <div className="p-2.5 rounded-lg bg-rose-950/30 border border-rose-500/30">
-                                  <div className="text-[10px] uppercase tracking-wider text-rose-300">
+                                <div className="p-2.5 rounded-lg bg-shrink/30 border border-shrink/30">
+                                  <div className="text-[10px] uppercase tracking-wider text-shrink">
                                     {dict.annualHiddenCost}
                                   </div>
-                                  <div className="text-sm font-extrabold text-rose-400 mt-0.5">
+                                  <div className="text-sm font-extrabold text-shrink mt-0.5">
                                     +{formatMoney(savings.hiddenYearlyShrinkCost)}
                                   </div>
-                                  <div className="text-[10px] text-slate-400">
+                                  <div className="text-[10px] text-muted-foreground">
                                     {savings.equivalentUnitsPerYear} {analysis.baseUnit}
                                     {dict.unitYearShort}
                                   </div>
                                 </div>
 
-                                <div className="p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/30">
-                                  <div className="text-[10px] uppercase tracking-wider text-emerald-300">
+                                <div className="p-2.5 rounded-lg bg-savings/30 border border-savings/30">
+                                  <div className="text-[10px] uppercase tracking-wider text-savings">
                                     {dict.savingsBySwitching}
                                   </div>
                                   {bestAlt && bestAlt.isCheaper ? (
                                     <>
-                                      <div className="text-sm font-extrabold text-emerald-400 mt-0.5">
+                                      <div className="text-sm font-extrabold text-savings mt-0.5">
                                         {dict.savePerYear}{' '}
                                         {formatMoney(savings.yearlySavingsWithAlternative)}
                                       </div>
-                                      <div className="text-[10px] text-slate-300 truncate">
+                                      <div className="text-[10px] text-muted-foreground truncate">
                                         {dict.switchToLabel} {bestAlt.product.brand} (
                                         {formatMoney(bestAlt.currentUnitPrice)}/{bestAlt.baseUnit})
                                       </div>
                                     </>
                                   ) : (
                                     <>
-                                      <div className="text-sm font-extrabold text-emerald-400 mt-0.5">
+                                      <div className="text-sm font-extrabold text-savings mt-0.5">
                                         {dict.bestBuyInCategory}
                                       </div>
-                                      <div className="text-[10px] text-slate-400">
+                                      <div className="text-[10px] text-muted-foreground">
                                         {dict.lowestPricePer} {analysis.baseUnit}
                                       </div>
                                     </>
@@ -2782,19 +2746,19 @@ export default function KiloRadarApp({
                       </div>
                     </div>
 
-                    <div className="px-4 py-2.5 bg-slate-950/80 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                    <div className="px-4 py-2.5 bg-background/80 border-t border-border/80 flex items-center justify-between text-xs">
                       {bestAlt && bestAlt.isCheaper ? (
                         <div className="flex items-center justify-between w-full gap-2">
-                          <span className="text-slate-400 truncate">
+                          <span className="text-muted-foreground truncate">
                             {dict.recommendedSwitch}{' '}
-                            <strong className="text-emerald-400">{bestAlt.product.name}</strong>
+                            <strong className="text-savings">{bestAlt.product.name}</strong>
                           </span>
-                          <span className="shrink-0 font-mono text-emerald-300 font-bold">
+                          <span className="shrink-0 font-mono text-savings font-bold">
                             {bestAlt.percentageDifference}% {dict.unitPriceDiffLabel}
                           </span>
                         </div>
                       ) : (
-                        <div className="flex items-center justify-between w-full text-emerald-400 font-semibold">
+                        <div className="flex items-center justify-between w-full text-savings font-semibold">
                           <span>
                             {dict.rankedNumberOne} {product.category}
                           </span>
@@ -2811,17 +2775,17 @@ export default function KiloRadarApp({
           <section
             id="faq"
             aria-labelledby="faq-heading"
-            className="rounded-2xl bg-slate-900/85 border border-slate-800/90 p-6 sm:p-8 shadow-2xl space-y-5"
+            className="rounded-2xl bg-card/85 border border-border/90 p-6 sm:p-8 shadow-card space-y-5"
           >
-            <div className="space-y-1.5 border-b border-slate-800 pb-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-semibold">
-                <HelpCircle className="w-3.5 h-3.5 text-emerald-400" />
+            <div className="space-y-1.5 border-b border-border pb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-savings/15 border border-savings/30 text-savings text-xs font-semibold">
+                <HelpCircle className="w-3.5 h-3.5 text-savings" />
                 <span>FAQ • {localeConfig.countryName}</span>
               </div>
-              <h2 id="faq-heading" className="text-xl sm:text-2xl font-extrabold text-white">
+              <h2 id="faq-heading" className="text-xl sm:text-2xl font-extrabold text-foreground">
                 {seoMeta.faqHeading}
               </h2>
-              <p className="text-xs sm:text-sm text-slate-400 max-w-3xl">
+              <p className="text-xs sm:text-sm text-muted-foreground max-w-3xl">
                 {seoMeta.faqSubheading}
               </p>
             </div>
@@ -2830,13 +2794,13 @@ export default function KiloRadarApp({
               {seoMeta.faqs.map((faq) => (
                 <article
                   key={faq.question}
-                  className="p-4 rounded-xl bg-slate-950/85 border border-slate-800/90 space-y-2"
+                  className="p-4 rounded-xl bg-background/85 border border-border/90 space-y-2"
                 >
-                  <h3 className="text-sm font-bold text-white flex items-start gap-2">
-                    <span className="text-emerald-400 font-extrabold shrink-0">Q.</span>
+                  <h3 className="text-sm font-bold text-foreground flex items-start gap-2">
+                    <span className="text-savings font-extrabold shrink-0">Q.</span>
                     <span>{faq.question}</span>
                   </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed pl-5">{faq.answer}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed pl-5">{faq.answer}</p>
                 </article>
               ))}
             </div>
@@ -2845,29 +2809,29 @@ export default function KiloRadarApp({
           {/* METHODOLOGY, SOURCES & TRANSPARENCY SECTION */}
           <section
             id="metode-og-kilder"
-            className="rounded-2xl bg-slate-900/85 border border-slate-800/90 p-6 sm:p-8 shadow-2xl space-y-6"
+            className="rounded-2xl bg-card/85 border border-border/90 p-6 sm:p-8 shadow-card space-y-6"
           >
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-border pb-5">
               <div className="space-y-1.5">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-emerald-300 text-xs font-semibold">
-                  <BookOpen className="w-3.5 h-3.5 text-emerald-400" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary border border-border text-savings text-xs font-semibold">
+                  <BookOpen className="w-3.5 h-3.5 text-savings" />
                   {dict.methodologyBadge}
                 </div>
-                <h2 className="text-xl sm:text-2xl font-extrabold text-white">
+                <h2 className="text-xl sm:text-2xl font-extrabold text-foreground">
                   {dict.methodologyTitle}
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-400 max-w-3xl">
+                <p className="text-xs sm:text-sm text-muted-foreground max-w-3xl">
                   {dict.methodologyIntro}
                 </p>
               </div>
-              <div className="shrink-0 px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 space-y-0.5">
-                <div className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">
+              <div className="shrink-0 px-4 py-2.5 rounded-xl bg-background border border-border text-xs text-muted-foreground space-y-0.5">
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">
                   KiloRadar ({localeConfig.currencyCode})
                 </div>
-                <div className="font-bold text-emerald-400">
+                <div className="font-bold text-savings">
                   {rtUi.nightlySyncStatus(lastSyncedDate).split('·')[1] || lastSyncedDate}
                 </div>
-                <div className="text-[11px] text-slate-400">
+                <div className="text-[11px] text-muted-foreground">
                   Standard: ISO/IEC ({localeConfig.currencySymbol}/kg,{' '}
                   {localeConfig.currencySymbol}/l)
                 </div>
@@ -2880,19 +2844,19 @@ export default function KiloRadarApp({
                 return (
                   <div
                     key={pillar.title}
-                    className="p-5 rounded-xl bg-slate-950/80 border border-slate-800/90 space-y-3"
+                    className="p-5 rounded-xl bg-background/80 border border-border/90 space-y-3"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                    <div className="w-9 h-9 rounded-lg bg-savings/15 border border-savings/30 flex items-center justify-center text-savings">
                       <IconComp className="w-5 h-5" />
                     </div>
-                    <h3 className="text-base font-bold text-white">{pillar.title}</h3>
-                    <p className="text-xs text-slate-300 leading-relaxed">{pillar.intro}</p>
-                    <ul className="space-y-2 text-xs text-slate-400">
+                    <h3 className="text-base font-bold text-foreground">{pillar.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{pillar.intro}</p>
+                    <ul className="space-y-2 text-xs text-muted-foreground">
                       {pillar.bullets.map((b) => (
                         <li key={b.bold} className="flex items-start gap-2">
-                          <span className="text-emerald-400 font-bold">•</span>
+                          <span className="text-savings font-bold">•</span>
                           <span>
-                            <strong className="text-slate-200">{b.bold}</strong> {b.text}
+                            <strong className="text-foreground">{b.bold}</strong> {b.text}
                           </span>
                         </li>
                       ))}
@@ -2908,28 +2872,28 @@ export default function KiloRadarApp({
       {/* CAMERA BARCODE SCANNER MODAL */}
       {cameraModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="w-full max-w-md rounded-2xl bg-slate-900 border border-slate-700 p-6 shadow-2xl space-y-4">
+          <div className="w-full max-w-md rounded-2xl bg-card border border-border p-6 shadow-card space-y-4">
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-bold text-white flex items-center gap-2">
-                <Camera className="w-5 h-5 text-emerald-400" />
+              <h3 className="text-base font-bold text-foreground flex items-center gap-2">
+                <Camera className="w-5 h-5 text-savings" />
                 <span>{rtUi.cameraModalTitle}</span>
               </h3>
               <button
                 type="button"
                 onClick={handleCloseCameraScanner}
-                className="p-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white cursor-pointer"
+                className="p-1.5 rounded-lg bg-secondary text-muted-foreground hover:text-foreground cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
 
             {cameraSupported ? (
-              <div className="relative rounded-xl overflow-hidden bg-slate-950 border border-emerald-500/40 aspect-video flex items-center justify-center">
+              <div className="relative rounded-xl overflow-hidden bg-background border border-savings/40 aspect-video flex items-center justify-center">
                 <video ref={videoRef} className="w-full h-full object-cover" muted playsInline />
-                <div className="absolute inset-x-8 top-1/2 -translate-y-1/2 h-0.5 bg-rose-500 shadow-[0_0_8px_#EF4444]" />
+                <div className="absolute inset-x-8 top-1/2 -translate-y-1/2 h-0.5 bg-shrink shadow-[0_0_8px_#EF4444]" />
               </div>
             ) : (
-              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300">
+              <div className="p-3.5 rounded-xl bg-background border border-border text-xs text-muted-foreground">
                 {rtUi.cameraFallbackNotice}
               </div>
             )}
@@ -2940,7 +2904,7 @@ export default function KiloRadarApp({
                 value={cameraManualEan}
                 onChange={(e) => setCameraManualEan(e.target.value)}
                 placeholder={rtUi.cameraManualPlaceholder}
-                className="flex-1 px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-xs text-white"
+                className="flex-1 px-3 py-2 rounded-lg bg-background border border-border text-xs text-foreground"
               />
               <button
                 type="button"
@@ -2952,7 +2916,7 @@ export default function KiloRadarApp({
                     executeOpenFoodFactsLookup(code);
                   }
                 }}
-                className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs cursor-pointer"
+                className="px-4 py-2 rounded-lg bg-savings hover:bg-savings text-primary-foreground font-bold text-xs cursor-pointer"
               >
                 {dict.liveOffBtn}
               </button>
@@ -2964,33 +2928,33 @@ export default function KiloRadarApp({
       {/* COMMUNITY "REPORT SHRUNK ITEM" MODAL */}
       {reportModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="w-full max-w-md rounded-2xl bg-slate-900 border border-slate-700 p-6 shadow-2xl space-y-4">
+          <div className="w-full max-w-md rounded-2xl bg-card border border-border p-6 shadow-card space-y-4">
             <div className="flex items-start justify-between gap-2">
               <div>
-                <h3 className="text-base font-bold text-white flex items-center gap-2">
-                  <Flag className="w-4 h-4 text-rose-400" />
+                <h3 className="text-base font-bold text-foreground flex items-center gap-2">
+                  <Flag className="w-4 h-4 text-shrink" />
                   <span>{rtUi.reportModalTitle}</span>
                 </h3>
-                <p className="text-xs text-slate-400 mt-1">{rtUi.reportModalSubtitle}</p>
+                <p className="text-xs text-muted-foreground mt-1">{rtUi.reportModalSubtitle}</p>
               </div>
               <button
                 type="button"
                 onClick={() => setReportModalOpen(false)}
-                className="p-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white cursor-pointer"
+                className="p-1.5 rounded-lg bg-secondary text-muted-foreground hover:text-foreground cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
 
             {reportSuccess ? (
-              <div className="p-4 rounded-xl bg-emerald-950/50 border border-emerald-500/50 text-xs text-emerald-200 font-semibold flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+              <div className="p-4 rounded-xl bg-savings/50 border border-savings/50 text-xs text-savings font-semibold flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-savings shrink-0" />
                 <span>{rtUi.reportSuccessMsg}</span>
               </div>
             ) : (
               <form onSubmit={handleSubmitShrinkReport} className="space-y-3">
                 <div>
-                  <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                  <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                     {rtUi.reportEanLabel}
                   </label>
                   <input
@@ -2998,11 +2962,11 @@ export default function KiloRadarApp({
                     value={reportEan}
                     onChange={(e) => setReportEan(e.target.value)}
                     placeholder="7040913336684"
-                    className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-xs text-white"
+                    className="w-full px-3 py-2 rounded-lg bg-background border border-border text-xs text-foreground"
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                  <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                     {rtUi.reportNameLabel}
                   </label>
                   <input
@@ -3011,12 +2975,12 @@ export default function KiloRadarApp({
                     value={reportName}
                     onChange={(e) => setReportName(e.target.value)}
                     placeholder="F.eks. Freia Melkesjokolade"
-                    className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-xs text-white"
+                    className="w-full px-3 py-2 rounded-lg bg-background border border-border text-xs text-foreground"
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-2.5">
                   <div>
-                    <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                    <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                       {rtUi.reportOldWeightLabel}
                     </label>
                     <input
@@ -3024,11 +2988,11 @@ export default function KiloRadarApp({
                       required
                       value={reportOldWeight}
                       onChange={(e) => setReportOldWeight(e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-800 text-xs text-white"
+                      className="w-full px-3 py-2 rounded-lg bg-background border border-border text-xs text-foreground"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                    <label className="block text-[11px] font-medium text-muted-foreground mb-1">
                       {rtUi.reportNewWeightLabel}
                     </label>
                     <input
@@ -3036,7 +3000,7 @@ export default function KiloRadarApp({
                       required
                       value={reportNewWeight}
                       onChange={(e) => setReportNewWeight(e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-rose-500/40 text-xs text-rose-200"
+                      className="w-full px-3 py-2 rounded-lg bg-background border border-shrink/40 text-xs text-shrink"
                     />
                   </div>
                 </div>
@@ -3045,7 +3009,7 @@ export default function KiloRadarApp({
                   <button
                     type="submit"
                     disabled={reportSubmitting}
-                    className="flex-1 py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer"
+                    className="flex-1 py-2.5 px-4 rounded-xl bg-savings hover:bg-savings text-primary-foreground font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer"
                   >
                     <Send className="w-3.5 h-3.5" />
                     <span>{rtUi.reportSubmitBtn}</span>
@@ -3056,9 +3020,9 @@ export default function KiloRadarApp({
                     )}&body=${encodeURIComponent(
                       `EAN: ${reportEan}\nProduct: ${reportName}\nOld weight: ${reportOldWeight}\nNew weight: ${reportNewWeight}`
                     )}`}
-                    className="py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 transition"
+                    className="py-2.5 px-3 rounded-xl bg-secondary hover:bg-secondary text-foreground text-xs font-semibold flex items-center justify-center gap-1.5 transition"
                   >
-                    <Mail className="w-3.5 h-3.5 text-emerald-400" />
+                    <Mail className="w-3.5 h-3.5 text-savings" />
                     <span>{rtUi.reportEmailFallbackBtn}</span>
                   </a>
                 </div>
@@ -3069,32 +3033,32 @@ export default function KiloRadarApp({
       )}
 
       {/* PUBLISHER FOOTER: KM TECH LABS */}
-      <footer className="relative z-10 border-t border-slate-800/90 bg-[#05080E] py-8 px-4 sm:px-6 lg:px-8">
+      <footer className="relative z-10 border-t border-border/90 bg-background py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <KiloRadarLogo className="w-8 h-8" />
-            <div className="text-xs sm:text-sm text-slate-300 font-semibold">
-              Kilo<span className="text-[#10B981]">Radar</span>{' '}
-              <span className="text-slate-500 font-mono text-xs">(kiloradar.com)</span> — Developed
+            <div className="text-xs sm:text-sm text-muted-foreground font-semibold">
+              Kilo<span className="text-savings">Radar</span>{' '}
+              <span className="text-muted-foreground font-mono text-xs">(kiloradar.com)</span> — Developed
               and operated by{' '}
-              <span className="text-white font-extrabold tracking-wide">KM TECH LABS</span>
+              <span className="text-foreground font-extrabold tracking-wide">KM TECH LABS</span>
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+          <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
             <span>{dict.footerCopyright}</span>
-            <span className="text-slate-700">•</span>
+            <span className="text-muted-foreground">•</span>
             <a
               href="mailto:kjmersland@gmail.com?subject=KiloRadar%20Support"
-              className="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition"
+              className="text-savings hover:text-savings flex items-center gap-1 transition"
             >
               <Mail className="w-3.5 h-3.5" />
               <span>{dict.footerContactSupport} (support@kiloradar.com)</span>
             </a>
-            <span className="text-slate-700">•</span>
+            <span className="text-muted-foreground">•</span>
             <a
               href="#metode-og-kilder"
-              className="text-slate-400 hover:text-slate-200 transition"
+              className="text-muted-foreground hover:text-foreground transition"
             >
               {dict.footerPrivacyTerms}
             </a>
