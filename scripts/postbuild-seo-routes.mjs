@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { build } from 'esbuild';
 
 const distDir = path.resolve('dist');
 const baseHtmlPath = path.join(distDir, 'index.html');
@@ -9,6 +10,36 @@ if (!fs.existsSync(baseHtmlPath)) {
 }
 
 const baseHtml = fs.readFileSync(baseHtmlPath, 'utf8');
+
+
+// Bundle the TypeScript SEO data and locale configs so titles, descriptions and JSON-LD are
+// generated from the same source the app uses at runtime.
+const bundled = await build({
+  stdin: {
+    contents:
+      "export { ALL_COUNTRY_LOCALES } from './src/locales/index.ts';" +
+      "export { buildJsonLdGraph } from './src/utils/seoData.ts';",
+    resolveDir: process.cwd(),
+    loader: 'ts',
+  },
+  bundle: true,
+  format: 'esm',
+  platform: 'node',
+  write: false,
+  logLevel: 'silent',
+});
+const { ALL_COUNTRY_LOCALES, buildJsonLdGraph } = await import(
+  'data:text/javascript;base64,' + Buffer.from(bundled.outputFiles[0].text).toString('base64')
+);
+
+const escAttr = (v) => String(v).replaceAll('&', '&amp;').replaceAll('"', '&quot;');
+const escText = (v) => String(v).replaceAll('&', '&amp;').replaceAll('<', '&lt;');
+const jsonLdTag = (code) => {
+  const loc = ALL_COUNTRY_LOCALES[code];
+  const graph = buildJsonLdGraph(code, loc.seoTitle, loc.seoDescription, loc.currencyCode, loc.htmlLang);
+  // "<" is escaped so the JSON can never close the script tag early.
+  return `<script type="application/ld+json" id="kiloradar-jsonld">${JSON.stringify(graph).replaceAll('<', '\\u003c')}</script>`;
+};
 
 const ROUTE_CONFIGS = [
   {
@@ -103,14 +134,26 @@ const ROUTE_CONFIGS = [
   },
 ];
 
+ROUTE_CONFIGS.push({
+  folders: [],
+  code: 'en',
+  htmlLang: 'en',
+  ogLocale: 'en_US',
+  canonical: 'https://www.kiloradar.com/',
+  title: '',
+  description: '',
+});
+
 for (const cfg of ROUTE_CONFIGS) {
+  cfg.title = ALL_COUNTRY_LOCALES[cfg.code].seoTitle;
+  cfg.description = ALL_COUNTRY_LOCALES[cfg.code].seoDescription;
   const ogImg = `https://www.kiloradar.com/og/og-${cfg.code}.png`;
   let localizedHtml = baseHtml
     .replace('<html lang="en"', `<html lang="${cfg.htmlLang}"`)
-    .replace(/<title>[\s\S]*?<\/title>/, `<title>${cfg.title}</title>`)
+    .replace(/<title>[\s\S]*?<\/title>/, `<title>${escText(cfg.title)}</title>`)
     .replace(
       /<meta\s+name="description"\s+content="[^"]*"\s*\/>/,
-      `<meta name="description" content="${cfg.description}" />`
+      `<meta name="description" content="${escAttr(cfg.description)}" />`
     )
     .replace(
       /<link rel="canonical" href="https:\/\/www\.kiloradar\.com\/" \/>/,
@@ -122,11 +165,11 @@ for (const cfg of ROUTE_CONFIGS) {
     )
     .replace(
       /<meta\s+property="og:title"\s+content="[^"]*"\s*\/>/,
-      `<meta property="og:title" content="${cfg.title}" />`
+      `<meta property="og:title" content="${escAttr(cfg.title)}" />`
     )
     .replace(
       /<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/,
-      `<meta property="og:description" content="${cfg.description}" />`
+      `<meta property="og:description" content="${escAttr(cfg.description)}" />`
     )
     .replace(
       /<meta property="og:locale" content="en_US" \/>/,
@@ -139,18 +182,39 @@ for (const cfg of ROUTE_CONFIGS) {
     )
     .replace(
       /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/>/,
-      `<meta name="twitter:title" content="${cfg.title}" />`
+      `<meta name="twitter:title" content="${escAttr(cfg.title)}" />`
     )
     .replace(
       /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/>/,
-      `<meta name="twitter:description" content="${cfg.description}" />`
+      `<meta name="twitter:description" content="${escAttr(cfg.description)}" />`
     );
+
+  localizedHtml = localizedHtml
+    .replace(/<script[^>]*id="kiloradar-jsonld"[^>]*>[\s\S]*?<\/script>/, '')
+    .replace('</head>', `    ${jsonLdTag(cfg.code)}
+  </head>`)
+    .replace(
+      '<div id="root"></div>',
+      `<div id="root"></div>
+    <noscript><h1>${escText(cfg.title)}</h1><p>${escText(cfg.description)}</p></noscript>`
+    );
+
+  if (cfg.code === 'en') {
+    fs.writeFileSync(baseHtmlPath, localizedHtml, 'utf8');
+  }
 
   for (const folder of cfg.folders) {
     const targetDir = path.join(distDir, folder);
     fs.mkdirSync(targetDir, { recursive: true });
     fs.writeFileSync(path.join(targetDir, 'index.html'), localizedHtml, 'utf8');
   }
+}
+
+const sitemapPath = path.join(distDir, 'sitemap.xml');
+if (fs.existsSync(sitemapPath)) {
+  const today = new Date().toISOString().slice(0, 10);
+  const xml = fs.readFileSync(sitemapPath, 'utf8').replace(/<lastmod>[^<]*<\/lastmod>/g, `<lastmod>${today}</lastmod>`);
+  fs.writeFileSync(sitemapPath, xml, 'utf8');
 }
 
 console.log('✔ Generated localized SEO & Open Graph index.html files for all 10 market routes.');

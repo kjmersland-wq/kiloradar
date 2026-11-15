@@ -12,10 +12,9 @@ export const UK_LOCALE: CountryLocaleConfig = {
   currencySymbol: '£',
   currencyPrefix: true,
   numberLocale: 'en-GB',
-  seoTitle:
-    'KiloRadar UK — Unit Price Calculator, Price per Kilo & Shrinkflation Tracker (GBP £)',
+  seoTitle: 'KiloRadar UK — Unit Price Calculator & Shrinkflation Tracker',
   seoDescription:
-    'Ever feel like your weekly shop runs out faster? Use our UK Unit Price Calculator and Shrinkflation Tracker to check the real price per kilo and compare Aldi, Lidl, Tesco, Sainsbury’s & Asda.',
+    "Check the real price per kilo, catch shrinkflation and compare Aldi, Lidl, Tesco, Sainsbury's and Asda. Free and ad-free.",
   smartBannerQuestion: 'Shopping in the UK? View British supermarket prices in Pounds (GBP £):',
   smartBannerCta: 'Switch to United Kingdom (/uk/)',
   ui: {

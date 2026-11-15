@@ -12,9 +12,9 @@ export const SE_LOCALE: CountryLocaleConfig = {
   currencySymbol: 'kr',
   currencyPrefix: false,
   numberLocale: 'sv-SE',
-  seoTitle: 'KiloRadar Sverige — Jämförpris, Kilopris kalkylator & Krympflation i matbutiken (SEK)',
+  seoTitle: 'KiloRadar Sverige — Jämförpris & Krympflation',
   seoDescription:
-    'Känns det som att favoritvarorna i skafferiet tar slut snabbare? Räkna ut verkligt jämförpris och kilopris, avslöja krympflation och hitta billigaste matbutiken med KiloRadar.',
+    'Se verkligt jämförpris, avslöja krympflation och hitta billigaste matbutiken i Sverige. Gratis, oberoende och utan reklam.',
   smartBannerQuestion: 'Vill du se svenska matpriser och butikskedjor i kronor (SEK)?',
   smartBannerCta: 'Byt till Sverige (kiloradar.com/sv/)',
   ui: {

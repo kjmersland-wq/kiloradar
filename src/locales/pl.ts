@@ -12,9 +12,9 @@ export const PL_LOCALE: CountryLocaleConfig = {
   currencySymbol: 'zł',
   currencyPrefix: false,
   numberLocale: 'pl-PL',
-  seoTitle: 'KiloRadar Polska — Kalkulator ceny za kilogram, Cena jednostkowa & Shrinkflacja / Downsizing (PLN)',
+  seoTitle: 'KiloRadar Polska — Cena za kilogram & Shrinkflacja',
   seoDescription:
-    'Masz wrażenie, że Twoje ulubione produkty kończą się szybciej? Oblicz realną cenę za kilogram i cenę jednostkową, wykryj downsizing i sprawdź najtańszy sklep z KiloRadar.',
+    'Sprawdź realną cenę za kilogram, wykryj shrinkflację i znajdź najtańszy sklep w Polsce. Za darmo, niezależnie i bez reklam.',
   smartBannerQuestion: 'Chcesz zobaczyć polskie ceny produktów i porównanie sklepów w złotówkach (PLN)?',
   smartBannerCta: 'Przejdź do Polski (kiloradar.com/pl/)',
   ui: {

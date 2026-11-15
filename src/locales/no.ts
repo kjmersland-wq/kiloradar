@@ -13,9 +13,9 @@ export const NO_LOCALE: CountryLocaleConfig = {
   currencySymbol: 'kr',
   currencyPrefix: false,
   numberLocale: 'nb-NO',
-  seoTitle: 'KiloRadar Norge — Kilopriskalkulator, Enhetspris & Krympflasjon i matbutikken (NOK)',
+  seoTitle: 'KiloRadar Norge — Kilopriskalkulator & Krympflasjon',
   seoDescription:
-    'Føles det som om favorittvarene dine varer litt kortere enn før? Beregn reell kilopris og enhetspris, avslør krympflasjon og finn billigste matbutikk i Norge med KiloRadar.',
+    'Se den ekte kiloprisen, avslør krympflasjon og finn billigste matbutikk i Norge. Gratis, uavhengig og uten reklame.',
   smartBannerQuestion: 'Har du lyst til å se norske dagligvarepriser og butikker i kroner (NOK)?',
   smartBannerCta: 'Bytt til Norge (kiloradar.com/no/)',
   ui: {

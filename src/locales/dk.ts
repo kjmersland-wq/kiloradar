@@ -12,9 +12,9 @@ export const DK_LOCALE: CountryLocaleConfig = {
   currencySymbol: 'kr.',
   currencyPrefix: false,
   numberLocale: 'da-DK',
-  seoTitle: 'KiloRadar Danmark — Kilopris beregner, Enhedspris & Skrumpflation / Shrinkflation (DKK)',
+  seoTitle: 'KiloRadar Danmark — Kilopris & Skrumpflation',
   seoDescription:
-    'Føles det som om dine yndlingsvarer slipper hurtigere op? Brug vores kilopris beregner til at tjekke reel enhedspris, afsløre skrumpflation og finde det billigste supermarked.',
+    'Se den reelle kilopris, afslør skrumpflation og find det billigste supermarked i Danmark. Gratis, uafhængig og uden reklamer.',
   smartBannerQuestion: 'Vil du gerne se danske dagligvarepriser og supermarkeder i kroner (DKK)?',
   smartBannerCta: 'Skift til Danmark (kiloradar.com/da/)',
   ui: {

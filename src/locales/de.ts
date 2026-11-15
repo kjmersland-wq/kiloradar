@@ -12,10 +12,9 @@ export const DE_LOCALE: CountryLocaleConfig = {
   currencySymbol: '€',
   currencyPrefix: false,
   numberLocale: 'de-DE',
-  seoTitle:
-    'KiloRadar Deutschland — Kilopreis Rechner, Grundpreis berechnen & Mogelpackung / Shrinkflation (EUR)',
+  seoTitle: 'KiloRadar Deutschland — Kilopreis Rechner & Mogelpackung',
   seoDescription:
-    'Sind Ihre Lieblingsprodukte schneller leer als früher? Mit dem KiloRadar Kilopreis Rechner sofort den echten Grundpreis berechnen, Mogelpackungen entlarven und den günstigsten Supermarkt finden.',
+    'Echten Kilopreis berechnen, Mogelpackungen erkennen und den günstigsten Supermarkt in Deutschland finden. Kostenlos und werbefrei.',
   smartBannerQuestion:
     'Möchten Sie deutsche Supermarktpreise, Mogelpackungen und Ketten (Aldi, Lidl, REWE, Edeka) in EUR sehen?',
   smartBannerCta: 'Zu Deutschland wechseln (/de/)',

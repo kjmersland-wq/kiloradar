@@ -12,10 +12,9 @@ export const ES_LOCALE: CountryLocaleConfig = {
   currencySymbol: '€',
   currencyPrefix: false,
   numberLocale: 'es-ES',
-  seoTitle:
-    'KiloRadar España — Calculadora precio por kilo, Precio unitario & Reduflación / Shrinkflation (EUR)',
+  seoTitle: 'KiloRadar España — Precio por kilo & Reduflación',
   seoDescription:
-    '¿Sientes que tus productos favoritos se acaban antes que antes? Calcula el verdadero precio por kilo y precio unitario, descubre la reduflación y compara Mercadona, Lidl, Carrefour y Aldi.',
+    'Descubre el precio real por kilo, detecta la reduflación y encuentra el supermercado más barato de España. Gratis y sin publicidad.',
   smartBannerQuestion:
     '¿Compras en España? Consulta los precios por kilo y supermercados españoles (Mercadona, Lidl, Carrefour) en EUR (€):',
   smartBannerCta: 'Cambiar a España (/es/)',

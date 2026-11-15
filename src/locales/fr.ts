@@ -12,10 +12,9 @@ export const FR_LOCALE: CountryLocaleConfig = {
   currencySymbol: '€',
   currencyPrefix: false,
   numberLocale: 'fr-FR',
-  seoTitle:
-    'KiloRadar France — Calculateur prix au kilo, Prix unitaire & Réduflation / Shrinkflation (EUR)',
+  seoTitle: 'KiloRadar France — Prix au kilo & Réduflation',
   seoDescription:
-    'Avez-vous l’impression que vos produits préférés se terminent plus vite ? Utilisez notre calculateur de prix au kilo pour vérifier le vrai prix unitaire, démasquer la réduflation et comparer E.Leclerc, Lidl et Carrefour.',
+    'Découvrez le vrai prix au kilo, repérez la réduflation et trouvez le supermarché le moins cher en France. Gratuit et sans publicité.',
   smartBannerQuestion:
     'Vous faites vos courses en France ? Consultez les prix au kilo et les supermarchés français en EUR (€) :',
   smartBannerCta: 'Passer à la version France (/fr/)',

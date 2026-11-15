@@ -12,10 +12,9 @@ export const US_LOCALE: CountryLocaleConfig = {
   currencySymbol: '$',
   currencyPrefix: true,
   numberLocale: 'en-US',
-  seoTitle:
-    'KiloRadar US — Unit Price Calculator, Price per Ounce/Pound/Kilo & Shrinkflation Tracker (USD)',
+  seoTitle: 'KiloRadar US — Unit Price Calculator & Shrinkflation Tracker',
   seoDescription:
-    'Ever feel like your groceries run out faster? Calculate true unit prices per ounce, pound, or kilo (oz, lb, fl oz, g, kg), uncover hidden shrinkflation, and find the cheapest US grocery store.',
+    'Check the real price per ounce, pound or kilo, catch shrinkflation and find the cheapest US grocery store. Free and ad-free.',
   smartBannerQuestion: 'Shopping in the United States? View US grocery prices in USD ($) with oz & lb support:',
   smartBannerCta: 'Switch to United States (/us/)',
   ui: {

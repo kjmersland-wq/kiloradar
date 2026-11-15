@@ -30,13 +30,13 @@ export const HREFLANG_LINKS: Array<{ hreflang: string; href: string }> = [
   { hreflang: 'en', href: `${SITE_BASE_URL}/` },
   { hreflang: 'en-US', href: `${SITE_BASE_URL}/us/` },
   { hreflang: 'en-GB', href: `${SITE_BASE_URL}/uk/` },
-  { hreflang: 'nb-NO', href: `${SITE_BASE_URL}/no/` },
-  { hreflang: 'sv-SE', href: `${SITE_BASE_URL}/sv/` },
-  { hreflang: 'da-DK', href: `${SITE_BASE_URL}/da/` },
-  { hreflang: 'pl-PL', href: `${SITE_BASE_URL}/pl/` },
-  { hreflang: 'de-DE', href: `${SITE_BASE_URL}/de/` },
-  { hreflang: 'fr-FR', href: `${SITE_BASE_URL}/fr/` },
-  { hreflang: 'es-ES', href: `${SITE_BASE_URL}/es/` },
+  { hreflang: 'nb', href: `${SITE_BASE_URL}/no/` },
+  { hreflang: 'sv', href: `${SITE_BASE_URL}/sv/` },
+  { hreflang: 'da', href: `${SITE_BASE_URL}/da/` },
+  { hreflang: 'pl', href: `${SITE_BASE_URL}/pl/` },
+  { hreflang: 'de', href: `${SITE_BASE_URL}/de/` },
+  { hreflang: 'fr', href: `${SITE_BASE_URL}/fr/` },
+  { hreflang: 'es', href: `${SITE_BASE_URL}/es/` },
 ];
 
 export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata> = {
@@ -444,6 +444,32 @@ export function buildJsonLdGraph(
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'Organization',
+        '@id': `${SITE_BASE_URL}/#organization`,
+        name: 'KiloRadar',
+        url: `${SITE_BASE_URL}/`,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_BASE_URL}/logo-512.png`,
+          width: 512,
+          height: 512,
+        },
+        parentOrganization: { '@type': 'Organization', name: 'KM TECH LABS' },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          email: 'support@kiloradar.com',
+          contactType: 'customer support',
+        },
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${SITE_BASE_URL}/#website`,
+        name: 'KiloRadar',
+        url: `${SITE_BASE_URL}/`,
+        inLanguage: htmlLang,
+        publisher: { '@id': `${SITE_BASE_URL}/#organization` },
+      },
+      {
         '@type': 'WebApplication',
         '@id': `${meta.canonicalUrl}#webapp`,
         name: 'KiloRadar',
@@ -460,16 +486,7 @@ export function buildJsonLdGraph(
           price: '0',
           priceCurrency: currencyCode,
         },
-        author: {
-          '@type': 'Organization',
-          name: 'KM TECH LABS',
-          url: SITE_BASE_URL,
-          contactPoint: {
-            '@type': 'ContactPoint',
-            email: 'support@kiloradar.com',
-            contactType: 'customer support',
-          },
-        },
+        author: { '@id': `${SITE_BASE_URL}/#organization` },
       },
       {
         '@type': 'FAQPage',
