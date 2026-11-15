@@ -32,7 +32,7 @@ import {
   Check,
   HelpCircle,
 } from 'lucide-react';
-import CatalogSection, { type CatalogItem } from './CatalogSection';
+import CatalogSection, { CATALOG_UI, type CatalogItem } from './CatalogSection';
 import {
   ProductItem,
   analyzeProductShrinkflation,
@@ -937,6 +937,7 @@ export default function KiloRadarApp({
   }, [countryCode, localeConfig, seoMeta]);
 
   // Collapsible details per product card (compact view by default)
+  const [productsLimit, setProductsLimit] = useState(6);
   const [expandedCards, setExpandedCards] = useState<Record<string, boolean>>({});
 
   // Basket scanner state
@@ -1370,6 +1371,7 @@ export default function KiloRadarApp({
   };
 
   // Filtered products using instant search + Levenshtein fuzzy-matching
+  const productsFiltered = searchQuery.trim() !== '' || selectedCategory !== 'ALL';
   const filteredProducts = useMemo(() => {
     const categoryFiltered =
       selectedCategory === 'ALL'
@@ -1486,6 +1488,9 @@ export default function KiloRadarApp({
               <a href="#ranking" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][0]}</a>
               <a href="#calculator" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][1]}</a>
               <a href="#products" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][2]}</a>
+              {catalogItems.length > 0 && (
+                <a href="#catalog" className="transition-colors hover:text-foreground">{CATALOG_UI[countryCode].nav}</a>
+              )}
             </nav>
             {/* Country Route & Currency Switcher */}
             <div className="flex min-w-0 max-w-[58%] items-center gap-1.5 rounded-full border border-border bg-card px-2 py-0.5 sm:max-w-none">
@@ -2192,7 +2197,7 @@ export default function KiloRadarApp({
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredProducts.map(({ product, similarity }) => {
+              {filteredProducts.slice(0, productsFiltered ? filteredProducts.length : productsLimit).map(({ product, similarity }) => {
                 const analysis = analyzeProductShrinkflation(product);
                 const alternatives = rankCategoryAlternatives(product, products);
                 const bestAlt = alternatives[0];
@@ -2391,6 +2396,7 @@ export default function KiloRadarApp({
                       </div>
                     </div>
 
+                    {isExpanded && (
                     <div className="px-4 py-2.5 bg-background/80 border-t border-border/80 flex items-center justify-between text-xs">
                       {bestAlt && bestAlt.isCheaper ? (
                         <div className="flex items-center justify-between w-full gap-2">
@@ -2410,6 +2416,7 @@ export default function KiloRadarApp({
                         </div>
                       )}
                     </div>
+                    )}
                     {(() => {
                       const prov = PROVENANCE_UI[countryCode];
                       const status = product.verification ?? 'unverified';
@@ -2456,6 +2463,21 @@ export default function KiloRadarApp({
               })}
             </div>
           </section>
+
+          {!productsFiltered && filteredProducts.length > productsLimit && (
+            <div className="-mt-12 flex flex-col items-center gap-3">
+              <p className="text-sm text-muted-foreground">
+                {CATALOG_UI[countryCode].showing(productsLimit, filteredProducts.length)}
+              </p>
+              <button
+                type="button"
+                onClick={() => setProductsLimit((n) => n + 6)}
+                className="cursor-pointer rounded-full border border-border bg-card px-6 py-2.5 font-semibold text-foreground transition-colors hover:bg-secondary"
+              >
+                {CATALOG_UI[countryCode].showMore}
+              </button>
+            </div>
+          )}
 
           {/* VERIFIED CATALOG (real Open Food Facts products, prices coming) */}
           <CatalogSection items={catalogItems} countryCode={countryCode} />

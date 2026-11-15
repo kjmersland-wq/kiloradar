@@ -19,6 +19,7 @@ export interface CatalogItem {
 }
 
 interface CatalogStrings {
+  nav: string;
   badge: string;
   title: string;
   subtitle: string;
@@ -37,6 +38,7 @@ interface CatalogStrings {
 }
 
 const EN: CatalogStrings = {
+  nav: 'Catalog',
   badge: 'Verified catalog',
   title: 'Real products we track',
   subtitle:
@@ -44,7 +46,7 @@ const EN: CatalogStrings = {
   search: 'Search name, brand or barcode…',
   all: 'All',
   priceSoon: 'Price coming',
-  priceSoonHint: 'Prices are not tracked for this product yet.',
+  priceSoonHint: 'We do not track prices for these products yet, only the pack size. Prices are coming.',
   size: 'Pack size',
   category: 'Category',
   source: 'Source',
@@ -60,6 +62,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
   us: EN,
   uk: EN,
   no: {
+    nav: 'Katalog',
     badge: 'Verifisert katalog',
     title: 'Ekte produkter vi følger',
     subtitle:
@@ -67,7 +70,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Søk på navn, merke eller strekkode…',
     all: 'Alle',
     priceSoon: 'Pris kommer',
-    priceSoonHint: 'Vi følger ikke prisen på denne varen ennå.',
+    priceSoonHint: 'Vi følger ikke prisene på disse varene ennå, bare pakkestørrelsen. Priser kommer.',
     size: 'Pakkestørrelse',
     category: 'Kategori',
     source: 'Kilde',
@@ -78,6 +81,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Ingen varer passer søket ditt.',
   },
   se: {
+    nav: 'Katalog',
     badge: 'Verifierad katalog',
     title: 'Riktiga produkter vi följer',
     subtitle:
@@ -85,7 +89,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Sök namn, märke eller streckkod…',
     all: 'Alla',
     priceSoon: 'Pris kommer',
-    priceSoonHint: 'Vi följer inte priset på den här varan ännu.',
+    priceSoonHint: 'Vi följer inte priserna på de här varorna ännu, bara förpackningsstorleken. Priser kommer.',
     size: 'Förpackningsstorlek',
     category: 'Kategori',
     source: 'Källa',
@@ -96,6 +100,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Inga varor matchar din sökning.',
   },
   dk: {
+    nav: 'Katalog',
     badge: 'Verificeret katalog',
     title: 'Rigtige produkter vi følger',
     subtitle:
@@ -103,7 +108,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Søg navn, mærke eller stregkode…',
     all: 'Alle',
     priceSoon: 'Pris kommer',
-    priceSoonHint: 'Vi følger ikke prisen på denne vare endnu.',
+    priceSoonHint: 'Vi følger ikke priserne på disse varer endnu, kun pakkestørrelsen. Priser kommer.',
     size: 'Pakkestørrelse',
     category: 'Kategori',
     source: 'Kilde',
@@ -114,6 +119,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Ingen varer matcher din søgning.',
   },
   pl: {
+    nav: 'Katalog',
     badge: 'Zweryfikowany katalog',
     title: 'Prawdziwe produkty, które śledzimy',
     subtitle:
@@ -121,7 +127,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Szukaj nazwy, marki lub kodu kreskowego…',
     all: 'Wszystkie',
     priceSoon: 'Cena wkrótce',
-    priceSoonHint: 'Nie śledzimy jeszcze ceny tego produktu.',
+    priceSoonHint: 'Nie śledzimy jeszcze cen tych produktów, tylko rozmiar opakowania. Ceny wkrótce.',
     size: 'Rozmiar opakowania',
     category: 'Kategoria',
     source: 'Źródło',
@@ -132,6 +138,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Brak produktów pasujących do wyszukiwania.',
   },
   de: {
+    nav: 'Katalog',
     badge: 'Verifizierter Katalog',
     title: 'Echte Produkte, die wir beobachten',
     subtitle:
@@ -139,7 +146,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Name, Marke oder Barcode suchen…',
     all: 'Alle',
     priceSoon: 'Preis folgt',
-    priceSoonHint: 'Den Preis dieses Produkts erfassen wir noch nicht.',
+    priceSoonHint: 'Die Preise dieser Produkte erfassen wir noch nicht, nur die Packungsgröße. Preise folgen.',
     size: 'Packungsgröße',
     category: 'Kategorie',
     source: 'Quelle',
@@ -150,6 +157,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Keine Produkte passen zu deiner Suche.',
   },
   fr: {
+    nav: 'Catalogue',
     badge: 'Catalogue vérifié',
     title: 'Des produits réels que nous suivons',
     subtitle:
@@ -157,7 +165,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Rechercher un nom, une marque ou un code-barres…',
     all: 'Tous',
     priceSoon: 'Prix à venir',
-    priceSoonHint: "Nous ne suivons pas encore le prix de ce produit.",
+    priceSoonHint: "Nous ne suivons pas encore les prix de ces produits, seulement la taille de l'emballage. Prix à venir.",
     size: "Taille de l'emballage",
     category: 'Catégorie',
     source: 'Source',
@@ -168,6 +176,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Aucun produit ne correspond à votre recherche.',
   },
   es: {
+    nav: 'Catálogo',
     badge: 'Catálogo verificado',
     title: 'Productos reales que seguimos',
     subtitle:
@@ -175,7 +184,7 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     search: 'Buscar nombre, marca o código de barras…',
     all: 'Todos',
     priceSoon: 'Precio próximamente',
-    priceSoonHint: 'Todavía no seguimos el precio de este producto.',
+    priceSoonHint: 'Todavía no seguimos los precios de estos productos, solo el tamaño del envase. Precios próximamente.',
     size: 'Tamaño del envase',
     category: 'Categoría',
     source: 'Fuente',
@@ -240,6 +249,11 @@ export default function CatalogSection({
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">{ui.title}</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">{ui.subtitle}</p>
+      </div>
+
+      <div className="flex items-start gap-3 rounded-3xl border border-warn/30 bg-warn/10 p-5">
+        <span className="rounded-full bg-warn/20 px-3 py-1 text-xs font-bold text-warn">{ui.priceSoon}</span>
+        <p className="text-sm text-muted-foreground">{ui.priceSoonHint}</p>
       </div>
 
       <div className="card-kilo space-y-4 p-5 sm:p-6">
