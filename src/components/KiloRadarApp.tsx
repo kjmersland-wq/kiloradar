@@ -1639,9 +1639,7 @@ export default function KiloRadarApp({
                       <span className="ml-2 text-xl font-normal text-muted-foreground">{periodLabel}</span>
                     </p>
                     <div className="mt-10 border-t border-border pt-8">
-                      <p className="text-sm font-semibold text-savings">
-                        {HERO_COPY[countryCode].save} <span className="text-muted-foreground">{VS_WORD[countryCode]} {mostExpensiveStore.store}</span>
-                      </p>
+                      <p className="text-sm font-semibold text-savings">{HERO_COPY[countryCode].save}</p>
                       <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
                         {[
                           [dict.unitWeekShort, mostExpensiveStore.diffWeeklyFromCheapest],
@@ -1656,6 +1654,9 @@ export default function KiloRadarApp({
                           </div>
                         ))}
                       </div>
+                      <p className="mt-3 text-xs text-muted-foreground">
+                        {VS_WORD[countryCode]} {mostExpensiveStore.store}
+                      </p>
                     </div>
                   </div>
                   <ol className="grid content-start gap-4 lg:col-span-2">
