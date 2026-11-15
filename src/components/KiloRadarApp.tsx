@@ -1695,14 +1695,14 @@ export default function KiloRadarApp({
               </span>
             </a>
             {/* Country Route & Currency Switcher */}
-            <div className="flex items-center gap-1.5 rounded-full border border-border bg-card px-2 py-0.5">
+            <div className="flex min-w-0 max-w-[58%] items-center gap-1.5 rounded-full border border-border bg-card px-2 py-0.5 sm:max-w-none">
               <Globe className="ml-1.5 h-3.5 w-3.5 shrink-0 text-savings" />
               <select
                 id="kiloradar-country-selector"
                 aria-label="Select country route, language, and currency"
                 value={countryCode}
                 onChange={(e) => handleCountrySwitch(e.target.value as CountryRouteCode)}
-                className="cursor-pointer rounded-full bg-transparent px-2 py-1.5 text-sm font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                className="min-w-0 flex-1 cursor-pointer truncate rounded-full bg-transparent px-2 py-1.5 text-sm font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
               >
                 {COUNTRY_ROUTE_LIST.map((loc) => (
                   <option key={loc.code} value={loc.code} className="bg-background text-foreground">
@@ -1717,7 +1717,8 @@ export default function KiloRadarApp({
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 space-y-8">
           {/* HERO */}
           <section id="top" className="bg-hero -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-            <div className="animate-rise max-w-3xl">
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div className="animate-rise">
               <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
                 <span className="size-1.5 rounded-full bg-shrink" />
                 {dict.heroBadge}
@@ -1739,6 +1740,14 @@ export default function KiloRadarApp({
                 </a>
               </div>
             </div>
+            <div className="card-kilo animate-rise p-4 sm:p-6" style={{ animationDelay: '.1s' }}>
+                {/* Lightweight Vector Hero Illustration comparing Old vs Shrunk Package */}
+                <ShrinkflationComparisonHeroSvg
+                  locale={localeConfig}
+                  formatPrice={formatMoney}
+                />
+            </div>
+          </div>
             <div className="mt-10 grid gap-3 sm:grid-cols-3">
               <div className="card-kilo animate-rise p-5">
                 <p className="flex items-center gap-2 text-xs uppercase tracking-wider text-muted-foreground"><Trophy className="size-4 text-savings" />{dict.cheapestChainNow}</p>
@@ -1755,99 +1764,210 @@ export default function KiloRadarApp({
             </div>
           </section>
 
-          {/* TOP SECTION: Instant Search + Hero SVG Illustration + Scan / Test Product Simulator */}
-          <section id="calculator" className="grid grid-cols-1 lg:grid-cols-12 gap-6 scroll-mt-20">
-            {/* Left Column: Search, Visual Hero SVG & Quick Filter Control */}
-            <div className="lg:col-span-5 flex flex-col justify-between card-kilo p-6 shadow-card space-y-4">
-              <div className="space-y-4">
-                {/* Lightweight Vector Hero Illustration comparing Old vs Shrunk Package */}
-                <ShrinkflationComparisonHeroSvg
-                  locale={localeConfig}
-                  formatPrice={formatMoney}
-                />
-
-                {/* Search Input (Also triggers live Open Food Facts search on Enter) */}
-                <div className="relative">
-                  <Search className="w-5 h-5 text-savings absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
-                  <input
-                    id="krymp-search-input"
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter' && searchQuery.trim()) {
-                        setLiveBarcodeOrQuery(searchQuery.trim());
-                        executeOpenFoodFactsLookup(searchQuery.trim());
-                      }
-                    }}
-                    placeholder={dict.searchPlaceholder}
-                    className="w-full pl-12 pr-24 py-3 rounded-xl bg-background/90 border border-border/80 text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-savings focus:ring-2 focus:ring-savings/20 transition-all"
-                  />
-                  {searchQuery && (
-                    <button
-                      type="button"
-                      onClick={() => setSearchQuery('')}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-lg bg-secondary hover:bg-secondary text-xs text-muted-foreground transition"
-                    >
-                      {dict.resetBtn}
-                    </button>
-                  )}
+          {/* SECTION: CHEAPEST SUPERMARKET – AVERAGE CUSTOMER BASKET */}
+          <section id="ranking" className="scroll-mt-20 space-y-6 py-6">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-2">
+              <div className="space-y-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-savings/15 border border-savings/30 text-savings text-xs font-bold">
+                  <ShoppingCart className="w-3.5 h-3.5 text-savings" />
+                  {dict.basketBadge}
                 </div>
-
-                {/* Category Filter Pills with SVG Category Icons */}
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-xs text-muted-foreground">
-                    <span className="flex items-center gap-1.5 font-medium">
-                      <Filter className="w-3.5 h-3.5 text-savings" />
-                      {dict.filterByCategory}
-                    </span>
-                    <span>{dict.showingCount(filteredProducts.length, products.length)}</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setSelectedCategory('ALL')}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                        selectedCategory === 'ALL'
-                          ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
-                          : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
-                      }`}
-                    >
-                      {dict.allCategoriesLabel}
-                    </button>
-                    {localeConfig.categories.map((category) => {
-                      const active = selectedCategory === category;
-                      return (
-                        <button
-                          key={category}
-                          type="button"
-                          onClick={() => setSelectedCategory(category)}
-                          className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
-                            active
-                              ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
-                              : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
-                          }`}
-                        >
-                          <CategorySvgIcon category={category} className="w-4 h-4" />
-                          <span>{category}</span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
+                <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                  {dict.basketTitlePrefix}{' '}
+                  <span className="text-savings">
+                    {basketPeriod === 'week'
+                      ? dict.basketPeriodWeek
+                      : basketPeriod === 'month'
+                      ? dict.basketPeriodMonth
+                      : dict.basketPeriodYear}
+                  </span>
+                </h2>
+                <p className="text-xs text-muted-foreground">
+                  {dict.basketSubtitle} {dict.lastScannedLabel}{' '}
+                  <strong className="text-muted-foreground">
+                    {customScanTimestamp || dict.lastScannedValue}
+                  </strong>
+                </p>
               </div>
 
-              {/* Algorithmic Formula Badge */}
-              <div className="pt-3 border-t border-border/80 flex items-center justify-between text-xs text-muted-foreground">
-                <span>{dict.formulaLabel}</span>
-                <code className="px-2.5 py-1 rounded-md bg-background border border-border text-savings font-mono text-[11px]">
-                  ((newPrice/newQty) / (oldPrice/oldQty) - 1) × 100
-                </code>
+              <div className="flex flex-wrap items-center gap-2.5">
+                <select
+                  value={householdProfileId}
+                  onChange={(e) =>
+                    setHouseholdProfileId(e.target.value as 'single' | 'couple' | 'family')
+                  }
+                  aria-label="Select household size"
+                  className="px-4 py-2.5 rounded-full bg-card border border-border text-sm font-medium text-foreground focus:outline-none focus:border-savings"
+                >
+                  {localeConfig.householdProfiles.map((profile) => (
+                    <option key={profile.id} value={profile.id}>
+                      {profile.label}
+                    </option>
+                  ))}
+                </select>
+
+                <div className="inline-flex rounded-full bg-card p-1 border border-border">
+                  <button
+                    type="button"
+                    onClick={() => setBasketPeriod('week')}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                      basketPeriod === 'week'
+                        ? 'bg-savings text-primary-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    {dict.per1Week}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setBasketPeriod('month')}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                      basketPeriod === 'month'
+                        ? 'bg-savings text-primary-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    {dict.per1Month}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setBasketPeriod('year')}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                      basketPeriod === 'year'
+                        ? 'bg-savings text-primary-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    {dict.per1Year}
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleTriggerWeeklyStoreScan}
+                  disabled={isScanningStores}
+                  className="px-3.5 py-2 rounded-xl bg-secondary hover:bg-secondary border border-border text-xs font-semibold text-savings flex items-center gap-1.5 transition cursor-pointer"
+                >
+                  <RefreshCw className={`w-3.5 h-3.5 ${isScanningStores ? 'animate-spin' : ''}`} />
+                  <span>{isScanningStores ? dict.scanningChainsBtn : dict.scanWeekPricesBtn}</span>
+                </button>
               </div>
             </div>
 
-            {/* Right Column: "Skann / Test produkt"-simulator */}
-            <div className="lg:col-span-7 rounded-2xl bg-card/85 border border-border/90 p-6 shadow-card flex flex-col justify-between">
+            {/* Store ranking: winner card + ranked list */}
+            {(() => {
+              const periodOf = (item: (typeof storeBasketRanking)[number]) =>
+                basketPeriod === 'week'
+                  ? item.weeklyCost
+                  : basketPeriod === 'month'
+                  ? item.monthlyCost
+                  : item.yearlyCost;
+              const periodLabel =
+                basketPeriod === 'week'
+                  ? dict.unitWeekShort
+                  : basketPeriod === 'month'
+                  ? dict.unitMonthShort
+                  : dict.unitYearShort;
+              const winner = storeBasketRanking[0];
+              const rest = storeBasketRanking.slice(1);
+              if (!winner) return null;
+              const maxCost = Math.max(...storeBasketRanking.map(periodOf));
+              return (
+                <div className="grid gap-4 lg:grid-cols-5">
+                  <div className="card-kilo bg-winner animate-rise relative overflow-hidden p-6 shadow-glow sm:p-8 lg:col-span-2">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-savings">
+                      <Trophy className="size-4" /> #1 {dict.cheapestBadge}
+                    </div>
+                    <p className="mt-4 font-display text-4xl font-extrabold text-foreground">{winner.store}</p>
+                    <p className="mt-6 text-sm text-muted-foreground">{dict.avgCustomerLabel}</p>
+                    <p className="font-display text-5xl font-extrabold tabular text-foreground sm:text-6xl">
+                      {formatMoney(periodOf(winner), 0)}
+                      <span className="ml-1 text-base font-normal text-muted-foreground">{periodLabel}</span>
+                    </p>
+                    <p className="mt-4 inline-flex items-center gap-1 rounded-full bg-savings/15 px-3 py-1 text-sm font-semibold text-savings">
+                      <CheckCircle2 className="size-4" /> {dict.lowestTotalBasket}
+                    </p>
+                  </div>
+                  <ol className="grid gap-3 lg:col-span-3">
+                    {rest.map((item, i) => {
+                      const cost = periodOf(item);
+                      const diff =
+                        basketPeriod === 'week'
+                          ? item.diffWeeklyFromCheapest
+                          : basketPeriod === 'month'
+                          ? item.diffMonthlyFromCheapest
+                          : item.diffYearlyFromCheapest;
+                      return (
+                        <li
+                          key={item.store}
+                          className="card-kilo animate-rise flex items-center gap-4 p-4 hover:-translate-y-0.5"
+                          style={{ animationDelay: `${(i + 1) * 0.06}s` }}
+                        >
+                          <span className="w-10 font-display text-3xl font-extrabold tabular text-muted-foreground">
+                            {item.rank}
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-baseline justify-between gap-2">
+                              <p className="flex items-center gap-1.5 truncate font-semibold text-foreground">
+                                <Store className="size-4 shrink-0 text-savings" />
+                                {item.store}
+                              </p>
+                              <p className="font-display text-xl font-bold tabular text-foreground">
+                                {formatMoney(cost, 0)}
+                                <span className="text-xs font-normal text-muted-foreground">{periodLabel}</span>
+                              </p>
+                            </div>
+                            <div className="mt-2 flex items-center gap-3">
+                              <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-secondary">
+                                <div
+                                  className={`h-full rounded-full ${
+                                    item.percentageMoreExpensive > 8 ? 'bg-shrink' : 'bg-warn'
+                                  }`}
+                                  style={{ width: `${Math.min(100, (cost / maxCost) * 100)}%` }}
+                                />
+                              </div>
+                              <span className="w-14 text-right text-xs font-semibold tabular text-muted-foreground">
+                                +{item.percentageMoreExpensive}%
+                              </span>
+                              <span className="hidden w-28 text-right text-xs tabular text-shrink sm:block">
+                                +{formatMoney(diff, 0)}
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+              );
+            })()}
+
+            {cheapestStore && mostExpensiveStore && (
+              <div className="rounded-xl bg-background/90 border border-border px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                <div className="text-muted-foreground">
+                  💡{' '}
+                  {dict.basketConclusion(
+                    cheapestStore.store,
+                    mostExpensiveStore.store,
+                    formatMoney(mostExpensiveStore.diffWeeklyFromCheapest, 0),
+                    formatMoney(mostExpensiveStore.diffMonthlyFromCheapest, 0),
+                    formatMoney(mostExpensiveStore.diffYearlyFromCheapest, 0)
+                  )}
+                </div>
+                <a
+                  href="#metode-og-kilder"
+                  className="text-[11px] text-savings hover:text-savings underline underline-offset-4 font-semibold shrink-0 flex items-center gap-1"
+                >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  {dict.methodologyJumpLink}
+                </a>
+              </div>
+            )}
+          </section>
+
+          {/* CALCULATOR / SIMULATOR */}
+          <section id="calculator" className="scroll-mt-20 -mx-4 sm:-mx-6 lg:-mx-8 border-y border-border bg-card/40 px-4 py-14 sm:px-6 lg:px-8">
+            <div className="card-kilo p-6 sm:p-8 shadow-card flex flex-col justify-between">
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                   <div className="flex items-center gap-2.5">
@@ -2225,216 +2345,86 @@ export default function KiloRadarApp({
             </div>
           </section>
 
-          {/* SOCIAL SHARE ROW (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn) */}
-          <ShareButtonsBar
-            shareUrl={seoMeta.canonicalUrl}
-            shareTitle={localeConfig.seoTitle}
-            shareText={seoMeta.share.shareText}
-            copyLabel={seoMeta.share.copyLink}
-            copiedLabel={seoMeta.share.copiedConfirm}
-            barLabel={seoMeta.share.label}
-          />
-
-          {/* SECTION: CHEAPEST SUPERMARKET – AVERAGE CUSTOMER BASKET */}
-          <section id="ranking" className="card-kilo bg-winner scroll-mt-20 p-6 sm:p-8 space-y-5 shadow-glow">
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-border pb-4">
-              <div className="space-y-1">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-savings/15 border border-savings/30 text-savings text-xs font-bold">
-                  <ShoppingCart className="w-3.5 h-3.5 text-savings" />
-                  {dict.basketBadge}
-                </div>
-                <h2 className="text-xl sm:text-2xl font-extrabold text-foreground">
-                  {dict.basketTitlePrefix}{' '}
-                  <span className="text-savings">
-                    {basketPeriod === 'week'
-                      ? dict.basketPeriodWeek
-                      : basketPeriod === 'month'
-                      ? dict.basketPeriodMonth
-                      : dict.basketPeriodYear}
-                  </span>
-                </h2>
-                <p className="text-xs text-muted-foreground">
-                  {dict.basketSubtitle} {dict.lastScannedLabel}{' '}
-                  <strong className="text-muted-foreground">
-                    {customScanTimestamp || dict.lastScannedValue}
-                  </strong>
-                </p>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-2.5">
-                <select
-                  value={householdProfileId}
-                  onChange={(e) =>
-                    setHouseholdProfileId(e.target.value as 'single' | 'couple' | 'family')
-                  }
-                  aria-label="Select household size"
-                  className="px-3 py-2 rounded-xl bg-background border border-border text-xs font-semibold text-foreground focus:outline-none focus:border-savings"
-                >
-                  {localeConfig.householdProfiles.map((profile) => (
-                    <option key={profile.id} value={profile.id}>
-                      {profile.label}
-                    </option>
-                  ))}
-                </select>
-
-                <div className="inline-flex rounded-xl bg-background p-1 border border-border">
-                  <button
-                    type="button"
-                    onClick={() => setBasketPeriod('week')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                      basketPeriod === 'week'
-                        ? 'bg-savings text-primary-foreground'
-                        : 'text-muted-foreground hover:text-foreground'
-                    }`}
-                  >
-                    {dict.per1Week}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setBasketPeriod('month')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                      basketPeriod === 'month'
-                        ? 'bg-savings text-primary-foreground'
-                        : 'text-muted-foreground hover:text-foreground'
-                    }`}
-                  >
-                    {dict.per1Month}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setBasketPeriod('year')}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                      basketPeriod === 'year'
-                        ? 'bg-savings text-primary-foreground'
-                        : 'text-muted-foreground hover:text-foreground'
-                    }`}
-                  >
-                    {dict.per1Year}
-                  </button>
-                </div>
-
-                <button
-                  type="button"
-                  onClick={handleTriggerWeeklyStoreScan}
-                  disabled={isScanningStores}
-                  className="px-3.5 py-2 rounded-xl bg-secondary hover:bg-secondary border border-border text-xs font-semibold text-savings flex items-center gap-1.5 transition cursor-pointer"
-                >
-                  <RefreshCw className={`w-3.5 h-3.5 ${isScanningStores ? 'animate-spin' : ''}`} />
-                  <span>{isScanningStores ? dict.scanningChainsBtn : dict.scanWeekPricesBtn}</span>
-                </button>
-              </div>
-            </div>
-
-            {/* Store Comparison Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
-              {storeBasketRanking.map((item) => {
-                const isWinner = item.rank === 1;
-                const displayedCost =
-                  basketPeriod === 'week'
-                    ? item.weeklyCost
-                    : basketPeriod === 'month'
-                    ? item.monthlyCost
-                    : item.yearlyCost;
-                const displayedDiff =
-                  basketPeriod === 'week'
-                    ? item.diffWeeklyFromCheapest
-                    : basketPeriod === 'month'
-                    ? item.diffMonthlyFromCheapest
-                    : item.diffYearlyFromCheapest;
-                const periodLabel =
-                  basketPeriod === 'week'
-                    ? dict.unitWeekShort
-                    : basketPeriod === 'month'
-                    ? dict.unitMonthShort
-                    : dict.unitYearShort;
-
-                return (
-                  <div
-                    key={item.store}
-                    className={`rounded-xl p-4 border flex flex-col justify-between transition-all ${
-                      isWinner
-                        ? 'bg-savings/35 border-savings/60 shadow-lg shadow-savings/40'
-                        : 'bg-background/85 border-border'
-                    }`}
-                  >
-                    <div>
-                      <div className="flex items-center justify-between gap-2 mb-2">
-                        <span
-                          className={`px-2 py-0.5 rounded-md text-[11px] font-extrabold ${
-                            isWinner
-                              ? 'bg-savings text-primary-foreground'
-                              : 'bg-secondary text-muted-foreground'
-                          }`}
-                        >
-                          #{item.rank} {isWinner ? dict.cheapestBadge : ''}
-                        </span>
-                        <span className="text-[11px] font-mono text-muted-foreground">
-                          {isWinner ? dict.referenceLabel : `+${item.percentageMoreExpensive}%`}
-                        </span>
-                      </div>
-
-                      <div className="text-base font-extrabold text-foreground flex items-center gap-1.5">
-                        <Store className="w-4 h-4 text-savings shrink-0" />
-                        <span>{item.store}</span>
-                      </div>
-
-                      <div className="mt-3">
-                        <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                          {dict.avgCustomerLabel}
-                        </div>
-                        <div
-                          className={`text-xl font-black mt-0.5 ${
-                            isWinner ? 'text-savings' : 'text-foreground'
-                          }`}
-                        >
-                          {formatMoney(displayedCost, 0)}
-                          <span className="text-xs font-normal text-muted-foreground">{periodLabel}</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="mt-3 pt-2.5 border-t border-border/80 text-xs">
-                      {isWinner ? (
-                        <span className="text-savings font-bold flex items-center gap-1">
-                          <CheckCircle2 className="w-3.5 h-3.5" />
-                          {dict.lowestTotalBasket}
-                        </span>
-                      ) : (
-                        <span className="text-shrink font-semibold">
-                          +{formatMoney(displayedDiff, 0)} {dict.moreExpensivePer} {periodLabel}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            {cheapestStore && mostExpensiveStore && (
-              <div className="rounded-xl bg-background/90 border border-border px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-                <div className="text-muted-foreground">
-                  💡{' '}
-                  {dict.basketConclusion(
-                    cheapestStore.store,
-                    mostExpensiveStore.store,
-                    formatMoney(mostExpensiveStore.diffWeeklyFromCheapest, 0),
-                    formatMoney(mostExpensiveStore.diffMonthlyFromCheapest, 0),
-                    formatMoney(mostExpensiveStore.diffYearlyFromCheapest, 0)
-                  )}
-                </div>
-                <a
-                  href="#metode-og-kilder"
-                  className="text-[11px] text-savings hover:text-savings underline underline-offset-4 font-semibold shrink-0 flex items-center gap-1"
-                >
-                  <BookOpen className="w-3.5 h-3.5" />
-                  {dict.methodologyJumpLink}
-                </a>
-              </div>
-            )}
-          </section>
-
           {/* COMPACT PRODUCT CARDS GRID WITH CATEGORY SVG ICONS */}
           <section id="products" className="space-y-4 scroll-mt-20">
+            <div className="card-kilo p-5 sm:p-6 space-y-4">
+                {/* Search Input (Also triggers live Open Food Facts search on Enter) */}
+                <div className="relative">
+                  <Search className="w-5 h-5 text-savings absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    id="krymp-search-input"
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' && searchQuery.trim()) {
+                        setLiveBarcodeOrQuery(searchQuery.trim());
+                        executeOpenFoodFactsLookup(searchQuery.trim());
+                      }
+                    }}
+                    placeholder={dict.searchPlaceholder}
+                    className="w-full pl-12 pr-24 py-3 rounded-xl bg-secondary border border-input text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-savings focus:ring-2 focus:ring-savings/20 transition-all"
+                  />
+                  {searchQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-lg bg-secondary hover:bg-secondary text-xs text-muted-foreground transition"
+                    >
+                      {dict.resetBtn}
+                    </button>
+                  )}
+                </div>
+
+                {/* Category Filter Pills with SVG Category Icons */}
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-xs text-muted-foreground">
+                    <span className="flex items-center gap-1.5 font-medium">
+                      <Filter className="w-3.5 h-3.5 text-savings" />
+                      {dict.filterByCategory}
+                    </span>
+                    <span>{dict.showingCount(filteredProducts.length, products.length)}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedCategory('ALL')}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                        selectedCategory === 'ALL'
+                          ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
+                          : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
+                      }`}
+                    >
+                      {dict.allCategoriesLabel}
+                    </button>
+                    {localeConfig.categories.map((category) => {
+                      const active = selectedCategory === category;
+                      return (
+                        <button
+                          key={category}
+                          type="button"
+                          onClick={() => setSelectedCategory(category)}
+                          className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
+                            active
+                              ? 'bg-savings text-primary-foreground shadow-lg shadow-savings/25'
+                              : 'bg-background/80 text-muted-foreground border border-border hover:border-border hover:text-foreground'
+                          }`}
+                        >
+                          <CategorySvgIcon category={category} className="w-4 h-4" />
+                          <span>{category}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              <div className="pt-3 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
+                <span>{dict.formulaLabel}</span>
+                <code className="px-2.5 py-1 rounded-md bg-secondary border border-border text-savings font-mono text-[11px]">
+                  ((newPrice/newQty) / (oldPrice/oldQty) - 1) × 100
+                </code>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
                 <h2 className="text-xl font-bold text-foreground flex items-center gap-2">
@@ -2770,6 +2760,16 @@ export default function KiloRadarApp({
               })}
             </div>
           </section>
+
+          {/* SOCIAL SHARE ROW (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn) */}
+          <ShareButtonsBar
+            shareUrl={seoMeta.canonicalUrl}
+            shareTitle={localeConfig.seoTitle}
+            shareText={seoMeta.share.shareText}
+            copyLabel={seoMeta.share.copyLink}
+            copiedLabel={seoMeta.share.copiedConfirm}
+            barLabel={seoMeta.share.label}
+          />
 
           {/* SEMANTIC FAQ SECTION (Matches Schema.org FAQPage JSON-LD) */}
           <section
