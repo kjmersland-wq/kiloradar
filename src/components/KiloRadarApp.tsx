@@ -410,273 +410,6 @@ function KiloRadarLogo({ className = 'w-11 h-11' }: { className?: string }) {
 }
 
 /**
- * 2. Hero Vector Illustration (SVG):
- * Visually compares an older, larger package (emerald/neutral) vs a newer, shrunk package (alert red)
- * with explicit unit price increase.
- */
-function ShrinkflationComparisonHeroSvg({
-  locale,
-  formatPrice,
-}: {
-  locale: CountryLocaleConfig;
-  formatPrice: (val: number, decimals?: number) => string;
-}) {
-  const sampleProduct = locale.products[0];
-  const analysis = analyzeProductShrinkflation(sampleProduct);
-
-  return (
-    <div className="rounded-xl bg-background/90 border border-border/90 p-3.5 overflow-hidden">
-      <svg
-        viewBox="0 0 420 132"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-auto"
-        role="img"
-        aria-label="Visual comparison of old package vs shrunk package"
-      >
-        <line x1="12" y1="108" x2="408" y2="108" stroke="#1E293B" strokeWidth="1.5" />
-        <line
-          x1="12"
-          y1="28"
-          x2="408"
-          y2="28"
-          stroke="#1E293B"
-          strokeWidth="1"
-          strokeDasharray="3 3"
-        />
-
-        {/* LEFT: OLD PACKAGE */}
-        <g>
-          <rect
-            x="28"
-            y="24"
-            width="86"
-            height="84"
-            rx="8"
-            fill="#064E3B"
-            fillOpacity="0.35"
-            stroke="#10B981"
-            strokeWidth="2"
-          />
-          <rect x="38" y="34" width="66" height="14" rx="4" fill="#10B981" fillOpacity="0.2" />
-          <text
-            x="71"
-            y="44"
-            textAnchor="middle"
-            fill="#6EE7B7"
-            fontSize="9"
-            fontWeight="700"
-            fontFamily="monospace"
-          >
-            {locale.ui.oldPackageLabel.toUpperCase()}
-          </text>
-          <text
-            x="71"
-            y="68"
-            textAnchor="middle"
-            fill="#FFFFFF"
-            fontSize="15"
-            fontWeight="800"
-            fontFamily="sans-serif"
-          >
-            {sampleProduct.oldMeasure}
-          </text>
-          <text
-            x="71"
-            y="84"
-            textAnchor="middle"
-            fill="#94A3B8"
-            fontSize="10"
-            fontWeight="600"
-            fontFamily="sans-serif"
-          >
-            {formatPrice(sampleProduct.oldPrice)}
-          </text>
-          <rect x="34" y="91" width="74" height="13" rx="3" fill="#022C22" />
-          <text
-            x="71"
-            y="100"
-            textAnchor="middle"
-            fill="#34D399"
-            fontSize="8.5"
-            fontWeight="700"
-            fontFamily="monospace"
-          >
-            {formatPrice(analysis.oldUnitPrice)}/{analysis.baseUnit}
-          </text>
-        </g>
-
-        {/* CENTER: ARROW & SHRINKFLATION DELTA BADGE */}
-        <g>
-          <path
-            d="M132 66H188"
-            stroke="#EF4444"
-            strokeWidth="2"
-            strokeDasharray="4 3"
-            strokeLinecap="round"
-          />
-          <path
-            d="M183 61L190 66L183 71"
-            stroke="#EF4444"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <rect
-            x="130"
-            y="38"
-            width="62"
-            height="20"
-            rx="6"
-            fill="#450A0A"
-            stroke="#EF4444"
-            strokeWidth="1.2"
-          />
-          <text
-            x="161"
-            y="51"
-            textAnchor="middle"
-            fill="#FCA5A5"
-            fontSize="9.5"
-            fontWeight="800"
-            fontFamily="monospace"
-          >
-            {analysis.sizeReductionPercent}%
-          </text>
-        </g>
-
-        {/* RIGHT: NEW SHRUNK PACKAGE */}
-        <g>
-          <rect
-            x="208"
-            y="24"
-            width="86"
-            height="18"
-            rx="4"
-            fill="#EF4444"
-            fillOpacity="0.08"
-            stroke="#EF4444"
-            strokeOpacity="0.45"
-            strokeWidth="1.2"
-            strokeDasharray="3 2"
-          />
-          <rect
-            x="208"
-            y="40"
-            width="86"
-            height="68"
-            rx="8"
-            fill="#450A0A"
-            fillOpacity="0.55"
-            stroke="#EF4444"
-            strokeWidth="2"
-          />
-          <text
-            x="251"
-            y="54"
-            textAnchor="middle"
-            fill="#FCA5A5"
-            fontSize="8.5"
-            fontWeight="700"
-            fontFamily="monospace"
-          >
-            {locale.ui.newPackageLabel.toUpperCase()}
-          </text>
-          <text
-            x="251"
-            y="71"
-            textAnchor="middle"
-            fill="#F87171"
-            fontSize="15"
-            fontWeight="800"
-            fontFamily="sans-serif"
-          >
-            {sampleProduct.newMeasure}
-          </text>
-          <text
-            x="251"
-            y="85"
-            textAnchor="middle"
-            fill="#FFFFFF"
-            fontSize="10"
-            fontWeight="700"
-            fontFamily="sans-serif"
-          >
-            {formatPrice(sampleProduct.newPrice)}
-          </text>
-          <rect x="214" y="91" width="74" height="13" rx="3" fill="#7F1D1D" />
-          <text
-            x="251"
-            y="100"
-            textAnchor="middle"
-            fill="#FECACA"
-            fontSize="8.5"
-            fontWeight="700"
-            fontFamily="monospace"
-          >
-            {formatPrice(analysis.newUnitPrice)}/{analysis.baseUnit}
-          </text>
-        </g>
-
-        {/* FAR RIGHT: REAL UNIT PRICE SPIKE CALLOUT */}
-        <g>
-          <rect
-            x="310"
-            y="32"
-            width="96"
-            height="76"
-            rx="10"
-            fill="#0F172A"
-            stroke="#334155"
-            strokeWidth="1.5"
-          />
-          <text
-            x="358"
-            y="50"
-            textAnchor="middle"
-            fill="#94A3B8"
-            fontSize="8"
-            fontWeight="700"
-            fontFamily="sans-serif"
-          >
-            {locale.ui.shrinkflationBadge.toUpperCase()}
-          </text>
-          <text
-            x="358"
-            y="74"
-            textAnchor="middle"
-            fill="#F43F5E"
-            fontSize="18"
-            fontWeight="900"
-            fontFamily="monospace"
-          >
-            +{analysis.shrinkIndex.toFixed(1)}%
-          </text>
-          <text
-            x="358"
-            y="92"
-            textAnchor="middle"
-            fill="#10B981"
-            fontSize="8"
-            fontWeight="700"
-            fontFamily="monospace"
-          >
-            REAL/{analysis.baseUnit.toUpperCase()}
-          </text>
-        </g>
-
-        <text x="71" y="123" textAnchor="middle" fill="#64748B" fontSize="9" fontFamily="sans-serif">
-          100% vol
-        </text>
-        <text x="251" y="123" textAnchor="middle" fill="#F87171" fontSize="9" fontFamily="sans-serif">
-          {100 + analysis.sizeReductionPercent}% vol
-        </text>
-      </svg>
-    </div>
-  );
-}
-
-/**
  * 3. Clean SVG Category Icons & Product Image Fallback Component
  */
 function CategorySvgIcon({
@@ -934,6 +667,19 @@ function ShareButtonsBar({
     </div>
   );
 }
+
+const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
+  en: ['Cheapest stores', 'Calculator', 'Products'],
+  us: ['Cheapest stores', 'Calculator', 'Products'],
+  uk: ['Cheapest stores', 'Calculator', 'Products'],
+  no: ['Billigste butikk', 'Kalkulator', 'Varer'],
+  se: ['Billigaste butik', 'Kalkylator', 'Varor'],
+  dk: ['Billigste butik', 'Beregner', 'Varer'],
+  pl: ['Najtańszy sklep', 'Kalkulator', 'Produkty'],
+  de: ['Günstigster Laden', 'Rechner', 'Produkte'],
+  fr: ['Magasin le moins cher', 'Calculateur', 'Produits'],
+  es: ['Tienda más barata', 'Calculadora', 'Productos'],
+};
 
 export interface KiloRadarAppProps {
   initialCountryCode?: CountryRouteCode;
@@ -1621,6 +1367,15 @@ export default function KiloRadarApp({
     };
   }, [products]);
 
+  const heroProduct = useMemo(() => {
+    let best: { product: ProductItem; analysis: ReturnType<typeof analyzeProductShrinkflation> } | null = null;
+    for (const p of products) {
+      const a = analyzeProductShrinkflation(p);
+      if (!best || a.shrinkIndex > best.analysis.shrinkIndex) best = { product: p, analysis: a };
+    }
+    return best;
+  }, [products]);
+
   const cheapestStore = storeBasketRanking[0];
   const mostExpensiveStore = storeBasketRanking[storeBasketRanking.length - 1];
 
@@ -1629,7 +1384,7 @@ export default function KiloRadarApp({
       <div>
         {/* Smart Non-Intrusive Language Suggestion Banner on '/' */}
         {countryCode === 'en' && suggestedLocale && !bannerDismissed && (
-          <div className="relative z-40 bg-savings/90 border-b border-savings/40 px-4 py-2.5 text-xs">
+          <div className="relative z-40 bg-card border-b border-savings/40 px-4 py-2.5 text-xs">
             <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2 text-savings">
                 <span className="text-base">{suggestedLocale.flag}</span>
@@ -1694,6 +1449,11 @@ export default function KiloRadarApp({
                 kiloradar.com{localeConfig.path === '/' ? '' : localeConfig.path}
               </span>
             </a>
+            <nav className="hidden gap-6 text-sm text-muted-foreground md:flex">
+              <a href="#ranking" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][0]}</a>
+              <a href="#calculator" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][1]}</a>
+              <a href="#products" className="transition-colors hover:text-foreground">{NAV_LABELS[countryCode][2]}</a>
+            </nav>
             {/* Country Route & Currency Switcher */}
             <div className="flex min-w-0 max-w-[58%] items-center gap-1.5 rounded-full border border-border bg-card px-2 py-0.5 sm:max-w-none">
               <Globe className="ml-1.5 h-3.5 w-3.5 shrink-0 text-savings" />
@@ -1723,7 +1483,7 @@ export default function KiloRadarApp({
                 <span className="size-1.5 rounded-full bg-shrink" />
                 {dict.heroBadge}
               </span>
-              <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] text-foreground sm:text-6xl">
+              <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] text-foreground sm:text-5xl">
                 <span className="mb-3 block text-xs font-bold uppercase tracking-wider text-savings">
                   {seoMeta.h1KeywordKicker}
                 </span>
@@ -1740,13 +1500,43 @@ export default function KiloRadarApp({
                 </a>
               </div>
             </div>
-            <div className="card-kilo animate-rise p-4 sm:p-6" style={{ animationDelay: '.1s' }}>
-                {/* Lightweight Vector Hero Illustration comparing Old vs Shrunk Package */}
-                <ShrinkflationComparisonHeroSvg
-                  locale={localeConfig}
-                  formatPrice={formatMoney}
-                />
-            </div>
+            {heroProduct && (
+              <div className="card-kilo animate-rise p-6 sm:p-8" style={{ animationDelay: '.1s' }}>
+                <div className="flex items-center gap-3">
+                  <span className="grid size-12 place-items-center rounded-2xl bg-secondary">
+                    <CategorySvgIcon category={heroProduct.product.category} className="size-6" />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="truncate font-semibold text-foreground">
+                      {heroProduct.product.name.toLowerCase().startsWith(heroProduct.product.brand.toLowerCase()) ? heroProduct.product.name : `${heroProduct.product.brand} ${heroProduct.product.name}`}
+                    </p>
+                    <p className="text-sm text-muted-foreground">{heroProduct.product.store}</p>
+                  </div>
+                </div>
+                <div className="mt-6 grid grid-cols-2 gap-3">
+                  <div className="rounded-2xl bg-secondary p-4">
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground">{dict.oldPackageLabel}</p>
+                    <p className="mt-1 font-display text-2xl font-bold tabular text-foreground">{heroProduct.product.oldMeasure}</p>
+                    <p className="text-sm tabular text-muted-foreground">
+                      {formatMoney(heroProduct.product.oldPrice)} · {formatMoney(heroProduct.analysis.oldUnitPrice)}/{heroProduct.analysis.baseUnit}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-shrink/40 bg-shrink/10 p-4">
+                    <p className="text-xs uppercase tracking-wider text-shrink">{dict.newPackageLabel}</p>
+                    <p className="mt-1 font-display text-2xl font-bold tabular text-foreground">{heroProduct.product.newMeasure}</p>
+                    <p className="text-sm tabular text-muted-foreground">
+                      {formatMoney(heroProduct.product.newPrice)} · {formatMoney(heroProduct.analysis.newUnitPrice)}/{heroProduct.analysis.baseUnit}
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-6 flex items-end justify-between gap-4 border-t border-border pt-6">
+                  <p className="max-w-[10rem] text-sm text-muted-foreground">{dict.realUnitPriceChange}</p>
+                  <p className="font-display text-6xl font-extrabold tabular text-shrink sm:text-7xl">
+                    +{Math.round(heroProduct.analysis.shrinkIndex)}%
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
             <div className="mt-10 grid gap-3 sm:grid-cols-3">
               <div className="card-kilo animate-rise p-5">
@@ -2338,7 +2128,7 @@ export default function KiloRadarApp({
                   </div>
                 </div>
               ) : (
-                <div className="rounded-xl bg-shrink/30 border border-shrink/40 p-3 text-xs text-shrink">
+                <div className="rounded-xl bg-shrink/10 border border-shrink/40 p-3 text-xs text-shrink">
                   {simulatorResult.error}
                 </div>
               )}
@@ -2456,7 +2246,7 @@ export default function KiloRadarApp({
                   <article
                     key={product.id}
                     data-testid={`product-card-${product.id}`}
-                    className={`rounded-2xl bg-card/90 border transition-all duration-200 flex flex-col justify-between overflow-hidden shadow-xl ${
+                    className={`card-kilo hover:-translate-y-1 flex flex-col justify-between overflow-hidden ${
                       isShrunk
                         ? 'border-shrink/35 hover:border-shrink/60'
                         : 'border-savings/35 hover:border-savings/60'
@@ -2466,8 +2256,8 @@ export default function KiloRadarApp({
                       <div
                         className={`px-4 py-2.5 flex items-center justify-between border-b ${
                           isShrunk
-                            ? 'bg-shrink/35 border-shrink/25'
-                            : 'bg-savings/30 border-savings/25'
+                            ? 'bg-shrink/10 border-shrink/25'
+                            : 'bg-savings/10 border-savings/25'
                         }`}
                       >
                         <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground truncate flex items-center gap-1.5">
@@ -2690,7 +2480,7 @@ export default function KiloRadarApp({
                               />
 
                               <div className="grid grid-cols-2 gap-2 pt-1">
-                                <div className="p-2.5 rounded-lg bg-shrink/30 border border-shrink/30">
+                                <div className="p-2.5 rounded-lg bg-shrink/10 border border-shrink/30">
                                   <div className="text-[10px] uppercase tracking-wider text-shrink">
                                     {dict.annualHiddenCost}
                                   </div>
@@ -2703,7 +2493,7 @@ export default function KiloRadarApp({
                                   </div>
                                 </div>
 
-                                <div className="p-2.5 rounded-lg bg-savings/30 border border-savings/30">
+                                <div className="p-2.5 rounded-lg bg-savings/10 border border-savings/30">
                                   <div className="text-[10px] uppercase tracking-wider text-savings">
                                     {dict.savingsBySwitching}
                                   </div>
@@ -2947,7 +2737,7 @@ export default function KiloRadarApp({
             </div>
 
             {reportSuccess ? (
-              <div className="p-4 rounded-xl bg-savings/50 border border-savings/50 text-xs text-savings font-semibold flex items-center gap-2">
+              <div className="p-4 rounded-xl bg-savings/15 border border-savings/50 text-xs text-savings font-semibold flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-savings shrink-0" />
                 <span>{rtUi.reportSuccessMsg}</span>
               </div>
