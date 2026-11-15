@@ -16,9 +16,22 @@ export interface CatalogItem {
   verification?: 'verified' | 'partial' | 'mismatch' | 'unverified';
   sizeHistory?: Array<{ date: string; value: string }>;
   shrinkEvents?: Array<{ date?: string; from: string; to: string }>;
+  /** Crowdsourced price from Open Prices (ODbL). Missing price = "Pris kommer". */
+  price?: {
+    value: number;
+    currency: string;
+    date?: string;
+    store?: string;
+    unitPrice?: number;
+    unitLabel?: string;
+    source?: string;
+    url?: string;
+  };
 }
 
 interface CatalogStrings {
+  priceFrom: string;
+  unitPer: string;
   nav: string;
   badge: string;
   title: string;
@@ -38,6 +51,8 @@ interface CatalogStrings {
 }
 
 const EN: CatalogStrings = {
+  priceFrom: 'Price from',
+  unitPer: 'per',
   nav: 'Catalog',
   badge: 'Verified catalog',
   title: 'Real products we track',
@@ -62,6 +77,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
   us: EN,
   uk: EN,
   no: {
+    priceFrom: 'Pris fra',
+    unitPer: 'per',
     nav: 'Katalog',
     badge: 'Verifisert katalog',
     title: 'Ekte produkter vi følger',
@@ -81,6 +98,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Ingen varer passer søket ditt.',
   },
   se: {
+    priceFrom: 'Pris från',
+    unitPer: 'per',
     nav: 'Katalog',
     badge: 'Verifierad katalog',
     title: 'Riktiga produkter vi följer',
@@ -100,6 +119,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Inga varor matchar din sökning.',
   },
   dk: {
+    priceFrom: 'Pris fra',
+    unitPer: 'pr.',
     nav: 'Katalog',
     badge: 'Verificeret katalog',
     title: 'Rigtige produkter vi følger',
@@ -119,6 +140,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Ingen varer matcher din søgning.',
   },
   pl: {
+    priceFrom: 'Cena z',
+    unitPer: 'za',
     nav: 'Katalog',
     badge: 'Zweryfikowany katalog',
     title: 'Prawdziwe produkty, które śledzimy',
@@ -138,6 +161,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Brak produktów pasujących do wyszukiwania.',
   },
   de: {
+    priceFrom: 'Preis von',
+    unitPer: 'pro',
     nav: 'Katalog',
     badge: 'Verifizierter Katalog',
     title: 'Echte Produkte, die wir beobachten',
@@ -157,6 +182,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Keine Produkte passen zu deiner Suche.',
   },
   fr: {
+    priceFrom: 'Prix de',
+    unitPer: 'par',
     nav: 'Catalogue',
     badge: 'Catalogue vérifié',
     title: 'Des produits réels que nous suivons',
@@ -176,6 +203,8 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
     empty: 'Aucun produit ne correspond à votre recherche.',
   },
   es: {
+    priceFrom: 'Precio de',
+    unitPer: 'por',
     nav: 'Catálogo',
     badge: 'Catálogo verificado',
     title: 'Productos reales que seguimos',
@@ -197,14 +226,23 @@ export const CATALOG_UI: Record<CountryRouteCode, CatalogStrings> = {
 };
 
 const CATEGORY_LABELS: Partial<Record<CountryRouteCode, Record<string, string>>> = {
-  no: { 'Coffee & Tea': 'Kaffe og te', 'Chocolate & Sweets': 'Sjokolade og søtsaker', Dairy: 'Meieri', Snacks: 'Snacks', 'Cereals & Porridge': 'Frokostblanding og grøt', 'Pasta, Rice & Dry Goods': 'Pasta, ris og tørrvarer', 'Juice & Drinks': 'Juice og drikke' },
-  se: { 'Coffee & Tea': 'Kaffe och te', 'Chocolate & Sweets': 'Choklad och godis', Dairy: 'Mejeri', Snacks: 'Snacks', 'Cereals & Porridge': 'Flingor och gröt', 'Pasta, Rice & Dry Goods': 'Pasta, ris och torrvaror', 'Juice & Drinks': 'Juice och dryck' },
-  dk: { 'Coffee & Tea': 'Kaffe og te', 'Chocolate & Sweets': 'Chokolade og slik', Dairy: 'Mejeri', Snacks: 'Snacks', 'Cereals & Porridge': 'Morgenmad og grød', 'Pasta, Rice & Dry Goods': 'Pasta, ris og tørvarer', 'Juice & Drinks': 'Juice og drikke' },
-  pl: { 'Coffee & Tea': 'Kawa i herbata', 'Chocolate & Sweets': 'Czekolada i słodycze', Dairy: 'Nabiał', Snacks: 'Przekąski', 'Cereals & Porridge': 'Płatki i owsianka', 'Pasta, Rice & Dry Goods': 'Makaron, ryż i produkty suche', 'Juice & Drinks': 'Soki i napoje' },
-  de: { 'Coffee & Tea': 'Kaffee & Tee', 'Chocolate & Sweets': 'Schokolade & Süßwaren', Dairy: 'Milchprodukte', Snacks: 'Snacks', 'Cereals & Porridge': 'Müsli & Haferbrei', 'Pasta, Rice & Dry Goods': 'Nudeln, Reis & Trockenware', 'Juice & Drinks': 'Saft & Getränke' },
-  fr: { 'Coffee & Tea': 'Café et thé', 'Chocolate & Sweets': 'Chocolat et confiseries', Dairy: 'Produits laitiers', Snacks: 'Snacks', 'Cereals & Porridge': 'Céréales et porridge', 'Pasta, Rice & Dry Goods': 'Pâtes, riz et produits secs', 'Juice & Drinks': 'Jus et boissons' },
-  es: { 'Coffee & Tea': 'Café y té', 'Chocolate & Sweets': 'Chocolate y dulces', Dairy: 'Lácteos', Snacks: 'Snacks', 'Cereals & Porridge': 'Cereales y papillas', 'Pasta, Rice & Dry Goods': 'Pasta, arroz y secos', 'Juice & Drinks': 'Zumos y bebidas' },
+  no: { 'Coffee & Tea': 'Kaffe og te', 'Chocolate & Sweets': 'Sjokolade og søtsaker', Dairy: 'Meieri', Snacks: 'Snacks', 'Cereals & Porridge': 'Frokostblanding og grøt', 'Pasta, Rice & Dry Goods': 'Pasta, ris og tørrvarer', 'Juice & Drinks': 'Juice og drikke', 'Personal Care': 'Personlig pleie', 'Cleaning & Laundry': 'Vask og rengjøring', 'Toilet Paper': 'Toalettpapir' },
+  se: { 'Coffee & Tea': 'Kaffe och te', 'Chocolate & Sweets': 'Choklad och godis', Dairy: 'Mejeri', Snacks: 'Snacks', 'Cereals & Porridge': 'Flingor och gröt', 'Pasta, Rice & Dry Goods': 'Pasta, ris och torrvaror', 'Juice & Drinks': 'Juice och dryck', 'Personal Care': 'Personlig vård', 'Cleaning & Laundry': 'Tvätt och städ', 'Toilet Paper': 'Toalettpapper' },
+  dk: { 'Coffee & Tea': 'Kaffe og te', 'Chocolate & Sweets': 'Chokolade og slik', Dairy: 'Mejeri', Snacks: 'Snacks', 'Cereals & Porridge': 'Morgenmad og grød', 'Pasta, Rice & Dry Goods': 'Pasta, ris og tørvarer', 'Juice & Drinks': 'Juice og drikke', 'Personal Care': 'Personlig pleje', 'Cleaning & Laundry': 'Vask og rengøring', 'Toilet Paper': 'Toiletpapir' },
+  pl: { 'Coffee & Tea': 'Kawa i herbata', 'Chocolate & Sweets': 'Czekolada i słodycze', Dairy: 'Nabiał', Snacks: 'Przekąski', 'Cereals & Porridge': 'Płatki i owsianka', 'Pasta, Rice & Dry Goods': 'Makaron, ryż i produkty suche', 'Juice & Drinks': 'Soki i napoje', 'Personal Care': 'Pielęgnacja', 'Cleaning & Laundry': 'Pranie i czystość', 'Toilet Paper': 'Papier toaletowy' },
+  de: { 'Coffee & Tea': 'Kaffee & Tee', 'Chocolate & Sweets': 'Schokolade & Süßwaren', Dairy: 'Milchprodukte', Snacks: 'Snacks', 'Cereals & Porridge': 'Müsli & Haferbrei', 'Pasta, Rice & Dry Goods': 'Nudeln, Reis & Trockenware', 'Juice & Drinks': 'Saft & Getränke', 'Personal Care': 'Körperpflege', 'Cleaning & Laundry': 'Wasch- & Reinigungsmittel', 'Toilet Paper': 'Toilettenpapier' },
+  fr: { 'Coffee & Tea': 'Café et thé', 'Chocolate & Sweets': 'Chocolat et confiseries', Dairy: 'Produits laitiers', Snacks: 'Snacks', 'Cereals & Porridge': 'Céréales et porridge', 'Pasta, Rice & Dry Goods': 'Pâtes, riz et produits secs', 'Juice & Drinks': 'Jus et boissons', 'Personal Care': 'Soins personnels', 'Cleaning & Laundry': 'Lessive et entretien', 'Toilet Paper': 'Papier toilette' },
+  es: { 'Coffee & Tea': 'Café y té', 'Chocolate & Sweets': 'Chocolate y dulces', Dairy: 'Lácteos', Snacks: 'Snacks', 'Cereals & Porridge': 'Cereales y papillas', 'Pasta, Rice & Dry Goods': 'Pasta, arroz y secos', 'Juice & Drinks': 'Zumos y bebidas', 'Personal Care': 'Cuidado personal', 'Cleaning & Laundry': 'Detergentes y limpieza', 'Toilet Paper': 'Papel higiénico' },
 };
+
+const LOCALE_BY_MARKET: Record<CountryRouteCode, string> = {
+  en: 'en-US', us: 'en-US', uk: 'en-GB', no: 'nb-NO', se: 'sv-SE', dk: 'da-DK',
+  pl: 'pl-PL', de: 'de-DE', fr: 'fr-FR', es: 'es-ES',
+};
+
+/** Open Food/Beauty/Products Facts data is ODbL: always mark it as such next to the source. */
+const licensed = (name: string): string =>
+  /^Open (Food|Beauty|Products) Facts$/.test(name) ? `${name} (ODbL)` : name;
 
 const PAGE_SIZE = 12;
 
@@ -216,6 +254,8 @@ export default function CatalogSection({
   countryCode: CountryRouteCode;
 }) {
   const ui = CATALOG_UI[countryCode] ?? EN;
+  const money = (value: number, currency: string) =>
+    new Intl.NumberFormat(LOCALE_BY_MARKET[countryCode], { style: 'currency', currency }).format(value);
   const catLabel = (c: string) => CATEGORY_LABELS[countryCode]?.[c] ?? c;
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('ALL');
@@ -253,7 +293,22 @@ export default function CatalogSection({
 
       <div className="flex items-start gap-3 rounded-3xl border border-warn/30 bg-warn/10 p-5">
         <span className="rounded-full bg-warn/20 px-3 py-1 text-xs font-bold text-warn">{ui.priceSoon}</span>
-        <p className="text-sm text-muted-foreground">{ui.priceSoonHint}</p>
+        <p className="text-sm text-muted-foreground">
+          {ui.priceSoonHint}
+          {countryCode === 'no' && (
+            <>
+              {' '}
+              <a
+                href="https://mattilbud.no/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-savings underline underline-offset-2"
+              >
+                Se dagens tilbud på mattilbud.no →
+              </a>
+            </>
+          )}
+        </p>
       </div>
 
       <div className="card-kilo space-y-4 p-5 sm:p-6">
@@ -318,12 +373,25 @@ export default function CatalogSection({
                       <Package className="size-6 text-muted-foreground" />
                     )}
                   </span>
-                  <span
-                    title={ui.priceSoonHint}
-                    className="rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold text-warn"
-                  >
-                    {ui.priceSoon}
-                  </span>
+                  {item.price ? (
+                    <span className="text-right">
+                      <span className="block font-display text-2xl font-extrabold leading-none tabular text-foreground">
+                        {money(item.price.value, item.price.currency)}
+                      </span>
+                      {item.price.unitPrice !== undefined && item.price.unitLabel && (
+                        <span className="mt-1 block text-xs tabular text-muted-foreground">
+                          {money(item.price.unitPrice, item.price.currency)} {ui.unitPer} {item.price.unitLabel}
+                        </span>
+                      )}
+                    </span>
+                  ) : (
+                    <span
+                      title={ui.priceSoonHint}
+                      className="rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold text-warn"
+                    >
+                      {ui.priceSoon}
+                    </span>
+                  )}
                 </div>
                 {item.brand && <p className="mt-4 text-xs text-muted-foreground">{item.brand}</p>}
                 <h3 className="text-lg font-bold leading-snug text-foreground">{item.name}</h3>
@@ -348,13 +416,25 @@ export default function CatalogSection({
                       rel="noopener noreferrer"
                       className="underline underline-offset-2 hover:text-foreground"
                     >
-                      {ui.source}: {src.name}
+                      {ui.source}: {licensed(src.name)}
                     </a>
                   ) : (
                     <span>
-                      {ui.source}: {src.name}
+                      {ui.source}: {licensed(src.name)}
                     </span>
                   ))}
+                {item.price?.url && (
+                  <a
+                    href={item.price.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-foreground"
+                  >
+                    {ui.priceFrom} Open Prices (ODbL)
+                    {item.price.store ? ` · ${item.price.store}` : ''}
+                    {item.price.date ? ` · ${item.price.date}` : ''}
+                  </a>
+                )}
                 {item.lastChecked && (
                   <span className="tabular">
                     {ui.checked}: {item.lastChecked}

@@ -432,7 +432,329 @@
       "shrinkEvents": []
     }
   ],
+  "offerSources": [
+    {
+      "name": "mattilbud.no",
+      "url": "https://mattilbud.no/",
+      "status": "needs_access",
+      "needs": "TJEK_API_KEY (Tjek / eTilbudsavis API access) or written permission"
+    }
+  ],
   "catalog": [
+    {
+      "id": "no-off-8076800105056",
+      "barcode": "8076800105056",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes spaghetti n°5 1kg",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/010/5056/front_fr.1333.200.jpg",
+      "scans": 144,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800105056",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076800105056",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 29.9,
+        "currency": "NOK",
+        "date": "2026-08-10",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 29.9,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076800105056",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-5000396021202",
+      "barcode": "5000396021202",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ritz Crackers Original",
+      "brand": "Pladis (UK) Limited",
+      "category": "Chocolate & Sweets",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/039/602/1202/front_en.107.200.jpg",
+      "scans": 117,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000396021202",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5410126006353",
+      "barcode": "5410126006353",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "LOTUS BISCOFF Fourré - Crème saveur Chocolat - 150g",
+      "brand": "Lotus",
+      "category": "Chocolate & Sweets",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/012/600/6353/front_en.199.200.jpg",
+      "scans": 96,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5410126006353",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5410126006353",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 34.9,
+        "currency": "NOK",
+        "date": "2026-08-24",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 232.67,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5410126006353",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7300400482530",
+      "barcode": "7300400482530",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark Chocolate Wholegrain Biscuits",
+      "brand": "wasa",
+      "category": "Chocolate & Sweets",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/048/2530/front_fr.81.200.jpg",
+      "scans": 88,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400482530",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7300400482530",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 36.5,
+        "currency": "NOK",
+        "date": "2026-10-06",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 158.7,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7300400482530",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8076809523738",
+      "barcode": "8076809523738",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lasagne",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/3738/front_en.361.200.jpg",
+      "scans": 81,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809523738",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076809523738",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 41.9,
+        "currency": "NOK",
+        "date": "2026-08-10",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 83.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076809523738",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8076809579100",
+      "barcode": "8076809579100",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes Barilla Risoni Langues d'oiseau",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/957/9100/front_fr.152.200.jpg",
+      "scans": 60,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809579100",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7300400482523",
+      "barcode": "7300400482523",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Wholegrain Biscuits - Cranberry & Oat Flakes",
+      "brand": "wasa",
+      "category": "Chocolate & Sweets",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/048/2523/front_sv.49.200.jpg",
+      "scans": 56,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400482523",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8801073113893",
+      "barcode": "8801073113893",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "130 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Carboana Buldak Spicy Ramen",
+      "brand": "Samyang",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "130 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/3893/front_en.277.200.jpg",
+      "scans": 53,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073113893",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8801073113893",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 40.0,
+        "currency": "NOK",
+        "date": "2026-06-16",
+        "store": "Oliven eksotisk mat",
+        "discounted": false,
+        "unitPrice": 307.69,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8801073113893",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
     {
       "id": "no-off-5000189983281",
       "barcode": "5000189983281",
@@ -455,11 +777,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5000189983281",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000189983281",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 79.9,
+        "currency": "NOK",
+        "date": "2026-10-09",
+        "store": "Europris",
+        "discounted": false,
+        "unitPrice": 199.75,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000189983281",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-3387390339499",
@@ -482,6 +822,108 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3387390339499",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3387390339499",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 44.9,
+        "currency": "NOK",
+        "date": "2026-09-05",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 119.73,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3387390339499",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7392672104104",
+      "barcode": "7392672104104",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Turkisk Naturell Yoghurt",
+      "brand": "Salakis",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/739/267/210/4104/front_nb.31.200.jpg",
+      "scans": 36,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7392672104104",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-0039047001152",
+      "barcode": "0039047001152",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shortbread Pure Butter",
+      "brand": "Walkers",
+      "category": "Chocolate & Sweets",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/003/904/700/1152/front_en.120.200.jpg",
+      "scans": 36,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0039047001152",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622210477439",
+      "barcode": "7622210477439",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Oreo Golden",
+      "brand": "Oreo",
+      "category": "Chocolate & Sweets",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/047/7439/front_en.141.200.jpg",
+      "scans": 32,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210477439",
           "checked": "2026-11-15"
         }
       ],
@@ -546,6 +988,80 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "no-off-5902409703887",
+      "barcode": "5902409703887",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jogurt typu islandzkiego SKYR Naturalny 0% tłuszczu",
+      "brand": "Fruvita",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/240/970/3887/front_en.3.200.jpg",
+      "scans": 26,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5902409703887",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8801073144484",
+      "barcode": "8801073144484",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "650 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Buldak Carbonara Flavour Hot Chicken Flavour Ramen carbonara flavour",
+      "brand": "Buldak",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "650 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/314/4484/front_de.33.200.jpg",
+      "scans": 26,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073144484",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8801073144484",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 109.0,
+        "currency": "NOK",
+        "date": "2026-10-05",
+        "store": "Meny",
+        "discounted": true,
+        "unitPrice": 167.69,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8801073144484",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "no-off-7033330055887",
       "barcode": "7033330055887",
       "market": "no",
@@ -567,11 +1083,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7033330055887",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7033330055887",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 37.9,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 70.19,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7033330055887",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7044610874685",
+      "barcode": "7044610874685",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pepsi Max",
+      "brand": "Pepsi",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/704/461/087/4685/front_nb.21.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7044610874685",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7044610874685",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 25.74,
+        "currency": "NOK",
+        "date": "2026-08-10",
+        "store": "Coop Prix",
+        "discounted": true,
+        "unitPrice": 17.16,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7044610874685",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7310865005168",
@@ -623,11 +1203,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7033330013245",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7033330013245",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 55.9,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 111.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7033330013245",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7036110009773",
@@ -651,11 +1249,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7036110009773",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7036110009773",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 34.9,
+        "currency": "NOK",
+        "date": "2026-11-02",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 87.25,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7036110009773",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7310130801709",
@@ -707,11 +1323,195 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5011476102957",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5011476102957",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 48.9,
+        "currency": "NOK",
+        "date": "2026-09-07",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 130.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5011476102957",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8801073113312",
+      "barcode": "8801073113312",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "140 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Samyang cheese buldak spicy ramen",
+      "brand": "Buldak",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "140 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/3312/front_en.166.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073113312",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8801073113312",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 40.0,
+        "currency": "NOK",
+        "date": "2026-06-16",
+        "store": "Oliven eksotisk mat",
+        "discounted": false,
+        "unitPrice": 285.71,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8801073113312",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-5000112637380",
+      "barcode": "5000112637380",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original Taste",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/263/7380/front_nb.44.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000112637380",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000112637380",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 18.9,
+        "currency": "NOK",
+        "date": "2026-08-25",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 57.27,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000112637380",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010045073",
+      "barcode": "7038010045073",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "850 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Naturell yoghurt 3% fett",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "850 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/004/5073/front_nb.44.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010045073",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7038010000065",
+      "barcode": "7038010000065",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Helmelk",
+      "brand": "Tine sa",
+      "category": "Dairy",
+      "measure": "1000 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/000/0065/front_nb.46.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010000065",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010000065",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 26.9,
+        "currency": "NOK",
+        "date": "2026-08-03",
+        "store": "Coop Prix",
+        "discounted": false,
+        "unitPrice": 26.9,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010000065",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7033330013290",
@@ -735,11 +1535,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7033330013290",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7033330013290",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 55.4,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 110.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7033330013290",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-5000159532921",
@@ -770,6 +1588,52 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "no-off-5000112637397",
+      "barcode": "5000112637397",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Zero Uten Sukker",
+      "brand": "Coca-Cola Company",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/263/7397/front_no.30.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000112637397",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000112637397",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 17.4,
+        "currency": "NOK",
+        "date": "2026-08-17",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 52.73,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000112637397",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "no-off-7311171008386",
       "barcode": "7311171008386",
       "market": "no",
@@ -791,11 +1655,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7311171008386",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7311171008386",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 48.9,
+        "currency": "NOK",
+        "date": "2026-09-07",
+        "store": "Rema 1000",
+        "discounted": true,
+        "unitPrice": 130.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7311171008386",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-5059319023168",
@@ -819,11 +1701,131 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5059319023168",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5059319023168",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 42.9,
+        "currency": "NOK",
+        "date": "2026-09-14",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 130.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5059319023168",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-0070177077563",
+      "barcode": "0070177077563",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Earl Grey Tea 25pos",
+      "brand": "Twinings",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/017/707/7563/front_es.34.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0070177077563",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-3083681163155",
+      "barcode": "3083681163155",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lunch bowl Riz & haricots 250g",
+      "brand": "Bonduelle",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/308/368/116/3155/front_en.3.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3083681163155",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7034281582002",
+      "barcode": "7034281582002",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gresk Yoghurt Naturell",
+      "brand": "Synnøve",
+      "category": "Dairy",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/428/158/2002/front_nb.40.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7034281582002",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7034281582002",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 30.4,
+        "currency": "NOK",
+        "date": "2026-10-01",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 86.86,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7034281582002",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7038010010187",
@@ -847,11 +1849,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7038010010187",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010010187",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 61.9,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 123.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010010187",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-5010029000160",
@@ -875,11 +1895,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5010029000160",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5010029000160",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 54.4,
+        "currency": "NOK",
+        "date": "2026-09-07",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 126.51,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5010029000160",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7044416013141",
@@ -903,11 +1941,213 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7044416013141",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7044416013141",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 26.9,
+        "currency": "NOK",
+        "date": "2026-07-01",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 24.45,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7044416013141",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010000980",
+      "barcode": "7038010000980",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lettmelk 1,0 % fett",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "1750 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/000/0980/front_en.34.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010000980",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010000980",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 32.9,
+        "currency": "NOK",
+        "date": "2026-08-13",
+        "store": "Obs",
+        "discounted": false,
+        "unitPrice": 18.8,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010000980",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010054822",
+      "barcode": "7038010054822",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kefir",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/005/4822/front_en.61.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010054822",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010054822",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 31.4,
+        "currency": "NOK",
+        "date": "2026-08-31",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 31.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010054822",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010001918",
+      "barcode": "7038010001918",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lettmelk 0,5% fett",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "1000 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/000/1918/front_en.14.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010001918",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010001918",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 13.5,
+        "currency": "NOK",
+        "date": "2026-06-24",
+        "store": "Coop Prix",
+        "discounted": true,
+        "unitPrice": 13.5,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010001918",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8801073113381",
+      "barcode": "8801073113381",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "145 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Stew Type Spicy Chicken Flavor Ramen",
+      "brand": "Buldak",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "145 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/3381/front_en.83.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073113381",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8801073113381",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 29.9,
+        "currency": "NOK",
+        "date": "2026-03-05",
+        "store": "Bep 250",
+        "discounted": false,
+        "unitPrice": 206.21,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8801073113381",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7622210690883",
@@ -959,6 +2199,126 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7622400928727",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7622400928727",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 55.9,
+        "currency": "NOK",
+        "date": "2026-10-09",
+        "store": "Coop Prix",
+        "discounted": false,
+        "unitPrice": 559.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7622400928727",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-4000177158210",
+      "barcode": "4000177158210",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 cl"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "4000177158210",
+      "brand": "Capri-Sun",
+      "category": "Juice & Drinks",
+      "measure": "200 cl",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/017/715/8210/front_fr.101.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4000177158210",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-0079581184010",
+      "barcode": "0079581184010",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "473 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Calypso Lemonade Ocean Blue",
+      "brand": "Calypso",
+      "category": "Juice & Drinks",
+      "measure": "473 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/958/118/4010/front_en.69.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0079581184010",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0079581184010",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 42.9,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Bunnpris",
+        "discounted": false,
+        "unitPrice": 90.7,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0079581184010",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7048840005499",
+      "barcode": "7048840005499",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "800 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Naturell Yoghurt",
+      "brand": "Q",
+      "category": "Dairy",
+      "measure": "800 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/704/884/000/5499/front_nb.46.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7048840005499",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
@@ -987,11 +2347,333 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7071319024981",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7071319024981",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 54.5,
+        "currency": "NOK",
+        "date": "2026-09-29",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 136.25,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7071319024981",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7613287111180",
+      "barcode": "7613287111180",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé Gold Koffeinfri 100g",
+      "brand": "NESTLÉ NORGE AS",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/328/711/1180/front_en.7.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613287111180",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5000112636871",
+      "barcode": "5000112636871",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Zero Sugar",
+      "brand": "Coca cola company",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/263/6871/front_nb.49.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000112636871",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000112636871",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 28.4,
+        "currency": "NOK",
+        "date": "2025-12-02",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 18.93,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000112636871",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010052422",
+      "barcode": "7038010052422",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.75 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Helmelk 3,5%",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "1.75 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/005/2422/front_en.59.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010052422",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010052422",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 35.9,
+        "currency": "NOK",
+        "date": "2026-10-22",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 20.51,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010052422",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7350068291210",
+      "barcode": "7350068291210",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Milkshake Chocolate",
+      "brand": "ProPud",
+      "category": "Dairy",
+      "measure": "330 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/735/006/829/1210/front_sv.70.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7350068291210",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7350068291210",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 24.9,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 75.45,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7350068291210",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7034281586000",
+      "barcode": "7034281586000",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gresk yogurt Naturell 2% Fett",
+      "brand": "Synnøve",
+      "category": "Dairy",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/428/158/6000/front_nb.90.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7034281586000",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7034281586000",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 59.9,
+        "currency": "NOK",
+        "date": "2026-08-15",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 79.87,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7034281586000",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-0049000067729",
+      "barcode": "0049000067729",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fanta Berry",
+      "brand": "Fanta",
+      "category": "Juice & Drinks",
+      "measure": "12 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/004/900/006/7729/front_en.79.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0049000067729",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0049000067729",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 30.0,
+        "currency": "NOK",
+        "date": "2026-10-07",
+        "store": "Oliven eksotisk mat",
+        "discounted": false,
+        "unitPrice": 84.54,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0049000067729",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7039317007412",
+      "barcode": "7039317007412",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bixit havrekjeks original",
+      "brand": "Orkla confectionery & snacks",
+      "category": "Chocolate & Sweets",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/931/700/7412/front_nb.35.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7039317007412",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7039317007412",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 29.9,
+        "currency": "NOK",
+        "date": "2026-10-07",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 99.67,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7039317007412",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7622201746148",
@@ -1015,11 +2697,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7622201746148",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7622201746148",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 49.9,
+        "currency": "NOK",
+        "date": "2026-10-16",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 332.67,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7622201746148",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7040110569908",
@@ -1043,11 +2743,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7040110569908",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7040110569908",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 59.9,
+        "currency": "NOK",
+        "date": "2026-10-09",
+        "store": "Coop Prix",
+        "discounted": false,
+        "unitPrice": 299.5,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7040110569908",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7038010010347",
@@ -1071,11 +2789,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7038010010347",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010010347",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 38.4,
+        "currency": "NOK",
+        "date": "2026-09-29",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 153.6,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010010347",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7622300414399",
@@ -1099,11 +2835,213 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7622300414399",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7622300414399",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 49.9,
+        "currency": "NOK",
+        "date": "2026-10-16",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 249.5,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7622300414399",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-4002720008102",
+      "barcode": "4002720008102",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "BellaCrema La Crema",
+      "brand": "Melitta",
+      "category": "Coffee & Tea",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/272/000/8102/front_fr.50.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4002720008102",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4002720008102",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 199.0,
+        "currency": "NOK",
+        "date": "2026-03-07",
+        "store": "Elkjøp",
+        "discounted": false,
+        "unitPrice": 199.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4002720008102",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010068997",
+      "barcode": "7038010068997",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "430 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Yt Proteinyoghurt Pasjonsfrukt",
+      "brand": "YT",
+      "category": "Dairy",
+      "measure": "430 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/006/8997/front_en.35.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010068997",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010068997",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 23.7,
+        "currency": "NOK",
+        "date": "2026-08-27",
+        "store": "Rema 1000",
+        "discounted": true,
+        "unitPrice": 55.12,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010068997",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-5000112636864",
+      "barcode": "5000112636864",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca cola",
+      "brand": "COCA-COLA EUROPEAN PARTNERS NORGE A",
+      "category": "Juice & Drinks",
+      "measure": "1500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/263/6864/front_nb.45.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000112636864",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000112636864",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 38.9,
+        "currency": "NOK",
+        "date": "2026-08-10",
+        "store": "Coop Prix",
+        "discounted": false,
+        "unitPrice": 25.93,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000112636864",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7038010055652",
+      "barcode": "7038010055652",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Naturell Yoghourt",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/005/5652/front_en.13.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010055652",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010055652",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 20.4,
+        "currency": "NOK",
+        "date": "2026-08-17",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 40.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010055652",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7090006470047",
@@ -1127,11 +3065,103 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7090006470047",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7090006470047",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 53.4,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 213.6,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7090006470047",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-0615357118867",
+      "barcode": "0615357118867",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "English Breakfast 20pos",
+      "brand": "Taylors of Harrogate",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/061/535/711/8867/front_de.5.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0615357118867",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7048840081950",
+      "barcode": "7048840081950",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.75 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lettmelk 0,5%",
+      "brand": "Q",
+      "category": "Dairy",
+      "measure": "1.75 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/704/884/008/1950/front_nb.113.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7048840081950",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7048840081950",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 29.9,
+        "currency": "NOK",
+        "date": "2026-10-22",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 17.09,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7048840081950",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7036110008202",
@@ -1155,11 +3185,233 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7036110008202",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7036110008202",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 38.9,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 105.14,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7036110008202",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8710908842528",
+      "barcode": "8710908842528",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sensitive",
+      "brand": "zendium",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/090/884/2528/front_en.25.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8710908842528",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-3600522401032",
+      "barcode": "3600522401032",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Elvital Shampoo Color Vive",
+      "brand": "L'OREAL NORGE AS",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/052/240/1032/front_en.3.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600522401032",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3600522401032",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 79.5,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 159.0,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3600522401032",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7613035962965",
+      "barcode": "7613035962965",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé Brasero",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/596/2965/front_no.13.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613035962965",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7340191134782",
+      "barcode": "7340191134782",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cookies med sjokolade",
+      "brand": "Coop",
+      "category": "Chocolate & Sweets",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/113/4782/front_en.39.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191134782",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5410076390830",
+      "barcode": "5410076390830",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Miracle Moist Shampoo",
+      "brand": "Aussie",
+      "category": "Personal Care",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/541/007/639/0830/front_en.24.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5410076390830",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-0070177077693",
+      "barcode": "0070177077693",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "English Breakfast Tea 25pos",
+      "brand": "Twinings",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/017/707/7693/front_es.16.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0070177077693",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0070177077693",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 54.4,
+        "currency": "NOK",
+        "date": "2026-08-17",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 1088.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0070177077693",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7622210816672",
@@ -1182,6 +3434,172 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7622210816672",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7622210816672",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 49.9,
+        "currency": "NOK",
+        "date": "2026-10-09",
+        "store": "Rema 1000",
+        "discounted": true,
+        "unitPrice": 176.95,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7622210816672",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7310610015442",
+      "barcode": "7310610015442",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dr Greve Mild Dusjgele",
+      "brand": "LILLEBORG AS",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/731/061/001/5442/front_en.6.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7310610015442",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7310610015442",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 24.43,
+        "currency": "NOK",
+        "date": "2026-10-12",
+        "store": "Extra",
+        "discounted": true,
+        "unitPrice": 97.72,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7310610015442",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8718951128118",
+      "barcode": "8718951128118",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Roll-On Soft floral",
+      "brand": "Palmolive",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/112/8118/front_en.13.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951128118",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7038010003813",
+      "barcode": "7038010003813",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "IsKaffe Cappuccino",
+      "brand": "Tine",
+      "category": "Coffee & Tea",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/000/3813/front_nb.34.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010003813",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7038010003813",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 22.9,
+        "currency": "NOK",
+        "date": "2026-10-09",
+        "store": "Coop Prix",
+        "discounted": false,
+        "unitPrice": 69.39,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7038010003813",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7032069712825",
+      "barcode": "7032069712825",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Iste smak av Fersken",
+      "brand": "REMA 1000",
+      "category": "Coffee & Tea",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/206/971/2825/front_nb.27.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7032069712825",
           "checked": "2026-11-15"
         }
       ],
@@ -1211,11 +3629,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7040110572304",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7040110572304",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 49.9,
+        "currency": "NOK",
+        "date": "2026-10-16",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 249.5,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7040110572304",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "no-off-7622202050145",
@@ -1246,6 +3682,358 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "no-off-5765228837825",
+      "barcode": "5765228837825",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Toothpaste tea tree",
+      "brand": "Urtekram",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/576/522/883/7825/front_en.9.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5765228837825",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8720181029240",
+      "barcode": "8720181029240",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "48 HRS NON STOP FRESH",
+      "brand": "Unilever",
+      "category": "Personal Care",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/872/018/102/9240/front_en.11.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8720181029240",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8720181029240",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 59.9,
+        "currency": "NOK",
+        "date": "2026-08-22",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 399.33,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8720181029240",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-3367729021028",
+      "barcode": "3367729021028",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "48H Day Control Protection",
+      "brand": "Biotherm Homme",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/336/772/902/1028/front_en.12.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3367729021028",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8722700001232",
+      "barcode": "8722700001232",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "34 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lipton Vanilla Caramel Pyramide 20ps",
+      "brand": "CUVECO AS",
+      "category": "Coffee & Tea",
+      "measure": "34 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/872/270/000/1232/front_en.43.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8722700001232",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7613036961608",
+      "barcode": "7613036961608",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "53 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nespresso Blonde Espresso Roast",
+      "brand": "Nespresso",
+      "category": "Coffee & Tea",
+      "measure": "53 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/696/1608/front_en.6.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613036961608",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7613036961608",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 79.0,
+        "currency": "NOK",
+        "date": "2026-06-02",
+        "store": "Elkjøp",
+        "discounted": false,
+        "unitPrice": 1490.57,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7613036961608",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-0615357118874",
+      "barcode": "0615357118874",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Earl Grey 20pos",
+      "brand": "Taylors of Harrogate",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/061/535/711/8874/front_fr.14.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0615357118874",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5010338303273",
+      "barcode": "5010338303273",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sushi rice 500 g",
+      "brand": "Blue Dragon",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/033/830/3273/front_fr.26.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010338303273",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7032069715352",
+      "barcode": "7032069715352",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jasminris",
+      "brand": "REMA 1000",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "2 kg",
+      "imageUrl": null,
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7032069715352",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7311041013380",
+      "barcode": "7311041013380",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jasminris",
+      "brand": "Unil as",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "4000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/104/101/3380/front_nb.11.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311041013380",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7311041013380",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 74.9,
+        "currency": "NOK",
+        "date": "2026-10-13",
+        "store": "Bunnpris",
+        "discounted": false,
+        "unitPrice": 18.73,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7311041013380",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7340011317210",
+      "barcode": "7340011317210",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Luomu jasmiiniriisi",
+      "brand": "Änglamark",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/131/7210/front_fi.39.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011317210",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7340011317210",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 47.9,
+        "currency": "NOK",
+        "date": "2026-06-06",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 47.9,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7340011317210",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "no-off-7622300137847",
       "barcode": "7622300137847",
       "market": "no",
@@ -1267,6 +4055,842 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7622300137847",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7622300137847",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 71.9,
+        "currency": "NOK",
+        "date": "2026-10-09",
+        "store": "Coop Prix",
+        "discounted": false,
+        "unitPrice": 553.08,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7622300137847",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-5900300550258",
+      "barcode": "5900300550258",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "The",
+      "brand": "Lipton",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/030/055/0258/front_pl.23.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900300550258",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8710908843044",
+      "barcode": "8710908843044",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Classic",
+      "brand": "zendium",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/090/884/3044/front_en.10.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8710908843044",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7026110003284",
+      "barcode": "7026110003284",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "mild trippel dusj",
+      "brand": "Karo Pharma",
+      "category": "Personal Care",
+      "measure": "220 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/702/611/000/3284/front_nb.9.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7026110003284",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8710908842962",
+      "barcode": "8710908842962",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Zendium Fresh + White",
+      "brand": "zendium",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/090/884/2962/front_en.24.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8710908842962",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-4084500654860",
+      "barcode": "4084500654860",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Repair Miracle Shampoo",
+      "brand": "Aussie",
+      "category": "Personal Care",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/408/450/065/4860/front_en.13.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4084500654860",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7613036596251",
+      "barcode": "7613036596251",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "187.2 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Capsules NESCAFE DOLCE GUSTO Flat White x16",
+      "brand": "Nescafé Dolce Gusto",
+      "category": "Coffee & Tea",
+      "measure": "187.2 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/659/6251/front_fr.104.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613036596251",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8718951313378",
+      "barcode": "8718951313378",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Max Fresh Cooling Crystals",
+      "brand": "Colgate",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/131/3378/front_en.11.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951313378",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8718951313378",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 34.9,
+        "currency": "NOK",
+        "date": "2026-08-10",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 465.33,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8718951313378",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7310610022549",
+      "barcode": "7310610022549",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Define Shampoo Moroccan Argan Oil 250ml",
+      "brand": "Orkla home & personal care",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/731/061/002/2549/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7310610022549",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-4751037280830",
+      "barcode": "4751037280830",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rudy's Kombucha Mandarin & Yuzu",
+      "brand": "Rudy’s Kombucha",
+      "category": "Coffee & Tea",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/475/103/728/0830/front_en.36.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4751037280830",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-4002720008027",
+      "barcode": "4002720008027",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bella Crema",
+      "brand": "Decaffeinato",
+      "category": "Coffee & Tea",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/272/000/8027/front_de.11.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4002720008027",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7311041016237",
+      "barcode": "7311041016237",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Middagsris 2kg First Price",
+      "brand": "Unil as",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "2000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/104/101/6237/front_en.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311041016237",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7311041016237",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 35.9,
+        "currency": "NOK",
+        "date": "2026-09-05",
+        "store": "Kiwi",
+        "discounted": false,
+        "unitPrice": 17.95,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7311041016237",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7340191109292",
+      "barcode": "7340191109292",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coop Sushiris",
+      "brand": "Coop",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/110/9292/front_nb.8.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191109292",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7340191109292",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 32.9,
+        "currency": "NOK",
+        "date": "2026-05-30",
+        "store": "Extra",
+        "discounted": false,
+        "unitPrice": 65.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7340191109292",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-7032069732342",
+      "barcode": "7032069732342",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flytende Tøyvask Sensitiv",
+      "brand": "REMA 1000",
+      "category": "Cleaning & Laundry",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/703/206/973/2342/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/7032069732342",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7032069732342",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 39.9,
+        "currency": "NOK",
+        "date": "2026-05-08",
+        "store": "Rema 1000",
+        "discounted": false,
+        "unitPrice": 53.2,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7032069732342",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-8435495810667",
+      "barcode": "8435495810667",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "880 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "A+ Color Flytende 880ml",
+      "brand": "A+",
+      "category": "Cleaning & Laundry",
+      "measure": "880 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/843/549/581/0667/front_en.9.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8435495810667",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-3605540873502",
+      "barcode": "3605540873502",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Aquafitness Shower Gel",
+      "brand": "Biotherm",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/554/087/3502/front_en.9.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3605540873502",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-33253581729083",
+      "barcode": "33253581729083",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Refreshing roll-on deodorant verveine agrumes",
+      "brand": "L'Occitane",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/332/535/817/29083/front_en.29.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/33253581729083",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/33253581729083",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 189.0,
+        "currency": "NOK",
+        "date": "2026-03-13",
+        "store": "L'Occitane",
+        "discounted": false,
+        "unitPrice": 3780.0,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/33253581729083",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "no-off-42449034",
+      "barcode": "42449034",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dry Impact deodorant",
+      "brand": "Nivea Men",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/004/244/9034/front_nb.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/42449034",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8718951738591",
+      "barcode": "8718951738591",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Big Size Colgate MaxFresh Ultrafreeze Cooling Crystals Cool Mint",
+      "brand": "Colgate",
+      "category": "Personal Care",
+      "measure": "100 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/173/8591/front_en.11.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951738591",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7090004600002",
+      "barcode": "7090004600002",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Einerlåg sjampo original",
+      "brand": "Lorentzen Naturprodukter",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/709/000/460/0002/front_nb.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7090004600002",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-42354840",
+      "barcode": "42354840",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "25 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dry Impact deodorant",
+      "brand": "Nivea Men",
+      "category": "Personal Care",
+      "measure": "25 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/004/235/4840/front_nb.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/42354840",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-0062308260409",
+      "barcode": "0062308260409",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "60 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pet Toothpaste",
+      "brand": "ShimeiYanji",
+      "category": "Personal Care",
+      "measure": "60 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/006/230/826/0409/front_en.4.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0062308260409",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7310610022594",
+      "barcode": "7310610022594",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Define Shampoo Strength&Volume 250ml",
+      "brand": "Orkla home & personal care",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/731/061/002/2594/front_en.7.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7310610022594",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-42349655",
+      "barcode": "42349655",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cool Kick deodorant",
+      "brand": "Nivea Men",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/004/234/9655/front_nb.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/42349655",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-8710908842887",
+      "barcode": "8710908842887",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sensitive + White tannkrem",
+      "brand": "zendium",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/090/884/2887/front_nb.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8710908842887",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7311041084977",
+      "barcode": "7311041084977",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoo 500ml First Price",
+      "brand": "Unil as",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/731/104/108/4977/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7311041084977",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-42449126",
+      "barcode": "42449126",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cool Kick Deodorant",
+      "brand": "Nivea Men",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/004/244/9126/front_nb.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/42449126",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
@@ -1274,5 +4898,5 @@
       "matchConfidence": 1.0
     }
   ],
-  "catalogCount": 30
+  "catalogCount": 118
 }

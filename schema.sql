@@ -82,6 +82,14 @@ CREATE TABLE IF NOT EXISTS catalog_products (
     last_checked TEXT,
     verification TEXT NOT NULL DEFAULT 'unverified',
     match_confidence REAL,
+    price REAL,                -- crowdsourced price from Open Prices (ODbL), NULL = "Pris kommer"
+    price_currency TEXT,
+    price_date TEXT,
+    price_store TEXT,
+    price_source TEXT,
+    price_url TEXT,
+    unit_price REAL,           -- price per kg / l / piece
+    unit_label TEXT,
     updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (market, ean)
 );

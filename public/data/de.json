@@ -5,7 +5,64 @@
   "lastSynced": "2026-11-15",
   "count": 0,
   "products": [],
+  "offerSources": [],
   "catalog": [
+    {
+      "id": "de-off-7622210449283",
+      "barcode": "7622210449283",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Prince",
+      "brand": "LU",
+      "category": "Chocolate & Sweets",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/044/9283/front_en.605.200.jpg",
+      "scans": 1252,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210449283",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3168930010265",
+      "barcode": "3168930010265",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "cruesly mélange de noix",
+      "brand": "Cruesli",
+      "category": "Cereals & Porridge",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/893/001/0265/front_en.297.200.jpg",
+      "scans": 914,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3168930010265",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
     {
       "id": "de-off-3046920029759",
       "barcode": "3046920029759",
@@ -119,6 +176,174 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-5449000214799",
+      "barcode": "5449000214799",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola sans sucres",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_en.363.200.jpg",
+      "scans": 742,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000214799",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3229820100234",
+      "barcode": "3229820100234",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fourrés Chocolat Noir",
+      "brand": "Bjorg",
+      "category": "Chocolate & Sweets",
+      "measure": "225 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/010/0234/front_fr.246.200.jpg",
+      "scans": 714,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820100234",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3229820160672",
+      "barcode": "3229820160672",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Croustillant Chocolat",
+      "brand": "Bjorg",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/016/0672/front_fr.340.200.jpg",
+      "scans": 671,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820160672",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3229820019307",
+      "barcode": "3229820019307",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocons d'avoine",
+      "brand": "Bjorg",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/001/9307/front_fr.324.200.jpg",
+      "scans": 654,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820019307",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3175681851849",
+      "barcode": "3175681851849",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pomme Noisette",
+      "brand": "Gerblé",
+      "category": "Chocolate & Sweets",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/568/185/1849/front_fr.267.200.jpg",
+      "scans": 638,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175681851849",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5449000214911",
+      "barcode": "5449000214911",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/021/4911/front_fr.335.200.jpg",
+      "scans": 619,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000214911",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-20995553",
       "barcode": "20995553",
       "market": "de",
@@ -139,6 +364,192 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/20995553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8410076610737",
+      "barcode": "8410076610737",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Barre de céréales protéinés",
+      "brand": "Nature Valley",
+      "category": "Cereals & Porridge",
+      "measure": "160 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/007/661/0737/front_fr.130.200.jpg",
+      "scans": 597,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410076610737",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8410076610737",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.49,
+        "currency": "EUR",
+        "date": "2026-07-22",
+        "store": "Rewe",
+        "discounted": false,
+        "unitPrice": 21.81,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8410076610737",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "de-off-3175681851856",
+      "barcode": "3175681851856",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "270 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Biscuit raisins",
+      "brand": "Gerblé",
+      "category": "Chocolate & Sweets",
+      "measure": "270 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/568/185/1856/front_fr.210.200.jpg",
+      "scans": 549,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175681851856",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5449000000996",
+      "barcode": "5449000000996",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original",
+      "brand": "COCA-COLA SERVICES SA/NV",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.1129.200.jpg",
+      "scans": 526,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000996",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5010029000023",
+      "barcode": "5010029000023",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "430 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Original",
+      "brand": "Weetabix",
+      "category": "Cereals & Porridge",
+      "measure": "430 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/002/900/0023/front_en.121.200.jpg",
+      "scans": 499,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010029000023",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5449000054227",
+      "barcode": "5449000054227",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original Taste",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/005/4227/front_en.563.200.jpg",
+      "scans": 486,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000054227",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8000500310427",
+      "barcode": "8000500310427",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "304 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Biscuits NUTELLA Biscuits Noisettes et Cacao x22 - 304g",
+      "brand": "Ferrero Technical Services Srl",
+      "category": "Chocolate & Sweets",
+      "measure": "304 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/050/031/0427/front_fr.593.200.jpg",
+      "scans": 476,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000500310427",
           "checked": "2026-11-15"
         }
       ],
@@ -231,6 +642,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-5449000000439",
+      "barcode": "5449000000439",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca Cola Original Taste 1.5L",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0439/front_en.292.200.jpg",
+      "scans": 362,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000439",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-3046920028363",
       "barcode": "3046920028363",
       "market": "de",
@@ -251,6 +690,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3046920028363",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5449000133328",
+      "barcode": "5449000133328",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cocacola zero sugar",
+      "brand": "COCA-COLA SERVICES SA/NV",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/013/3328/front_en.316.200.jpg",
+      "scans": 351,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000133328",
           "checked": "2026-11-15"
         }
       ],
@@ -287,6 +754,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-3229820004334",
+      "barcode": "3229820004334",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le cookie Chocolat Noisette",
+      "brand": "Bjorg",
+      "category": "Chocolate & Sweets",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/000/4334/front_fr.192.200.jpg",
+      "scans": 338,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820004334",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-20002183",
       "barcode": "20002183",
       "market": "de",
@@ -315,6 +810,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-7613035676497",
+      "barcode": "7613035676497",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "260 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chicorée & Café, RICORÉ® L'Original, Boîte de 260g",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "260 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/567/6497/front_en.258.200.jpg",
+      "scans": 328,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613035676497",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-3046920028004",
       "barcode": "3046920028004",
       "market": "de",
@@ -335,6 +858,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3046920028004",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5010477348678",
+      "barcode": "5010477348678",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Special Muesli 30% fruits & noix",
+      "brand": "The Jordans & Ryvita Company Limited - A Division of ABF Grain Products Limited",
+      "category": "Cereals & Porridge",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/047/734/8678/front_fr.226.200.jpg",
+      "scans": 297,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010477348678",
           "checked": "2026-11-15"
         }
       ],
@@ -504,11 +1055,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076802085738",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076802085738",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.88,
+        "currency": "EUR",
+        "date": "2026-09-04",
+        "store": "REWE",
+        "discounted": false,
+        "unitPrice": 1.76,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076802085738",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "de-off-8852018101024",
@@ -532,11 +1101,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8852018101024",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8852018101024",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.69,
+        "currency": "EUR",
+        "date": "2026-10-05",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 11.5,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8852018101024",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "de-off-8076809529433",
@@ -644,11 +1231,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076802085981",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076802085981",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.99,
+        "currency": "EUR",
+        "date": "2026-08-25",
+        "store": "Kaufland",
+        "discounted": false,
+        "unitPrice": 3.98,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076802085981",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "de-off-3073781131963",
@@ -959,6 +1564,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-3043933232701",
+      "barcode": "3043933232701",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait demi écrémé",
+      "brand": "Régilait",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/393/323/2701/front_fr.95.200.jpg",
+      "scans": 94,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3043933232701",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-4056489095736",
       "barcode": "4056489095736",
       "market": "de",
@@ -979,6 +1612,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/4056489095736",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3175680011480",
+      "barcode": "3175680011480",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sésame",
+      "brand": "Gerblé",
+      "category": "Chocolate & Sweets",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/568/001/1480/front_fr.325.200.jpg",
+      "scans": 91,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175680011480",
           "checked": "2026-11-15"
         }
       ],
@@ -1035,6 +1696,62 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/4056489216223",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3043932232702",
+      "barcode": "3043932232702",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait entier en poudre",
+      "brand": "Régilait",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/393/223/2702/front_fr.25.200.jpg",
+      "scans": 74,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3043932232702",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5055953902531",
+      "barcode": "5055953902531",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Thé earl grey",
+      "brand": "Twinings",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/595/390/2531/front_fr.72.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5055953902531",
           "checked": "2026-11-15"
         }
       ],
@@ -1127,6 +1844,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-5411188130031",
+      "barcode": "5411188130031",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1032 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "High Protein Soja Drink",
+      "brand": "alpro",
+      "category": "Dairy",
+      "measure": "1032 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/118/813/0031/front_en.179.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5411188130031",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-20144302",
       "barcode": "20144302",
       "market": "de",
@@ -1175,6 +1920,136 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/4056489258353",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8711000522967",
+      "barcode": "8711000522967",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "löslichen Kaffee",
+      "brand": "Maxwell House",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/100/052/2967/front_en.50.200.jpg",
+      "scans": 53,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8711000522967",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4008452027602",
+      "barcode": "4008452027602",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Haltbare Milch 3,5% Fett",
+      "brand": "Weihenstephan",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/845/202/7602/front_en.166.200.jpg",
+      "scans": 51,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4008452027602",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4008452027602",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.59,
+        "currency": "EUR",
+        "date": "2026-11-11",
+        "store": "Netto",
+        "discounted": false,
+        "unitPrice": 1.59,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4008452027602",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "de-off-4056489857297",
+      "barcode": "4056489857297",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dentifricio",
+      "brand": "Dentalux",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/405/648/985/7297/front_it.20.200.jpg",
+      "scans": 46,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4056489857297",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8003753900520",
+      "barcode": "8003753900520",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Illy Espressokaffe Hel 250g 2yrs prod",
+      "brand": "Illy",
+      "category": "Coffee & Tea",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/375/390/0520/front_en.49.200.jpg",
+      "scans": 44,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8003753900520",
           "checked": "2026-11-15"
         }
       ],
@@ -1239,6 +2114,118 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-7613033174667",
+      "barcode": "7613033174667",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Capsules NESCAFÉ DOLCE GUSTO Cafe Au Lait x16",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "160 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/317/4667/front_fr.615.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613033174667",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-7613038902166",
+      "barcode": "7613038902166",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "82.72 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Capsules NESCAFE DOLCE GUSTO Marrakech Tea x16",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "82.72 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/890/2166/front_fr.96.200.jpg",
+      "scans": 35,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613038902166",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489843245",
+      "barcode": "4056489843245",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait demi-écrémé",
+      "brand": "Lidl",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/984/3245/front_en.21.200.jpg",
+      "scans": 35,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489843245",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4061462842986",
+      "barcode": "4061462842986",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "H-Vollmilch 3,5 % Fett",
+      "brand": "Milsani",
+      "category": "Dairy",
+      "measure": "1000 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/146/284/2986/front_de.96.200.jpg",
+      "scans": 34,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4061462842986",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-3039820311222",
       "barcode": "3039820311222",
       "market": "de",
@@ -1295,6 +2282,62 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-7613036305846",
+      "barcode": "7613036305846",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Instant Kaffee",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/630/5846/front_de.141.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613036305846",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8410100020549",
+      "barcode": "8410100020549",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé classic natural",
+      "brand": "NESTLÉ ESPAÑA S.A.",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/010/002/0549/front_en.8.200.jpg",
+      "scans": 29,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410100020549",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-4056489845171",
       "barcode": "4056489845171",
       "market": "de",
@@ -1315,6 +2358,62 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/4056489845171",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8000070020580",
+      "barcode": "8000070020580",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Qualita Oro",
+      "brand": "Lavazza",
+      "category": "Coffee & Tea",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/007/002/0580/front_en.17.200.jpg",
+      "scans": 25,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000070020580",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5014328099924",
+      "barcode": "5014328099924",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "English breakfast",
+      "brand": "Tetley",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/432/809/9924/front_fr.76.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5014328099924",
           "checked": "2026-11-15"
         }
       ],
@@ -1351,6 +2450,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "de-off-0613008730758",
+      "barcode": "0613008730758",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pomegranate green tea",
+      "brand": "Arizona",
+      "category": "Coffee & Tea",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/061/300/873/0758/front_en.81.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0613008730758",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "de-off-8410184013086",
       "barcode": "8410184013086",
       "market": "de",
@@ -1371,6 +2498,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8410184013086",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5055953903040",
+      "barcode": "5055953903040",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "20 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Infusion ayurveda fleur de sureau framboise hibiscus",
+      "brand": "Twinings",
+      "category": "Coffee & Tea",
+      "measure": "20 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/595/390/3040/front_fr.50.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5055953903040",
           "checked": "2026-11-15"
         }
       ],
@@ -1405,7 +2560,1583 @@
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20991241",
+      "barcode": "20991241",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Belladonna Löslicher Kaffee Entkoffeiniert",
+      "brand": "Lidl",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/1241/front_en.3.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20991241",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4305615914329",
+      "barcode": "4305615914329",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Med Zahncreme",
+      "brand": "prokudent",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/430/561/591/4329/front_de.20.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4305615914329",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3250391947652",
+      "barcode": "3250391947652",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "30 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Infusion Digestion BIO 20 sachets",
+      "brand": "Planteur",
+      "category": "Coffee & Tea",
+      "measure": "30 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/039/194/7652/front_fr.56.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3250391947652",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4012824404229",
+      "barcode": "4012824404229",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "35.7 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Christmas Tea",
+      "brand": "Yogi Tea",
+      "category": "Coffee & Tea",
+      "measure": "35.7 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/401/282/440/4229/front_fr.49.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4012824404229",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4009903011119",
+      "barcode": "4009903011119",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "25 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Medizinisches Zahncreme-Konzentrat",
+      "brand": "Ajona",
+      "category": "Personal Care",
+      "measure": "25 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/400/990/301/1119/front_en.19.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4009903011119",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8006540947203",
+      "barcode": "8006540947203",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Extra Frisch Clean",
+      "brand": "blend-a-med",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/800/654/094/7203/front_de.3.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8006540947203",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489235620",
+      "barcode": "4056489235620",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoo 7 Kräuter",
+      "brand": "Cien",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/405/648/923/5620/front_de.4.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4056489235620",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4067796183900",
+      "barcode": "4067796183900",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Zahncreme Antibakteriell",
+      "brand": "Dontodent",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/406/779/618/3900/front_de.11.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4067796183900",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8001841923727",
+      "barcode": "8001841923727",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Old Spice",
+      "brand": "Dei",
+      "category": "Personal Care",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/800/184/192/3727/front_de.6.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8001841923727",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3660005578347",
+      "barcode": "3660005578347",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "déo camomille",
+      "brand": "",
+      "category": "Personal Care",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/366/000/557/8347/front_fr.9.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3660005578347",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4067796157932",
+      "barcode": "4067796157932",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dontodent Sensitive Zahncreme",
+      "brand": "Dm",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/406/779/615/7932/front_de.21.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4067796157932",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4066447716641",
+      "barcode": "4066447716641",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Donto Dent",
+      "brand": "DM",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/406/644/771/6641/front_en.7.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4066447716641",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-42449751",
+      "barcode": "42449751",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nivea Men 48H Deo",
+      "brand": "Nivea",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/004/244/9751/front_en.4.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/42449751",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8720181192098",
+      "barcode": "8720181192098",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Epic Fresh",
+      "brand": "Unilever",
+      "category": "Personal Care",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/872/018/119/2098/front_de.17.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8720181192098",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8712561254595",
+      "barcode": "8712561254595",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dove Men+Care Déodorant Homme Spray Clean Comfort",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/256/125/4595/front_fr.11.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8712561254595",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5054563117960",
+      "barcode": "5054563117960",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Parodontax",
+      "brand": "Haleon",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/505/456/311/7960/front_fr.5.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5054563117960",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3600542461511",
+      "barcode": "3600542461511",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Honey Treasures Shampoo",
+      "brand": "Garnier",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/054/246/1511/front_en.9.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600542461511",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3256226845711",
+      "barcode": "3256226845711",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoing",
+      "brand": "U Bio",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": null,
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3256226845711",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-80948919",
+      "barcode": "80948919",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Invisible Marine Scent",
+      "brand": "Borotalco",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/008/094/8919/front_de.8.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/80948919",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5014697017086",
+      "barcode": "5014697017086",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Deo - Wasserlilie",
+      "brand": "CD",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/501/469/701/7086/front_de.4.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5014697017086",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8720181325380",
+      "barcode": "8720181325380",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Noire",
+      "brand": "duschdas",
+      "category": "Personal Care",
+      "measure": "225 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/872/018/132/5380/front_de.23.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8720181325380",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8720181334153",
+      "barcode": "8720181334153",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "3 in 1 Duschgel",
+      "brand": "Unilever",
+      "category": "Personal Care",
+      "measure": "225 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/872/018/133/4153/front_de.17.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8720181334153",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8710447284100",
+      "barcode": "8710447284100",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Axe Alaska Duschgel XL",
+      "brand": "Axe",
+      "category": "Personal Care",
+      "measure": "400 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/044/728/4100/front_de.4.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8710447284100",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489318460",
+      "barcode": "4056489318460",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoo for men für normales Haar",
+      "brand": "Cien",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/405/648/931/8460/front_de.7.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4056489318460",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3600523881598",
+      "barcode": "3600523881598",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Men Expert Carbon Clean Duschgel 5in1",
+      "brand": "L'Oréal",
+      "category": "Personal Care",
+      "measure": "400 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/052/388/1598/front_en.9.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600523881598",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3474637195809",
+      "barcode": "3474637195809",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bain Décalcifiant Réparateur",
+      "brand": "Kérastase",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/347/463/719/5809/front_de.4.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3474637195809",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4305615629223",
+      "barcode": "4305615629223",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoo Jeden Tag (Ultra Sensitiv)",
+      "brand": "Isana Med",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/430/561/562/9223/front_de.4.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4305615629223",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4008233129518",
+      "barcode": "4008233129518",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "2 in 1 Dusche Lemongras Guarana",
+      "brand": "Kneipp",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/400/823/312/9518/front_de.5.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4008233129518",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4103040341013",
+      "barcode": "4103040341013",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "sebamed Frische Dusche",
+      "brand": "sebamed",
+      "category": "Personal Care",
+      "measure": "400 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/410/304/034/1013/front_de.4.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4103040341013",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8720608002849",
+      "barcode": "8720608002849",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "15 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Infuse a froid pêche-framboise",
+      "brand": "Lipton",
+      "category": "Coffee & Tea",
+      "measure": "15 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/872/060/800/2849/front_fr.39.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8720608002849",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4058172880292",
+      "barcode": "4058172880292",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Anti-Schuppen Shampoo",
+      "brand": "Balea",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/405/817/288/0292/front_de.4.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4058172880292",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4305615940762",
+      "barcode": "4305615940762",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Feste Dusche Bio-Mango Bio-Hafermilch",
+      "brand": "Isana",
+      "category": "Personal Care",
+      "measure": "100 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/430/561/594/0762/front_en.6.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4305615940762",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8720181456855",
+      "barcode": "8720181456855",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dove Advanced Care Vitalisierende Pflege",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "225 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/872/018/145/6855/front_de.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8720181456855",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4305615865072",
+      "barcode": "4305615865072",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Deocreme Bio-Sheabutter",
+      "brand": "Alterra Naturkosmetik",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/430/561/586/5072/front_de.25.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4305615865072",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4015533062322",
+      "barcode": "4015533062322",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Start Shot",
+      "brand": "Völkel",
+      "category": "Juice & Drinks",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/401/553/306/2322/front_de.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4015533062322",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4015000970044",
+      "barcode": "4015000970044",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1440 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Weiss & Faser Perwoll",
+      "brand": "Henkel",
+      "category": "Cleaning & Laundry",
+      "measure": "1440 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/401/500/097/0044/front_de.8.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4015000970044",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4015000971157",
+      "barcode": "4015000971157",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bref Power gegen Kalk & Schmutz",
+      "brand": "Henkel",
+      "category": "Cleaning & Laundry",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/401/500/097/1157/front_de.8.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4015000971157",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3564706547032",
+      "barcode": "3564706547032",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Papier toilette",
+      "brand": "",
+      "category": "Toilet Paper",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/356/470/654/7032/front_en.9.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3564706547032",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3660005906867",
+      "barcode": "3660005906867",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gel douche pomme",
+      "brand": "",
+      "category": "Personal Care",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/366/000/590/6867/front_en.4.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3660005906867",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4004191058815",
+      "barcode": "4004191058815",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rotbäckchen Pausenstark",
+      "brand": "Rotbäckchen",
+      "category": "Juice & Drinks",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/419/105/8815/front_en.18.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4004191058815",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5712873371501",
+      "barcode": "5712873371501",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Savin Color Protect",
+      "brand": "Mayeri Industries",
+      "category": "Cleaning & Laundry",
+      "measure": "1000 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/571/287/337/1501/front_de.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/5712873371501",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4007547306400",
+      "barcode": "4007547306400",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Geschirrspülmittel Calendula",
+      "brand": "Sonett",
+      "category": "Cleaning & Laundry",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/400/754/730/6400/front_de.6.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4007547306400",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8004260498760",
+      "barcode": "8004260498760",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "16 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Toilettenpapier (16 Rollen, 4-lagig)",
+      "brand": "Softies",
+      "category": "Toilet Paper",
+      "measure": "16 stk",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/800/426/049/8760/front_de.8.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8004260498760",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4013265007628",
+      "barcode": "4013265007628",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Maracuja Nektar",
+      "brand": "K-Classic",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/401/326/500/7628/front_de.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4013265007628",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4062196082839",
+      "barcode": "4062196082839",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Reine Soda",
+      "brand": "Heitmann",
+      "category": "Cleaning & Laundry",
+      "measure": "500 g",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/406/219/608/2839/front_de.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4062196082839",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5000204096675",
+      "barcode": "5000204096675",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Total Aktiv Gel - Ocean Wave",
+      "brand": "S.C. Johnson & Son",
+      "category": "Cleaning & Laundry",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/500/020/409/6675/front_de.16.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/5000204096675",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8720182284648",
+      "barcode": "8720182284648",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "WC Reiniger Gel",
+      "brand": "Domestos",
+      "category": "Cleaning & Laundry",
+      "measure": "750 ml",
+      "imageUrl": null,
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8720182284648",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4015200037325",
+      "barcode": "4015200037325",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spee Color Caps",
+      "brand": "Henkel",
+      "category": "Cleaning & Laundry",
+      "measure": "12 g",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/401/520/003/7325/front_en.15.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4015200037325",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4015200037325",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.95,
+        "currency": "EUR",
+        "date": "2026-08-03",
+        "store": "Kaufland",
+        "discounted": false,
+        "unitPrice": 329.17,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4015200037325",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "de-off-4305615358451",
+      "barcode": "4305615358451",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "domol Black",
+      "brand": "domol",
+      "category": "Cleaning & Laundry",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/430/561/535/8451/front_de.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4305615358451",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4305615358451",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.15,
+        "currency": "EUR",
+        "date": "2026-05-02",
+        "store": "Rossmann",
+        "discounted": false,
+        "unitPrice": 1.43,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4305615358451",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "de-off-4015200035789",
+      "barcode": "4015200035789",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 vask"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Professional Color 4in1 Discs",
+      "brand": "Persil",
+      "category": "Cleaning & Laundry",
+      "measure": "100 vask",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/401/520/003/5789/front_de.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4015200035789",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4305615834900",
+      "barcode": "4305615834900",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Color-Waschmittel",
+      "brand": "eco Freude",
+      "category": "Cleaning & Laundry",
+      "measure": "1 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/430/561/583/4900/front_de.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4305615834900",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4008956371249",
+      "barcode": "4008956371249",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "10 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Allzweckreiniger",
+      "brand": "KAWE Allzweckreiniger citro",
+      "category": "Cleaning & Laundry",
+      "measure": "10 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/400/895/637/1249/front_de.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4008956371249",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8700216702249",
+      "barcode": "8700216702249",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4950 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Color + Pulver",
+      "brand": "Ariel",
+      "category": "Cleaning & Laundry",
+      "measure": "4950 g",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/870/021/670/2249/front_de.7.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8700216702249",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8051566123773",
+      "barcode": "8051566123773",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "detergente bagno",
+      "brand": "",
+      "category": "Cleaning & Laundry",
+      "measure": "1 stk",
+      "imageUrl": null,
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8051566123773",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-5712874993153",
+      "barcode": "5712874993153",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Savin Color Protect Colorwaschmittel",
+      "brand": "Mayeri",
+      "category": "Cleaning & Laundry",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/571/287/499/3153/front_de.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/5712874993153",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
     }
   ],
-  "catalogCount": 50
+  "catalogCount": 143
 }

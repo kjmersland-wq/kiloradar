@@ -9,6 +9,12 @@ import json
 import pytest
 
 from sync_products import (
+    attach_open_prices,
+    compute_unit_price,
+    fetch_tjek_offers,
+    normalize_tjek_offer,
+    pick_open_prices_observation,
+    offer_source_status,
     generate_catalog_sql,
     discover_openfoodfacts_catalog,
     update_catalog,
@@ -244,7 +250,7 @@ def test_discovery_keeps_only_real_parsable_products(monkeypatch):
         {"code": "333", "product_name": "Garbage size", "brands": "X", "quantity": "lots"},
     ]
     monkeypatch.setattr(sync_products.requests, "get", lambda *a, **k: _FakeResp(fake))
-    found = discover_openfoodfacts_catalog("de", per_category=5, categories=[("coffees", "Coffee & Tea")], pause=0)
+    found = discover_openfoodfacts_catalog("de", per_category=5, categories=[("off", "coffees", "Coffee & Tea")], pause=0)
     assert [p["barcode"] for p in found] == ["111"]
     assert found[0]["brand"] == "Jacobs"
     assert found[0]["measure"] == "500 g"
@@ -313,3 +319,166 @@ def test_catalog_sql_is_idempotent_and_escapes_quotes():
     assert "Mc''Cain Pommes" in sql
     assert "'global', '9'" in sql
     assert "BEGIN" not in sql and "COMMIT" not in sql
+
+
+def test_discovery_uses_the_right_database_and_cites_its_record(monkeypatch):
+    import sync_products
+
+    seen_hosts: list[str] = []
+
+    def fake_get(url, **kwargs):
+        seen_hosts.append(url.split("/")[2])
+        return _FakeResp([{"code": "777", "product_name": "Tannkrem", "brands": "Colgate", "quantity": "75 ml"}])
+
+    monkeypatch.setattr(sync_products.requests, "get", fake_get)
+    found = discover_openfoodfacts_catalog(
+        "no", per_category=3, categories=[("obf", "toothpastes", "Personal Care")], pause=0
+    )
+    assert seen_hosts == ["world.openbeautyfacts.org"]
+    assert found[0]["sourceName"] == "Open Beauty Facts"
+    assert found[0]["sourceUrl"] == "https://world.openbeautyfacts.org/product/777"
+
+
+def test_discovery_is_balanced_and_capped(monkeypatch):
+    import sync_products
+
+    def fake_get(url, **kwargs):
+        tag = kwargs["params"]["categories_tags_en"]
+        return _FakeResp(
+            [{"code": f"{tag}-{i}", "product_name": f"{tag} {i}", "brands": "B", "quantity": "100 g"} for i in range(5)]
+        )
+
+    monkeypatch.setattr(sync_products.requests, "get", fake_get)
+    cats = [("off", "coffees", "Coffee & Tea"), ("off", "butters", "Dairy")]
+    found = discover_openfoodfacts_catalog("no", per_category=5, categories=cats, pause=0, cap=4)
+    assert len(found) == 4
+    assert {p["category"] for p in found} == {"Coffee & Tea", "Dairy"}
+
+
+def test_catalog_keeps_the_source_database_per_product():
+    item = {"id": "de-off-9", "barcode": "9", "name": "Zahnpasta", "brand": "B", "category": "Personal Care",
+            "measure": "75 ml", "imageUrl": None, "scans": 1,
+            "sourceName": "Open Beauty Facts", "sourceUrl": "https://world.openbeautyfacts.org/product/9"}
+    entry = update_catalog([], [item], "de", "2026-11-15")[0]
+    assert entry["sources"][0]["name"] == "Open Beauty Facts"
+    assert entry["sources"][0]["url"].endswith("/product/9")
+    assert entry["sources"][0]["checked"] == "2026-11-15"
+
+
+def test_failed_requests_are_retried(monkeypatch):
+    import sync_products
+
+    calls = {"n": 0}
+
+    class _Bad:
+        status_code = 503
+
+        def json(self):
+            raise ValueError("html error page")
+
+    def flaky_get(url, **kwargs):
+        calls["n"] += 1
+        return _Bad() if calls["n"] < 3 else _FakeResp([{"code": "1"}])
+
+    monkeypatch.setattr(sync_products.requests, "get", flaky_get)
+    monkeypatch.setattr(sync_products.time, "sleep", lambda s: None)
+    out = sync_products._fetch_category("h", "norway", "coffees", 5, {}, retries=3, backoff=0)
+    assert calls["n"] == 3
+    assert out == [{"code": "1"}]
+
+
+def test_mattilbud_is_registered_but_never_pretends_to_supply_data(monkeypatch):
+    monkeypatch.delenv("TJEK_API_KEY", raising=False)
+    status = offer_source_status("no")
+    assert status[0]["name"] == "mattilbud.no"
+    assert status[0]["status"] == "needs_access"
+    monkeypatch.setenv("TJEK_API_KEY", "x")
+    assert offer_source_status("no")[0]["status"] == "key_present_adapter_missing"
+    assert offer_source_status("de") == []
+
+
+def _op_item(price, currency="NOK", date="2026-11-01", country="NO", brand="REMA 1000", discounted=False):
+    return {"price": price, "currency": currency, "date": date, "price_is_discounted": discounted,
+            "location": {"osm_address_country_code": country, "osm_brand": brand}}
+
+
+def test_open_prices_picks_newest_valid_observation_for_the_market():
+    import datetime as dt
+
+    today = dt.date(2026, 11, 15)
+    items = [
+        _op_item(10.0, date="2026-09-01"),
+        _op_item(12.5, date="2026-11-01"),                      # newest valid
+        _op_item(99.0, currency="EUR", date="2026-11-10"),      # wrong currency
+        _op_item(55.0, country="SE", date="2026-11-12"),        # store in another country
+        _op_item(0.0, date="2026-11-13"),                       # invalid price
+        _op_item(5.0, date="2024-01-01"),                       # too old
+        {"price": 7.0, "currency": "NOK", "date": None, "location": {"osm_address_country_code": "NO"}},
+    ]
+    obs = pick_open_prices_observation(items, "no", today)
+    assert obs["price"] == 12.5
+    assert obs["day"].isoformat() == "2026-11-01"
+    assert obs["store"] == "REMA 1000"
+    assert pick_open_prices_observation([_op_item(1.0, currency="EUR", country="DE")], "no", today) is None
+
+
+def test_unit_price_from_price_and_measure():
+    assert compute_unit_price(89.0, "500 g") == (178.0, "kg")
+    assert compute_unit_price(30.0, "1,5 l") == (20.0, "l")
+    assert compute_unit_price(30.0, "lots") is None
+
+
+def test_attach_open_prices_only_adds_price_when_an_observation_exists():
+    import datetime as dt
+
+    catalog = [
+        {"barcode": "1", "measure": "500 g", "sources": [{"name": "Open Food Facts"}]},
+        {"barcode": "2", "measure": "1 l", "sources": [{"name": "Open Food Facts"}]},
+    ]
+
+    def fake_fetch(ean, market, today):
+        if ean == "1":
+            return {"day": dt.date(2026, 11, 1), "price": 40.0, "store": "KIWI", "discounted": False}
+        return None
+
+    found = attach_open_prices(catalog, "no", "2026-11-15", pause=0, fetch=fake_fetch)
+    assert found == 1
+    assert catalog[0]["price"]["value"] == 40.0
+    assert catalog[0]["price"]["unitPrice"] == 80.0
+    assert catalog[0]["price"]["license"] == "ODbL"
+    assert catalog[0]["price"]["store"] == "KIWI"
+    assert {s["name"] for s in catalog[0]["sources"]} == {"Open Food Facts", "Open Prices (ODbL)"}
+    assert "price" not in catalog[1]
+
+
+def test_catalog_sql_includes_price_fields():
+    item = {"barcode": "1", "name": "Kaffe", "measure": "500 g", "category": "Coffee & Tea",
+            "sources": [{"name": "Open Food Facts", "url": "u"}], "verification": "verified",
+            "price": {"value": 89.0, "currency": "NOK", "date": "2026-11-01", "store": "KIWI",
+                      "source": "Open Prices", "url": "https://prices.openfoodfacts.org/products/1",
+                      "unitPrice": 178.0, "unitLabel": "kg"}}
+    sql = generate_catalog_sql({"no": {"catalog": [item]}})
+    assert "89.0, 'NOK', '2026-11-01', 'KIWI', 'Open Prices'" in sql
+    no_price = generate_catalog_sql({"no": {"catalog": [dict(item, price=None)]}})
+    assert "NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL" in no_price
+
+
+def test_tjek_is_disabled_unless_explicitly_approved(monkeypatch):
+    monkeypatch.delenv("KILORADAR_TJEK_APPROVED", raising=False)
+    assert fetch_tjek_offers("no", ["kaffe"], "2026-11-15") == []
+
+
+def test_tjek_offer_is_normalized_to_unit_price():
+    raw = {
+        "id": "abc", "heading": "FRIELE 500 G KAFFE",
+        "pricing": {"price": 89, "pre_price": 134.9, "currency": "NOK"},
+        "quantity": {"unit": {"symbol": "g"}, "size": {"from": 500, "to": 500}, "pieces": {"from": 1}},
+        "run_from": "2026-11-19T23:00:00+0000", "run_till": "2026-11-21T22:59:59+0000",
+        "dealer": {"name": "Europris"},
+    }
+    offer = normalize_tjek_offer(raw, "no", "2026-11-15")
+    assert offer["unitPrice"] == 178.0
+    assert offer["unitLabel"] == "kg"
+    assert offer["store"] == "Europris"
+    assert offer["checked"] == "2026-11-15"
+    assert normalize_tjek_offer({"pricing": {"price": 0}}, "no", "2026-11-15") is None

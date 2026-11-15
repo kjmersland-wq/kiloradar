@@ -34,6 +34,14 @@ interface CatalogRow {
   source_url: string | null;
   last_checked: string | null;
   verification: string | null;
+  price: number | null;
+  price_currency: string | null;
+  price_date: string | null;
+  price_store: string | null;
+  price_source: string | null;
+  price_url: string | null;
+  unit_price: number | null;
+  unit_label: string | null;
 }
 
 interface HistoryRow {
@@ -81,7 +89,8 @@ async function handleCatalog(url: URL, env: Env): Promise<Response> {
   try {
     const { results: rows = [] } = await env.DB.prepare(
       `SELECT ean, name, brand, category, measure, image_url, source_name, source_url,
-              last_checked, verification
+              last_checked, verification, price, price_currency, price_date, price_store,
+              price_source, price_url, unit_price, unit_label
        FROM catalog_products WHERE market = ? ORDER BY name`
     )
       .bind(market)
@@ -119,9 +128,27 @@ async function handleCatalog(url: URL, env: Env): Promise<Response> {
         category: r.category ?? '',
         measure: r.measure,
         imageUrl: r.image_url,
-        sources: r.source_name
-          ? [{ name: r.source_name, url: r.source_url ?? undefined, checked: r.last_checked ?? undefined }]
-          : [],
+        sources: [
+          ...(r.source_name
+            ? [{ name: r.source_name, url: r.source_url ?? undefined, checked: r.last_checked ?? undefined }]
+            : []),
+          ...(r.price !== null && r.price_url
+            ? [{ name: 'Open Prices (ODbL)', url: r.price_url, checked: r.price_date ?? undefined }]
+            : []),
+        ],
+        price:
+          r.price !== null && r.price_currency
+            ? {
+                value: r.price,
+                currency: r.price_currency,
+                date: r.price_date ?? undefined,
+                store: r.price_store ?? undefined,
+                unitPrice: r.unit_price ?? undefined,
+                unitLabel: r.unit_label ?? undefined,
+                source: r.price_source ?? 'Open Prices',
+                url: r.price_url ?? undefined,
+              }
+            : undefined,
         lastChecked: r.last_checked,
         verification: r.verification ?? 'unverified',
         sizeHistory: hist.map((h) => ({ date: h.recorded_on, value: h.measure })),

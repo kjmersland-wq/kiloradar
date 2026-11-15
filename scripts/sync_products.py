@@ -879,6 +879,35 @@ def build_shrink_events(prod: dict[str, Any]) -> list[dict[str, Any]]:
     return []
 
 
+# --- Offer / price sources ---------------------------------------------------------------------
+# Registry of price sources per market. A source is only used when it is "active". Sources that
+# need an API key or written permission stay "needs_access" and produce no data: nothing is
+# scraped and nothing is attributed to a source that did not supply it. See docs/DATA_SOURCES.md.
+OFFER_SOURCES: dict[str, list[dict[str, Any]]] = {
+    "no": [
+        {
+            "name": "mattilbud.no",
+            "url": "https://mattilbud.no/",
+            "status": "needs_access",
+            "needs": "TJEK_API_KEY (Tjek / eTilbudsavis API access) or written permission",
+        }
+    ],
+}
+
+
+def offer_source_status(region_code: str) -> list[dict[str, Any]]:
+    """Returns the price sources for a market and whether they are configured."""
+    out: list[dict[str, Any]] = []
+    for src in OFFER_SOURCES.get(region_code, []):
+        entry = dict(src)
+        key_name = str(src.get("needs", "")).split(" ")[0]
+        if src["status"] == "needs_access" and key_name and os.environ.get(key_name):
+            # A key exists, but no adapter is implemented yet: never claim data we did not fetch.
+            entry["status"] = "key_present_adapter_missing"
+        out.append(entry)
+    return out
+
+
 def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
     """
     Synchronizes a region by enriching baseline products with live Open Food Facts
@@ -946,6 +975,7 @@ def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
         "lastSynced": today_iso,
         "count": len(ranked),
         "products": ranked,
+        "offerSources": offer_source_status(region_code),
     }
 
 
@@ -1043,65 +1073,115 @@ OFF_COUNTRY_TAG: dict[str, str] = {
     "global": "",  # Global/EUR: most-scanned products worldwide (no country filter)
 }
 
-# Food categories from the product strategy. Non-food categories (detergents, toilet paper,
-# personal care) are not in Open Food Facts and need a separate source (see strategy, step 2b).
-OFF_CORE_CATEGORIES: list[tuple[str, str]] = [
-    ("coffees", "Coffee & Tea"),
-    ("chocolates", "Chocolate & Sweets"),
-    ("butters", "Dairy"),
-    ("cheeses", "Dairy"),
-    ("yogurts", "Dairy"),
-    ("chips-and-crisps", "Snacks"),
-    ("breakfast-cereals", "Cereals & Porridge"),
-    ("pastas", "Pasta, Rice & Dry Goods"),
-    ("rices", "Pasta, Rice & Dry Goods"),
-    ("juices", "Juice & Drinks"),
+# One entry per (database, category). The three databases belong to the same open-data family
+# and share the same API, so every product keeps a verifiable record URL.
+#   Open Food Facts     (food & drink)
+#   Open Beauty Facts   (personal care)
+#   Open Products Facts (household: detergents, toilet paper)
+OFF_DB_HOSTS: dict[str, tuple[str, str]] = {
+    "off": ("world.openfoodfacts.org", "Open Food Facts"),
+    "obf": ("world.openbeautyfacts.org", "Open Beauty Facts"),
+    "opf": ("world.openproductsfacts.org", "Open Products Facts"),
+}
+
+# (database, category tag, KiloRadar category label)
+OFF_CORE_CATEGORIES: list[tuple[str, str, str]] = [
+    ("off", "coffees", "Coffee & Tea"),
+    ("off", "teas", "Coffee & Tea"),
+    ("off", "chocolates", "Chocolate & Sweets"),
+    ("off", "biscuits", "Chocolate & Sweets"),
+    ("off", "butters", "Dairy"),
+    ("off", "cheeses", "Dairy"),
+    ("off", "yogurts", "Dairy"),
+    ("off", "milks", "Dairy"),
+    ("off", "chips-and-crisps", "Snacks"),
+    ("off", "breakfast-cereals", "Cereals & Porridge"),
+    ("off", "pastas", "Pasta, Rice & Dry Goods"),
+    ("off", "rices", "Pasta, Rice & Dry Goods"),
+    ("off", "juices", "Juice & Drinks"),
+    ("off", "sodas", "Juice & Drinks"),
+    ("obf", "toothpastes", "Personal Care"),
+    ("obf", "shampoos", "Personal Care"),
+    ("obf", "shower-gels", "Personal Care"),
+    ("obf", "deodorants", "Personal Care"),
+    ("opf", "laundry-detergents", "Cleaning & Laundry"),
+    ("opf", "detergents", "Cleaning & Laundry"),
+    ("opf", "toilet-papers", "Toilet Paper"),
 ]
+
+PHASE1_MARKET_CAP = 100  # Phase 1 target: 80-100 quality products per market
+DEFAULT_PER_CATEGORY = 8
 
 REGION_CURRENCY: dict[str, str] = {"de": "EUR", "fr": "EUR", "es": "EUR", "us": "USD", "uk": "GBP"}
 
 
-def discover_openfoodfacts_catalog(
-    region_code: str,
-    per_category: int = 10,
-    categories: list[tuple[str, str]] | None = None,
-    pause: float = OFF_REQUEST_PAUSE_SECONDS,
+def _fetch_category(
+    host: str,
+    country_tag: str,
+    cat_tag: str,
+    wanted: int,
+    headers: dict[str, str],
+    retries: int = 3,
+    backoff: float = 12.0,
 ) -> list[dict[str, Any]]:
-    """Fetches the most-scanned real products per core category for one market."""
-    if region_code not in OFF_COUNTRY_TAG:
-        return []
-    country_tag = OFF_COUNTRY_TAG[region_code]
-    headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
-    found: dict[str, dict[str, Any]] = {}
-    for cat_tag, cat_label in categories or OFF_CORE_CATEGORIES:
+    """
+    One search request for the most-scanned products of one category in one market.
+    Large categories sometimes time out on the free API (HTML error page instead of JSON),
+    so a failed request is retried a few times with a growing pause.
+    """
+    for attempt in range(retries):
         try:
             resp = requests.get(
-                OFF_SEARCH_URL,
+                f"https://{host}/api/v2/search",
                 params={
                     **({"countries_tags_en": country_tag} if country_tag else {}),
                     "categories_tags_en": cat_tag,
                     "sort_by": "unique_scans_n",
-                    "page_size": per_category * 3,
+                    "page_size": wanted * 3,
                     "fields": "code,product_name,brands,quantity,image_front_small_url,unique_scans_n",
                 },
                 headers=headers,
-                timeout=25,
+                timeout=30,
             )
-            if resp.status_code != 200:
-                continue
-            items = resp.json().get("products", [])
+            if resp.status_code == 200:
+                return resp.json().get("products", [])
         except (requests.RequestException, ValueError):
-            continue
-        finally:
-            time.sleep(pause)
+            pass
+        if attempt < retries - 1:
+            time.sleep(backoff * (attempt + 1))
+    return []
 
-        taken = 0
-        for item in items:
+
+def discover_openfoodfacts_catalog(
+    region_code: str,
+    per_category: int = DEFAULT_PER_CATEGORY,
+    categories: list[tuple[str, str, str]] | None = None,
+    pause: float = OFF_REQUEST_PAUSE_SECONDS,
+    cap: int = PHASE1_MARKET_CAP,
+) -> list[dict[str, Any]]:
+    """
+    Fetches the most-scanned real products per core category for one market from the
+    Open Food / Beauty / Products Facts databases. Categories are merged round-robin so the
+    result stays balanced across categories when the market cap is reached.
+    """
+    if region_code not in OFF_COUNTRY_TAG:
+        return []
+    country_tag = OFF_COUNTRY_TAG[region_code]
+    headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
+
+    per_cat_lists: list[list[dict[str, Any]]] = []
+    for db_key, cat_tag, cat_label in categories or OFF_CORE_CATEGORIES:
+        host, db_name = OFF_DB_HOSTS[db_key]
+        raw = _fetch_category(host, country_tag, cat_tag, per_category, headers)
+        time.sleep(pause)
+
+        picked: list[dict[str, Any]] = []
+        for item in raw:
             code = str(item.get("code", "")).strip()
             quantity = str(item.get("quantity") or "").strip()
             name = str(item.get("product_name") or "").strip()
             brand = str(item.get("brands") or "").split(",")[0].strip()
-            if not (code and quantity and name) or code in found:
+            if not (code and quantity and name):
                 continue
             try:
                 parsed = parse_measure(quantity)
@@ -1109,19 +1189,31 @@ def discover_openfoodfacts_catalog(
                 continue
             if parsed.standard_amount <= 0 or parsed.standard_amount > MAX_VALID_GRAMS:
                 continue
-            found[code] = {
-                "id": f"{region_code}-off-{code}",
-                "barcode": code,
-                "name": name,
-                "brand": brand,
-                "category": cat_label,
-                "measure": f"{parsed.raw_quantity:g} {parsed.raw_unit}",
-                "imageUrl": item.get("image_front_small_url"),
-                "scans": item.get("unique_scans_n") or 0,
-            }
-            taken += 1
-            if taken >= per_category:
+            picked.append(
+                {
+                    "id": f"{region_code}-off-{code}",
+                    "barcode": code,
+                    "name": name,
+                    "brand": brand,
+                    "category": cat_label,
+                    "measure": f"{parsed.raw_quantity:g} {parsed.raw_unit}",
+                    "imageUrl": item.get("image_front_small_url"),
+                    "scans": item.get("unique_scans_n") or 0,
+                    "sourceName": db_name,
+                    "sourceUrl": f"https://{host}/product/{code}",
+                }
+            )
+            if len(picked) >= per_category:
                 break
+        per_cat_lists.append(picked)
+
+    found: dict[str, dict[str, Any]] = {}
+    index = 0
+    while len(found) < cap and any(index < len(lst) for lst in per_cat_lists):
+        for lst in per_cat_lists:
+            if index < len(lst) and lst[index]["barcode"] not in found and len(found) < cap:
+                found[lst[index]["barcode"]] = lst[index]
+        index += 1
     return list(found.values())
 
 
@@ -1140,8 +1232,8 @@ def update_catalog(
     for item in discovered:
         entry = by_id.get(item["id"])
         provenance_source = {
-            "name": "Open Food Facts",
-            "url": OFF_PRODUCT_URL.format(ean=item["barcode"]),
+            "name": item.get("sourceName", "Open Food Facts"),
+            "url": item.get("sourceUrl", OFF_PRODUCT_URL.format(ean=item["barcode"])),
             "checked": today_iso,
         }
         if entry is None:
@@ -1195,6 +1287,19 @@ def _sql_text(value: Any) -> str:
     return "'" + str(value).replace("'", "''") + "'"
 
 
+def _price_sql(item: dict[str, Any]) -> str:
+    """SQL values for the optional Open Prices fields of a catalog item."""
+    price = item.get("price")
+    if not price:
+        return "NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL"
+    unit = price.get("unitPrice")
+    return (
+        f"{float(price['value'])}, {_sql_text(price.get('currency'))}, {_sql_text(price.get('date'))}, "
+        f"{_sql_text(price.get('store'))}, {_sql_text(price.get('source'))}, {_sql_text(price.get('url'))}, "
+        f"{float(unit) if unit is not None else 'NULL'}, {_sql_text(price.get('unitLabel'))}"
+    )
+
+
 def generate_catalog_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
     """
     Generates idempotent SQL (no explicit transaction, so Cloudflare D1 accepts it) that upserts
@@ -1214,13 +1319,15 @@ def generate_catalog_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
             lines.append(
                 "INSERT OR REPLACE INTO catalog_products "
                 "(market, ean, name, brand, category, measure, image_url, source_name, source_url, "
-                "last_checked, verification, match_confidence, updated_at) VALUES ("
+                "last_checked, verification, match_confidence, price, price_currency, price_date, "
+                "price_store, price_source, price_url, unit_price, unit_label, updated_at) VALUES ("
                 f"{_sql_text(region_code)}, {_sql_text(ean)}, {_sql_text(item.get('name'))}, "
                 f"{_sql_text(item.get('brand'))}, {_sql_text(item.get('category'))}, "
                 f"{_sql_text(item.get('measure'))}, {_sql_text(item.get('imageUrl'))}, "
                 f"{_sql_text(src.get('name'))}, {_sql_text(src.get('url'))}, "
                 f"{_sql_text(item.get('lastChecked'))}, {_sql_text(item.get('verification', 'unverified'))}, "
-                f"{float(conf) if conf is not None else 'NULL'}, CURRENT_TIMESTAMP);"
+                f"{float(conf) if conf is not None else 'NULL'}, "
+                f"{_price_sql(item)}, CURRENT_TIMESTAMP);"
             )
             for entry in item.get("sizeHistory", []):
                 lines.append(
@@ -1229,6 +1336,214 @@ def generate_catalog_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
                     f"{_sql_text(entry.get('value'))});"
                 )
     return "\n".join(lines) + "\n"
+
+
+# --- Open Prices (crowdsourced prices, ODbL) -------------------------------------------------
+# https://prices.openfoodfacts.org - open data from the Open Food Facts project. Prices are
+# collected by volunteers (shelf photos and receipts) and are published under the ODbL, which
+# requires attribution. We show the price only when an observation exists for the same barcode
+# in the same market and currency, and always together with source, store and date.
+
+OPEN_PRICES_URL = "https://prices.openfoodfacts.org/api/v1/prices"
+OPEN_PRICES_PRODUCT_URL = "https://prices.openfoodfacts.org/products/{ean}"
+OPEN_PRICES_PAUSE_SECONDS = 0.5
+OPEN_PRICES_MAX_AGE_DAYS = 365
+
+MARKET_COUNTRY_CODE: dict[str, str] = {
+    "no": "NO", "se": "SE", "dk": "DK", "pl": "PL", "de": "DE",
+    "fr": "FR", "es": "ES", "uk": "GB", "us": "US",
+}
+MARKET_CURRENCY: dict[str, str] = {
+    "no": "NOK", "se": "SEK", "dk": "DKK", "pl": "PLN", "de": "EUR",
+    "fr": "EUR", "es": "EUR", "uk": "GBP", "us": "USD",
+}
+
+
+def compute_unit_price(price: float, measure: str) -> tuple[float, str] | None:
+    """Price per kg / l / piece from a price and a measure string, e.g. (89, '500 g') -> (178, 'kg')."""
+    try:
+        parsed = parse_measure(measure)
+    except ValueError:
+        return None
+    if parsed.normalized_base_amount <= 0:
+        return None
+    return round(price / parsed.normalized_base_amount, 2), parsed.base_unit
+
+
+def pick_open_prices_observation(
+    items: list[dict[str, Any]], market: str, today: dt.date
+) -> dict[str, Any] | None:
+    """
+    Picks the newest trustworthy observation from an Open Prices response: positive price,
+    the market's currency, a known date within a year, and a store located in the same country.
+    """
+    country = MARKET_COUNTRY_CODE.get(market)
+    currency = MARKET_CURRENCY.get(market)
+    best: dict[str, Any] | None = None
+    for it in items:
+        try:
+            price = float(it.get("price"))
+            day = dt.date.fromisoformat(str(it.get("date")))
+        except (TypeError, ValueError):
+            continue
+        loc = it.get("location") or {}
+        if price <= 0 or it.get("currency") != currency:
+            continue
+        if str(loc.get("osm_address_country_code") or "").upper() != country:
+            continue
+        if (today - day).days > OPEN_PRICES_MAX_AGE_DAYS or day > today:
+            continue
+        if best is None or day > best["day"]:
+            best = {
+                "day": day,
+                "price": price,
+                "store": loc.get("osm_brand") or loc.get("osm_name"),
+                "discounted": bool(it.get("price_is_discounted")),
+            }
+    return best
+
+
+def fetch_open_prices_for_barcode(ean: str, market: str, today: dt.date) -> dict[str, Any] | None:
+    headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
+    try:
+        resp = requests.get(
+            OPEN_PRICES_URL,
+            params={"product_code": ean, "order_by": "-date", "size": 25},
+            headers=headers,
+            timeout=25,
+        )
+        if resp.status_code != 200:
+            return None
+        return pick_open_prices_observation(resp.json().get("items", []), market, today)
+    except (requests.RequestException, ValueError):
+        return None
+
+
+def attach_open_prices(
+    catalog: list[dict[str, Any]],
+    market: str,
+    today_iso: str,
+    pause: float = OPEN_PRICES_PAUSE_SECONDS,
+    fetch=fetch_open_prices_for_barcode,
+) -> int:
+    """
+    Adds `price` (with unit price, store, date and credit) to catalog products that have an
+    Open Prices observation. Products without one keep no price and show "Pris kommer".
+    A previously stored price is kept when a lookup fails.
+    """
+    if market not in MARKET_CURRENCY:
+        return 0
+    today = dt.date.fromisoformat(today_iso)
+    found = 0
+    for item in catalog:
+        ean = str(item.get("barcode", ""))
+        if not ean:
+            continue
+        obs = fetch(ean, market, today)
+        time.sleep(pause)
+        if not obs:
+            continue
+        unit = compute_unit_price(obs["price"], str(item.get("measure", "")))
+        url = OPEN_PRICES_PRODUCT_URL.format(ean=ean)
+        item["price"] = {
+            "value": obs["price"],
+            "currency": MARKET_CURRENCY[market],
+            "date": obs["day"].isoformat(),
+            "store": obs["store"],
+            "discounted": obs["discounted"],
+            "unitPrice": unit[0] if unit else None,
+            "unitLabel": unit[1] if unit else None,
+            "source": "Open Prices",
+            "url": url,
+            "license": "ODbL",
+            "checked": today_iso,
+        }
+        item["sources"] = [s for s in item.get("sources", []) if s.get("name") != "Open Prices"] + [
+            {"name": "Open Prices (ODbL)", "url": url, "checked": today_iso}
+        ]
+        found += 1
+    return found
+
+
+# --- Tjek / eTilbudsavis offers (DISABLED by default) -----------------------------------------
+# Tjek's terms (https://tjek.com/terms, section 8) allow API content to be used by third parties
+# commercially only with prior written approval. This adapter is therefore OFF unless the
+# operator sets KILORADAR_TJEK_APPROVED=1 after receiving that approval. Nothing here runs in the
+# nightly job by default.
+
+TJEK_API_URL = "https://api.etilbudsavis.dk/v2/offers/search"
+TJEK_COUNTRY: dict[str, str] = {"no": "NO", "se": "SE", "dk": "DK"}
+TJEK_SI_FACTORS = {"kg": 1.0, "g": 0.001, "l": 1.0, "ml": 0.001, "cl": 0.01, "dl": 0.1}
+
+
+def tjek_enabled() -> bool:
+    return os.environ.get("KILORADAR_TJEK_APPROVED") == "1"
+
+
+def normalize_tjek_offer(raw: dict[str, Any], market: str, today_iso: str) -> dict[str, Any] | None:
+    """Normalizes one Tjek offer to fact-level fields with a unit price (per kg / l)."""
+    pricing = raw.get("pricing") or {}
+    qty = raw.get("quantity") or {}
+    try:
+        price = float(pricing["price"])
+    except (KeyError, TypeError, ValueError):
+        return None
+    if price <= 0:
+        return None
+    unit_price = None
+    unit_label = None
+    try:
+        symbol = str((qty.get("unit") or {}).get("symbol", "")).lower()
+        size = float((qty.get("size") or {}).get("from"))
+        pieces = float((qty.get("pieces") or {}).get("from") or 1)
+        factor = TJEK_SI_FACTORS.get(symbol)
+        if factor and size > 0:
+            base = size * pieces * factor
+            unit_price = round(price / base, 2)
+            unit_label = "l" if symbol in ("l", "ml", "cl", "dl") else "kg"
+    except (TypeError, ValueError):
+        pass
+    dealer = raw.get("dealer") or {}
+    return {
+        "market": market,
+        "heading": raw.get("heading"),
+        "price": price,
+        "prePrice": pricing.get("pre_price"),
+        "currency": pricing.get("currency"),
+        "unitPrice": unit_price,
+        "unitLabel": unit_label,
+        "store": dealer.get("name"),
+        "validFrom": raw.get("run_from"),
+        "validTill": raw.get("run_till"),
+        "source": "Tjek / eTilbudsavis",
+        "url": f"https://etilbudsavis.dk/offers/{raw.get('id')}" if raw.get("id") else None,
+        "checked": today_iso,
+    }
+
+
+def fetch_tjek_offers(market: str, queries: list[str], today_iso: str, limit: int = 20) -> list[dict[str, Any]]:
+    """Fetches current offers for search terms. Returns [] unless approval is configured."""
+    if not tjek_enabled() or market not in TJEK_COUNTRY:
+        return []
+    headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
+    out: list[dict[str, Any]] = []
+    for query in queries:
+        try:
+            resp = requests.get(
+                TJEK_API_URL,
+                params={"query": query, "limit": limit, "country_id": TJEK_COUNTRY[market]},
+                headers=headers,
+                timeout=25,
+            )
+            if resp.status_code == 200:
+                for raw in resp.json():
+                    norm = normalize_tjek_offer(raw, market, today_iso)
+                    if norm:
+                        out.append(norm)
+        except (requests.RequestException, ValueError):
+            pass
+        time.sleep(1.0)
+    return out
 
 
 def run_full_pipeline(
@@ -1262,6 +1577,8 @@ def run_full_pipeline(
                 previous_catalog = []
         discovered = discover_openfoodfacts_catalog(reg) if do_discover else []
         payload["catalog"] = update_catalog(previous_catalog, discovered, reg, today_iso)
+        if do_discover:
+            attach_open_prices(payload["catalog"], reg, today_iso)
         payload["catalogCount"] = len(payload["catalog"])
 
         synced[reg] = payload

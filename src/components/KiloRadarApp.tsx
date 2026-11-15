@@ -699,6 +699,10 @@ const HERO_COPY: Record<CountryRouteCode, { title: [string, string]; sub: string
   es: { title: ['Mismo precio.', 'Menos dentro.'], sub: 'Descubre el precio real por kilo y qué tienda es la más barata ahora.', save: 'Ahorras hasta' },
 };
 
+/** Open Food/Beauty/Products Facts data is ODbL: always mark it as such next to the source. */
+const licensed = (name: string): string =>
+  /^Open (Food|Beauty|Products) Facts$/.test(name) ? `${name} (ODbL)` : name;
+
 const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
   en: ['Cheapest stores', 'Calculator', 'Products'],
   us: ['Cheapest stores', 'Calculator', 'Products'],
@@ -1513,73 +1517,15 @@ export default function KiloRadarApp({
         </header>
 
         <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-24 space-y-20">
-          {/* HERO: one message, one big number */}
-          <section id="top" className="bg-hero -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-20 md:pb-24">
-            <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
-              <div className="animate-rise">
-                <h1 className="text-5xl font-extrabold leading-[1.02] text-foreground sm:text-7xl">
-                  {HERO_COPY[countryCode].title[0]}
-                  <br />
-                  <span className="text-shrink">{HERO_COPY[countryCode].title[1]}</span>
-                </h1>
-                <p className="mt-6 max-w-md text-lg text-muted-foreground sm:text-xl">{HERO_COPY[countryCode].sub}</p>
-                <div className="mt-10 flex flex-wrap gap-3">
-                  <a href="#ranking" className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5">
-                    {dict.cheapestChainNow}
-                  </a>
-                  <a href="#calculator" className="rounded-full border border-border bg-card px-8 py-4 text-lg font-semibold text-foreground transition-colors hover:bg-secondary">
-                    {dict.simulatorTitle}
-                  </a>
-                </div>
-              </div>
-              {heroProduct && (
-                <div className="card-kilo animate-rise p-7 sm:p-10" style={{ animationDelay: '.1s' }}>
-                  <div className="flex items-center gap-3">
-                    <span className="grid size-14 place-items-center rounded-2xl bg-secondary">
-                      <CategorySvgIcon category={heroProduct.product.category} className="size-7" />
-                    </span>
-                    <div className="min-w-0">
-                      <p className="truncate text-lg font-semibold text-foreground">
-                        {heroProduct.product.name.toLowerCase().startsWith(heroProduct.product.brand.toLowerCase()) ? heroProduct.product.name : `${heroProduct.product.brand} ${heroProduct.product.name}`}
-                      </p>
-                      <p className="text-sm text-muted-foreground">{heroProduct.product.store}</p>
-                    </div>
-                  </div>
-                  <div className="mt-8 grid grid-cols-2 gap-4">
-                    <div className="rounded-3xl bg-secondary p-5">
-                      <p className="text-xs uppercase tracking-wider text-muted-foreground">{dict.oldPackageLabel}</p>
-                      <p className="mt-1 font-display text-3xl font-bold tabular text-foreground">{heroProduct.product.oldMeasure}</p>
-                      <p className="mt-1 text-sm tabular text-muted-foreground">
-                        {formatMoney(heroProduct.analysis.oldUnitPrice)}/{heroProduct.analysis.baseUnit}
-                      </p>
-                    </div>
-                    <div className="rounded-3xl border border-shrink/40 bg-shrink/10 p-5">
-                      <p className="text-xs uppercase tracking-wider text-shrink">{dict.newPackageLabel}</p>
-                      <p className="mt-1 font-display text-3xl font-bold tabular text-foreground">{heroProduct.product.newMeasure}</p>
-                      <p className="mt-1 text-sm tabular text-muted-foreground">
-                        {formatMoney(heroProduct.analysis.newUnitPrice)}/{heroProduct.analysis.baseUnit}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-8 flex items-end justify-between gap-4 border-t border-border pt-8">
-                    <p className="max-w-[9rem] text-sm text-muted-foreground">{dict.realUnitPriceChange}</p>
-                    <p className="font-display text-7xl font-extrabold leading-none tabular text-shrink sm:text-8xl">
-                      +{Math.round(heroProduct.analysis.shrinkIndex)}%
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </section>
-
           {/* SECTION: CHEAPEST STORE NOW (the main section) */}
-          <section id="ranking" className="mx-auto w-full max-w-6xl scroll-mt-20 space-y-10 py-4">
+          <section id="ranking" className="bg-hero -mx-4 sm:-mx-6 lg:-mx-8 scroll-mt-20 px-4 pb-20 pt-12 sm:px-6 md:pt-20 lg:px-8">
+            <div className="mx-auto w-full max-w-6xl space-y-12">
             <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
               <div>
                 <p className="flex items-center gap-2 text-sm font-semibold text-savings">
                   <ShoppingCart className="size-4" /> {dict.basketBadge}
                 </p>
-                <h2 className="mt-3 text-4xl font-bold text-foreground sm:text-5xl">
+                <h2 className="mt-3 text-5xl font-extrabold text-foreground sm:text-6xl">
                   {dict.cheapestChainNow}
                 </h2>
               </div>
@@ -1729,6 +1675,66 @@ export default function KiloRadarApp({
                   <BookOpen className="size-3.5" /> {dict.methodologyJumpLink}
                 </a>
               </span>
+            </div>
+            </div>
+          </section>
+
+          {/* HERO: one message, one big number */}
+          <section id="top" className="-mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 pt-4 pb-8 md:pb-12">
+            <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
+              <div className="animate-rise">
+                <h1 className="text-5xl font-extrabold leading-[1.02] text-foreground sm:text-7xl">
+                  {HERO_COPY[countryCode].title[0]}
+                  <br />
+                  <span className="text-shrink">{HERO_COPY[countryCode].title[1]}</span>
+                </h1>
+                <p className="mt-6 max-w-md text-lg text-muted-foreground sm:text-xl">{HERO_COPY[countryCode].sub}</p>
+                <div className="mt-10 flex flex-wrap gap-3">
+                  <a href="#calculator" className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5">
+                    {dict.simulatorTitle}
+                  </a>
+                  <a href={catalogItems.length > 0 ? '#catalog' : '#products'} className="rounded-full border border-border bg-card px-8 py-4 text-lg font-semibold text-foreground transition-colors hover:bg-secondary">
+                    {catalogItems.length > 0 ? CATALOG_UI[countryCode].nav : NAV_LABELS[countryCode][2]}
+                  </a>
+                </div>
+              </div>
+              {heroProduct && (
+                <div className="card-kilo animate-rise p-7 sm:p-10" style={{ animationDelay: '.1s' }}>
+                  <div className="flex items-center gap-3">
+                    <span className="grid size-14 place-items-center rounded-2xl bg-secondary">
+                      <CategorySvgIcon category={heroProduct.product.category} className="size-7" />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="truncate text-lg font-semibold text-foreground">
+                        {heroProduct.product.name.toLowerCase().startsWith(heroProduct.product.brand.toLowerCase()) ? heroProduct.product.name : `${heroProduct.product.brand} ${heroProduct.product.name}`}
+                      </p>
+                      <p className="text-sm text-muted-foreground">{heroProduct.product.store}</p>
+                    </div>
+                  </div>
+                  <div className="mt-8 grid grid-cols-2 gap-4">
+                    <div className="rounded-3xl bg-secondary p-5">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground">{dict.oldPackageLabel}</p>
+                      <p className="mt-1 font-display text-3xl font-bold tabular text-foreground">{heroProduct.product.oldMeasure}</p>
+                      <p className="mt-1 text-sm tabular text-muted-foreground">
+                        {formatMoney(heroProduct.analysis.oldUnitPrice)}/{heroProduct.analysis.baseUnit}
+                      </p>
+                    </div>
+                    <div className="rounded-3xl border border-shrink/40 bg-shrink/10 p-5">
+                      <p className="text-xs uppercase tracking-wider text-shrink">{dict.newPackageLabel}</p>
+                      <p className="mt-1 font-display text-3xl font-bold tabular text-foreground">{heroProduct.product.newMeasure}</p>
+                      <p className="mt-1 text-sm tabular text-muted-foreground">
+                        {formatMoney(heroProduct.analysis.newUnitPrice)}/{heroProduct.analysis.baseUnit}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-8 flex items-end justify-between gap-4 border-t border-border pt-8">
+                    <p className="max-w-[9rem] text-sm text-muted-foreground">{dict.realUnitPriceChange}</p>
+                    <p className="font-display text-7xl font-extrabold leading-none tabular text-shrink sm:text-8xl">
+                      +{Math.round(heroProduct.analysis.shrinkIndex)}%
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           </section>
 
@@ -2442,11 +2448,11 @@ export default function KiloRadarApp({
                                   rel="noopener noreferrer"
                                   className="underline underline-offset-2 hover:text-foreground"
                                 >
-                                  {prov.source}: {src.name}
+                                  {prov.source}: {licensed(src.name)}
                                 </a>
                               ) : (
                                 <span>
-                                  {prov.source}: {src.name}
+                                  {prov.source}: {licensed(src.name)}
                                 </span>
                               ))}
                             {product.lastChecked && (
@@ -2785,6 +2791,30 @@ export default function KiloRadarApp({
             </a>
           </div>
         </div>
+
+        <p
+          data-testid="odbl-credit"
+          className="mx-auto mt-6 max-w-7xl border-t border-border pt-6 text-center text-xs leading-relaxed text-muted-foreground"
+        >
+          Produkt- og prisdata fra{' '}
+          <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">
+            Open Food Facts
+          </a>{' '}
+          og{' '}
+          <a href="https://prices.openfoodfacts.org/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">
+            Open Prices
+          </a>
+          , lisensiert under Open Database License (ODbL).
+          <br />
+          <a
+            href="https://opendatacommons.org/licenses/odbl/1.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-savings underline underline-offset-2"
+          >
+            https://opendatacommons.org/licenses/odbl/1.0/
+          </a>
+        </p>
       </footer>
     </div>
   );
