@@ -2,7 +2,7 @@
   "source": "python-pipeline-openfoodfacts",
   "country": "dk",
   "currency": "DKK",
-  "lastSynced": "2026-11-14",
+  "lastSynced": "2026-11-15",
   "count": 2,
   "products": [
     {
@@ -49,7 +49,33 @@
       "baseUnit": "kg",
       "shrinkIndex": 35.73,
       "amountChangePct": -20.0,
-      "priceChangePct": 8.59
+      "priceChangePct": 8.59,
+      "sources": [],
+      "lastChecked": null,
+      "matchConfidence": null,
+      "verification": "unverified",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-15",
+          "store": "Netto / Føtex / Bilka",
+          "price": 49.95,
+          "unitPrice": 124.88
+        }
+      ],
+      "shrinkEvents": [
+        {
+          "date": "2026-10-16",
+          "from": "500 g",
+          "to": "400 g",
+          "shrinkIndex": 35.73
+        }
+      ]
     },
     {
       "id": "dk-dairy-kaergaarden",
@@ -90,7 +116,33 @@
       "baseUnit": "kg",
       "shrinkIndex": 35.02,
       "amountChangePct": -20.0,
-      "priceChangePct": 8.02
+      "priceChangePct": 8.02,
+      "sources": [],
+      "lastChecked": null,
+      "matchConfidence": null,
+      "verification": "unverified",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-15",
+          "store": "Netto / Rema 1000",
+          "price": 26.95,
+          "unitPrice": 168.44
+        }
+      ],
+      "shrinkEvents": [
+        {
+          "date": "2026-10-21",
+          "from": "200 g",
+          "to": "160 g",
+          "shrinkIndex": 35.02
+        }
+      ]
     }
   ]
 }

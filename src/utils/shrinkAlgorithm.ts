@@ -46,6 +46,14 @@ export interface ProductItem {
   storePrices?: StorePriceQuote[];
   avgWeeklyQuantity?: number; // Hvor mange enheter en gjennomsnittskunde handler per uke
   imageUrl?: string; // Valgfritt produktbilde (ellers brukes rent SVG kategori-ikon som fallback)
+  // Transparens: hvor kommer dataene fra og når ble de sist sjekket (satt av Python-pipelinen)
+  sources?: Array<{ name: string; url?: string; checked?: string }>;
+  lastChecked?: string | null;
+  matchConfidence?: number | null;
+  verification?: 'verified' | 'partial' | 'mismatch' | 'unverified';
+  sizeHistory?: Array<{ date: string; value: string }>;
+  priceHistory?: Array<{ date: string; store?: string; price: number; unitPrice?: number }>;
+  shrinkEvents?: Array<{ date?: string; from: string; to: string; shrinkIndex?: number }>;
 }
 
 export interface RankedAlternative {

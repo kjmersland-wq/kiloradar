@@ -2,7 +2,7 @@
   "source": "python-pipeline-openfoodfacts",
   "country": "se",
   "currency": "SEK",
-  "lastSynced": "2026-11-14",
+  "lastSynced": "2026-11-15",
   "count": 2,
   "products": [
     {
@@ -49,7 +49,33 @@
       "baseUnit": "kg",
       "shrinkIndex": 20.7,
       "amountChangePct": -11.11,
-      "priceChangePct": 7.29
+      "priceChangePct": 7.29,
+      "sources": [],
+      "lastChecked": null,
+      "matchConfidence": null,
+      "verification": "unverified",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-15",
+          "store": "ICA / Coop / Hemköp",
+          "price": 58.9,
+          "unitPrice": 147.25
+        }
+      ],
+      "shrinkEvents": [
+        {
+          "date": "2026-10-15",
+          "from": "450 g",
+          "to": "400 g",
+          "shrinkIndex": 20.7
+        }
+      ]
     },
     {
       "id": "se-dairy-bregott",
@@ -90,7 +116,33 @@
       "baseUnit": "kg",
       "shrinkIndex": 20.0,
       "amountChangePct": -16.67,
-      "priceChangePct": 0.0
+      "priceChangePct": 0.0,
+      "sources": [],
+      "lastChecked": null,
+      "matchConfidence": null,
+      "verification": "unverified",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "priceHistory": [
+        {
+          "date": "2026-11-15",
+          "store": "ICA / Willys",
+          "price": 59.9,
+          "unitPrice": 119.8
+        }
+      ],
+      "shrinkEvents": [
+        {
+          "date": "2026-10-20",
+          "from": "600 g",
+          "to": "500 g",
+          "shrinkIndex": 20.0
+        }
+      ]
     }
   ]
 }

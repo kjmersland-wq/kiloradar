@@ -9,6 +9,9 @@ import json
 import pytest
 
 from sync_products import (
+    build_provenance,
+    build_shrink_events,
+    merge_history,
     calculate_shrinkflation_metrics,
     filter_category_outliers,
     generate_d1_sql,
@@ -151,3 +154,68 @@ def test_full_pipeline_exports_static_json_and_d1_sql():
     sql = generate_d1_sql(results)
     assert "INSERT OR REPLACE INTO products" in sql
     assert "INSERT INTO price_history" in sql
+
+
+def test_provenance_marks_unchecked_products_as_unverified():
+    prov = build_provenance({"barcode": "123", "newMeasure": "200 g"}, None, "2026-11-15")
+    assert prov["verification"] == "unverified"
+    assert prov["sources"] == []
+    assert prov["lastChecked"] is None
+    assert prov["matchConfidence"] is None
+
+
+def test_provenance_verified_mismatch_and_partial():
+    live = {"ean": "123", "quantity": "200 g"}
+    verified = build_provenance(
+        {"barcode": "123", "newMeasure": "200 g", "offVerifiedQuantity": "200 g"}, live, "2026-11-15"
+    )
+    assert verified["verification"] == "verified"
+    assert verified["matchConfidence"] == 1.0
+    assert verified["lastChecked"] == "2026-11-15"
+    assert verified["sources"][0]["name"] == "Open Food Facts"
+    assert verified["sources"][0]["url"].endswith("/123")
+
+    mismatch = build_provenance(
+        {"barcode": "123", "newMeasure": "200 g", "offVerifiedQuantity": "250 g"}, live, "2026-11-15"
+    )
+    assert mismatch["verification"] == "mismatch"
+
+    partial = build_provenance({"barcode": "123", "newMeasure": "200 g"}, live, "2026-11-15")
+    assert partial["verification"] == "partial"
+
+
+def test_history_only_grows_on_real_change():
+    prod = {"id": "x", "newMeasure": "200 g", "newPrice": 46.9, "newUnitPrice": 234.5, "store": "REMA 1000"}
+    first = merge_history(None, prod, "2026-11-14")
+    assert len(first["sizeHistory"]) == 1
+    assert len(first["priceHistory"]) == 1
+
+    # Same observation the next night: nothing appended
+    second = merge_history(first, prod, "2026-11-15")
+    assert len(second["sizeHistory"]) == 1
+    assert len(second["priceHistory"]) == 1
+
+    # Pack shrinks and price changes: both histories gain an entry
+    changed = dict(prod, newMeasure="180 g", newPrice=47.9)
+    third = merge_history(second, changed, "2026-11-16")
+    assert [e["value"] for e in third["sizeHistory"]] == ["200 g", "180 g"]
+    assert len(third["priceHistory"]) == 2
+
+
+def test_shrink_events_only_for_smaller_packs():
+    smaller = {"detectedDate": "2026-10-14", "oldMeasure": "250 g", "newMeasure": "200 g",
+               "amountChangePct": -20.0, "shrinkIndex": 30.57}
+    assert build_shrink_events(smaller)[0]["to"] == "200 g"
+    same = dict(smaller, amountChangePct=0.0)
+    assert build_shrink_events(same) == []
+
+
+def test_pipeline_output_carries_provenance_and_sql_sources():
+    results = run_full_pipeline(fetch_live=False)
+    for prod in results["no"]["products"]:
+        assert prod["verification"] == "unverified"
+        assert "sizeHistory" in prod and "priceHistory" in prod
+        assert "shrinkEvents" in prod
+    sql = generate_d1_sql(results)
+    assert "last_checked" in sql
+    assert "DELETE FROM product_sources" in sql

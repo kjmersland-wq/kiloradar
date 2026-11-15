@@ -775,6 +775,107 @@ REGIONAL_BASELINES: dict[str, dict[str, Any]] = {
 }
 
 
+OFF_PRODUCT_URL = "https://world.openfoodfacts.org/product/{ean}"
+
+
+def build_provenance(
+    prod: dict[str, Any], live_data: dict[str, Any] | None, today_iso: str
+) -> dict[str, Any]:
+    """
+    Builds transparency fields for a product: where the data comes from, when it was
+    last checked, and how well the live source agrees with the stored measure.
+
+    verification:
+      - "verified":   barcode found in Open Food Facts and its quantity equals our current measure
+      - "mismatch":   barcode found but the quantity differs from our current measure
+      - "partial":    barcode found, but no comparable quantity available
+      - "unverified": not checked against any source (or the lookup failed)
+    """
+    if not live_data:
+        return {
+            "sources": [],
+            "lastChecked": None,
+            "matchConfidence": None,
+            "verification": "unverified",
+        }
+
+    ean = str(prod.get("barcode", ""))
+    sources = [
+        {
+            "name": "Open Food Facts",
+            "url": OFF_PRODUCT_URL.format(ean=ean),
+            "checked": today_iso,
+        }
+    ]
+    verification = "partial"
+    confidence = 0.6
+    off_qty = prod.get("offVerifiedQuantity")
+    if off_qty:
+        try:
+            live_amount = parse_measure(str(off_qty)).standard_amount
+            ours = parse_measure(str(prod["newMeasure"])).standard_amount
+            if abs(live_amount - ours) <= 0.5:
+                verification, confidence = "verified", 1.0
+            else:
+                verification, confidence = "mismatch", 0.3
+        except (ValueError, KeyError):
+            pass
+    return {
+        "sources": sources,
+        "lastChecked": today_iso,
+        "matchConfidence": confidence,
+        "verification": verification,
+    }
+
+
+def merge_history(
+    previous: dict[str, Any] | None, prod: dict[str, Any], today_iso: str
+) -> dict[str, list[dict[str, Any]]]:
+    """
+    Carries size and price history over from the previous nightly export and appends
+    today's observation only when something changed. History is never back-filled:
+    it only grows from real nightly snapshots.
+    """
+    prev = previous or {}
+    size_hist = [dict(e) for e in prev.get("sizeHistory", [])]
+    price_hist = [dict(e) for e in prev.get("priceHistory", [])]
+
+    new_measure = str(prod["newMeasure"])
+    if not size_hist or size_hist[-1].get("value") != new_measure:
+        size_hist.append({"date": today_iso, "value": new_measure})
+
+    unit_price = prod.get("newUnitPrice")
+    price_entry = {
+        "date": today_iso,
+        "store": prod.get("store"),
+        "price": prod.get("newPrice"),
+        "unitPrice": unit_price,
+    }
+    if not price_hist or price_hist[-1].get("price") != price_entry["price"] or (
+        price_hist[-1].get("store") != price_entry["store"]
+    ):
+        price_hist.append(price_entry)
+
+    return {"sizeHistory": size_hist, "priceHistory": price_hist}
+
+
+def build_shrink_events(prod: dict[str, Any]) -> list[dict[str, Any]]:
+    """A shrink event exists when the pack got smaller between old and new measure."""
+    try:
+        if float(prod.get("amountChangePct", 0.0)) < 0:
+            return [
+                {
+                    "date": prod.get("detectedDate"),
+                    "from": prod["oldMeasure"],
+                    "to": prod["newMeasure"],
+                    "shrinkIndex": prod.get("shrinkIndex"),
+                }
+            ]
+    except (TypeError, ValueError):
+        pass
+    return []
+
+
 def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
     """
     Synchronizes a region by enriching baseline products with live Open Food Facts
@@ -785,6 +886,8 @@ def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
     region_cfg = REGIONAL_BASELINES.get(base_key, REGIONAL_BASELINES["en"])
     currency = region_cfg["currency"]
 
+    today_iso = dt.date.today().isoformat()
+    live_by_id: dict[str, dict[str, Any] | None] = {}
     raw_products: list[dict[str, Any]] = []
     for item in region_cfg["products"]:
         prod_copy = dict(item)
@@ -792,6 +895,7 @@ def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
 
         if fetch_live and prod_copy.get("barcode"):
             live_data = fetch_openfoodfacts_product(str(prod_copy["barcode"]))
+            live_by_id[str(prod_copy.get("id"))] = live_data
             if live_data:
                 if live_data.get("image_url"):
                     prod_copy["imageUrl"] = live_data["image_url"]
@@ -810,7 +914,23 @@ def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
         raw_products.append(prod_copy)
 
     ranked = rank_shrinkflation_findings(raw_products)
-    today_iso = dt.date.today().isoformat()
+
+    previous_by_id: dict[str, dict[str, Any]] = {}
+    prev_path = PUBLIC_DATA_DIR / f"{region_code}.json"
+    if prev_path.exists():
+        try:
+            prev_payload = json.loads(prev_path.read_text(encoding="utf-8"))
+            previous_by_id = {
+                str(p.get("id")): p for p in prev_payload.get("products", []) if p.get("id")
+            }
+        except (ValueError, OSError):
+            previous_by_id = {}
+
+    for prod in ranked:
+        prod_id = str(prod.get("id"))
+        prod.update(build_provenance(prod, live_by_id.get(prod_id), today_iso))
+        prod.update(merge_history(previous_by_id.get(prod_id), prod, today_iso))
+        prod["shrinkEvents"] = build_shrink_events(prod)
 
     return {
         "source": "python-pipeline-openfoodfacts",
@@ -853,10 +973,37 @@ def generate_d1_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
             price_val = float(prod["newPrice"])
             unit_price_val = float(prod["newUnitPrice"])
 
+            last_checked = prod.get("lastChecked")
+            last_checked_sql = f"'{last_checked}'" if last_checked else "NULL"
+            confidence = prod.get("matchConfidence")
+            confidence_sql = str(float(confidence)) if confidence is not None else "NULL"
+            verification = str(prod.get("verification", "unverified")).replace("'", "''")
             lines.append(
-                f"INSERT OR REPLACE INTO products (ean, name, brand, category, country_code, image_url, updated_at) "
-                f"VALUES ('{ean}', '{name}', '{brand}', '{cat}', '{region_code}', {img_sql}, CURRENT_TIMESTAMP);"
+                f"INSERT OR REPLACE INTO products (ean, name, brand, category, country_code, image_url, "
+                f"last_checked, match_confidence, verification, updated_at) "
+                f"VALUES ('{ean}', '{name}', '{brand}', '{cat}', '{region_code}', {img_sql}, "
+                f"{last_checked_sql}, {confidence_sql}, '{verification}', CURRENT_TIMESTAMP);"
             )
+            lines.append(f"DELETE FROM product_sources WHERE ean = '{ean}';")
+            for src in prod.get("sources", []):
+                src_name = str(src.get("name", "")).replace("'", "''")
+                src_url = str(src.get("url", "")).replace("'", "''")
+                src_checked = str(src.get("checked", "")).replace("'", "''")
+                lines.append(
+                    f"INSERT INTO product_sources (ean, source_name, source_url, checked_at) "
+                    f"VALUES ('{ean}', '{src_name}', '{src_url}', '{src_checked}');"
+                )
+            lines.append(f"DELETE FROM shrink_events WHERE ean = '{ean}';")
+            for ev in prod.get("shrinkEvents", []):
+                ev_date = str(ev.get("date", "")).replace("'", "''")
+                ev_from = str(ev.get("from", "")).replace("'", "''")
+                ev_to = str(ev.get("to", "")).replace("'", "''")
+                ev_idx = ev.get("shrinkIndex")
+                ev_idx_sql = str(float(ev_idx)) if ev_idx is not None else "NULL"
+                lines.append(
+                    f"INSERT INTO shrink_events (ean, event_date, old_measure, new_measure, shrink_index) "
+                    f"VALUES ('{ean}', '{ev_date}', '{ev_from}', '{ev_to}', {ev_idx_sql});"
+                )
             lines.append(
                 f"INSERT INTO price_history (ean, weight_grams, measure_unit, price, unit_price, source) "
                 f"VALUES ('{ean}', {weight_val}, '{unit_str}', {price_val}, {unit_price_val}, 'python-pipeline');"

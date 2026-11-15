@@ -668,6 +668,28 @@ function ShareButtonsBar({
   );
 }
 
+type ProvenanceStrings = {
+  verified: string;
+  partial: string;
+  mismatch: string;
+  unverified: string;
+  checked: string;
+  source: string;
+};
+
+const PROVENANCE_UI: Record<CountryRouteCode, ProvenanceStrings> = {
+  en: { verified: 'Verified', partial: 'Barcode found', mismatch: 'Size differs at source', unverified: 'Not yet verified', checked: 'Last checked', source: 'Source' },
+  us: { verified: 'Verified', partial: 'Barcode found', mismatch: 'Size differs at source', unverified: 'Not yet verified', checked: 'Last checked', source: 'Source' },
+  uk: { verified: 'Verified', partial: 'Barcode found', mismatch: 'Size differs at source', unverified: 'Not yet verified', checked: 'Last checked', source: 'Source' },
+  no: { verified: 'Verifisert', partial: 'Strekkode funnet', mismatch: 'Størrelsen avviker i kilden', unverified: 'Ikke verifisert ennå', checked: 'Sist sjekket', source: 'Kilde' },
+  se: { verified: 'Verifierad', partial: 'Streckkod hittad', mismatch: 'Storleken avviker i källan', unverified: 'Inte verifierad ännu', checked: 'Senast kontrollerad', source: 'Källa' },
+  dk: { verified: 'Verificeret', partial: 'Stregkode fundet', mismatch: 'Størrelsen afviger i kilden', unverified: 'Endnu ikke verificeret', checked: 'Sidst tjekket', source: 'Kilde' },
+  pl: { verified: 'Zweryfikowano', partial: 'Znaleziono kod kreskowy', mismatch: 'Rozmiar różni się w źródle', unverified: 'Jeszcze niezweryfikowane', checked: 'Ostatnio sprawdzono', source: 'Źródło' },
+  de: { verified: 'Verifiziert', partial: 'Barcode gefunden', mismatch: 'Größe weicht in der Quelle ab', unverified: 'Noch nicht verifiziert', checked: 'Zuletzt geprüft', source: 'Quelle' },
+  fr: { verified: 'Vérifié', partial: 'Code-barres trouvé', mismatch: 'Taille différente dans la source', unverified: 'Pas encore vérifié', checked: 'Dernière vérification', source: 'Source' },
+  es: { verified: 'Verificado', partial: 'Código de barras encontrado', mismatch: 'El tamaño difiere en la fuente', unverified: 'Aún sin verificar', checked: 'Última comprobación', source: 'Fuente' },
+};
+
 const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
   en: ['Cheapest stores', 'Calculator', 'Products'],
   us: ['Cheapest stores', 'Calculator', 'Products'],
@@ -2545,6 +2567,47 @@ export default function KiloRadarApp({
                         </div>
                       )}
                     </div>
+                    {(() => {
+                      const prov = PROVENANCE_UI[countryCode];
+                      const status = product.verification ?? 'unverified';
+                      const tone =
+                        status === 'verified'
+                          ? 'text-savings'
+                          : status === 'mismatch'
+                          ? 'text-warn'
+                          : 'text-muted-foreground';
+                      const src = product.sources?.[0];
+                      return (
+                        <div
+                          data-testid={`provenance-${product.id}`}
+                          className="px-4 py-2 border-t border-border flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-[11px] text-muted-foreground"
+                        >
+                          <span className={`font-semibold ${tone}`}>{prov[status]}</span>
+                          <span className="flex flex-wrap items-center gap-x-2">
+                            {src &&
+                              (src.url ? (
+                                <a
+                                  href={src.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="underline underline-offset-2 hover:text-foreground"
+                                >
+                                  {prov.source}: {src.name}
+                                </a>
+                              ) : (
+                                <span>
+                                  {prov.source}: {src.name}
+                                </span>
+                              ))}
+                            {product.lastChecked && (
+                              <span className="tabular">
+                                {prov.checked}: {product.lastChecked}
+                              </span>
+                            )}
+                          </span>
+                        </div>
+                      );
+                    })()}
                   </article>
                 );
               })}
