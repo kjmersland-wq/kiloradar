@@ -431,5 +431,848 @@
       ],
       "shrinkEvents": []
     }
-  ]
+  ],
+  "catalog": [
+    {
+      "id": "no-off-5000189983281",
+      "barcode": "5000189983281",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "After Eight Dark Chocolate Thins",
+      "brand": "After Eight",
+      "category": "Chocolate & Sweets",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/018/998/3281/front_en.209.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000189983281",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-3387390339499",
+      "barcode": "3387390339499",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "FITNESS Cerealien",
+      "brand": "Nestlé",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/338/739/033/9499/front_en.211.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3387390339499",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5010029227062",
+      "barcode": "5010029227062",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Oreo O's",
+      "brand": "Oreo",
+      "category": "Cereals & Porridge",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/002/922/7062/front_en.163.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010029227062",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5738001092490",
+      "barcode": "5738001092490",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cornflakes",
+      "brand": "Kellogg's",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/573/800/109/2490/front_en.48.200.jpg",
+      "scans": 29,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5738001092490",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7033330055887",
+      "barcode": "7033330055887",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "540 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Brelett",
+      "brand": "Brelett",
+      "category": "Dairy",
+      "measure": "540 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/333/005/5887/front_nb.30.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7033330055887",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7310865005168",
+      "barcode": "7310865005168",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Svenskt Smör - Normalsaltat",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/086/500/5168/front_sv.15.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310865005168",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7033330013245",
+      "barcode": "7033330013245",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Original",
+      "brand": "Fjordland",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/333/001/3245/front_nb.65.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7033330013245",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7036110009773",
+      "barcode": "7036110009773",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Olivero Med Smør- Og Olivenolje",
+      "brand": "Mills",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/611/000/9773/front_nb.46.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7036110009773",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7310130801709",
+      "barcode": "7310130801709",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Start! Naturell granola",
+      "brand": "Lantmännen",
+      "category": "Cereals & Porridge",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/013/080/1709/front_fi.71.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310130801709",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5011476102957",
+      "barcode": "5011476102957",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Multi Cheerios",
+      "brand": "Nestlé",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/147/610/2957/front_sv.28.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5011476102957",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7033330013290",
+      "barcode": "7033330013290",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bremykt mykere",
+      "brand": "Bremykt",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/333/001/3290/front_nb.52.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7033330013290",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5000159532921",
+      "barcode": "5000159532921",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "BE-KIND caram-alm-sea salt",
+      "brand": "BE-KIND",
+      "category": "Cereals & Porridge",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/015/953/2921/front_nl.44.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000159532921",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7311171008386",
+      "barcode": "7311171008386",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Havrefras Original",
+      "brand": "Havre fras",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/117/100/8386/front_nb.36.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311171008386",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5059319023168",
+      "barcode": "5059319023168",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coco Pops",
+      "brand": "Kellogg's",
+      "category": "Cereals & Porridge",
+      "measure": "330 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/931/902/3168/front_nb.17.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5059319023168",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7038010010187",
+      "barcode": "7038010010187",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Meierismør",
+      "brand": "Tine",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/001/0187/front_nb.67.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010010187",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-5010029000160",
+      "barcode": "5010029000160",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "430 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Weetabix",
+      "brand": "Weetabix",
+      "category": "Cereals & Porridge",
+      "measure": "430 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/002/900/0160/front_fr.22.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010029000160",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7044416013141",
+      "barcode": "7044416013141",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lettkokte Havregryn",
+      "brand": "AXA Bjørn",
+      "category": "Cereals & Porridge",
+      "measure": "1100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/704/441/601/3141/front_nb.113.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7044416013141",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622210690883",
+      "barcode": "7622210690883",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "270 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Milka Alpenmilch Schokolade",
+      "brand": "Milka",
+      "category": "Chocolate & Sweets",
+      "measure": "270 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/069/0883/front_de.67.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210690883",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622400928727",
+      "barcode": "7622400928727",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mørk Sjokolade 86%",
+      "brand": "Freia",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/240/092/8727/front_en.50.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622400928727",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7071319024981",
+      "barcode": "7071319024981",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Smoremyk",
+      "brand": "Bonaventura sales",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/707/131/902/4981/front_nb.46.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7071319024981",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622201746148",
+      "barcode": "7622201746148",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Boble Melkesjokolade",
+      "brand": "Freia",
+      "category": "Chocolate & Sweets",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/220/174/6148/front_nb.45.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622201746148",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7040110569908",
+      "barcode": "7040110569908",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "MELKESJOKOLADE",
+      "brand": "Freia",
+      "category": "Chocolate & Sweets",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/704/011/056/9908/front_en.45.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7040110569908",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7038010010347",
+      "barcode": "7038010010347",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Meierismør",
+      "brand": "Tine sa",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/801/001/0347/front_nb.55.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7038010010347",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622300414399",
+      "barcode": "7622300414399",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Melkesjokolade Kvikk Lunsj",
+      "brand": "Mondelez norge",
+      "category": "Chocolate & Sweets",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/230/041/4399/front_nb.49.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622300414399",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7090006470047",
+      "barcode": "7090006470047",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Røros Smør Økologisk",
+      "brand": "Rørosmeieriet",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/709/000/647/0047/front_nb.37.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7090006470047",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7036110008202",
+      "barcode": "7036110008202",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "370 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hjertego'",
+      "brand": "Hjertego'",
+      "category": "Dairy",
+      "measure": "370 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/703/611/000/8202/front_nb.42.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7036110008202",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622210816672",
+      "barcode": "7622210816672",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "282 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kvikk Lunsj",
+      "brand": "Freia",
+      "category": "Chocolate & Sweets",
+      "measure": "282 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/081/6672/front_en.18.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210816672",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7040110572304",
+      "barcode": "7040110572304",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Melkesjokolade Fruktnøtt",
+      "brand": "Mondelez norge",
+      "category": "Chocolate & Sweets",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/704/011/057/2304/front_nb.25.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7040110572304",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622202050145",
+      "barcode": "7622202050145",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mondelez Norway",
+      "brand": "Freia",
+      "category": "Chocolate & Sweets",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/220/205/0145/front_en.18.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622202050145",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "no-off-7622300137847",
+      "barcode": "7622300137847",
+      "market": "no",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "130 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Melkehjerter",
+      "brand": "Freia",
+      "category": "Chocolate & Sweets",
+      "measure": "130 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/230/013/7847/front_nb.53.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622300137847",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 30
 }

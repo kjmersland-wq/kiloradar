@@ -1,0 +1,291 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "uk",
+  "currency": "GBP",
+  "lastSynced": "2026-11-15",
+  "count": 0,
+  "products": [],
+  "catalog": [
+    {
+      "id": "uk-off-4056489491217",
+      "barcode": "4056489491217",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skyr",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/949/1217/front_en.3.200.jpg",
+      "scans": 141,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489491217",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20416690",
+      "barcode": "20416690",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek Style Natural Light 2% fat",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/041/6690/front_en.230.200.jpg",
+      "scans": 139,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20416690",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489148739",
+      "barcode": "4056489148739",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Creamy Greek Style Natural Yogurt",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/914/8739/front_en.84.200.jpg",
+      "scans": 131,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489148739",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5201054017432",
+      "barcode": "5201054017432",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Total 5% Fat Greek Yogurt",
+      "brand": "FAGE",
+      "category": "Dairy",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/520/105/401/7432/front_en.6.200.jpg",
+      "scans": 117,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5201054017432",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600060880",
+      "barcode": "4088600060880",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek 10% fat authentic yogurt",
+      "brand": "Brooklea",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/006/0880/front_en.81.200.jpg",
+      "scans": 111,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600060880",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5201054017418",
+      "barcode": "5201054017418",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Total 0% fat",
+      "brand": "FAGE",
+      "category": "Dairy",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/520/105/401/7418/front_en.74.200.jpg",
+      "scans": 108,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5201054017418",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3273220182574",
+      "barcode": "3273220182574",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "À la Grecque Greek Style Nature-Natural",
+      "brand": "Sojade",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/322/018/2574/front_en.85.200.jpg",
+      "scans": 101,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3273220182574",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5201054017517",
+      "barcode": "5201054017517",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "950 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Total 0% Fat",
+      "brand": "FAGE",
+      "category": "Dairy",
+      "measure": "950 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/520/105/401/7517/front_en.58.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5201054017517",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600060941",
+      "barcode": "4088600060941",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek 0% Fat Authentic Greek Yogurt",
+      "brand": "Brooklea",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/006/0941/front_en.122.200.jpg",
+      "scans": 57,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600060941",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5036589200970",
+      "barcode": "5036589200970",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek style natural yoghurt",
+      "brand": "Yeo Valley",
+      "category": "Dairy",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/503/658/920/0970/front_en.45.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5036589200970",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 10
+}

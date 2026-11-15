@@ -9,6 +9,8 @@ import json
 import pytest
 
 from sync_products import (
+    discover_openfoodfacts_catalog,
+    update_catalog,
     build_provenance,
     build_shrink_events,
     merge_history,
@@ -219,3 +221,65 @@ def test_pipeline_output_carries_provenance_and_sql_sources():
     sql = generate_d1_sql(results)
     assert "last_checked" in sql
     assert "DELETE FROM product_sources" in sql
+
+
+class _FakeResp:
+    status_code = 200
+
+    def __init__(self, products):
+        self._products = products
+
+    def json(self):
+        return {"products": self._products}
+
+
+def test_discovery_keeps_only_real_parsable_products(monkeypatch):
+    import sync_products
+
+    fake = [
+        {"code": "111", "product_name": "Jacobs Kaffee 500 g", "brands": "Jacobs, Other", "quantity": "500 g"},
+        {"code": "111", "product_name": "Duplicate", "brands": "Jacobs", "quantity": "500 g"},
+        {"code": "222", "product_name": "No quantity", "brands": "X", "quantity": ""},
+        {"code": "333", "product_name": "Garbage size", "brands": "X", "quantity": "lots"},
+    ]
+    monkeypatch.setattr(sync_products.requests, "get", lambda *a, **k: _FakeResp(fake))
+    found = discover_openfoodfacts_catalog("de", per_category=5, categories=[("coffees", "Coffee & Tea")], pause=0)
+    assert [p["barcode"] for p in found] == ["111"]
+    assert found[0]["brand"] == "Jacobs"
+    assert found[0]["measure"] == "500 g"
+    assert found[0]["id"] == "de-off-111"
+
+
+def test_unknown_region_discovers_nothing():
+    assert discover_openfoodfacts_catalog("xx", pause=0) == []
+
+
+def test_catalog_records_shrink_only_when_pack_gets_smaller():
+    item = {"id": "de-off-1", "barcode": "1", "name": "Kaffee", "brand": "B", "category": "Coffee & Tea",
+            "measure": "500 g", "imageUrl": None, "scans": 10}
+    day1 = update_catalog([], [item], "de", "2026-11-14")
+    assert day1[0]["sizeHistory"] == [{"date": "2026-11-14", "value": "500 g"}]
+    assert day1[0]["shrinkEvents"] == []
+    assert day1[0]["verification"] == "verified"
+
+    # Same size again: no new history, no event
+    day2 = update_catalog(day1, [item], "de", "2026-11-15")
+    assert len(day2[0]["sizeHistory"]) == 1
+
+    # Smaller pack: history grows and a shrink event is recorded
+    smaller = dict(item, measure="400 g")
+    day3 = update_catalog(day2, [smaller], "de", "2026-11-16")
+    assert [e["value"] for e in day3[0]["sizeHistory"]] == ["500 g", "400 g"]
+    assert day3[0]["shrinkEvents"][0]["from"] == "500 g"
+
+    # Bigger pack: history grows but it is not a shrink event
+    bigger = dict(item, measure="600 g")
+    day4 = update_catalog(day3, [bigger], "de", "2026-11-17")
+    assert len(day4[0]["shrinkEvents"]) == 1
+
+
+def test_offline_run_never_invents_products_for_new_markets():
+    results = run_full_pipeline(fetch_live=False, regions=["de", "fr", "es", "us", "uk"])
+    for region in ("de", "fr", "es", "us", "uk"):
+        assert results[region]["count"] == 0
+        assert results[region]["currency"] in ("EUR", "USD", "GBP")

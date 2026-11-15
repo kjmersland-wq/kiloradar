@@ -1,0 +1,851 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "es",
+  "currency": "EUR",
+  "lastSynced": "2026-11-15",
+  "count": 0,
+  "products": [],
+  "catalog": [
+    {
+      "id": "es-off-7622300441937",
+      "barcode": "7622300441937",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Philadelphia Original",
+      "brand": "Mondelez Schweiz GmbH",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/230/044/1937/front_en.146.200.jpg",
+      "scans": 378,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622300441937",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-20002183",
+      "barcode": "20002183",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fiocchi di latte",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/000/2183/front_it.435.200.jpg",
+      "scans": 336,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20002183",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8076800195057",
+      "barcode": "8076800195057",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spaghetti Nº5",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/019/5057/front_en.3881.200.jpg",
+      "scans": 237,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800195057",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8076802085738",
+      "barcode": "8076802085738",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rigatoni Penne Rigate Nº73",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/208/5738/front_en.3506.200.jpg",
+      "scans": 224,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076802085738",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8076809529433",
+      "barcode": "8076809529433",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Whole Wheat Penne Rigate",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/9433/front_en.476.200.jpg",
+      "scans": 209,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809529433",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3161711001971",
+      "barcode": "3161711001971",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage de France",
+      "brand": "BG SAS",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/171/100/1971/front_en.152.200.jpg",
+      "scans": 204,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3161711001971",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8076809529419",
+      "barcode": "8076809529419",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes spaghetti au blé complet integral 500g",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/9419/front_fr.1682.200.jpg",
+      "scans": 201,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809529419",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-7622210103314",
+      "barcode": "7622210103314",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso cremoso",
+      "brand": "Mondelez Schweiz GmbH",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/010/3314/front_en.66.200.jpg",
+      "scans": 181,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210103314",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8000430138719",
+      "barcode": "8000430138719",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.125 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "mozzarella",
+      "brand": "Egidio Galbani Srl",
+      "category": "Dairy",
+      "measure": "0.125 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/043/013/8719/front_en.91.200.jpg",
+      "scans": 168,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000430138719",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8801073116467",
+      "barcode": "8801073116467",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "130 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Buldak hot chicken Flavour Ramen",
+      "brand": "Samyang",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "130 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/6467/front_de.166.200.jpg",
+      "scans": 168,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073116467",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8076800376999",
+      "barcode": "8076800376999",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lasagne all'uovo",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/037/6999/front_it.330.200.jpg",
+      "scans": 166,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800376999",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3270190207696",
+      "barcode": "3270190207696",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Emmental Râpé Fondant",
+      "brand": "CARREFOUR FRANCE",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/019/020/7696/front_fr.224.200.jpg",
+      "scans": 149,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3270190207696",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8480000512239",
+      "barcode": "8480000512239",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso blanco pasteurizado",
+      "brand": "MERCADONA",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/848/000/051/2239/front_en.133.200.jpg",
+      "scans": 122,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8480000512239",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8480000609632",
+      "barcode": "8480000609632",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso fresco cottage",
+      "brand": "MERCADONA",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/848/000/060/9632/front_es.122.200.jpg",
+      "scans": 111,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8480000609632",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8480000512031",
+      "barcode": "8480000512031",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso crema suave",
+      "brand": "MERCADONA",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/848/000/051/2031/front_es.81.200.jpg",
+      "scans": 108,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8480000512031",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560070157198",
+      "barcode": "3560070157198",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso rallado parmesano",
+      "brand": "CARREFOUR FRANCE",
+      "category": "Dairy",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/015/7198/front_es.165.200.jpg",
+      "scans": 108,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070157198",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560070837984",
+      "barcode": "3560070837984",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Basmati",
+      "brand": "Carrefour",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/083/7984/front_fr.110.200.jpg",
+      "scans": 96,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070837984",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560071254179",
+      "barcode": "3560071254179",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz basmati complet",
+      "brand": "Carrefour BIO",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/125/4179/front_en.6.200.jpg",
+      "scans": 93,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071254179",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560070510771",
+      "barcode": "3560070510771",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Complet",
+      "brand": "Carrefour",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/051/0771/front_fr.90.200.jpg",
+      "scans": 89,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070510771",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560070393619",
+      "barcode": "3560070393619",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Carrefour",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/039/3619/front_fr.108.200.jpg",
+      "scans": 85,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070393619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8032804430822",
+      "barcode": "8032804430822",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pasta Lentejas",
+      "brand": "Andriani SpA",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/803/280/443/0822/front_pt.118.200.jpg",
+      "scans": 83,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8032804430822",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8076808150072",
+      "barcode": "8076808150072",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes spaghettoni n°7 500g",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/815/0072/front_fr.374.200.jpg",
+      "scans": 82,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076808150072",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3245411573669",
+      "barcode": "3245411573669",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz",
+      "brand": "Carrefour BIO",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/541/157/3669/front_fr.202.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3245411573669",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560071082727",
+      "barcode": "3560071082727",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Penne rigate Semi-Complets",
+      "brand": "Carrefour BIO",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/108/2727/front_fr.68.200.jpg",
+      "scans": 67,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071082727",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-3560071272555",
+      "barcode": "3560071272555",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz bazmati bio",
+      "brand": "Carrefour BIO",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/127/2555/front_fr.63.200.jpg",
+      "scans": 65,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071272555",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-4056489009191",
+      "barcode": "4056489009191",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tortelloni Ricotta et épinards",
+      "brand": "LIDL",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/900/9191/front_en.138.200.jpg",
+      "scans": 44,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489009191",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8410184040747",
+      "barcode": "8410184040747",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sabroz arroz integral",
+      "brand": "Sabroz",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/018/404/0747/front_es.6.200.jpg",
+      "scans": 37,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410184040747",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8480000050021",
+      "barcode": "8480000050021",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Arroz basmati aromático",
+      "brand": "Hacendado",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/848/000/005/0021/front_en.151.200.jpg",
+      "scans": 33,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8480000050021",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8480000050441",
+      "barcode": "8480000050441",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Arroz Redondo",
+      "brand": "MERCADONA",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/848/000/005/0441/front_es.60.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8480000050441",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "es-off-8410184013086",
+      "barcode": "8410184013086",
+      "market": "es",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Arroz redondo tradicional 125g",
+      "brand": "Brillante",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/018/401/3086/front_es.71.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410184013086",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 30
+}

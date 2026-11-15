@@ -1,0 +1,599 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "us",
+  "currency": "USD",
+  "lastSynced": "2026-11-15",
+  "count": 0,
+  "products": [],
+  "catalog": [
+    {
+      "id": "us-off-20005832",
+      "barcode": "20005832",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark chocolate 50% Cocoa",
+      "brand": "Fin Carré",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/000/5832/front_en.253.200.jpg",
+      "scans": 216,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20005832",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8425197712024",
+      "barcode": "8425197712024",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocolate con leche y almendras",
+      "brand": "CHOCOLATES MARUJA S.L.",
+      "category": "Chocolate & Sweets",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/842/519/771/2024/front_en.60.200.jpg",
+      "scans": 176,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8425197712024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-20621483",
+      "barcode": "20621483",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Special Flakes Bran Flakes",
+      "brand": "Crownfield",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/062/1483/front_en.206.200.jpg",
+      "scans": 131,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20621483",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0096619194261",
+      "barcode": "0096619194261",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "35.3 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ancient Grains Probiotic Granola",
+      "brand": "Kirkland Signature",
+      "category": "Cereals & Porridge",
+      "measure": "35.3 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/009/661/919/4261/front_en.199.200.jpg",
+      "scans": 114,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0096619194261",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0058449770206",
+      "barcode": "0058449770206",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Heritage Flakes",
+      "brand": "Nature's Path Organic",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/005/844/977/0206/front_en.48.200.jpg",
+      "scans": 65,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0058449770206",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0884912004710",
+      "barcode": "0884912004710",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "20.5 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "grape-nuts cereal",
+      "brand": "Post",
+      "category": "Cereals & Porridge",
+      "measure": "20.5 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/088/491/200/4710/front_en.95.200.jpg",
+      "scans": 58,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0884912004710",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0058449770565",
+      "barcode": "0058449770565",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "35.3 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pumpkin Seed + Flax Granola",
+      "brand": "Nature's Path Organic",
+      "category": "Cereals & Porridge",
+      "measure": "35.3 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/005/844/977/0565/front_en.111.200.jpg",
+      "scans": 53,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0058449770565",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0016000147652",
+      "barcode": "0016000147652",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 lb"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lightly Sweetened Maple Berry Blend Cereal",
+      "brand": "Morning Summit",
+      "category": "Cereals & Porridge",
+      "measure": "2 lb",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/600/014/7652/front_en.41.200.jpg",
+      "scans": 51,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0016000147652",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0675625371189",
+      "barcode": "0675625371189",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "5 lb"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sprouted Rolled Oats",
+      "brand": "One Degree Organic Foods",
+      "category": "Cereals & Porridge",
+      "measure": "5 lb",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/067/562/537/1189/front_en.252.200.jpg",
+      "scans": 47,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0675625371189",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0016000275263",
+      "barcode": "0016000275263",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "8.9 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cheerios",
+      "brand": "General Mills",
+      "category": "Cereals & Porridge",
+      "measure": "8.9 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/600/027/5263/front_en.77.200.jpg",
+      "scans": 44,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0016000275263",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-7614500010617",
+      "barcode": "7614500010617",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark Chocolate with Honey and Almond Nougat",
+      "brand": "Toblerone",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/450/001/0617/front_en.118.200.jpg",
+      "scans": 42,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7614500010617",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0857484006611",
+      "barcode": "0857484006611",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "15.3 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "dark chocolate coconut whips",
+      "brand": "UNREAL",
+      "category": "Chocolate & Sweets",
+      "measure": "15.3 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/085/748/400/6611/front_en.71.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0857484006611",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0016000170032",
+      "barcode": "0016000170032",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "18 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cheerios",
+      "brand": "General Mills",
+      "category": "Cereals & Porridge",
+      "measure": "18 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/600/017/0032/front_en.47.200.jpg",
+      "scans": 35,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0016000170032",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-7622210249661",
+      "barcode": "7622210249661",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "180 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark Chocolate",
+      "brand": "Cadbury Bournville",
+      "category": "Chocolate & Sweets",
+      "measure": "180 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/024/9661/front_en.106.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210249661",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0016000435094",
+      "barcode": "0016000435094",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 lb"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Toasted Whole Grain Oat Cereal",
+      "brand": "Cheerios",
+      "category": "Cereals & Porridge",
+      "measure": "2 lb",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/600/043/5094/front_en.65.200.jpg",
+      "scans": 28,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0016000435094",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0037466016450",
+      "barcode": "0037466016450",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "3.5 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark Chocolate",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "3.5 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/003/746/601/6450/front_en.100.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0037466016450",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5901588018195",
+      "barcode": "5901588018195",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "80 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Czekolada mocno gorzka 80%",
+      "brand": "E. Wedel",
+      "category": "Chocolate & Sweets",
+      "measure": "80 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/158/801/8195/front_en.49.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5901588018195",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-7622202257421",
+      "barcode": "7622202257421",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Milka Noisette",
+      "brand": "Milka",
+      "category": "Chocolate & Sweets",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/220/225/7421/front_en.5.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622202257421",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-4000539142628",
+      "barcode": "4000539142628",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "145 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "DUBAI Style CHOCOLATE PISTACHIO & KADAYIF",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "145 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/053/914/2628/front_en.11.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4000539142628",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3173281446595",
+      "barcode": "3173281446595",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocolat noir 82%",
+      "brand": "Cemoi",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/328/144/6595/front_en.17.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3173281446595",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0810091781012",
+      "barcode": "0810091781012",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Queso Grain Free Puff Snacks",
+      "brand": "Siete",
+      "category": "Snacks",
+      "measure": "12 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/081/009/178/1012/front_en.13.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0810091781012",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 21
+}

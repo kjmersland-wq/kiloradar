@@ -36,6 +36,7 @@ import {
   Check,
   HelpCircle,
 } from 'lucide-react';
+import CatalogSection, { CATALOG_UI, type CatalogItem } from './CatalogSection';
 import {
   ProductItem,
   analyzeProductShrinkflation,
@@ -739,6 +740,7 @@ export default function KiloRadarApp({
     })
   );
 
+  const [catalogItems, setCatalogItems] = useState<CatalogItem[]>([]);
   const [lastSyncedDate, setLastSyncedDate] = useState<string>(() =>
     new Date().toISOString().slice(0, 10)
   );
@@ -748,6 +750,7 @@ export default function KiloRadarApp({
   useEffect(() => {
     let active = true;
     const staticRegion = countryCode === 'en' ? 'global' : countryCode;
+    setCatalogItems([]);
 
     const mergeSyncedProducts = (
       baseProducts: ProductItem[],
@@ -770,6 +773,7 @@ export default function KiloRadarApp({
       .then((data) => {
         if (!active || !data) return;
         if (data.lastSynced) setLastSyncedDate(data.lastSynced);
+        if (Array.isArray(data.catalog)) setCatalogItems(data.catalog as CatalogItem[]);
         if (Array.isArray(data.products) && data.products.length > 0) {
           setProductsByCountry((prev) => ({
             ...prev,
@@ -1520,6 +1524,11 @@ export default function KiloRadarApp({
                 <a href="#calculator" className="rounded-full border border-border bg-card px-6 py-3 font-semibold text-foreground transition-colors hover:bg-secondary">
                   {dict.simulatorTitle}
                 </a>
+                {catalogItems.length > 0 && (
+                  <a href="#catalog" className="rounded-full border border-savings/40 bg-savings/10 px-6 py-3 font-semibold text-savings transition-colors hover:bg-savings/20">
+                    {CATALOG_UI[countryCode].badge} ({catalogItems.length})
+                  </a>
+                )}
               </div>
             </div>
             {heroProduct && (
@@ -2156,6 +2165,9 @@ export default function KiloRadarApp({
               )}
             </div>
           </section>
+
+          {/* VERIFIED CATALOG (real Open Food Facts products, prices coming) */}
+          <CatalogSection items={catalogItems} countryCode={countryCode} />
 
           {/* COMPACT PRODUCT CARDS GRID WITH CATEGORY SVG ICONS */}
           <section id="products" className="space-y-4 scroll-mt-20">

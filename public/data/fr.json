@@ -1,0 +1,1243 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "fr",
+  "currency": "EUR",
+  "lastSynced": "2026-11-15",
+  "count": 0,
+  "products": [],
+  "catalog": [
+    {
+      "id": "fr-off-6111246721261",
+      "barcode": "6111246721261",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage Blanc Nature",
+      "brand": "Milky Food Professional",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/1261/front_fr.118.200.jpg",
+      "scans": 961,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246721261",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3480341000674",
+      "barcode": "3480341000674",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Carré frais 0% 200g",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/034/100/0674/front_en.133.200.jpg",
+      "scans": 803,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3480341000674",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3480341000636",
+      "barcode": "3480341000636",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Carré Frais",
+      "brand": "elle et vire",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/034/100/0636/front_en.150.200.jpg",
+      "scans": 668,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3480341000636",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3412290070101",
+      "barcode": "3412290070101",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "180 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage à tartiner Nature fouetté MADAME LOIK - 180g",
+      "brand": "Le Fromage Fouetté Madame Loïk",
+      "category": "Dairy",
+      "measure": "180 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/341/229/007/0101/front_fr.128.200.jpg",
+      "scans": 662,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3412290070101",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111242106949",
+      "barcode": "6111242106949",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jben",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "160 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/6949/front_fr.77.200.jpg",
+      "scans": 583,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242106949",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111246721940",
+      "barcode": "6111246721940",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "900 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "le blanc nature 900g araai",
+      "brand": "le berger",
+      "category": "Dairy",
+      "measure": "900 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/1940/front_fr.21.200.jpg",
+      "scans": 437,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246721940",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3240931548111",
+      "barcode": "3240931548111",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "325 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gnocchi à poêler",
+      "brand": "Lustucru",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "325 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/093/154/8111/front_fr.111.200.jpg",
+      "scans": 429,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3240931548111",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111259092495",
+      "barcode": "6111259092495",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Goldium crémeux",
+      "brand": "",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/125/909/2495/front_fr.8.200.jpg",
+      "scans": 372,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111259092495",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111242100206",
+      "barcode": "6111242100206",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le nature",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0206/front_en.38.200.jpg",
+      "scans": 330,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100206",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111246721278",
+      "barcode": "6111246721278",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cream cheese",
+      "brand": "Original",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/1278/front_en.4.200.jpg",
+      "scans": 311,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246721278",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111266963207",
+      "barcode": "6111266963207",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "كيفير",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/126/696/3207/front_en.42.200.jpg",
+      "scans": 311,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111266963207",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111242100305",
+      "barcode": "6111242100305",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "jaouda Cremy",
+      "brand": "jaouda",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0305/front_fr.98.200.jpg",
+      "scans": 281,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100305",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3661344688339",
+      "barcode": "3661344688339",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "460 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Les 2 Vaches Vanille Bio de Madagascar 4 x 115 g",
+      "brand": "Les 2 Vaches",
+      "category": "Dairy",
+      "measure": "460 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/366/134/468/8339/front_fr.54.200.jpg",
+      "scans": 280,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3661344688339",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111206000733",
+      "barcode": "6111206000733",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "190 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jebli",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "190 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/120/600/0733/front_ar.108.200.jpg",
+      "scans": 264,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111206000733",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111259092525",
+      "barcode": "6111259092525",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Goldium Blanc Nature",
+      "brand": "Maître Fromager",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/125/909/2525/front_fr.3.200.jpg",
+      "scans": 260,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111259092525",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3240931548135",
+      "barcode": "3240931548135",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "720 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lustucru gnocchi a poêler format xxl 720g",
+      "brand": "Lustucru",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "720 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/093/154/8135/front_fr.109.200.jpg",
+      "scans": 253,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3240931548135",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111032006619",
+      "barcode": "6111032006619",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jamila رايبي",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/6619/front_fr.69.200.jpg",
+      "scans": 246,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032006619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8076800195057",
+      "barcode": "8076800195057",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spaghetti Nº5",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/019/5057/front_en.3881.200.jpg",
+      "scans": 237,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800195057",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8076802085738",
+      "barcode": "8076802085738",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rigatoni Penne Rigate Nº73",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/208/5738/front_en.3506.200.jpg",
+      "scans": 224,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076802085738",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3240931548128",
+      "barcode": "3240931548128",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "520 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lustucru gnocchi a poêler 520g",
+      "brand": "Lustucru",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "520 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/093/154/8128/front_fr.88.200.jpg",
+      "scans": 220,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3240931548128",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111246722107",
+      "barcode": "6111246722107",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Frommage fondu",
+      "brand": "REWE Beste Wahl",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/2107/front_fr.3.200.jpg",
+      "scans": 216,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246722107",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8852018101024",
+      "barcode": "8852018101024",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "60 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Instant Noedels Kipsmaak",
+      "brand": "YumYum",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "60 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/885/201/810/1024/front_en.417.200.jpg",
+      "scans": 212,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8852018101024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8076809529433",
+      "barcode": "8076809529433",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Whole Wheat Penne Rigate",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/9433/front_en.476.200.jpg",
+      "scans": 209,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809529433",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8076802085981",
+      "barcode": "8076802085981",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nudeln Fusilli",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/208/5981/front_en.44.200.jpg",
+      "scans": 199,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076802085981",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3175681170841",
+      "barcode": "3175681170841",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "267 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ravioli au tofu, tomates, basilic",
+      "brand": "Céréales bio",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "267 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/568/117/0841/front_fr.108.200.jpg",
+      "scans": 189,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175681170841",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3760341070472",
+      "barcode": "3760341070472",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Taureau Ailé - Le Basmati du Penjab",
+      "brand": "Taureau Ailé",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/376/034/107/0472/front_en.11.200.jpg",
+      "scans": 189,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3760341070472",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3487400006745",
+      "barcode": "3487400006745",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz tomate à l’italienne",
+      "brand": "Ben's Original",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/740/000/6745/front_fr.39.200.jpg",
+      "scans": 185,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3487400006745",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8076800376999",
+      "barcode": "8076800376999",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lasagne all'uovo",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/037/6999/front_it.330.200.jpg",
+      "scans": 166,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800376999",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111032002925",
+      "barcode": "6111032002925",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Danone nature",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/2925/front_fr.44.200.jpg",
+      "scans": 160,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032002925",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111242100930",
+      "barcode": "6111242100930",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "رايبي جودة",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0930/front_fr.78.200.jpg",
+      "scans": 152,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100930",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3487400006721",
+      "barcode": "3487400006721",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Ben's Original",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/740/000/6721/front_fr.42.200.jpg",
+      "scans": 139,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3487400006721",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111032002208",
+      "barcode": "6111032002208",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Activia Céréales",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/2208/front_fr.26.200.jpg",
+      "scans": 138,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032002208",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111126001711",
+      "barcode": "6111126001711",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jnane nature sans sucre",
+      "brand": "Chergui",
+      "category": "Dairy",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/112/600/1711/front_fr.4.200.jpg",
+      "scans": 131,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111126001711",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564700444207",
+      "barcode": "3564700444207",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz complet",
+      "brand": "Marque Repère",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/044/4207/front_fr.65.200.jpg",
+      "scans": 108,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564700444207",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3760341070540",
+      "barcode": "3760341070540",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Thaï du Plateau de l'i-san pure origine",
+      "brand": "Taureau Ailé",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/376/034/107/0540/front_fr.36.200.jpg",
+      "scans": 99,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3760341070540",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3250391418107",
+      "barcode": "3250391418107",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SAINT ELOI riz complet cuisson 10 mn étui 500gr",
+      "brand": "Saint Eloi",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/039/141/8107/front_fr.64.200.jpg",
+      "scans": 96,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3250391418107",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-4056489095736",
+      "barcode": "4056489095736",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "240 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Golden Sun",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "240 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/909/5736/front_en.30.200.jpg",
+      "scans": 92,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489095736",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3560070510771",
+      "barcode": "3560070510771",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Complet",
+      "brand": "Carrefour",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/051/0771/front_fr.90.200.jpg",
+      "scans": 89,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070510771",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3487400006967",
+      "barcode": "3487400006967",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz aux Champignons de Paris",
+      "brand": "Ben's Original",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/740/000/6967/front_fr.27.200.jpg",
+      "scans": 88,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3487400006967",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3560070393619",
+      "barcode": "3560070393619",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Carrefour",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/039/3619/front_fr.108.200.jpg",
+      "scans": 85,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070393619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-9310179006767",
+      "barcode": "9310179006767",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Golden Circle Golden Pash Fruit Drink",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/900/6767/front_en.37.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179006767",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-9310179199353",
+      "barcode": "9310179199353",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "1L GC Guava Nectar",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/919/9353/front_fr.4.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179199353",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-9310179188098",
+      "barcode": "9310179188098",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple Blackcurrant juice",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/918/8098/front_fr.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179188098",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-9310179008594",
+      "barcode": "9310179008594",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple Mango Juice",
+      "brand": "Golden Circle",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/931/017/900/8594/front_fr.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9310179008594",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 44
+}

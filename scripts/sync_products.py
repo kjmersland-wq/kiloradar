@@ -19,7 +19,9 @@ import json
 import math
 import pathlib
 import re
+import os
 import statistics
+import time
 from dataclasses import dataclass
 from typing import Any
 
@@ -883,7 +885,11 @@ def sync_region(region_code: str, fetch_live: bool = True) -> dict[str, Any]:
     by shrinkflation index.
     """
     base_key = "en" if region_code == "global" else region_code
-    region_cfg = REGIONAL_BASELINES.get(base_key, REGIONAL_BASELINES["en"])
+    if region_code in REGION_CURRENCY and region_code not in REGIONAL_BASELINES:
+        # No hand-written baseline for these markets: only real discovered data (see catalog)
+        region_cfg: dict[str, Any] = {"currency": REGION_CURRENCY[region_code], "products": []}
+    else:
+        region_cfg = REGIONAL_BASELINES.get(base_key, REGIONAL_BASELINES["en"])
     currency = region_cfg["currency"]
 
     today_iso = dt.date.today().isoformat()
@@ -1014,19 +1020,206 @@ def generate_d1_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def run_full_pipeline(fetch_live: bool = True) -> dict[str, dict[str, Any]]:
+# --- Step 2: real catalog discovery from Open Food Facts --------------------------------------
+# Discovers the most-scanned real products per market and category. Nothing here is invented:
+# every entry comes from an Open Food Facts record. OFF has no price history, so a discovered
+# product starts with a single size snapshot; shrink events appear only when a later nightly
+# run observes a smaller pack for the same barcode.
+
+OFF_SEARCH_URL = "https://world.openfoodfacts.org/api/v2/search"
+OFF_REQUEST_PAUSE_SECONDS = 6.5  # OFF allows ~10 search requests per minute
+
+OFF_COUNTRY_TAG: dict[str, str] = {
+    "no": "norway",
+    "se": "sweden",
+    "dk": "denmark",
+    "pl": "poland",
+    "de": "germany",
+    "fr": "france",
+    "es": "spain",
+    "uk": "united-kingdom",
+    "us": "united-states",
+}
+
+# Food categories from the product strategy. Non-food categories (detergents, toilet paper,
+# personal care) are not in Open Food Facts and need a separate source (see strategy, step 2b).
+OFF_CORE_CATEGORIES: list[tuple[str, str]] = [
+    ("coffees", "Coffee & Tea"),
+    ("chocolates", "Chocolate & Sweets"),
+    ("butters", "Dairy"),
+    ("cheeses", "Dairy"),
+    ("yogurts", "Dairy"),
+    ("chips-and-crisps", "Snacks"),
+    ("breakfast-cereals", "Cereals & Porridge"),
+    ("pastas", "Pasta, Rice & Dry Goods"),
+    ("rices", "Pasta, Rice & Dry Goods"),
+    ("juices", "Juice & Drinks"),
+]
+
+REGION_CURRENCY: dict[str, str] = {"de": "EUR", "fr": "EUR", "es": "EUR", "us": "USD", "uk": "GBP"}
+
+
+def discover_openfoodfacts_catalog(
+    region_code: str,
+    per_category: int = 10,
+    categories: list[tuple[str, str]] | None = None,
+    pause: float = OFF_REQUEST_PAUSE_SECONDS,
+) -> list[dict[str, Any]]:
+    """Fetches the most-scanned real products per core category for one market."""
+    country_tag = OFF_COUNTRY_TAG.get(region_code)
+    if not country_tag:
+        return []
+    headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
+    found: dict[str, dict[str, Any]] = {}
+    for cat_tag, cat_label in categories or OFF_CORE_CATEGORIES:
+        try:
+            resp = requests.get(
+                OFF_SEARCH_URL,
+                params={
+                    "countries_tags_en": country_tag,
+                    "categories_tags_en": cat_tag,
+                    "sort_by": "unique_scans_n",
+                    "page_size": per_category * 3,
+                    "fields": "code,product_name,brands,quantity,image_front_small_url,unique_scans_n",
+                },
+                headers=headers,
+                timeout=25,
+            )
+            if resp.status_code != 200:
+                continue
+            items = resp.json().get("products", [])
+        except (requests.RequestException, ValueError):
+            continue
+        finally:
+            time.sleep(pause)
+
+        taken = 0
+        for item in items:
+            code = str(item.get("code", "")).strip()
+            quantity = str(item.get("quantity") or "").strip()
+            name = str(item.get("product_name") or "").strip()
+            brand = str(item.get("brands") or "").split(",")[0].strip()
+            if not (code and quantity and name) or code in found:
+                continue
+            try:
+                parsed = parse_measure(quantity)
+            except ValueError:
+                continue
+            if parsed.standard_amount <= 0 or parsed.standard_amount > MAX_VALID_GRAMS:
+                continue
+            found[code] = {
+                "id": f"{region_code}-off-{code}",
+                "barcode": code,
+                "name": name,
+                "brand": brand,
+                "category": cat_label,
+                "measure": f"{parsed.raw_quantity:g} {parsed.raw_unit}",
+                "imageUrl": item.get("image_front_small_url"),
+                "scans": item.get("unique_scans_n") or 0,
+            }
+            taken += 1
+            if taken >= per_category:
+                break
+    return list(found.values())
+
+
+def update_catalog(
+    previous: list[dict[str, Any]],
+    discovered: list[dict[str, Any]],
+    region_code: str,
+    today_iso: str,
+) -> list[dict[str, Any]]:
+    """
+    Merges today's discovery into the stored catalog. Existing entries keep their history;
+    a smaller pack than the last recorded size becomes a shrink event. Products that were not
+    seen tonight are kept (they may just have dropped out of the top list).
+    """
+    by_id = {str(p["id"]): dict(p) for p in previous if p.get("id")}
+    for item in discovered:
+        entry = by_id.get(item["id"])
+        provenance_source = {
+            "name": "Open Food Facts",
+            "url": OFF_PRODUCT_URL.format(ean=item["barcode"]),
+            "checked": today_iso,
+        }
+        if entry is None:
+            entry = {
+                "id": item["id"],
+                "barcode": item["barcode"],
+                "market": region_code,
+                "sizeHistory": [{"date": today_iso, "value": item["measure"]}],
+                "shrinkEvents": [],
+            }
+        else:
+            last = entry.get("sizeHistory", [])
+            if last and last[-1].get("value") != item["measure"]:
+                try:
+                    before = parse_measure(str(last[-1]["value"])).standard_amount
+                    after = parse_measure(item["measure"]).standard_amount
+                except ValueError:
+                    before = after = 0.0
+                if after and before and after < before:
+                    entry.setdefault("shrinkEvents", []).append(
+                        {
+                            "date": today_iso,
+                            "from": last[-1]["value"],
+                            "to": item["measure"],
+                            "shrinkIndex": None,
+                        }
+                    )
+                entry["sizeHistory"] = last + [{"date": today_iso, "value": item["measure"]}]
+        entry.update(
+            {
+                "name": item["name"],
+                "brand": item["brand"],
+                "category": item["category"],
+                "measure": item["measure"],
+                "imageUrl": item.get("imageUrl"),
+                "scans": item.get("scans", 0),
+                "sources": [provenance_source],
+                "lastChecked": today_iso,
+                "verification": "verified",
+                "matchConfidence": 1.0,
+            }
+        )
+        by_id[item["id"]] = entry
+    return sorted(by_id.values(), key=lambda e: int(e.get("scans") or 0), reverse=True)
+
+
+def run_full_pipeline(
+    fetch_live: bool = True, regions: list[str] | None = None, discover: bool | None = None
+) -> dict[str, dict[str, Any]]:
     """
     Runs the complete synchronization pipeline across all regions, writes static JSON files
     to `public/data/[country].json`, and writes Cloudflare D1 SQL to `scripts/latest_sync.sql`.
+
+    Catalog discovery (real Open Food Facts products) runs only when fetch_live is true.
+    Set KILORADAR_REGIONS=de,fr to limit a run to some regions.
     """
     PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    regions = ["global", "en", "no", "se", "dk", "pl"]
+    env_regions = os.environ.get("KILORADAR_REGIONS")
+    if regions is None and env_regions:
+        regions = [r.strip() for r in env_regions.split(",") if r.strip()]
+    regions = regions or ["global", "en", "no", "se", "dk", "pl", "de", "fr", "es", "us", "uk"]
+    do_discover = fetch_live if discover is None else discover
+    today_iso = dt.date.today().isoformat()
     synced: dict[str, dict[str, Any]] = {}
 
     for reg in regions:
         payload = sync_region(reg, fetch_live=fetch_live)
-        synced[reg] = payload
+
         out_path = PUBLIC_DATA_DIR / f"{reg}.json"
+        previous_catalog: list[dict[str, Any]] = []
+        if out_path.exists():
+            try:
+                previous_catalog = json.loads(out_path.read_text(encoding="utf-8")).get("catalog", [])
+            except (ValueError, OSError):
+                previous_catalog = []
+        discovered = discover_openfoodfacts_catalog(reg) if do_discover else []
+        payload["catalog"] = update_catalog(previous_catalog, discovered, reg, today_iso)
+        payload["catalogCount"] = len(payload["catalog"])
+
+        synced[reg] = payload
         out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     sql_content = generate_d1_sql(synced)
@@ -1038,7 +1231,9 @@ def run_full_pipeline(fetch_live: bool = True) -> dict[str, dict[str, Any]]:
 
 if __name__ == "__main__":
     results = run_full_pipeline(fetch_live=True)
-    total_items = sum(r["count"] for k, r in results.items() if k != "global")
+    total_items = sum(
+        r["count"] + r.get("catalogCount", 0) for k, r in results.items() if k != "global"
+    )
     print(
         f"✔ KiloRadar Python pipeline synced {len(results)} region files ({total_items} products) "
         f"to {PUBLIC_DATA_DIR} and generated {LATEST_SQL_PATH.name}."

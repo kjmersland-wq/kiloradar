@@ -1,0 +1,1411 @@
+{
+  "source": "python-pipeline-openfoodfacts",
+  "country": "de",
+  "currency": "EUR",
+  "lastSynced": "2026-11-15",
+  "count": 0,
+  "products": [],
+  "catalog": [
+    {
+      "id": "de-off-3046920029759",
+      "barcode": "3046920029759",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence Noir Prodigieux 90% Cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9759/front_en.544.200.jpg",
+      "scans": 858,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029759",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3046920022606",
+      "barcode": "3046920022606",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 85% cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/2606/front_en.102.200.jpg",
+      "scans": 830,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920022606",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3480341000674",
+      "barcode": "3480341000674",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Carré frais 0% 200g",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/348/034/100/0674/front_en.133.200.jpg",
+      "scans": 803,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3480341000674",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3046920022651",
+      "barcode": "3046920022651",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Noir Intense",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/2651/front_en.159.200.jpg",
+      "scans": 772,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920022651",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20995553",
+      "barcode": "20995553",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Шоколад 85% какаова маса",
+      "brand": "J.D: Gross",
+      "category": "Chocolate & Sweets",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/5553/front_en.380.200.jpg",
+      "scans": 599,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20995553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3412290070071",
+      "barcode": "3412290070071",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage à tartiner Nature fouetté MADAME LOIK - 320g",
+      "brand": "Paysan Breton",
+      "category": "Dairy",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/341/229/007/0071/front_fr.97.200.jpg",
+      "scans": 455,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3412290070071",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20095291",
+      "barcode": "20095291",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cioccolato fondente",
+      "brand": "J. D. Gross (Lidl)",
+      "category": "Chocolate & Sweets",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/009/5291/front_en.323.200.jpg",
+      "scans": 407,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20095291",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-7622300441937",
+      "barcode": "7622300441937",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Philadelphia Original",
+      "brand": "Mondelez Schweiz GmbH",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/230/044/1937/front_en.146.200.jpg",
+      "scans": 378,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622300441937",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3046920028363",
+      "barcode": "3046920028363",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 85% Cacao Rich Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8363/front_en.500.200.jpg",
+      "scans": 360,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028363",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3046920028721",
+      "barcode": "3046920028721",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark absolute 99% cacao",
+      "brand": "LINDT SPRUNGLI SAS",
+      "category": "Chocolate & Sweets",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8721/front_en.295.200.jpg",
+      "scans": 341,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028721",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20002183",
+      "barcode": "20002183",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fiocchi di latte",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/000/2183/front_it.435.200.jpg",
+      "scans": 336,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20002183",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3046920028004",
+      "barcode": "3046920028004",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 70% Cocoa Intense Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8004/front_en.435.200.jpg",
+      "scans": 320,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028004",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3073781131888",
+      "barcode": "3073781131888",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "144 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "verse smeltkaas",
+      "brand": "Kiri",
+      "category": "Dairy",
+      "measure": "144 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/307/378/113/1888/front_en.769.200.jpg",
+      "scans": 284,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3073781131888",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-7613035040823",
+      "barcode": "7613035040823",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "205 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nestlé dessert Noir",
+      "brand": "Nestlé",
+      "category": "Chocolate & Sweets",
+      "measure": "205 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/504/0823/front_en.357.200.jpg",
+      "scans": 267,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613035040823",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3272770015523",
+      "barcode": "3272770015523",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "FETA AOP GRECQUE",
+      "brand": "ISLOS",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/277/001/5523/front_fr.43.200.jpg",
+      "scans": 241,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3272770015523",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076800195057",
+      "barcode": "8076800195057",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spaghetti Nº5",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/019/5057/front_en.3881.200.jpg",
+      "scans": 237,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800195057",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3045140105502",
+      "barcode": "3045140105502",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocolat au lait du pays alpin Milka",
+      "brand": "Milka",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/514/010/5502/front_fr.635.200.jpg",
+      "scans": 234,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3045140105502",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076802085738",
+      "barcode": "8076802085738",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rigatoni Penne Rigate Nº73",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/208/5738/front_en.3506.200.jpg",
+      "scans": 224,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076802085738",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8852018101024",
+      "barcode": "8852018101024",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "60 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Instant Noedels Kipsmaak",
+      "brand": "YumYum",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "60 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/885/201/810/1024/front_en.417.200.jpg",
+      "scans": 212,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8852018101024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076809529433",
+      "barcode": "8076809529433",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Whole Wheat Penne Rigate",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/9433/front_en.476.200.jpg",
+      "scans": 209,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809529433",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3161711001971",
+      "barcode": "3161711001971",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage de France",
+      "brand": "BG SAS",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/171/100/1971/front_en.152.200.jpg",
+      "scans": 204,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3161711001971",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076809529419",
+      "barcode": "8076809529419",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes spaghetti au blé complet integral 500g",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/9419/front_fr.1682.200.jpg",
+      "scans": 201,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809529419",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076802085981",
+      "barcode": "8076802085981",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nudeln Fusilli",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/208/5981/front_en.44.200.jpg",
+      "scans": 199,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076802085981",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3073781131963",
+      "barcode": "3073781131963",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "432 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kiri® Crème 24 portions",
+      "brand": "Kiri",
+      "category": "Dairy",
+      "measure": "432 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/307/378/113/1963/front_fr.564.200.jpg",
+      "scans": 167,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3073781131963",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076800376999",
+      "barcode": "8076800376999",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lasagne all'uovo",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/037/6999/front_it.330.200.jpg",
+      "scans": 166,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800376999",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3478820600651",
+      "barcode": "3478820600651",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "spaghetti au quinoa ail et persil",
+      "brand": "Jardin Bio étic",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/347/882/060/0651/front_fr.75.200.jpg",
+      "scans": 163,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3478820600651",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3228021170046",
+      "barcode": "3228021170046",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Emmental râpé",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/802/117/0046/front_fr.154.200.jpg",
+      "scans": 144,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228021170046",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076800105056",
+      "barcode": "8076800105056",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes spaghetti n°5 1kg",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/010/5056/front_fr.1333.200.jpg",
+      "scans": 144,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800105056",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8010721001509",
+      "barcode": "8010721001509",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "60 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Parmigiano Reggiano Revet Fersk Parmesan DOP 60g",
+      "brand": "OLUF LORENTZEN AS",
+      "category": "Dairy",
+      "measure": "60 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/801/072/100/1509/front_en.463.200.jpg",
+      "scans": 141,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8010721001509",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20416690",
+      "barcode": "20416690",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek Style Natural Light 2% fat",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/041/6690/front_en.230.200.jpg",
+      "scans": 139,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20416690",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8076809545440",
+      "barcode": "8076809545440",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spaghetti senza glutine mais riso",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/954/5440/front_en.245.200.jpg",
+      "scans": 139,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809545440",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489258346",
+      "barcode": "4056489258346",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "High Protein Blueberry milk product",
+      "brand": "LIDL",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/925/8346/front_en.295.200.jpg",
+      "scans": 118,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489258346",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3033490004743",
+      "barcode": "3033490004743",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "140 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skyr",
+      "brand": "Danone",
+      "category": "Dairy",
+      "measure": "140 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/349/000/4743/front_fr.148.200.jpg",
+      "scans": 108,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3033490004743",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489467953",
+      "barcode": "4056489467953",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Strawberry Milk Product",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/946/7953/front_en.200.200.jpg",
+      "scans": 94,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489467953",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489095736",
+      "barcode": "4056489095736",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "240 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Basmati",
+      "brand": "Golden Sun",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "240 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/909/5736/front_en.30.200.jpg",
+      "scans": 92,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489095736",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3033491213205",
+      "barcode": "3033491213205",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.2 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Actimel 100 g x 12 original",
+      "brand": "Actimel",
+      "category": "Dairy",
+      "measure": "1.2 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/349/121/3205/front_en.116.200.jpg",
+      "scans": 86,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3033491213205",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489216223",
+      "barcode": "4056489216223",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "High Protein Quark Dessert Raspberry",
+      "brand": "LIDL",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/921/6223/front_en.175.200.jpg",
+      "scans": 83,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489216223",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489814764",
+      "barcode": "4056489814764",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coconut flavour quark",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/981/4764/front_en.28.200.jpg",
+      "scans": 72,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489814764",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3760341070625",
+      "barcode": "3760341070625",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.2 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz basmati du Penjab",
+      "brand": "taureau ailé",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1.2 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/376/034/107/0625/front_id.4.200.jpg",
+      "scans": 67,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3760341070625",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489216230",
+      "barcode": "4056489216230",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage blanc fraise",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/921/6230/front_en.161.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489216230",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20144302",
+      "barcode": "20144302",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Natural Yogur",
+      "brand": "",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/014/4302/front_es.113.200.jpg",
+      "scans": 61,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20144302",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489258353",
+      "barcode": "4056489258353",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Raspberry-Pomegranate Milk Product",
+      "brand": "LIDL",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/925/8353/front_en.210.200.jpg",
+      "scans": 54,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489258353",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20073763",
+      "barcode": "20073763",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "3 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Reis Riz basmati",
+      "brand": "Golden Sun",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "3 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/007/3763/front_en.100.200.jpg",
+      "scans": 42,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20073763",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-20142360",
+      "barcode": "20142360",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Microwave Basmati Rice",
+      "brand": "Taste of",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/014/2360/front_en.87.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20142360",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3039820311222",
+      "barcode": "3039820311222",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz Spécial Dessert",
+      "brand": "Vivien Paille",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/982/031/1222/front_fr.41.200.jpg",
+      "scans": 33,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3039820311222",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8410184800150",
+      "barcode": "8410184800150",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Arroz integral",
+      "brand": "brillante",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/018/480/0150/front_es.87.200.jpg",
+      "scans": 32,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410184800150",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-4056489845171",
+      "barcode": "4056489845171",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz basmati",
+      "brand": "GOLDENSUN",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/984/5171/front_en.48.200.jpg",
+      "scans": 27,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489845171",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3038354586403",
+      "barcode": "3038354586403",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riz pour risotto",
+      "brand": "Taureau Ailé",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/835/458/6403/front_en.112.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3038354586403",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-8410184013086",
+      "barcode": "8410184013086",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Arroz redondo tradicional 125g",
+      "brand": "Brillante",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/018/401/3086/front_es.71.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410184013086",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "de-off-3083681163155",
+      "barcode": "3083681163155",
+      "market": "de",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lunch bowl Riz & haricots 250g",
+      "brand": "Bonduelle",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/308/368/116/3155/front_en.3.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3083681163155",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    }
+  ],
+  "catalogCount": 50
+}
