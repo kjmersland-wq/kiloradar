@@ -4,3 +4,8 @@ compatibility_date = "2026-11-14"
 [assets]
 directory = "./dist"
 not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kiloradar"
+database_id = "c8fdaa0e-3352-4cea-b8a7-20255a937f6e"

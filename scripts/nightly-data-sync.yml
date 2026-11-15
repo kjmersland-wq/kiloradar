@@ -32,11 +32,22 @@ jobs:
       - name: Execute Open Food Facts Sync & Shrinkflation Ranking
         run: python scripts/sync_products.py
 
+      - name: Load catalog into Cloudflare D1 (only if CLOUDFLARE_API_TOKEN secret is set)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            npx --yes wrangler@4 d1 execute kiloradar --remote --file=scripts/catalog_sync.sql
+          else
+            echo "CLOUDFLARE_API_TOKEN not set - skipping D1 load"
+          fi
+
       - name: Commit & Push updated static JSON feeds to main
         run: |
           git config user.name "KiloRadar Nightly Bot (KM TECH LABS)"
           git config user.email "support@kiloradar.com"
-          git add public/data/*.json scripts/latest_sync.sql
+          git add public/data/*.json scripts/latest_sync.sql scripts/catalog_sync.sql
           if git diff --staged --quiet; then
             echo "No package weight or price changes detected tonight."
           else

@@ -9,6 +9,7 @@ import json
 import pytest
 
 from sync_products import (
+    generate_catalog_sql,
     discover_openfoodfacts_catalog,
     update_catalog,
     build_provenance,
@@ -283,3 +284,32 @@ def test_offline_run_never_invents_products_for_new_markets():
     for region in ("de", "fr", "es", "us", "uk"):
         assert results[region]["count"] == 0
         assert results[region]["currency"] in ("EUR", "USD", "GBP")
+
+
+def test_catalog_sql_is_idempotent_and_escapes_quotes():
+    payloads = {
+        "de": {
+            "catalog": [
+                {
+                    "barcode": "42",
+                    "name": "Mc'Cain Pommes",
+                    "brand": "McCain",
+                    "category": "Snacks",
+                    "measure": "750 g",
+                    "imageUrl": None,
+                    "sources": [{"name": "Open Food Facts", "url": "https://world.openfoodfacts.org/product/42"}],
+                    "lastChecked": "2026-11-15",
+                    "verification": "verified",
+                    "matchConfidence": 1.0,
+                    "sizeHistory": [{"date": "2026-11-15", "value": "750 g"}],
+                }
+            ]
+        },
+        "global": {"catalog": [{"barcode": "9", "name": "skipped"}]},
+    }
+    sql = generate_catalog_sql(payloads)
+    assert "INSERT OR REPLACE INTO catalog_products" in sql
+    assert "INSERT OR IGNORE INTO catalog_size_history" in sql
+    assert "Mc''Cain Pommes" in sql
+    assert "skipped" not in sql
+    assert "BEGIN" not in sql and "COMMIT" not in sql

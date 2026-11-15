@@ -31,6 +31,7 @@ from rapidfuzz import fuzz
 ROOT_DIR = pathlib.Path(__file__).resolve().parent.parent
 PUBLIC_DATA_DIR = ROOT_DIR / "public" / "data"
 LATEST_SQL_PATH = ROOT_DIR / "scripts" / "latest_sync.sql"
+CATALOG_SQL_PATH = ROOT_DIR / "scripts" / "catalog_sync.sql"
 
 MAX_VALID_GRAMS = 50_000.0  # 50 kg max for a consumer grocery item
 MAX_VALID_ML = 50_000.0     # 50 liters max
@@ -1186,6 +1187,51 @@ def update_catalog(
     return sorted(by_id.values(), key=lambda e: int(e.get("scans") or 0), reverse=True)
 
 
+def _sql_text(value: Any) -> str:
+    """Quotes a value as a SQL string literal (NULL for None)."""
+    if value is None:
+        return "NULL"
+    return "'" + str(value).replace("'", "''") + "'"
+
+
+def generate_catalog_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
+    """
+    Generates idempotent SQL (no explicit transaction, so Cloudflare D1 accepts it) that upserts
+    the discovered Open Food Facts catalog into `catalog_products` and `catalog_size_history`.
+    """
+    lines = [
+        "-- KiloRadar - Auto-generated catalog sync for Cloudflare D1 (real Open Food Facts products)",
+        f"-- Generated at: {dt.datetime.now(dt.timezone.utc).isoformat()}",
+    ]
+    for region_code, payload in synced_payloads.items():
+        if region_code == "global":
+            continue
+        for item in payload.get("catalog", []):
+            ean = item.get("barcode")
+            if not ean:
+                continue
+            src = (item.get("sources") or [{}])[0]
+            conf = item.get("matchConfidence")
+            lines.append(
+                "INSERT OR REPLACE INTO catalog_products "
+                "(market, ean, name, brand, category, measure, image_url, source_name, source_url, "
+                "last_checked, verification, match_confidence, updated_at) VALUES ("
+                f"{_sql_text(region_code)}, {_sql_text(ean)}, {_sql_text(item.get('name'))}, "
+                f"{_sql_text(item.get('brand'))}, {_sql_text(item.get('category'))}, "
+                f"{_sql_text(item.get('measure'))}, {_sql_text(item.get('imageUrl'))}, "
+                f"{_sql_text(src.get('name'))}, {_sql_text(src.get('url'))}, "
+                f"{_sql_text(item.get('lastChecked'))}, {_sql_text(item.get('verification', 'unverified'))}, "
+                f"{float(conf) if conf is not None else 'NULL'}, CURRENT_TIMESTAMP);"
+            )
+            for entry in item.get("sizeHistory", []):
+                lines.append(
+                    "INSERT OR IGNORE INTO catalog_size_history (market, ean, recorded_on, measure) VALUES ("
+                    f"{_sql_text(region_code)}, {_sql_text(ean)}, {_sql_text(entry.get('date'))}, "
+                    f"{_sql_text(entry.get('value'))});"
+                )
+    return "\n".join(lines) + "\n"
+
+
 def run_full_pipeline(
     fetch_live: bool = True, regions: list[str] | None = None, discover: bool | None = None
 ) -> dict[str, dict[str, Any]]:
@@ -1225,6 +1271,7 @@ def run_full_pipeline(
     sql_content = generate_d1_sql(synced)
     LATEST_SQL_PATH.parent.mkdir(parents=True, exist_ok=True)
     LATEST_SQL_PATH.write_text(sql_content, encoding="utf-8")
+    CATALOG_SQL_PATH.write_text(generate_catalog_sql(synced), encoding="utf-8")
 
     return synced
 

@@ -67,3 +67,30 @@ CREATE TABLE IF NOT EXISTS shrink_events (
     shrink_index REAL
 );
 CREATE INDEX IF NOT EXISTS idx_shrink_events_ean ON shrink_events(ean);
+
+-- 6. Discovered catalog (real Open Food Facts products; prices are not tracked yet)
+CREATE TABLE IF NOT EXISTS catalog_products (
+    market TEXT NOT NULL,
+    ean TEXT NOT NULL,
+    name TEXT NOT NULL,
+    brand TEXT,
+    category TEXT,
+    measure TEXT NOT NULL,
+    image_url TEXT,
+    source_name TEXT,
+    source_url TEXT,
+    last_checked TEXT,
+    verification TEXT NOT NULL DEFAULT 'unverified',
+    match_confidence REAL,
+    updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (market, ean)
+);
+CREATE INDEX IF NOT EXISTS idx_catalog_market ON catalog_products(market);
+
+CREATE TABLE IF NOT EXISTS catalog_size_history (
+    market TEXT NOT NULL,
+    ean TEXT NOT NULL,
+    recorded_on TEXT NOT NULL,
+    measure TEXT NOT NULL,
+    PRIMARY KEY (market, ean, recorded_on)
+);
