@@ -1247,123 +1247,99 @@
     "currency": "EUR",
     "asOf": "2026-11-15",
     "since": "2026-06-18",
-    "observations": 8929,
+    "observations": 9036,
     "status": "ok",
-    "products": 363,
+    "products": 356,
     "chains": [
       {
-        "store": "E. Leclerc",
+        "store": "E.Leclerc",
         "index": 1.0,
         "pctVsCheapest": 0.0,
-        "products": 120
-      },
-      {
-        "store": "Intermarché Super",
-        "index": 1.0125,
-        "pctVsCheapest": 1.2,
-        "products": 38
-      },
-      {
-        "store": "Intermarché",
-        "index": 1.0296,
-        "pctVsCheapest": 3.0,
-        "products": 34
-      },
-      {
-        "store": "Carrefour Market",
-        "index": 1.0306,
-        "pctVsCheapest": 3.1,
-        "products": 37
-      },
-      {
-        "store": "E.Leclerc",
-        "index": 1.0343,
-        "pctVsCheapest": 3.4,
-        "products": 19
+        "products": 119
       },
       {
         "store": "Colruyt",
-        "index": 1.0481,
-        "pctVsCheapest": 4.8,
-        "products": 23
+        "index": 1.0242,
+        "pctVsCheapest": 2.4,
+        "products": 24
       },
       {
-        "store": "E.Leclerc Drive",
+        "store": "Intermarché",
+        "index": 1.0461,
+        "pctVsCheapest": 4.6,
+        "products": 31
+      },
+      {
+        "store": "Intermarché Super",
         "index": 1.0526,
         "pctVsCheapest": 5.3,
-        "products": 12
+        "products": 61
+      },
+      {
+        "store": "Carrefour Market",
+        "index": 1.0593,
+        "pctVsCheapest": 5.9,
+        "products": 33
       },
       {
         "store": "Intermarché Express",
-        "index": 1.0561,
-        "pctVsCheapest": 5.6,
-        "products": 64
-      },
-      {
-        "store": "Biocoop",
-        "index": 1.0576,
-        "pctVsCheapest": 5.8,
-        "products": 11
-      },
-      {
-        "store": "Super U",
-        "index": 1.0756,
-        "pctVsCheapest": 7.6,
-        "products": 80
-      },
-      {
-        "store": "Match",
-        "index": 1.0764,
-        "pctVsCheapest": 7.6,
-        "products": 17
+        "index": 1.0602,
+        "pctVsCheapest": 6.0,
+        "products": 55
       },
       {
         "store": "Auchan",
-        "index": 1.0833,
-        "pctVsCheapest": 8.3,
-        "products": 69
+        "index": 1.0892,
+        "pctVsCheapest": 8.9,
+        "products": 70
       },
       {
-        "store": "Naturalia",
-        "index": 1.087,
-        "pctVsCheapest": 8.7,
-        "products": 11
+        "store": "Super U",
+        "index": 1.0984,
+        "pctVsCheapest": 9.8,
+        "products": 87
       },
       {
         "store": "U Express",
-        "index": 1.0992,
-        "pctVsCheapest": 9.9,
-        "products": 64
+        "index": 1.1185,
+        "pctVsCheapest": 11.8,
+        "products": 81
+      },
+      {
+        "store": "Match",
+        "index": 1.1205,
+        "pctVsCheapest": 12.1,
+        "products": 29
       },
       {
         "store": "Auchan Supermarché",
-        "index": 1.1136,
-        "pctVsCheapest": 11.4,
-        "products": 56
+        "index": 1.1252,
+        "pctVsCheapest": 12.5,
+        "products": 52
       },
       {
         "store": "Monoprix",
-        "index": 1.1342,
-        "pctVsCheapest": 13.4,
-        "products": 41
-      },
-      {
-        "store": "Carrefour Express",
-        "index": 1.1502,
-        "pctVsCheapest": 15.0,
-        "products": 12
+        "index": 1.1556,
+        "pctVsCheapest": 15.6,
+        "products": 40
       },
       {
         "store": "Carrefour City",
-        "index": 1.1515,
-        "pctVsCheapest": 15.2,
+        "index": 1.1651,
+        "pctVsCheapest": 16.5,
         "products": 80
       },
       {
+        "store": "Carrefour Express",
+        "index": 1.1731,
+        "pctVsCheapest": 17.3,
+        "products": 10
+      },
+      {
         "store": "Monop'",
-        "index": 1.258,
-        "pctVsCheapest": 25.8,
-        "products": 15
+        "index": 1.3167,
+        "pctVsCheapest": 31.7,
+        "products": 14
       }
     ]
   },

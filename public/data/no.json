@@ -4478,51 +4478,51 @@
     "currency": "NOK",
     "asOf": "2026-11-15",
     "since": "2026-06-18",
-    "observations": 5921,
+    "observations": 5969,
     "status": "ok",
-    "products": 427,
+    "products": 425,
     "chains": [
       {
         "store": "Rema 1000",
         "index": 1.0,
         "pctVsCheapest": 0.0,
-        "products": 251
-      },
-      {
-        "store": "Kiwi",
-        "index": 1.0262,
-        "pctVsCheapest": 2.6,
-        "products": 269
-      },
-      {
-        "store": "Extra",
-        "index": 1.027,
-        "pctVsCheapest": 2.7,
         "products": 233
       },
       {
-        "store": "Spar",
-        "index": 1.0829,
-        "pctVsCheapest": 8.3,
-        "products": 17
+        "store": "Kiwi",
+        "index": 1.0264,
+        "pctVsCheapest": 2.6,
+        "products": 256
       },
       {
-        "store": "Bunnpris",
-        "index": 1.1069,
-        "pctVsCheapest": 10.7,
-        "products": 63
+        "store": "Extra",
+        "index": 1.0297,
+        "pctVsCheapest": 3.0,
+        "products": 239
+      },
+      {
+        "store": "Spar",
+        "index": 1.0919,
+        "pctVsCheapest": 9.2,
+        "products": 26
       },
       {
         "store": "Meny",
-        "index": 1.1294,
-        "pctVsCheapest": 12.9,
-        "products": 17
+        "index": 1.1198,
+        "pctVsCheapest": 12.0,
+        "products": 19
+      },
+      {
+        "store": "Bunnpris",
+        "index": 1.1452,
+        "pctVsCheapest": 14.5,
+        "products": 70
       },
       {
         "store": "Coop Prix",
-        "index": 1.1782,
-        "pctVsCheapest": 17.8,
-        "products": 140
+        "index": 1.1912,
+        "pctVsCheapest": 19.1,
+        "products": 132
       }
     ]
   },

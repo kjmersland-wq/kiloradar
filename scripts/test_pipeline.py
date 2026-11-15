@@ -534,3 +534,13 @@ def test_store_comparison_leaves_out_convenience_and_fuel_chains():
     result = build_store_comparison(obs, "no", "2026-11-15")
     assert result["status"] == "ok"
     assert "7-Eleven" not in [c["store"] for c in result["chains"]]
+
+
+def test_store_comparison_merges_spelling_variants_of_one_chain():
+    obs = []
+    for i in range(40):
+        obs += [_obs(f"p{i}", "E. Leclerc", 10), _obs(f"p{i}", "E.Leclerc", 10.2),
+                _obs(f"p{i}", "B", 11), _obs(f"p{i}", "C", 12)]
+    result = build_store_comparison(obs, "no", "2026-11-15")
+    names = [c["store"] for c in result["chains"]]
+    assert len([n for n in names if "Leclerc" in n]) == 1

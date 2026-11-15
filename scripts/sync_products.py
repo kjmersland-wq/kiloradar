@@ -1614,9 +1614,13 @@ def build_store_comparison(
     currency = MARKET_CURRENCY.get(market)
     latest: dict[str, dict[str, tuple[str, float]]] = {}
     used = 0
+    display: dict[str, str] = {}  # spelling variants ("E. Leclerc" / "E.Leclerc") are one chain
     for it in observations:
         loc = it.get("location") or {}
-        chain = str(loc.get("osm_brand") or "").strip()
+        raw_chain = str(loc.get("osm_brand") or "").strip()
+        chain = re.sub(r"[\s.\-']", "", raw_chain.lower())
+        if raw_chain and chain:
+            display.setdefault(chain, raw_chain)
         code = str(it.get("product_code") or "").strip()
         try:
             price = float(it.get("price"))
@@ -1624,7 +1628,7 @@ def build_store_comparison(
             continue
         day = str(it.get("date") or "")
         if (
-            not chain or chain in COMPARISON_EXCLUDED_CHAINS or not code or price <= 0
+            not chain or raw_chain in COMPARISON_EXCLUDED_CHAINS or not code or price <= 0
             or it.get("price_is_discounted")
             or it.get("currency") != currency
             or str(loc.get("osm_address_country_code") or "").upper() != country
@@ -1674,7 +1678,7 @@ def build_store_comparison(
     cheapest = min(levels.values())
     chains = sorted(
         (
-            {"store": c, "index": round(lv / cheapest, 4), "pctVsCheapest": round((lv / cheapest - 1) * 100, 1),
+            {"store": display.get(c, c), "index": round(lv / cheapest, 4), "pctVsCheapest": round((lv / cheapest - 1) * 100, 1),
              "products": len(ratios[c])}
             for c, lv in levels.items()
         ),

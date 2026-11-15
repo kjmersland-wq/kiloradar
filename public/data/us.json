@@ -603,51 +603,45 @@
     "currency": "USD",
     "asOf": "2026-11-15",
     "since": "2026-06-18",
-    "observations": 4933,
+    "observations": 5085,
     "status": "ok",
-    "products": 86,
+    "products": 73,
     "chains": [
       {
         "store": "FoodMaxx",
         "index": 1.0,
         "pctVsCheapest": 0.0,
-        "products": 33
+        "products": 35
       },
       {
         "store": "Target",
-        "index": 1.069,
-        "pctVsCheapest": 6.9,
-        "products": 25
-      },
-      {
-        "store": "Sprouts Farmers Market",
-        "index": 1.1138,
-        "pctVsCheapest": 11.4,
-        "products": 12
-      },
-      {
-        "store": "Safeway",
-        "index": 1.1161,
-        "pctVsCheapest": 11.6,
-        "products": 43
+        "index": 1.0401,
+        "pctVsCheapest": 4.0,
+        "products": 21
       },
       {
         "store": "Whole Foods Market",
-        "index": 1.1164,
-        "pctVsCheapest": 11.6,
-        "products": 26
-      },
-      {
-        "store": "City Acres Market",
-        "index": 1.1706,
-        "pctVsCheapest": 17.1,
-        "products": 13
+        "index": 1.1143,
+        "pctVsCheapest": 11.4,
+        "products": 9
       },
       {
         "store": "Morton Williams",
-        "index": 1.174,
-        "pctVsCheapest": 17.4,
-        "products": 27
+        "index": 1.1186,
+        "pctVsCheapest": 11.9,
+        "products": 21
+      },
+      {
+        "store": "Safeway",
+        "index": 1.1224,
+        "pctVsCheapest": 12.2,
+        "products": 49
+      },
+      {
+        "store": "City Acres Market",
+        "index": 1.1379,
+        "pctVsCheapest": 13.8,
+        "products": 14
       }
     ]
   },

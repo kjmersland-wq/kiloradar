@@ -3867,32 +3867,32 @@
     "currency": "SEK",
     "asOf": "2026-11-15",
     "since": "2026-06-18",
-    "observations": 1732,
+    "observations": 1814,
     "status": "ok",
-    "products": 86,
+    "products": 75,
     "chains": [
       {
         "store": "Willys",
         "index": 1.0,
         "pctVsCheapest": 0.0,
-        "products": 77
+        "products": 67
       },
       {
         "store": "Maxi ICA Stormarknad",
-        "index": 1.0029,
-        "pctVsCheapest": 0.3,
-        "products": 59
+        "index": 1.0005,
+        "pctVsCheapest": 0.1,
+        "products": 58
       },
       {
         "store": "City Gross",
-        "index": 1.0477,
-        "pctVsCheapest": 4.8,
-        "products": 28
+        "index": 1.0567,
+        "pctVsCheapest": 5.7,
+        "products": 21
       },
       {
         "store": "Coop",
-        "index": 1.0966,
-        "pctVsCheapest": 9.7,
+        "index": 1.0843,
+        "pctVsCheapest": 8.4,
         "products": 13
       }
     ]
