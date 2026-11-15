@@ -305,11 +305,11 @@ def test_catalog_sql_is_idempotent_and_escapes_quotes():
                 }
             ]
         },
-        "global": {"catalog": [{"barcode": "9", "name": "skipped"}]},
+        "global": {"catalog": [{"barcode": "9", "name": "Worldwide Item", "measure": "1 kg"}]},
     }
     sql = generate_catalog_sql(payloads)
     assert "INSERT OR REPLACE INTO catalog_products" in sql
     assert "INSERT OR IGNORE INTO catalog_size_history" in sql
     assert "Mc''Cain Pommes" in sql
-    assert "skipped" not in sql
+    assert "'global', '9'" in sql
     assert "BEGIN" not in sql and "COMMIT" not in sql

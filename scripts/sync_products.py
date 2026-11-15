@@ -1205,8 +1205,6 @@ def generate_catalog_sql(synced_payloads: dict[str, dict[str, Any]]) -> str:
         f"-- Generated at: {dt.datetime.now(dt.timezone.utc).isoformat()}",
     ]
     for region_code, payload in synced_payloads.items():
-        if region_code == "global":
-            continue
         for item in payload.get("catalog", []):
             ean = item.get("barcode")
             if not ean:

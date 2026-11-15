@@ -759,6 +759,7 @@ export default function KiloRadarApp({
     let active = true;
     const staticRegion = countryCode === 'en' ? 'global' : countryCode;
     setCatalogItems([]);
+    let catalogFromD1 = false;
 
     const mergeSyncedProducts = (
       baseProducts: ProductItem[],
@@ -781,7 +782,8 @@ export default function KiloRadarApp({
       .then((data) => {
         if (!active || !data) return;
         if (data.lastSynced) setLastSyncedDate(data.lastSynced);
-        if (Array.isArray(data.catalog)) setCatalogItems(data.catalog as CatalogItem[]);
+        // Static JSON is the fallback: the D1-backed API below wins when it has data
+        if (!catalogFromD1 && Array.isArray(data.catalog)) setCatalogItems(data.catalog as CatalogItem[]);
         if (Array.isArray(data.products) && data.products.length > 0) {
           setProductsByCountry((prev) => ({
             ...prev,
@@ -794,6 +796,20 @@ export default function KiloRadarApp({
       })
       .catch(() => {
         // Fallback to Cloudflare Functions D1 endpoint or src/locales/ config
+      });
+
+    // Catalog from Cloudflare D1 (real Open Food Facts products) via the Worker
+    fetch(`/api/catalog?market=${staticRegion}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!active || !data || data.source !== 'cloudflare-d1') return;
+        if (Array.isArray(data.catalog) && data.catalog.length > 0) {
+          catalogFromD1 = true;
+          setCatalogItems(data.catalog as CatalogItem[]);
+        }
+      })
+      .catch(() => {
+        // Falls back to the static /data/[country].json catalog
       });
 
     fetch(`/api/products?lang=${countryCode}`)
