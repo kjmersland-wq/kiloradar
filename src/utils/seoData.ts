@@ -51,24 +51,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Everything you need to know about calculating true price per kilo or ounce and spotting hidden package downsizing.',
     faqs: [
       {
-        question: 'How does the Unit Price Calculator find the real price per kilo or ounce?',
+        question: 'How does KiloRadar work out the real price per kilo?',
         answer:
-          'KiloRadar automatically converts every package weight and volume (g, kg, ml, l, oz, lb, fl oz, and multipacks) into a standardized unit price so you can compare any two items fairly in seconds.',
+          'It turns every pack size (g, kg, ml, l, oz, lb, fl oz and multipacks) into one unit price, so you can compare two products fairly in seconds.',
       },
       {
-        question: 'What is shrinkflation and how does the Shrinkflation Tracker work?',
+        question: 'What is shrinkflation?',
         answer:
-          'Shrinkflation happens when a manufacturer reduces package size (e.g., from 250g to 200g) while keeping the retail price the same or higher. KiloRadar computes the real unit-price surge with ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100.',
+          'It is when a pack gets smaller (say from 250g to 200g) but the price stays the same or goes up. We work out the real increase with ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100.',
       },
       {
-        question: 'How do you compare weekly grocery baskets across supermarkets?',
+        question: 'How do you compare weekly grocery baskets?',
         answer:
-          'By weighting everyday staples and tracked brand items by their normalized unit price, KiloRadar ranks major supermarkets for 1 week, 1 month, and 1 year.',
+          'We weigh everyday staples and tracked brands by their unit price and rank the big supermarkets for 1 week, 1 month and 1 year.',
       },
       {
-        question: 'Can I scan product barcodes with my phone camera?',
+        question: 'Can I scan a barcode with my phone?',
         answer:
-          'Yes! Tap "Scan with camera" or enter any EAN/UPC barcode to pull package weight from Open Food Facts and calculate unit price on the spot.',
+          'Yes. Tap “Scan with camera” or type in any EAN/UPC code. We fetch the pack size from Open Food Facts and work out the unit price on the spot.',
       },
     ],
     share: {
@@ -90,24 +90,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Compare US grocery packages in ounces (oz), pounds (lb), fluid ounces (fl oz), or metric units and uncover hidden shrinkflation.',
     faqs: [
       {
-        question: 'Does the US Unit Price Calculator support ounces (oz), pounds (lb), and fluid ounces (fl oz)?',
+        question: 'Can I use ounces, pounds and fluid ounces?',
         answer:
-          'Yes! You can enter measurements like "16 oz", "14.5 oz", "1.5 lb", "52 fl oz", or metric "500 g" directly into the calculator to compare unit prices and spot shrinkflation.',
+          'Yes. Type in sizes like “16 oz”, “14.5 oz”, “1.5 lb”, “52 fl oz” or metric “500 g”, and we compare the unit prices and flag shrinkflation for you.',
       },
       {
-        question: 'How do you calculate the hidden cost of shrinkflation on US groceries?',
+        question: 'How do you work out the hidden cost of shrinkflation?',
         answer:
-          'When a 25.9 oz coffee canister shrinks to 22.6 oz or a 52 fl oz orange juice bottle drops to 46 fl oz, our formula ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100 reveals the exact percentage jump in true unit cost.',
+          'Say a 25.9 oz coffee canister shrinks to 22.6 oz, or a 52 fl oz orange juice bottle drops to 46 fl oz. Our formula ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100 shows how much the true unit cost went up.',
       },
       {
-        question: 'Which US grocery store has the lowest weekly basket cost?',
+        question: 'Which US grocery store has the lowest weekly basket?',
         answer:
-          'KiloRadar compares typical weekly, monthly, and annual household baskets across Aldi US, Walmart, Trader Joe’s, Kroger, and Target.',
+          'We compare typical weekly, monthly and yearly household baskets across Aldi US, Walmart, Trader Joe’s, Kroger and Target.',
       },
       {
-        question: 'Can I scan UPC barcodes in US grocery stores?',
+        question: 'Can I scan UPC barcodes in the store?',
         answer:
-          'Yes! Use the built-in camera barcode scanner or type any UPC/EAN code to fetch product size from Open Food Facts and compute the real price per ounce, pound, or kilo.',
+          'Yes. Use the camera scanner or type in any UPC/EAN code. We fetch the product size from Open Food Facts and work out the real price per ounce, pound or kilo.',
       },
     ],
     share: {
@@ -129,24 +129,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'How to check true £/kg and £/l unit prices and beat shrinkflation across British supermarkets.',
     faqs: [
       {
-        question: 'How does KiloRadar UK calculate true price per kilo (£/kg)?',
+        question: 'How does KiloRadar work out the real price per kilo (£/kg)?',
         answer:
-          'We convert every pack weight and volume (grams, kilograms, millilitres, litres, and multipacks) into a standardised £/kg or £/l unit price so you can compare any two items fairly.',
+          'We turn every pack size (grams, kilograms, millilitres, litres and multipacks) into one £/kg or £/l price, so you can compare any two items fairly.',
       },
       {
-        question: 'How does the UK Shrinkflation Tracker spot smaller packs?',
+        question: 'How can I spot a smaller pack?',
         answer:
-          'When a sharing bar drops from 200g to 180g or butter shrinks from 500g to 400g, we calculate the exact unit-price jump using ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100.',
+          'Say a sharing bar drops from 200g to 180g, or butter shrinks from 500g to 400g. We work out the exact unit-price jump with ((newPrice / newAmount) / (oldPrice / oldAmount) - 1) × 100.',
       },
       {
         question: 'Which UK supermarket is cheapest for a weekly shop?',
         answer:
-          'We compare a standard household trolley across Aldi UK, Lidl UK, Asda, Tesco, and Sainsbury’s for 1 week, 1 month, and 1 year.',
+          'We compare a standard household trolley across Aldi UK, Lidl UK, Asda, Tesco and Sainsbury’s for 1 week, 1 month and 1 year.',
       },
       {
-        question: 'Can I scan UK barcodes on my mobile?',
+        question: 'Can I scan barcodes on my mobile?',
         answer:
-          'Yes—tap "Scan with camera" to scan any EAN barcode via Open Food Facts and check the real £/kg price immediately.',
+          'Yes. Tap “Scan with camera” to scan any EAN barcode. We look it up in Open Food Facts and show the real £/kg straight away.',
       },
     ],
     share: {
@@ -168,24 +168,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Alt du trenger å vite for å regne ut reell kilopris (kr/kg), sammenligne enhetspris og avsløre krympflasjon.',
     faqs: [
       {
-        question: 'Hvordan fungerer KiloRadar som kilopriskalkulator og enhetspriskalkulator?',
+        question: 'Hvordan regner KiloRadar ut kiloprisen?',
         answer:
-          'KiloRadar regner automatisk om alle pakningsstørrelser (gram, hektogram, kilo, milliliter, desiliter, liter og stykk/multipack) til en standardisert enhetspris i kr per kilo (kr/kg) eller kr per liter (kr/l).',
+          'KiloRadar gjør om alle pakningsstørrelser (gram, hektogram, kilo, milliliter, desiliter, liter og stykk/multipack) til én enhetspris i kr per kilo (kr/kg) eller kr per liter (kr/l).',
       },
       {
-        question: 'Hva er krympflasjon, og hvordan avslører dere skjulte prisøkninger?',
+        question: 'Hva er krympflasjon?',
         answer:
-          'Krympflasjon skjer når innholdet i pakken reduseres (f.eks. fra 250 g til 200 g) mens prisen på hylla holdes lik eller økes. Vi beregner den eksakte økningen i kilopris med formelen ((nyPris / nyMengde) / (gammelPris / gammelMengde) - 1) × 100.',
+          'Det er når innholdet i pakken blir mindre (for eksempel fra 250 g til 200 g), mens prisen i hylla er lik eller går opp. Vi regner ut økningen i kilopris med formelen ((nyPris / nyMengde) / (gammelPris / gammelMengde) - 1) × 100.',
       },
       {
         question: 'Hvilken matbutikk er billigst på ukeshandelen i Norge?',
         answer:
-          'Ved å sammenligne reell enhetspris på tvers av basisvarer og kjente merkevarer viser KiloRadar totalprisen for 1 uke, 1 måned og 1 år hos REMA 1000, KIWI, Coop Extra, Oda og Meny.',
+          'Vi sammenligner enhetsprisen på basisvarer og kjente merkevarer og viser totalprisen for 1 uke, 1 måned og 1 år hos REMA 1000, KIWI, Coop Extra, Oda og Meny.',
       },
       {
         question: 'Kan jeg skanne strekkoder med mobilen i butikken?',
         answer:
-          'Ja! Klikk på «Skann med kamera» eller søk på EAN-strekkoden for å hente pakningsvekt fra Open Food Facts og regne ut kiloprisen på stedet.',
+          'Ja. Trykk på «Skann med kamera», eller skriv inn EAN-strekkoden. Da henter vi pakningsvekten fra Open Food Facts og regner ut kiloprisen med en gang.',
       },
     ],
     share: {
@@ -207,24 +207,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Så räknar du enkelt ut verkligt jämförpris (kr/kg och kr/l) och avslöjar krympflation i matbutiken.',
     faqs: [
       {
-        question: 'Hur fungerar KiloRadar som kilopris kalkylator för jämförpris?',
+        question: 'Hur räknar KiloRadar ut kilopriset?',
         answer:
-          'KiloRadar omvandlar automatiskt alla vikter och volymer (gram, hekto, kilo, milliliter, deciliter, liter och flerpack) till ett exakt jämförpris i kr/kg eller kr/l.',
+          'KiloRadar gör om alla vikter och volymer (gram, hekto, kilo, milliliter, deciliter, liter och flerpack) till ett jämförpris i kr/kg eller kr/l.',
       },
       {
-        question: 'Vad är krympflation och hur räknar ni ut den dolda prisökningen?',
+        question: 'Vad är krympflation?',
         answer:
-          'Krympflation sker när förpackningen blir mindre (t.ex. kaffe från 450 g till 400 g) utan att priset sänks. Vi mäter ökningen i jämförpris med formeln ((nyttPris / nyMängd) / (gammaltPris / gammalMängd) - 1) × 100.',
+          'Det är när förpackningen blir mindre (till exempel kaffe från 450 g till 400 g) utan att priset sänks. Vi räknar ut ökningen i jämförpris med formeln ((nyttPris / nyMängd) / (gammaltPris / gammalMängd) - 1) × 100.',
       },
       {
         question: 'Vilken matbutik har billigast matkasse i Sverige?',
         answer:
-          'Genom att jämföra verkligt kilopris och jämförpris på basvaror och kända märkesvaror visar KiloRadar kostnaden för 1 vecka, 1 månad och 1 år hos Willys, ICA, Coop, Hemköp och City Gross.',
+          'Vi jämför kilopris och jämförpris på basvaror och kända märken och visar kostnaden för 1 vecka, 1 månad och 1 år hos Willys, ICA, Coop, Hemköp och City Gross.',
       },
       {
-        question: 'Kan jag skanna streckkoder med kameran i mobilen?',
+        question: 'Kan jag skanna streckkoder med mobilen?',
         answer:
-          'Ja! Tryck på «Skanna med kamera» eller skriv in varans EAN-kod för att hämta vikt från Open Food Facts och räkna ut kilopriset direkt.',
+          'Ja. Tryck på «Skanna med kamera» eller skriv in varans EAN-kod. Då hämtar vi vikten från Open Food Facts och räknar ut kilopriset direkt.',
       },
     ],
     share: {
@@ -246,24 +246,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Sådan beregner du den reelle kilopris og enhedspris (kr./kg og kr./l) og gennemskuer skrumpflation.',
     faqs: [
       {
-        question: 'Hvordan fungerer KiloRadar som kilopris beregner og enhedsprisberegner?',
+        question: 'Hvordan regner KiloRadar kiloprisen ud?',
         answer:
-          'KiloRadar omregner automatisk alle pakningsstørrelser (gram, kilo, milliliter, liter og multipack) til en standardiseret enhedspris i kr. pr. kilo (kr./kg) eller kr. pr. liter (kr./l).',
+          'KiloRadar omregner alle pakningsstørrelser (gram, kilo, milliliter, liter og multipack) til én enhedspris i kr. pr. kilo (kr./kg) eller kr. pr. liter (kr./l).',
       },
       {
-        question: 'Hvad er skrumpflation (shrinkflation), og hvordan beregnes det?',
+        question: 'Hvad er skrumpflation?',
         answer:
-          'Skrumpflation opstår, når mængden i pakken reduceres (f.eks. fra 500 g til 400 g), mens prisen forbliver uændret eller stiger. Vi måler den reelle prisstigning pr. kilo med ((nyPris / nyMængde) / (gammelPris / gammelMængde) - 1) × 100.',
+          'Det er, når mængden i pakken bliver mindre (for eksempel fra 500 g til 400 g), mens prisen er uændret eller stiger. Vi regner stigningen pr. kilo ud med ((nyPris / nyMængde) / (gammelPris / gammelMængde) - 1) × 100.',
       },
       {
         question: 'Hvilket supermarked er billigst i Danmark?',
         answer:
-          'Vi sammenligner en repræsentativ indkøbskurv på tværs af Rema 1000, Netto, Lidl, Bilka og Føtex for 1 uge, 1 måned og 1 år.',
+          'Vi sammenligner en typisk indkøbskurv hos Rema 1000, Netto, Lidl, Bilka og Føtex for 1 uge, 1 måned og 1 år.',
       },
       {
-        question: 'Kan jeg scanne stregkoder på varer med mobilen?',
+        question: 'Kan jeg scanne stregkoder med mobilen?',
         answer:
-          'Ja! Brug «Scan med kamera» eller søgefeltet til at slå enhver EAN-stregkode op i Open Food Facts og tjekke kiloprisen med det samme.',
+          'Ja. Brug «Scan med kamera», eller skriv EAN-stregkoden i søgefeltet. Så slår vi varen op i Open Food Facts og viser kiloprisen med det samme.',
       },
     ],
     share: {
@@ -285,24 +285,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Dowiedz się, jak obliczyć prawdziwą cenę jednostkową (zł/kg, zł/l) i wykryć zmniejszone opakowania.',
     faqs: [
       {
-        question: 'Jak działa kalkulator ceny za kilogram i ceny jednostkowej KiloRadar?',
+        question: 'Jak KiloRadar liczy cenę za kilogram?',
         answer:
-          'KiloRadar automatycznie przelicza każdą gramaturę i objętość (gramy, dekagramy, kilogramy, mililitry, litry i wielopaki) na cenę jednostkową w zł za kilogram (zł/kg) lub zł za litr (zł/l).',
+          'KiloRadar przelicza każdą gramaturę i objętość (gramy, dekagramy, kilogramy, mililitry, litry i wielopaki) na cenę jednostkową w zł za kilogram (zł/kg) lub zł za litr (zł/l).',
       },
       {
-        question: 'Czym jest shrinkflacja (downsizing) i jak ją obliczacie?',
+        question: 'Czym jest shrinkflacja (downsizing)?',
         answer:
-          'Downsizing to zmniejszenie wagi produktu (np. masła z 200 g do 170 g lub czekolady ze 100 g do 90 g) przy zachowaniu ceny. Obliczamy realny wzrost ceny za kg wzorem ((nowaCena / nowaWaga) / (staraCena / staraWaga) - 1) × 100.',
+          'To sytuacja, gdy produkt jest mniejszy (np. masło z 200 g do 170 g albo czekolada ze 100 g do 90 g), a cena zostaje taka sama. Wzrost ceny za kg liczymy wzorem ((nowaCena / nowaWaga) / (staraCena / staraWaga) - 1) × 100.',
       },
       {
-        question: 'Który sklep w Polsce oferuje najtańszy koszyk zakupowy?',
+        question: 'Który sklep w Polsce ma najtańszy koszyk zakupowy?',
         answer:
-          'Porównujemy koszt koszyka zakupowego na 1 tydzień, 1 miesiąc i 1 rok w sieciach Biedronka, Lidl, Dino, Auchan i Carrefour.',
+          'Porównujemy koszt koszyka na 1 tydzień, 1 miesiąc i 1 rok w sieciach Biedronka, Lidl, Dino, Auchan i Carrefour.',
       },
       {
-        question: 'Czy mogę zeskanować kod kreskowy produktu aparatem w telefonie?',
+        question: 'Czy mogę zeskanować kod kreskowy telefonem?',
         answer:
-          'Tak! Kliknij «Skanuj aparatem» lub wpisz kod EAN, aby pobrać gramaturę z Open Food Facts i od razu obliczyć cenę za kilogram.',
+          'Tak. Kliknij «Skanuj aparatem» albo wpisz kod EAN. Pobierzemy gramaturę z Open Food Facts i od razu policzymy cenę za kilogram.',
       },
     ],
     share: {
@@ -324,24 +324,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'So berechnen Sie in Sekunden den echten Grundpreis (€/kg und €/l) und entlarven versteckte Shrinkflation im Supermarkt.',
     faqs: [
       {
-        question: 'Wie funktioniert der Kilopreis Rechner zum Grundpreis berechnen?',
+        question: 'Wie berechnet KiloRadar den Grundpreis?',
         answer:
-          'KiloRadar rechnet jede Packungsgröße (Gramm, Kilogramm, Milliliter, Liter sowie Multipacks) automatisch in den standardisierten Grundpreis pro Kilogramm (€/kg) oder pro Liter (€/l) um.',
+          'KiloRadar rechnet jede Packungsgröße (Gramm, Kilogramm, Milliliter, Liter und Multipacks) in einen Grundpreis pro Kilogramm (€/kg) oder pro Liter (€/l) um.',
       },
       {
-        question: 'Was ist eine Mogelpackung (Shrinkflation) und wie wird sie berechnet?',
+        question: 'Was ist eine Mogelpackung (Shrinkflation)?',
         answer:
-          'Bei einer Mogelpackung sinkt der Inhalt (z.B. von 500 g auf 400 g), während der Preis gleich bleibt oder steigt. Unsere Formel ((neuerPreis / neueMenge) / (alterPreis / alteMenge) - 1) × 100 zeigt den exakten prozentualen Aufpreis pro Kilo.',
+          'Bei einer Mogelpackung sinkt der Inhalt (z. B. von 500 g auf 400 g), während der Preis gleich bleibt oder steigt. Mit ((neuerPreis / neueMenge) / (alterPreis / alteMenge) - 1) × 100 sehen wir den genauen Aufpreis pro Kilo.',
       },
       {
         question: 'Welcher Supermarkt in Deutschland hat den günstigsten Warenkorb?',
         answer:
-          'Anhand realer Grundpreise vergleicht KiloRadar den Wocheneinkauf für 1 Woche, 1 Monat und 1 Jahr bei Aldi, Lidl, Kaufland, REWE und Edeka.',
+          'Wir vergleichen den Wocheneinkauf anhand der Grundpreise für 1 Woche, 1 Monat und 1 Jahr bei Aldi, Lidl, Kaufland, REWE und Edeka.',
       },
       {
-        question: 'Kann ich Barcodes direkt mit der Smartphone-Kamera scannen?',
+        question: 'Kann ich Barcodes mit der Handykamera scannen?',
         answer:
-          'Ja! Über den Kamera-Scanner oder die EAN-Suche ruft KiloRadar die Füllmenge live bei Open Food Facts ab und berechnet sofort den Kilopreis.',
+          'Ja. Nutze den Kamera-Scanner oder die EAN-Suche. Wir holen die Füllmenge live bei Open Food Facts und zeigen dir sofort den Kilopreis.',
       },
     ],
     share: {
@@ -363,24 +363,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Tout savoir pour calculer le vrai prix au kilo (€/kg et €/l) et repérer la réduflation dans les supermarchés français.',
     faqs: [
       {
-        question: 'Comment fonctionne le calculateur de prix au kilo et prix unitaire ?',
+        question: 'Comment KiloRadar calcule-t-il le prix au kilo ?',
         answer:
-          'KiloRadar convertit automatiquement tous les grammages et volumes (g, kg, ml, cl, l et lots) en prix unitaire standardisé au kilo (€/kg) ou au litre (€/l).',
+          'KiloRadar convertit tous les grammages et volumes (g, kg, ml, cl, l et lots) en un prix unitaire au kilo (€/kg) ou au litre (€/l).',
       },
       {
-        question: 'Qu’est-ce que la réduflation (shrinkflation) et comment la détecter ?',
+        question: 'Qu’est-ce que la réduflation (shrinkflation) ?',
         answer:
-          'La réduflation consiste à réduire le poids ou le volume d’un produit (par ex. de 250 g à 200 g) tout en maintenant ou augmentant son prix. Nous calculons la hausse réelle au kilo via ((nouveauPrix / nouvelleQuantité) / (ancienPrix / ancienneQuantité) - 1) × 100.',
+          'C’est quand le poids ou le volume d’un produit diminue (par exemple de 250 g à 200 g) alors que son prix reste le même ou augmente. Nous calculons la hausse réelle au kilo avec ((nouveauPrix / nouvelleQuantité) / (ancienPrix / ancienneQuantité) - 1) × 100.',
       },
       {
-        question: 'Quelle enseigne de supermarché est la moins chère en France ?',
+        question: 'Quelle enseigne est la moins chère en France ?',
         answer:
-          'En comparant le prix au kilo réel d’un panier type, KiloRadar classe E.Leclerc, Lidl, Intermarché, Carrefour et Auchan sur 1 semaine, 1 mois et 1 an.',
+          'Nous comparons le prix au kilo d’un panier type et classons E.Leclerc, Lidl, Intermarché, Carrefour et Auchan sur 1 semaine, 1 mois et 1 an.',
       },
       {
         question: 'Puis-je scanner un code-barres avec mon téléphone en magasin ?',
         answer:
-          'Oui, utilisez le bouton « Scanner avec la caméra » ou la barre de recherche EAN pour récupérer le grammage via Open Food Facts et calculer le prix au kilo instantanément.',
+          'Oui. Utilisez « Scanner avec la caméra » ou saisissez le code EAN. Nous récupérons le grammage via Open Food Facts et calculons le prix au kilo tout de suite.',
       },
     ],
     share: {
@@ -402,24 +402,24 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       'Aprende a calcular el verdadero precio unitario (€/kg y €/l) y detectar envases reducidos en el supermercado.',
     faqs: [
       {
-        question: '¿Cómo funciona la calculadora de precio por kilo y precio unitario?',
+        question: '¿Cómo calcula KiloRadar el precio por kilo?',
         answer:
-          'KiloRadar convierte automáticamente cualquier peso o volumen (gramos, kilos, mililitros, litros y packs ahorro) en un precio unitario estandarizado en €/kg o €/l.',
+          'KiloRadar convierte cualquier peso o volumen (gramos, kilos, mililitros, litros y packs ahorro) en un precio unitario en €/kg o €/l.',
       },
       {
-        question: '¿Qué es la reduflación (shrinkflation) y cómo se calcula?',
+        question: '¿Qué es la reduflación (shrinkflation)?',
         answer:
-          'La reduflación ocurre cuando un fabricante reduce el contenido del envase (por ejemplo, de 250 g a 200 g) manteniendo o subiendo el precio. Calculamos la subida real por kilo con ((nuevoPrecio / nuevaCantidad) / (antiguoPrecio / antiguaCantidad) - 1) × 100.',
+          'Es cuando el envase trae menos contenido (por ejemplo, de 250 g a 200 g) y el precio se mantiene o sube. Calculamos la subida real por kilo con ((nuevoPrecio / nuevaCantidad) / (antiguoPrecio / antiguaCantidad) - 1) × 100.',
       },
       {
-        question: '¿Qué supermercado tiene la cesta de la compra más barata en España?',
+        question: '¿Qué supermercado tiene la cesta más barata en España?',
         answer:
-          'Comparando el precio unitario real de los básicos y marcas habituales, KiloRadar muestra el coste para 1 semana, 1 mes y 1 año en Lidl, Aldi, Mercadona, Dia y Carrefour.',
+          'Comparamos el precio unitario de básicos y marcas habituales y mostramos el coste para 1 semana, 1 mes y 1 año en Lidl, Aldi, Mercadona, Dia y Carrefour.',
       },
       {
-        question: '¿Puedo escanear códigos de barras con la cámara del móvil?',
+        question: '¿Puedo escanear códigos de barras con el móvil?',
         answer:
-          '¡Sí! Pulsa en «Escanear con cámara» o introduce cualquier código EAN para obtener el peso de Open Food Facts y calcular el precio por kilo al instante.',
+          'Sí. Pulsa «Escanear con cámara» o escribe el código EAN. Buscamos el peso en Open Food Facts y calculamos el precio por kilo al instante.',
       },
     ],
     share: {

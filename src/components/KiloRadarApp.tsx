@@ -687,16 +687,16 @@ const PROVENANCE_UI: Record<CountryRouteCode, ProvenanceStrings> = {
 };
 
 const HERO_COPY: Record<CountryRouteCode, { title: [string, string]; sub: string; save: string }> = {
-  en: { title: ['Same price.', 'Less inside.'], sub: 'See the real price per kilo, and which store is cheapest right now.', save: 'You save up to' },
-  us: { title: ['Same price.', 'Less inside.'], sub: 'See the real price per pound, and which store is cheapest right now.', save: 'You save up to' },
-  uk: { title: ['Same price.', 'Less inside.'], sub: 'See the real price per kilo, and which store is cheapest right now.', save: 'You save up to' },
-  no: { title: ['Samme pris.', 'Mindre i pakken.'], sub: 'Se den ekte kiloprisen – og hvilken butikk som er billigst nå.', save: 'Du sparer opptil' },
-  se: { title: ['Samma pris.', 'Mindre i paketet.'], sub: 'Se det verkliga kilopriset – och vilken butik som är billigast just nu.', save: 'Du sparar upp till' },
-  dk: { title: ['Samme pris.', 'Mindre i pakken.'], sub: 'Se den rigtige kilopris – og hvilken butik der er billigst lige nu.', save: 'Du sparer op til' },
-  pl: { title: ['Ta sama cena.', 'Mniej w opakowaniu.'], sub: 'Zobacz prawdziwą cenę za kilogram – i który sklep jest teraz najtańszy.', save: 'Oszczędzasz nawet' },
-  de: { title: ['Gleicher Preis.', 'Weniger drin.'], sub: 'Sieh den echten Kilopreis – und welcher Laden gerade am günstigsten ist.', save: 'Du sparst bis zu' },
-  fr: { title: ['Même prix.', 'Moins dans le paquet.'], sub: 'Découvrez le vrai prix au kilo – et le magasin le moins cher du moment.', save: "Vous économisez jusqu'à" },
-  es: { title: ['Mismo precio.', 'Menos dentro.'], sub: 'Descubre el precio real por kilo y qué tienda es la más barata ahora.', save: 'Ahorras hasta' },
+  en: { title: ['Same price.', 'Less inside.'], sub: 'Notice your packs getting smaller? See the real price per kilo, and where your shop costs least.', save: 'You can save up to' },
+  us: { title: ['Same price.', 'Less inside.'], sub: 'Notice your packs getting smaller? See the real price per pound, and where your groceries cost least.', save: 'You can save up to' },
+  uk: { title: ['Same price.', 'Less inside.'], sub: 'Notice your packs getting smaller? See the real price per kilo, and where your shop costs least.', save: 'You can save up to' },
+  no: { title: ['Samme pris.', 'Mindre i pakken.'], sub: 'Merker du at pakkene blir mindre? Her ser du hva kiloprisen faktisk er, og hvor handlekurven blir billigst.', save: 'Du kan spare opptil' },
+  se: { title: ['Samma pris.', 'Mindre i paketet.'], sub: 'Märker du att förpackningarna blir mindre? Här ser du vad kilopriset egentligen är, och var matkassen blir billigast.', save: 'Du kan spara upp till' },
+  dk: { title: ['Samme pris.', 'Mindre i pakken.'], sub: 'Kan du mærke, at pakkerne bliver mindre? Her ser du, hvad kiloprisen egentlig er, og hvor indkøbskurven er billigst.', save: 'Du kan spare op til' },
+  pl: { title: ['Ta sama cena.', 'Mniej w opakowaniu.'], sub: 'Masz wrażenie, że opakowania robią się mniejsze? Zobacz, ile naprawdę kosztuje kilogram i gdzie zakupy wyjdą najtaniej.', save: 'Możesz zaoszczędzić nawet' },
+  de: { title: ['Gleicher Preis.', 'Weniger drin.'], sub: 'Kommt dir die Packung kleiner vor? Hier siehst du den echten Kilopreis und wo dein Einkauf am günstigsten ist.', save: 'Du sparst bis zu' },
+  fr: { title: ['Même prix.', 'Moins dans le paquet.'], sub: 'Vous avez l’impression que les paquets rétrécissent ? Voyez le vrai prix au kilo et où vos courses coûtent le moins.', save: 'Vous pouvez économiser jusqu’à' },
+  es: { title: ['Mismo precio.', 'Menos dentro.'], sub: '¿Te da la sensación de que los paquetes son cada vez más pequeños? Mira el precio real por kilo y dónde te sale más barata la compra.', save: 'Puedes ahorrar hasta' },
 };
 
 /** Open Food/Beauty/Products Facts data is ODbL: always mark it as such next to the source. */
@@ -724,6 +724,11 @@ const regionName = (region: string, locale: string): string => {
   } catch {
     return region;
   }
+};
+
+const VS_WORD: Record<CountryRouteCode, string> = {
+  en: 'compared with', us: 'compared with', uk: 'compared with', no: 'mot', se: 'mot', dk: 'mod',
+  pl: 'w porównaniu z', de: 'gegenüber', fr: 'par rapport à', es: 'frente a',
 };
 
 const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
@@ -1635,7 +1640,7 @@ export default function KiloRadarApp({
                     </p>
                     <div className="mt-10 border-t border-border pt-8">
                       <p className="text-sm font-semibold text-savings">
-                        {HERO_COPY[countryCode].save} <span className="text-muted-foreground">vs. {mostExpensiveStore.store}</span>
+                        {HERO_COPY[countryCode].save} <span className="text-muted-foreground">{VS_WORD[countryCode]} {mostExpensiveStore.store}</span>
                       </p>
                       <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
                         {[
