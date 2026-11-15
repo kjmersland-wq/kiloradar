@@ -123,26 +123,36 @@ export const DE_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Woher stammen die Produkt- und Preisdaten?',
-      intro: 'Wir kombinieren offene Produktdatenbanken mit wöchentlichen Prospekt- und Regalpreisen:',
+      title: '1. Woher kommen die Daten?',
+      intro:
+        'Wir sind an keine Supermarktkette gebunden. Das nutzen wir heute:',
       bullets: [
         {
-          bold: 'Open Food Facts (EAN-Datenbank):',
-          text: 'Erkennt automatisch Änderungen der Füllmenge (z.B. von 500 g auf 400 g).',
+          bold: 'Open Food Facts, Open Beauty Facts und Open Products Facts:',
+          text: 'Offene Datenbanken von Freiwilligen (ODbL) mit Barcodes, Produktnamen und Packungsgrößen. Wir prüfen die Größe jede Nacht und sagen Bescheid, wenn eine Packung kleiner wird.',
         },
         {
-          bold: 'Deutsche Handelsketten:',
-          text: 'Wöchentlicher Preisabgleich bei Aldi, Lidl, Kaufland, REWE und Edeka.',
+          bold: 'Open Prices:',
+          text: 'Preise, die Freiwillige eingetragen haben, mit Geschäft und Datum. Gibt es für ein Produkt keinen Preis, steht dort «Preis folgt». Wir raten nie.',
+        },
+        {
+          bold: 'Noch nicht dabei:',
+          text: 'Prospekte und die eigenen Preise der Händler. Wir nehmen sie erst auf, wenn wir sie nutzen dürfen, und schreiben das dann hier.',
         },
       ],
     },
     {
-      title: '2. Wie wird der Warenkorb berechnet?',
-      intro: 'Angelehnt an die Verbrauchsprofile des Statistischen Bundesamtes (Destatis):',
+      title: '2. Wie entsteht der Wocheneinkauf? (unverbindlich)',
+      intro:
+        'Die Rangliste der Märkte ist eine Schätzung, keine Messung von heute:',
       bullets: [
         {
-          bold: 'Basisprodukte & Markenartikel:',
-          text: 'Kombiniert frische Grundnahrungsmittel mit überwachten Markenprodukten.',
+          bold: 'Ein Modell:',
+          text: 'Wir setzen pro Kette einen festen Grundbetrag für einen üblichen Wocheneinkauf an, dazu eine Auswahl bekannter Produkte. Die Beträge sind unsere eigenen Schätzungen. Wir ersetzen sie durch gemessene Preise, sobald wir welche haben.',
+        },
+        {
+          bold: 'Haushaltsgröße:',
+          text: 'Die drei Haushaltsoptionen nutzen die Faktoren 0,72, 1,0 und 1,85. Das sind unsere eigenen Schätzungen und stammen nicht aus einer öffentlichen Tabelle.',
         },
       ],
     },

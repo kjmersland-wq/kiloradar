@@ -121,30 +121,36 @@ export const US_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Where do our US package weights & prices come from?',
-      intro: 'We combine open barcode catalogs with weekly public store circulars:',
+      title: '1. Where does the data come from?',
+      intro:
+        'We are not tied to any supermarket chain. This is what we use today:',
       bullets: [
         {
-          bold: 'Open Food Facts (UPC & EAN Database):',
-          text: 'Tracks package net weights in ounces (oz), pounds (lb), fluid ounces (fl oz), and grams.',
+          bold: 'Open Food Facts, Open Beauty Facts and Open Products Facts:',
+          text: 'Open, volunteer-built databases (ODbL) with barcodes, product names and pack sizes. We check the size every night and tell you if a pack gets smaller.',
         },
         {
-          bold: 'Major US Retailers:',
-          text: 'Benchmarked against weekly flyers from Aldi US, Walmart, Trader Joe’s, Kroger, and Target.',
+          bold: 'Open Prices:',
+          text: 'Prices added by volunteers, shown with the store and the date. If there is no price for a product, it says “Price coming”. We never guess.',
+        },
+        {
+          bold: 'Not included yet:',
+          text: 'Supermarket flyers and the stores’ own prices. We will add them once we are allowed to use them, and we will say so here.',
         },
       ],
     },
     {
-      title: '2. How does our US & Metric converter work?',
-      intro: 'US grocery shelves mix ounces, pounds, fluid ounces, and metric units—we normalize them automatically:',
+      title: '2. How is the weekly shop worked out? (indicative)',
+      intro:
+        'The store ranking is an estimate, not a measurement from today:',
       bullets: [
         {
-          bold: 'Seamless oz / lb / fl oz Support:',
-          text: 'Type "16 oz", "1.5 lb", "52 fl oz", or "500 g" directly into the calculator to compare any two packages.',
+          bold: 'A model:',
+          text: 'We use a fixed base amount per chain for a typical weekly shop, plus a selection of well-known products. The amounts are our own estimates, and we will replace them with measured prices as we get them.',
         },
         {
-          bold: 'USDA Moderate-Cost Food Plan Scaling:',
-          text: 'Basket totals scale realistically for singles, couples, and families of four.',
+          bold: 'Household size:',
+          text: 'The three household options use the factors 0.72, 1.0 and 1.85. These are our own estimates, not taken from a public table.',
         },
       ],
     },

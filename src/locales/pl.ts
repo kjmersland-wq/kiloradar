@@ -123,36 +123,36 @@ export const PL_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Skąd pochodzą ceny i wagi opakowań?',
+      title: '1. Skąd mamy dane?',
       intro:
-        'Abyś mógł w pełni zaufać naszym porównaniom, jesteśmy w 100% niezależni od sieci handlowych i korzystamy z trzech otwartych źródeł:',
+        'Nie jesteśmy związani z żadną siecią sklepów. Z tego korzystamy dziś:',
       bullets: [
         {
-          bold: 'Open Food Facts Polska:',
-          text: 'Otwarta, społeczna baza kodów kreskowych (EAN), dzięki której od razu widać, kiedy kostka masła lub paczka kawy cicho traci na wadze.',
+          bold: 'Open Food Facts, Open Beauty Facts i Open Products Facts:',
+          text: 'Otwarte bazy tworzone przez wolontariuszy (ODbL) z kodami kreskowymi, nazwami produktów i rozmiarami opakowań. Co noc sprawdzamy rozmiar i dajemy znać, gdy opakowanie się zmniejszy.',
         },
         {
-          bold: 'Cotygodniowe gazetki i cenniki:',
-          text: 'Przeglądamy publicznie dostępne ceny i oferty w sieciach Biedronka, Lidl, Auchan, Dino oraz Carrefour.',
+          bold: 'Open Prices:',
+          text: 'Ceny dodane przez wolontariuszy, ze sklepem i datą. Jeśli produkt nie ma ceny, widać «Cena wkrótce». Nigdy nie zgadujemy.',
         },
         {
-          bold: 'Niezależne badania koszyka zakupowego:',
-          text: 'Regularnie porównujemy dane z ogólnopolskimi raportami cenowymi w prasie i internecie.',
+          bold: 'Jeszcze nie uwzględniamy:',
+          text: 'Gazetek promocyjnych i cen z samych sklepów. Dodamy je dopiero, gdy będziemy mogli z nich korzystać, i napiszemy o tym tutaj.',
         },
       ],
     },
     {
-      title: '2. Jak obliczamy koszyk przeciętnej polskiej rodziny?',
+      title: '2. Jak powstają cotygodniowe zakupy? (orientacyjnie)',
       intro:
-        'Nikt nie kupuje wyłącznie kawy czy czekolady. Aby pokazać realny koszt tygodniowych i miesięcznych zakupów, uwzględniamy pełną listę codziennych potrzeb:',
+        'Ranking sklepów to szacunek, a nie dzisiejszy pomiar:',
       bullets: [
         {
-          bold: 'Dopasowany do Twojego domu (GUS):',
-          text: 'Niezależnie od tego, czy kupujesz dla siebie, dla pary czy dla czteroosobowej rodziny, wielkość koszyka skaluje się zgodnie z danymi GUS.',
+          bold: 'Model:',
+          text: 'Dla każdej sieci przyjmujemy stałą kwotę bazową typowych cotygodniowych zakupów oraz zestaw znanych produktów. Kwoty to nasze własne szacunki. Zastąpimy je zmierzonymi cenami, gdy tylko je zdobędziemy.',
         },
         {
-          bold: 'Codzienne podstawy na pierwszym miejscu:',
-          text: 'Łączymy świeże pieczywo, nabiał, warzywa i owoce z popularnymi produktami paczkowanymi, które monitorujemy pod kątem downsizingu.',
+          bold: 'Wielkość gospodarstwa:',
+          text: 'Trzy opcje gospodarstwa domowego używają współczynników 0,72, 1,0 i 1,85. To nasze własne szacunki, a nie dane z publicznej tabeli.',
         },
       ],
     },

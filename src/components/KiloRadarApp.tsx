@@ -13,8 +13,7 @@ import {
   Loader2,
   ShoppingCart,
   Trophy,
-  RefreshCw,
-  Store,
+    Store,
   BookOpen,
   Database,
   FileCheck2,
@@ -731,6 +730,19 @@ const VS_WORD: Record<CountryRouteCode, string> = {
   pl: 'w porównaniu z', de: 'gegenüber', fr: 'par rapport à', es: 'frente a',
 };
 
+const RANKING_NOTE: Record<CountryRouteCode, { badge: string; note: string; short: string }> = {
+  en: { badge: 'Indicative estimate', note: 'These figures are an estimate from a model, not today’s shelf prices. We will replace them with measured prices as we get them.', short: 'indicative' },
+  no: { badge: 'Veiledende anslag', note: 'Tallene er et anslag fra en modell, ikke dagens butikkpriser. Vi bytter dem ut med målte priser etter hvert.', short: 'veiledende' },
+  se: { badge: 'Vägledande uppskattning', note: 'Siffrorna är en uppskattning från en modell, inte dagens butikspriser. Vi byter ut dem mot uppmätta priser allt eftersom.', short: 'vägledande' },
+  dk: { badge: 'Vejledende skøn', note: 'Tallene er et skøn fra en model og ikke dagens butikspriser. Vi erstatter dem med målte priser, efterhånden som vi får dem.', short: 'vejledende' },
+  pl: { badge: 'Orientacyjny szacunek', note: 'Liczby to szacunek z modelu, a nie dzisiejsze ceny ze sklepów. Zastąpimy je zmierzonymi cenami, gdy tylko je zdobędziemy.', short: 'orientacyjne' },
+  de: { badge: 'Unverbindliche Schätzung', note: 'Die Zahlen sind eine Schätzung aus einem Modell, keine heutigen Ladenpreise. Wir ersetzen sie durch gemessene Preise, sobald wir welche haben.', short: 'Richtwert' },
+  fr: { badge: 'Estimation indicative', note: 'Les chiffres sont une estimation issue d’un modèle, pas les prix en magasin d’aujourd’hui. Nous les remplacerons par des prix mesurés au fur et à mesure.', short: 'indicatif' },
+  es: { badge: 'Estimación orientativa', note: 'Las cifras son una estimación de un modelo, no los precios de hoy en tienda. Las iremos sustituyendo por precios medidos.', short: 'orientativo' },
+  us: { badge: 'Indicative estimate', note: 'These figures are an estimate from a model, not today’s shelf prices. We will replace them with measured prices as we get them.', short: 'indicative' },
+  uk: { badge: 'Indicative estimate', note: 'These figures are an estimate from a model, not today’s shelf prices. We will replace them with measured prices as we get them.', short: 'indicative' },
+};
+
 const NAV_LABELS: Record<CountryRouteCode, [string, string, string]> = {
   en: ['Cheapest stores', 'Calculator', 'Products'],
   us: ['Cheapest stores', 'Calculator', 'Products'],
@@ -977,8 +989,6 @@ export default function KiloRadarApp({
   const [householdProfileId, setHouseholdProfileId] = useState<'single' | 'couple' | 'family'>(
     'couple'
   );
-  const [isScanningStores, setIsScanningStores] = useState(false);
-  const [customScanTimestamp, setCustomScanTimestamp] = useState<string | null>(null);
 
   // Simulator / Custom Test state
   const [simName, setSimName] = useState(localeConfig.products[0]?.name || 'Coffee');
@@ -1001,7 +1011,6 @@ export default function KiloRadarApp({
     const first = localeConfig.products[0];
     setSelectedCategory('ALL');
     setSearchQuery('');
-    setCustomScanTimestamp(null);
     setLiveResults([]);
     setLiveStatusMsg(null);
     if (first) {
@@ -1084,20 +1093,6 @@ export default function KiloRadarApp({
     setSimOldPrice(preset.oldPrice.toFixed(2));
     setSimNewPrice(preset.newPrice.toFixed(2));
     setSimImageUrl(preset.imageUrl);
-  };
-
-  const handleTriggerWeeklyStoreScan = () => {
-    setIsScanningStores(true);
-    setTimeout(() => {
-      setIsScanningStores(false);
-      const now = new Date();
-      const timeStr = now.toLocaleTimeString(localeConfig.numberLocale, {
-        hour: '2-digit',
-        minute: '2-digit',
-      });
-      const chainList = localeConfig.stores.map((s) => s.store).join(', ');
-      setCustomScanTimestamp(`${localeConfig.ui.lastScannedValue} (${timeStr} • ${chainList})`);
-    }, 550);
   };
 
   // Core Open Food Facts Query (used by both top search bar, barcode input, and camera scanner)
@@ -1565,6 +1560,9 @@ export default function KiloRadarApp({
                 <p className="flex items-center gap-2 text-sm font-semibold text-savings">
                   <ShoppingCart className="size-4" /> {dict.basketBadge}
                 </p>
+                <span className="mt-3 inline-block rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold text-warn">
+                  {RANKING_NOTE[countryCode].badge}
+                </span>
                 <h2 className="mt-3 text-5xl font-extrabold text-foreground sm:text-6xl">
                   {dict.cheapestChainNow}
                 </h2>
@@ -1699,23 +1697,10 @@ export default function KiloRadarApp({
             })()}
 
             <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-              <span>
-                {dict.lastScannedLabel} {customScanTimestamp || dict.lastScannedValue}
-              </span>
-              <span className="flex items-center gap-4">
-                <button
-                  type="button"
-                  onClick={handleTriggerWeeklyStoreScan}
-                  disabled={isScanningStores}
-                  className="flex cursor-pointer items-center gap-1.5 font-semibold text-savings"
-                >
-                  <RefreshCw className={`size-3.5 ${isScanningStores ? 'animate-spin' : ''}`} />
-                  {isScanningStores ? dict.scanningChainsBtn : dict.scanWeekPricesBtn}
-                </button>
-                <a href="#metode-og-kilder" className="flex items-center gap-1.5 font-semibold underline underline-offset-4">
-                  <BookOpen className="size-3.5" /> {dict.methodologyJumpLink}
-                </a>
-              </span>
+              <span data-testid="ranking-note">{RANKING_NOTE[countryCode].note}</span>
+              <a href="#metode-og-kilder" className="flex items-center gap-1.5 font-semibold underline underline-offset-4">
+                <BookOpen className="size-3.5" /> {dict.methodologyJumpLink}
+              </a>
             </div>
             </div>
           </section>
@@ -2340,7 +2325,7 @@ export default function KiloRadarApp({
                                 <div className="flex items-center justify-between text-[11px]">
                                   <span className="font-semibold text-muted-foreground flex items-center gap-1.5">
                                     <Store className="w-3.5 h-3.5 text-savings" />
-                                    {dict.cheapestStoreLabel} ({cheapestForProduct.lastScanned}):
+                                    {dict.cheapestStoreLabel} ({RANKING_NOTE[countryCode].short}):
                                   </span>
                                   <span className="font-bold text-savings">
                                     {cheapestForProduct.store} (

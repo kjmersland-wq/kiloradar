@@ -122,36 +122,36 @@ export const SE_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Varifrån kommer priserna och storlekarna?',
+      title: '1. Var kommer uppgifterna ifrån?',
       intro:
-        'För att du ska känna dig helt trygg är vi 100 % oberoende av matjättarna och samlar in uppgifter från tre öppna källor:',
+        'Vi är inte knutna till någon matkedja. Det här använder vi i dag:',
       bullets: [
         {
-          bold: 'Open Food Facts Sverige:',
-          text: 'En öppen produktdatabas med streckkoder (EAN) som hjälper oss att se när ett kaffepaket plötsligt minskar från 450 till 425 gram.',
+          bold: 'Open Food Facts, Open Beauty Facts och Open Products Facts:',
+          text: 'Öppna databaser byggda av frivilliga (ODbL) med streckkoder, varunamn och förpackningsstorlekar. Vi kollar storleken varje natt och säger till om en förpackning blir mindre.',
         },
         {
-          bold: 'Veckans reklamblad & butikspriser:',
-          text: 'Vi läser av publika prislistor och erbjudanden hos Willys, ICA, Coop, City Gross och Hemköp.',
+          bold: 'Open Prices:',
+          text: 'Priser som frivilliga har lagt in, med butik och datum. Finns det inget pris för varan står det «Pris kommer». Vi gissar aldrig.',
         },
         {
-          bold: 'Oberoende prisjämförelser:',
-          text: 'Vi stämmer löpande av mot svenska konsumentundersökningar och öppna nätbutiker.',
+          bold: 'Inte med ännu:',
+          text: 'Reklamblad och butikernas egna priser. Vi tar med dem först när vi får använda dem, och då skriver vi det här.',
         },
       ],
     },
     {
-      title: '2. Hur räknar vi ut en vanlig svensk matkorg?',
+      title: '2. Hur tas veckohandlingen fram? (vägledande)',
       intro:
-        'Ingen lever på bara kaffe och choklad. För att visa vad en riktig vecko- eller månadshandling kostar bygger korgen på svensk vardagsmat:',
+        'Rangordningen av butiker är en uppskattning, inte en mätning från i dag:',
       bullets: [
         {
-          bold: 'Konsumentverkets beräkningar:',
-          text: 'Oavsett om du bor själv, är ett par eller handlar till en barnfamilj anpassas matkorgen efter Konsumentverkets riktlinjer.',
+          bold: 'En modell:',
+          text: 'Vi använder ett fast grundbelopp per kedja för en vanlig veckohandling, plus ett urval av kända varor. Beloppen är våra egna uppskattningar, och vi byter ut dem mot uppmätta priser allt eftersom.',
         },
         {
-          bold: 'Svenska basvaror i grunden:',
-          text: 'Kombinerar mejeri, bröd, frukt och grönt med de välkända varumärken vi följer för krympflation.',
+          bold: 'Hushållets storlek:',
+          text: 'De tre hushållsvalen använder faktorerna 0,72, 1,0 och 1,85. Det är våra egna uppskattningar, inte hämtade från en offentlig tabell.',
         },
       ],
     },

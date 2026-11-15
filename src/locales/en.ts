@@ -121,36 +121,36 @@ export const EN_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Where do the prices and sizes come from?',
+      title: '1. Where does the data come from?',
       intro:
-        'To give you a clear picture without favors to any supermarket chain, we gather public package and price data every week:',
+        'We are not tied to any supermarket chain. This is what we use today:',
       bullets: [
         {
-          bold: 'Open Food Facts (Global Barcode Database):',
-          text: 'An open, community-driven catalog of product barcodes (EAN) that helps us spot when a package quietly drops from 250g to 200g.',
+          bold: 'Open Food Facts, Open Beauty Facts and Open Products Facts:',
+          text: 'Open, volunteer-built databases (ODbL) with barcodes, product names and pack sizes. We check the size every night and tell you if a pack gets smaller.',
         },
         {
-          bold: 'Weekly Supermarket Flyers:',
-          text: 'We check publicly listed weekly flyers and shelf prices across Aldi, Lidl, Carrefour, Tesco, and Amazon Fresh.',
+          bold: 'Open Prices:',
+          text: 'Prices added by volunteers, shown with the store and the date. If there is no price for a product, it says “Price coming”. We never guess.',
         },
         {
-          bold: 'Independent Consumer Checks:',
-          text: 'Cross-referenced with public grocery price trackers so you can trust the numbers you see.',
+          bold: 'Not included yet:',
+          text: 'Supermarket flyers and the stores’ own prices. We will add them once we are allowed to use them, and we will say so here.',
         },
       ],
     },
     {
-      title: '2. How do we calculate a typical family basket?',
+      title: '2. How is the weekly shop worked out? (indicative)',
       intro:
-        'Nobody buys just coffee or detergent. To show what a real week or month of groceries looks like, we balance the basket around everyday life:',
+        'The store ranking is an estimate, not a measurement from today:',
       bullets: [
         {
-          bold: 'Adapted to Your Household:',
-          text: 'Whether you shop for one, two, or a family of four, the basket scales naturally based on official European household food budgets.',
+          bold: 'A model:',
+          text: 'We use a fixed base amount per chain for a typical weekly shop, plus a selection of well-known products. The amounts are our own estimates, and we will replace them with measured prices as we get them.',
         },
         {
-          bold: 'Everyday Staples First:',
-          text: 'Combines weekly essentials (milk, bread, fruit, vegetables, cheese) with the packaged favorites we track for shrinkflation.',
+          bold: 'Household size:',
+          text: 'The three household options use the factors 0.72, 1.0 and 1.85. These are our own estimates, not taken from a public table.',
         },
       ],
     },

@@ -122,36 +122,36 @@ export const DK_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Hvor kommer priserne og pakningsstørrelserne fra?',
+      title: '1. Hvor kommer oplysningerne fra?',
       intro:
-        'For at du trygt kan stole på tallene, er vi helt uafhængige af supermarkedskæderne og samler data fra tre åbne kilder:',
+        'Vi er ikke bundet til nogen dagligvarekæde. Det her bruger vi i dag:',
       bullets: [
         {
-          bold: 'Open Food Facts Danmark:',
-          text: 'En åben produktdatabase med stregkoder (EAN), der hjælper os med at opdage, når en pakke smør eller kaffe pludselig skrumper.',
+          bold: 'Open Food Facts, Open Beauty Facts og Open Products Facts:',
+          text: 'Åbne databaser bygget af frivillige (ODbL) med stregkoder, varenavne og pakkestørrelser. Vi tjekker størrelsen hver nat og siger til, hvis en pakke bliver mindre.',
         },
         {
-          bold: 'Ugentlige tilbudsaviser & butikspriser:',
-          text: 'Vi gennemgår offentligt tilgængelige priser og tilbudsaviser fra Rema 1000, Netto, Lidl, Bilka og Føtex.',
+          bold: 'Open Prices:',
+          text: 'Priser, som frivillige har lagt ind, med butik og dato. Findes der ingen pris på varen, står der «Pris kommer». Vi gætter aldrig.',
         },
         {
-          bold: 'Uafhængige pristjek:',
-          text: 'Vi holder løbende tallene op imod danske forbrugerundersøgelser og online dagligvarepriser.',
+          bold: 'Ikke med endnu:',
+          text: 'Tilbudsaviser og butikkernes egne priser. Vi tager dem først med, når vi må bruge dem, og så skriver vi det her.',
         },
       ],
     },
     {
-      title: '2. Hvordan beregner vi en almindelig dansk indkøbskurv?',
+      title: '2. Hvordan laves ugens indkøb? (vejledende)',
       intro:
-        'Ingen lever af kaffe og chokolade alene. For at vise hvad en rigtig uge- eller månedshandel koster, tager kurven udgangspunkt i en almindelig dansk husholdning:',
+        'Rangeringen af butikker er et skøn, ikke en måling fra i dag:',
       bullets: [
         {
-          bold: 'Tilpasset din husstand:',
-          text: 'Uanset om du bor alene, er et par eller køber ind til hele familien, skaleres mængderne efter danske husholdningsbudgetter.',
+          bold: 'En model:',
+          text: 'Vi bruger et fast grundbeløb pr. kæde til et almindeligt ugeindkøb plus et udvalg af kendte varer. Beløbene er vores egne skøn, og vi erstatter dem med målte priser, efterhånden som vi får dem.',
         },
         {
-          bold: 'Hverdagens basisvarer:',
-          text: 'Kombinerer mælk, rugbrød, frugt, grønt og ost med de kendte mærkevarer, vi holder øje med for krympflation.',
+          bold: 'Husstandens størrelse:',
+          text: 'De tre husstandsvalg bruger faktorerne 0,72, 1,0 og 1,85. Det er vores egne skøn og ikke hentet fra en offentlig tabel.',
         },
       ],
     },

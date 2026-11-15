@@ -63,7 +63,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'How do you compare weekly grocery baskets?',
         answer:
-          'We weigh everyday staples and tracked brands by their unit price and rank the big supermarkets for 1 week, 1 month and 1 year.',
+          'It is an indicative estimate, not a measurement from today. We use a model with a fixed base amount per chain plus a selection of well-known products, and show 1 week, 1 month and 1 year for the big supermarkets.',
       },
       {
         question: 'Can I scan a barcode with my phone?',
@@ -102,7 +102,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Which US grocery store has the lowest weekly basket?',
         answer:
-          'We compare typical weekly, monthly and yearly household baskets across Aldi US, Walmart, Trader Joe’s, Kroger and Target.',
+          'It is an indicative estimate, not a measurement from today. We use a model with a fixed base amount per chain plus a selection of well-known products, and show 1 week, 1 month and 1 year for Aldi US, Walmart, Trader Joe’s, Kroger and Target.',
       },
       {
         question: 'Can I scan UPC barcodes in the store?',
@@ -141,7 +141,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Which UK supermarket is cheapest for a weekly shop?',
         answer:
-          'We compare a standard household trolley across Aldi UK, Lidl UK, Asda, Tesco and Sainsbury’s for 1 week, 1 month and 1 year.',
+          'It is an indicative estimate, not a measurement from today. We use a model with a fixed base amount per chain plus a selection of well-known products, and show 1 week, 1 month and 1 year for Aldi UK, Lidl UK, Asda, Tesco and Sainsbury’s.',
       },
       {
         question: 'Can I scan barcodes on my mobile?',
@@ -180,7 +180,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Hvilken matbutikk er billigst på ukeshandelen i Norge?',
         answer:
-          'Vi sammenligner enhetsprisen på basisvarer og kjente merkevarer og viser totalprisen for 1 uke, 1 måned og 1 år hos REMA 1000, KIWI, Coop Extra, Oda og Meny.',
+          'Rangeringen er et veiledende anslag, ikke en måling fra i dag. Den bygger på en modell med et fast grunnbeløp per kjede pluss et utvalg kjente varer, og viser 1 uke, 1 måned og 1 år hos REMA 1000, KIWI, Coop Extra, Oda og Meny.',
       },
       {
         question: 'Kan jeg skanne strekkoder med mobilen i butikken?',
@@ -219,7 +219,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Vilken matbutik har billigast matkasse i Sverige?',
         answer:
-          'Vi jämför kilopris och jämförpris på basvaror och kända märken och visar kostnaden för 1 vecka, 1 månad och 1 år hos Willys, ICA, Coop, Hemköp och City Gross.',
+          'Rangordningen är en vägledande uppskattning, inte en mätning från i dag. Den bygger på en modell med ett fast grundbelopp per kedja plus ett urval av kända varor, och visar 1 vecka, 1 månad och 1 år hos Willys, ICA, Coop, Hemköp och City Gross.',
       },
       {
         question: 'Kan jag skanna streckkoder med mobilen?',
@@ -258,7 +258,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Hvilket supermarked er billigst i Danmark?',
         answer:
-          'Vi sammenligner en typisk indkøbskurv hos Rema 1000, Netto, Lidl, Bilka og Føtex for 1 uge, 1 måned og 1 år.',
+          'Rangeringen er et vejledende skøn, ikke en måling fra i dag. Den bygger på en model med et fast grundbeløb pr. kæde plus et udvalg af kendte varer, og viser 1 uge, 1 måned og 1 år hos Rema 1000, Netto, Lidl, Bilka og Føtex.',
       },
       {
         question: 'Kan jeg scanne stregkoder med mobilen?',
@@ -297,7 +297,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Który sklep w Polsce ma najtańszy koszyk zakupowy?',
         answer:
-          'Porównujemy koszt koszyka na 1 tydzień, 1 miesiąc i 1 rok w sieciach Biedronka, Lidl, Dino, Auchan i Carrefour.',
+          'Ranking to orientacyjny szacunek, a nie dzisiejszy pomiar. Opiera się na modelu ze stałą kwotą bazową na sieć oraz zestawem znanych produktów i pokazuje 1 tydzień, 1 miesiąc i 1 rok w sieciach Biedronka, Lidl, Dino, Auchan i Carrefour.',
       },
       {
         question: 'Czy mogę zeskanować kod kreskowy telefonem?',
@@ -336,7 +336,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Welcher Supermarkt in Deutschland hat den günstigsten Warenkorb?',
         answer:
-          'Wir vergleichen den Wocheneinkauf anhand der Grundpreise für 1 Woche, 1 Monat und 1 Jahr bei Aldi, Lidl, Kaufland, REWE und Edeka.',
+          'Die Rangliste ist eine unverbindliche Schätzung, keine Messung von heute. Sie beruht auf einem Modell mit einem festen Grundbetrag pro Kette plus einer Auswahl bekannter Produkte und zeigt 1 Woche, 1 Monat und 1 Jahr für Aldi, Lidl, Kaufland, REWE und Edeka.',
       },
       {
         question: 'Kann ich Barcodes mit der Handykamera scannen?',
@@ -375,7 +375,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: 'Quelle enseigne est la moins chère en France ?',
         answer:
-          'Nous comparons le prix au kilo d’un panier type et classons E.Leclerc, Lidl, Intermarché, Carrefour et Auchan sur 1 semaine, 1 mois et 1 an.',
+          'Le classement est une estimation indicative, pas une mesure du jour. Il repose sur un modèle avec un montant de base fixe par enseigne plus une sélection de produits connus, et montre 1 semaine, 1 mois et 1 an pour E.Leclerc, Lidl, Intermarché, Carrefour et Auchan.',
       },
       {
         question: 'Puis-je scanner un code-barres avec mon téléphone en magasin ?',
@@ -414,7 +414,7 @@ export const SEO_METADATA_BY_LOCALE: Record<CountryRouteCode, LocaleSeoMetadata>
       {
         question: '¿Qué supermercado tiene la cesta más barata en España?',
         answer:
-          'Comparamos el precio unitario de básicos y marcas habituales y mostramos el coste para 1 semana, 1 mes y 1 año en Lidl, Aldi, Mercadona, Dia y Carrefour.',
+          'El ranking es una estimación orientativa, no una medición de hoy. Se basa en un modelo con un importe base fijo por cadena más una selección de productos conocidos, y muestra 1 semana, 1 mes y 1 año para Lidl, Aldi, Mercadona, Dia y Carrefour.',
       },
       {
         question: '¿Puedo escanear códigos de barras con el móvil?',

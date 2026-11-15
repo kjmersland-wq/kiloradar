@@ -123,36 +123,36 @@ export const NO_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. Hvor henter vi prisene og pakningsstørrelsene fra?',
+      title: '1. Hvor kommer dataene fra?',
       intro:
-        'For at du skal kunne stole 100 % på sammenligningene våre, er vi helt uavhengige av dagligvarekjedene og bruker tre åpne kilder:',
+        'Vi er ikke knyttet til noen dagligvarekjede. Dette bruker vi i dag:',
       bullets: [
         {
-          bold: 'Open Food Facts Norge:',
-          text: 'En åpen dugnadsdatabase med strekkoder (EAN) som hjelper oss å oppdage når en pakke plutselig krymper fra 250 til 200 gram.',
+          bold: 'Open Food Facts, Open Beauty Facts og Open Products Facts:',
+          text: 'Åpne dugnadsdatabaser (ODbL) med strekkoder, varenavn og pakkestørrelser. Vi sjekker størrelsen hver natt, og sier fra hvis en pakke blir mindre.',
         },
         {
-          bold: 'Ukentlige kundeaviser:',
-          text: 'Vi går gjennom offentlige tilbudsaviser og prislister fra REMA 1000, KIWI, Coop Extra, Meny og Spar.',
+          bold: 'Open Prices:',
+          text: 'Priser som frivillige har lagt inn, med butikk og dato. Finnes det ingen pris for varen, står det «Pris kommer». Vi gjetter aldri.',
         },
         {
-          bold: 'Åpne nettbutikker og pristester:',
-          text: 'Vi sammenligner med åpne priser hos bl.a. Oda og uavhengige matbørser i norske aviser.',
+          bold: 'Ikke med ennå:',
+          text: 'Tilbudsaviser og butikkenes egne priser. Vi tar dem først med når vi har lov til å bruke dem, og da sier vi det her.',
         },
       ],
     },
     {
-      title: '2. Hvordan regner vi ut en vanlig norsk handlekurv?',
+      title: '2. Hvordan lages ukeshandelen? (veiledende)',
       intro:
-        'Ingen lever av bare kaffe og vaskemiddel. For å vise deg hva en ekte ukes- eller månedshandel faktisk koster, setter vi sammen en realistisk familie- og hverdagskurv:',
+        'Rangeringen av butikker er et anslag, ikke en måling fra i dag:',
       bullets: [
         {
-          bold: 'SIFOs Referansebudsjett (OsloMet):',
-          text: 'Enten du bor alene, er et par eller handler til hele familien, tilpasses mengdene etter SIFOs anerkjente normtall for normalt matforbruk.',
+          bold: 'En modell:',
+          text: 'Vi bruker et fast grunnbeløp per kjede for en vanlig ukeshandel, pluss et utvalg kjente varer. Beløpene er våre egne anslag, og vi bytter dem ut med målte priser etter hvert som vi får dem.',
         },
         {
-          bold: 'Vanlige norske basisvarer:',
-          text: 'Kombinerer ferskvarer som melk, grovbrød, frukt, grønnsaker og ost med de kjente merkevarene vi overvåker for krympflasjon.',
+          bold: 'Husholdningsstørrelse:',
+          text: 'De tre husholdningsvalgene bruker faktorene 0,72, 1,0 og 1,85. Det er våre egne anslag, ikke hentet fra en offentlig tabell.',
         },
       ],
     },

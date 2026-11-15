@@ -123,26 +123,36 @@ export const ES_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. ¿De dónde salen los pesos y precios?',
-      intro: 'Combinamos bases de datos abiertas de códigos EAN con revisiones semanales de precios:',
+      title: '1. ¿De dónde salen los datos?',
+      intro:
+        'No dependemos de ninguna cadena de supermercados. Esto es lo que usamos hoy:',
       bullets: [
         {
-          bold: 'Open Food Facts España:',
-          text: 'Catálogo colaborativo que detecta cuándo un envase baja de 250 g a 200 g.',
+          bold: 'Open Food Facts, Open Beauty Facts y Open Products Facts:',
+          text: 'Bases de datos abiertas creadas por voluntarios (ODbL), con códigos de barras, nombres de producto y tamaños de envase. Comprobamos el tamaño cada noche y avisamos si un envase se reduce.',
         },
         {
-          bold: 'Supermercados en España:',
-          text: 'Comparativa semanal entre Mercadona, Lidl, Aldi, Carrefour y Dia.',
+          bold: 'Open Prices:',
+          text: 'Precios añadidos por voluntarios, con la tienda y la fecha. Si un producto no tiene precio, verás «Precio próximamente». Nunca adivinamos.',
+        },
+        {
+          bold: 'Todavía no incluido:',
+          text: 'Los folletos y los precios de las propias cadenas. Los añadiremos cuando podamos usarlos, y lo diremos aquí.',
         },
       ],
     },
     {
-      title: '2. ¿Cómo calculamos la cesta familiar?',
-      intro: 'Basada en los patrones de consumo alimentario del INE y OCU:',
+      title: '2. ¿Cómo se arma la compra semanal? (orientativo)',
+      intro:
+        'El ranking de supermercados es una estimación, no una medición de hoy:',
       bullets: [
         {
-          bold: 'Frescos + Despensa:',
-          text: 'Integra leche, pan, aceite, fruta y verdura junto con las marcas vigiladas por reduflación.',
+          bold: 'Un modelo:',
+          text: 'Usamos un importe base fijo por cadena para una compra semanal normal, más una selección de productos conocidos. Los importes son estimaciones nuestras, y los iremos sustituyendo por precios medidos.',
+        },
+        {
+          bold: 'Tamaño del hogar:',
+          text: 'Las tres opciones de hogar usan los factores 0,72, 1,0 y 1,85. Son estimaciones nuestras, no sacadas de una tabla pública.',
         },
       ],
     },

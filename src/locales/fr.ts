@@ -123,26 +123,36 @@ export const FR_LOCALE: CountryLocaleConfig = {
   ],
   methodologyPillars: [
     {
-      title: '1. D’où proviennent nos prix et grammages ?',
-      intro: 'Nous croisons les bases de données ouvertes avec les relevés hebdomadaires en drive et magasin :',
+      title: '1. D’où viennent les données ?',
+      intro:
+        'Nous ne dépendons d’aucune enseigne. Voici ce que nous utilisons aujourd’hui :',
       bullets: [
         {
-          bold: 'Open Food Facts France :',
-          text: 'Base collaborative née en France permettant de suivre l’évolution du poids net des codes EAN.',
+          bold: 'Open Food Facts, Open Beauty Facts et Open Products Facts :',
+          text: 'Des bases ouvertes créées par des bénévoles (ODbL), avec codes-barres, noms de produits et tailles d’emballage. Nous vérifions la taille chaque nuit et vous prévenons si un emballage rétrécit.',
         },
         {
-          bold: 'Grandes Enseignes Françaises :',
-          text: 'Comparaison hebdomadaire entre E.Leclerc, Lidl, Carrefour, Intermarché et Auchan.',
+          bold: 'Open Prices :',
+          text: 'Des prix ajoutés par des bénévoles, avec le magasin et la date. S’il n’y a pas de prix pour un produit, vous voyez « Prix à venir ». Nous ne devinons jamais.',
+        },
+        {
+          bold: 'Pas encore inclus :',
+          text: 'Les prospectus et les prix des enseignes elles-mêmes. Nous les ajouterons quand nous serons autorisés à les utiliser, et nous l’écrirons ici.',
         },
       ],
     },
     {
-      title: '2. Comment est composé le panier moyen ?',
-      intro: 'Calibré selon les études de consommation alimentaire de l’INSEE :',
+      title: '2. Comment est composé le panier de la semaine ? (indicatif)',
+      intro:
+        'Le classement des enseignes est une estimation, pas une mesure du jour :',
       bullets: [
         {
-          bold: 'Produits frais & Épicerie :',
-          text: 'Associe produits laitiers, pain, fruits et légumes aux grandes marques suivies pour réduflation.',
+          bold: 'Un modèle :',
+          text: 'Nous utilisons un montant de base fixe par enseigne pour des courses de semaine ordinaires, plus une sélection de produits connus. Ces montants sont nos propres estimations, et nous les remplacerons par des prix mesurés au fur et à mesure.',
+        },
+        {
+          bold: 'Taille du foyer :',
+          text: 'Les trois choix de foyer utilisent les facteurs 0,72, 1,0 et 1,85. Ce sont nos propres estimations, pas des chiffres issus d’un tableau public.',
         },
       ],
     },
