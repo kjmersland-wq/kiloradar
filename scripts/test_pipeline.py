@@ -544,3 +544,33 @@ def test_store_comparison_merges_spelling_variants_of_one_chain():
     result = build_store_comparison(obs, "no", "2026-11-15")
     names = [c["store"] for c in result["chains"]]
     assert len([n for n in names if "Leclerc" in n]) == 1
+
+
+def test_store_brands_are_queried_by_brand_tag(monkeypatch):
+    import sync_products
+
+    seen = []
+
+    def fake_get(url, **kwargs):
+        seen.append(kwargs["params"])
+        return _FakeResp([{"code": "5", "product_name": "Hacendado Leche", "brands": "Hacendado", "quantity": "1 l"}])
+
+    monkeypatch.setattr(sync_products.requests, "get", fake_get)
+    found = discover_openfoodfacts_catalog(
+        "es", per_category=2, categories=[("off", "brand:hacendado", "Store Brands")], pause=0
+    )
+    assert seen[0]["brands_tags"] == "hacendado"
+    assert "categories_tags_en" not in seen[0]
+    assert found[0]["category"] == "Store Brands"
+    assert found[0]["sourceName"] == "Open Food Facts"
+
+
+def test_default_categories_cover_food_drinks_household_and_personal_care():
+    from sync_products import OFF_CORE_CATEGORIES, OFF_STORE_BRANDS
+
+    labels = {label for _, _, label in OFF_CORE_CATEGORIES}
+    for needed in ("Dairy", "Snacks", "Chocolate & Sweets", "Juice & Drinks", "Personal Care",
+                   "Cleaning & Laundry", "Toilet Paper"):
+        assert needed in labels
+    for market in ("dk", "pl", "fr", "es", "uk", "us", "global"):
+        assert OFF_STORE_BRANDS[market]

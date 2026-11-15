@@ -1087,32 +1087,67 @@ OFF_DB_HOSTS: dict[str, tuple[str, str]] = {
 }
 
 # (database, category tag, KiloRadar category label)
+# Everyday supermarket categories only: no specialty, electronics or non-grocery items.
 OFF_CORE_CATEGORIES: list[tuple[str, str, str]] = [
     ("off", "coffees", "Coffee & Tea"),
     ("off", "teas", "Coffee & Tea"),
     ("off", "chocolates", "Chocolate & Sweets"),
     ("off", "biscuits", "Chocolate & Sweets"),
+    ("off", "candies", "Chocolate & Sweets"),
     ("off", "butters", "Dairy"),
     ("off", "cheeses", "Dairy"),
     ("off", "yogurts", "Dairy"),
     ("off", "milks", "Dairy"),
+    ("off", "creams", "Dairy"),
+    ("off", "eggs", "Dairy"),
     ("off", "chips-and-crisps", "Snacks"),
+    ("off", "salty-snacks", "Snacks"),
     ("off", "breakfast-cereals", "Cereals & Porridge"),
     ("off", "pastas", "Pasta, Rice & Dry Goods"),
     ("off", "rices", "Pasta, Rice & Dry Goods"),
+    ("off", "flours", "Pasta, Rice & Dry Goods"),
+    ("off", "sugars", "Pasta, Rice & Dry Goods"),
+    ("off", "canned-foods", "Pasta, Rice & Dry Goods"),
+    ("off", "sauces", "Sauces & Spreads"),
+    ("off", "jams", "Sauces & Spreads"),
+    ("off", "vegetable-oils", "Sauces & Spreads"),
+    ("off", "breads", "Bakery"),
+    ("off", "frozen-foods", "Frozen"),
     ("off", "juices", "Juice & Drinks"),
     ("off", "sodas", "Juice & Drinks"),
+    ("off", "waters", "Juice & Drinks"),
     ("obf", "toothpastes", "Personal Care"),
     ("obf", "shampoos", "Personal Care"),
+    ("obf", "conditioners", "Personal Care"),
     ("obf", "shower-gels", "Personal Care"),
+    ("obf", "soaps", "Personal Care"),
     ("obf", "deodorants", "Personal Care"),
     ("opf", "laundry-detergents", "Cleaning & Laundry"),
     ("opf", "detergents", "Cleaning & Laundry"),
+    ("opf", "dishwashing", "Cleaning & Laundry"),
+    ("opf", "fabric-softeners", "Cleaning & Laundry"),
     ("opf", "toilet-papers", "Toilet Paper"),
+    ("opf", "kitchen-paper-towels", "Toilet Paper"),
 ]
 
-PHASE1_MARKET_CAP = 100  # Phase 1 target: 80-100 quality products per market
-DEFAULT_PER_CATEGORY = 8
+# Store brands (private label) per market: OFF brand tags of the big retailers' own brands.
+# A "brand:" tag queries by brand instead of by category. Tags that do not exist return nothing.
+OFF_STORE_BRANDS: dict[str, list[str]] = {
+    "dk": ["coop", "netto", "salling", "rema-1000", "lidl", "budget", "änglamark"],
+    "pl": ["biedronka", "lidl", "carrefour", "auchan", "dino", "tesco", "kaufland"],
+    "fr": ["carrefour", "auchan", "leclerc", "marque-repere", "u", "monoprix", "casino", "intermarche", "lidl"],
+    "es": ["hacendado", "dia", "carrefour", "alcampo", "bosque-verde", "deliplus", "milbona", "lidl"],
+    "uk": ["tesco", "sainsbury-s", "asda", "morrisons", "m-s", "waitrose", "co-op", "lidl", "aldi"],
+    "us": ["great-value", "kroger", "good-gather", "market-pantry", "365-whole-foods-market", "trader-joe-s", "safeway", "aldi"],
+    "global": ["lidl", "aldi", "carrefour", "tesco", "auchan"],
+    "no": ["first-price", "xtra", "eldorado", "coop", "rema-1000", "kiwi"],
+    "se": ["ica", "coop", "willys", "garant", "eldorado", "lidl"],
+    "de": ["rewe", "edeka", "lidl", "aldi", "kaufland", "dm"],
+}
+STORE_BRAND_LABEL = "Store Brands"
+
+PHASE1_MARKET_CAP = 160  # upper bound per market (target: at least 120 quality products)
+DEFAULT_PER_CATEGORY = 10
 
 REGION_CURRENCY: dict[str, str] = {"de": "EUR", "fr": "EUR", "es": "EUR", "us": "USD", "uk": "GBP"}
 
@@ -1137,7 +1172,11 @@ def _fetch_category(
                 f"https://{host}/api/v2/search",
                 params={
                     **({"countries_tags_en": country_tag} if country_tag else {}),
-                    "categories_tags_en": cat_tag,
+                    **(
+                        {"brands_tags": cat_tag[len("brand:"):]}
+                        if cat_tag.startswith("brand:")
+                        else {"categories_tags_en": cat_tag}
+                    ),
                     "sort_by": "unique_scans_n",
                     "page_size": wanted * 3,
                     "fields": "code,product_name,brands,quantity,image_front_small_url,unique_scans_n",
@@ -1172,7 +1211,11 @@ def discover_openfoodfacts_catalog(
     headers = {"User-Agent": "KiloRadarDataPipeline/1.0 (https://www.kiloradar.com)"}
 
     per_cat_lists: list[list[dict[str, Any]]] = []
-    for db_key, cat_tag, cat_label in categories or OFF_CORE_CATEGORIES:
+    if categories is None:
+        categories = list(OFF_CORE_CATEGORIES) + [
+            ("off", f"brand:{b}", STORE_BRAND_LABEL) for b in OFF_STORE_BRANDS.get(region_code, [])
+        ]
+    for db_key, cat_tag, cat_label in categories:
         host, db_name = OFF_DB_HOSTS[db_key]
         raw = _fetch_category(host, country_tag, cat_tag, per_category, headers)
         time.sleep(pause)

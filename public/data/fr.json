@@ -8,6 +8,98 @@
   "offerSources": [],
   "catalog": [
     {
+      "id": "fr-off-3274080005003",
+      "barcode": "3274080005003",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "isabelle",
+      "brand": "Cristaline",
+      "category": "Juice & Drinks",
+      "measure": "1500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/408/000/5003/front_en.797.200.jpg",
+      "scans": 1683,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3274080005003",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3274080005003",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.25,
+        "currency": "EUR",
+        "date": "2026-11-13",
+        "store": "Monoprix",
+        "discounted": false,
+        "unitPrice": 0.17,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3274080005003",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7622210449283",
+      "barcode": "7622210449283",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Prince",
+      "brand": "LU",
+      "category": "Chocolate & Sweets",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/044/9283/front_en.605.200.jpg",
+      "scans": 1252,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210449283",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7622210449283",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.49,
+        "currency": "EUR",
+        "date": "2026-08-23",
+        "store": "G20",
+        "discounted": false,
+        "unitPrice": 4.97,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7622210449283",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-6111246721261",
       "barcode": "6111246721261",
       "market": "fr",
@@ -36,6 +128,264 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-7300400481588",
+      "barcode": "7300400481588",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fibres",
+      "brand": "wasa",
+      "category": "Snacks",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/048/1588/front_en.269.200.jpg",
+      "scans": 933,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400481588",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7300400481588",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.79,
+        "currency": "EUR",
+        "date": "2026-11-08",
+        "store": "Monoprix",
+        "discounted": false,
+        "unitPrice": 7.78,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7300400481588",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3168930010265",
+      "barcode": "3168930010265",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "cruesly mélange de noix",
+      "brand": "Cruesli",
+      "category": "Cereals & Porridge",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/893/001/0265/front_en.297.200.jpg",
+      "scans": 914,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3168930010265",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3168930010265",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.12,
+        "currency": "EUR",
+        "date": "2026-08-24",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 6.93,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3168930010265",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111035000430",
+      "barcode": "6111035000430",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "33 cl"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "sidi ali",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "33 cl",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/0430/front_en.104.200.jpg",
+      "scans": 862,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035000430",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3046920029759",
+      "barcode": "3046920029759",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Extra fine dark chocolate",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9759/front_en.544.200.jpg",
+      "scans": 858,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029759",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3046920029759",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.3,
+        "currency": "EUR",
+        "date": "2026-10-28",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 33.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3046920029759",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7300400481595",
+      "barcode": "7300400481595",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "275 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "AUTHENTIQUE",
+      "brand": "wasa",
+      "category": "Snacks",
+      "measure": "275 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/048/1595/front_fr.271.200.jpg",
+      "scans": 851,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400481595",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7300400481595",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.19,
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 7.96,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7300400481595",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3046920022606",
+      "barcode": "3046920022606",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 85% cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/2606/front_en.102.200.jpg",
+      "scans": 830,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920022606",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3046920022606",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.1,
+        "currency": "EUR",
+        "date": "2026-10-28",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 31.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3046920022606",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-3480341000674",
       "barcode": "3480341000674",
       "market": "fr",
@@ -57,11 +407,333 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3480341000674",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3480341000674",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.52,
+        "currency": "EUR",
+        "date": "2026-11-08",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 12.6,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3480341000674",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3046920022651",
+      "barcode": "3046920022651",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Noir Intense",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/2651/front_en.159.200.jpg",
+      "scans": 772,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920022651",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3046920022651",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.39,
+        "currency": "EUR",
+        "date": "2026-10-28",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 33.9,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3046920022651",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3228857002344",
+      "barcode": "3228857002344",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pain de mie american sandwich complet sans sucres ajoutés 600g",
+      "brand": "Harrys",
+      "category": "Frozen",
+      "measure": "600 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/885/700/2344/front_fr.129.200.jpg",
+      "scans": 771,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228857002344",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3228857002344",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.82,
+        "currency": "EUR",
+        "date": "2026-05-13",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 3.03,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3228857002344",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111035000058",
+      "barcode": "6111035000058",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Eau minérale naturelle",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/0058/front_en.134.200.jpg",
+      "scans": 766,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035000058",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-5449000214799",
+      "barcode": "5449000214799",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola sans sucres",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_en.363.200.jpg",
+      "scans": 742,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000214799",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5449000214799",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.2,
+        "currency": "EUR",
+        "date": "2026-07-28",
+        "store": "Carrefour Express",
+        "discounted": false,
+        "unitPrice": 3.64,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5449000214799",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3229820100234",
+      "barcode": "3229820100234",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fourrés Chocolat Noir",
+      "brand": "Bjorg",
+      "category": "Chocolate & Sweets",
+      "measure": "225 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/010/0234/front_fr.246.200.jpg",
+      "scans": 714,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820100234",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3229820100234",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.45,
+        "currency": "EUR",
+        "date": "2026-10-10",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 15.33,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3229820100234",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-8076809513753",
+      "barcode": "8076809513753",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "190 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Barilla PESTO alla GENOVESE",
+      "brand": "Barilla",
+      "category": "Sauces & Spreads",
+      "measure": "190 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/951/3753/front_en.347.200.jpg",
+      "scans": 693,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809513753",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076809513753",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.37,
+        "currency": "EUR",
+        "date": "2026-11-05",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 12.47,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076809513753",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3229820160672",
+      "barcode": "3229820160672",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Croustillant Chocolat",
+      "brand": "Bjorg",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/016/0672/front_fr.340.200.jpg",
+      "scans": 671,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820160672",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3229820160672",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.0,
+        "currency": "EUR",
+        "date": "2026-10-12",
+        "store": "Monop'",
+        "discounted": false,
+        "unitPrice": 10.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3229820160672",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3480341000636",
@@ -85,11 +757,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3480341000636",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3480341000636",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.75,
+        "currency": "EUR",
+        "date": "2026-11-05",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 13.75,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3480341000636",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3412290070101",
@@ -113,11 +803,379 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3412290070101",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3412290070101",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.55,
+        "currency": "EUR",
+        "date": "2026-10-10",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 14.17,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3412290070101",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3229820019307",
+      "barcode": "3229820019307",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocons d'avoine",
+      "brand": "Bjorg",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/001/9307/front_fr.324.200.jpg",
+      "scans": 654,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820019307",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3229820019307",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.25,
+        "currency": "EUR",
+        "date": "2026-10-31",
+        "store": "Monoprix",
+        "discounted": false,
+        "unitPrice": 4.5,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3229820019307",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3228857002245",
+      "barcode": "3228857002245",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pain de mie seigle Sandwich Harrys sans sucres ajoutés",
+      "brand": "Harrys",
+      "category": "Frozen",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/885/700/2245/front_fr.90.200.jpg",
+      "scans": 649,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228857002245",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3228857002245",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.35,
+        "currency": "EUR",
+        "date": "2026-05-13",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 4.7,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3228857002245",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111035002175",
+      "barcode": "6111035002175",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Eau minérale naturelle",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/2175/front_ar.128.200.jpg",
+      "scans": 648,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035002175",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8076809523547",
+      "barcode": "8076809523547",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pesto Rosso 200g",
+      "brand": "Barilla",
+      "category": "Sauces & Spreads",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/3547/front_de.383.200.jpg",
+      "scans": 641,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809523547",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076809523547",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.57,
+        "currency": "EUR",
+        "date": "2026-10-28",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 12.85,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076809523547",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3175681851849",
+      "barcode": "3175681851849",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pomme Noisette",
+      "brand": "Gerblé",
+      "category": "Chocolate & Sweets",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/568/185/1849/front_fr.267.200.jpg",
+      "scans": 638,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175681851849",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3175681851849",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.48,
+        "currency": "EUR",
+        "date": "2026-11-11",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 6.43,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3175681851849",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-5449000214911",
+      "barcode": "5449000214911",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/021/4911/front_fr.335.200.jpg",
+      "scans": 619,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000214911",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5449000214911",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.55,
+        "currency": "EUR",
+        "date": "2026-09-04",
+        "store": "TotalEnergies",
+        "discounted": false,
+        "unitPrice": 4.7,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5449000214911",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3336971805021",
+      "barcode": "3336971805021",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "85 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chips de lentilles saveur fines herbes",
+      "brand": "Vico",
+      "category": "Snacks",
+      "measure": "85 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/333/697/180/5021/front_en.203.200.jpg",
+      "scans": 617,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3336971805021",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3336971805021",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.59,
+        "currency": "EUR",
+        "date": "2026-08-26",
+        "store": "E.Leclerc Express",
+        "discounted": false,
+        "unitPrice": 18.71,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3336971805021",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-20995553",
+      "barcode": "20995553",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Шоколад 85% какаова маса",
+      "brand": "J.D: Gross",
+      "category": "Chocolate & Sweets",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/5553/front_en.380.200.jpg",
+      "scans": 599,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20995553",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/20995553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.91,
+        "currency": "EUR",
+        "date": "2026-02-25",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 15.28,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/20995553",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111242106949",
@@ -146,6 +1204,476 @@
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3229820129488",
+      "barcode": "3229820129488",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "muesli raisin,datte,figue",
+      "brand": "Bjorg",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/982/012/9488/front_fr.238.200.jpg",
+      "scans": 559,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3229820129488",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3229820129488",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.05,
+        "currency": "EUR",
+        "date": "2026-02-19",
+        "store": "Franprix",
+        "discounted": false,
+        "unitPrice": 10.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3229820129488",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-5410041001204",
+      "barcode": "5410041001204",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tuc Original",
+      "brand": "Mondelēz",
+      "category": "Snacks",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/004/100/1204/front_en.520.200.jpg",
+      "scans": 553,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5410041001204",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5410041001204",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.56,
+        "currency": "EUR",
+        "date": "2026-11-12",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 5.6,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5410041001204",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7300400481571",
+      "barcode": "7300400481571",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "270 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "wasa",
+      "brand": "wasa",
+      "category": "Snacks",
+      "measure": "270 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/048/1571/front_fr.1746.200.jpg",
+      "scans": 534,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400481571",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7300400481571",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.79,
+        "currency": "EUR",
+        "date": "2026-05-09",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 6.63,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7300400481571",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3228857000166",
+      "barcode": "3228857000166",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "100% mie complet",
+      "brand": "Harrys",
+      "category": "Frozen",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/885/700/0166/front_fr.1875.200.jpg",
+      "scans": 527,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228857000166",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3228857000166",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.55,
+        "currency": "EUR",
+        "date": "2026-08-19",
+        "store": "Monoprix",
+        "discounted": false,
+        "unitPrice": 5.1,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3228857000166",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-5449000000996",
+      "barcode": "5449000000996",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original",
+      "brand": "COCA-COLA SERVICES SA/NV",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.1129.200.jpg",
+      "scans": 526,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000996",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3019081238643",
+      "barcode": "3019081238643",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "135 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sardines Huile d'Olive Vierge Extra",
+      "brand": "PARMENTIER",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "135 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/301/908/123/8643/front_fr.115.200.jpg",
+      "scans": 515,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3019081238643",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3019081238643",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.02,
+        "currency": "EUR",
+        "date": "2026-10-26",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 14.96,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3019081238643",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3228857001194",
+      "barcode": "3228857001194",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beau & bon Céréales & graines",
+      "brand": "Harrys",
+      "category": "Frozen",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/322/885/700/1194/front_fr.1137.200.jpg",
+      "scans": 492,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3228857001194",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3228857001194",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.82,
+        "currency": "EUR",
+        "date": "2026-11-10",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 5.69,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3228857001194",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-5449000054227",
+      "barcode": "5449000054227",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original Taste",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/005/4227/front_en.563.200.jpg",
+      "scans": 486,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000054227",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5449000054227",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.7,
+        "currency": "EUR",
+        "date": "2026-04-11",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 1.7,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5449000054227",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111266962187",
+      "barcode": "6111266962187",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait frais naturel demi écrémé",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "450 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/126/696/2187/front_fr.56.200.jpg",
+      "scans": 466,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111266962187",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3083681095296",
+      "barcode": "3083681095296",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "380 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ratatouille Cuisinée à la Provençal",
+      "brand": "Cassegrain",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "380 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/308/368/109/5296/front_fr.117.200.jpg",
+      "scans": 465,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3083681095296",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3083681095296",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.8,
+        "currency": "EUR",
+        "date": "2026-08-19",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 7.37,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3083681095296",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-8720182556738",
+      "barcode": "8720182556738",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "360 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Maille Moutarde Fine de Dijon L'Originale Bocal 360g",
+      "brand": "Maille",
+      "category": "Sauces & Spreads",
+      "measure": "360 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/872/018/255/6738/front_fr.135.200.jpg",
+      "scans": 459,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8720182556738",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8720182556738",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.45,
+        "currency": "EUR",
+        "date": "2026-08-29",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 6.81,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8720182556738",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111246721940",
@@ -197,11 +1725,121 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3240931548111",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3240931548111",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.55,
+        "currency": "EUR",
+        "date": "2026-10-28",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 4.77,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3240931548111",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3387390123210",
+      "barcode": "3387390123210",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "375 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocapic",
+      "brand": "Nestlé",
+      "category": "Cereals & Porridge",
+      "measure": "375 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/338/739/012/3210/front_fr.150.200.jpg",
+      "scans": 412,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3387390123210",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3387390123210",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.95,
+        "currency": "EUR",
+        "date": "2026-03-12",
+        "store": "Sitis Market",
+        "discounted": false,
+        "unitPrice": 10.53,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3387390123210",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3046920029780",
+      "barcode": "3046920029780",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence Noir Subtil Doux 70% Cacao",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9780/front_en.328.200.jpg",
+      "scans": 409,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029780",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3046920029780",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.3,
+        "currency": "EUR",
+        "date": "2026-10-28",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 33.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3046920029780",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111259092495",
@@ -232,6 +1870,98 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-3329757002998",
+      "barcode": "3329757002998",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Poudre stevia",
+      "brand": "Pure Via",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/332/975/700/2998/front_fr.165.200.jpg",
+      "scans": 361,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3329757002998",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3329757002998",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.73,
+        "currency": "EUR",
+        "date": "2026-08-27",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 26.92,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3329757002998",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3083680973939",
+      "barcode": "3083680973939",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "660 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ratatouille Cuisinée à la Provençal",
+      "brand": "Cassegrain",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "660 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/308/368/097/3939/front_fr.110.200.jpg",
+      "scans": 334,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3083680973939",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3083680973939",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.69,
+        "currency": "EUR",
+        "date": "2026-08-26",
+        "store": "E.Leclerc Express",
+        "discounted": false,
+        "unitPrice": 5.59,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3083680973939",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-6111242100206",
       "barcode": "6111242100206",
       "market": "fr",
@@ -252,6 +1982,154 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/6111242100206",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3451790988677",
+      "barcode": "3451790988677",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Beurre Tendre",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/345/179/098/8677/front_en.186.200.jpg",
+      "scans": 329,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3451790988677",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3451790988677",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.88,
+        "currency": "EUR",
+        "date": "2026-09-03",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 11.52,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3451790988677",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7613035676497",
+      "barcode": "7613035676497",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "260 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chicorée & Café, RICORÉ® L'Original, Boîte de 260g",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "260 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/567/6497/front_en.258.200.jpg",
+      "scans": 328,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613035676497",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7613035676497",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.89,
+        "currency": "EUR",
+        "date": "2026-10-29",
+        "store": "Netto",
+        "discounted": false,
+        "unitPrice": 22.65,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7613035676497",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111031005064",
+      "barcode": "6111031005064",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "23 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tonik",
+      "brand": "Tonik",
+      "category": "Chocolate & Sweets",
+      "measure": "23 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/100/5064/front_fr.56.200.jpg",
+      "scans": 317,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111031005064",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111032009665",
+      "barcode": "6111032009665",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "470 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Semi-skimmed milk",
+      "brand": "Salim",
+      "category": "Dairy",
+      "measure": "470 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/9665/front_en.35.200.jpg",
+      "scans": 313,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032009665",
           "checked": "2026-11-15"
         }
       ],
@@ -316,6 +2194,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-6111242100817",
+      "barcode": "6111242100817",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Lait demi écrémé",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0817/front_en.36.200.jpg",
+      "scans": 303,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100817",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "fr-off-6111242100305",
       "barcode": "6111242100305",
       "market": "fr",
@@ -365,11 +2271,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3661344688339",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3661344688339",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.6,
+        "currency": "EUR",
+        "date": "2026-04-15",
+        "store": "Franprix",
+        "discounted": true,
+        "unitPrice": 5.65,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3661344688339",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-5000157024671",
+      "barcode": "5000157024671",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "415 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beanz in a rich tomato sauce",
+      "brand": "H J Heinz Foods UK Ltd",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "415 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/015/702/4671/front_en.459.200.jpg",
+      "scans": 280,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000157024671",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000157024671",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.53,
+        "currency": "EUR",
+        "date": "2026-09-04",
+        "store": "Super U",
+        "discounted": false,
+        "unitPrice": 6.1,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000157024671",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111206000733",
@@ -449,11 +2419,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3240931548135",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3240931548135",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.89,
+        "currency": "EUR",
+        "date": "2026-10-26",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 4.01,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3240931548135",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111032006619",
@@ -505,11 +2493,121 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076800195057",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076800195057",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.2,
+        "currency": "EUR",
+        "date": "2026-08-09",
+        "store": "Super U",
+        "discounted": false,
+        "unitPrice": 2.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076800195057",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7613032655495",
+      "barcode": "7613032655495",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "260 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chicorée & Café, RICORÉ® L'Original, Boîte de 260g",
+      "brand": "Nestlé",
+      "category": "Coffee & Tea",
+      "measure": "260 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/265/5495/front_fr.379.200.jpg",
+      "scans": 233,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613032655495",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7613032655495",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.72,
+        "currency": "EUR",
+        "date": "2026-02-11",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 22.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7613032655495",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3564706604360",
+      "barcode": "3564706604360",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Muesli Chocolat-Noisette",
+      "brand": "Marque Repère",
+      "category": "Store Brands",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/660/4360/front_fr.104.200.jpg",
+      "scans": 231,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564706604360",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564706604360",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.9,
+        "currency": "EUR",
+        "date": "2026-11-10",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 8.29,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564706604360",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-8076802085738",
@@ -533,11 +2631,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076802085738",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076802085738",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.2,
+        "currency": "EUR",
+        "date": "2026-11-05",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 2.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076802085738",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3254550006013",
+      "barcode": "3254550006013",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crème sous pression à la vanille 250g",
+      "brand": "Isigny Sainte-Mère",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/455/000/6013/front_en.161.200.jpg",
+      "scans": 223,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3254550006013",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3254550006013",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.88,
+        "currency": "EUR",
+        "date": "2026-09-13",
+        "store": "Carrefour Express",
+        "discounted": false,
+        "unitPrice": 15.52,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3254550006013",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3240931548128",
@@ -561,11 +2723,121 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3240931548128",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3240931548128",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.54,
+        "currency": "EUR",
+        "date": "2026-02-22",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 4.88,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3240931548128",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3248340054063",
+      "barcode": "3248340054063",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait demi-écrémé UHT",
+      "brand": "C'est qui le Patron ?!",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/834/005/4063/front_fr.193.200.jpg",
+      "scans": 217,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3248340054063",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3248340054063",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.27,
+        "currency": "EUR",
+        "date": "2026-11-08",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 1.27,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3248340054063",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3155250349793",
+      "barcode": "3155250349793",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "La crème des chefs ferme et onctueuse gastronomique",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/525/034/9793/front_fr.105.200.jpg",
+      "scans": 217,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3155250349793",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3155250349793",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.48,
+        "currency": "EUR",
+        "date": "2026-11-08",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 13.92,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3155250349793",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111246722107",
@@ -617,11 +2889,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8852018101024",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8852018101024",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.77,
+        "currency": "EUR",
+        "date": "2026-09-13",
+        "store": "Carrefour Express",
+        "discounted": false,
+        "unitPrice": 12.83,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8852018101024",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-8076809529433",
@@ -645,11 +2935,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076809529433",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076809529433",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.49,
+        "currency": "EUR",
+        "date": "2026-08-26",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 2.98,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076809529433",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3451790439506",
+      "barcode": "3451790439506",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "328 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Elle & vire creme fraiche epaisse legere 12%mg poche 328g",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "328 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/345/179/043/9506/front_fr.238.200.jpg",
+      "scans": 202,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3451790439506",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3451790439506",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.74,
+        "currency": "EUR",
+        "date": "2026-03-01",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 5.3,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3451790439506",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-8076802085981",
@@ -673,11 +3027,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076802085981",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076802085981",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.05,
+        "currency": "EUR",
+        "date": "2026-10-13",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 2.1,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076802085981",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3155251205500",
+      "barcode": "3155251205500",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre doux gastronomique",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/525/120/5500/front_fr.227.200.jpg",
+      "scans": 191,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3155251205500",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3155251205500",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.88,
+        "currency": "EUR",
+        "date": "2026-08-24",
+        "store": "Match",
+        "discounted": false,
+        "unitPrice": 11.52,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3155251205500",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3175681170841",
@@ -701,11 +3119,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3175681170841",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3175681170841",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.34,
+        "currency": "EUR",
+        "date": "2026-11-05",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 8.76,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3175681170841",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3760341070472",
@@ -729,11 +3165,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3760341070472",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3760341070472",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.05,
+        "currency": "EUR",
+        "date": "2026-07-01",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 5.05,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3760341070472",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3487400006745",
@@ -757,11 +3211,241 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3487400006745",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3487400006745",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.94,
+        "currency": "EUR",
+        "date": "2026-10-29",
+        "store": "Vival",
+        "discounted": false,
+        "unitPrice": 13.36,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3487400006745",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111018903161",
+      "barcode": "6111018903161",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé Classic",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "45 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/101/890/3161/front_fr.48.200.jpg",
+      "scans": 185,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111018903161",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564706624467",
+      "barcode": "3564706624467",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocon d'avoine",
+      "brand": "Marque Repère",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/662/4467/front_en.68.200.jpg",
+      "scans": 181,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564706624467",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564706624467",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.79,
+        "currency": "EUR",
+        "date": "2026-07-18",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 1.58,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564706624467",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3564707117203",
+      "barcode": "3564707117203",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait Amande calcium",
+      "brand": "Bio Village",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/711/7203/front_en.83.200.jpg",
+      "scans": 173,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707117203",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564707117203",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.5,
+        "currency": "EUR",
+        "date": "2026-11-10",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 1.5,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564707117203",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3523230030793",
+      "barcode": "3523230030793",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "beurre demi-sel",
+      "brand": "Grand Fermage",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/352/323/003/0793/front_en.24.200.jpg",
+      "scans": 173,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3523230030793",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3523230030793",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.6,
+        "currency": "EUR",
+        "date": "2026-09-02",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 10.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3523230030793",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3155251205524",
+      "barcode": "3155251205524",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre tendre doux",
+      "brand": "Président",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/525/120/5524/front_fr.152.200.jpg",
+      "scans": 169,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3155251205524",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3155251205524",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.79,
+        "currency": "EUR",
+        "date": "2026-04-18",
+        "store": "Monoprix",
+        "discounted": false,
+        "unitPrice": 15.16,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3155251205524",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-8076800376999",
@@ -785,11 +3469,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/8076800376999",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8076800376999",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.32,
+        "currency": "EUR",
+        "date": "2026-11-01",
+        "store": "Auchan Supermarché",
+        "discounted": false,
+        "unitPrice": 4.64,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8076800376999",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111032002925",
@@ -820,6 +3522,126 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-3560071455279",
+      "barcode": "3560071455279",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "130 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Biscuits avoine chocolat",
+      "brand": "Carrefour",
+      "category": "Store Brands",
+      "measure": "130 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/145/5279/front_fr.33.200.jpg",
+      "scans": 159,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071455279",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3560071455279",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.29,
+        "currency": "EUR",
+        "date": "2026-06-11",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 17.62,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3560071455279",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111184004129",
+      "barcode": "6111184004129",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "280 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mayonnaise recette originale",
+      "brand": "Star",
+      "category": "Sauces & Spreads",
+      "measure": "280 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/118/400/4129/front_en.55.200.jpg",
+      "scans": 159,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111184004129",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3560070845408",
+      "barcode": "3560070845408",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Yaourt nature au lait entier",
+      "brand": "Carrefour",
+      "category": "Store Brands",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/084/5408/front_fr.117.200.jpg",
+      "scans": 158,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070845408",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3560070845408",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.05,
+        "currency": "EUR",
+        "date": "2026-10-13",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 8.4,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3560070845408",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-6111242100930",
       "barcode": "6111242100930",
       "market": "fr",
@@ -848,6 +3670,236 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-3451790988042",
+      "barcode": "3451790988042",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "La Crème Entière De Normandie 30%MG",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/345/179/098/8042/front_fr.105.200.jpg",
+      "scans": 150,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3451790988042",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3451790988042",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.39,
+        "currency": "EUR",
+        "date": "2026-10-16",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 16.95,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3451790988042",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3187570015447",
+      "barcode": "3187570015447",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Café moulu pur arabica des petits producteurs",
+      "brand": "Malongo",
+      "category": "Coffee & Tea",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/318/757/001/5447/front_fr.108.200.jpg",
+      "scans": 147,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3187570015447",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3187570015447",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.98,
+        "currency": "EUR",
+        "date": "2026-08-27",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 23.92,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3187570015447",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3033710074525",
+      "barcode": "3033710074525",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "special filtre",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/303/371/007/4525/front_en.196.200.jpg",
+      "scans": 144,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3033710074525",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3033710074525",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 8.89,
+        "currency": "EUR",
+        "date": "2026-06-05",
+        "store": "Monoprix",
+        "discounted": false,
+        "unitPrice": 44.45,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3033710074525",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3256223377406",
+      "barcode": "3256223377406",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Boisson avoine 1l",
+      "brand": "U",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/622/337/7406/front_fr.114.200.jpg",
+      "scans": 143,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3256223377406",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3256223377406",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.95,
+        "currency": "EUR",
+        "date": "2026-09-28",
+        "store": "Super U",
+        "discounted": false,
+        "unitPrice": 1.95,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3256223377406",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3270190025337",
+      "barcode": "3270190025337",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait demi-écrémé Stérilisé UHT",
+      "brand": "Carrefour BIO",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/019/002/5337/front_fr.201.200.jpg",
+      "scans": 143,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3270190025337",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3270190025337",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.18,
+        "currency": "EUR",
+        "date": "2026-05-29",
+        "store": "Carrefour",
+        "discounted": false,
+        "unitPrice": 1.18,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3270190025337",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-3487400006721",
       "barcode": "3487400006721",
       "market": "fr",
@@ -869,11 +3921,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3487400006721",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3487400006721",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.42,
+        "currency": "EUR",
+        "date": "2026-11-05",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 6.45,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3487400006721",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-6111032002208",
@@ -904,6 +3974,80 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-3564707142700",
+      "barcode": "3564707142700",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocolat noir dégustation 85% cacao bio",
+      "brand": "Bio Village",
+      "category": "Store Brands",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/714/2700/front_fr.94.200.jpg",
+      "scans": 138,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707142700",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3256228686619",
+      "barcode": "3256228686619",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocons d'avoine petits - paquet 500g",
+      "brand": "U",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/622/868/6619/front_fr.82.200.jpg",
+      "scans": 132,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3256228686619",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3256228686619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.55,
+        "currency": "EUR",
+        "date": "2026-10-17",
+        "store": "Super U",
+        "discounted": false,
+        "unitPrice": 3.1,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3256228686619",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-6111126001711",
       "barcode": "6111126001711",
       "market": "fr",
@@ -930,6 +4074,384 @@
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3256220512985",
+      "barcode": "3256220512985",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chocolat noir 70% tablette 100g",
+      "brand": "U",
+      "category": "Store Brands",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/622/051/2985/front_fr.80.200.jpg",
+      "scans": 128,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3256220512985",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3068111301246",
+      "barcode": "3068111301246",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Farine de blé complète - T150",
+      "brand": "Francine",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/306/811/130/1246/front_fr.72.200.jpg",
+      "scans": 125,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3068111301246",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3068111301246",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.78,
+        "currency": "EUR",
+        "date": "2026-11-10",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 1.78,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3068111301246",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111242660373",
+      "barcode": "6111242660373",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beurre Badaouia",
+      "brand": "Badaouia",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/266/0373/front_en.35.200.jpg",
+      "scans": 123,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242660373",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3596710443673",
+      "barcode": "3596710443673",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocons d'avoine",
+      "brand": "Auchan",
+      "category": "Store Brands",
+      "measure": "0.5 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/359/671/044/3673/front_fr.178.200.jpg",
+      "scans": 116,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3596710443673",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3596710443673",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.95,
+        "currency": "EUR",
+        "date": "2026-11-01",
+        "store": "Auchan Supermarché",
+        "discounted": false,
+        "unitPrice": 1.9,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3596710443673",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7610700015445",
+      "barcode": "7610700015445",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "50G RICOLA CITRON MELISSE",
+      "brand": "Ricola",
+      "category": "Chocolate & Sweets",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/070/001/5445/front_en.4.200.jpg",
+      "scans": 113,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7610700015445",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7610700015445",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.49,
+        "currency": "EUR",
+        "date": "2026-06-01",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 29.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7610700015445",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3245413808196",
+      "barcode": "3245413808196",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "190 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pesto verde",
+      "brand": "Carrefour",
+      "category": "Store Brands",
+      "measure": "190 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/541/380/8196/front_en.115.200.jpg",
+      "scans": 111,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3245413808196",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3245413808196",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.79,
+        "currency": "EUR",
+        "date": "2026-08-29",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 9.42,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3245413808196",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3596710473625",
+      "barcode": "3596710473625",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pain de mie à la farine complète* biologique",
+      "brand": "Auchan",
+      "category": "Store Brands",
+      "measure": "0.5 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/359/671/047/3625/front_fr.68.200.jpg",
+      "scans": 110,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3596710473625",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3596710473625",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.79,
+        "currency": "EUR",
+        "date": "2026-05-13",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 3.58,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3596710473625",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3600551119816",
+      "barcode": "3600551119816",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoing très doux démêlant karité pur + huile de jojoba",
+      "brand": "Mixa Bébé",
+      "category": "Personal Care",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/055/111/9816/front_fr.24.200.jpg",
+      "scans": 109,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600551119816",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3600551119816",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.37,
+        "currency": "EUR",
+        "date": "2026-05-09",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 7.9,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3600551119816",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-8000500242612",
+      "barcode": "8000500242612",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Schoko-Bons",
+      "brand": "Kinder",
+      "category": "Chocolate & Sweets",
+      "measure": "225 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/050/024/2612/front_en.84.200.jpg",
+      "scans": 109,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000500242612",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8000500242612",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 7.95,
+        "currency": "EUR",
+        "date": "2026-07-26",
+        "store": "Bon app !",
+        "discounted": false,
+        "unitPrice": 35.33,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8000500242612",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3564700444207",
@@ -960,6 +4482,98 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-3256225722075",
+      "barcode": "3256225722075",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Biscottes au blé complet x36 tranches - paquet de 300g",
+      "brand": "U",
+      "category": "Store Brands",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/325/622/572/2075/front_fr.119.200.jpg",
+      "scans": 103,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3256225722075",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3256225722075",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.04,
+        "currency": "EUR",
+        "date": "2026-11-05",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 6.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3256225722075",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3560071411220",
+      "barcode": "3560071411220",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Yaourt grec",
+      "brand": "Carrefour",
+      "category": "Store Brands",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/141/1220/front_fr.25.200.jpg",
+      "scans": 101,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560071411220",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3560071411220",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.99,
+        "currency": "EUR",
+        "date": "2026-06-12",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 4.99,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3560071411220",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-3760341070540",
       "barcode": "3760341070540",
       "market": "fr",
@@ -981,11 +4595,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3760341070540",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3760341070540",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.85,
+        "currency": "EUR",
+        "date": "2026-04-26",
+        "store": "Franprix",
+        "discounted": false,
+        "unitPrice": 4.85,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3760341070540",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3103220046159",
+      "barcode": "3103220046159",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chamallows L'original",
+      "brand": "Haribo",
+      "category": "Chocolate & Sweets",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/310/322/004/6159/front_fr.108.200.jpg",
+      "scans": 99,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3103220046159",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3103220046159",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.47,
+        "currency": "EUR",
+        "date": "2026-08-31",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 4.9,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3103220046159",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3250391418107",
@@ -1016,6 +4694,52 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-20057237",
+      "barcode": "20057237",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "53 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Œufs",
+      "brand": "Plein Air",
+      "category": "Dairy",
+      "measure": "53 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/005/7237/front_fr.60.200.jpg",
+      "scans": 95,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20057237",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/20057237",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.88,
+        "currency": "EUR",
+        "date": "2026-05-28",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 0.05,
+        "unitLabel": "stk",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/20057237",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-4056489095736",
       "barcode": "4056489095736",
       "market": "fr",
@@ -1044,6 +4768,126 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-6111024001516",
+      "barcode": "6111024001516",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile de table équilibrée riche en vitamines A,E,D3",
+      "brand": "Lesieur",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/102/400/1516/front_fr.25.200.jpg",
+      "scans": 92,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111024001516",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3175680011480",
+      "barcode": "3175680011480",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sésame",
+      "brand": "Gerblé",
+      "category": "Chocolate & Sweets",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/568/001/1480/front_fr.325.200.jpg",
+      "scans": 91,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175680011480",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3175680011480",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.41,
+        "currency": "EUR",
+        "date": "2026-03-12",
+        "store": "Sitis Market",
+        "discounted": false,
+        "unitPrice": 10.48,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3175680011480",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-7610700015421",
+      "barcode": "7610700015421",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ricola Eucalyptus",
+      "brand": "Ricola",
+      "category": "Chocolate & Sweets",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/070/001/5421/front_fr.35.200.jpg",
+      "scans": 90,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7610700015421",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/7610700015421",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.09,
+        "currency": "EUR",
+        "date": "2026-05-09",
+        "store": "Près d'ici",
+        "discounted": false,
+        "unitPrice": 41.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/7610700015421",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "fr-off-3560070510771",
       "barcode": "3560070510771",
       "market": "fr",
@@ -1065,11 +4909,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3560070510771",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3560070510771",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.55,
+        "currency": "EUR",
+        "date": "2026-07-03",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 3.1,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3560070510771",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3487400006967",
@@ -1093,11 +4955,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3487400006967",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3487400006967",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.9,
+        "currency": "EUR",
+        "date": "2026-10-27",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 8.64,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3487400006967",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "fr-off-3560070393619",
@@ -1120,6 +5000,1582 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3560070393619",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3560070393619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.92,
+        "currency": "EUR",
+        "date": "2026-11-06",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 3.84,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3560070393619",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3068110703249",
+      "barcode": "3068110703249",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Farine de blé bio",
+      "brand": "Francine",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/306/811/070/3249/front_en.74.200.jpg",
+      "scans": 82,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3068110703249",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3068110703249",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.73,
+        "currency": "EUR",
+        "date": "2026-11-10",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 1.73,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3068110703249",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-8410757001090",
+      "barcode": "8410757001090",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crema Manos",
+      "brand": "S'nonas",
+      "category": "Dairy",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/075/700/1090/front_en.26.200.jpg",
+      "scans": 79,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410757001090",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111099000254",
+      "barcode": "6111099000254",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile d'olive",
+      "brand": "oued souss",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/0254/front_fr.29.200.jpg",
+      "scans": 79,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099000254",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3270190021179",
+      "barcode": "3270190021179",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "6 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Oeufs frais BIO",
+      "brand": "Carrefour",
+      "category": "Dairy",
+      "measure": "6 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/019/002/1179/front_fr.168.200.jpg",
+      "scans": 79,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3270190021179",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3270190021179",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.39,
+        "currency": "EUR",
+        "date": "2026-06-20",
+        "store": "Carrefour Market",
+        "discounted": false,
+        "unitPrice": 0.4,
+        "unitLabel": "stk",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3270190021179",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3337875784054",
+      "barcode": "3337875784054",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "236 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Blemish control cleanser",
+      "brand": "Cerave",
+      "category": "Personal Care",
+      "measure": "236 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/578/4054/front_en.21.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3337875784054",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3596710375561",
+      "barcode": "3596710375561",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.75 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile d'olive vierge extra Espagne",
+      "brand": "Auchan",
+      "category": "Store Brands",
+      "measure": "0.75 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/359/671/037/5561/front_fr.151.200.jpg",
+      "scans": 70,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3596710375561",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3596710375561",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 10.49,
+        "currency": "EUR",
+        "date": "2026-03-13",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 13.99,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3596710375561",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111199000017",
+      "barcode": "6111199000017",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12.5 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flash Wondermint Gum",
+      "brand": "FLASH",
+      "category": "Chocolate & Sweets",
+      "measure": "12.5 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/119/900/0017/front_en.30.200.jpg",
+      "scans": 69,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111199000017",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564707087384",
+      "barcode": "3564707087384",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "10 Œuf frais",
+      "brand": "Bio Village",
+      "category": "Dairy",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/708/7384/front_fr.147.200.jpg",
+      "scans": 69,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707087384",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564707087384",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.41,
+        "currency": "EUR",
+        "date": "2026-10-12",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 10.66,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564707087384",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3596710497720",
+      "barcode": "3596710497720",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.825 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pain de mie complet Grandes Tranches",
+      "brand": "Auchan",
+      "category": "Store Brands",
+      "measure": "0.825 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/359/671/049/7720/front_fr.56.200.jpg",
+      "scans": 67,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3596710497720",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3596710497720",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.87,
+        "currency": "EUR",
+        "date": "2026-05-13",
+        "store": "Auchan",
+        "discounted": false,
+        "unitPrice": 2.27,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3596710497720",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3068110703232",
+      "barcode": "3068110703232",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Farine de blé suprême",
+      "brand": "Francine",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/306/811/070/3232/front_fr.112.200.jpg",
+      "scans": 63,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3068110703232",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3068110703232",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.09,
+        "currency": "EUR",
+        "date": "2026-11-01",
+        "store": "Auchan Supermarché",
+        "discounted": false,
+        "unitPrice": 2.09,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3068110703232",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-20275457",
+      "barcode": "20275457",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "390 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Thon entier au naturel",
+      "brand": "Nixe",
+      "category": "Store Brands",
+      "measure": "390 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/027/5457/front_fr.57.200.jpg",
+      "scans": 62,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20275457",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3600551145914",
+      "barcode": "3600551145914",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "5 protection",
+      "brand": "Narta",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/055/114/5914/front_en.8.200.jpg",
+      "scans": 61,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600551145914",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-4005808837359",
+      "barcode": "4005808837359",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pearl & Beauty",
+      "brand": "Nivea",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/400/580/883/7359/front_en.26.200.jpg",
+      "scans": 60,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4005808837359",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-6111099000247",
+      "barcode": "6111099000247",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hule D'olive",
+      "brand": "زيت الزيتون واد سوس",
+      "category": "Sauces & Spreads",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/0247/front_fr.4.200.jpg",
+      "scans": 59,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099000247",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564707000239",
+      "barcode": "3564707000239",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "374 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Œufs bio x6",
+      "brand": "Bio Village",
+      "category": "Dairy",
+      "measure": "374 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/700/0239/front_fr.113.200.jpg",
+      "scans": 55,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707000239",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564707000239",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.22,
+        "currency": "EUR",
+        "date": "2026-09-19",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 5.94,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564707000239",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-6111024004746",
+      "barcode": "6111024004746",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile d'olive vierge de Maroc",
+      "brand": "ALHORRA",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/102/400/4746/front_fr.23.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111024004746",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8718951543553",
+      "barcode": "8718951543553",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "ANTI-CARIES - Dentifrice Protection Caries,",
+      "brand": "Elmex",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/154/3553/front_fr.24.200.jpg",
+      "scans": 48,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951543553",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8718951543553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.25,
+        "currency": "EUR",
+        "date": "2025-11-20",
+        "store": "Franprix",
+        "discounted": false,
+        "unitPrice": 50.0,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8718951543553",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-8718951254183",
+      "barcode": "8718951254183",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "65 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sanex Zero% sensitive deodorant stick",
+      "brand": "Sanex",
+      "category": "Personal Care",
+      "measure": "65 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/125/4183/front_en.22.200.jpg",
+      "scans": 48,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951254183",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8718951254183",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.1,
+        "currency": "EUR",
+        "date": "2025-11-16",
+        "store": "E. Leclerc",
+        "discounted": false,
+        "unitPrice": 47.69,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8718951254183",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-4005900243553",
+      "barcode": "4005900243553",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nivea men Protect & Care",
+      "brand": "Nivea Men",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/400/590/024/3553/front_en.13.200.jpg",
+      "scans": 47,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4005900243553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-4056489857297",
+      "barcode": "4056489857297",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dentifricio",
+      "brand": "Dentalux",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/405/648/985/7297/front_it.20.200.jpg",
+      "scans": 46,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4056489857297",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3574661701288",
+      "barcode": "3574661701288",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "650 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gel Douche Peche nectarine",
+      "brand": "Le Petit Marseillais",
+      "category": "Personal Care",
+      "measure": "650 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/357/466/170/1288/front_fr.10.200.jpg",
+      "scans": 42,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574661701288",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564700849460",
+      "barcode": "3564700849460",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dentifrice expert",
+      "brand": "Marque Repère",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/356/470/084/9460/front_fr.18.200.jpg",
+      "scans": 42,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3564700849460",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-4056489136705",
+      "barcode": "4056489136705",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "10 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Œufs bio",
+      "brand": "lidl",
+      "category": "Store Brands",
+      "measure": "10 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/913/6705/front_fr.20.200.jpg",
+      "scans": 42,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489136705",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4056489136705",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.41,
+        "currency": "EUR",
+        "date": "2026-03-23",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 0.34,
+        "unitLabel": "stk",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4056489136705",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3401578653709",
+      "barcode": "3401578653709",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sébium gel mousse",
+      "brand": "Bioderma",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/340/157/865/3709/front_fr.5.200.jpg",
+      "scans": 37,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3401578653709",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3574661537467",
+      "barcode": "3574661537467",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampoo Detox Freshness",
+      "brand": "Le petit marseillais",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/357/466/153/7467/front_en.5.200.jpg",
+      "scans": 35,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574661537467",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3574661537467",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.74,
+        "currency": "EUR",
+        "date": "2026-08-25",
+        "store": "U Express",
+        "discounted": false,
+        "unitPrice": 10.96,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3574661537467",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3564707110396",
+      "barcode": "3564707110396",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gnocchi bio",
+      "brand": "Bio Village",
+      "category": "Store Brands",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/711/0396/front_fr.45.200.jpg",
+      "scans": 33,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707110396",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564707110396",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.09,
+        "currency": "EUR",
+        "date": "2026-02-22",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 6.97,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564707110396",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3564700012338",
+      "barcode": "3564700012338",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bâtonnets de Surimi",
+      "brand": "Marque Repère",
+      "category": "Store Brands",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/001/2338/front_fr.83.200.jpg",
+      "scans": 32,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564700012338",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564700012338",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.99,
+        "currency": "EUR",
+        "date": "2025-11-26",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 4.97,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564700012338",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-20369866",
+      "barcode": "20369866",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "PUR JUS MULTIFRUITS 100% Pressés",
+      "brand": "Solevita",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/036/9866/front_fr.80.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20369866",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3574661701868",
+      "barcode": "3574661701868",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "650 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "le Petit Marseillais gel douche et ben gel douche et bain extra-doux orange bio et pamplemousse bio",
+      "brand": "Le petit marseillais",
+      "category": "Personal Care",
+      "measure": "650 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/357/466/170/1868/front_fr.4.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574661701868",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3574661574561",
+      "barcode": "3574661574561",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shampooing crème nutrition miel de provence et karité bio",
+      "brand": "Le Petit Marseillais",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/357/466/157/4561/front_fr.3.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574661574561",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3178040661950",
+      "barcode": "3178040661950",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bio Protection Complète",
+      "brand": "Vademecum",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/317/804/066/1950/front_fr.8.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3178040661950",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-0022796976116",
+      "barcode": "0022796976116",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "385 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "ogx  argan",
+      "brand": "OGX",
+      "category": "Personal Care",
+      "measure": "385 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/002/279/697/6116/front_fr.19.200.jpg",
+      "scans": 28,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0022796976116",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-4056489127918",
+      "barcode": "4056489127918",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "40 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lord Nelson Infusion Elimination & Bien-Etre",
+      "brand": "Lord Nelson",
+      "category": "Store Brands",
+      "measure": "40 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/912/7918/front_fr.12.200.jpg",
+      "scans": 25,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489127918",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564707147811",
+      "barcode": "3564707147811",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Farine de blé semi complète type 110",
+      "brand": "Bio Village",
+      "category": "Store Brands",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/714/7811/front_fr.29.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707147811",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564707147811",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.48,
+        "currency": "EUR",
+        "date": "2026-10-03",
+        "store": "E.Leclerc",
+        "discounted": false,
+        "unitPrice": 1.48,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564707147811",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3564707109635",
+      "barcode": "3564707109635",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pur jus d'orange avec pulpe",
+      "brand": "Bio Village",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/470/710/9635/front_fr.52.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3564707109635",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3564707109635",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.11,
+        "currency": "EUR",
+        "date": "2026-02-20",
+        "store": "Centre Commercial E.Leclerc",
+        "discounted": false,
+        "unitPrice": 3.11,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3564707109635",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3549620005028",
+      "barcode": "3549620005028",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Savonnettes extra douces Verveine Citron",
+      "brand": "Le Petit Olivier",
+      "category": "Personal Care",
+      "measure": "200 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/354/962/000/5028/front_en.7.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3549620005028",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3250393212635",
+      "barcode": "3250393212635",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "savon doux végétale au lait d'ânesse",
+      "brand": "labell",
+      "category": "Personal Care",
+      "measure": "100 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/325/039/321/2635/front_en.18.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3250393212635",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3574661700755",
+      "barcode": "3574661700755",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "650 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crème de Douche & Bain Extra douce — Fleur de cerisier BIO",
+      "brand": "Le Petit Marseillais",
+      "category": "Personal Care",
+      "measure": "650 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/357/466/170/0755/front_fr.11.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574661700755",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3350030121686",
+      "barcode": "3350030121686",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâte brisée",
+      "brand": "Monoprix",
+      "category": "Store Brands",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/335/003/012/1686/front_fr.12.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3350030121686",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3350033317161",
+      "barcode": "3350033317161",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "115 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Galettes de maïs bio",
+      "brand": "Monoprix",
+      "category": "Store Brands",
+      "measure": "115 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/335/003/331/7161/front_fr.49.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3350033317161",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3350030139278",
+      "barcode": "3350030139278",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "beurre doux",
+      "brand": "Monoprix",
+      "category": "Store Brands",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/335/003/013/9278/front_fr.8.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3350030139278",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-5902686254355",
+      "barcode": "5902686254355",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gel douche amande",
+      "brand": "",
+      "category": "Personal Care",
+      "measure": "1 l",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/590/268/625/4355/front_fr.10.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5902686254355",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3350030146429",
+      "barcode": "3350030146429",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Blanc de dinde qualité supérieure",
+      "brand": "Monoprix",
+      "category": "Store Brands",
+      "measure": "160 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/335/003/014/6429/front_fr.21.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3350030146429",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-20057251",
+      "barcode": "20057251",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "6 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Stéphanie eleveur",
+      "brand": "Oeufs de  france",
+      "category": "Dairy",
+      "measure": "6 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/005/7251/front_fr.60.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20057251",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564706534292",
+      "barcode": "3564706534292",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.6 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "lessive hypoallergénique",
+      "brand": "Epsil perfect",
+      "category": "Cleaning & Laundry",
+      "measure": "2.6 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/356/470/653/4292/front_fr.4.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3564706534292",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3256228440709",
+      "barcode": "3256228440709",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lessive liquide",
+      "brand": "U",
+      "category": "Cleaning & Laundry",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/325/622/844/0709/front_fr.5.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3256228440709",
           "checked": "2026-11-15"
         }
       ],
@@ -1156,6 +6612,108 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "fr-off-3560071222116",
+      "barcode": "3560071222116",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Eco Planet Gel WC Eucalyptus",
+      "brand": "Carrefour",
+      "category": "Cleaning & Laundry",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/356/007/122/2116/front_en.3.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3560071222116",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/3560071222116",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.56,
+        "currency": "EUR",
+        "date": "2025-11-26",
+        "store": "Carrefour City",
+        "discounted": false,
+        "unitPrice": 3.41,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/3560071222116",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "fr-off-3700684700032",
+      "barcode": "3700684700032",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Désinfectant nettoyant",
+      "brand": "You",
+      "category": "Cleaning & Laundry",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/370/068/470/0032/front_fr.17.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3700684700032",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-4088500123456",
+      "barcode": "4088500123456",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "tandil japon",
+      "brand": "Great Gherkins",
+      "category": "Cleaning & Laundry",
+      "measure": "5 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/408/850/012/3456/front_en.13.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/4088500123456",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "fr-off-9310179199353",
       "barcode": "9310179199353",
       "market": "fr",
@@ -1176,6 +6734,174 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/9310179199353",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3596710527731",
+      "barcode": "3596710527731",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.643 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Papier toilette 3 plis",
+      "brand": "Auchan",
+      "category": "Toilet Paper",
+      "measure": "0.643 kg",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/359/671/052/7731/front_fr.45.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3596710527731",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8717644231180",
+      "barcode": "8717644231180",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Domestos Gel Nettoyant Wc 100 % Désinfectant Fraîcheur Alpine 1L",
+      "brand": "Domestos",
+      "category": "Cleaning & Laundry",
+      "measure": "1000 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/871/764/423/1180/front_fr.20.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8717644231180",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-8712561344494",
+      "barcode": "8712561344494",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "3150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Persil Lessive Poudre Bouquet de Provence 45 Doses",
+      "brand": "Persil",
+      "category": "Cleaning & Laundry",
+      "measure": "3150 g",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/871/256/134/4494/front_fr.24.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8712561344494",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3596710533633",
+      "barcode": "3596710533633",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.75 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gel WC Marine",
+      "brand": "Auchan",
+      "category": "Cleaning & Laundry",
+      "measure": "0.75 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/359/671/053/3633/front_fr.52.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3596710533633",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3564706547032",
+      "barcode": "3564706547032",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Papier toilette",
+      "brand": "",
+      "category": "Toilet Paper",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/356/470/654/7032/front_en.9.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3564706547032",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3596710478194",
+      "barcode": "3596710478194",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.17 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Papier toilette rose, 2 plis",
+      "brand": "Auchan",
+      "category": "Toilet Paper",
+      "measure": "2.17 kg",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/359/671/047/8194/front_fr.49.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3596710478194",
           "checked": "2026-11-15"
         }
       ],
@@ -1232,6 +6958,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/9310179008594",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "fr-off-3596710480012",
+      "barcode": "3596710480012",
+      "market": "fr",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.53 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Papier toilette, 2 plis",
+      "brand": "Pouce",
+      "category": "Toilet Paper",
+      "measure": "0.53 kg",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/359/671/048/0012/front_fr.42.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/3596710480012",
           "checked": "2026-11-15"
         }
       ],
@@ -1343,5 +7097,5 @@
       }
     ]
   },
-  "catalogCount": 44
+  "catalogCount": 182
 }

@@ -22,7 +22,8 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import CatalogSection, { type CatalogItem } from './CatalogSection';
-import StoreComparison, { type StoreComparisonData } from './StoreComparison';
+import DocumentedCases from './DocumentedCases';
+import StoreComparison,{ type StoreComparisonData } from './StoreComparison';
 import {
   ProductItem,
   analyzeProductShrinkflation,
@@ -1642,6 +1643,7 @@ export default function KiloRadarApp({
 
           {/* VERIFIED CATALOG (real Open Food Facts products, prices coming) */}
           <CatalogSection items={catalogItems} countryCode={countryCode} />
+          <DocumentedCases countryCode={countryCode} />
 
           {/* SOCIAL SHARE ROW (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn) */}
           <ShareButtonsBar
@@ -1969,6 +1971,8 @@ export default function KiloRadarApp({
           >
             https://opendatacommons.org/licenses/odbl/1.0/
           </a>
+          <br />
+          Øvrige data kommer fra offentlig tilgjengelige kilder.
         </p>
       </footer>
     </div>

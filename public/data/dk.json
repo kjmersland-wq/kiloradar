@@ -8,6 +8,62 @@
   "offerSources": [],
   "catalog": [
     {
+      "id": "dk-off-5060042641000",
+      "barcode": "5060042641000",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chips simplement salées",
+      "brand": "Tyrrells",
+      "category": "Snacks",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/004/264/1000/front_en.305.200.jpg",
+      "scans": 410,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5060042641000",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3046920028004",
+      "barcode": "3046920028004",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 70% Cocoa Intense Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8004/front_en.435.200.jpg",
+      "scans": 320,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028004",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5053827199568",
       "barcode": "5053827199568",
       "market": "dk",
@@ -28,6 +84,118 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5053827199568",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8076809513388",
+      "barcode": "8076809513388",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Arrabbiata",
+      "brand": "Barilla",
+      "category": "Sauces & Spreads",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/951/3388/front_en.191.200.jpg",
+      "scans": 219,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809513388",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8852018101024",
+      "barcode": "8852018101024",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "60 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Instant Noedels Kipsmaak",
+      "brand": "YumYum",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "60 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/885/201/810/1024/front_en.417.200.jpg",
+      "scans": 212,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8852018101024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8715700016504",
+      "barcode": "8715700016504",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "875 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ketchup",
+      "brand": "Heinz",
+      "category": "Sauces & Spreads",
+      "measure": "875 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/570/001/6504/front_en.139.200.jpg",
+      "scans": 173,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8715700016504",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8410076481597",
+      "barcode": "8410076481597",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "185 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tortilla Nachos Original",
+      "brand": "GENERAL MILLS IBERICA S.A.U.",
+      "category": "Snacks",
+      "measure": "185 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/007/648/1597/front_en.317.200.jpg",
+      "scans": 154,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410076481597",
           "checked": "2026-11-15"
         }
       ],
@@ -64,6 +232,90 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-3046920029674",
+      "barcode": "3046920029674",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lindt Excellence A Touch of Sea Salt Dark",
+      "brand": "LINDT SPRUNGLI SAS",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9674/front_en.150.200.jpg",
+      "scans": 109,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029674",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5000184321064",
+      "barcode": "5000184321064",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Majoneesi",
+      "brand": "Hellmann's",
+      "category": "Sauces & Spreads",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/018/432/1064/front_en.60.200.jpg",
+      "scans": 90,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000184321064",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5410041472509",
+      "barcode": "5410041472509",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tuc Sour Cream & Onion",
+      "brand": "Tuc",
+      "category": "Snacks",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/004/147/2509/front_nb.116.200.jpg",
+      "scans": 80,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5410041472509",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-20664459",
       "barcode": "20664459",
       "market": "dk",
@@ -84,6 +336,174 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/20664459",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8715035210301",
+      "barcode": "8715035210301",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Teriyakisauce",
+      "brand": "Kikkoman",
+      "category": "Sauces & Spreads",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/503/521/0301/front_en.52.200.jpg",
+      "scans": 72,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8715035210301",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-87157239",
+      "barcode": "87157239",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "570 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "heinz Tomato Ketchup",
+      "brand": "Heinz",
+      "category": "Sauces & Spreads",
+      "measure": "570 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/715/7239/front_en.186.200.jpg",
+      "scans": 71,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/87157239",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4000607852008",
+      "barcode": "4000607852008",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark Chocolate",
+      "brand": "Schogetten",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/060/785/2008/front_en.96.200.jpg",
+      "scans": 63,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4000607852008",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20004279",
+      "barcode": "20004279",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "205 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "White Asparagus",
+      "brand": "Freshona",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "205 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/000/4279/front_da.159.200.jpg",
+      "scans": 59,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20004279",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8801073113428",
+      "barcode": "8801073113428",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "140 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Samyang 2x buldak spicy ramen",
+      "brand": "Samyang",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "140 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/3428/front_en.150.200.jpg",
+      "scans": 59,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073113428",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489108160",
+      "barcode": "4056489108160",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Хомогенизирано пълномаслено краве мляко 3.5%",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/910/8160/front_hu.44.200.jpg",
+      "scans": 54,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489108160",
           "checked": "2026-11-15"
         }
       ],
@@ -148,6 +568,258 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-8005110060007",
+      "barcode": "8005110060007",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tomaten geschält",
+      "brand": "Mutti",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/511/006/0007/front_en.147.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8005110060007",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8715035150300",
+      "barcode": "8715035150300",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Salsa de Soja Tamari",
+      "brand": "Kikkoman",
+      "category": "Sauces & Spreads",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/503/515/0300/front_en.171.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8715035150300",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7610400070577",
+      "barcode": "7610400070577",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dunkle Schweizer Schokolade mit Chili-Extrakt",
+      "brand": "Lindtt EXCELLENCE",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/040/007/0577/front_en.159.200.jpg",
+      "scans": 48,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7610400070577",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4000417026002",
+      "barcode": "4000417026002",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nugat",
+      "brand": "Ritter Sport",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/041/702/6002/front_en.103.200.jpg",
+      "scans": 45,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4000417026002",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489009191",
+      "barcode": "4056489009191",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tortelloni Ricotta et épinards",
+      "brand": "LIDL",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/900/9191/front_en.138.200.jpg",
+      "scans": 44,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489009191",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5053990127641",
+      "barcode": "5053990127641",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pringles Chips m. ost og løg",
+      "brand": "Pringles",
+      "category": "Snacks",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/399/012/7641/front_en.62.200.jpg",
+      "scans": 43,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5053990127641",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5740700988349",
+      "barcode": "5740700988349",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original Taste",
+      "brand": "Carlsberg Danmark A/S",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/070/098/8349/front_en.72.200.jpg",
+      "scans": 41,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740700988349",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5000112545326",
+      "barcode": "5000112545326",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coke Original Taste",
+      "brand": "Coca-Cola Europacific Partners Services Bulgaria EOOD",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/254/5326/front_en.67.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000112545326",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4000417025005",
+      "barcode": "4000417025005",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "RITTER SPORT marsepein",
+      "brand": "Ritter Sport",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/041/702/5005/front_en.237.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4000417025005",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5740900403376",
       "barcode": "5740900403376",
       "market": "dk",
@@ -168,6 +840,62 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5740900403376",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5741000119020",
+      "barcode": "5741000119020",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "33 cl"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pepsi Max",
+      "brand": "Pepsi",
+      "category": "Juice & Drinks",
+      "measure": "33 cl",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/100/011/9020/front_en.34.200.jpg",
+      "scans": 35,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5741000119020",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7300400112734",
+      "barcode": "7300400112734",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sesam",
+      "brand": "Barilla Sverige AB",
+      "category": "Bakery",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/011/2734/front_en.47.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400112734",
           "checked": "2026-11-15"
         }
       ],
@@ -204,6 +932,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-5410041030006",
+      "barcode": "5410041030006",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tuc Original 3-pack",
+      "brand": "Tuc",
+      "category": "Snacks",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/004/103/0006/front_en.136.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5410041030006",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5738001092490",
       "barcode": "5738001092490",
       "market": "dk",
@@ -224,6 +980,62 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5738001092490",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-76145513",
+      "barcode": "76145513",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Toblerone",
+      "brand": "Toblerone",
+      "category": "Chocolate & Sweets",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/007/614/5513/front_es.121.200.jpg",
+      "scans": 28,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/76145513",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7311311020599",
+      "barcode": "7311311020599",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Super soft medium tortilla original",
+      "brand": "Santa Maria",
+      "category": "Bakery",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/131/102/0599/front_en.65.200.jpg",
+      "scans": 27,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311311020599",
           "checked": "2026-11-15"
         }
       ],
@@ -280,6 +1092,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3155250343302",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20004101",
+      "barcode": "20004101",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "170 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Champignons 3.Wahl",
+      "brand": "Freshona",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "170 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/000/4101/front_de.72.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20004101",
           "checked": "2026-11-15"
         }
       ],
@@ -372,6 +1212,136 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-4056489181217",
+      "barcode": "4056489181217",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Paniermehl",
+      "brand": "Belbake",
+      "category": "Bakery",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/918/1217/front_en.13.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489181217",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5740700995774",
+      "barcode": "5740700995774",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cherry Coca-Cola",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/070/099/5774/front_en.37.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740700995774",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701205008994",
+      "barcode": "5701205008994",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Signaturbrød Gillelejehavn",
+      "brand": "Schulstad",
+      "category": "Bakery",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/120/500/8994/front_en.15.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701205008994",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5701205008994",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 14.0,
+        "currency": "DKK",
+        "date": "2026-09-08",
+        "store": "Netto",
+        "discounted": true,
+        "unitPrice": 18.67,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5701205008994",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "dk-off-5701872203005",
+      "barcode": "5701872203005",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.33 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca Cola Coca Cola",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "0.33 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/187/220/3005/front_da.29.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701872203005",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-30087040",
       "barcode": "30087040",
       "market": "dk",
@@ -456,6 +1426,62 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-5711953081330",
+      "barcode": "5711953081330",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "482 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Vanilla Flavoured Shake",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "482 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/195/308/1330/front_en.61.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711953081330",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5740700996153",
+      "barcode": "5740700996153",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fanta - Exotic",
+      "brand": "Fanta",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/574/070/099/6153/front_da.35.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5740700996153",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5000159532921",
       "barcode": "5000159532921",
       "market": "dk",
@@ -482,6 +1508,52 @@
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5704062370846",
+      "barcode": "5704062370846",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Matilde kakao",
+      "brand": "Matilde Original",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/406/237/0846/front_en.41.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5704062370846",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5704062370846",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 7.0,
+        "currency": "DKK",
+        "date": "2026-09-06",
+        "store": "Netto",
+        "discounted": true,
+        "unitPrice": 7.0,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5704062370846",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "dk-off-7311171008386",
@@ -540,6 +1612,164 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-20058029",
+      "barcode": "20058029",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fusilli",
+      "brand": "Baresa",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/005/8029/front_en.34.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20058029",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7300400115636",
+      "barcode": "7300400115636",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kanel",
+      "brand": "wasa",
+      "category": "Bakery",
+      "measure": "330 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/011/5636/front_en.25.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400115636",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489600596",
+      "barcode": "4056489600596",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bellarom Gold",
+      "brand": "Bellarom",
+      "category": "Coffee & Tea",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/960/0596/front_en.5.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489600596",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701205001568",
+      "barcode": "5701205001568",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "950 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Solsikkerugbrød",
+      "brand": "Schulstad",
+      "category": "Bakery",
+      "measure": "950 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/120/500/1568/front_en.32.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701205001568",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5701205001568",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.0,
+        "currency": "DKK",
+        "date": "2026-09-08",
+        "store": "Netto",
+        "discounted": true,
+        "unitPrice": 3.16,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5701205001568",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "dk-off-7340011428602",
+      "barcode": "7340011428602",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dark chocolate",
+      "brand": "Änglamark",
+      "category": "Store Brands",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/142/8602/front_en.4.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011428602",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5760466904919",
       "barcode": "5760466904919",
       "market": "dk",
@@ -588,6 +1818,62 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3161910238710",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700426101019",
+      "barcode": "5700426101019",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Whole milk (3.5% fat)",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/042/610/1019/front_en.63.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700426101019",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3083681003949",
+      "barcode": "3083681003949",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "265 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "CECI SOTTOVUOTO",
+      "brand": "Bonduelle",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "265 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/308/368/100/3949/front_en.142.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3083681003949",
           "checked": "2026-11-15"
         }
       ],
@@ -680,6 +1966,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-5700426291154",
+      "barcode": "5700426291154",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Øko Mini Mælk",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/042/629/1154/front_en.21.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700426291154",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5711953168260",
       "barcode": "5711953168260",
       "market": "dk",
@@ -700,6 +2014,62 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5711953168260",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7640170370058",
+      "barcode": "7640170370058",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Superwhite",
+      "brand": "Biomed",
+      "category": "Personal Care",
+      "measure": "100 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/764/017/037/0058/front_en.33.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7640170370058",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5601312101161",
+      "barcode": "5601312101161",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "120 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sardinha Enlatada em Azeite",
+      "brand": "Continente",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "120 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/560/131/210/1161/front_pt.47.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5601312101161",
           "checked": "2026-11-15"
         }
       ],
@@ -736,6 +2106,174 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-5703828023408",
+      "barcode": "5703828023408",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Aqua d'Or still",
+      "brand": "Aqua d'Or",
+      "category": "Juice & Drinks",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/382/802/3408/front_en.3.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5703828023408",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340191165335",
+      "barcode": "7340191165335",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Digestive",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/116/5335/front_en.9.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191165335",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340191149564",
+      "barcode": "7340191149564",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "340 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sweet Corn",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "340 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/114/9564/front_en.4.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191149564",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7613287295347",
+      "barcode": "7613287295347",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Maggi Saucy Noodles Teriyaki",
+      "brand": "Maggi",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "75 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/328/729/5347/front_nb.25.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613287295347",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830000170",
+      "barcode": "5705830000170",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "ICE TEA MED FERSKENSMAG",
+      "brand": "REMA 1000",
+      "category": "Coffee & Tea",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/000/0170/front_en.36.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830000170",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701975300922",
+      "barcode": "5701975300922",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Änglamark Minimælk",
+      "brand": "Änglamark",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/197/530/0922/front_en.4.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701975300922",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5760466904940",
       "barcode": "5760466904940",
       "market": "dk",
@@ -756,6 +2294,164 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5760466904940",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5760466904940",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 13.0,
+        "currency": "DKK",
+        "date": "2026-09-08",
+        "store": "Netto",
+        "discounted": true,
+        "unitPrice": 65.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5760466904940",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "dk-off-7340191150362",
+      "barcode": "7340191150362",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Havredrik",
+      "brand": "Änglamark",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/115/0362/front_en.32.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191150362",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7613036254793",
+      "barcode": "7613036254793",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafe gold",
+      "brand": "Nescafé Gold",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/625/4793/front_da.3.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613036254793",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830015952",
+      "barcode": "5705830015952",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Riskiks Med Havsalt",
+      "brand": "REMA 1000",
+      "category": "Store Brands",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/001/5952/front_da.18.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830015952",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3800225476188",
+      "barcode": "3800225476188",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dragon Superfoods Matchapulver",
+      "brand": "Dragon Superfoods",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/380/022/547/6188/front_es.11.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3800225476188",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8410376013658",
+      "barcode": "8410376013658",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pick Mini Crackers",
+      "brand": "Gullón",
+      "category": "Snacks",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/037/601/3658/front_fr.58.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410376013658",
           "checked": "2026-11-15"
         }
       ],
@@ -784,6 +2480,80 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5700426221045",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5700426221045",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 12.0,
+        "currency": "DKK",
+        "date": "2026-09-07",
+        "store": "Netto",
+        "discounted": true,
+        "unitPrice": 12.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5700426221045",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "dk-off-5063270112335",
+      "barcode": "5063270112335",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "32 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Organic Night Time Berry Herbal Tea",
+      "brand": "Pukka",
+      "category": "Coffee & Tea",
+      "measure": "32 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/327/011/2335/front_en.3.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5063270112335",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701259000661",
+      "barcode": "5701259000661",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Brun Farin",
+      "brand": "Dansukker",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/125/900/0661/front_da.45.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701259000661",
           "checked": "2026-11-15"
         }
       ],
@@ -840,6 +2610,314 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5700426220024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5063270100752",
+      "barcode": "5063270100752",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "25 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lipton Earl grey",
+      "brand": "Lipton",
+      "category": "Coffee & Tea",
+      "measure": "25 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/327/010/0752/front_en.6.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5063270100752",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7310070004949",
+      "barcode": "7310070004949",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ramlösa Citrus",
+      "brand": "Carlsberg A/S",
+      "category": "Juice & Drinks",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/007/000/4949/front_en.19.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310070004949",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5765228836095",
+      "barcode": "5765228836095",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Urtekram luomu valkaiseva hammastahna Fresh Mint fluoriton 75 ml",
+      "brand": "Urtekram",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/576/522/883/6095/front_fi.5.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5765228836095",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7613036243896",
+      "barcode": "7613036243896",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "210 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafe Gold",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "210 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/624/3896/front_da.3.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613036243896",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701607590998",
+      "barcode": "5701607590998",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "424 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Økologiske Æg",
+      "brand": "DAVA",
+      "category": "Dairy",
+      "measure": "424 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/160/759/0998/front_en.4.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701607590998",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4820179256574",
+      "barcode": "4820179256574",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spicy Chicken Curry Flavour",
+      "brand": "Reeva",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "75 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/482/017/925/6574/front_en.29.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4820179256574",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700426291383",
+      "barcode": "5700426291383",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Minimælk 0,4%",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/042/629/1383/front_da.30.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700426291383",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830610287",
+      "barcode": "5705830610287",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Panang Med Kylling Og Jasminris",
+      "brand": "REMA 1000",
+      "category": "Store Brands",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/061/0287/front_da.13.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830610287",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5703828020995",
+      "barcode": "5703828020995",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Naturligt mineralvann uten kullsyre",
+      "brand": "Aqua d’Or",
+      "category": "Juice & Drinks",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/382/802/0995/front_en.7.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5703828020995",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5711953177736",
+      "barcode": "5711953177736",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Piskefløde",
+      "brand": "Karoline",
+      "category": "Dairy",
+      "measure": "0.5 l",
+      "imageUrl": null,
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711953177736",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700426293929",
+      "barcode": "5700426293929",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Økologisk Skummet Mælk",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/042/629/3929/front_da.39.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700426293929",
           "checked": "2026-11-15"
         }
       ],
@@ -925,6 +3003,304 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5410146413605",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5410146413605",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 18.0,
+        "currency": "DKK",
+        "date": "2026-09-08",
+        "store": "Netto",
+        "discounted": true,
+        "unitPrice": 45.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5410146413605",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "dk-off-5701259000982",
+      "barcode": "5701259000982",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dansk flormelis",
+      "brand": "Dansukker",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/125/900/0982/front_en.25.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701259000982",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7311041049600",
+      "barcode": "7311041049600",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ekologisk Hallon Sylt",
+      "brand": "Garant",
+      "category": "Sauces & Spreads",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/104/104/9600/front_sv.15.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7311041049600",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20107338",
+      "barcode": "20107338",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Triple taste ice cream",
+      "brand": "Bon Gelati",
+      "category": "Store Brands",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/010/7338/front_fi.95.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20107338",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20686437",
+      "barcode": "20686437",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "105 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Super Cono",
+      "brand": "Gelatelli",
+      "category": "Store Brands",
+      "measure": "105 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/068/6437/front_it.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20686437",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701211011766",
+      "barcode": "5701211011766",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Den Gamle Fabrik Boysenbærmarmelade",
+      "brand": "Den Gamle Fabrik",
+      "category": "Sauces & Spreads",
+      "measure": "600 g",
+      "imageUrl": null,
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701211011766",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701607594361",
+      "barcode": "5701607594361",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "424 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Frilandsæg",
+      "brand": "Dava",
+      "category": "Dairy",
+      "measure": "424 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/160/759/4361/front_da.20.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701607594361",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340011342434",
+      "barcode": "7340011342434",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "X-tra Cornflakes",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/134/2434/front_nb.31.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011342434",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701115363282",
+      "barcode": "5701115363282",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Instant kaffe",
+      "brand": "BKI",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/111/536/3282/front_en.7.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701115363282",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8711000278468",
+      "barcode": "8711000278468",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "20 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tee with fruit forest fruit",
+      "brand": "Pickwick",
+      "category": "Coffee & Tea",
+      "measure": "20 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/100/027/8468/front_fr.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8711000278468",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340191150324",
+      "barcode": "7340191150324",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Økologisk Soyadrikk med vaniljesmak",
+      "brand": "Änglamark",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/115/0324/front_nb.9.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191150324",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
@@ -980,6 +3356,510 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/7311041084212",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489108276",
+      "barcode": "4056489108276",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crème à fouetter",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/910/8276/front_fr.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489108276",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5765228838037",
+      "barcode": "5765228838037",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "aloe vera",
+      "brand": "shampoo",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/576/522/883/8037/front_en.4.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5765228838037",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701607582207",
+      "barcode": "5701607582207",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "15 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Æg 15 S/M",
+      "brand": "Dava",
+      "category": "Dairy",
+      "measure": "15 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/160/758/2207/front_en.13.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701607582207",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701211012459",
+      "barcode": "5701211012459",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "380 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Appelsin Marmelade",
+      "brand": "Den Gamle Fabrik",
+      "category": "Sauces & Spreads",
+      "measure": "380 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/121/101/2459/front_da.11.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701211012459",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340191109995",
+      "barcode": "7340191109995",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cheese Flips",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/110/9995/front_nb.17.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191109995",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-28424024",
+      "barcode": "28424024",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kingsway Ice Tea Peach",
+      "brand": "Kingsway",
+      "category": "Store Brands",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/842/4024/front_da.11.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/28424024",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-87111606",
+      "barcode": "87111606",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "47 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dextro Energy Classic X24",
+      "brand": "Dextro Energy",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "47 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/711/1606/front_en.44.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/87111606",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5765228837825",
+      "barcode": "5765228837825",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Toothpaste tea tree",
+      "brand": "Urtekram",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/576/522/883/7825/front_en.9.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5765228837825",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830016553",
+      "barcode": "5705830016553",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Finvalsede havregryn",
+      "brand": "REMA 1000",
+      "category": "Store Brands",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/001/6553/front_en.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830016553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20770266",
+      "barcode": "20770266",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Salsa piccante con jalapenos",
+      "brand": "lidl",
+      "category": "Store Brands",
+      "measure": "100 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/077/0266/front_da.39.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20770266",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5712871674673",
+      "barcode": "5712871674673",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Økologisk instant kaffe arabica",
+      "brand": "ØGO",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/287/167/4673/front_da.12.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5712871674673",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701211011865",
+      "barcode": "5701211011865",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Marmelade med jordbær",
+      "brand": "Den Gamle Fabrik",
+      "category": "Sauces & Spreads",
+      "measure": "600 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/121/101/1865/front_da.17.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701211011865",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830012890",
+      "barcode": "5705830012890",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "MAKRELFILET I TOMATSAUCE",
+      "brand": "REMA 1000",
+      "category": "Store Brands",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/001/2890/front_en.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830012890",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340011487913",
+      "barcode": "7340011487913",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kidneybønner",
+      "brand": "Änglamark",
+      "category": "Store Brands",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/148/7913/front_en.9.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011487913",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5711953124891",
+      "barcode": "5711953124891",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tripleshot Espresso",
+      "brand": "Starbucks",
+      "category": "Coffee & Tea",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/195/312/4891/front_en.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711953124891",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340011419860",
+      "barcode": "7340011419860",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "10 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Danske æg økologi",
+      "brand": "Coop",
+      "category": "Dairy",
+      "measure": "10 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/141/9860/front_en.7.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011419860",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5703161810123",
+      "barcode": "5703161810123",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "285 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hindbærmarmelade",
+      "brand": "Easis",
+      "category": "Sauces & Spreads",
+      "measure": "285 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/316/181/0123/front_en.3.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5703161810123",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-20162979",
+      "barcode": "20162979",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "350 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spaghetti Carbonara",
+      "brand": "Chef Select",
+      "category": "Store Brands",
+      "measure": "350 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/016/2979/front_da.24.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20162979",
           "checked": "2026-11-15"
         }
       ],
@@ -1128,6 +4008,706 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "dk-off-5705830607270",
+      "barcode": "5705830607270",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "8 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rema, Økologiske Æg",
+      "brand": "REMA 1000",
+      "category": "Dairy",
+      "measure": "8 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/060/7270/front_da.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830607270",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489356677",
+      "barcode": "4056489356677",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cien Gel de baño Zero",
+      "brand": "Cien",
+      "category": "Personal Care",
+      "measure": "1000 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/405/648/935/6677/front_en.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4056489356677",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-2397330084687",
+      "barcode": "2397330084687",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1697 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Røget Hamburgerryg",
+      "brand": "Netto",
+      "category": "Store Brands",
+      "measure": "1697 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/239/733/008/4687/front_da.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/2397330084687",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830012081",
+      "barcode": "5705830012081",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ekstra jomfruolivenolie",
+      "brand": "REMA 1000",
+      "category": "Store Brands",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/001/2081/front_da.44.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830012081",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340011317470",
+      "barcode": "7340011317470",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Creme Fraiche 18%",
+      "brand": "Coop",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/131/7470/front_en.5.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011317470",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340011486848",
+      "barcode": "7340011486848",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "MAJSKAKOR MED HAVSALT",
+      "brand": "Änglamark",
+      "category": "Store Brands",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/001/148/6848/front_en.22.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340011486848",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7310865224576",
+      "barcode": "7310865224576",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Piskefløde Laktosefri 36%",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/086/522/4576/front_en.8.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310865224576",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701105520688",
+      "barcode": "5701105520688",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "530 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hverdagsæg",
+      "brand": "Danæg",
+      "category": "Dairy",
+      "measure": "530 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/110/552/0688/front_da.9.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701105520688",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340191104846",
+      "barcode": "7340191104846",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "175 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bacon chips",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "175 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/110/4846/front_da.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191104846",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830009029",
+      "barcode": "5705830009029",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "110 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Vaniljesukker",
+      "brand": "REMA 1000",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "110 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/000/9029/front_en.6.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830009029",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701211011889",
+      "barcode": "5701211011889",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hindbær marmelade",
+      "brand": "Den Gamle Fabrik",
+      "category": "Sauces & Spreads",
+      "measure": "600 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/121/101/1889/front_da.5.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701211011889",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5710326012483",
+      "barcode": "5710326012483",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Danskvand med brus - med smag af rabarber og hindbær",
+      "brand": "Nornir",
+      "category": "Juice & Drinks",
+      "measure": "0.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/032/601/2483/front_en.20.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5710326012483",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489640431",
+      "barcode": "4056489640431",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "180 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Vegan Couverture Chocolate with Cookie Crumbs",
+      "brand": "Vemondo",
+      "category": "Store Brands",
+      "measure": "180 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/964/0431/front_sv.22.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489640431",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-87104752",
+      "barcode": "87104752",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kook room",
+      "brand": "Albert Heijn",
+      "category": "Dairy",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/710/4752/front_nl.13.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/87104752",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5705830015525",
+      "barcode": "5705830015525",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1000 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Økologisk Dansk Sukker",
+      "brand": "REMA 1000",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1000 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/583/001/5525/front_da.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5705830015525",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5703828020582",
+      "barcode": "5703828020582",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Aqua D'or ½ ltr",
+      "brand": "Aqua d'Or",
+      "category": "Juice & Drinks",
+      "measure": "0.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/382/802/0582/front_fr.11.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5703828020582",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4056489893837",
+      "barcode": "4056489893837",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kibbeh, kip en ui",
+      "brand": "1001 delights",
+      "category": "Store Brands",
+      "measure": "450 g",
+      "imageUrl": null,
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489893837",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8712100619922",
+      "barcode": "8712100619922",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "40 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Earl Grey",
+      "brand": "CUVECO AS",
+      "category": "Coffee & Tea",
+      "measure": "40 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/210/061/9922/front_fr.128.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8712100619922",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7310865224552",
+      "barcode": "7310865224552",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Creme Fraiche Laktosefri 13%",
+      "brand": "Arla",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/731/086/522/4552/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7310865224552",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5765228250112",
+      "barcode": "5765228250112",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "280 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Urtekram Kokossukker øko",
+      "brand": "Urtekram",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "280 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/576/522/825/0112/front_en.7.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5765228250112",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701018047418",
+      "barcode": "5701018047418",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "105 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tun i vand",
+      "brand": "Glyngøre",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "105 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/101/804/7418/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701018047418",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5700383365455",
+      "barcode": "5700383365455",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Danskvand med lemonsmag",
+      "brand": "Coop",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/038/336/5455/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5700383365455",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7340191146679",
+      "barcode": "7340191146679",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "85 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chicken Noodles",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "85 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/734/019/114/6679/front_en.28.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7340191146679",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8445291346062",
+      "barcode": "8445291346062",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "95 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafe Gold Vanilla Nestle",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "95 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/844/529/134/6062/front_da.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8445291346062",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5701182017590",
+      "barcode": "5701182017590",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "24 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "fredsted hvid te med smag af vanilje og fersken",
+      "brand": "Fredsted",
+      "category": "Coffee & Tea",
+      "measure": "24 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/118/201/7590/front_da.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5701182017590",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "dk-off-5701012310495",
       "barcode": "5701012310495",
       "market": "dk",
@@ -1154,6 +4734,426 @@
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3600523741380",
+      "barcode": "3600523741380",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Deodorant Fresh Extreme",
+      "brand": "L’Oréal Men Expert",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/052/374/1380/front_en.6.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600523741380",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-4005097254035",
+      "barcode": "4005097254035",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hamburgerryg",
+      "brand": "budget",
+      "category": "Store Brands",
+      "measure": "150 g",
+      "imageUrl": null,
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4005097254035",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3600542462228",
+      "barcode": "3600542462228",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Honey Treasures Shampoo",
+      "brand": "Garnier",
+      "category": "Personal Care",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/360/054/246/2228/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3600542462228",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8001090592958",
+      "barcode": "8001090592958",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Original",
+      "brand": "Old Spice",
+      "category": "Personal Care",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/800/109/059/2958/front_da.5.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8001090592958",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5710326000930",
+      "barcode": "5710326000930",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tortellini med skinke og ost",
+      "brand": "budget",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": null,
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5710326000930",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-3058320046120",
+      "barcode": "3058320046120",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "P'tit Dop",
+      "brand": "Dop",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/305/832/004/6120/front_en.9.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3058320046120",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-0737052993546",
+      "barcode": "0737052993546",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "70 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Boss The Scent",
+      "brand": "Boss Hugo boss",
+      "category": "Personal Care",
+      "measure": "70 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/073/705/299/3546/front_da.5.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0737052993546",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5710326002514",
+      "barcode": "5710326002514",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tortellini med kylling og ost",
+      "brand": "budget",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": null,
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5710326002514",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8710604777094",
+      "barcode": "8710604777094",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Zendium classic",
+      "brand": "Unilever",
+      "category": "Personal Care",
+      "measure": "100 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/060/477/7094/front_da.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8710604777094",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-8718951563391",
+      "barcode": "8718951563391",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sanex Dermo Protect Sensitive",
+      "brand": "Colgate-Palmolive",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/156/3391/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951563391",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5711044256500",
+      "barcode": "5711044256500",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "175 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "bacon snacks",
+      "brand": "budget",
+      "category": "Store Brands",
+      "measure": "175 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/104/425/6500/front_en.7.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711044256500",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-7319861009330",
+      "barcode": "7319861009330",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cliniderm Dual Impact",
+      "brand": "ACO",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/731/986/100/9330/front_en.4.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7319861009330",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5711044747992",
+      "barcode": "5711044747992",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "900 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pizza Bolognese",
+      "brand": "budget",
+      "category": "Store Brands",
+      "measure": "900 g",
+      "imageUrl": null,
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5711044747992",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5712871808962",
+      "barcode": "5712871808962",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "30 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Earl grey tea",
+      "brand": "Budget",
+      "category": "Store Brands",
+      "measure": "30 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/571/287/180/8962/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5712871808962",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "dk-off-5704025030039",
+      "barcode": "5704025030039",
+      "market": "dk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Whipped Cream",
+      "brand": "Emborg",
+      "category": "Dairy",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/570/402/503/0039/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5704025030039",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
     }
   ],
   "storeComparison": {
@@ -1169,5 +5169,5 @@
     "chainsSeen": 0,
     "chainsRanked": 0
   },
-  "catalogCount": 41
+  "catalogCount": 180
 }

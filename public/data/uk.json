@@ -8,6 +8,1294 @@
   "offerSources": [],
   "catalog": [
     {
+      "id": "uk-off-3274080005003",
+      "barcode": "3274080005003",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "isabelle",
+      "brand": "Cristaline",
+      "category": "Juice & Drinks",
+      "measure": "1500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/408/000/5003/front_en.797.200.jpg",
+      "scans": 1683,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3274080005003",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-7622210449283",
+      "barcode": "7622210449283",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Prince",
+      "brand": "LU",
+      "category": "Chocolate & Sweets",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/044/9283/front_en.605.200.jpg",
+      "scans": 1252,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210449283",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3168930010265",
+      "barcode": "3168930010265",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "cruesly mélange de noix",
+      "brand": "Cruesli",
+      "category": "Cereals & Porridge",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/893/001/0265/front_en.297.200.jpg",
+      "scans": 914,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3168930010265",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-6111035000430",
+      "barcode": "6111035000430",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "33 cl"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "sidi ali",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "33 cl",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/0430/front_en.104.200.jpg",
+      "scans": 862,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035000430",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3046920029759",
+      "barcode": "3046920029759",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Extra fine dark chocolate",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/9759/front_en.544.200.jpg",
+      "scans": 858,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920029759",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-6111035000058",
+      "barcode": "6111035000058",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Eau minérale naturelle",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/0058/front_en.134.200.jpg",
+      "scans": 766,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035000058",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5449000214799",
+      "barcode": "5449000214799",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola sans sucres",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_en.363.200.jpg",
+      "scans": 742,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000214799",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3268840001008",
+      "barcode": "3268840001008",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "CRISTALINE Eau De Source 0.5L",
+      "brand": "Cristaline",
+      "category": "Juice & Drinks",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/326/884/000/1008/front_fr.422.200.jpg",
+      "scans": 696,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3268840001008",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8076809513753",
+      "barcode": "8076809513753",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "190 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Barilla PESTO alla GENOVESE",
+      "brand": "Barilla",
+      "category": "Sauces & Spreads",
+      "measure": "190 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/951/3753/front_en.347.200.jpg",
+      "scans": 693,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809513753",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20995553",
+      "barcode": "20995553",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Шоколад 85% какаова маса",
+      "brand": "J.D: Gross",
+      "category": "Chocolate & Sweets",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/5553/front_en.380.200.jpg",
+      "scans": 599,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20995553",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5449000000996",
+      "barcode": "5449000000996",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original",
+      "brand": "COCA-COLA SERVICES SA/NV",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.1129.200.jpg",
+      "scans": 526,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000996",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3019081238643",
+      "barcode": "3019081238643",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "135 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sardines Huile d'Olive Vierge Extra",
+      "brand": "PARMENTIER",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "135 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/301/908/123/8643/front_fr.115.200.jpg",
+      "scans": 515,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3019081238643",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5449000054227",
+      "barcode": "5449000054227",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original Taste",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/005/4227/front_en.563.200.jpg",
+      "scans": 486,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000054227",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3159470000120",
+      "barcode": "3159470000120",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "CORN FLAKES",
+      "brand": "KELLOGG S PRODUITS ALIMENT SAS",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/315/947/000/0120/front_en.147.200.jpg",
+      "scans": 431,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3159470000120",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5060042641000",
+      "barcode": "5060042641000",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chips simplement salées",
+      "brand": "Tyrrells",
+      "category": "Snacks",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/004/264/1000/front_en.305.200.jpg",
+      "scans": 410,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5060042641000",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3046920010047",
+      "barcode": "3046920010047",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cioccolato Fondente 78%",
+      "brand": "LINDT EXCELLENCE",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/001/0047/front_en.260.200.jpg",
+      "scans": 390,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920010047",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8715700407760",
+      "barcode": "8715700407760",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "580 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tomato Ketchup BIO",
+      "brand": "H.J. Heinz B.V.",
+      "category": "Sauces & Spreads",
+      "measure": "580 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/570/040/7760/front_en.141.200.jpg",
+      "scans": 389,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8715700407760",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000168198491",
+      "barcode": "5000168198491",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sablés Anglais L'Original",
+      "brand": "McVitie's",
+      "category": "Chocolate & Sweets",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/016/819/8491/front_en.193.200.jpg",
+      "scans": 367,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000168198491",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5449000000439",
+      "barcode": "5449000000439",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca Cola Original Taste 1.5L",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0439/front_en.292.200.jpg",
+      "scans": 362,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000439",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3046920028363",
+      "barcode": "3046920028363",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 85% Cacao Rich Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8363/front_en.500.200.jpg",
+      "scans": 360,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028363",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8715035110106",
+      "barcode": "8715035110106",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sojasaus",
+      "brand": "Kikkoman",
+      "category": "Sauces & Spreads",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/503/511/0106/front_en.247.200.jpg",
+      "scans": 348,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8715035110106",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-87157215",
+      "barcode": "87157215",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tomato Ketchup",
+      "brand": "Heinz",
+      "category": "Sauces & Spreads",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/715/7215/front_en.208.200.jpg",
+      "scans": 320,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/87157215",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3046920028004",
+      "barcode": "3046920028004",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Excellence 70% Cocoa Intense Dark",
+      "brand": "Lindt",
+      "category": "Chocolate & Sweets",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/304/692/002/8004/front_en.435.200.jpg",
+      "scans": 320,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3046920028004",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3168930009078",
+      "barcode": "3168930009078",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "550 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Flocons d'avoine complète",
+      "brand": "Quaker",
+      "category": "Cereals & Porridge",
+      "measure": "550 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/893/000/9078/front_en.148.200.jpg",
+      "scans": 305,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3168930009078",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8008698007389",
+      "barcode": "8008698007389",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "MAESTRO CEREALE - Pain aux céréales tranché",
+      "brand": "Schär",
+      "category": "Bakery",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/869/800/7389/front_en.275.200.jpg",
+      "scans": 301,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8008698007389",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5025125000006",
+      "barcode": "5025125000006",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "580 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "White Ciabattin",
+      "brand": "Jason's Sourdough",
+      "category": "Bakery",
+      "measure": "580 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/502/512/500/0006/front_en.106.200.jpg",
+      "scans": 288,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5025125000006",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000157024671",
+      "barcode": "5000157024671",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "415 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Beanz in a rich tomato sauce",
+      "brand": "H J Heinz Foods UK Ltd",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "415 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/015/702/4671/front_en.459.200.jpg",
+      "scans": 280,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000157024671",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010029229110",
+      "barcode": "5010029229110",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crispy Minis Choco",
+      "brand": "Weetabix Limited",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/002/922/9110/front_en.3.200.jpg",
+      "scans": 269,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010029229110",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5025125000112",
+      "barcode": "5025125000112",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Proper Sourdough",
+      "brand": "Jason's",
+      "category": "Bakery",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/502/512/500/0112/front_en.93.200.jpg",
+      "scans": 265,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5025125000112",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5025125000037",
+      "barcode": "5025125000037",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sourdough grain and seeds",
+      "brand": "Jasons",
+      "category": "Bakery",
+      "measure": "45 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/502/512/500/0037/front_en.108.200.jpg",
+      "scans": 249,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5025125000037",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8076809573252",
+      "barcode": "8076809573252",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "260 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Baiocchi nocciola & cacao",
+      "brand": "Barilla",
+      "category": "Chocolate & Sweets",
+      "measure": "260 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/957/3252/front_en.148.200.jpg",
+      "scans": 243,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809573252",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5053990161669",
+      "barcode": "5053990161669",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Paprika Chips",
+      "brand": "Kellogg's",
+      "category": "Snacks",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/399/016/1669/front_en.256.200.jpg",
+      "scans": 220,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5053990161669",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20994945",
+      "barcode": "20994945",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Natural Cottage Cheese",
+      "brand": "Milbona",
+      "category": "Dairy",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/4945/front_en.109.200.jpg",
+      "scans": 218,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20994945",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5053990127726",
+      "barcode": "5053990127726",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pringles Original",
+      "brand": "Pringles",
+      "category": "Snacks",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/399/012/7726/front_en.280.200.jpg",
+      "scans": 209,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5053990127726",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3178530407396",
+      "barcode": "3178530407396",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Petit Cookies Pépites de chocolat",
+      "brand": "Bonne Maman",
+      "category": "Chocolate & Sweets",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/853/040/7396/front_fr.127.200.jpg",
+      "scans": 206,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3178530407396",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-6191509900671",
+      "barcode": "6191509900671",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "EXTRA VIRGIN OLIVE OIL",
+      "brand": "TERRA DELYSSA",
+      "category": "Sauces & Spreads",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/619/150/990/0671/front_en.11.200.jpg",
+      "scans": 204,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6191509900671",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8076809529419",
+      "barcode": "8076809529419",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes spaghetti au blé complet integral 500g",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/9419/front_fr.1682.200.jpg",
+      "scans": 201,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809529419",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8076802085981",
+      "barcode": "8076802085981",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nudeln Fusilli",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/208/5981/front_en.44.200.jpg",
+      "scans": 199,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076802085981",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-6191509905058",
+      "barcode": "6191509905058",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile d'olive vierge extra (Biologique)",
+      "brand": "Terra Delyssa",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/619/150/990/5058/front_en.161.200.jpg",
+      "scans": 184,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6191509905058",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8000430138719",
+      "barcode": "8000430138719",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.125 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "mozzarella",
+      "brand": "Egidio Galbani Srl",
+      "category": "Dairy",
+      "measure": "0.125 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/043/013/8719/front_en.91.200.jpg",
+      "scans": 168,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000430138719",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8801073116467",
+      "barcode": "8801073116467",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "130 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Buldak hot chicken Flavour Ramen",
+      "brand": "Samyang",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "130 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/6467/front_de.166.200.jpg",
+      "scans": 168,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073116467",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8076800376999",
+      "barcode": "8076800376999",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lasagne all'uovo",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/037/6999/front_it.330.200.jpg",
+      "scans": 166,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800376999",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489336136",
+      "barcode": "4056489336136",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bio gyömbér shot",
+      "brand": "Solevita",
+      "category": "Frozen",
+      "measure": "0.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/933/6136/front_en.27.200.jpg",
+      "scans": 159,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489336136",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5060042641406",
+      "barcode": "5060042641406",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sea salt & cider vinegar",
+      "brand": "Tyrell’s",
+      "category": "Snacks",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/004/264/1406/front_en.254.200.jpg",
+      "scans": 158,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5060042641406",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20004132",
+      "barcode": "20004132",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chopped Tomatoes",
+      "brand": "Freshona",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/000/4132/front_en.509.200.jpg",
+      "scans": 158,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20004132",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8000500310397",
+      "barcode": "8000500310397",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "166 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nutella biscuits",
+      "brand": "Nutella",
+      "category": "Chocolate & Sweets",
+      "measure": "166 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/050/031/0397/front_en.303.200.jpg",
+      "scans": 146,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000500310397",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "uk-off-4056489491217",
       "barcode": "4056489491217",
       "market": "uk",
@@ -64,6 +1352,62 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "uk-off-80798026",
+      "barcode": "80798026",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "38.5 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "TIC TAC TWO ETUI FRAMBOISE CITRON",
+      "brand": "Tic Tac",
+      "category": "Chocolate & Sweets",
+      "measure": "38.5 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/079/8026/front_fr.44.200.jpg",
+      "scans": 135,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/80798026",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8076809523509",
+      "barcode": "8076809523509",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes linguine collezione 500g",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/3509/front_fr.271.200.jpg",
+      "scans": 133,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809523509",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "uk-off-4056489148739",
       "barcode": "4056489148739",
       "market": "uk",
@@ -92,6 +1436,108 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "uk-off-5053990107339",
+      "barcode": "5053990107339",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "40 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pringles Original",
+      "brand": "Pringles",
+      "category": "Snacks",
+      "measure": "40 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/399/010/7339/front_de.289.200.jpg",
+      "scans": 131,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5053990107339",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010477348630",
+      "barcode": "5010477348630",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Muesli 36% fruits noix & graines",
+      "brand": "The Jordans & Ryvita Company Limited - A Division of ABF Grain Products Limited",
+      "category": "Cereals & Porridge",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/047/734/8630/front_fr.241.200.jpg",
+      "scans": 128,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010477348630",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489163534",
+      "barcode": "4056489163534",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Burrata",
+      "brand": "LIDL",
+      "category": "Dairy",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/916/3534/front_en.122.200.jpg",
+      "scans": 118,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489163534",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4056489163534",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.99,
+        "currency": "GBP",
+        "date": "2026-05-30",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 15.92,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4056489163534",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "uk-off-5201054017432",
       "barcode": "5201054017432",
       "market": "uk",
@@ -112,6 +1558,34 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/5201054017432",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8000500425183",
+      "barcode": "8000500425183",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Glace au Nutella",
+      "brand": "Nutella",
+      "category": "Frozen",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/050/042/5183/front_en.70.200.jpg",
+      "scans": 112,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8000500425183",
           "checked": "2026-11-15"
         }
       ],
@@ -176,6 +1650,34 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "uk-off-3270160339945",
+      "barcode": "3270160339945",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nuggets de poulet panés",
+      "brand": "Picard",
+      "category": "Frozen",
+      "measure": "600 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/016/033/9945/front_fr.65.200.jpg",
+      "scans": 104,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3270160339945",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "uk-off-3273220182574",
       "barcode": "3273220182574",
       "market": "uk",
@@ -196,6 +1698,286 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/3273220182574",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5900396028167",
+      "barcode": "5900396028167",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "40 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Matcha",
+      "brand": "Loyd",
+      "category": "Coffee & Tea",
+      "measure": "40 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/039/602/8167/front_en.3.200.jpg",
+      "scans": 96,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900396028167",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-80785385",
+      "barcode": "80785385",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "38.5 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tic Tac Two Fresh Mild Spearmint Flavour",
+      "brand": "Tic Tac",
+      "category": "Chocolate & Sweets",
+      "measure": "38.5 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/078/5385/front_en.50.200.jpg",
+      "scans": 93,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/80785385",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-7622201693916",
+      "barcode": "7622201693916",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "165 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Philadelphia Full fat soft cheese",
+      "brand": "PHILADELPHIA",
+      "category": "Dairy",
+      "measure": "165 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/220/169/3916/front_en.3.200.jpg",
+      "scans": 90,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622201693916",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489135623",
+      "barcode": "4056489135623",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "780 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rapeseed Oil",
+      "brand": "Vita d'Or",
+      "category": "Sauces & Spreads",
+      "measure": "780 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/913/5623/front_en.106.200.jpg",
+      "scans": 77,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489135623",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-01318180",
+      "barcode": "01318180",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "800 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "MULTISEED WHOLEMEAL FARMHOUSE LOAF",
+      "brand": "Sainsbury's",
+      "category": "Store Brands",
+      "measure": "800 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/131/8180/front_en.59.200.jpg",
+      "scans": 75,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/01318180",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4335619110335",
+      "barcode": "4335619110335",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Café soluble",
+      "brand": "Bellarom",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/433/561/911/0335/front_en.35.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4335619110335",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600065991",
+      "barcode": "4088600065991",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "White Sourdough",
+      "brand": "Specially Selected",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/006/5991/front_en.42.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600065991",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3337875784054",
+      "barcode": "3337875784054",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "236 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Blemish control cleanser",
+      "brand": "Cerave",
+      "category": "Personal Care",
+      "measure": "236 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/578/4054/front_en.21.200.jpg",
+      "scans": 73,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3337875784054",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3175460000017",
+      "barcode": "3175460000017",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "GARLIC & HERBS",
+      "brand": "BOURSIN",
+      "category": "Dairy",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/317/546/000/0017/front_en.200.200.jpg",
+      "scans": 69,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3175460000017",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5021991938856",
+      "barcode": "5021991938856",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Citron & Gingembre Infusion Bio",
+      "brand": "Clipper",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/502/199/193/8856/front_fr.55.200.jpg",
+      "scans": 67,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5021991938856",
           "checked": "2026-11-15"
         }
       ],
@@ -232,6 +2014,90 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "uk-off-5411188130031",
+      "barcode": "5411188130031",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1032 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "High Protein Soja Drink",
+      "brand": "alpro",
+      "category": "Dairy",
+      "measure": "1032 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/541/118/813/0031/front_en.179.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5411188130031",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5018095004341",
+      "barcode": "5018095004341",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spanish Style Grains",
+      "brand": "Merchant Gourmet",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/809/500/4341/front_en.26.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5018095004341",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-3415581101928",
+      "barcode": "3415581101928",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "460 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Vanilla Ice Cream",
+      "brand": "Häagen-Dazs",
+      "category": "Frozen",
+      "measure": "460 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/341/558/110/1928/front_en.27.200.jpg",
+      "scans": 63,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3415581101928",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "uk-off-4088600060941",
       "barcode": "4088600060941",
       "market": "uk",
@@ -260,6 +2126,80 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "uk-off-5000436589457",
+      "barcode": "5000436589457",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.272 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SEMI SKIMMED MILK",
+      "brand": "TESCO",
+      "category": "Dairy",
+      "measure": "2.272 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/043/658/9457/front_en.94.200.jpg",
+      "scans": 55,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000436589457",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489135524",
+      "barcode": "4056489135524",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sunflower Oil",
+      "brand": "Vita d'Or",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/913/5524/front_en.59.200.jpg",
+      "scans": 55,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489135524",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/4056489135524",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.49,
+        "currency": "GBP",
+        "date": "2026-01-25",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 1.49,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/4056489135524",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "uk-off-5036589200970",
       "barcode": "5036589200970",
       "market": "uk",
@@ -286,6 +2226,2496 @@
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5011157888101",
+      "barcode": "5011157888101",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pure Basmati rice",
+      "brand": "Tilda",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/115/788/8101/front_en.94.200.jpg",
+      "scans": 50,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5011157888101",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600046648",
+      "barcode": "4088600046648",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Soft Cheese Original",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/004/6648/front_en.36.200.jpg",
+      "scans": 47,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600046648",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489851752",
+      "barcode": "4056489851752",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lidl High Protein Greek Yog",
+      "brand": "Lidl",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/985/1752/front_en.29.200.jpg",
+      "scans": 45,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489851752",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5011157888132",
+      "barcode": "5011157888132",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Wholegrain Basmati Rice",
+      "brand": "Tilda",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/115/788/8132/front_en.53.200.jpg",
+      "scans": 44,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5011157888132",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5060482840209",
+      "barcode": "5060482840209",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple & Raisin Oat Bar",
+      "brand": "deliciously ella",
+      "category": "Coffee & Tea",
+      "measure": "50 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/048/284/0209/front_en.77.200.jpg",
+      "scans": 40,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5060482840209",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-01206111",
+      "barcode": "01206111",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek style natural yogurt",
+      "brand": "Sainsbury's",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/120/6111/front_en.26.200.jpg",
+      "scans": 40,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/01206111",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600184197",
+      "barcode": "4088600184197",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "800 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Malted Bloomer Bread",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "800 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/018/4197/front_en.3.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600184197",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-7613033174667",
+      "barcode": "7613033174667",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Capsules NESCAFÉ DOLCE GUSTO Cafe Au Lait x16",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "160 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/761/303/317/4667/front_fr.615.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7613033174667",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4014400907902",
+      "barcode": "4014400907902",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "42 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Werthers Original Drops Sukkerfri 42g",
+      "brand": "Conaxess trade norway",
+      "category": "Chocolate & Sweets",
+      "measure": "42 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/401/440/090/7902/front_en.101.200.jpg",
+      "scans": 38,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4014400907902",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4061459329834",
+      "barcode": "4061459329834",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Oat Milk (Barista Style)",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/145/932/9834/front_en.32.200.jpg",
+      "scans": 38,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4061459329834",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-9350271000164",
+      "barcode": "9350271000164",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "700 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "kombucha",
+      "brand": "Remedy",
+      "category": "Coffee & Tea",
+      "measure": "700 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/935/027/100/0164/front_en.22.200.jpg",
+      "scans": 38,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/9350271000164",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5025840000978",
+      "barcode": "5025840000978",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Graham's Gold Smooth",
+      "brand": "Graham's",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/502/584/000/0978/front_en.77.200.jpg",
+      "scans": 38,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5025840000978",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8445290044822",
+      "barcode": "8445290044822",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé Azera Americano instant coffee",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/844/529/004/4822/front_en.3.200.jpg",
+      "scans": 37,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8445290044822",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5011157992662",
+      "barcode": "5011157992662",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Basmati & Wild Rice",
+      "brand": "Tilda",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/115/799/2662/front_en.25.200.jpg",
+      "scans": 36,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5011157992662",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-7591002000547",
+      "barcode": "7591002000547",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pan Maispaniermehl",
+      "brand": "ALIMENTOS POLAR COMERCIAL C.A.",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/759/100/200/0547/front_en.70.200.jpg",
+      "scans": 35,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7591002000547",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-29440689",
+      "barcode": "29440689",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "4 white rolls",
+      "brand": "Marks & Spencers",
+      "category": "Store Brands",
+      "measure": "75 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/944/0689/front_en.3.200.jpg",
+      "scans": 33,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/29440689",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5900820000011",
+      "barcode": "5900820000011",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "UHT milk 3.2% fat content",
+      "brand": "Łaciate",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/590/082/000/0011/front_en.50.200.jpg",
+      "scans": 33,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5900820000011",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-01784060",
+      "barcode": "01784060",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SO organic Mayonnaise",
+      "brand": "Sainsbury's",
+      "category": "Store Brands",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/178/4060/front_en.18.200.jpg",
+      "scans": 32,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/01784060",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4009900546089",
+      "barcode": "4009900546089",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "136 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Skittles Taste The Rainbow Fruits",
+      "brand": "Skittles",
+      "category": "Chocolate & Sweets",
+      "measure": "136 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/990/054/6089/front_en.53.200.jpg",
+      "scans": 32,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4009900546089",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600326252",
+      "barcode": "4088600326252",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bran Flakes",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/032/6252/front_en.16.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600326252",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000436338826",
+      "barcode": "5000436338826",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.136 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Semi Skimmed Milk",
+      "brand": "Tesco",
+      "category": "Dairy",
+      "measure": "1.136 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/043/633/8826/front_en.73.200.jpg",
+      "scans": 29,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000436338826",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600206721",
+      "barcode": "4088600206721",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SPANISH STYLE GRAINS",
+      "brand": "WORLDWIDE FOODS",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/020/6721/front_en.33.200.jpg",
+      "scans": 28,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600206721",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5052449437362",
+      "barcode": "5052449437362",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek Style Yogurt",
+      "brand": "Asda",
+      "category": "Store Brands",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/244/943/7362/front_en.31.200.jpg",
+      "scans": 27,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5052449437362",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-01117011",
+      "barcode": "01117011",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Unsalted English Butter",
+      "brand": "Sainsbury's",
+      "category": "Store Brands",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/111/7011/front_en.6.200.jpg",
+      "scans": 26,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/01117011",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000118047817",
+      "barcode": "5000118047817",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Peach Ice Tea",
+      "brand": "Lipton",
+      "category": "Coffee & Tea",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/011/804/7817/front_en.45.200.jpg",
+      "scans": 25,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000118047817",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8445290044853",
+      "barcode": "8445290044853",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Decaf Americano",
+      "brand": "Nescafé Azera",
+      "category": "Coffee & Tea",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/844/529/004/4853/front_en.26.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8445290044853",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5051140150471",
+      "barcode": "5051140150471",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "660 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Free range British eggs",
+      "brand": "Tesco",
+      "category": "Dairy",
+      "measure": "660 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/114/015/0471/front_en.49.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5051140150471",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010115900718",
+      "barcode": "5010115900718",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "700 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Golden  Syrup",
+      "brand": "Lyle’s",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "700 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/011/590/0718/front_en.12.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010115900718",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489647799",
+      "barcode": "4056489647799",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Golden syrup",
+      "brand": "Belbake",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/964/7799/front_en.17.200.jpg",
+      "scans": 23,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489647799",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010115902941",
+      "barcode": "5010115902941",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "454 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Golden Syrup",
+      "brand": "Lyle's",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "454 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/011/590/2941/front_en.16.200.jpg",
+      "scans": 21,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010115902941",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000169653517",
+      "barcode": "5000169653517",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cinnamon knots",
+      "brand": "Waitrose",
+      "category": "Store Brands",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/016/965/3517/front_en.23.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000169653517",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4056489175209",
+      "barcode": "4056489175209",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Large Free Range Eggs",
+      "brand": "Woodcote",
+      "category": "Dairy",
+      "measure": "12 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/405/648/917/5209/front_en.54.200.jpg",
+      "scans": 19,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4056489175209",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5063089498866",
+      "barcode": "5063089498866",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "800 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Exceptional Superseeded Sliced Loaf",
+      "brand": "Asda",
+      "category": "Store Brands",
+      "measure": "800 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/308/949/8866/front_en.10.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5063089498866",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5052319376135",
+      "barcode": "5052319376135",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spanish Potato And Onion Omelette",
+      "brand": "Tesco",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/231/937/6135/front_en.6.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5052319376135",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-1230000131384",
+      "barcode": "1230000131384",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "141.7 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Theater Box",
+      "brand": "Nerds",
+      "category": "Chocolate & Sweets",
+      "measure": "141.7 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/123/000/013/1384/front_en.3.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/1230000131384",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000129365917",
+      "barcode": "5000129365917",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "180 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lightly Slightly Maize Snacks",
+      "brand": "Co-Op",
+      "category": "Store Brands",
+      "measure": "180 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/012/936/5917/front_en.4.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000129365917",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5063089498811",
+      "barcode": "5063089498811",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "800 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Wholemeal & Farmshouse loaf",
+      "brand": "Asda",
+      "category": "Store Brands",
+      "measure": "800 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/308/949/8811/front_en.3.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5063089498811",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5057008100909",
+      "barcode": "5057008100909",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Grains & Seeds Granola",
+      "brand": "Tesco",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/505/700/810/0909/front_en.14.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5057008100909",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-03340936",
+      "barcode": "03340936",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "EGG PROTEIN POT",
+      "brand": "TESCO",
+      "category": "Dairy",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/334/0936/front_en.15.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/03340936",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20991241",
+      "barcode": "20991241",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Belladonna Löslicher Kaffee Entkoffeiniert",
+      "brand": "Lidl",
+      "category": "Coffee & Tea",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/099/1241/front_en.3.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20991241",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-21114731",
+      "barcode": "21114731",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Malted Wheaties",
+      "brand": "Asda",
+      "category": "Store Brands",
+      "measure": "750 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/111/4731/front_en.25.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/21114731",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-00018166",
+      "barcode": "00018166",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "6 Ultimate Crumpets",
+      "brand": "Marks & Spencers",
+      "category": "Store Brands",
+      "measure": "330 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/001/8166/front_en.38.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00018166",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20035846",
+      "barcode": "20035846",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Strong White Bread Flour",
+      "brand": "Belbake",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1.5 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/003/5846/front_en.56.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20035846",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/20035846",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.09,
+        "currency": "GBP",
+        "date": "2026-01-25",
+        "store": "Lidl",
+        "discounted": false,
+        "unitPrice": 0.73,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/20035846",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "uk-off-8718951564862",
+      "barcode": "8718951564862",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Colgate Triple Action Toothpaste",
+      "brand": "Colgate",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/156/4862/front_en.27.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951564862",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000169381021",
+      "barcode": "5000169381021",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Medjool dates",
+      "brand": "Waitrose",
+      "category": "Store Brands",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/016/938/1021/front_en.14.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000169381021",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-29062140",
+      "barcode": "29062140",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Organic Baked Beans in rich tomato sauce",
+      "brand": "Marks & Spencers",
+      "category": "Store Brands",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/906/2140/front_en.3.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/29062140",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20175092",
+      "barcode": "20175092",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crownfield Strawberry Crisp (Lidl)",
+      "brand": "Crownfield",
+      "category": "Store Brands",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/017/5092/front_en.25.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20175092",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-7640170370058",
+      "barcode": "7640170370058",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Superwhite",
+      "brand": "Biomed",
+      "category": "Personal Care",
+      "measure": "100 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/764/017/037/0058/front_en.33.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/7640170370058",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5019503047615",
+      "barcode": "5019503047615",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "140 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Picnic Eggs",
+      "brand": "Quorn",
+      "category": "Dairy",
+      "measure": "140 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/950/304/7615/front_en.16.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5019503047615",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000169659045",
+      "barcode": "5000169659045",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "490 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Wood-fired Prosciutto Cotto, Chestnut Mushroom & Mascarpone Sourdough Pizza",
+      "brand": "Waitrose",
+      "category": "Store Brands",
+      "measure": "490 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/016/965/9045/front_en.3.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000169659045",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20942021",
+      "barcode": "20942021",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mixed Beans",
+      "brand": "Lidl",
+      "category": "Store Brands",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/094/2021/front_en.3.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20942021",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-10001417",
+      "barcode": "10001417",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tesco Cashew Nuts",
+      "brand": "tesco",
+      "category": "Store Brands",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/001/000/1417/front_en.46.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/10001417",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-00894531",
+      "barcode": "00894531",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chunky Chicken Vegetable & Grain Broth",
+      "brand": "Marks & Spencers",
+      "category": "Store Brands",
+      "measure": "600 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/089/4531/front_en.19.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00894531",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4335619174795",
+      "barcode": "4335619174795",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Anti-transpirant Extra Dry",
+      "brand": "Cien Men",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/433/561/917/4795/front_en.11.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4335619174795",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010525201337",
+      "barcode": "5010525201337",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Olive Spread",
+      "brand": "Morrisons",
+      "category": "Store Brands",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/052/520/1337/front_en.19.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010525201337",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010251457077",
+      "barcode": "5010251457077",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Italian Ricotta",
+      "brand": "Morrisons",
+      "category": "Store Brands",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/025/145/7077/front_en.3.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010251457077",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4335619121928",
+      "barcode": "4335619121928",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "120 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Wiltshire cured ham slices",
+      "brand": "lidl",
+      "category": "Store Brands",
+      "measure": "120 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/433/561/912/1928/front_en.3.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4335619121928",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000326010030",
+      "barcode": "5000326010030",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "10 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "10 Large Eggs",
+      "brand": "The Happy Egg co.",
+      "category": "Dairy",
+      "measure": "10 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/032/601/0030/front_en.19.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000326010030",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/5000326010030",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.96,
+        "currency": "GBP",
+        "date": "2026-01-23",
+        "store": "Asda",
+        "discounted": false,
+        "unitPrice": 0.4,
+        "unitLabel": "l",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/5000326010030",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "uk-off-5000169605202",
+      "barcode": "5000169605202",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "600 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Hearty chicken & vegetable broth",
+      "brand": "Waitrose",
+      "category": "Store Brands",
+      "measure": "600 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/016/960/5202/front_en.3.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000169605202",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-10001691",
+      "barcode": "10001691",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pumpkin Seeds",
+      "brand": "tesco",
+      "category": "Store Brands",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/001/000/1691/front_en.27.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/10001691",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-50220021",
+      "barcode": "50220021",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "50 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dove men care stick clean comfort 50 m",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "50 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/005/022/0021/front_en.26.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/50220021",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010251755524",
+      "barcode": "5010251755524",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "340 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Morrison  strawberry conserve jam",
+      "brand": "Morrisons",
+      "category": "Store Brands",
+      "measure": "340 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/025/175/5524/front_en.3.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010251755524",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-20448554",
+      "barcode": "20448554",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Strong Wholemeal Bread Flour",
+      "brand": "Belbake",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1.5 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/044/8554/front_en.3.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20448554",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/20448554",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 0.99,
+        "currency": "GBP",
+        "date": "2026-01-25",
+        "store": "Lidl",
+        "discounted": true,
+        "unitPrice": 0.66,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/20448554",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "uk-off-5000108675495",
+      "barcode": "5000108675495",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "540 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Original Microwaveable Oats",
+      "brand": "Quaker",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "540 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/010/867/5495/front_en.22.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000108675495",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010251560494",
+      "barcode": "5010251560494",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gray",
+      "brand": "Morrisons",
+      "category": "Store Brands",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/501/025/156/0494/front_en.9.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5010251560494",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-50160150",
+      "barcode": "50160150",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Salt of the Earth Classic Natural Deodorant Crystal",
+      "brand": "Crystal Sping",
+      "category": "Personal Care",
+      "measure": "90 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/005/016/0150/front_bg.6.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/50160150",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5010724527474",
+      "barcode": "5010724527474",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Colour dry shampoo brunettes",
+      "brand": "Batiste",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/501/072/452/7474/front_en.12.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5010724527474",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000128967648",
+      "barcode": "5000128967648",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Salmon Fillets",
+      "brand": "Coop",
+      "category": "Store Brands",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/012/896/7648/front_en.3.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000128967648",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8718951683440",
+      "barcode": "8718951683440",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Total Active Protection",
+      "brand": "Colgate",
+      "category": "Personal Care",
+      "measure": "125 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/871/895/168/3440/front_en.8.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8718951683440",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000128811231",
+      "barcode": "5000128811231",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Potato Salad",
+      "brand": "Co Op",
+      "category": "Store Brands",
+      "measure": "300 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/012/881/1231/front_en.25.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000128811231",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4005808837311",
+      "barcode": "4005808837311",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nivea Anti-Perspirant (Pearl & Beauty)",
+      "brand": "Nivea",
+      "category": "Personal Care",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/400/580/883/7311/front_en.27.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4005808837311",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000128691581",
+      "barcode": "5000128691581",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mashed potato with milk, butter and seasoning",
+      "brand": "Co-op",
+      "category": "Store Brands",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/012/869/1581/front_en.3.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000128691581",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4088600552521",
+      "barcode": "4088600552521",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Turmeric Immune Support Juice Shot",
+      "brand": "The Juice Company",
+      "category": "Juice & Drinks",
+      "measure": "100 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/408/860/055/2521/front_en.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4088600552521",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000101845208",
+      "barcode": "5000101845208",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tingly Mint & Tea Tree",
+      "brand": "Original Source",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/500/010/184/5208/front_en.11.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5000101845208",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8001090291035",
+      "barcode": "8001090291035",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "3D White Toothpaste",
+      "brand": "oral-b",
+      "category": "Personal Care",
+      "measure": "75 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/800/109/029/1035/front_sv.12.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8001090291035",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5410076514397",
+      "barcode": "5410076514397",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mega Shampoo",
+      "brand": "Aussie",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/541/007/651/4397/front_en.5.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5410076514397",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5900998006556",
+      "barcode": "5900998006556",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tropical Coconut & Shea Butter",
+      "brand": "Original Source",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": null,
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5900998006556",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5057753921170",
+      "barcode": "5057753921170",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.8 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Non bio liquid detergent super concentrated",
+      "brand": "Tesco",
+      "category": "Cleaning & Laundry",
+      "measure": "1.8 l",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/505/775/392/1170/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/5057753921170",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5060879493285",
+      "barcode": "5060879493285",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Moisturising hand wash (rhubarb and tonka #40)",
+      "brand": "Ineos",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/506/087/949/3285/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5060879493285",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-0708002200427",
+      "barcode": "0708002200427",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "740 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Faith In Nature",
+      "brand": "Shampoo",
+      "category": "Personal Care",
+      "measure": "740 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/070/800/220/0427/front_en.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0708002200427",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-0708002300363",
+      "barcode": "0708002300363",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coconut Soap Bar",
+      "brand": "Faith In Nature",
+      "category": "Personal Care",
+      "measure": "100 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/070/800/230/0363/front_en.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0708002300363",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-80042563",
+      "barcode": "80042563",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "700 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mutti Passata",
+      "brand": "Mutti",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "700 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/008/004/2563/front_en.300.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/80042563",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5430003768044",
+      "barcode": "5430003768044",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "96 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Feuilles de lessive probiotiques",
+      "brand": "Yokuu",
+      "category": "Cleaning & Laundry",
+      "measure": "96 g",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/543/000/376/8044/front_en.5.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/5430003768044",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-8720181871801",
+      "barcode": "8720181871801",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bridgerton Love&MEADOWS bergamot & wildflowers body wash",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "400 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/872/018/187/1801/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8720181871801",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-4045787726671",
+      "barcode": "4045787726671",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bonacure Time Restore Shampoo Q10+",
+      "brand": "Schwarzkopf Professional",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/404/578/772/6671/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/4045787726671",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5000101522925",
+      "barcode": "5000101522925",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Creations Chilling with my Snowmies",
+      "brand": "Cussons",
+      "category": "Personal Care",
+      "measure": "250 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/500/010/152/2925/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5000101522925",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "uk-off-5060492743804",
+      "barcode": "5060492743804",
+      "market": "uk",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "95 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Moisten My Pudding Christmas Soap",
+      "brand": "Go La La",
+      "category": "Personal Care",
+      "measure": "95 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/506/049/274/3804/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5060492743804",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
     }
   ],
   "storeComparison": {
@@ -301,5 +4731,5 @@
     "chainsSeen": 0,
     "chainsRanked": 0
   },
-  "catalogCount": 10
+  "catalogCount": 165
 }

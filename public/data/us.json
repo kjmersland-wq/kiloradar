@@ -8,6 +8,594 @@
   "offerSources": [],
   "catalog": [
     {
+      "id": "us-off-3274080005003",
+      "barcode": "3274080005003",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "isabelle",
+      "brand": "Cristaline",
+      "category": "Juice & Drinks",
+      "measure": "1500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/408/000/5003/front_en.797.200.jpg",
+      "scans": 1683,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3274080005003",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111246721261",
+      "barcode": "6111246721261",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fromage Blanc Nature",
+      "brand": "Milky Food Professional",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/1261/front_fr.118.200.jpg",
+      "scans": 961,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246721261",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-7300400481588",
+      "barcode": "7300400481588",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "230 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fibres",
+      "brand": "wasa",
+      "category": "Snacks",
+      "measure": "230 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/730/040/048/1588/front_en.269.200.jpg",
+      "scans": 933,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7300400481588",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111035000430",
+      "barcode": "6111035000430",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "33 cl"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "sidi ali",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "33 cl",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/0430/front_en.104.200.jpg",
+      "scans": 862,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035000430",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111035000058",
+      "barcode": "6111035000058",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Eau minérale naturelle",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/0058/front_en.134.200.jpg",
+      "scans": 766,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035000058",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5449000214799",
+      "barcode": "5449000214799",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola sans sucres",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/021/4799/front_en.363.200.jpg",
+      "scans": 742,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000214799",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111035002175",
+      "barcode": "6111035002175",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Eau minérale naturelle",
+      "brand": "Sidi Ali",
+      "category": "Juice & Drinks",
+      "measure": "2 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/500/2175/front_ar.128.200.jpg",
+      "scans": 648,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111035002175",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-13356194",
+      "barcode": "13356194",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "360 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SPICY CHICKEN & 'NDUJA PIZZA",
+      "brand": "SPORTYFEEL",
+      "category": "Bakery",
+      "measure": "360 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/001/335/6194/front_en.48.200.jpg",
+      "scans": 592,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/13356194",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111242106949",
+      "barcode": "6111242106949",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "160 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Jben",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "160 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/6949/front_fr.77.200.jpg",
+      "scans": 583,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242106949",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5449000000996",
+      "barcode": "5449000000996",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "330 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original",
+      "brand": "COCA-COLA SERVICES SA/NV",
+      "category": "Juice & Drinks",
+      "measure": "330 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.1129.200.jpg",
+      "scans": 526,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000996",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111242101180",
+      "barcode": "6111242101180",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait entier UHT",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/1180/front_fr.89.200.jpg",
+      "scans": 511,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242101180",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5449000054227",
+      "barcode": "5449000054227",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca-Cola Original Taste",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/005/4227/front_en.563.200.jpg",
+      "scans": 486,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000054227",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3760049796384",
+      "barcode": "3760049796384",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tartines céréales & graines 450g",
+      "brand": "La Boulangère",
+      "category": "Bakery",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/376/004/979/6384/front_fr.109.200.jpg",
+      "scans": 478,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3760049796384",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111266962187",
+      "barcode": "6111266962187",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lait frais naturel demi écrémé",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "450 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/126/696/2187/front_fr.56.200.jpg",
+      "scans": 466,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111266962187",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8715700407760",
+      "barcode": "8715700407760",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "580 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tomato Ketchup BIO",
+      "brand": "H.J. Heinz B.V.",
+      "category": "Sauces & Spreads",
+      "measure": "580 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/570/040/7760/front_en.141.200.jpg",
+      "scans": 389,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8715700407760",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5449000000439",
+      "barcode": "5449000000439",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.5 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Coca Cola Original Taste 1.5L",
+      "brand": "Coca-Cola",
+      "category": "Juice & Drinks",
+      "measure": "1.5 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/544/900/000/0439/front_en.292.200.jpg",
+      "scans": 362,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5449000000439",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3451790988677",
+      "barcode": "3451790988677",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Beurre Tendre",
+      "brand": "Elle & Vire",
+      "category": "Dairy",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/345/179/098/8677/front_en.186.200.jpg",
+      "scans": 329,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3451790988677",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111032009665",
+      "barcode": "6111032009665",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "470 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Semi-skimmed milk",
+      "brand": "Salim",
+      "category": "Dairy",
+      "measure": "470 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/103/200/9665/front_en.35.200.jpg",
+      "scans": 313,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111032009665",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111246721278",
+      "barcode": "6111246721278",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cream cheese",
+      "brand": "Original",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/1278/front_en.4.200.jpg",
+      "scans": 311,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246721278",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111242100817",
+      "barcode": "6111242100817",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Lait demi écrémé",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/0817/front_en.36.200.jpg",
+      "scans": 303,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242100817",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5025125000006",
+      "barcode": "5025125000006",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "580 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "White Ciabattin",
+      "brand": "Jason's Sourdough",
+      "category": "Bakery",
+      "measure": "580 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/502/512/500/0006/front_en.106.200.jpg",
+      "scans": 288,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5025125000006",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-20005832",
       "barcode": "20005832",
       "market": "us",
@@ -28,6 +616,146 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/20005832",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6191509900671",
+      "barcode": "6191509900671",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "750 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "EXTRA VIRGIN OLIVE OIL",
+      "brand": "TERRA DELYSSA",
+      "category": "Sauces & Spreads",
+      "measure": "750 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/619/150/990/0671/front_en.11.200.jpg",
+      "scans": 204,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6191509900671",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3161711000622",
+      "barcode": "3161711000622",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Caprice des Dieux",
+      "brand": "Caprice des dieux",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/171/100/0622/front_en.124.200.jpg",
+      "scans": 193,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3161711000622",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111029000118",
+      "barcode": "6111029000118",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cosumar Sucre En Lingot Pour Le Thé 1 kg",
+      "brand": "COSUMAR",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/102/900/0118/front_fr.6.200.jpg",
+      "scans": 189,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111029000118",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111018903161",
+      "barcode": "6111018903161",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Nescafé Classic",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "45 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/101/890/3161/front_fr.48.200.jpg",
+      "scans": 185,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111018903161",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111246722039",
+      "barcode": "6111246722039",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "fromage herbes milky food",
+      "brand": "milky foof",
+      "category": "Dairy",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/672/2039/front_fr.3.200.jpg",
+      "scans": 177,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111246722039",
           "checked": "2026-11-15"
         }
       ],
@@ -64,6 +792,118 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-3574669907842",
+      "barcode": "3574669907842",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "300 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "johnsons",
+      "brand": "shampo",
+      "category": "Personal Care",
+      "measure": "300 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/357/466/990/7842/front_fr.21.200.jpg",
+      "scans": 167,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574669907842",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111184004129",
+      "barcode": "6111184004129",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "280 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mayonnaise recette originale",
+      "brand": "Star",
+      "category": "Sauces & Spreads",
+      "measure": "280 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/118/400/4129/front_en.55.200.jpg",
+      "scans": 159,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111184004129",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111184004730",
+      "barcode": "6111184004730",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "310 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ketchup star",
+      "brand": "Star",
+      "category": "Sauces & Spreads",
+      "measure": "310 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/118/400/4730/front_en.51.200.jpg",
+      "scans": 157,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111184004730",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8076809523509",
+      "barcode": "8076809523509",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pâtes linguine collezione 500g",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/952/3509/front_fr.271.200.jpg",
+      "scans": 133,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076809523509",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-20621483",
       "barcode": "20621483",
       "market": "us",
@@ -84,6 +924,118 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/20621483",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3270190174356",
+      "barcode": "3270190174356",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "630 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ratatouille",
+      "brand": "Carrefour BIO",
+      "category": "Frozen",
+      "measure": "630 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/019/017/4356/front_fr.124.200.jpg",
+      "scans": 131,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3270190174356",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111180000392",
+      "barcode": "6111180000392",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "75 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "سكر الفانيلين",
+      "brand": "Idéal",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "75 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/118/000/0392/front_ar.14.200.jpg",
+      "scans": 121,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111180000392",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3245550078674",
+      "barcode": "3245550078674",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "85 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "SNACK POPPÉ",
+      "brand": "TOO GOOD",
+      "category": "Snacks",
+      "measure": "85 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/324/555/007/8674/front_en.151.200.jpg",
+      "scans": 118,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3245550078674",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111242103528",
+      "barcode": "6111242103528",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Croissance réduit en sucre",
+      "brand": "Jaouda",
+      "category": "Dairy",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/210/3528/front_fr.76.200.jpg",
+      "scans": 116,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242103528",
           "checked": "2026-11-15"
         }
       ],
@@ -120,6 +1072,304 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-3261342002108",
+      "barcode": "3261342002108",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pur Arabica Moulu biologique",
+      "brand": "Méo",
+      "category": "Coffee & Tea",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/326/134/200/2108/front_fr.44.200.jpg",
+      "scans": 102,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3261342002108",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3560070894772",
+      "barcode": "3560070894772",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "115 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sardines de Bretagne",
+      "brand": "Reflets de France",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "115 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/356/007/089/4772/front_fr.36.200.jpg",
+      "scans": 102,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3560070894772",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111099000599",
+      "barcode": "6111099000599",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile de table",
+      "brand": "lio",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/0599/front_fr.25.200.jpg",
+      "scans": 93,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099000599",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8712566134144",
+      "barcode": "8712566134144",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "215 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dijon Originale",
+      "brand": "Maille",
+      "category": "Sauces & Spreads",
+      "measure": "215 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/871/256/613/4144/front_en.48.200.jpg",
+      "scans": 85,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8712566134144",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8410757001090",
+      "barcode": "8410757001090",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Crema Manos",
+      "brand": "S'nonas",
+      "category": "Dairy",
+      "measure": "150 ml",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/841/075/700/1090/front_en.26.200.jpg",
+      "scans": 79,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8410757001090",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3168930007340",
+      "barcode": "3168930007340",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "220 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bénénuts cacahuètes grillées & salées",
+      "brand": "Bénénuts",
+      "category": "Snacks",
+      "measure": "220 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/316/893/000/7340/front_en.63.200.jpg",
+      "scans": 78,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3168930007340",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8076800195019",
+      "barcode": "8076800195019",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "2 x Capellini Nr. 1",
+      "brand": "Barilla",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/807/680/019/5019/front_en.2385.200.jpg",
+      "scans": 76,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8076800195019",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3270190174349",
+      "barcode": "3270190174349",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "650 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ravioli vegetariens",
+      "brand": "Carrefour BIO",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "650 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/327/019/017/4349/front_fr.46.200.jpg",
+      "scans": 74,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3270190174349",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8801073110502",
+      "barcode": "8801073110502",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4.94 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Buldak Ramen",
+      "brand": "Samyang",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "4.94 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/0502/front_en.392.200.jpg",
+      "scans": 70,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073110502",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/8801073110502",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.49,
+        "currency": "USD",
+        "date": "2026-01-03",
+        "store": "La Plaza",
+        "discounted": false,
+        "unitPrice": 17.78,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/8801073110502",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-6111101001361",
+      "barcode": "6111101001361",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Asta",
+      "brand": "Asta",
+      "category": "Coffee & Tea",
+      "measure": "45 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/110/100/1361/front_en.18.200.jpg",
+      "scans": 66,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111101001361",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-0058449770206",
       "barcode": "0058449770206",
       "market": "us",
@@ -140,6 +1390,52 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0058449770206",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0058449770206",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.99,
+        "currency": "USD",
+        "date": "2026-07-24",
+        "store": "Safeway",
+        "discounted": false,
+        "unitPrice": 15.97,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0058449770206",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-8008343200059",
+      "barcode": "8008343200059",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spaghetti grossi - No. 5",
+      "brand": "Rummo",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/800/834/320/0059/front_it.39.200.jpg",
+      "scans": 63,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8008343200059",
           "checked": "2026-11-15"
         }
       ],
@@ -169,11 +1465,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0884912004710",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0884912004710",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.99,
+        "currency": "USD",
+        "date": "2026-07-24",
+        "store": "Safeway",
+        "discounted": false,
+        "unitPrice": 12.03,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0884912004710",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "us-off-0058449770565",
@@ -204,6 +1518,118 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-0612322000202",
+      "barcode": "0612322000202",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "225 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fruit & Seed Oatcakes",
+      "brand": "Nairn's",
+      "category": "Snacks",
+      "measure": "225 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/061/232/200/0202/front_en.23.200.jpg",
+      "scans": 53,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0612322000202",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8801073113893",
+      "barcode": "8801073113893",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "130 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Carboana Buldak Spicy Ramen",
+      "brand": "Samyang",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "130 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/107/311/3893/front_en.277.200.jpg",
+      "scans": 53,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801073113893",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3263670166316",
+      "barcode": "3263670166316",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "115 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sardines à l'Ancienne Label rouge",
+      "brand": "Connétable",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "115 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/326/367/016/6316/front_fr.24.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3263670166316",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111024004746",
+      "barcode": "6111024004746",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Huile d'olive vierge de Maroc",
+      "brand": "ALHORRA",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/102/400/4746/front_fr.23.200.jpg",
+      "scans": 52,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111024004746",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-0016000147652",
       "barcode": "0016000147652",
       "market": "us",
@@ -225,11 +1651,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0016000147652",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0016000147652",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 13.49,
+        "currency": "USD",
+        "date": "2025-12-03",
+        "store": "Costco",
+        "discounted": false,
+        "unitPrice": 14.87,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0016000147652",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "us-off-0675625371189",
@@ -252,6 +1696,52 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0675625371189",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0675625371189",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.79,
+        "currency": "USD",
+        "date": "2026-05-15",
+        "store": "Costco",
+        "discounted": true,
+        "unitPrice": 2.99,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0675625371189",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-6111024001288",
+      "barcode": "6111024001288",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 l"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Oleor",
+      "brand": "Oleor",
+      "category": "Sauces & Spreads",
+      "measure": "1 l",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/102/400/1288/front_ar.5.200.jpg",
+      "scans": 45,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111024001288",
           "checked": "2026-11-15"
         }
       ],
@@ -281,11 +1771,29 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0016000275263",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0016000275263",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 1.99,
+        "currency": "USD",
+        "date": "2026-07-24",
+        "store": "Safeway",
+        "discounted": true,
+        "unitPrice": 7.89,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0016000275263",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "us-off-7614500010617",
@@ -316,6 +1824,108 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-00614207",
+      "barcode": "00614207",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "9 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rolled Corn Tortilla Chips Chili & Lime Flavored",
+      "brand": "Trader Joe's",
+      "category": "Store Brands",
+      "measure": "9 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/061/4207/front_en.101.200.jpg",
+      "scans": 41,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00614207",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0072250020756",
+      "barcode": "0072250020756",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "22 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Perfectly Crafted Multigrain",
+      "brand": "Nature's Own",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "22 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/225/002/0756/front_en.80.200.jpg",
+      "scans": 40,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0072250020756",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0072250020756",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.79,
+        "currency": "USD",
+        "date": "2026-09-15",
+        "store": "Food Bazaar",
+        "discounted": false,
+        "unitPrice": 7.68,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0072250020756",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-00414234",
+      "barcode": "00414234",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fettuccine Alfredo",
+      "brand": "Trader Giotto's",
+      "category": "Frozen",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/041/4234/front_en.152.200.jpg",
+      "scans": 40,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00414234",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-0857484006611",
       "barcode": "0857484006611",
       "market": "us",
@@ -337,11 +1947,131 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0857484006611",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0857484006611",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 12.49,
+        "currency": "USD",
+        "date": "2026-03-15",
+        "store": "Costco",
+        "discounted": false,
+        "unitPrice": 28.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0857484006611",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-3068110801235",
+      "barcode": "3068110801235",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Farine de blé fluide T45",
+      "brand": "Francine",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/306/811/080/1235/front_fr.166.200.jpg",
+      "scans": 39,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3068110801235",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5000354800931",
+      "barcode": "5000354800931",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Rice Pudding",
+      "brand": "Ambrosia",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/500/035/480/0931/front_en.15.200.jpg",
+      "scans": 37,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5000354800931",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0044000050986",
+      "barcode": "0044000050986",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "8.5 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "original made with sea salt",
+      "brand": "Triscuit",
+      "category": "Snacks",
+      "measure": "8.5 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/004/400/005/0986/front_en.63.200.jpg",
+      "scans": 36,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0044000050986",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0044000050986",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.97,
+        "currency": "USD",
+        "date": "2026-05-30",
+        "store": "Walmart",
+        "discounted": false,
+        "unitPrice": 16.48,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0044000050986",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "us-off-0016000170032",
@@ -364,6 +2094,80 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0016000170032",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0016000170032",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.99,
+        "currency": "USD",
+        "date": "2026-07-24",
+        "store": "Safeway",
+        "discounted": true,
+        "unitPrice": 13.7,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0016000170032",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-6111271520044",
+      "barcode": "6111271520044",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "peanut butter crunchy",
+      "brand": "",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/127/152/0044/front_fr.3.200.jpg",
+      "scans": 32,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111271520044",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0073420000110",
+      "barcode": "0073420000110",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "16 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sour Cream",
+      "brand": "Daisy",
+      "category": "Dairy",
+      "measure": "16 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/342/000/0110/front_en.110.200.jpg",
+      "scans": 31,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0073420000110",
           "checked": "2026-11-15"
         }
       ],
@@ -400,6 +2204,52 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-0073420016142",
+      "barcode": "0073420016142",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "14 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sour Cream Pure & Natural",
+      "brand": "Daisy",
+      "category": "Dairy",
+      "measure": "14 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/342/001/6142/front_en.130.200.jpg",
+      "scans": 30,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0073420016142",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0073420016142",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.99,
+        "currency": "USD",
+        "date": "2026-02-12",
+        "store": "Safeway",
+        "discounted": true,
+        "unitPrice": 7.53,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0073420016142",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
       "id": "us-off-0016000435094",
       "barcode": "0016000435094",
       "market": "us",
@@ -421,11 +2271,149 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0016000435094",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0016000435094",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 8.99,
+        "currency": "USD",
+        "date": "2025-12-26",
+        "store": "Grocery Outlet",
+        "discounted": false,
+        "unitPrice": 9.91,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0016000435094",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-8901262010016",
+      "barcode": "8901262010016",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "100 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Amul Pasteurized Butter",
+      "brand": "Amul",
+      "category": "Dairy",
+      "measure": "100 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/890/126/201/0016/front_en.53.200.jpg",
+      "scans": 27,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8901262010016",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
       "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0070177075101",
+      "barcode": "0070177075101",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "30 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lemon & Ginger tea",
+      "brand": "Twinings",
+      "category": "Coffee & Tea",
+      "measure": "30 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/017/707/5101/front_en.27.200.jpg",
+      "scans": 26,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0070177075101",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0070177075101",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.99,
+        "currency": "USD",
+        "date": "2026-09-12",
+        "store": "Dumbo Market",
+        "discounted": false,
+        "unitPrice": 199.67,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0070177075101",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0073731071199",
+      "barcode": "0073731071199",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "24 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "MISSION CARB BALANCE FLOUR TORTILLA WRAPS",
+      "brand": "MISSION",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "24 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/373/107/1199/front_en.219.200.jpg",
+      "scans": 25,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0073731071199",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0073731071199",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.99,
+        "currency": "USD",
+        "date": "2026-03-25",
+        "store": "Costco",
+        "discounted": false,
+        "unitPrice": 10.27,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0073731071199",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "us-off-0037466016450",
@@ -449,11 +2437,75 @@
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0037466016450",
           "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0037466016450",
+          "checked": "2026-11-15"
         }
       ],
       "lastChecked": "2026-11-15",
       "verification": "verified",
-      "matchConfidence": 1.0
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.99,
+        "currency": "USD",
+        "date": "2026-11-11",
+        "store": "Whole Foods Market",
+        "discounted": false,
+        "unitPrice": 60.37,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0037466016450",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0861745000010",
+      "barcode": "0861745000010",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "PASTURE RAISED EGGS",
+      "brand": "Vital Farms",
+      "category": "Dairy",
+      "measure": "12 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/086/174/500/0010/front_en.95.200.jpg",
+      "scans": 24,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0861745000010",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0861745000010",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.73,
+        "currency": "USD",
+        "date": "2026-09-26",
+        "store": "Whole Foods Market",
+        "discounted": true,
+        "unitPrice": 0.48,
+        "unitLabel": "stk",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0861745000010",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
     },
     {
       "id": "us-off-5901588018195",
@@ -512,6 +2564,702 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-0028000743079",
+      "barcode": "0028000743079",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "14 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "House Blend Instant Coffee",
+      "brand": "Nescafé",
+      "category": "Coffee & Tea",
+      "measure": "14 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/002/800/074/3079/front_en.3.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0028000743079",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0028000743079",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 21.99,
+        "currency": "USD",
+        "date": "2026-08-24",
+        "store": "Costco",
+        "discounted": false,
+        "unitPrice": 55.41,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0028000743079",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-20084035",
+      "barcode": "20084035",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Family Cappuccino Chocolate",
+      "brand": "Lidl",
+      "category": "Coffee & Tea",
+      "measure": "500 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/002/008/4035/front_fr.6.200.jpg",
+      "scans": 22,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/20084035",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-00957328",
+      "barcode": "00957328",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 lb"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Greek Nonfat Yogurt Plain",
+      "brand": "Trader Joe's",
+      "category": "Store Brands",
+      "measure": "2 lb",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/095/7328/front_en.131.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00957328",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-4061461340384",
+      "barcode": "4061461340384",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Strawberry Conserve",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "450 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/146/134/0384/front_en.11.200.jpg",
+      "scans": 20,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4061461340384",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0022000159335",
+      "barcode": "0022000159335",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1.76 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "ALTOIDS Curiously Strong Mints Peppermint",
+      "brand": "Altoids",
+      "category": "Chocolate & Sweets",
+      "measure": "1.76 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/002/200/015/9335/front_en.15.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0022000159335",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0022000159335",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.49,
+        "currency": "USD",
+        "date": "2026-06-19",
+        "store": "7-Eleven",
+        "discounted": false,
+        "unitPrice": 89.99,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0022000159335",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-4014400926279",
+      "barcode": "4014400926279",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "106 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mamba",
+      "brand": "Mamba",
+      "category": "Chocolate & Sweets",
+      "measure": "106 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/401/440/092/6279/front_nb.13.200.jpg",
+      "scans": 18,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4014400926279",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8803217017562",
+      "barcode": "8803217017562",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Citron Ginger Tea",
+      "brand": "vonbee",
+      "category": "Coffee & Tea",
+      "measure": "2 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/321/701/7562/front_en.41.200.jpg",
+      "scans": 17,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8803217017562",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-7622210303646",
+      "barcode": "7622210303646",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Daim",
+      "brand": "Daim",
+      "category": "Chocolate & Sweets",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/762/221/030/3646/front_en.27.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/7622210303646",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-00665636",
+      "barcode": "00665636",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "22 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mandarin Orange Chicken",
+      "brand": "Trader Joe's",
+      "category": "Frozen",
+      "measure": "22 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/066/5636/front_en.160.200.jpg",
+      "scans": 16,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00665636",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/00665636",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.49,
+        "currency": "USD",
+        "date": "2026-05-22",
+        "store": "Trader Joe's",
+        "discounted": false,
+        "unitPrice": 8.8,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/00665636",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-00001526",
+      "barcode": "00001526",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "24 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "San Francisco Style Sourdough Bread",
+      "brand": "Trader Joe's",
+      "category": "Store Brands",
+      "measure": "24 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/000/1526/front_en.218.200.jpg",
+      "scans": 15,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00001526",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0704863227306",
+      "barcode": "0704863227306",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "40 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spinach Egg White Frittatas",
+      "brand": "Veggies Made Great",
+      "category": "Dairy",
+      "measure": "40 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/070/486/322/7306/front_en.72.200.jpg",
+      "scans": 14,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0704863227306",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-07342646",
+      "barcode": "07342646",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "227 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sour Cream",
+      "brand": "Daisy",
+      "category": "Dairy",
+      "measure": "227 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/734/2646/front_en.53.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/07342646",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3661112081072",
+      "barcode": "3661112081072",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Le Super Tendre à l'oignon",
+      "brand": "Marque Repère",
+      "category": "Frozen",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/366/111/208/1072/front_fr.40.200.jpg",
+      "scans": 13,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/3661112081072",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0073420000158",
+      "barcode": "0073420000158",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "453 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Light Sour Cream",
+      "brand": "Daisy",
+      "category": "Dairy",
+      "measure": "453 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/342/000/0158/front_en.65.200.jpg",
+      "scans": 12,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0073420000158",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0861745000027",
+      "barcode": "0861745000027",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Organic Eggs",
+      "brand": "Vitale Farms",
+      "category": "Dairy",
+      "measure": "12 stk",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/086/174/500/0027/front_en.47.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0861745000027",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0861745000027",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 9.99,
+        "currency": "USD",
+        "date": "2026-10-25",
+        "store": "Sprouts Farmers Market",
+        "discounted": false,
+        "unitPrice": 0.83,
+        "unitLabel": "stk",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0861745000027",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0889392010015",
+      "barcode": "0889392010015",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Celsius Fizz-Free Peach Mango Green Tea",
+      "brand": "Celsius",
+      "category": "Coffee & Tea",
+      "measure": "12 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/088/939/201/0015/front_en.66.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0889392010015",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0889392010015",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.5,
+        "currency": "USD",
+        "date": "2026-10-18",
+        "store": "Safeway",
+        "discounted": true,
+        "unitPrice": 7.35,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0889392010015",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0044800001423",
+      "barcode": "0044800001423",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "907 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Turbinado Cane Sugar",
+      "brand": "Sugar In The Raw",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "907 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/004/480/000/1423/front_en.28.200.jpg",
+      "scans": 11,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0044800001423",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111099003897",
+      "barcode": "6111099003897",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tartine & Cuisine",
+      "brand": "lilia",
+      "category": "Dairy",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/3897/front_en.42.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099003897",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0022200941525",
+      "barcode": "0022200941525",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "3 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Regular",
+      "brand": "Speed Stick",
+      "category": "Personal Care",
+      "measure": "3 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/002/220/094/1525/front_en.11.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0022200941525",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0078742127088",
+      "barcode": "0078742127088",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "36 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "LARGE WHITE EGGS",
+      "brand": "Great Value",
+      "category": "Dairy",
+      "measure": "36 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/874/212/7088/front_en.112.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0078742127088",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0078742127088",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.17,
+        "currency": "USD",
+        "date": "2026-05-22",
+        "store": "Walmart",
+        "discounted": false,
+        "unitPrice": 2.13,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0078742127088",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-00595834",
+      "barcode": "00595834",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Peanut Butter Protein Granola",
+      "brand": "Trader Joe's",
+      "category": "Store Brands",
+      "measure": "12 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/059/5834/front_en.101.200.jpg",
+      "scans": 10,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/00595834",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-4000539142628",
       "barcode": "4000539142628",
       "market": "us",
@@ -532,6 +3280,888 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/4000539142628",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0078742372389",
+      "barcode": "0078742372389",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "24 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Cottage Cheese Small Curd 1% Milkfat",
+      "brand": "Great Value",
+      "category": "Store Brands",
+      "measure": "24 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/874/237/2389/front_en.105.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0078742372389",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0017400140014",
+      "barcode": "0017400140014",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "8 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "BROWN RICE",
+      "brand": "Minute",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "8 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/740/014/0014/front_en.29.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0017400140014",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8801069402451",
+      "barcode": "8801069402451",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "11.66 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Strawberry & Cream",
+      "brand": "Chupa Chups",
+      "category": "Chocolate & Sweets",
+      "measure": "11.66 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/880/106/940/2451/front_en.67.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/8801069402451",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0073416004306",
+      "barcode": "0073416004306",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "16 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "wild rice",
+      "brand": "Lundberg",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "16 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/341/600/4306/front_en.47.200.jpg",
+      "scans": 9,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0073416004306",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0073416004306",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 6.99,
+        "currency": "USD",
+        "date": "2026-08-11",
+        "store": "Safeway",
+        "discounted": false,
+        "unitPrice": 15.41,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0073416004306",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-4047247108225",
+      "barcode": "4047247108225",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "150 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shogun-Mix",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "150 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/404/724/710/8225/front_en.4.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4047247108225",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0196633894922",
+      "barcode": "0196633894922",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "21 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sous Vide Egg Bites",
+      "brand": "Kirkland Signature",
+      "category": "Dairy",
+      "measure": "21 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/019/663/389/4922/front_en.168.200.jpg",
+      "scans": 8,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0196633894922",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0011110032515",
+      "barcode": "0011110032515",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "18 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Bran flakes wheat cereal, bran flakes",
+      "brand": "Kroger",
+      "category": "Store Brands",
+      "measure": "18 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/111/003/2515/front_en.7.200.jpg",
+      "scans": 7,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0011110032515",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111242680647",
+      "barcode": "6111242680647",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "riz rond",
+      "brand": "Presto",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "1 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/124/268/0647/front_fr.13.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111242680647",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0099482486129",
+      "barcode": "0099482486129",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "340 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Organic California Raisins Sun-Dried",
+      "brand": "365 Whole Foods Market",
+      "category": "Store Brands",
+      "measure": "340 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/009/948/248/6129/front_en.12.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0099482486129",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111273490154",
+      "barcode": "6111273490154",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ikko Cosmetics Shampoo for Men",
+      "brand": "Ikko Cosmetics",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/611/127/349/0154/front_en.3.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/6111273490154",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0078742148878",
+      "barcode": "0078742148878",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "16 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sliced Swiss",
+      "brand": "Great Value",
+      "category": "Store Brands",
+      "measure": "16 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/874/214/8878/front_en.6.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0078742148878",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0078742148878",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.78,
+        "currency": "USD",
+        "date": "2025-12-05",
+        "store": "Walmart",
+        "discounted": false,
+        "unitPrice": 8.33,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0078742148878",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-4099100027242",
+      "barcode": "4099100027242",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "7 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Olive Oil Cooking Spray",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "7 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/409/910/002/7242/front_en.3.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4099100027242",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0071012010509",
+      "barcode": "0071012010509",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.27 kg"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Unbleached All-Purpose Flour",
+      "brand": "King Arthur Baking Company",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "2.27 kg",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/101/201/0509/front_en.16.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0071012010509",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0071012010509",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 5.0,
+        "currency": "USD",
+        "date": "2026-11-06",
+        "store": "Safeway",
+        "discounted": true,
+        "unitPrice": 2.2,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0071012010509",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0810232020178",
+      "barcode": "0810232020178",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Organic Everyday Matcha",
+      "brand": "Sencha Naturals",
+      "category": "Coffee & Tea",
+      "measure": "12 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/081/023/202/0178/front_en.83.200.jpg",
+      "scans": 6,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0810232020178",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0810232020178",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 27.99,
+        "currency": "USD",
+        "date": "2026-04-10",
+        "store": "Costco",
+        "discounted": false,
+        "unitPrice": 82.28,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0810232020178",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-5060384263076",
+      "barcode": "5060384263076",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "140 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sour Shox",
+      "brand": "Candy Kittens",
+      "category": "Chocolate & Sweets",
+      "measure": "140 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/506/038/426/3076/front_en.4.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/5060384263076",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111099005396",
+      "barcode": "6111099005396",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lilia Tartine & Cuisine",
+      "brand": "Lilia",
+      "category": "Dairy",
+      "measure": "400 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/109/900/5396/front_ar.17.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111099005396",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0078742348681",
+      "barcode": "0078742348681",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "5 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "extra virgin olive oil spray",
+      "brand": "Great Value",
+      "category": "Store Brands",
+      "measure": "5 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/874/234/8681/front_en.3.200.jpg",
+      "scans": 5,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0078742348681",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-93568609",
+      "barcode": "93568609",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.1 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Anticavity Toothpaste, Watermelon Flavor",
+      "brand": "HiSmile",
+      "category": "Personal Care",
+      "measure": "2.1 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/009/356/8609/front_en.3.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/93568609",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239113615",
+      "barcode": "0085239113615",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "5 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sea Salt Pita Crackers",
+      "brand": "Good & Gather",
+      "category": "Store Brands",
+      "measure": "5 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/911/3615/front_en.16.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239113615",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0011110008619",
+      "barcode": "0011110008619",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "10.3 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Unsalted mixed nuts",
+      "brand": "Kroger",
+      "category": "Store Brands",
+      "measure": "10.3 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/111/000/8619/front_en.9.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0011110008619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239113769",
+      "barcode": "0085239113769",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "9 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fruit & vegetable strips",
+      "brand": "Good & Gather",
+      "category": "Store Brands",
+      "measure": "9 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/911/3769/front_en.11.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239113769",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0099482479619",
+      "barcode": "0099482479619",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "17 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "French Vanilla Granola",
+      "brand": "365 Whole Foods Market",
+      "category": "Store Brands",
+      "measure": "17 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/009/948/247/9619/front_en.20.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0099482479619",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0099482479619",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.69,
+        "currency": "USD",
+        "date": "2026-11-11",
+        "store": "Whole Foods Market",
+        "discounted": false,
+        "unitPrice": 9.73,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0099482479619",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0011110587114",
+      "barcode": "0011110587114",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "6 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Aged Sharp White Cheddar Cheese Slices",
+      "brand": "Kroger",
+      "category": "Store Brands",
+      "measure": "6 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/111/058/7114/front_en.22.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0011110587114",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0099482489540",
+      "barcode": "0099482489540",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "8 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Buttermilk Protein Waffles",
+      "brand": "365 Whole Foods Market",
+      "category": "Store Brands",
+      "measure": "8 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/009/948/248/9540/front_en.19.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0099482489540",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0099482489540",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 3.49,
+        "currency": "USD",
+        "date": "2026-01-24",
+        "store": "Whole Foods Market",
+        "discounted": false,
+        "unitPrice": 15.39,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0099482489540",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0054800423323",
+      "barcode": "0054800423323",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "250 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ready Rice Spanish Style",
+      "brand": "Ben's Original",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "250 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/005/480/042/3323/front_en.106.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0054800423323",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0054800423323",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.5,
+        "currency": "USD",
+        "date": "2026-08-11",
+        "store": "Safeway",
+        "discounted": true,
+        "unitPrice": 10.0,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0054800423323",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0078742069814",
+      "barcode": "0078742069814",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Buttery Homestyle Complete Potatoes",
+      "brand": "Great Value",
+      "category": "Store Brands",
+      "measure": "4 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/007/874/206/9814/front_en.5.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0078742069814",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0099482519285",
+      "barcode": "0099482519285",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "6 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Oven-Roasted Chicken Breast",
+      "brand": "365 Whole Foods Market",
+      "category": "Store Brands",
+      "measure": "6 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/009/948/251/9285/front_en.4.200.jpg",
+      "scans": 4,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0099482519285",
           "checked": "2026-11-15"
         }
       ],
@@ -568,6 +4198,146 @@
       "matchConfidence": 1.0
     },
     {
+      "id": "us-off-3574661731889",
+      "barcode": "3574661731889",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "40 cl"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gel douche",
+      "brand": "",
+      "category": "Personal Care",
+      "measure": "40 cl",
+      "imageUrl": null,
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3574661731889",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6111270630379",
+      "barcode": "6111270630379",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "90 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sucre Arôme Vanille",
+      "brand": "Alsa",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "90 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/611/127/063/0379/front_en.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6111270630379",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239098844",
+      "barcode": "0085239098844",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "226 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gluten free Red Lentil Rotini",
+      "brand": "Good & Gather",
+      "category": "Store Brands",
+      "measure": "226 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/909/8844/front_en.3.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239098844",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0011110812117",
+      "barcode": "0011110812117",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "125 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Sweet Peas",
+      "brand": "Kroger",
+      "category": "Store Brands",
+      "measure": "125 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/111/081/2117/front_en.7.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0011110812117",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239173886",
+      "barcode": "0085239173886",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "320 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "apple cinnamon instant oatmeal",
+      "brand": "Good & Gather",
+      "category": "Store Brands",
+      "measure": "320 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/917/3886/front_en.4.200.jpg",
+      "scans": 3,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239173886",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
       "id": "us-off-0810091781012",
       "barcode": "0810091781012",
       "market": "us",
@@ -588,6 +4358,994 @@
         {
           "name": "Open Food Facts",
           "url": "https://world.openfoodfacts.org/product/0810091781012",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-02505901",
+      "barcode": "02505901",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "6 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Apple Juice",
+      "brand": "Minute Maid",
+      "category": "Juice & Drinks",
+      "measure": "6 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/000/000/250/5901/front_en.14.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/02505901",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0041840001062",
+      "barcode": "0041840001062",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4.25 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "oatmeal & almond soap",
+      "brand": "Yardley London",
+      "category": "Personal Care",
+      "measure": "4.25 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/004/184/000/1062/front_en.4.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0041840001062",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8001090902238",
+      "barcode": "8001090902238",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "400 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ferrero rocher",
+      "brand": "Fairy",
+      "category": "Cleaning & Laundry",
+      "measure": "400 ml",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/800/109/090/2238/front_en.5.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/8001090902238",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239089071",
+      "barcode": "0085239089071",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "30 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mayonnaise",
+      "brand": "Market Pantry",
+      "category": "Store Brands",
+      "measure": "30 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/908/9071/front_en.20.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239089071",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0021130466634",
+      "barcode": "0021130466634",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4 lb"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Chunky Peanut Butter",
+      "brand": "Safeway",
+      "category": "Store Brands",
+      "measure": "4 lb",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/002/113/046/6634/front_en.4.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0021130466634",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-4099100063851",
+      "barcode": "4099100063851",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "9 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Woven Whole Wheat Crackers",
+      "brand": "Aldi",
+      "category": "Store Brands",
+      "measure": "9 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/409/910/006/3851/front_en.53.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/4099100063851",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0035000444349",
+      "barcode": "0035000444349",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "4 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Baking soda & peroxide whitening",
+      "brand": "colgate",
+      "category": "Personal Care",
+      "measure": "4 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/003/500/044/4349/front_en.10.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0035000444349",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0018787788059",
+      "barcode": "0018787788059",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "5 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "All-One Rose Pure-Castile Bar Soap",
+      "brand": "Dr. Bronner's",
+      "category": "Personal Care",
+      "measure": "5 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/001/878/778/8059/front_en.17.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0018787788059",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-6923818812129",
+      "barcode": "6923818812129",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Lion",
+      "brand": "السبع",
+      "category": "Coffee & Tea",
+      "measure": "200 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/692/381/881/2129/front_fr.8.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/6923818812129",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0017400118150",
+      "barcode": "0017400118150",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "46 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "WHITE RICE",
+      "brand": "Minute",
+      "category": "Pasta, Rice & Dry Goods",
+      "measure": "46 g",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/740/011/8150/front_en.80.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0017400118150",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0035000459862",
+      "barcode": "0035000459862",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "0.88 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Total Clean Mint",
+      "brand": "colgate",
+      "category": "Personal Care",
+      "measure": "0.88 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/003/500/045/9862/front_en.11.200.jpg",
+      "scans": 2,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0035000459862",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0014800925340",
+      "barcode": "0014800925340",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "11.5 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Mott's tomato juice",
+      "brand": "Mott's",
+      "category": "Juice & Drinks",
+      "measure": "11.5 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/001/480/092/5340/front_en.19.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0014800925340",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0011111051249",
+      "barcode": "0011111051249",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "532 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dove Men+Care Hydrating Clean Comfort Body and Face Wash",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "532 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/001/111/105/1249/front_en.18.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0011111051249",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0851817007641",
+      "barcode": "0851817007641",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.65 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Fresh Falls Natural Deodorant",
+      "brand": "Dr. Squatch",
+      "category": "Personal Care",
+      "measure": "2.65 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/085/181/700/7641/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0851817007641",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0732913229291",
+      "barcode": "0732913229291",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "65 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dishwasher Detergent Gel",
+      "brand": "Seventh Generation",
+      "category": "Cleaning & Laundry",
+      "measure": "65 oz",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/073/291/322/9291/front_en.10.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/0732913229291",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239042618",
+      "barcode": "0085239042618",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "38 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Ketchup",
+      "brand": "Market Pantry",
+      "category": "Store Brands",
+      "measure": "38 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/904/2618/front_en.13.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239042618",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0085239042618",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 2.39,
+        "currency": "USD",
+        "date": "2026-07-23",
+        "store": "Target",
+        "discounted": false,
+        "unitPrice": 2.22,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0085239042618",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0021130111602",
+      "barcode": "0021130111602",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "14 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Halved Sun Dried Tomatoes",
+      "brand": "Safeway",
+      "category": "Store Brands",
+      "measure": "14 g",
+      "imageUrl": null,
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0021130111602",
+          "checked": "2026-11-15"
+        },
+        {
+          "name": "Open Prices (ODbL)",
+          "url": "https://prices.openfoodfacts.org/products/0021130111602",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0,
+      "price": {
+        "value": 4.29,
+        "currency": "USD",
+        "date": "2026-08-11",
+        "store": "Safeway",
+        "discounted": false,
+        "unitPrice": 306.43,
+        "unitLabel": "kg",
+        "source": "Open Prices",
+        "url": "https://prices.openfoodfacts.org/products/0021130111602",
+        "license": "ODbL",
+        "checked": "2026-11-15"
+      }
+    },
+    {
+      "id": "us-off-0628467002711",
+      "barcode": "0628467002711",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "60 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Anti-Dandruff Shampoo",
+      "brand": "Nizoral",
+      "category": "Personal Care",
+      "measure": "60 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/062/846/700/2711/front_en.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0628467002711",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3337875664233",
+      "barcode": "3337875664233",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "1 stk"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Gel douche Cèdre",
+      "brand": "Roger & Gallet",
+      "category": "Personal Care",
+      "measure": "1 stk",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/566/4233/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3337875664233",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-5000101506000",
+      "barcode": "5000101506000",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "500 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Soap",
+      "brand": "Carex",
+      "category": "Personal Care",
+      "measure": "500 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/500/010/150/6000/front_en.7.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/5000101506000",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-07735745",
+      "barcode": "07735745",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "2.25 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Tom's",
+      "brand": "tom's  of Maine",
+      "category": "Personal Care",
+      "measure": "2.25 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/000/000/773/5745/front_en.4.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/07735745",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0852835006661",
+      "barcode": "0852835006661",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "52 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Molly's Suds Laundry Detergent Lavender",
+      "brand": "Molly's Suds",
+      "category": "Cleaning & Laundry",
+      "measure": "52 fl oz",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/085/283/500/6661/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/0852835006661",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239407561",
+      "barcode": "0085239407561",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Spicy brown mustard",
+      "brand": "market pantry",
+      "category": "Store Brands",
+      "measure": "12 oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/940/7561/front_en.18.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239407561",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0021130254804",
+      "barcode": "0021130254804",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "355 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Soda",
+      "brand": "Safeway",
+      "category": "Store Brands",
+      "measure": "355 ml",
+      "imageUrl": null,
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0021130254804",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0657622721006",
+      "barcode": "0657622721006",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "16.9 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Pomegranate Blue",
+      "brand": "Honest Ade",
+      "category": "Juice & Drinks",
+      "measure": "16.9 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/065/762/272/1006/front_en.8.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0657622721006",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0035000525031",
+      "barcode": "0035000525031",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "24 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Kids cavity protection bubble fruit",
+      "brand": "colgate",
+      "category": "Personal Care",
+      "measure": "24 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/003/500/052/5031/front_en.11.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0035000525031",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0820645006966",
+      "barcode": "0820645006966",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "16.9 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Wash Day Delight w/ aloe, water to foam shampoo",
+      "brand": "Carol's Daughter",
+      "category": "Personal Care",
+      "measure": "16.9 oz",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/082/064/500/6966/front_en.3.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0820645006966",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0079400352972",
+      "barcode": "0079400352972",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "74 g"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dove Women Cool Essentials",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "74 g",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/007/940/035/2972/front_en.20.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/0079400352972",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0085239077290",
+      "barcode": "0085239077290",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "15 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Less Sodium Soy Sauce",
+      "brand": "Market Pantry",
+      "category": "Store Brands",
+      "measure": "15 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/523/907/7290/front_en.15.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0085239077290",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0021130385027",
+      "barcode": "0021130385027",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "12 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Evaporated Milk",
+      "brand": "Safeway",
+      "category": "Store Brands",
+      "measure": "12 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/002/113/038/5027/front_en.9.200.jpg",
+      "scans": 1,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0021130385027",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0030304600323",
+      "barcode": "0030304600323",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "32 fl oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "100% Fresh Squeezed Orange Juice",
+      "brand": "",
+      "category": "Juice & Drinks",
+      "measure": "32 fl oz",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/003/030/460/0323/front_en.29.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Food Facts",
+          "url": "https://world.openfoodfacts.org/product/0030304600323",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-3660005170244",
+      "barcode": "3660005170244",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "200 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Shower gel oat & buckwheat",
+      "brand": "Yves Rocher",
+      "category": "Personal Care",
+      "measure": "200 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/366/000/517/0244/front_en.3.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/3660005170244",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-8683130036099",
+      "barcode": "8683130036099",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "450 ml"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "Dove Hindistan Cevizi Yağı ve Badem Sütü Özü Sıvı Sabun 450 ml",
+      "brand": "Dove",
+      "category": "Personal Care",
+      "measure": "450 ml",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/868/313/003/6099/front_en.8.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Beauty Facts",
+          "url": "https://world.openbeautyfacts.org/product/8683130036099",
+          "checked": "2026-11-15"
+        }
+      ],
+      "lastChecked": "2026-11-15",
+      "verification": "verified",
+      "matchConfidence": 1.0
+    },
+    {
+      "id": "us-off-0011013120500",
+      "barcode": "0011013120500",
+      "market": "us",
+      "sizeHistory": [
+        {
+          "date": "2026-11-15",
+          "value": "45 oz"
+        }
+      ],
+      "shrinkEvents": [],
+      "name": "homesolv",
+      "brand": "citra solv",
+      "category": "Cleaning & Laundry",
+      "measure": "45 oz",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/001/101/312/0500/front_en.4.200.jpg",
+      "scans": 0,
+      "sources": [
+        {
+          "name": "Open Products Facts",
+          "url": "https://world.openproductsfacts.org/product/0011013120500",
           "checked": "2026-11-15"
         }
       ],
@@ -645,5 +5403,5 @@
       }
     ]
   },
-  "catalogCount": 21
+  "catalogCount": 171
 }
