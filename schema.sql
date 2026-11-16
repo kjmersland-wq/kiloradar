@@ -125,3 +125,7 @@ CREATE TABLE IF NOT EXISTS user_price_votes (
   kind     TEXT    NOT NULL CHECK (kind IN ('confirm', 'report')),
   PRIMARY KEY (price_id, ip_hash)
 );
+-- Optional public nickname for the "top contributors this month" list. Anonymous submissions stay anonymous.
+ALTER TABLE user_prices ADD COLUMN nickname TEXT;
+-- Optional country shown next to the nickname on the "top contributors" list.
+ALTER TABLE user_prices ADD COLUMN country TEXT;

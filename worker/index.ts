@@ -204,6 +204,19 @@ function cleanStore(raw: unknown): string | null {
   return store.length >= 2 && store.length <= 40 ? store : null;
 }
 
+/** Optional public nickname: 2-20 letters/digits/space/dot/dash/underscore. Anything else = anonymous. */
+function cleanNickname(raw: unknown): string | null {
+  if (typeof raw !== 'string') return null;
+  const nick = raw.replace(/\s+/g, ' ').trim();
+  return /^[\p{L}\p{N} ._-]{2,20}$/u.test(nick) ? nick : null;
+}
+
+const CONTRIBUTOR_COUNTRIES = new Set(['NO', 'SE', 'DK', 'PL', 'DE', 'FR', 'ES', 'US', 'GB']);
+function cleanCountry(raw: unknown): string | null {
+  const code = typeof raw === 'string' ? raw.trim().toUpperCase() : '';
+  return CONTRIBUTOR_COUNTRIES.has(code) ? code : null;
+}
+
 function parsePrice(raw: unknown): number | null {
   const n = typeof raw === 'number' ? raw : Number(String(raw ?? '').trim().replace(',', '.'));
   if (!Number.isFinite(n) || n <= 0 || n > 9999) return null;
@@ -256,10 +269,10 @@ async function handleSubmitPrice(request: Request, env: Env): Promise<Response> 
 
     const createdAt = new Date().toISOString();
     const result = await env.DB.prepare(
-      `INSERT INTO user_prices (market, ean, price, currency, store, created_at, ip_hash)
-       VALUES (?, ?, ?, ?, ?, ?, ?)`
+      `INSERT INTO user_prices (market, ean, price, currency, store, created_at, ip_hash, nickname, country)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
     )
-      .bind(market, ean, price, currency, store, createdAt, hash)
+      .bind(market, ean, price, currency, store, createdAt, hash, cleanNickname(body.nickname), cleanCountry(body.country))
       .run();
 
     return json(
@@ -308,6 +321,37 @@ async function handleListPrices(url: URL, env: Env): Promise<Response> {
   }
 }
 
+/** Top contributors of a calendar month: distinct (product, store) prices per person, reported prices excluded. */
+async function handleContributors(url: URL, env: Env): Promise<Response> {
+  if (!env.DB) return json({ error: 'database not bound' }, 503, 'no-store');
+  const now = new Date();
+  const requested = url.searchParams.get('month');
+  const month = requested && /^\d{4}-(0[1-9]|1[0-2])$/.test(requested) ? requested : now.toISOString().slice(0, 7);
+  const [y, m] = month.split('-').map(Number);
+  const next = m === 12 ? `${y + 1}-01` : `${y}-${String(m + 1).padStart(2, '0')}`;
+  try {
+    const { results = [] } = await env.DB.prepare(
+      `SELECT market,
+              COUNT(DISTINCT ean || '|' || store) AS prices,
+              (SELECT u2.nickname FROM user_prices u2
+                WHERE u2.ip_hash = u.ip_hash AND u2.nickname IS NOT NULL ORDER BY u2.id DESC LIMIT 1) AS nickname,
+              (SELECT u3.country FROM user_prices u3
+                WHERE u3.ip_hash = u.ip_hash AND u3.country IS NOT NULL ORDER BY u3.id DESC LIMIT 1) AS country
+       FROM user_prices u
+       WHERE created_at >= ? AND created_at < ? AND NOT (reports >= ? AND reports > confirmations)
+       GROUP BY ip_hash, market
+       HAVING nickname IS NOT NULL
+       ORDER BY prices DESC, nickname ASC
+       LIMIT 10`
+    )
+      .bind(`${month}-01`, `${next}-01`, HIDE_AFTER_REPORTS)
+      .all<{ market: string; prices: number; nickname: string; country: string | null }>();
+    return json({ month, contributors: results }, 200, 'public, max-age=60');
+  } catch {
+    return json({ error: 'database query failed' }, 500, 'no-store');
+  }
+}
+
 async function handleVote(request: Request, env: Env): Promise<Response> {
   if (!env.DB) return json({ error: 'database not bound' }, 503, 'no-store');
   const body = await readJson(request);
@@ -348,6 +392,9 @@ export default {
     }
     if (url.pathname === '/api/prices' && request.method === 'GET') {
       return handleListPrices(url, env);
+    }
+    if (url.pathname === '/api/contributors' && request.method === 'GET') {
+      return handleContributors(url, env);
     }
     if (url.pathname === '/api/price' && request.method === 'POST') {
       return handleSubmitPrice(request, env);

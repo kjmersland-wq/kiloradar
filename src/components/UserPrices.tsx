@@ -126,6 +126,116 @@ const LOCALE: Record<CountryRouteCode, string> = {
 
 export const userPriceStrings = (code: CountryRouteCode): Strings => STR[code] ?? STR.en;
 
+// --- Top contributors (recognition only: no prizes, no money) ---------------------------------
+interface BoardStrings {
+  title: string;
+  sub: string;
+  empty: string;
+  prices: string;
+  nickname: string;
+  nicknameHint: string;
+  global: string;
+}
+const BOARD: Record<string, BoardStrings> = {
+  no: { title: 'Topp bidragsytere denne måneden', sub: 'Takk til dere som deler priser. Ingen premier, bare en varm takk.', empty: 'Ingen på listen ennå. Legg inn en pris med kallenavn, så er du først!', prices: 'priser', nickname: 'Kallenavn (valgfritt)', nicknameHint: 'Vises på topplisten. La stå tomt for å være anonym.', global: 'Global' },
+  se: { title: 'Månadens toppbidragsgivare', sub: 'Tack till er som delar priser. Inga priser, bara ett varmt tack.', empty: 'Ingen på listan än. Lägg in ett pris med smeknamn så är du först!', prices: 'priser', nickname: 'Smeknamn (valfritt)', nicknameHint: 'Visas på topplistan. Lämna tomt för att vara anonym.', global: 'Global' },
+  dk: { title: 'Månedens topbidragydere', sub: 'Tak til jer, der deler priser. Ingen præmier, bare en varm tak.', empty: 'Ingen på listen endnu. Indsend en pris med kaldenavn, så er du først!', prices: 'priser', nickname: 'Kaldenavn (valgfrit)', nicknameHint: 'Vises på topplisten. Lad feltet stå tomt for at være anonym.', global: 'Global' },
+  pl: { title: 'Najaktywniejsi w tym miesiącu', sub: 'Dziękujemy wszystkim, którzy dzielą się cenami. Bez nagród, po prostu podziękowanie.', empty: 'Nikogo jeszcze nie ma na liście. Dodaj cenę z pseudonimem i bądź pierwszy!', prices: 'cen', nickname: 'Pseudonim (opcjonalnie)', nicknameHint: 'Pokaże się na liście. Zostaw puste, aby pozostać anonimowym.', global: 'Global' },
+  de: { title: 'Top-Beitragende in diesem Monat', sub: 'Danke an alle, die Preise teilen. Keine Preise, nur ein herzliches Dankeschön.', empty: 'Noch niemand auf der Liste. Melde einen Preis mit Spitznamen und sei der Erste!', prices: 'Preise', nickname: 'Spitzname (optional)', nicknameHint: 'Wird in der Topliste angezeigt. Leer lassen für anonym.', global: 'Global' },
+  fr: { title: 'Meilleurs contributeurs du mois', sub: 'Merci à celles et ceux qui partagent des prix. Pas de prix à gagner, juste un grand merci.', empty: 'Personne dans la liste pour l’instant. Ajoutez un prix avec un pseudo et soyez le premier !', prices: 'prix', nickname: 'Pseudo (facultatif)', nicknameHint: 'Affiché dans le classement. Laissez vide pour rester anonyme.', global: 'Global' },
+  es: { title: 'Mejores colaboradores del mes', sub: 'Gracias a quienes comparten precios. Sin premios, solo un agradecimiento.', empty: 'Aún no hay nadie en la lista. ¡Añade un precio con un apodo y sé el primero!', prices: 'precios', nickname: 'Apodo (opcional)', nicknameHint: 'Se muestra en la lista. Déjalo vacío para ser anónimo.', global: 'Global' },
+  en: { title: 'Top contributors this month', sub: 'Thank you to everyone who shares prices. No prizes, just a warm thanks.', empty: 'Nobody on the list yet. Add a price with a nickname and be the first!', prices: 'prices', nickname: 'Nickname (optional)', nicknameHint: 'Shown on the top list. Leave empty to stay anonymous.', global: 'Global' },
+};
+const boardStrings = (code: CountryRouteCode): BoardStrings => BOARD[code] ?? BOARD.en;
+const REGION: Record<string, string> = { no: 'NO', se: 'SE', dk: 'DK', pl: 'PL', de: 'DE', fr: 'FR', es: 'ES', us: 'US', uk: 'GB' };
+const COUNTRY_LABEL: Record<string, string> = {
+  no: 'Land', se: 'Land', dk: 'Land', pl: 'Kraj', de: 'Land', fr: 'Pays', es: 'País', en: 'Country',
+};
+const CONTRIBUTOR_COUNTRIES = ['NO', 'SE', 'DK', 'PL', 'DE', 'FR', 'ES', 'US', 'GB'];
+const COUNTRY_KEY = 'kiloradar-country';
+const readCountry = (fallback: string): string => {
+  try {
+    return localStorage.getItem(COUNTRY_KEY) || fallback;
+  } catch {
+    return fallback;
+  }
+};
+const NICK_KEY = 'kiloradar-nickname';
+const readNick = (): string => {
+  try {
+    return localStorage.getItem(NICK_KEY) || '';
+  } catch {
+    return '';
+  }
+};
+
+interface Contributor {
+  market: string;
+  country?: string | null;
+  prices: number;
+  nickname: string;
+}
+
+/** Discreet "top contributors this month" list. Refreshes when `refreshKey` changes (after a submit). */
+export function ContributorsBoard({ countryCode, refreshKey }: { countryCode: CountryRouteCode; refreshKey: number }) {
+  const t = boardStrings(countryCode);
+  const [rows, setRows] = useState<Contributor[]>([]);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    fetch('/api/contributors', refreshKey > 0 ? { cache: 'no-store' } : undefined)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!active) return;
+        if (d && Array.isArray(d.contributors)) setRows(d.contributors as Contributor[]);
+        setLoaded(true);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [refreshKey]);
+
+  if (!loaded) return null;
+  const names = (() => {
+    try {
+      return new Intl.DisplayNames([LOCALE[countryCode]], { type: 'region' });
+    } catch {
+      return null;
+    }
+  })();
+  const countryOf = (r: Contributor) => {
+    const code = r.country || REGION[r.market];
+    return code ? names?.of(code) ?? code : t.global;
+  };
+
+  return (
+    <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6" data-testid="contributors-board">
+      <h2 className="flex items-center gap-2 text-lg font-bold text-foreground">
+        <Users className="h-5 w-5 text-savings" /> {t.title}
+      </h2>
+      <p className="mt-1 text-sm text-muted-foreground">{t.sub}</p>
+      {rows.length === 0 ? (
+        <p className="mt-4 rounded-2xl border border-dashed border-border p-5 text-sm text-muted-foreground">{t.empty}</p>
+      ) : (
+        <ol className="mt-4 divide-y divide-border rounded-2xl border border-border bg-card/50">
+          {rows.map((r, i) => (
+            <li key={`${r.nickname}-${r.market}`} className="flex items-center gap-3 px-4 py-3 text-sm">
+              <span className="w-6 shrink-0 font-display font-bold tabular text-muted-foreground">{i + 1}</span>
+              <span className="min-w-0 flex-1 truncate font-semibold text-foreground">{r.nickname}</span>
+              <span className="shrink-0 text-muted-foreground">{countryOf(r)}</span>
+              <span className="shrink-0 font-semibold tabular text-savings">
+                {r.prices} {t.prices}
+              </span>
+            </li>
+          ))}
+        </ol>
+      )}
+    </section>
+  );
+}
+
 /** Loads user prices for a market and keeps them in sync after submit/vote. */
 export function useUserPrices(market: string) {
   const [byEan, setByEan] = useState<Record<string, UserPrice>>({});
@@ -182,6 +292,16 @@ export function PriceSubmitModal({
   const t = userPriceStrings(countryCode);
   const [price, setPrice] = useState('');
   const [store, setStore] = useState('');
+  const [nickname, setNickname] = useState(readNick);
+  const [country, setCountry] = useState(() => readCountry(REGION[market] ?? ''));
+  const b = boardStrings(countryCode);
+  const regionNames = (() => {
+    try {
+      return new Intl.DisplayNames([LOCALE[countryCode]], { type: 'region' });
+    } catch {
+      return null;
+    }
+  })();
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
 
@@ -199,10 +319,23 @@ export function PriceSubmitModal({
       const res = await fetch('/api/price', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ market, barcode: barcode.trim(), price: price.trim(), store: store.trim() }),
+        body: JSON.stringify({
+          market,
+          barcode: barcode.trim(),
+          price: price.trim(),
+          store: store.trim(),
+          nickname: nickname.trim(),
+          country,
+        }),
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.price) {
+        try {
+          localStorage.setItem(NICK_KEY, nickname.trim());
+          localStorage.setItem(COUNTRY_KEY, country);
+        } catch {
+          // storage unavailable: the nickname just is not remembered
+        }
         onSaved(data.price as UserPrice);
         setMessage({ kind: 'ok', text: data.inCatalog ? t.saved : t.savedNotInCatalog });
         setPrice('');
@@ -277,6 +410,37 @@ export function PriceSubmitModal({
             />
           </label>
         </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          <label className="block text-sm font-medium text-foreground">
+            {b.nickname}
+            <input
+              value={nickname}
+              onChange={(e) => setNickname(e.target.value)}
+              maxLength={20}
+              autoComplete="nickname"
+              data-testid="price-nickname"
+              className="mt-1 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            />
+          </label>
+          <label className="block text-sm font-medium text-foreground">
+            {COUNTRY_LABEL[countryCode] ?? COUNTRY_LABEL.en}
+            <select
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+              data-testid="price-country"
+              className="mt-1 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            >
+              <option value="">–</option>
+              {CONTRIBUTOR_COUNTRIES.map((c) => (
+                <option key={c} value={c}>
+                  {regionNames?.of(c) ?? c}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <p className="-mt-2 text-xs text-muted-foreground">{b.nicknameHint}</p>
 
         {message && (
           <p role="status" className={`rounded-lg p-3 text-sm ${message.kind === 'ok' ? 'bg-savings/15 text-savings' : 'bg-shrink/15 text-shrink'}`}>

@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import CatalogSection, { type CatalogItem } from './CatalogSection';
 import DocumentedCases from './DocumentedCases';
-import { PriceSubmitModal, useUserPrices } from './UserPrices';
+import { ContributorsBoard, PriceSubmitModal, useUserPrices } from './UserPrices';
 import StoreComparison,{ type StoreComparisonData } from './StoreComparison';
 import {
   ProductItem,
@@ -902,6 +902,7 @@ export default function KiloRadarApp({
   const zxingControlsRef = useRef<{ stop: () => void } | null>(null);
   const scanTargetRef = useRef<'lookup' | 'price'>('lookup');
   const [priceModalOpen, setPriceModalOpen] = useState(false);
+  const [boardRefresh, setBoardRefresh] = useState(0);
   const [priceBarcode, setPriceBarcode] = useState('');
   const userPriceMarket = countryCode === 'en' ? 'global' : countryCode;
   const userPrices = useUserPrices(userPriceMarket);
@@ -1766,6 +1767,7 @@ export default function KiloRadarApp({
             onPriceVoted={userPrices.patch}
           />
           <DocumentedCases countryCode={countryCode} />
+          <ContributorsBoard countryCode={countryCode} refreshKey={boardRefresh} />
 
           {/* SOCIAL SHARE ROW (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn) */}
           <ShareButtonsBar
@@ -1887,7 +1889,10 @@ export default function KiloRadarApp({
           setPriceModalOpen(false);
           handleOpenCameraScanner();
         }}
-        onSaved={userPrices.upsert}
+        onSaved={(p) => {
+          userPrices.upsert(p);
+          setBoardRefresh((n) => n + 1);
+        }}
       />
 
       {/* Floating scan button on phones: the camera is one tap away from anywhere on the page */}
