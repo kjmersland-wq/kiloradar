@@ -126,6 +126,43 @@ const LOCALE: Record<CountryRouteCode, string> = {
 
 export const userPriceStrings = (code: CountryRouteCode): Strings => STR[code] ?? STR.en;
 
+// --- The best way to contribute: a photo of the shelf-edge label ------------------------------
+interface ShelfStrings {
+  badge: string;
+  text: string;
+  both: string;
+  how: string;
+}
+const SHELF: Record<string, ShelfStrings> = {
+  no: { badge: 'Best måte å bidra på', text: 'Ta bilde av prislappen på hyllen (hyllekantetiketten). Den viser pris og strekkode, og hjelper alle på KiloRadar.', both: 'Gjelder både papirlapper og elektroniske etiketter.', how: 'Vi leser strekkoden fra bildet. Du skriver inn prisen.' },
+  se: { badge: 'Bästa sättet att bidra', text: 'Ta ett foto av prislappen på hyllan (hyllkantsetiketten). Den visar pris och streckkod och hjälper alla på KiloRadar.', both: 'Gäller både pappersetiketter och elektroniska etiketter.', how: 'Vi läser streckkoden från bilden. Du skriver in priset.' },
+  dk: { badge: 'Bedste måde at bidrage på', text: 'Tag et billede af prisskiltet på hylden (hyldekantsetiketten). Det viser pris og stregkode og hjælper alle på KiloRadar.', both: 'Gælder både papirskilte og elektroniske etiketter.', how: 'Vi læser stregkoden fra billedet. Du skriver prisen.' },
+  pl: { badge: 'Najlepszy sposób, by pomóc', text: 'Zrób zdjęcie metki cenowej na półce (etykiety półkowej). Pokazuje cenę i kod kreskowy i pomaga wszystkim w KiloRadar.', both: 'Dotyczy zarówno etykiet papierowych, jak i elektronicznych.', how: 'Kod kreskowy odczytamy ze zdjęcia. Cenę wpisujesz Ty.' },
+  de: { badge: 'Beste Art zu helfen', text: 'Fotografiere das Preisschild am Regal (Regaletikett). Es zeigt Preis und Barcode und hilft allen bei KiloRadar.', both: 'Gilt für Papieretiketten und elektronische Preisschilder.', how: 'Wir lesen den Barcode aus dem Foto. Den Preis tippst du ein.' },
+  fr: { badge: 'La meilleure façon d’aider', text: 'Prenez en photo l’étiquette de prix en rayon (étiquette de gondole). Elle indique le prix et le code-barres, et aide tout le monde sur KiloRadar.', both: 'Valable pour les étiquettes papier comme pour les étiquettes électroniques.', how: 'Nous lisons le code-barres sur la photo. Vous saisissez le prix.' },
+  es: { badge: 'La mejor forma de ayudar', text: 'Haz una foto de la etiqueta de precio del estante. Muestra el precio y el código de barras, y ayuda a todos en KiloRadar.', both: 'Sirve tanto para etiquetas de papel como para etiquetas electrónicas.', how: 'Leemos el código de barras de la foto. Tú escribes el precio.' },
+  en: { badge: 'Best way to contribute', text: 'Take a photo of the price tag on the shelf (the shelf-edge label). It shows the price and barcode, and helps everyone on KiloRadar.', both: 'Works for both paper and electronic shelf labels.', how: 'We read the barcode from the photo. You type in the price.' },
+};
+
+/** Highlighted call to action: photograph the shelf-edge label. Shown where people can add a price. */
+export function ShelfTagTip({ countryCode, compact = false }: { countryCode: CountryRouteCode; compact?: boolean }) {
+  const s = SHELF[countryCode] ?? SHELF.en;
+  return (
+    <aside
+      data-testid="shelf-tag-tip"
+      className={`rounded-2xl border border-savings/40 bg-savings/10 ${compact ? 'p-3.5' : 'p-4 sm:p-5'}`}
+    >
+      <p className="inline-flex items-center gap-1.5 rounded-full bg-savings/20 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-savings">
+        <Camera className="h-3.5 w-3.5" /> {s.badge}
+      </p>
+      <p className={`mt-2 font-semibold text-foreground ${compact ? 'text-sm' : 'text-base'}`}>{s.text}</p>
+      <p className="mt-1.5 text-xs text-muted-foreground">
+        {s.both} {s.how}
+      </p>
+    </aside>
+  );
+}
+
 // --- Top contributors (recognition only: no prizes, no money) ---------------------------------
 interface BoardStrings {
   title: string;
@@ -365,6 +402,7 @@ export function PriceSubmitModal({
             <X className="h-4 w-4" />
           </button>
         </div>
+        <ShelfTagTip countryCode={countryCode} compact />
         <p className="text-sm text-muted-foreground">{t.intro}</p>
 
         <label className="block text-sm font-medium text-foreground">

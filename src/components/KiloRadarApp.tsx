@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import CatalogSection, { type CatalogItem } from './CatalogSection';
 import DocumentedCases from './DocumentedCases';
-import { ContributorsBoard, PriceSubmitModal, useUserPrices } from './UserPrices';
+import { ContributorsBoard, PriceSubmitModal, ShelfTagTip, useUserPrices } from './UserPrices';
 import StoreComparison,{ type StoreComparisonData } from './StoreComparison';
 import {
   ProductItem,
@@ -1944,6 +1944,7 @@ export default function KiloRadarApp({
               </div>
             )}
 
+            <ShelfTagTip countryCode={countryCode} compact />
             <label className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-savings/40 bg-background px-4 py-3 text-sm font-semibold text-savings transition hover:bg-secondary">
               <Camera className="h-4 w-4" />
               <span>{SCAN_UI[countryCode][1]}</span>

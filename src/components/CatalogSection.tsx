@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Package, Search, ShieldCheck, Tag, TrendingDown } from 'lucide-react';
 import type { CountryRouteCode } from '../locales';
-import { UserPriceBlock, userPriceStrings, type UserPrice } from './UserPrices';
+import { ShelfTagTip, UserPriceBlock, userPriceStrings, type UserPrice } from './UserPrices';
 
 /** One real product discovered by the nightly pipeline (Open Food Facts). Prices are not tracked yet. */
 export interface CatalogItem {
@@ -296,6 +296,11 @@ export default function CatalogSection({
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">{ui.title}</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">{ui.subtitle}</p>
+        {onAddPrice && (
+          <div className="mt-5 max-w-2xl">
+            <ShelfTagTip countryCode={countryCode} />
+          </div>
+        )}
         {onAddPrice && (
           <button
             type="button"
