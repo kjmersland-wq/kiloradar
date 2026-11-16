@@ -679,7 +679,21 @@ const HERO_STATS: Record<CountryRouteCode, [string, string, string]> = {
   es: ['productos reales que seguimos', 'con precio medido', 'Última comprobación'],
 };
 
-const NAV_LABELS: Record<CountryRouteCode, [string, string, string, string]> = {
+/** [hero button, take-a-photo button, nothing-found message] */
+const SCAN_UI: Record<CountryRouteCode, [string, string, string]> = {
+  en: ['Scan a barcode', 'Take a photo of the barcode', 'No barcode found in the photo. Try again, closer and in good light.'],
+  us: ['Scan a barcode', 'Take a photo of the barcode', 'No barcode found in the photo. Try again, closer and in good light.'],
+  uk: ['Scan a barcode', 'Take a photo of the barcode', 'No barcode found in the photo. Try again, closer and in good light.'],
+  no: ['Skann strekkode', 'Ta bilde av strekkoden', 'Fant ingen strekkode i bildet. Prøv igjen, nærmere og med godt lys.'],
+  se: ['Skanna streckkod', 'Ta ett foto av streckkoden', 'Hittade ingen streckkod i bilden. Försök igen, närmare och med bra ljus.'],
+  dk: ['Scan stregkode', 'Tag et billede af stregkoden', 'Fandt ingen stregkode på billedet. Prøv igen, tættere på og med godt lys.'],
+  pl: ['Skanuj kod kreskowy', 'Zrób zdjęcie kodu kreskowego', 'Nie znaleziono kodu na zdjęciu. Spróbuj ponownie, bliżej i przy dobrym świetle.'],
+  de: ['Barcode scannen', 'Foto vom Barcode machen', 'Kein Barcode im Foto gefunden. Bitte näher und bei gutem Licht erneut versuchen.'],
+  fr: ['Scanner un code-barres', 'Prendre le code-barres en photo', 'Aucun code-barres trouvé sur la photo. Réessayez, de plus près et avec une bonne lumière.'],
+  es: ['Escanear código de barras', 'Hacer foto del código de barras', 'No se encontró ningún código en la foto. Inténtalo de nuevo, más cerca y con buena luz.'],
+};
+
+const NAV_LABELS:Record<CountryRouteCode, [string, string, string, string]> = {
   en: ['Prices', 'Calculator', 'Products', 'Catalog'],
   us: ['Prices', 'Calculator', 'Products', 'Catalog'],
   uk: ['Prices', 'Calculator', 'Products', 'Catalog'],
@@ -884,6 +898,8 @@ export default function KiloRadarApp({
   const [cameraManualEan, setCameraManualEan] = useState('');
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
+  const zxingControlsRef = useRef<{ stop: () => void } | null>(null);
+  const [scanPhotoError, setScanPhotoError] = useState(false);
 
   // "Report Shrunk Item" Modal state
   const [reportModalOpen, setReportModalOpen] = useState(false);
@@ -1030,6 +1046,14 @@ export default function KiloRadarApp({
 
   // Start / Stop Native Browser Camera BarcodeDetector
   const stopCameraStream = () => {
+    if (zxingControlsRef.current) {
+      try {
+        zxingControlsRef.current.stop();
+      } catch {
+        // already stopped
+      }
+      zxingControlsRef.current = null;
+    }
     if (mediaStreamRef.current) {
       mediaStreamRef.current.getTracks().forEach((track) => track.stop());
       mediaStreamRef.current = null;
@@ -1039,6 +1063,7 @@ export default function KiloRadarApp({
   const handleOpenCameraScanner = async () => {
     setCameraModalOpen(true);
     setCameraManualEan('');
+    setScanPhotoError(false);
 
     const hasBarcodeDetector =
       typeof window !== 'undefined' && 'BarcodeDetector' in window;
@@ -1047,8 +1072,34 @@ export default function KiloRadarApp({
       !!navigator.mediaDevices &&
       typeof navigator.mediaDevices.getUserMedia === 'function';
 
-    if (!hasBarcodeDetector || !hasMediaDevices) {
+    if (!hasMediaDevices) {
       setCameraSupported(false);
+      return;
+    }
+
+    // Browsers without BarcodeDetector (iPhone Safari, Firefox): decode the live video with ZXing
+    if (!hasBarcodeDetector) {
+      setCameraSupported(true);
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 60)); // let the <video> mount
+        if (!videoRef.current) return;
+        const { BrowserMultiFormatReader } = await import('@zxing/browser');
+        const reader = new BrowserMultiFormatReader();
+        zxingControlsRef.current = await reader.decodeFromConstraints(
+          { video: { facingMode: 'environment' } },
+          videoRef.current,
+          (result) => {
+            if (!result) return;
+            const code = result.getText();
+            stopCameraStream();
+            setCameraModalOpen(false);
+            setLiveBarcodeOrQuery(code);
+            executeOpenFoodFactsLookup(code);
+          }
+        );
+      } catch {
+        setCameraSupported(false);
+      }
       return;
     }
 
@@ -1090,6 +1141,41 @@ export default function KiloRadarApp({
       }, 450);
     } catch {
       setCameraSupported(false);
+    }
+  };
+
+  // "Take a photo of the barcode": works everywhere (opens the phone camera app)
+  const handleBarcodePhoto = async (file: File | undefined) => {
+    if (!file) return;
+    setScanPhotoError(false);
+    try {
+      let code: string | null = null;
+      if (typeof window !== 'undefined' && 'BarcodeDetector' in window) {
+        // @ts-expect-error BarcodeDetector is experimental in TypeScript DOM types
+        const detector = new window.BarcodeDetector({ formats: ['ean_13', 'ean_8', 'upc_a', 'upc_e'] });
+        const bitmap = await createImageBitmap(file);
+        const found = await detector.detect(bitmap);
+        if (found && found[0]?.rawValue) code = String(found[0].rawValue);
+      }
+      if (!code) {
+        const { BrowserMultiFormatReader } = await import('@zxing/browser');
+        const url = URL.createObjectURL(file);
+        try {
+          const result = await new BrowserMultiFormatReader().decodeFromImageUrl(url);
+          code = result.getText();
+        } finally {
+          URL.revokeObjectURL(url);
+        }
+      }
+      if (code) {
+        handleCloseCameraScanner();
+        setLiveBarcodeOrQuery(code);
+        executeOpenFoodFactsLookup(code);
+      } else {
+        setScanPhotoError(true);
+      }
+    } catch {
+      setScanPhotoError(true);
     }
   };
 
@@ -1220,17 +1306,18 @@ export default function KiloRadarApp({
 
         {/* Nightly Automatic Sync & Community Report Bar */}
         <div className="relative z-30 bg-background/90 border-b border-border/80 px-4 py-2 text-[11px] text-muted-foreground">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-            <div className="flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-savings animate-pulse" />
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+            <div className="flex min-w-0 items-center gap-2">
+              <span className="inline-block w-2 h-2 shrink-0 rounded-full bg-savings animate-pulse" />
               <Clock className="w-3.5 h-3.5 text-savings shrink-0" />
-              <span>{rtUi.nightlySyncStatus(lastSyncedDate)}</span>
+              <span className="hidden sm:inline">{rtUi.nightlySyncStatus(lastSyncedDate)}</span>
+              <span className="tabular truncate sm:hidden">{lastSyncedDate}</span>
             </div>
             <button
               type="button"
               onClick={() => setReportModalOpen(true)}
               data-testid="open-report-modal-btn"
-              className="px-2.5 py-1 rounded-lg bg-shrink/15 hover:bg-shrink/25 border border-shrink/35 text-shrink font-semibold flex items-center gap-1.5 transition cursor-pointer"
+              className="shrink-0 px-3 py-1.5 sm:px-2.5 sm:py-1 rounded-lg bg-shrink/15 hover:bg-shrink/25 border border-shrink/35 text-shrink font-semibold flex items-center gap-1.5 transition cursor-pointer"
             >
               <Flag className="w-3 h-3 text-shrink" />
               <span>{rtUi.reportShrunkBtn}</span>
@@ -1310,10 +1397,19 @@ export default function KiloRadarApp({
                 </h1>
                 <p className="mt-6 max-w-md text-lg text-muted-foreground sm:text-xl">{HERO_COPY[countryCode].sub}</p>
                 <div className="mt-10 flex flex-wrap gap-3">
-                  <a href="#calculator" className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5">
+                  <button
+                    type="button"
+                    onClick={handleOpenCameraScanner}
+                    data-testid="hero-scan-btn"
+                    className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-lg font-semibold sm:w-auto text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5"
+                  >
+                    <Camera className="h-5 w-5" />
+                    {SCAN_UI[countryCode][0]}
+                  </button>
+                  <a href="#calculator" className="w-full rounded-full border border-border bg-card px-8 py-4 text-center text-lg font-semibold text-foreground transition-colors hover:bg-secondary sm:w-auto">
                     {dict.simulatorTitle}
                   </a>
-                  <a href={catalogItems.length > 0 ? '#catalog' : '#calculator'} className="rounded-full border border-border bg-card px-8 py-4 text-lg font-semibold text-foreground transition-colors hover:bg-secondary">
+                  <a href={catalogItems.length > 0 ? '#catalog' : '#calculator'} className="w-full rounded-full border border-border bg-card px-8 py-4 text-center text-lg font-semibold sm:w-auto text-foreground transition-colors hover:bg-secondary">
                     {NAV_LABELS[countryCode][3]}
                   </a>
                 </div>
@@ -1366,9 +1462,9 @@ export default function KiloRadarApp({
                       type="button"
                       onClick={handleOpenCameraScanner}
                       data-testid="scan-camera-btn"
-                      className="px-2.5 py-1 rounded-lg bg-card hover:bg-secondary border border-savings/40 text-savings text-[11px] font-semibold flex items-center gap-1.5 transition cursor-pointer"
+                      className="px-4 py-2.5 rounded-lg bg-savings text-primary-foreground text-sm font-bold flex items-center gap-2 transition cursor-pointer hover:opacity-90"
                     >
-                      <Camera className="w-3.5 h-3.5 text-savings" />
+                      <Camera className="w-4 h-4" />
                       <span>{rtUi.scanWithCameraBtn}</span>
                     </button>
                   </div>
@@ -1753,10 +1849,24 @@ export default function KiloRadarApp({
         </main>
       </div>
 
+      {/* Floating scan button on phones: the camera is one tap away from anywhere on the page */}
+      {!cameraModalOpen && !reportModalOpen && (
+        <button
+          type="button"
+          onClick={handleOpenCameraScanner}
+          aria-label={SCAN_UI[countryCode][0]}
+          data-testid="fab-scan-btn"
+          className="fixed right-4 z-40 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-savings text-primary-foreground shadow-glow transition-transform active:scale-95 md:hidden"
+          style={{ bottom: 'calc(1rem + env(safe-area-inset-bottom))' }}
+        >
+          <Camera className="h-6 w-6" />
+        </button>
+      )}
+
       {/* CAMERA BARCODE SCANNER MODAL */}
       {cameraModalOpen && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="w-full max-w-md rounded-2xl bg-card border border-border p-6 shadow-card space-y-4">
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-end justify-center p-3 sm:items-center sm:p-4">
+          <div className="max-h-[92dvh] w-full max-w-md space-y-4 overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-card sm:p-6">
             <div className="flex items-center justify-between">
               <h3 className="text-base font-bold text-foreground flex items-center gap-2">
                 <Camera className="w-5 h-5 text-savings" />
@@ -1780,6 +1890,27 @@ export default function KiloRadarApp({
               <div className="p-3.5 rounded-xl bg-background border border-border text-xs text-muted-foreground">
                 {rtUi.cameraFallbackNotice}
               </div>
+            )}
+
+            <label className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-savings/40 bg-background px-4 py-3 text-sm font-semibold text-savings transition hover:bg-secondary">
+              <Camera className="h-4 w-4" />
+              <span>{SCAN_UI[countryCode][1]}</span>
+              <input
+                type="file"
+                accept="image/*"
+                capture="environment"
+                className="sr-only"
+                data-testid="scan-photo-input"
+                onChange={(e) => {
+                  handleBarcodePhoto(e.target.files?.[0]);
+                  e.target.value = '';
+                }}
+              />
+            </label>
+            {scanPhotoError && (
+              <p className="text-xs text-shrink" role="alert">
+                {SCAN_UI[countryCode][2]}
+              </p>
             )}
 
             <div className="flex gap-2">

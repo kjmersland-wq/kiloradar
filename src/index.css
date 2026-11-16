@@ -68,11 +68,24 @@
   * {
     border-color: var(--color-border);
   }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* iOS Safari zooms the page when a field with text under 16px gets focus */
+  @media (max-width: 767px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px !important;
+    }
   }
   h1,
   h2,
