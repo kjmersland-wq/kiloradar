@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
-import { Package, Search, ShieldCheck, TrendingDown } from 'lucide-react';
+import { Package, Search, ShieldCheck, Tag, TrendingDown } from 'lucide-react';
 import type { CountryRouteCode } from '../locales';
+import { UserPriceBlock, userPriceStrings, type UserPrice } from './UserPrices';
 
 /** One real product discovered by the nightly pipeline (Open Food Facts). Prices are not tracked yet. */
 export interface CatalogItem {
@@ -249,9 +250,15 @@ const PAGE_SIZE = 12;
 export default function CatalogSection({
   items,
   countryCode,
+  userPrices = {},
+  onAddPrice,
+  onPriceVoted,
 }: {
   items: CatalogItem[];
   countryCode: CountryRouteCode;
+  userPrices?: Record<string, UserPrice>;
+  onAddPrice?: (barcode: string) => void;
+  onPriceVoted?: (id: number, counts: { confirmations: number; reports: number }) => void;
 }) {
   const ui = CATALOG_UI[countryCode] ?? EN;
   const money = (value: number, currency: string) =>
@@ -289,6 +296,16 @@ export default function CatalogSection({
         </p>
         <h2 className="mt-2 text-3xl font-bold text-foreground sm:text-4xl">{ui.title}</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">{ui.subtitle}</p>
+        {onAddPrice && (
+          <button
+            type="button"
+            onClick={() => onAddPrice('')}
+            data-testid="add-price-btn"
+            className="mt-4 inline-flex cursor-pointer items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5"
+          >
+            <Tag className="size-4" /> {userPriceStrings(countryCode).add}
+          </button>
+        )}
       </div>
 
       <div className="flex items-start gap-3 rounded-3xl border border-warn/30 bg-warn/10 p-5">
@@ -384,7 +401,7 @@ export default function CatalogSection({
                         </span>
                       )}
                     </span>
-                  ) : (
+                  ) : userPrices[item.barcode] ? null : (
                     <span
                       title={ui.priceSoonHint}
                       className="rounded-full bg-warn/15 px-3 py-1 text-xs font-semibold text-warn"
@@ -405,6 +422,23 @@ export default function CatalogSection({
                   <p className="mt-3 inline-flex items-center gap-1 rounded-full bg-shrink/15 px-3 py-1 text-xs font-semibold text-shrink">
                     <TrendingDown className="size-3.5" /> {ui.shrunk}
                   </p>
+                )}
+                {userPrices[item.barcode] && onPriceVoted && (
+                  <UserPriceBlock
+                    price={userPrices[item.barcode]}
+                    countryCode={countryCode}
+                    onVoted={onPriceVoted}
+                  />
+                )}
+                {onAddPrice && (
+                  <button
+                    type="button"
+                    onClick={() => onAddPrice(item.barcode)}
+                    data-testid={`add-price-${item.barcode}`}
+                    className="mt-3 inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary"
+                  >
+                    <Tag className="size-3.5 text-savings" /> {userPriceStrings(countryCode).add}
+                  </button>
                 )}
               </div>
               <div className="mt-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-border pt-3 text-[11px] text-muted-foreground">

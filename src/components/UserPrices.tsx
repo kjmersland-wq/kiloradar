@@ -1,0 +1,382 @@
+import { useCallback, useEffect, useState } from 'react';
+import { Camera, Check, Flag, Loader2, Tag, Users, X } from 'lucide-react';
+import type { CountryRouteCode } from '../locales';
+
+/** A price entered by a visitor. Always shown as "user submitted" with store and date. */
+export interface UserPrice {
+  id: number;
+  ean: string;
+  price: number;
+  currency: string;
+  store: string;
+  created_at: string;
+  confirmations: number;
+  reports: number;
+}
+
+interface Strings {
+  add: string;
+  title: string;
+  intro: string;
+  barcode: string;
+  scan: string;
+  price: string;
+  store: string;
+  storePlaceholder: string;
+  submit: string;
+  saved: string;
+  savedNotInCatalog: string;
+  invalid: string;
+  unusual: string;
+  rateLimited: string;
+  error: string;
+  badge: string;
+  confirm: string;
+  report: string;
+  thanks: string;
+  ownPrice: string;
+  close: string;
+}
+
+const STR: Record<CountryRouteCode, Strings> = {
+  no: {
+    add: 'Legg inn pris', title: 'Legg inn en pris', intro: 'Sett inn det du så i butikken. Prisen vises med en gang for alle, merket som brukerinnsendt.',
+    barcode: 'Strekkode', scan: 'Skann', price: 'Pris', store: 'Butikk', storePlaceholder: 'f.eks. Rema 1000, Kiwi, Coop Extra',
+    submit: 'Lagre pris', saved: 'Takk! Prisen er lagret og vises nå på produktkortet.',
+    savedNotInCatalog: 'Takk! Prisen er lagret. Den vises på produktkortet så snart varen er i katalogen.',
+    invalid: 'Sjekk strekkode (8–14 siffer), pris og butikk.', unusual: 'Prisen ser uvanlig ut sammenlignet med målt pris. Sjekk at du har skrevet riktig.',
+    rateLimited: 'Du har lagt inn mange priser nå. Prøv igjen om en stund.', error: 'Noe gikk galt. Prøv igjen.',
+    badge: 'brukerinnsendt', confirm: 'Stemmer', report: 'Feil pris', thanks: 'Takk for tilbakemeldingen', ownPrice: 'Du kan ikke bekrefte din egen pris', close: 'Lukk',
+  },
+  se: {
+    add: 'Lägg till pris', title: 'Lägg till ett pris', intro: 'Skriv in det du såg i butiken. Priset visas direkt för alla, märkt som användarinskickat.',
+    barcode: 'Streckkod', scan: 'Skanna', price: 'Pris', store: 'Butik', storePlaceholder: 't.ex. ICA, Willys, Coop',
+    submit: 'Spara pris', saved: 'Tack! Priset är sparat och visas nu på produktkortet.',
+    savedNotInCatalog: 'Tack! Priset är sparat. Det visas på produktkortet så fort varan finns i katalogen.',
+    invalid: 'Kontrollera streckkod (8–14 siffror), pris och butik.', unusual: 'Priset ser ovanligt ut jämfört med uppmätt pris. Kontrollera att du skrivit rätt.',
+    rateLimited: 'Du har lagt in många priser nu. Försök igen om en stund.', error: 'Något gick fel. Försök igen.',
+    badge: 'användarinskickat', confirm: 'Stämmer', report: 'Fel pris', thanks: 'Tack för återkopplingen', ownPrice: 'Du kan inte bekräfta ditt eget pris', close: 'Stäng',
+  },
+  dk: {
+    add: 'Indsend pris', title: 'Indsend en pris', intro: 'Skriv det, du så i butikken. Prisen vises med det samme for alle, mærket som brugerindsendt.',
+    barcode: 'Stregkode', scan: 'Scan', price: 'Pris', store: 'Butik', storePlaceholder: 'fx Netto, Rema 1000, Føtex',
+    submit: 'Gem pris', saved: 'Tak! Prisen er gemt og vises nu på produktkortet.',
+    savedNotInCatalog: 'Tak! Prisen er gemt. Den vises på produktkortet, så snart varen er i kataloget.',
+    invalid: 'Tjek stregkode (8–14 cifre), pris og butik.', unusual: 'Prisen ser usædvanlig ud sammenlignet med målt pris. Tjek, at du har skrevet rigtigt.',
+    rateLimited: 'Du har indsendt mange priser. Prøv igen om lidt.', error: 'Noget gik galt. Prøv igen.',
+    badge: 'brugerindsendt', confirm: 'Passer', report: 'Forkert pris', thanks: 'Tak for din tilbagemelding', ownPrice: 'Du kan ikke bekræfte din egen pris', close: 'Luk',
+  },
+  pl: {
+    add: 'Dodaj cenę', title: 'Dodaj cenę', intro: 'Wpisz to, co widziałeś w sklepie. Cena pojawi się od razu dla wszystkich, oznaczona jako dodana przez użytkownika.',
+    barcode: 'Kod kreskowy', scan: 'Skanuj', price: 'Cena', store: 'Sklep', storePlaceholder: 'np. Biedronka, Lidl, Żabka',
+    submit: 'Zapisz cenę', saved: 'Dziękujemy! Cena została zapisana i widać ją na karcie produktu.',
+    savedNotInCatalog: 'Dziękujemy! Cena zapisana. Pojawi się na karcie, gdy produkt trafi do katalogu.',
+    invalid: 'Sprawdź kod (8–14 cyfr), cenę i sklep.', unusual: 'Cena wygląda nietypowo w porównaniu ze zmierzoną. Sprawdź, czy wpisano poprawnie.',
+    rateLimited: 'Dodano już wiele cen. Spróbuj ponownie za jakiś czas.', error: 'Coś poszło nie tak. Spróbuj ponownie.',
+    badge: 'dodane przez użytkownika', confirm: 'Zgadza się', report: 'Błędna cena', thanks: 'Dziękujemy za opinię', ownPrice: 'Nie możesz potwierdzić własnej ceny', close: 'Zamknij',
+  },
+  de: {
+    add: 'Preis melden', title: 'Preis melden', intro: 'Trag ein, was du im Laden gesehen hast. Der Preis erscheint sofort für alle, gekennzeichnet als von Nutzern gemeldet.',
+    barcode: 'Barcode', scan: 'Scannen', price: 'Preis', store: 'Geschäft', storePlaceholder: 'z. B. REWE, Edeka, Lidl',
+    submit: 'Preis speichern', saved: 'Danke! Der Preis ist gespeichert und erscheint jetzt auf der Produktkarte.',
+    savedNotInCatalog: 'Danke! Der Preis ist gespeichert. Er erscheint auf der Karte, sobald das Produkt im Katalog ist.',
+    invalid: 'Bitte Barcode (8–14 Ziffern), Preis und Geschäft prüfen.', unusual: 'Der Preis weicht stark vom gemessenen Preis ab. Bitte prüfen, ob er stimmt.',
+    rateLimited: 'Du hast schon viele Preise gemeldet. Bitte später erneut versuchen.', error: 'Etwas ist schiefgelaufen. Bitte erneut versuchen.',
+    badge: 'von Nutzern gemeldet', confirm: 'Stimmt', report: 'Falscher Preis', thanks: 'Danke für die Rückmeldung', ownPrice: 'Den eigenen Preis kannst du nicht bestätigen', close: 'Schließen',
+  },
+  fr: {
+    add: 'Ajouter un prix', title: 'Ajouter un prix', intro: 'Saisissez ce que vous avez vu en magasin. Le prix s’affiche aussitôt pour tous, signalé comme proposé par un utilisateur.',
+    barcode: 'Code-barres', scan: 'Scanner', price: 'Prix', store: 'Magasin', storePlaceholder: 'ex. Carrefour, Leclerc, Lidl',
+    submit: 'Enregistrer le prix', saved: 'Merci ! Le prix est enregistré et s’affiche sur la fiche produit.',
+    savedNotInCatalog: 'Merci ! Le prix est enregistré. Il s’affichera dès que le produit sera dans le catalogue.',
+    invalid: 'Vérifiez le code-barres (8 à 14 chiffres), le prix et le magasin.', unusual: 'Ce prix est inhabituel par rapport au prix relevé. Vérifiez votre saisie.',
+    rateLimited: 'Vous avez ajouté beaucoup de prix. Réessayez plus tard.', error: 'Une erreur est survenue. Réessayez.',
+    badge: 'proposé par un utilisateur', confirm: 'Exact', report: 'Prix faux', thanks: 'Merci pour votre retour', ownPrice: 'Vous ne pouvez pas confirmer votre propre prix', close: 'Fermer',
+  },
+  es: {
+    add: 'Añadir precio', title: 'Añadir un precio', intro: 'Escribe lo que viste en la tienda. El precio se muestra al instante para todos, marcado como enviado por un usuario.',
+    barcode: 'Código de barras', scan: 'Escanear', price: 'Precio', store: 'Tienda', storePlaceholder: 'p. ej. Mercadona, Carrefour, Lidl',
+    submit: 'Guardar precio', saved: '¡Gracias! El precio está guardado y ya aparece en la ficha del producto.',
+    savedNotInCatalog: '¡Gracias! Precio guardado. Aparecerá en la ficha en cuanto el producto esté en el catálogo.',
+    invalid: 'Revisa el código (8–14 dígitos), el precio y la tienda.', unusual: 'El precio es muy distinto del precio medido. Comprueba que esté bien escrito.',
+    rateLimited: 'Has añadido muchos precios. Inténtalo más tarde.', error: 'Algo salió mal. Inténtalo de nuevo.',
+    badge: 'enviado por un usuario', confirm: 'Correcto', report: 'Precio erróneo', thanks: 'Gracias por tu aviso', ownPrice: 'No puedes confirmar tu propio precio', close: 'Cerrar',
+  },
+  en: {
+    add: 'Add a price', title: 'Add a price', intro: 'Enter what you saw in the shop. The price shows up for everyone straight away, labelled as user submitted.',
+    barcode: 'Barcode', scan: 'Scan', price: 'Price', store: 'Store', storePlaceholder: 'e.g. Tesco, Aldi, Walmart',
+    submit: 'Save price', saved: 'Thank you! The price is saved and now shows on the product card.',
+    savedNotInCatalog: 'Thank you! The price is saved. It will show on the product card once the item is in the catalogue.',
+    invalid: 'Check the barcode (8–14 digits), price and store.', unusual: 'This price looks unusual compared with the measured price. Please check it.',
+    rateLimited: 'You have added many prices. Please try again later.', error: 'Something went wrong. Please try again.',
+    badge: 'user submitted', confirm: 'Correct', report: 'Wrong price', thanks: 'Thanks for the feedback', ownPrice: 'You cannot confirm your own price', close: 'Close',
+  },
+  us: {} as Strings,
+  uk: {} as Strings,
+};
+STR.us = STR.en;
+STR.uk = STR.en;
+
+const CURRENCY: Record<CountryRouteCode, string> = {
+  en: 'EUR', no: 'NOK', se: 'SEK', dk: 'DKK', pl: 'PLN', de: 'EUR', fr: 'EUR', es: 'EUR', us: 'USD', uk: 'GBP',
+};
+const LOCALE: Record<CountryRouteCode, string> = {
+  en: 'en-IE', no: 'nb-NO', se: 'sv-SE', dk: 'da-DK', pl: 'pl-PL', de: 'de-DE', fr: 'fr-FR', es: 'es-ES', us: 'en-US', uk: 'en-GB',
+};
+
+export const userPriceStrings = (code: CountryRouteCode): Strings => STR[code] ?? STR.en;
+
+/** Loads user prices for a market and keeps them in sync after submit/vote. */
+export function useUserPrices(market: string) {
+  const [byEan, setByEan] = useState<Record<string, UserPrice>>({});
+
+  useEffect(() => {
+    let active = true;
+    setByEan({});
+    fetch(`/api/prices?market=${market}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!active || !d || !Array.isArray(d.prices)) return;
+        const map: Record<string, UserPrice> = {};
+        for (const p of d.prices as UserPrice[]) map[p.ean] = p;
+        setByEan(map);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [market]);
+
+  const upsert = useCallback((p: UserPrice) => setByEan((prev) => ({ ...prev, [p.ean]: p })), []);
+  const patch = useCallback(
+    (id: number, counts: { confirmations: number; reports: number }) =>
+      setByEan((prev) => {
+        const next = { ...prev };
+        for (const k of Object.keys(next)) if (next[k].id === id) next[k] = { ...next[k], ...counts };
+        return next;
+      }),
+    []
+  );
+  return { byEan, upsert, patch };
+}
+
+export function PriceSubmitModal({
+  open,
+  onClose,
+  countryCode,
+  market,
+  barcode,
+  setBarcode,
+  onScan,
+  onSaved,
+}: {
+  open: boolean;
+  onClose: () => void;
+  countryCode: CountryRouteCode;
+  market: string;
+  barcode: string;
+  setBarcode: (v: string) => void;
+  onScan: () => void;
+  onSaved: (p: UserPrice) => void;
+}) {
+  const t = userPriceStrings(countryCode);
+  const [price, setPrice] = useState('');
+  const [store, setStore] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
+
+  useEffect(() => {
+    if (open) setMessage(null);
+  }, [open]);
+
+  if (!open) return null;
+
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setBusy(true);
+    setMessage(null);
+    try {
+      const res = await fetch('/api/price', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ market, barcode: barcode.trim(), price: price.trim(), store: store.trim() }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.price) {
+        onSaved(data.price as UserPrice);
+        setMessage({ kind: 'ok', text: data.inCatalog ? t.saved : t.savedNotInCatalog });
+        setPrice('');
+      } else if (res.status === 429) setMessage({ kind: 'err', text: t.rateLimited });
+      else if (res.status === 422) setMessage({ kind: 'err', text: t.unusual });
+      else if (res.status === 400) setMessage({ kind: 'err', text: t.invalid });
+      else setMessage({ kind: 'err', text: t.error });
+    } catch {
+      setMessage({ kind: 'err', text: t.error });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 p-3 backdrop-blur-sm sm:items-center sm:p-4" role="dialog" aria-modal="true">
+      <form
+        onSubmit={submit}
+        data-testid="price-form"
+        className="max-h-[92dvh] w-full max-w-md space-y-4 overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-card sm:p-6"
+      >
+        <div className="flex items-start justify-between gap-3">
+          <h3 className="flex items-center gap-2 text-lg font-bold text-foreground">
+            <Tag className="h-5 w-5 text-savings" /> {t.title}
+          </h3>
+          <button type="button" onClick={onClose} aria-label={t.close} className="cursor-pointer rounded-lg bg-secondary p-1.5 text-muted-foreground hover:text-foreground">
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+        <p className="text-sm text-muted-foreground">{t.intro}</p>
+
+        <label className="block text-sm font-medium text-foreground">
+          {t.barcode}
+          <div className="mt-1 flex gap-2">
+            <input
+              value={barcode}
+              onChange={(e) => setBarcode(e.target.value.replace(/[^\d]/g, ''))}
+              inputMode="numeric"
+              autoComplete="off"
+              required
+              data-testid="price-barcode"
+              className="min-w-0 flex-1 rounded-lg border border-border bg-background px-3 py-2.5 tabular text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            />
+            <button type="button" onClick={onScan} className="flex shrink-0 cursor-pointer items-center gap-1.5 rounded-lg border border-savings/40 bg-background px-3 text-sm font-semibold text-savings hover:bg-secondary">
+              <Camera className="h-4 w-4" /> {t.scan}
+            </button>
+          </div>
+        </label>
+
+        <div className="grid grid-cols-2 gap-3">
+          <label className="block text-sm font-medium text-foreground">
+            {t.price} ({CURRENCY[countryCode]})
+            <input
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+              inputMode="decimal"
+              required
+              data-testid="price-value"
+              className="mt-1 w-full rounded-lg border border-border bg-background px-3 py-2.5 tabular text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            />
+          </label>
+          <label className="block text-sm font-medium text-foreground">
+            {t.store}
+            <input
+              value={store}
+              onChange={(e) => setStore(e.target.value)}
+              maxLength={40}
+              required
+              placeholder={t.storePlaceholder}
+              data-testid="price-store"
+              className="mt-1 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            />
+          </label>
+        </div>
+
+        {message && (
+          <p role="status" className={`rounded-lg p-3 text-sm ${message.kind === 'ok' ? 'bg-savings/15 text-savings' : 'bg-shrink/15 text-shrink'}`}>
+            {message.text}
+          </p>
+        )}
+
+        <button
+          type="submit"
+          disabled={busy}
+          className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-primary-foreground disabled:opacity-50"
+        >
+          {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Check className="h-4 w-4" />} {t.submit}
+        </button>
+      </form>
+    </div>
+  );
+}
+
+const VOTED_KEY = 'kiloradar-voted-prices';
+const readVoted = (): number[] => {
+  try {
+    return JSON.parse(localStorage.getItem(VOTED_KEY) || '[]');
+  } catch {
+    return [];
+  }
+};
+
+/** The block shown on a product card: price, "user submitted" label, store, date and confirm/report. */
+export function UserPriceBlock({
+  price,
+  countryCode,
+  onVoted,
+}: {
+  price: UserPrice;
+  countryCode: CountryRouteCode;
+  onVoted: (id: number, counts: { confirmations: number; reports: number }) => void;
+}) {
+  const t = userPriceStrings(countryCode);
+  const [note, setNote] = useState<string | null>(null);
+  const [voted, setVoted] = useState<boolean>(() => readVoted().includes(price.id));
+  const money = new Intl.NumberFormat(LOCALE[countryCode], { style: 'currency', currency: price.currency }).format(price.price);
+
+  const vote = async (kind: 'confirm' | 'report') => {
+    try {
+      const res = await fetch('/api/price/vote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: price.id, kind }),
+      });
+      const d = await res.json().catch(() => ({}));
+      if (res.status === 409) {
+        setNote(t.ownPrice);
+        return;
+      }
+      if (res.ok) {
+        onVoted(price.id, { confirmations: d.confirmations ?? price.confirmations, reports: d.reports ?? price.reports });
+        setVoted(true);
+        setNote(t.thanks);
+        try {
+          localStorage.setItem(VOTED_KEY, JSON.stringify([...readVoted(), price.id].slice(-200)));
+        } catch {
+          // storage unavailable: the server still allows one vote per person
+        }
+      } else setNote(t.error);
+    } catch {
+      setNote(t.error);
+    }
+  };
+
+  return (
+    <div className="mt-3 rounded-2xl border border-savings/30 bg-savings/5 p-3" data-testid="user-price">
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="font-display text-xl font-extrabold tabular text-foreground">{money}</span>
+        <span className="inline-flex items-center gap-1 rounded-full bg-savings/15 px-2.5 py-0.5 text-[11px] font-semibold text-savings">
+          <Users className="h-3 w-3" /> {t.badge}
+        </span>
+      </div>
+      <p className="mt-1 text-xs text-muted-foreground">
+        {price.store} · {price.created_at.slice(0, 10)}
+      </p>
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          disabled={voted}
+          onClick={() => vote('confirm')}
+          className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary disabled:cursor-default disabled:opacity-50"
+        >
+          <Check className="h-3.5 w-3.5 text-savings" /> {t.confirm} · {price.confirmations}
+        </button>
+        <button
+          type="button"
+          disabled={voted}
+          onClick={() => vote('report')}
+          className="inline-flex cursor-pointer items-center gap-1 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary disabled:cursor-default disabled:opacity-50"
+        >
+          <Flag className="h-3.5 w-3.5 text-shrink" /> {t.report} · {price.reports}
+        </button>
+      </div>
+      {note && <p className="mt-2 text-xs text-muted-foreground">{note}</p>}
+    </div>
+  );
+}

@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import CatalogSection, { type CatalogItem } from './CatalogSection';
 import DocumentedCases from './DocumentedCases';
+import { PriceSubmitModal, useUserPrices } from './UserPrices';
 import StoreComparison,{ type StoreComparisonData } from './StoreComparison';
 import {
   ProductItem,
@@ -899,6 +900,11 @@ export default function KiloRadarApp({
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
   const zxingControlsRef = useRef<{ stop: () => void } | null>(null);
+  const scanTargetRef = useRef<'lookup' | 'price'>('lookup');
+  const [priceModalOpen, setPriceModalOpen] = useState(false);
+  const [priceBarcode, setPriceBarcode] = useState('');
+  const userPriceMarket = countryCode === 'en' ? 'global' : countryCode;
+  const userPrices = useUserPrices(userPriceMarket);
   const [scanPhotoError, setScanPhotoError] = useState(false);
 
   // "Report Shrunk Item" Modal state
@@ -1044,6 +1050,23 @@ export default function KiloRadarApp({
     }
   };
 
+  // A scanned code either looks the product up (calculator) or fills the price form
+  const handleScannedCode = (code: string) => {
+    if (scanTargetRef.current === 'price') {
+      scanTargetRef.current = 'lookup';
+      setPriceBarcode(code.replace(/\D/g, ''));
+      setPriceModalOpen(true);
+    } else {
+      setLiveBarcodeOrQuery(code);
+      executeOpenFoodFactsLookup(code);
+    }
+  };
+
+  const openPriceForm = (barcode = '') => {
+    setPriceBarcode(barcode);
+    setPriceModalOpen(true);
+  };
+
   // Start / Stop Native Browser Camera BarcodeDetector
   const stopCameraStream = () => {
     if (zxingControlsRef.current) {
@@ -1093,8 +1116,7 @@ export default function KiloRadarApp({
             const code = result.getText();
             stopCameraStream();
             setCameraModalOpen(false);
-            setLiveBarcodeOrQuery(code);
-            executeOpenFoodFactsLookup(code);
+            handleScannedCode(code);
           }
         );
       } catch {
@@ -1132,8 +1154,7 @@ export default function KiloRadarApp({
             clearInterval(scanInterval);
             stopCameraStream();
             setCameraModalOpen(false);
-            setLiveBarcodeOrQuery(detectedCode);
-            executeOpenFoodFactsLookup(detectedCode);
+            handleScannedCode(detectedCode);
           }
         } catch {
           // Ignore single frame detection errors
@@ -1169,8 +1190,7 @@ export default function KiloRadarApp({
       }
       if (code) {
         handleCloseCameraScanner();
-        setLiveBarcodeOrQuery(code);
-        executeOpenFoodFactsLookup(code);
+        handleScannedCode(code);
       } else {
         setScanPhotoError(true);
       }
@@ -1738,7 +1758,13 @@ export default function KiloRadarApp({
           </section>
 
           {/* VERIFIED CATALOG (real Open Food Facts products, prices coming) */}
-          <CatalogSection items={catalogItems} countryCode={countryCode} />
+          <CatalogSection
+            items={catalogItems}
+            countryCode={countryCode}
+            userPrices={userPrices.byEan}
+            onAddPrice={openPriceForm}
+            onPriceVoted={userPrices.patch}
+          />
           <DocumentedCases countryCode={countryCode} />
 
           {/* SOCIAL SHARE ROW (Copy Link with visual confirmation, X/Twitter, Facebook, WhatsApp, Reddit, LinkedIn) */}
@@ -1849,6 +1875,21 @@ export default function KiloRadarApp({
         </main>
       </div>
 
+      <PriceSubmitModal
+        open={priceModalOpen}
+        onClose={() => setPriceModalOpen(false)}
+        countryCode={countryCode}
+        market={userPriceMarket}
+        barcode={priceBarcode}
+        setBarcode={setPriceBarcode}
+        onScan={() => {
+          scanTargetRef.current = 'price';
+          setPriceModalOpen(false);
+          handleOpenCameraScanner();
+        }}
+        onSaved={userPrices.upsert}
+      />
+
       {/* Floating scan button on phones: the camera is one tap away from anywhere on the page */}
       {!cameraModalOpen && !reportModalOpen && (
         <button
@@ -1874,7 +1915,13 @@ export default function KiloRadarApp({
               </h3>
               <button
                 type="button"
-                onClick={handleCloseCameraScanner}
+                onClick={() => {
+                  const backToPrice = scanTargetRef.current === 'price';
+                  scanTargetRef.current = 'lookup';
+                  handleCloseCameraScanner();
+                  if (backToPrice) setPriceModalOpen(true);
+                }}
+                aria-label="Close"
                 className="p-1.5 rounded-lg bg-secondary text-muted-foreground hover:text-foreground cursor-pointer"
               >
                 <X className="w-4 h-4" />
@@ -1927,8 +1974,7 @@ export default function KiloRadarApp({
                   if (cameraManualEan.trim()) {
                     const code = cameraManualEan.trim();
                     handleCloseCameraScanner();
-                    setLiveBarcodeOrQuery(code);
-                    executeOpenFoodFactsLookup(code);
+                    handleScannedCode(code);
                   }
                 }}
                 className="px-4 py-2 rounded-lg bg-savings hover:bg-savings text-primary-foreground font-bold text-xs cursor-pointer"
