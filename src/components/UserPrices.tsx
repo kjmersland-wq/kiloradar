@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Camera, Check, Flag, Loader2, Tag, Users, X } from 'lucide-react';
 import type { CountryRouteCode } from '../locales';
-import { acceptGtin } from '../utils/barcode';
+import { acceptGtin, decodeBarcodeFromFile } from '../utils/barcode';
+import { readPriceFromFile } from '../utils/priceOcr';
+import { CHAINS, detectStore } from '../utils/storeNames';
 
 /** A price entered by a visitor. Always shown as "user submitted" with store and date. */
 export interface UserPrice {
@@ -321,6 +323,34 @@ export function useUserPrices(market: string) {
   return { byEan, upsert, patch };
 }
 
+/** Texts for the "photo of the shelf label" flow in the form. */
+interface LabelStrings {
+  photoBtn: string;
+  gallery: string;
+  reading: string;
+  readPrefix: string;
+  readCheck: string;
+  notRead: string;
+  fillIn: string;
+  noneRead: string;
+  fromPhoto: string;
+  altPrices: string;
+  pickStore: string;
+  confirmSave: string;
+}
+const LABEL: Record<string, LabelStrings> = {
+  no: { photoBtn: 'Ta bilde av hyllekantetiketten', gallery: 'eller velg bilde fra galleriet', reading: 'Leser etiketten (strekkode, pris og butikk) …', readPrefix: 'Lest fra bildet', readCheck: 'Sjekk at alt stemmer, og rett det som er feil.', notRead: 'Kunne ikke leses', fillIn: 'Fyll inn selv.', noneRead: 'Vi klarte ikke å lese etiketten. Prøv igjen nærmere, rett foran og uten refleks, eller fyll inn selv.', fromPhoto: 'lest fra bildet', altPrices: 'Mulige priser', pickStore: 'Velg butikk', confirmSave: 'Bekreft og lagre pris' },
+  se: { photoBtn: 'Ta foto av hyllkantsetiketten', gallery: 'eller välj bild från galleriet', reading: 'Läser etiketten (streckkod, pris och butik) …', readPrefix: 'Läst från bilden', readCheck: 'Kontrollera att allt stämmer och rätta det som är fel.', notRead: 'Kunde inte läsas', fillIn: 'Fyll i själv.', noneRead: 'Vi kunde inte läsa etiketten. Försök igen närmare, rakt framför och utan reflexer, eller fyll i själv.', fromPhoto: 'läst från bilden', altPrices: 'Möjliga priser', pickStore: 'Välj butik', confirmSave: 'Bekräfta och spara pris' },
+  dk: { photoBtn: 'Tag billede af hyldekantsetiketten', gallery: 'eller vælg billede fra galleriet', reading: 'Læser etiketten (stregkode, pris og butik) …', readPrefix: 'Læst fra billedet', readCheck: 'Tjek at alt passer, og ret det, der er forkert.', notRead: 'Kunne ikke læses', fillIn: 'Udfyld selv.', noneRead: 'Vi kunne ikke læse etiketten. Prøv igen tættere på, lige foran og uden genskin, eller udfyld selv.', fromPhoto: 'læst fra billedet', altPrices: 'Mulige priser', pickStore: 'Vælg butik', confirmSave: 'Bekræft og gem pris' },
+  pl: { photoBtn: 'Zrób zdjęcie etykiety półkowej', gallery: 'albo wybierz zdjęcie z galerii', reading: 'Odczytuję etykietę (kod, cenę i sklep) …', readPrefix: 'Odczytano ze zdjęcia', readCheck: 'Sprawdź, czy wszystko się zgadza, i popraw błędy.', notRead: 'Nie udało się odczytać', fillIn: 'Uzupełnij samodzielnie.', noneRead: 'Nie udało się odczytać etykiety. Spróbuj ponownie bliżej, prosto przed etykietą i bez odblasków, albo uzupełnij samodzielnie.', fromPhoto: 'ze zdjęcia', altPrices: 'Możliwe ceny', pickStore: 'Wybierz sklep', confirmSave: 'Potwierdź i zapisz cenę' },
+  de: { photoBtn: 'Foto vom Regaletikett machen', gallery: 'oder Foto aus der Galerie wählen', reading: 'Etikett wird gelesen (Barcode, Preis und Geschäft) …', readPrefix: 'Aus dem Foto gelesen', readCheck: 'Bitte prüfen, ob alles stimmt, und Fehler korrigieren.', notRead: 'Nicht lesbar', fillIn: 'Bitte selbst eintragen.', noneRead: 'Das Etikett konnte nicht gelesen werden. Bitte näher, gerade und ohne Spiegelung erneut versuchen oder selbst eintragen.', fromPhoto: 'aus dem Foto', altPrices: 'Mögliche Preise', pickStore: 'Geschäft wählen', confirmSave: 'Bestätigen und Preis speichern' },
+  fr: { photoBtn: 'Photographier l’étiquette de rayon', gallery: 'ou choisir une photo dans la galerie', reading: 'Lecture de l’étiquette (code-barres, prix et magasin) …', readPrefix: 'Lu sur la photo', readCheck: 'Vérifiez que tout est exact et corrigez ce qui ne l’est pas.', notRead: 'Illisible', fillIn: 'À saisir vous-même.', noneRead: 'L’étiquette n’a pas pu être lue. Réessayez de plus près, bien en face et sans reflets, ou saisissez vous-même.', fromPhoto: 'lu sur la photo', altPrices: 'Prix possibles', pickStore: 'Choisir le magasin', confirmSave: 'Confirmer et enregistrer le prix' },
+  es: { photoBtn: 'Hacer foto de la etiqueta del estante', gallery: 'o elegir una foto de la galería', reading: 'Leyendo la etiqueta (código, precio y tienda) …', readPrefix: 'Leído de la foto', readCheck: 'Comprueba que todo es correcto y corrige lo que no.', notRead: 'No se pudo leer', fillIn: 'Rellénalo tú.', noneRead: 'No se pudo leer la etiqueta. Inténtalo más cerca, de frente y sin reflejos, o rellénalo tú.', fromPhoto: 'leído de la foto', altPrices: 'Precios posibles', pickStore: 'Elegir tienda', confirmSave: 'Confirmar y guardar precio' },
+  en: { photoBtn: 'Take a photo of the shelf-edge label', gallery: 'or pick a photo from your gallery', reading: 'Reading the label (barcode, price and store) …', readPrefix: 'Read from the photo', readCheck: 'Check that everything is right and correct anything that is not.', notRead: 'Could not be read', fillIn: 'Please fill in yourself.', noneRead: 'We could not read the label. Try again closer, straight on and without glare, or fill it in yourself.', fromPhoto: 'read from photo', altPrices: 'Possible prices', pickStore: 'Pick a store', confirmSave: 'Confirm and save price' },
+};
+const labelStrings = (code: CountryRouteCode): LabelStrings => LABEL[code] ?? LABEL.en;
+const formatPrice = (v: number): string => (Number.isInteger(v) ? `${v},00` : String(v.toFixed(2)).replace('.', ','));
+
 export function PriceSubmitModal({
   open,
   onClose,
@@ -331,7 +361,11 @@ export function PriceSubmitModal({
   onScan,
   onSaved,
   productName,
+  initialPhoto,
+  onInitialPhotoUsed,
 }: {
+  initialPhoto?: File | null;
+  onInitialPhotoUsed?: () => void;
   productName?: string | null;
   open: boolean;
   onClose: () => void;
@@ -358,11 +392,85 @@ export function PriceSubmitModal({
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
 
+  // --- photo of the shelf-edge label: barcode (ZXing), price (OCR) and store name (OCR text) ---------
+  const L = labelStrings(countryCode);
+  const [reading, setReading] = useState(false);
+  const [photoUrl, setPhotoUrl] = useState<string | null>(null);
+  const [readNote, setReadNote] = useState<string | null>(null);
+  const [fromPhoto, setFromPhoto] = useState({ barcode: false, price: false, store: false });
+  const [altPrices, setAltPrices] = useState<Array<{ value: number; whole: boolean }>>([]);
+
+  const processPhoto = useCallback(
+    async (file: File) => {
+      setReading(true);
+      setMessage(null);
+      setReadNote(null);
+      setAltPrices([]);
+      setPhotoUrl((old) => {
+        if (old) URL.revokeObjectURL(old);
+        return URL.createObjectURL(file);
+      });
+      const [bc, ocr] = await Promise.allSettled([decodeBarcodeFromFile(file), readPriceFromFile(file)]);
+      const code = bc.status === 'fulfilled' ? bc.value : null;
+      const read = ocr.status === 'fulfilled' ? ocr.value : null;
+      const storeName = read ? detectStore(read.lines, market) : null;
+      const priceValue = read?.best?.value ?? null;
+
+      // Everything read is only a suggestion in the form below: nothing is saved before the user confirms.
+      if (code) setBarcode(code);
+      if (priceValue !== null) setPrice(formatPrice(priceValue));
+      if (storeName) setStore(storeName);
+      setAltPrices(
+        read
+          ? [read.best, ...read.alternatives]
+              .filter((c): c is NonNullable<typeof c> => !!c && c.value !== priceValue)
+              // a lone whole number (like the "24" of a "24,90" whose small "90" could not be read) is offered as a start only
+              .map((c) => ({ value: c.value, whole: /^\d+$/.test(c.text) }))
+              .filter((c) => !c.whole || c.value < 1000)
+              .slice(0, 3)
+          : []
+      );
+      setFromPhoto({ barcode: !!code, price: priceValue !== null, store: !!storeName });
+
+      const t0 = userPriceStrings(countryCode);
+      const got = [code && t0.barcode, priceValue !== null && t0.price, storeName && t0.store].filter(Boolean) as string[];
+      const missing = [!code && t0.barcode, priceValue === null && t0.price, !storeName && t0.store].filter(Boolean) as string[];
+      setReadNote(
+        got.length === 0
+          ? L.noneRead
+          : missing.length === 0
+            ? `${L.readPrefix}: ${got.join(', ')}. ${L.readCheck}`
+            : `${L.readPrefix}: ${got.join(', ')}. ${L.notRead}: ${missing.join(', ')}. ${L.fillIn} ${L.readCheck}`
+      );
+      setReading(false);
+    },
+    [countryCode, market, setBarcode, L]
+  );
+
+  useEffect(() => {
+    if (open && initialPhoto) {
+      onInitialPhotoUsed?.();
+      void processPhoto(initialPhoto);
+    }
+  }, [open, initialPhoto, onInitialPhotoUsed, processPhoto]);
+
   useEffect(() => {
     if (open) setMessage(null);
-  }, [open]);
+    if (!open && photoUrl) {
+      URL.revokeObjectURL(photoUrl);
+      setPhotoUrl(null);
+      setReadNote(null);
+      setFromPhoto({ barcode: false, price: false, store: false });
+      setAltPrices([]);
+    }
+  }, [open, photoUrl]);
 
   if (!open) return null;
+
+  const badge = (on: boolean) =>
+    on ? (
+      <span className="ml-2 rounded-full bg-savings/15 px-2 py-0.5 text-[10px] font-semibold text-savings">{L.fromPhoto}</span>
+    ) : null;
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -397,6 +505,13 @@ export function PriceSubmitModal({
         onSaved(data.price as UserPrice);
         setMessage({ kind: 'ok', text: data.inCatalog ? t.saved : t.savedNotInCatalog });
         setPrice('');
+        setReadNote(null);
+        setAltPrices([]);
+        setFromPhoto({ barcode: false, price: false, store: false });
+        setPhotoUrl((old) => {
+          if (old) URL.revokeObjectURL(old);
+          return null;
+        });
       } else if (res.status === 429) setMessage({ kind: 'err', text: t.rateLimited });
       else if (res.status === 422) setMessage({ kind: 'err', text: t.unusual });
       else if (res.status === 400) setMessage({ kind: 'err', text: t.invalid });
@@ -424,10 +539,60 @@ export function PriceSubmitModal({
           </button>
         </div>
         <ShelfTagTip countryCode={countryCode} compact />
+
+        <div className="space-y-2">
+          <label
+            className={`flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-base font-semibold text-primary-foreground ${
+              reading ? 'pointer-events-none opacity-60' : 'cursor-pointer'
+            }`}
+          >
+            {reading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Camera className="h-5 w-5" />}
+            <span>{reading ? L.reading : L.photoBtn}</span>
+            <input
+              type="file"
+              accept="image/*"
+              capture="environment"
+              className="sr-only"
+              data-testid="price-photo-input"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                e.target.value = '';
+                if (f) void processPhoto(f);
+              }}
+            />
+          </label>
+          <label className="block cursor-pointer text-center text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground">
+            {L.gallery}
+            <input
+              type="file"
+              accept="image/*"
+              className="sr-only"
+              data-testid="price-gallery-input"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                e.target.value = '';
+                if (f) void processPhoto(f);
+              }}
+            />
+          </label>
+        </div>
+
+        {(photoUrl || readNote) && (
+          <div className="flex gap-3 rounded-2xl border border-border bg-background/60 p-3" data-testid="photo-result">
+            {photoUrl && <img src={photoUrl} alt="" className="h-24 w-24 shrink-0 rounded-lg object-cover" />}
+            {readNote && (
+              <p className="text-sm text-foreground" role="status" data-testid="read-note">
+                {readNote}
+              </p>
+            )}
+          </div>
+        )}
+
         <p className="text-sm text-muted-foreground">{t.intro}</p>
 
         <label className="block text-sm font-medium text-foreground">
           {t.barcode}
+          {badge(fromPhoto.barcode)}
           <div className="mt-1 flex gap-2">
             <input
               value={barcode}
@@ -466,9 +631,13 @@ export function PriceSubmitModal({
         <div className="grid grid-cols-2 gap-3">
           <label className="block text-sm font-medium text-foreground">
             {t.price} ({CURRENCY[countryCode]})
+            {badge(fromPhoto.price)}
             <input
               value={price}
-              onChange={(e) => setPrice(e.target.value)}
+              onChange={(e) => {
+                setPrice(e.target.value);
+                setFromPhoto((f) => ({ ...f, price: false }));
+              }}
               inputMode="decimal"
               required
               data-testid="price-value"
@@ -477,9 +646,13 @@ export function PriceSubmitModal({
           </label>
           <label className="block text-sm font-medium text-foreground">
             {t.store}
+            {badge(fromPhoto.store)}
             <input
               value={store}
-              onChange={(e) => setStore(e.target.value)}
+              onChange={(e) => {
+                setStore(e.target.value);
+                setFromPhoto((f) => ({ ...f, store: false }));
+              }}
               maxLength={40}
               required
               placeholder={t.storePlaceholder}
@@ -487,6 +660,45 @@ export function PriceSubmitModal({
               className="mt-1 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             />
           </label>
+        </div>
+
+        {altPrices.length > 0 && (
+          <div className="-mt-2 flex flex-wrap items-center gap-2 text-xs text-muted-foreground" data-testid="alt-prices">
+            <span>{L.altPrices}:</span>
+            {altPrices.map((a) => (
+              <button
+                key={`${a.value}-${a.whole}`}
+                type="button"
+                onClick={() => {
+                  setPrice(a.whole ? `${a.value},` : formatPrice(a.value));
+                  setFromPhoto((f) => ({ ...f, price: false }));
+                  if (a.whole) document.querySelector<HTMLInputElement>('[data-testid="price-value"]')?.focus();
+                }}
+                className="cursor-pointer rounded-full border border-border bg-card px-3 py-1.5 font-semibold tabular text-foreground hover:bg-secondary"
+              >
+                {a.whole ? `${a.value},…` : formatPrice(a.value)}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div className="-mt-2 flex flex-wrap items-center gap-1.5" data-testid="store-chips">
+          <span className="text-xs text-muted-foreground">{L.pickStore}:</span>
+          {(CHAINS[market] ?? CHAINS.global).map((c) => (
+            <button
+              key={c}
+              type="button"
+              onClick={() => {
+                setStore(c);
+                setFromPhoto((f) => ({ ...f, store: false }));
+              }}
+              className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${
+                store === c ? 'border-savings bg-savings/15 text-savings' : 'border-border bg-card text-foreground hover:bg-secondary'
+              }`}
+            >
+              {c}
+            </button>
+          ))}
         </div>
 
         <div className="grid grid-cols-2 gap-3">
@@ -531,7 +743,7 @@ export function PriceSubmitModal({
           disabled={busy}
           className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-base font-semibold text-primary-foreground disabled:opacity-50"
         >
-          {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Check className="h-4 w-4" />} {t.submit}
+          {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Check className="h-4 w-4" />} {L.confirmSave}
         </button>
       </form>
     </div>

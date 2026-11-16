@@ -918,6 +918,7 @@ export default function KiloRadarApp({
   const scanTargetRef = useRef<'lookup' | 'price'>('lookup');
   const [priceModalOpen, setPriceModalOpen] = useState(false);
   const [boardRefresh, setBoardRefresh] = useState(0);
+  const [pendingPhoto, setPendingPhoto] = useState<File | null>(null);
   const [priceBarcode, setPriceBarcode] = useState('');
   const userPriceMarket = countryCode === 'en' ? 'global' : countryCode;
   const userPrices = useUserPrices(userPriceMarket);
@@ -1198,6 +1199,14 @@ export default function KiloRadarApp({
   // "Take a photo of the barcode": works everywhere (opens the phone camera app)
   const handleBarcodePhoto = async (file: File | undefined) => {
     if (!file) return;
+    if (scanTargetRef.current === 'price') {
+      // adding a price: the price form reads barcode, price and store from the same photo
+      scanTargetRef.current = 'lookup';
+      handleCloseCameraScanner();
+      setPendingPhoto(file);
+      setPriceModalOpen(true);
+      return;
+    }
     setScanPhotoError(false);
     setScanPhotoBusy(true);
     try {
@@ -1899,6 +1908,8 @@ export default function KiloRadarApp({
         market={userPriceMarket}
         barcode={priceBarcode}
         setBarcode={setPriceBarcode}
+        initialPhoto={pendingPhoto}
+        onInitialPhotoUsed={() => setPendingPhoto(null)}
         productName={(() => {
           const code = acceptGtin(priceBarcode);
           const hit = code ? catalogItems.find((c) => c.barcode === code) : undefined;
