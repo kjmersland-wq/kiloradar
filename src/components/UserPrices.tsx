@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Camera, Check, Flag, Loader2, Tag, Users, X } from 'lucide-react';
 import type { CountryRouteCode } from '../locales';
+import { acceptGtin } from '../utils/barcode';
 
 /** A price entered by a visitor. Always shown as "user submitted" with store and date. */
 export interface UserPrice {
@@ -163,6 +164,19 @@ export function ShelfTagTip({ countryCode, compact = false }: { countryCode: Cou
   );
 }
 
+/** [product found, not in catalogue (price is still saved), check digit does not match] */
+const CHECK: Record<string, [string, string, string]> = {
+  no: ['Varen', 'Ikke i katalogen ennå. Prisen lagres likevel.', 'Strekkoden stemmer ikke (sjekksiffer). Sjekk tallene.'],
+  se: ['Varan', 'Finns inte i katalogen än. Priset sparas ändå.', 'Streckkoden stämmer inte (kontrollsiffra). Kontrollera siffrorna.'],
+  dk: ['Varen', 'Ikke i kataloget endnu. Prisen gemmes alligevel.', 'Stregkoden passer ikke (kontrolciffer). Tjek tallene.'],
+  pl: ['Produkt', 'Jeszcze nie ma go w katalogu. Cena i tak zostanie zapisana.', 'Kod nie jest poprawny (cyfra kontrolna). Sprawdź cyfry.'],
+  de: ['Produkt', 'Noch nicht im Katalog. Der Preis wird trotzdem gespeichert.', 'Der Barcode stimmt nicht (Prüfziffer). Bitte Ziffern prüfen.'],
+  fr: ['Produit', 'Pas encore dans le catalogue. Le prix est quand même enregistré.', 'Le code-barres n’est pas valide (clé de contrôle). Vérifiez les chiffres.'],
+  es: ['Producto', 'Aún no está en el catálogo. El precio se guarda igualmente.', 'El código no es válido (dígito de control). Revisa los números.'],
+  en: ['Product', 'Not in the catalogue yet. The price is still saved.', 'The barcode does not add up (check digit). Please check the digits.'],
+};
+const checkStrings = (code: CountryRouteCode) => CHECK[code] ?? CHECK.en;
+
 // --- Top contributors (recognition only: no prizes, no money) ---------------------------------
 interface BoardStrings {
   title: string;
@@ -316,7 +330,9 @@ export function PriceSubmitModal({
   setBarcode,
   onScan,
   onSaved,
+  productName,
 }: {
+  productName?: string | null;
   open: boolean;
   onClose: () => void;
   countryCode: CountryRouteCode;
@@ -350,15 +366,20 @@ export function PriceSubmitModal({
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setBusy(true);
     setMessage(null);
+    const code = acceptGtin(barcode);
+    if (!code) {
+      setMessage({ kind: 'err', text: checkStrings(countryCode)[2] });
+      return;
+    }
+    setBusy(true);
     try {
       const res = await fetch('/api/price', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           market,
-          barcode: barcode.trim(),
+          barcode: code,
           price: price.trim(),
           store: store.trim(),
           nickname: nickname.trim(),
@@ -422,6 +443,25 @@ export function PriceSubmitModal({
             </button>
           </div>
         </label>
+
+        {barcode.length >= 8 &&
+          (() => {
+            const c = checkStrings(countryCode);
+            const ok = acceptGtin(barcode);
+            if (!ok && barcode.length >= 12) {
+              return (
+                <p className="-mt-2 text-xs text-shrink" role="status" data-testid="barcode-check">
+                  {c[2]}
+                </p>
+              );
+            }
+            if (!ok) return null;
+            return (
+              <p className={`-mt-2 text-xs ${productName ? 'text-savings' : 'text-muted-foreground'}`} role="status" data-testid="barcode-check">
+                {productName ? `✓ ${c[0]}: ${productName}` : c[1]}
+              </p>
+            );
+          })()}
 
         <div className="grid grid-cols-2 gap-3">
           <label className="block text-sm font-medium text-foreground">

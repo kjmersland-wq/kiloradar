@@ -211,7 +211,19 @@ function cleanNickname(raw: unknown): string | null {
   return /^[\p{L}\p{N} ._-]{2,20}$/u.test(nick) ? nick : null;
 }
 
-const CONTRIBUTOR_COUNTRIES = new Set(['NO', 'SE', 'DK', 'PL', 'DE', 'FR', 'ES', 'US', 'GB']);
+/** GTIN-8/12/13/14 check digit: a misread or mistyped barcode is rejected. */
+function validGtin(code: string): boolean {
+  if (![8, 12, 13, 14].includes(code.length)) return false;
+  const digits = code.split('').map(Number);
+  const check = digits.pop() as number;
+  let sum = 0;
+  digits.reverse().forEach((d, i) => {
+    sum += d * (i % 2 === 0 ? 3 : 1);
+  });
+  return (10 - (sum % 10)) % 10 === check;
+}
+
+const CONTRIBUTOR_COUNTRIES =new Set(['NO', 'SE', 'DK', 'PL', 'DE', 'FR', 'ES', 'US', 'GB']);
 function cleanCountry(raw: unknown): string | null {
   const code = typeof raw === 'string' ? raw.trim().toUpperCase() : '';
   return CONTRIBUTOR_COUNTRIES.has(code) ? code : null;
@@ -243,7 +255,7 @@ async function handleSubmitPrice(request: Request, env: Env): Promise<Response> 
   const ean = String(body.barcode ?? '').replace(/\s+/g, '');
   const price = parsePrice(body.price);
   const store = cleanStore(body.store);
-  if (!VALID_MARKETS.has(market) || !/^\d{8,14}$/.test(ean) || price === null || store === null) {
+  if (!VALID_MARKETS.has(market) || !/^\d{8,14}$/.test(ean) || !validGtin(ean) || price === null || store === null) {
     return json({ error: 'invalid' }, 400, 'no-store');
   }
   const currency = MARKET_CURRENCY[market];

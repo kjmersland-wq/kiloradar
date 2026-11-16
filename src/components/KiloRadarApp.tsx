@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import CatalogSection, { type CatalogItem } from './CatalogSection';
 import DocumentedCases from './DocumentedCases';
+import { acceptGtin, decodeBarcodeFromFile } from '../utils/barcode';
 import { ContributorsBoard, PriceSubmitModal, ShelfTagTip, useUserPrices } from './UserPrices';
 import StoreComparison,{ type StoreComparisonData } from './StoreComparison';
 import {
@@ -694,6 +695,20 @@ const SCAN_UI: Record<CountryRouteCode, [string, string, string]> = {
   es: ['Escanear código de barras', 'Hacer foto del código de barras', 'No se encontró ningún código en la foto. Inténtalo de nuevo, más cerca y con buena luz.'],
 };
 
+/** [photo button, reading, pick from gallery, nothing found] */
+const PHOTO_UI: Record<CountryRouteCode, [string, string, string, string]> = {
+  no: ['Ta bilde av hyllekantetiketten', 'Leser bildet …', 'Eller velg et bilde fra galleriet', 'Fant ingen strekkode. Hold telefonen rett foran etiketten, nær nok til at strekkoden fyller bildet, og unngå refleks (særlig på elektroniske etiketter). Eller skriv inn tallene under strekkoden.'],
+  se: ['Ta foto av hyllkantsetiketten', 'Läser bilden …', 'Eller välj en bild från galleriet', 'Hittade ingen streckkod. Håll telefonen rakt framför etiketten, nära nog så att streckkoden fyller bilden, och undvik reflexer (särskilt på elektroniska etiketter). Eller skriv in siffrorna under streckkoden.'],
+  dk: ['Tag billede af hyldekantsetiketten', 'Læser billedet …', 'Eller vælg et billede fra galleriet', 'Fandt ingen stregkode. Hold telefonen lige foran etiketten, tæt nok til at stregkoden fylder billedet, og undgå genskin (især på elektroniske etiketter). Eller skriv tallene under stregkoden.'],
+  pl: ['Zrób zdjęcie etykiety półkowej', 'Odczytuję zdjęcie …', 'Albo wybierz zdjęcie z galerii', 'Nie znaleziono kodu kreskowego. Trzymaj telefon prosto przed etykietą, tak blisko, by kod wypełniał kadr, i unikaj odblasków (zwłaszcza na etykietach elektronicznych). Albo wpisz cyfry pod kodem.'],
+  de: ['Foto vom Regaletikett machen', 'Foto wird gelesen …', 'Oder ein Foto aus der Galerie wählen', 'Kein Barcode gefunden. Halte das Handy gerade vor das Etikett, so nah, dass der Barcode das Bild füllt, und vermeide Spiegelungen (besonders bei elektronischen Preisschildern). Oder tippe die Ziffern unter dem Barcode ein.'],
+  fr: ['Photographier l’étiquette de rayon', 'Lecture de la photo …', 'Ou choisir une photo dans la galerie', 'Aucun code-barres trouvé. Tenez le téléphone bien en face de l’étiquette, assez près pour que le code remplisse l’image, et évitez les reflets (surtout sur les étiquettes électroniques). Ou saisissez les chiffres sous le code.'],
+  es: ['Hacer foto de la etiqueta del estante', 'Leyendo la foto …', 'O elegir una foto de la galería', 'No se encontró ningún código. Sujeta el móvil de frente a la etiqueta, lo bastante cerca para que el código llene la imagen, y evita reflejos (sobre todo en etiquetas electrónicas). O escribe los números bajo el código.'],
+  en: ['Take a photo of the shelf-edge label', 'Reading the photo …', 'Or pick a photo from your gallery', 'No barcode found. Hold the phone straight in front of the label, close enough for the barcode to fill the photo, and avoid glare (especially on electronic labels). Or type the digits under the barcode.'],
+  us: ['Take a photo of the shelf-edge label', 'Reading the photo …', 'Or pick a photo from your gallery', 'No barcode found. Hold the phone straight in front of the label, close enough for the barcode to fill the photo, and avoid glare (especially on electronic labels). Or type the digits under the barcode.'],
+  uk: ['Take a photo of the shelf-edge label', 'Reading the photo …', 'Or pick a photo from your gallery', 'No barcode found. Hold the phone straight in front of the label, close enough for the barcode to fill the photo, and avoid glare (especially on electronic labels). Or type the digits under the barcode.'],
+};
+
 const NAV_LABELS:Record<CountryRouteCode, [string, string, string, string]> = {
   en: ['Prices', 'Calculator', 'Products', 'Catalog'],
   us: ['Prices', 'Calculator', 'Products', 'Catalog'],
@@ -907,6 +922,7 @@ export default function KiloRadarApp({
   const userPriceMarket = countryCode === 'en' ? 'global' : countryCode;
   const userPrices = useUserPrices(userPriceMarket);
   const [scanPhotoError, setScanPhotoError] = useState(false);
+  const [scanPhotoBusy, setScanPhotoBusy] = useState(false);
 
   // "Report Shrunk Item" Modal state
   const [reportModalOpen, setReportModalOpen] = useState(false);
@@ -1107,14 +1123,25 @@ export default function KiloRadarApp({
       try {
         await new Promise((resolve) => setTimeout(resolve, 60)); // let the <video> mount
         if (!videoRef.current) return;
-        const { BrowserMultiFormatReader } = await import('@zxing/browser');
-        const reader = new BrowserMultiFormatReader();
+        const [{ BrowserMultiFormatReader }, { BarcodeFormat, DecodeHintType }] = await Promise.all([
+          import('@zxing/browser'),
+          import('@zxing/library'),
+        ]);
+        const hints = new Map<number, unknown>([
+          [DecodeHintType.TRY_HARDER, true],
+          [
+            DecodeHintType.POSSIBLE_FORMATS,
+            [BarcodeFormat.EAN_13, BarcodeFormat.EAN_8, BarcodeFormat.UPC_A, BarcodeFormat.UPC_E, BarcodeFormat.ITF],
+          ],
+        ]);
+        const reader = new BrowserMultiFormatReader(hints as never);
         zxingControlsRef.current = await reader.decodeFromConstraints(
           { video: { facingMode: 'environment' } },
           videoRef.current,
           (result) => {
             if (!result) return;
-            const code = result.getText();
+            const code = acceptGtin(result.getText());
+            if (!code) return; // misread: keep scanning
             stopCameraStream();
             setCameraModalOpen(false);
             handleScannedCode(code);
@@ -1150,8 +1177,10 @@ export default function KiloRadarApp({
         }
         try {
           const barcodes = await detector.detect(videoRef.current);
-          if (barcodes && barcodes.length > 0 && barcodes[0].rawValue) {
-            const detectedCode = String(barcodes[0].rawValue);
+          const detectedCode = (barcodes ?? [])
+            .map((b: { rawValue?: string }) => (b.rawValue ? acceptGtin(String(b.rawValue)) : null))
+            .find(Boolean) as string | undefined;
+          if (detectedCode) {
             clearInterval(scanInterval);
             stopCameraStream();
             setCameraModalOpen(false);
@@ -1170,25 +1199,9 @@ export default function KiloRadarApp({
   const handleBarcodePhoto = async (file: File | undefined) => {
     if (!file) return;
     setScanPhotoError(false);
+    setScanPhotoBusy(true);
     try {
-      let code: string | null = null;
-      if (typeof window !== 'undefined' && 'BarcodeDetector' in window) {
-        // @ts-expect-error BarcodeDetector is experimental in TypeScript DOM types
-        const detector = new window.BarcodeDetector({ formats: ['ean_13', 'ean_8', 'upc_a', 'upc_e'] });
-        const bitmap = await createImageBitmap(file);
-        const found = await detector.detect(bitmap);
-        if (found && found[0]?.rawValue) code = String(found[0].rawValue);
-      }
-      if (!code) {
-        const { BrowserMultiFormatReader } = await import('@zxing/browser');
-        const url = URL.createObjectURL(file);
-        try {
-          const result = await new BrowserMultiFormatReader().decodeFromImageUrl(url);
-          code = result.getText();
-        } finally {
-          URL.revokeObjectURL(url);
-        }
-      }
+      const code = await decodeBarcodeFromFile(file);
       if (code) {
         handleCloseCameraScanner();
         handleScannedCode(code);
@@ -1197,6 +1210,8 @@ export default function KiloRadarApp({
       }
     } catch {
       setScanPhotoError(true);
+    } finally {
+      setScanPhotoBusy(false);
     }
   };
 
@@ -1884,6 +1899,11 @@ export default function KiloRadarApp({
         market={userPriceMarket}
         barcode={priceBarcode}
         setBarcode={setPriceBarcode}
+        productName={(() => {
+          const code = acceptGtin(priceBarcode);
+          const hit = code ? catalogItems.find((c) => c.barcode === code) : undefined;
+          return hit ? `${hit.brand ? hit.brand + ' ' : ''}${hit.name}`.trim() : null;
+        })()}
         onScan={() => {
           scanTargetRef.current = 'price';
           setPriceModalOpen(false);
@@ -1945,9 +1965,13 @@ export default function KiloRadarApp({
             )}
 
             <ShelfTagTip countryCode={countryCode} compact />
-            <label className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-savings/40 bg-background px-4 py-3 text-sm font-semibold text-savings transition hover:bg-secondary">
-              <Camera className="h-4 w-4" />
-              <span>{SCAN_UI[countryCode][1]}</span>
+            <label
+              className={`flex w-full items-center justify-center gap-2 rounded-lg border border-savings/40 bg-background px-4 py-3 text-sm font-semibold text-savings transition hover:bg-secondary ${
+                scanPhotoBusy ? 'pointer-events-none opacity-60' : 'cursor-pointer'
+              }`}
+            >
+              {scanPhotoBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Camera className="h-4 w-4" />}
+              <span>{scanPhotoBusy ? PHOTO_UI[countryCode][1] : PHOTO_UI[countryCode][0]}</span>
               <input
                 type="file"
                 accept="image/*"
@@ -1960,9 +1984,22 @@ export default function KiloRadarApp({
                 }}
               />
             </label>
+            <label className="block cursor-pointer text-center text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground">
+              {PHOTO_UI[countryCode][2]}
+              <input
+                type="file"
+                accept="image/*"
+                className="sr-only"
+                data-testid="scan-gallery-input"
+                onChange={(e) => {
+                  handleBarcodePhoto(e.target.files?.[0]);
+                  e.target.value = '';
+                }}
+              />
+            </label>
             {scanPhotoError && (
-              <p className="text-xs text-shrink" role="alert">
-                {SCAN_UI[countryCode][2]}
+              <p className="text-xs text-shrink" role="alert" data-testid="scan-photo-error">
+                {PHOTO_UI[countryCode][3]}
               </p>
             )}
 
